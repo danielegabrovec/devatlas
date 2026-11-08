@@ -1,0 +1,9 @@
+{
+  "version": "1.1.0",
+  "status": "not_completed",
+  "reason": "Computer Use app approval timed out",
+  "observed": "La finestra dell'eseguibile compilato DevAtlas-1.1.0 è stata individuata nella lista delle finestre.",
+  "not_attested": "Cattura e interazioni manuali nella finestra nativa: l'autorizzazione è scaduta prima del completamento.",
+  "separate_evidence": ["reports/ui-review.json", "reports/distribution-smoke.json", "reports/installer-verification.json"],
+  "test_profile": ".cache/native-release11"
+}

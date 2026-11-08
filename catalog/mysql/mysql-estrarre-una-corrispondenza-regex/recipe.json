@@ -1,0 +1,84 @@
+{
+  "id": "mysql-estrarre-una-corrispondenza-regex",
+  "title": "Estrarre una corrispondenza regex",
+  "summary": "Laboratorio con dati sintetici: estrarre una corrispondenza regex.",
+  "stack": "mysql",
+  "group": "Database",
+  "section": "Database",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "MySQL 8.4 LTS; differenze MariaDB da verificare",
+  "prerequisites": "Server locale e client installati; database didattico cookbook_demo già creato; credenziali fornite dal client, mai nel sorgente.",
+  "tags": [
+    "database",
+    "query",
+    "mysql",
+    "estrarre",
+    "una",
+    "corrispondenza"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "fixture.sql",
+      "language": "sql",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "c45408f1a107787e5c8fe1cd11207756546a51c3aae5de756038dc710ae39e96"
+    },
+    {
+      "id": "file-1",
+      "path": "query.sql",
+      "language": "sql",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "96e5eab8735c232f29de1961a0e55153bf5e039add8de532afcf048e77d02c2a"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "ffe0db6b9aa005a1b2f760cac308c1b535afee8128d15ac1cb93fa4f2374aadb"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "mysql-estrarre-un-campo-json",
+    "mysql-aggiornare-con-join",
+    "mysql-aggiornare-statistiche-di-una-tabella"
+  ],
+  "expected": "La query termina senza errori e mostra il risultato dell'operazione indicata; per DDL il client conferma la creazione dell'oggetto.",
+  "errors": [
+    "Tabella già esistente: rieseguire la fixture in un database di laboratorio vuoto.",
+    "Funzione o estensione assente: controllare versione e opzioni del motore indicati nei prerequisiti."
+  ],
+  "sources": [
+    "https://dev.mysql.com/doc/refman/8.4/en/",
+    "https://dev.mysql.com/doc/refman/8.4/en/ansi-diff-foreign-keys.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "documentato",
+    "date": "2026-10-29",
+    "details": "Revisione documentale PostgreSQL18/MySQL8.4 e fixture di laboratorio; server non eseguito perché Docker non era attivo. Report: reports/catalog-independent-review.json.",
+    "files_sha256": {
+      "fixture.sql": "c45408f1a107787e5c8fe1cd11207756546a51c3aae5de756038dc710ae39e96",
+      "query.sql": "96e5eab8735c232f29de1961a0e55153bf5e039add8de532afcf048e77d02c2a"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

@@ -1,0 +1,7 @@
+from unittest.mock import Mock
+repository = Mock()
+repository.get_name.return_value = "Ada"
+message = "Ciao " + repository.get_name(7)
+assert message == "Ciao Ada"
+repository.get_name.assert_called_once_with(7)
+print(message)

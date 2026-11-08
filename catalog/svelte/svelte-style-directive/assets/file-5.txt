@@ -1,0 +1,5 @@
+<script>
+import {onMount,tick,setContext,getContext} from 'svelte';
+let percent=$state(30);
+</script>
+<main><input type="range" bind:value={percent} min="0" max="100" aria-label="Avanzamento"><div class="active" style:width={`${percent}%`} style:height="24px"></div></main>

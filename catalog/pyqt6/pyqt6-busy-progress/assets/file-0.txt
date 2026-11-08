@@ -1,0 +1,23 @@
+import sys, json, sqlite3, tempfile, logging
+from pathlib import Path
+from PyQt6.QtCore import *
+from PyQt6.QtGui import *
+from PyQt6.QtWidgets import *
+Signal = pyqtSignal
+Slot = pyqtSlot
+
+def build(root, layout):
+    bar = QProgressBar()
+    bar.setRange(0, 0)
+    layout.addWidget(bar)
+    QTimer.singleShot(1800, lambda: (bar.setRange(0, 1), bar.setValue(1)))
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    window = QWidget()
+    window.setWindowTitle("Ricetta Qt")
+    window.resize(720, 480)
+    layout = QVBoxLayout(window)
+    build(window, layout)
+    window.show()
+    sys.exit(app.exec())

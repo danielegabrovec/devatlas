@@ -1,0 +1,8 @@
+async function retry(action, attempts) {
+  if (attempts < 1) throw new RangeError("Tentativi positivi richiesti");
+  for (let i = 0; i < attempts; i++) {
+    try { return await action(); } catch (error) { if (i + 1 === attempts) throw error; }
+  }
+}
+let calls = 0;
+console.log(await retry(async () => { if (++calls < 2) throw new Error("temporaneo"); return "ok"; }, 3));

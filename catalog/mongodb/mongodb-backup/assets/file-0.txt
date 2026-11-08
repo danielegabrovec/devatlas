@@ -1,0 +1,2 @@
+# Backup laboratorio MongoDB
+Richiede MongoDB Database Tools100.x. Eseguire i comandi solo su atlas_demo_setup del processo locale di prova. Il restore usa un nome nuovo.

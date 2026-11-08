@@ -1,0 +1,1 @@
+import{setTimeout}from'node:timers/promises';const c=new AbortController();const p=setTimeout(5000,null,{signal:c.signal});c.abort();try{await p}catch(e){console.log(e.name)}

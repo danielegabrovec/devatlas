@@ -1,0 +1,4 @@
+def summarize(values):
+    return len(values), sum(values)
+count, total = summarize([2, 3, 5])
+print(count, total)

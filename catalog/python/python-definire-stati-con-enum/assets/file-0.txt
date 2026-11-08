@@ -1,0 +1,6 @@
+from enum import Enum
+class Status(Enum):
+    READY = "ready"
+    BUSY = "busy"
+current = Status("ready")
+print(current is Status.READY, current.value)

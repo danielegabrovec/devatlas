@@ -1,0 +1,4 @@
+import Foundation
+enum InputError:Error{case notPositive}
+let result:Result<Int,InputError> = .failure(.notPositive)
+switch result{case .success(let value):print(value);case .failure:print("valore non positivo")}

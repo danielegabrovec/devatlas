@@ -1,0 +1,114 @@
+{
+  "id": "swift-progetto-completo-report-spese-swift-package",
+  "title": "Progetto completo report spese Swift Package",
+  "summary": "Legge JSON sintetico, valida centesimi non negativi e aggrega per categoria con controllo overflow.",
+  "stack": "swift",
+  "group": "Linguaggi",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "Xcode",
+    "VS Code"
+  ],
+  "versions": "Swift6.4; Package.swift tools-version6.0, Linux/macOS",
+  "prerequisites": "Toolchain Swift6.4 su Linux o macOS. Per SwiftUI/iOS occorrono macOS, Xcode e un target Apple. Non sono attestati esecuzioni o compilazioni Swift su Windows.",
+  "tags": [
+    "project",
+    "Swift Package",
+    "Codable",
+    "JSON",
+    "XCTest"
+  ],
+  "project": true,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "Package.swift",
+      "language": "swift",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "fd01ff3ee7267d17cfc77ac26fca9316c109f821f179cc20dabff856d44254b4"
+    },
+    {
+      "id": "file-1",
+      "path": "Sources/ExpenseCore/Expense.swift",
+      "language": "swift",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "b95ce59fca632389b3d77c96ab860185336d74b7f1af155426fe354bd0e732eb"
+    },
+    {
+      "id": "file-2",
+      "path": "Sources/ExpenseCLI/main.swift",
+      "language": "swift",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "2be3428e41ad28dd38b239716707baa51bd7940b300c3ffb4ce74d0940d4e36b"
+    },
+    {
+      "id": "file-3",
+      "path": "Tests/ExpenseCoreTests/ExpenseCoreTests.swift",
+      "language": "swift",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "2ec5cb8a8a9bd0b5d809bc7ef05ecdf72d8ccfe2c2a5916589d9f04b9db15793"
+    },
+    {
+      "id": "file-4",
+      "path": "data/expenses.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "d8e9473866f007308263fdfa6fd540daf87d3363ddf18ca4765c8f491f4e8de6"
+    },
+    {
+      "id": "file-5",
+      "path": "README.md",
+      "language": "markdown",
+      "role": "file",
+      "source": "assets/file-5.txt",
+      "sha256": "9caddd0763b2a5e0fb22811300c5b36f42a065b2aab76f35f5f07c6d3b146997"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "bash",
+      "role": "command",
+      "shell": "Bash",
+      "os": "Linux/macOS",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "d50966341f12349eadaf3ca3c4b5fd07cf4d0288b6cc1e6e14555c0ddbbe2646"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "swift-eseguire-test-swift-package-con-xctest",
+    "swift-inizializzare-un-package-swift-cli-su-linux-o-macos",
+    "swift-codificare-e-decodificare-json-con-codable"
+  ],
+  "expected": "Due test passano; output ordinato casa:2000 e libri:2000.",
+  "errors": [
+    "DecodingError leggendo le spese: controlla che category sia String e cents sia Int nel file JSON.",
+    "LedgerError.invalidAmount o overflow: il dominio rifiuta importi negativi e somme oltre Int; il file invalido non deve produrre un report parziale.",
+    "File non trovato: passa il percorso JSON corretto o avvia la CLI dalla radice che contiene data/expenses.json."
+  ],
+  "sources": [
+    "https://www.swift.org/documentation/",
+    "https://www.swift.org/install/linux/",
+    "https://www.swift.org/install/macos/",
+    "https://www.swift.org/blog/swift-6.4-released/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: JSON parse, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

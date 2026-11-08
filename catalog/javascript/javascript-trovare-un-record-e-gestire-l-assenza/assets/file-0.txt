@@ -1,0 +1,2 @@
+const rows = [{ id: 1, name: "Ada" }];
+console.log(rows.find(row => row.id === 9)?.name ?? "assente");

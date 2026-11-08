@@ -1,0 +1,3 @@
+package it.atlas;
+import java.util.*;import org.springframework.stereotype.Service;
+@Service public class TaskService{public record Task(long id,String title){}private final List<Task> tasks=new ArrayList<>();private long next=1;public synchronized List<Task> list(){return List.copyOf(tasks);}public synchronized Task add(String title){var clean=title.trim();if(clean.isEmpty())throw new IllegalArgumentException("Titolo vuoto");var task=new Task(next++,clean);tasks.add(task);return task;}}

@@ -1,0 +1,5 @@
+const interval = {
+  start: 2, end: 4,
+  *[Symbol.iterator]() { for (let n = this.start; n <= this.end; n++) yield n; }
+};
+console.log([...interval]);

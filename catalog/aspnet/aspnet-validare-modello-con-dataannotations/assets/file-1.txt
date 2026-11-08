@@ -1,0 +1,13 @@
+using System.Text;
+using System.Text.Json;
+using System.Diagnostics;
+using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.RateLimiting;
+using System.Threading.RateLimiting;
+var builder=WebApplication.CreateBuilder(args);
+
+var app=builder.Build();
+app.MapPost("/items",(Item item)=>{var errors=new List<ValidationResult>();return Validator.TryValidateObject(item,new ValidationContext(item),errors,true)?Results.Ok(item):Results.BadRequest(errors.Select(e=>e.ErrorMessage));});
+app.Run();
+public record Item([property:Required,StringLength(80)] string Name,[property:Range(0,100000)] decimal Price);

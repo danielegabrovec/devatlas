@@ -1,0 +1,2 @@
+gcc -std=c17 -g3 -O0 -Wall -Wextra main.c -o debug.exe
+gdb .\debug.exe

@@ -1,0 +1,6 @@
+def chunks(values, size):
+    if size <= 0:
+        raise ValueError("La dimensione deve essere positiva")
+    for start in range(0, len(values), size):
+        yield values[start:start + size]
+print(list(chunks(list(range(7)), 3)))

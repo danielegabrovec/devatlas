@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+square(){ local value=$1; printf "%d\n" "$((value*value))"; }
+result=$(square 7)
+printf "Risultato: %s\n" "$result"

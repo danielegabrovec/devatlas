@@ -1,0 +1,1 @@
+import{createServer}from'node:http';createServer(async(q,r)=>{let size=0;for await(const c of q){size+=c.length;if(size>1024){r.writeHead(413);r.end('Troppo grande');return}}r.end(String(size))}).listen(3000,'127.0.0.1');

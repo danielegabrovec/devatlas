@@ -1,0 +1,3 @@
+from django.http import JsonResponse
+from .models import Note
+def home(request): return JsonResponse({'items':list(Note.objects.values('id','title','done'))})

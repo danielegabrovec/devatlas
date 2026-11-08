@@ -1,0 +1,1 @@
+export const metadata={title:'Introduzione'};export default function Page(){return <h1>Introduzione</h1>}

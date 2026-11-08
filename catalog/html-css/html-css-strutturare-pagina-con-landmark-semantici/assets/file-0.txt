@@ -1,0 +1,2 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Laboratorio HTML/CSS</title><link rel="stylesheet" href="style.css"></head><body><header><h1>Atlante</h1></header><nav aria-label='Principale'><a href='#main'>Contenuto</a></nav><main id='main'><article><h2>Guida</h2><p>Testo della guida.</p></article></main><footer>Contatti</footer></body></html>

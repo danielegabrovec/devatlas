@@ -1,0 +1,2 @@
+# Snapshot Redis di laboratorio
+Il server deve essere quello isolato sulla porta6381, contenente solo dati sintetici. Il file contiene l'intero dataset di quel processo, non un filtro per prefisso.

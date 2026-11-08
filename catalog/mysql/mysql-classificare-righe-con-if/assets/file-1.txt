@@ -1,0 +1,1 @@
+SELECT name,IF(stock>0,'disponibile','esaurito') FROM products;

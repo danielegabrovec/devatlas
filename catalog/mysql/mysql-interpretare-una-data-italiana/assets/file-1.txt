@@ -1,0 +1,1 @@
+SELECT STR_TO_DATE('29/10/2026','%d/%m/%Y');

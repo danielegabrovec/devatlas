@@ -1,0 +1,1 @@
+export interface Task{id:number;title:string;done:boolean}export function addTask(rows:Task[],title:string):Task[];export function completed(rows:Task[]):number;

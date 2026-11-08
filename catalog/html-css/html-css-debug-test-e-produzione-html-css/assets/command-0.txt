@@ -1,0 +1,2 @@
+node --test test.mjs
+Compress-Archive -Path index.html,style.css,app.js,lib.js -DestinationPath site.zip -Force

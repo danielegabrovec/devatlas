@@ -1,0 +1,5 @@
+type Entity = "user" | "order";
+type EventName = `${Entity}:created`;
+const event: EventName = "user:created";
+console.log(event);
+export {};

@@ -1,0 +1,4 @@
+package inventory
+import "testing"
+func TestAccumulation(t *testing.T){store:=New();if err:=store.Add("viti",3);err!=nil{t.Fatal(err)};if err:=store.Add("viti",2);err!=nil{t.Fatal(err)};if store.Quantity("viti")!=5{t.Fatal("somma errata")}}
+func TestInvalid(t *testing.T){if New().Add("",0)==nil{t.Fatal("validazione assente")}}

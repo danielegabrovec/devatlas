@@ -1,0 +1,1 @@
+export function GET(){return new Response('nome,totale\nAda,42\n',{headers:{'content-type':'text/csv; charset=utf-8','content-disposition':'attachment; filename=report.csv'}})}

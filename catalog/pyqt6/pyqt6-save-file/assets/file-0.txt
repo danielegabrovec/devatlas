@@ -1,0 +1,31 @@
+import sys, json, sqlite3, tempfile, logging
+from pathlib import Path
+from PyQt6.QtCore import *
+from PyQt6.QtGui import *
+from PyQt6.QtWidgets import *
+Signal = pyqtSignal
+Slot = pyqtSlot
+
+def build(root, layout):
+    edit = QPlainTextEdit("Testo da salvare")
+    button = QPushButton("Salva con nome")
+    def save():
+        path, _ = QFileDialog.getSaveFileName(root, "Salva", "appunti.txt", "Testo (*.txt)")
+        if path:
+            try:
+                Path(path).write_text(edit.toPlainText(), encoding="utf-8")
+            except OSError as exc:
+                QMessageBox.warning(root, "Salvataggio", str(exc))
+    button.clicked.connect(save)
+    layout.addWidget(edit)
+    layout.addWidget(button)
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    window = QWidget()
+    window.setWindowTitle("Ricetta Qt")
+    window.resize(720, 480)
+    layout = QVBoxLayout(window)
+    build(window, layout)
+    window.show()
+    sys.exit(app.exec())

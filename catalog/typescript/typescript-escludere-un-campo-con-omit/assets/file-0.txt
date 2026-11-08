@@ -1,0 +1,5 @@
+interface Item { id: number; name: string }
+type NewItem = Omit<Item, "id">;
+function create(data: NewItem): Item { return {id:1,...data}; }
+console.log(create({name:"libro"}));
+export {};

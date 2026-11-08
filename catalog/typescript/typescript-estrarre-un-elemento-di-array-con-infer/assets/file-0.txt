@@ -1,0 +1,4 @@
+type ElementOf<T> = T extends readonly (infer U)[] ? U : never;
+const value: ElementOf<readonly number[]> = 7;
+console.log(value);
+export {};

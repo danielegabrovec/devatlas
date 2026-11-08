@@ -1,0 +1,2 @@
+from importlib.resources import files
+print(files("recipe_resources").joinpath("message.txt").read_text(encoding="utf-8"))

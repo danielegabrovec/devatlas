@@ -1,0 +1,3 @@
+const users = new Map<number,{name:string}>([[7,{name:"Ada"}]]);
+console.log(users.get(7)?.name ?? "assente");
+export {};

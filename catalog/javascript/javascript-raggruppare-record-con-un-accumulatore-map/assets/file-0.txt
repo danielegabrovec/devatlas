@@ -1,0 +1,6 @@
+const groups = new Map();
+for (const row of [{ category: "A", value: 1 }, { category: "A", value: 2 }, { category: "B", value: 3 }]) {
+  if (!groups.has(row.category)) groups.set(row.category, []);
+  groups.get(row.category).push(row.value);
+}
+console.log([...groups]);

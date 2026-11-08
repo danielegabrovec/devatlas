@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+scratch=$(mktemp -d)
+trap 'rm -rf -- "$scratch"' EXIT
+printf "contenuto\n" > "$scratch/app.txt"
+(cd "$scratch"; sha256sum app.txt > SHA256SUMS; sha256sum -c SHA256SUMS)

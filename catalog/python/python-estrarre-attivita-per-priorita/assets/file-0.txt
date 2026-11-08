@@ -1,0 +1,6 @@
+import heapq
+queue = []
+for index, (priority, name) in enumerate([(3, "report"), (1, "backup"), (1, "mail")]):
+    heapq.heappush(queue, (priority, index, name))
+while queue:
+    print(heapq.heappop(queue)[2])

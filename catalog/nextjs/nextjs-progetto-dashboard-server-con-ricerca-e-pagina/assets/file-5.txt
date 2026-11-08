@@ -1,0 +1,1 @@
+import test from'node:test';import assert from'node:assert/strict';import{search}from'../lib/products.js';test('cerca senza caso',()=>assert.equal(search('MOUSE')[0].id,2));

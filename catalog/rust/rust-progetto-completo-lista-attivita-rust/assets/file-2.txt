@@ -1,0 +1,9 @@
+#[derive(Debug,Clone)]
+pub struct Task{pub id:usize,pub title:String,pub done:bool}
+#[derive(Default)]pub struct Board{tasks:Vec<Task>}
+impl Board{
+pub fn add(&mut self,title:&str)->Result<usize,&'static str>{if title.trim().is_empty(){return Err("titolo vuoto");}let id=self.tasks.len()+1;self.tasks.push(Task{id,title:title.trim().to_owned(),done:false});Ok(id)}
+pub fn complete(&mut self,id:usize)->Result<(),&'static str>{let task=self.tasks.iter_mut().find(|task|task.id==id).ok_or("task assente")?;task.done=true;Ok(())}
+pub fn list(&self)->&[Task]{&self.tasks}
+}
+#[cfg(test)]mod tests{use super::*;#[test]fn lifecycle(){let mut board=Board::default();let id=board.add("Uno").unwrap();board.complete(id).unwrap();assert!(board.list()[0].done);}#[test]fn invalid(){assert!(Board::default().add(" ").is_err());}}

@@ -1,0 +1,3 @@
+import React, {useState,useEffect,useMemo,useRef,useReducer,useId,useContext,createContext,useCallback,useLayoutEffect,useTransition,useDeferredValue,useSyncExternalStore,useImperativeHandle,forwardRef,memo,lazy,Suspense,Component} from 'react';
+import {createPortal} from 'react-dom';
+export default function App(){const[rows,set]=useState([{id:1,text:''}]);return <>{rows.map(r=><label key={r.id}>Voce<input value={r.text} onChange={e=>set(old=>old.map(x=>x.id===r.id?{...x,text:e.target.value}:x))}/></label>)}<button onClick={()=>set(old=>[...old,{id:Date.now(),text:''}])}>Nuovo campo</button></>}

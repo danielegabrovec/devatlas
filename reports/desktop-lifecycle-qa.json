@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-29",
+  "guides": [
+    "pyside6-inizializzazione-ambiente",
+    "pyside6-debug-build-distribuzione",
+    "pyqt6-inizializzazione-ambiente",
+    "pyqt6-debug-build-distribuzione",
+    "qt-cpp-inizializzazione-ambiente",
+    "qt-cpp-debug-build-distribuzione",
+    "electron-inizializzazione-ambiente",
+    "electron-debug-build-distribuzione",
+    "avalonia-inizializzazione-ambiente",
+    "avalonia-debug-build-distribuzione",
+    "maui-inizializzazione-ambiente",
+    "maui-debug-build-distribuzione",
+    "winui-inizializzazione-ambiente",
+    "winui-debug-build-distribuzione"
+  ],
+  "counts": {
+    "python_ast": 8,
+    "javascript": 6,
+    "json": 13,
+    "xml": 12,
+    "powershell": 20
+  },
+  "errors": [],
+  "limitations": [
+    "Static checks only; no SDK installation, native compilation, debugger session or distributable run is claimed."
+  ],
+  "success": true
+}

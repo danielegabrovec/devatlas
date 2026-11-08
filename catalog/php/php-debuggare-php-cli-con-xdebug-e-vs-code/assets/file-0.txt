@@ -1,0 +1,5 @@
+<?php
+declare(strict_types=1);
+$values=[2,3,5];
+$total=array_sum($values);
+echo $total,PHP_EOL;

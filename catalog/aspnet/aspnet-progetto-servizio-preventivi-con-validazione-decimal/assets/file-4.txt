@@ -1,0 +1,3 @@
+# Progetto: servizio preventivi con validazione Decimal
+Il preventivo10×3 con sconto10% restituisce27.00; prezzo negativo risponde400. La logica economica usa decimal e vive fuori dagli endpoint.
+Eseguire dotnet restore e dotnet run --urls http://127.0.0.1:5000. Usare requests.http da VSCode REST Client oppure curl equivalente. Nessun database o servizio esterno.

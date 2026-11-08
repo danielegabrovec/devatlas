@@ -1,0 +1,2 @@
+# Attività Flutter
+Eseguire bootstrap.ps1 da una cartella nuova. Il runner generato èin app; i sorgenti originali e i test sono in recipe. Eseguire flutter test e flutter run -d windows da app. La lista èdi sessione. Nessuna attestazione di esecuzione mobile se manca l’SDK nel report.

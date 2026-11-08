@@ -1,0 +1,2778 @@
+{
+  "date": "2026-10-29",
+  "environment": {
+    "platform": "win32",
+    "python": "3.11.15",
+    "node": "24.15.0",
+    "aspnet_sdk": "10.0.401",
+    "fastapi_test": "0.115.12",
+    "pydantic_test": "2.11.7",
+    "django_test": "5.2.6",
+    "sqlite": "3.53.1"
+  },
+  "counts": {
+    "nodejs": 90,
+    "react": 100,
+    "nextjs": 100,
+    "aspnet": 65,
+    "fastapi": 65,
+    "html-css": 45,
+    "django": 35,
+    "sql": 50,
+    "sqlite": 65,
+    "postgresql": 75,
+    "mysql": 60
+  },
+  "checks": [
+    {
+      "kind": "count",
+      "id": "nodejs",
+      "passed": true,
+      "details": "90/90"
+    },
+    {
+      "kind": "count",
+      "id": "react",
+      "passed": true,
+      "details": "100/100"
+    },
+    {
+      "kind": "count",
+      "id": "nextjs",
+      "passed": true,
+      "details": "100/100"
+    },
+    {
+      "kind": "count",
+      "id": "aspnet",
+      "passed": true,
+      "details": "65/65"
+    },
+    {
+      "kind": "count",
+      "id": "fastapi",
+      "passed": true,
+      "details": "65/65"
+    },
+    {
+      "kind": "count",
+      "id": "html-css",
+      "passed": true,
+      "details": "45/45"
+    },
+    {
+      "kind": "count",
+      "id": "django",
+      "passed": true,
+      "details": "35/35"
+    },
+    {
+      "kind": "count",
+      "id": "sql",
+      "passed": true,
+      "details": "50/50"
+    },
+    {
+      "kind": "count",
+      "id": "sqlite",
+      "passed": true,
+      "details": "65/65"
+    },
+    {
+      "kind": "count",
+      "id": "postgresql",
+      "passed": true,
+      "details": "75/75"
+    },
+    {
+      "kind": "count",
+      "id": "mysql",
+      "passed": true,
+      "details": "60/60"
+    },
+    {
+      "kind": "project-count",
+      "id": "all",
+      "passed": true,
+      "details": "20"
+    },
+    {
+      "kind": "project-files",
+      "id": "nodejs-progetto-api-locale-catalogo-prodotti",
+      "passed": true,
+      "details": "5"
+    },
+    {
+      "kind": "project-files",
+      "id": "nodejs-progetto-cli-analisi-di-un-file-testo",
+      "passed": true,
+      "details": "6"
+    },
+    {
+      "kind": "project-files",
+      "id": "nodejs-progetto-pipeline-di-importazione-ndjson",
+      "passed": true,
+      "details": "6"
+    },
+    {
+      "kind": "project-files",
+      "id": "react-progetto-catalogo-con-ricerca-filtri-e-ordinamento",
+      "passed": true,
+      "details": "8"
+    },
+    {
+      "kind": "project-files",
+      "id": "react-progetto-lista-attivita-persistente",
+      "passed": true,
+      "details": "8"
+    },
+    {
+      "kind": "project-files",
+      "id": "react-progetto-tabella-importazione-tsv-con-esportazione",
+      "passed": true,
+      "details": "8"
+    },
+    {
+      "kind": "project-files",
+      "id": "nextjs-progetto-api-spese-con-validazione-e-riepilogo",
+      "passed": true,
+      "details": "8"
+    },
+    {
+      "kind": "project-files",
+      "id": "nextjs-progetto-dashboard-server-con-ricerca-e-pagina",
+      "passed": true,
+      "details": "7"
+    },
+    {
+      "kind": "project-files",
+      "id": "nextjs-progetto-mini-blog-statico-con-metadata",
+      "passed": true,
+      "details": "9"
+    },
+    {
+      "kind": "project-files",
+      "id": "aspnet-progetto-api-prodotti-con-repository-concorrente",
+      "passed": true,
+      "details": "6"
+    },
+    {
+      "kind": "project-files",
+      "id": "aspnet-progetto-servizio-preventivi-con-validazione-decimal",
+      "passed": true,
+      "details": "5"
+    },
+    {
+      "kind": "project-files",
+      "id": "fastapi-progetto-api-attivita-con-repository-sqlite",
+      "passed": true,
+      "details": "5"
+    },
+    {
+      "kind": "project-files",
+      "id": "fastapi-progetto-api-preventivi-con-validazione-e-test",
+      "passed": true,
+      "details": "5"
+    },
+    {
+      "kind": "project-files",
+      "id": "html-css-progetto-biblioteca-responsive-con-filtri-locali",
+      "passed": true,
+      "details": "4"
+    },
+    {
+      "kind": "project-files",
+      "id": "django-progetto-taccuino-django-con-creazione-ricerca-e-test",
+      "passed": true,
+      "details": "15"
+    },
+    {
+      "kind": "project-files",
+      "id": "sql-progetto-report-vendite",
+      "passed": true,
+      "details": "3"
+    },
+    {
+      "kind": "project-files",
+      "id": "sqlite-progetto-note-fts",
+      "passed": true,
+      "details": "4"
+    },
+    {
+      "kind": "project-files",
+      "id": "postgresql-progetto-coda-transazionale",
+      "passed": true,
+      "details": "4"
+    },
+    {
+      "kind": "project-files",
+      "id": "postgresql-progetto-report-materializzato",
+      "passed": true,
+      "details": "5"
+    },
+    {
+      "kind": "project-files",
+      "id": "mysql-progetto-magazzino",
+      "passed": true,
+      "details": "4"
+    },
+    {
+      "kind": "python-ast",
+      "id": "all",
+      "passed": true,
+      "details": "{'json': 203, 'python': 447}"
+    },
+    {
+      "kind": "javascript-jsx-parse",
+      "id": "all",
+      "passed": true,
+      "details": "{\"files\":583,\"errors\":[]}"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-accumulare-uno-stream-con-limite",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-aggiungere-una-riga-senza-sovrascrivere",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-analizzare-argomenti-cli-tipizzati",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-analizzare-una-traccia-stack",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-annullare-una-promise-timer",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-attendere-un-evento-una-sola-volta",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-calcolare-in-un-worker-thread",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-calcolare-sha256-di-un-contenuto",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-caricare-configurazione-da-file-env",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-caricare-un-modulo-in-modo-dinamico",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-chiudere-server-con-segnale-sigint",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-codificare-e-decodificare-testo-web",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-codificare-testo-in-base64",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-comprimere-un-file-con-gzip",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-condividere-un-contatore-atomico",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-confrontare-firme-in-tempo-costante",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-consumare-uno-stream-web",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-convertire-callback-in-promise",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-convertire-dns-localhost-in-indirizzi",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-convertire-url-file-in-percorso",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-copiare-un-file-in-esclusiva",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-costruire-url-con-parametri-sicuri",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-creare-cartelle-annidate",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-creare-risposta-json-http-locale",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-creare-un-errore-di-dominio-con-proprieta",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-creare-una-directory-temporanea",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-creare-uno-stream-da-un-iterable",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-decodificare-utf8-diviso-tra-chunk",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-decomprimere-un-buffer-gzip",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-derivare-una-chiave-con-scrypt",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-elencare-cartelle-e-file-con-tipo",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-emettere-e-ascoltare-un-evento",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-eseguire-processo-senza-shell",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-eseguire-redirect-http-relativo",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-eseguire-richiesta-http-con-timeout",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-firmare-contenuti-con-hmac",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-gestire-cors-per-una-origine-consentita",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-gestire-errori-json-del-client",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-gestire-parametri-ripetuti-in-url",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-gestire-risultati-indipendenti-con-allsettled",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-implementare-retry-con-backoff-limitato",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-impostare-cache-http-etag",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-impostare-exit-code-senza-uscita-brusca",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-interrompere-l-esecuzione-nel-debugger",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-ispezionare-interfacce-di-rete",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-ispezionare-oggetti-circolari",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-leggere-dimensione-e-data-file",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-leggere-metadati-di-un-modulo-esm",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-leggere-parallelismo-cpu-disponibile",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-leggere-stdout-da-un-processo-figlio",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-leggere-un-file-per-righe",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-leggere-un-file-utf8-con-promise",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-leggere-un-intero-da-dati-binari",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-leggere-variabili-ambiente-con-default",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-limitare-concorrenza-con-coda-worker",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-limitare-dimensione-body-http",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-misurare-durata-con-performance",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-misurare-memoria-usata-dal-processo",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-misurare-tempo-di-una-richiesta",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-monitorare-ritardo-dell-event-loop",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-normalizzare-un-url-prima-del-confronto",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-progetto-api-locale-catalogo-prodotti",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-progetto-api-locale-catalogo-prodotti",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-progetto-api-locale-catalogo-prodotti",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-progetto-cli-analisi-di-un-file-testo",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-progetto-cli-analisi-di-un-file-testo",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-progetto-cli-analisi-di-un-file-testo",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-progetto-pipeline-di-importazione-ndjson",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-progetto-pipeline-di-importazione-ndjson",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-progetto-pipeline-di-importazione-ndjson",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-propagare-contesto-asincrono",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-pubblicare-diagnostica-disaccoppiata",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-pubblicare-un-endpoint-health",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-restituire-errore-http-404",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-riconoscere-eccezioni-con-codice-causa",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-rifiutare-path-traversal",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-rimuovere-un-listener-per-evitare-leak",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-rinominare-un-file-locale",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-ritardare-senza-bloccare-event-loop",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-scrivere-cookie-http-con-flag",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-scrivere-json-formattato",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-scrivere-log-strutturati-json",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-serializzare-dati-con-v8-preservando-map",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-servire-download-con-nome-suggerito",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-simulare-funzione-con-mock-del-test-runner",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-testare-un-errore-asincrono",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-testare-una-funzione-con-node-test",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-trasformare-chunk-rispettando-backpressure",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-trasmettere-un-file-con-pipeline",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-unire-percorsi-in-modo-portabile",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-usare-assert-per-invarianti",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-usare-commonjs-da-esm",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-validare-un-indirizzo-ip",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-verificare-esistenza-gestendo-enoent",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "html-css-progetto-biblioteca-responsive-con-filtri-locali",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-aggiornare-prezzi-con-espressione",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-aggregare-condizionalmente-piu-stati",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-assegnare-ranghi-senza-buchi",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-attribuire-alias-leggibili-ai-calcoli",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-calcolare-il-totale-degli-ordini-pagati",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-calcolare-la-media-ignorando-null",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-calcolare-la-quota-del-totale",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-calcolare-un-totale-progressivo",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-calcolare-una-subquery-correlata",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-cancellare-soltanto-righe-annullate",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-cercare-un-prefisso-testuale",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-classificare-importi-con-case",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-combinare-alternative-con-or",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-confrontare-con-una-media-calcolata",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-confrontare-righe-mediante-self-join",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-conservare-clienti-senza-ordini",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-conservare-duplicati-con-union-all",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-contare-righe-e-valori-presenti",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-creare-un-prodotto-cartesiano-controllato",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-creare-un-vincolo-check",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-creare-una-chiave-composta",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-eliminare-duplicati-dalle-citta",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-escludere-uno-stato",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-esporre-una-vista-di-lettura",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-filtrare-con-condizioni-congiunte",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-filtrare-gruppi-con-having",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-indicizzare-una-colonna-di-ricerca",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-individuare-valori-mancanti",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-inserire-il-risultato-di-una-select",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-inserire-righe-con-colonne-esplicite",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-leggere-il-valore-precedente",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-numerare-righe-con-row-number",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-ordinare-per-piu-criteri",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-ottenere-il-primo-ordine-per-cliente",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-progetto-report-vendite",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-proiettare-soltanto-le-colonne-necessarie",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-proteggere-una-divisione-per-zero",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-raggruppare-clienti-per-citta",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-rilevare-email-ripetute-in-dati-importati",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-selezionare-un-insieme-di-stati",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-sommare-quantita-attraverso-tre-tabelle",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-sostituire-null-in-visualizzazione",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-trovare-clienti-privi-di-ordini",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-trovare-gli-estremi-del-listino",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-trovare-l-ultimo-acquisto-senza-funzioni-finestra",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-unire-insiemi-senza-duplicati",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-unire-ordini-e-clienti",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-usare-una-cte-per-separare-aggregazione-e-filtro",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-verificare-esistenza-di-un-acquisto",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sql-verificare-un-intervallo-inclusivo",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-aggiornare-con-una-tabella-sorgente",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-aggiornare-statistiche-per-il-planner",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-aggiungere-una-colonna-con-default",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-aggiungere-una-colonna-generata",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-aggregare-risultati-in-un-array-json",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-analizzare-il-piano-di-una-query",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-annullare-una-parte-con-savepoint",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-annullare-una-transazione",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-arrotondare-importi-per-il-report",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-attivare-i-vincoli-referenziali",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-calcolare-classificazione-per-partizione",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-calcolare-mediana-con-funzioni-finestra",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-calcolare-una-data-relativa",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-cercare-con-pattern-glob",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-cercare-sottostringhe-con-trigram",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-codificare-un-blob-in-esadecimale",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-combinare-righe-con-intersect",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-concatenare-righe-con-separatore",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-confrontare-testo-ascii-senza-caso",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-controllare-integrita-del-database",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-convertire-epoch-unix-in-data",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-costruire-oggetti-json-da-colonne",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-creare-ricerca-full-text-fts5",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-creare-un-indice-parziale",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-creare-un-indice-su-espressione",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-creare-una-tabella-strict",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-dividere-righe-in-fasce-ntile",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-elencare-gli-indici-di-una-tabella",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-eseguire-upsert-su-chiave-primaria",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-espandere-un-array-json-in-righe",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-esportare-una-stringa-sql-quotata",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-estrarre-primi-e-ultimi-valori-finestra",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-estrarre-un-campo-json",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-estrarre-una-porzione-di-stringa",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-evidenziare-parole-trovate-in-fts5",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-filtrare-un-aggregato-con-filter",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-formattare-un-timestamp-utc",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-generare-una-serie-ricorsiva",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-ignorare-un-inserimento-gia-presente",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-impedire-stock-negativo-con-trigger",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-ispezionare-gli-oggetti-del-catalogo",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-ispezionare-struttura-e-tipi-di-tabella",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-ispezionare-tipi-dinamici-delle-espressioni",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-limitare-attesa-su-database-occupato",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-misurare-differenza-in-giorni",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-misurare-pagine-e-dimensione-pagina",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-misurare-quante-righe-sono-cambiate",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-modificare-un-documento-json",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-mostrare-dettagli-delle-foreign-key",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-paginare-stabilmente-tramite-chiave",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-pesare-risultati-fts5-con-bm25",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-progetto-note-fts",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-raggruppare-fatturato-per-mese",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-recuperare-id-intero-autoassegnato",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-rendere-atomico-un-trasferimento",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-restituire-la-riga-appena-inserita",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-rinominare-una-colonna",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-ripulire-spazi-e-caratteri-esterni",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-risparmiare-spazio-con-without-rowid",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-scatenare-un-audit-dopo-un-aggiornamento",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-sottrarre-insiemi-con-except",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-usare-journal-wal-per-letture-concorrenti",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-validare-json-prima-dell-importazione",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-verificare-versione-e-opzioni-sqlite",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "sqlite-execution",
+      "id": "sqlite-verificare-violazioni-delle-foreign-key",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "kind": "node-project-tests",
+      "id": "nodejs-progetto-api-locale-catalogo-prodotti",
+      "passed": true,
+      "details": "✔ id esistente (0.3913ms)\n✔ id assente (0.088ms)\nℹ tests 2\nℹ suites 0\nℹ pass 2\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 74.843\n"
+    },
+    {
+      "kind": "node-api-http",
+      "id": "nodejs-progetto-api-locale-catalogo-prodotti",
+      "passed": true,
+      "details": "GET/products=200 con2prodotti e GET/products/9=404 su loopback39080, fuori dal blocco rete del sandbox."
+    },
+    {
+      "kind": "node-project-tests",
+      "id": "nodejs-progetto-cli-analisi-di-un-file-testo",
+      "passed": true,
+      "details": "✔ due righe (0.7127ms)\nℹ tests 1\nℹ suites 0\nℹ pass 1\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 68.6839\n"
+    },
+    {
+      "kind": "node-project-run",
+      "id": "nodejs-progetto-cli-analisi-di-un-file-testo",
+      "passed": true,
+      "details": "{ lines: 2, words: 3 }\n"
+    },
+    {
+      "kind": "node-project-tests",
+      "id": "nodejs-progetto-pipeline-di-importazione-ndjson",
+      "passed": true,
+      "details": "✔ rifiuta importo (0.4475ms)\nℹ tests 1\nℹ suites 0\nℹ pass 1\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 69.6031\n"
+    },
+    {
+      "kind": "node-project-run",
+      "id": "nodejs-progetto-pipeline-di-importazione-ndjson",
+      "passed": true,
+      "details": "{ records: 2, total: 30 }\n"
+    },
+    {
+      "kind": "react-model-tests",
+      "id": "react-progetto-catalogo-con-ricerca-filtri-e-ordinamento",
+      "passed": true,
+      "details": "✔ disponibili (0.4264ms)\n✔ ricerca (0.0917ms)\nℹ tests 2\nℹ suites 0\nℹ pass 2\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 79.8166\n"
+    },
+    {
+      "kind": "react-vite-build",
+      "id": "react-progetto-catalogo-con-ricerca-filtri-e-ordinamento",
+      "passed": true,
+      "details": "vite v7.1.7 building for production...\ntransforming...\n✓ 26 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                   0.35 kB │ gzip:  0.26 kB\ndist/assets/index-Bwppf2oS.css    0.40 kB │ gzip:  0.26 kB\ndist/assets/index-DiYJwrOK.js   187.81 kB │ gzip: 59.25 kB\n✓ built in 441ms\n"
+    },
+    {
+      "kind": "react-model-tests",
+      "id": "react-progetto-lista-attivita-persistente",
+      "passed": true,
+      "details": "✔ vuoto (0.434ms)\n✔ aggiunta (1.4838ms)\nℹ tests 2\nℹ suites 0\nℹ pass 2\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 78.3781\n"
+    },
+    {
+      "kind": "react-vite-build",
+      "id": "react-progetto-lista-attivita-persistente",
+      "passed": true,
+      "details": "vite v7.1.7 building for production...\ntransforming...\n✓ 26 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                   0.35 kB │ gzip:  0.26 kB\ndist/assets/index-Bwppf2oS.css    0.40 kB │ gzip:  0.26 kB\ndist/assets/index-SW08mDfI.js   187.76 kB │ gzip: 59.25 kB\n✓ built in 496ms\n"
+    },
+    {
+      "kind": "react-model-tests",
+      "id": "react-progetto-tabella-importazione-tsv-con-esportazione",
+      "passed": true,
+      "details": "✔ importa (0.4558ms)\n✔ rifiuta (0.1435ms)\nℹ tests 2\nℹ suites 0\nℹ pass 2\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 85.1208\n"
+    },
+    {
+      "kind": "react-vite-build",
+      "id": "react-progetto-tabella-importazione-tsv-con-esportazione",
+      "passed": true,
+      "details": "vite v7.1.7 building for production...\ntransforming...\n✓ 26 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                   0.35 kB │ gzip:  0.26 kB\ndist/assets/index-Bwppf2oS.css    0.40 kB │ gzip:  0.26 kB\ndist/assets/index-BCVBRIFK.js   187.89 kB │ gzip: 59.27 kB\n✓ built in 541ms\n"
+    },
+    {
+      "kind": "next-build",
+      "id": "nextjs-progetto-api-spese-con-validazione-e-riepilogo",
+      "passed": true,
+      "details": "▲ Next.js 16.4.3 (Turbopack)\n✓ Running next.config took 39ms\n\n  Creating an optimized production build ...\n✓ Compiled successfully in 1160ms\n  Running TypeScript ...\n  Finished TypeScript in 3ms ...\n  Collecting page data using 5 workers ...\n  Generating static pages using 5 workers (0/4) ...\n  Generating static pages using 5 workers (1/4) \n  Generating static pages using 5 workers (2/4) \n  Generating static pages using 5 workers (3/4) \n✓ Generating static pages using 5 workers (4/4) in 702ms\n  Finalizing page optimization ...\n\nRoute (app)\n┌ ○ /\n├ ○ /_not-found\n└ ƒ /api/expenses\n\n\n○  (Static)   prerendered as static content\nƒ  (Dynamic)  server-rendered on demand\n\n⚠ Warning: Next.js ignored package-lock.json in C:\\Users\\danie because it would include your home directory (C:\\Users\\danie).\n To use this directory, set `turbopack.root` in your Next.js config.\n\n"
+    },
+    {
+      "kind": "next-model-tests",
+      "id": "nextjs-progetto-api-spese-con-validazione-e-riepilogo",
+      "passed": true,
+      "details": "✔ negativo (0.5463ms)\n✔ valido (0.0852ms)\nℹ tests 2\nℹ suites 0\nℹ pass 2\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 70.7196\n"
+    },
+    {
+      "kind": "next-build",
+      "id": "nextjs-progetto-dashboard-server-con-ricerca-e-pagina",
+      "passed": true,
+      "details": "▲ Next.js 16.4.3 (Turbopack)\n✓ Running next.config took 33ms\n\n  Creating an optimized production build ...\n✓ Compiled successfully in 1174ms\n  Running TypeScript ...\n  Finished TypeScript in 14ms ...\n  Collecting page data using 4 workers ...\n  Generating static pages using 4 workers (0/3) ...\n✓ Generating static pages using 4 workers (3/3) in 603ms\n  Finalizing page optimization ...\n\nRoute (app)\n┌ ƒ /\n└ ○ /_not-found\n\n\n○  (Static)   prerendered as static content\nƒ  (Dynamic)  server-rendered on demand\n\n⚠ Warning: Next.js ignored package-lock.json in C:\\Users\\danie because it would include your home directory (C:\\Users\\danie).\n To use this directory, set `turbopack.root` in your Next.js config.\n\n"
+    },
+    {
+      "kind": "next-model-tests",
+      "id": "nextjs-progetto-dashboard-server-con-ricerca-e-pagina",
+      "passed": true,
+      "details": "✔ cerca senza caso (0.5405ms)\nℹ tests 1\nℹ suites 0\nℹ pass 1\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 73.9161\n"
+    },
+    {
+      "kind": "next-build",
+      "id": "nextjs-progetto-mini-blog-statico-con-metadata",
+      "passed": true,
+      "details": "▲ Next.js 16.4.3 (Turbopack)\n✓ Running next.config.mjs took 39ms\n\n  Creating an optimized production build ...\n✓ Compiled successfully in 970ms\n  Running TypeScript ...\n  Finished TypeScript in 3ms ...\n  Collecting page data using 5 workers ...\n  Generating static pages using 5 workers (0/5) ...\n  Generating static pages using 5 workers (1/5) \n  Generating static pages using 5 workers (2/5) \n  Generating static pages using 5 workers (3/5) \n✓ Generating static pages using 5 workers (5/5) in 718ms\n  Finalizing page optimization ...\n\nRoute (app)\n┌ ○ /\n├ ○ /_not-found\n└   /posts/[slug]\n  ├ ● /posts/inizio\n  └ ● /posts/ricerca\n\n\n○  (Static)  prerendered as static content\n●  (SSG)     prerendered as static HTML (uses generateStaticParams)\n\n⚠ Warning: Next.js ignored package-lock.json in C:\\Users\\danie because it would include your home directory (C:\\Users\\danie).\n To use this directory, set `turbopack.root` in your Next.js config.\n\n"
+    },
+    {
+      "kind": "fastapi-pytest",
+      "id": "fastapi-progetto-api-attivita-con-repository-sqlite",
+      "passed": true,
+      "details": ".                                                                        [100%]\n============================== warnings summary ===============================\n..\\..\\python\\starlette\\testclient.py:37\n  C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\web-qa\\python\\starlette\\testclient.py:37: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.\n    _PortalFactoryType = typing.Callable[[], typing.ContextManager[anyio.abc.BlockingPortal]]\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n1 passed, 1 warning in 0.73s\n"
+    },
+    {
+      "kind": "fastapi-pytest",
+      "id": "fastapi-progetto-api-preventivi-con-validazione-e-test",
+      "passed": true,
+      "details": "..                                                                       [100%]\n============================== warnings summary ===============================\n..\\..\\python\\starlette\\testclient.py:37\n  C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\web-qa\\python\\starlette\\testclient.py:37: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.\n    _PortalFactoryType = typing.Callable[[], typing.ContextManager[anyio.abc.BlockingPortal]]\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n2 passed, 1 warning in 0.64s\n"
+    },
+    {
+      "kind": "django-system-check",
+      "id": "django-aggiornare-valori-atomicamente-con-f",
+      "passed": true,
+      "details": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "kind": "django-system-check",
+      "id": "django-aggiungere-messaggi-dopo-redirect",
+      "passed": true,
+      "details": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "kind": "django-system-check",
+      "id": "django-aggiungere-un-comando-management-personalizzato",
+      "passed": true,
+      "details": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "kind": "django-system-check",
+      "id": "django-aggregare-conteggi-e-priorita-media",
+      "passed": true,
+      "details": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "kind": "django-system-check",
+      "id": "django-applicare-cache-temporale-alla-vista",
+      "passed": true,
+      "details": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "kind": "django-system-check",
+      "id": "django-cercare-testo-senza-distinzione-maiuscole",
+      "passed": true,
+      "details": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "kind": "django-system-check",
+      "id": "django-combinare-alternative-con-oggetti-q",
+      "passed": true,
+      "details": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "kind": "django-system-check",
+      "id": "django-comporre-template-con-ereditarieta",
+      "passed": true,
+      "details": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "kind": "django-system-check",
+      "id": "django-creare-o-recuperare-senza-duplicare",
+      "passed": true,
+      "details": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "kind": "django-system-check",
+      "id": "django-definire-listview-con-paginazione",
+      "passed": true,
+      "details": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "kind": "django-system-check",
+      "id": "django-elencare-oggetti-con-template-for-empty",
+      "passed": true,
+      "details": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "kind": "django-system-check",
+      "id": "django-escludere-righe-da-un-queryset",
+      "passed": true,
+      "details": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "kind": "django-system-check",
+      "id": "django-eseguire-inserimento-batch-con-bulk-create",
+      "passed": true,
+      "details": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "kind": "django-system-check",
+      "id": "django-filtrare-oggetti-orm-per-stato",
+      "passed": true,
+      "details": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "kind": "django-system-check",
+      "id": "django-inviare-modelform-con-protezione-csrf",
+      "passed": true,
+      "details": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "kind": "django-system-check",
+      "id": "django-ispezionare-sql-generato-dal-queryset",
+      "passed": true,
+      "details": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "kind": "django-system-check",
+      "id": "django-iterare-grandi-queryset-a-blocchi",
+      "passed": true,
+      "details": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "kind": "django-system-check",
+      "id": "django-limitare-una-vista-al-metodo-get",
+      "passed": true,
+      "details": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "kind": "django-system-check",
+      "id": "django-memorizzare-una-preferenza-in-sessione",
+      "passed": true,
+      "details": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "kind": "django-system-check",
+      "id": "django-normalizzare-un-campo-con-clean",
+      "passed": true,
+      "details": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "kind": "django-system-check",
+      "id": "django-ordinare-risultati-per-piu-campi",
+      "passed": true,
+      "details": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "kind": "django-system-check",
+      "id": "django-paginare-queryset-con-paginator",
+      "passed": true,
+      "details": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "kind": "django-system-check",
+      "id": "django-progetto-taccuino-django-con-creazione-ricerca-e-test",
+      "passed": true,
+      "details": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "kind": "django-tests",
+      "id": "django-progetto-taccuino-django-con-creazione-ricerca-e-test",
+      "passed": true,
+      "details": "Found 3 test(s).\nSystem check identified no issues (0 silenced).\nCreating test database for alias 'default'...\n\n...\n----------------------------------------------------------------------\nRan 3 tests in 0.060s\n\nOK\nDestroying test database for alias 'default'...\n\n"
+    },
+    {
+      "kind": "django-system-check",
+      "id": "django-proteggere-una-vista-con-login-required",
+      "passed": true,
+      "details": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "kind": "django-system-check",
+      "id": "django-raggruppare-queryset-con-annotate",
+      "passed": true,
+      "details": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "kind": "django-system-check",
+      "id": "django-registrare-un-modeladmin-con-ricerca",
+      "passed": true,
+      "details": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "kind": "django-system-check",
+      "id": "django-rendere-atomiche-piu-modifiche-orm",
+      "passed": true,
+      "details": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "kind": "django-system-check",
+      "id": "django-renderizzare-un-template-con-autoescape",
+      "passed": true,
+      "details": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "kind": "django-system-check",
+      "id": "django-restituire-un-download-csv",
+      "passed": true,
+      "details": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "kind": "django-system-check",
+      "id": "django-restituire404-con-get-object-or-404",
+      "passed": true,
+      "details": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "kind": "django-system-check",
+      "id": "django-testare-un-form-invalido",
+      "passed": true,
+      "details": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "kind": "django-tests",
+      "id": "django-testare-un-form-invalido",
+      "passed": true,
+      "details": "Found 2 test(s).\nSystem check identified no issues (0 silenced).\n..\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nOK\n"
+    },
+    {
+      "kind": "django-system-check",
+      "id": "django-testare-una-vista-con-testcase",
+      "passed": true,
+      "details": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "kind": "django-tests",
+      "id": "django-testare-una-vista-con-testcase",
+      "passed": true,
+      "details": "Found 1 test(s).\nSystem check identified no issues (0 silenced).\nCreating test database for alias 'default'...\n\n.\n----------------------------------------------------------------------\nRan 1 test in 0.005s\n\nOK\nDestroying test database for alias 'default'...\n\n"
+    },
+    {
+      "kind": "django-system-check",
+      "id": "django-validare-input-usando-django-forms",
+      "passed": true,
+      "details": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-accettare-formdata-senza-autenticazione-cookie",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.73\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-aggiungere-endpoint-head-dedicato",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.13\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-aggiungere-request-id-alla-risposta",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:02.36\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-applicare-filtro-validazione-a-endpoint",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:02.29\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-applicare-paginazione-stabile-con-cursore",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.32\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-applicare-rate-limiting-a-una-rotta",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.26\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-comprimere-risposte-con-middleware",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.27\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-consentire-cors-a-origine-specifica",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:02.21\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-controllare-ambiente-development",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.17\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-convertire-parametri-percorso",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.44\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-creare-servizio-scoped-per-richiesta",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:02.25\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-deserializzare-body-json-con-record",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:02.62\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-eliminare-cookie-usando-lo-stesso-path",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:02.44\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-esporre-health-check-integrato",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.23\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-gestire-fallback-per-rotte-assenti",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:02.46\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-gestire-patch-con-proprieta-facoltative",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:02.66\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-gestire-put-con-percorso-e-body",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.41\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-impostare-cache-control-esplicito",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:02.46\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-impostare-cookie-di-preferenza",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:02.31\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-impostare-header-di-risposta",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.92\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-iniettare-un-servizio-singleton",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.31\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-iniettare-una-implementazione-tramite-interfaccia",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:02.39\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-leggere-configurazione-da-ambiente",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.19\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-leggere-cookie-della-richiesta",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:02.36\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-leggere-json-manualmente-con-gestione-errori",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.26\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-leggere-metadati-di-file-multipart",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.40\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-leggere-parametri-query-tipizzati",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.35\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-leggere-query-multivalore",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:02.32\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-leggere-un-header-della-richiesta",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:02.40\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-limitare-dimensione-body-sul-server-kestrel",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.31\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-memorizzare-output-di-endpoint",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.27\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-misurare-durata-con-middleware",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:02.50\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-nascondere-una-proprieta-json-interna",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.28\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-nominare-endpoint-e-costruire-collegamenti",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:02.33\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-normalizzare-errori-non-gestiti",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:02.41\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-personalizzare-serializzazione-json-camelcase",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:02.25\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-produrre-errore404-tipizzato",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:02.57\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-progetto-api-prodotti-con-repository-concorrente",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.44\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-progetto-servizio-preventivi-con-validazione-decimal",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.31\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-raggruppare-dati-risposta-con-proiezione",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:02.46\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-raggruppare-rotte-con-mapgroup",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.25\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-registrare-shutdown-applicazione",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:02.22\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-restituire-html-esplicito",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:02.29\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-restituire-problem-details",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.17\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-restituire-redirect-relativo",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.14\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-restituire-status201-e-location",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.15\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-restituire-status202-per-lavoro-accettato",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.20\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-restituire204-dopo-delete",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.25\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-ricevere-dateonly-da-query",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.24\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-rilevare-disconnessione-durante-streaming",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:02.32\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-rispettare-cancellazione-della-richiesta",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:02.36\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-rispondere-con-etag-e304",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:02.41\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-scaricare-file-csv-da-buffer",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.32\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-scrivere-log-strutturati-della-richiesta",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.50\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-separare-endpoint-extension-in-file-dedicato",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:02.50\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-serializzare-enum-come-stringa",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.78\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-servire-file-con-supporto-range",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.70\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-servire-file-statici-da-wwwroot",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.38\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-trasmettere-risultati-come-async-enumerable",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.65\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-validare-input-prima-del-calcolo",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.82\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-validare-modello-con-dataannotations",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:02.97\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-verificare-api-key-da-ambiente",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.43\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-vincolare-parametro-con-route-constraint",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:02.33\n"
+    },
+    {
+      "id": "all",
+      "kind": "current-javascript-jsx-parse",
+      "passed": true,
+      "details": "{\"files\":597,\"errors\":[]}"
+    },
+    {
+      "id": "all",
+      "kind": "current-python-json",
+      "passed": true,
+      "details": "{\"counts\": {\"python\": 448, \"json\": 216}, \"failures\": []}"
+    },
+    {
+      "id": "react-progetto-catalogo-con-ricerca-filtri-e-ordinamento",
+      "kind": "browser-smoke",
+      "passed": true,
+      "details": "Flusso browser Chromium/Windows su localhost; nessun errore JS."
+    },
+    {
+      "id": "react-progetto-lista-attivita-persistente",
+      "kind": "browser-smoke",
+      "passed": true,
+      "details": "Flusso browser Chromium/Windows su localhost; nessun errore JS."
+    },
+    {
+      "id": "react-progetto-tabella-importazione-tsv-con-esportazione",
+      "kind": "browser-smoke",
+      "passed": true,
+      "details": "Flusso browser Chromium/Windows su localhost; nessun errore JS."
+    },
+    {
+      "id": "html-css-progetto-biblioteca-responsive-con-filtri-locali",
+      "kind": "browser-smoke",
+      "passed": true,
+      "details": "Flusso browser Chromium/Windows su localhost; nessun errore JS."
+    }
+  ],
+  "failures": [],
+  "limits": [
+    "PostgreSQL e MySQL: controllo strutturale/documentale, nessun server avviato.",
+    "Le verifiche sono state eseguite su questo Windows; nessuna attestazione Linux/macOS.",
+    "Parse JSX e build di tre progetti React/tre Next non equivalgono a test funzionali di ogni singola ricetta."
+  ],
+  "projects": [
+    {
+      "id": "nodejs-progetto-api-locale-catalogo-prodotti",
+      "stack": "nodejs",
+      "files": [
+        "src/products.mjs",
+        "src/server.mjs",
+        "test/products.test.mjs",
+        "package.json",
+        "README.md"
+      ]
+    },
+    {
+      "id": "nodejs-progetto-cli-analisi-di-un-file-testo",
+      "stack": "nodejs",
+      "files": [
+        "src/count.mjs",
+        "src/main.mjs",
+        "test/count.test.mjs",
+        "sample.txt",
+        "package.json",
+        "README.md"
+      ]
+    },
+    {
+      "id": "nodejs-progetto-pipeline-di-importazione-ndjson",
+      "stack": "nodejs",
+      "files": [
+        "src/import.mjs",
+        "src/main.mjs",
+        "sample.ndjson",
+        "test/import.test.mjs",
+        "package.json",
+        "README.md"
+      ]
+    },
+    {
+      "id": "react-progetto-catalogo-con-ricerca-filtri-e-ordinamento",
+      "stack": "react",
+      "files": [
+        "package.json",
+        "index.html",
+        "src/main.jsx",
+        "src/App.jsx",
+        "src/style.css",
+        "src/model.js",
+        "test/model.test.mjs",
+        "README.md"
+      ]
+    },
+    {
+      "id": "react-progetto-lista-attivita-persistente",
+      "stack": "react",
+      "files": [
+        "package.json",
+        "index.html",
+        "src/main.jsx",
+        "src/App.jsx",
+        "src/style.css",
+        "src/model.js",
+        "test/model.test.mjs",
+        "README.md"
+      ]
+    },
+    {
+      "id": "react-progetto-tabella-importazione-tsv-con-esportazione",
+      "stack": "react",
+      "files": [
+        "package.json",
+        "index.html",
+        "src/main.jsx",
+        "src/App.jsx",
+        "src/style.css",
+        "src/model.js",
+        "test/model.test.mjs",
+        "README.md"
+      ]
+    },
+    {
+      "id": "nextjs-progetto-api-spese-con-validazione-e-riepilogo",
+      "stack": "nextjs",
+      "files": [
+        "package.json",
+        "app/layout.js",
+        "app/page.js",
+        "app/globals.css",
+        "lib/model.js",
+        "app/api/expenses/route.js",
+        "test/model.test.mjs",
+        "README.md"
+      ]
+    },
+    {
+      "id": "nextjs-progetto-dashboard-server-con-ricerca-e-pagina",
+      "stack": "nextjs",
+      "files": [
+        "package.json",
+        "app/layout.js",
+        "app/page.js",
+        "app/globals.css",
+        "lib/products.js",
+        "test/products.test.mjs",
+        "README.md"
+      ]
+    },
+    {
+      "id": "nextjs-progetto-mini-blog-statico-con-metadata",
+      "stack": "nextjs",
+      "files": [
+        "package.json",
+        "app/layout.js",
+        "app/page.js",
+        "app/globals.css",
+        "lib/posts.js",
+        "app/posts/[slug]/page.js",
+        "app/not-found.js",
+        "next.config.mjs",
+        "README.md"
+      ]
+    },
+    {
+      "id": "aspnet-progetto-api-prodotti-con-repository-concorrente",
+      "stack": "aspnet",
+      "files": [
+        "Demo.csproj",
+        "Product.cs",
+        "ProductStore.cs",
+        "Program.cs",
+        "requests.http",
+        "README.md"
+      ]
+    },
+    {
+      "id": "aspnet-progetto-servizio-preventivi-con-validazione-decimal",
+      "stack": "aspnet",
+      "files": [
+        "Demo.csproj",
+        "Quote.cs",
+        "Program.cs",
+        "requests.http",
+        "README.md"
+      ]
+    },
+    {
+      "id": "fastapi-progetto-api-attivita-con-repository-sqlite",
+      "stack": "fastapi",
+      "files": [
+        "repository.py",
+        "app.py",
+        "test_app.py",
+        "requirements.txt",
+        "README.md"
+      ]
+    },
+    {
+      "id": "fastapi-progetto-api-preventivi-con-validazione-e-test",
+      "stack": "fastapi",
+      "files": [
+        "pricing.py",
+        "app.py",
+        "test_pricing.py",
+        "requirements.txt",
+        "README.md"
+      ]
+    },
+    {
+      "id": "html-css-progetto-biblioteca-responsive-con-filtri-locali",
+      "stack": "html-css",
+      "files": [
+        "index.html",
+        "style.css",
+        "app.js",
+        "README.md"
+      ]
+    },
+    {
+      "id": "django-progetto-taccuino-django-con-creazione-ricerca-e-test",
+      "stack": "django",
+      "files": [
+        "manage.py",
+        "config/__init__.py",
+        "config/settings.py",
+        "config/urls.py",
+        "notes/__init__.py",
+        "notes/models.py",
+        "notes/views.py",
+        "notes/migrations/__init__.py",
+        "notes/migrations/0001_initial.py",
+        "seed.py",
+        "requirements.txt",
+        "notes/forms.py",
+        "templates/notebook.html",
+        "notes/tests.py",
+        "README.md"
+      ]
+    },
+    {
+      "id": "sql-progetto-report-vendite",
+      "stack": "sql",
+      "files": [
+        "schema.sql",
+        "report.sql",
+        "README.md"
+      ]
+    },
+    {
+      "id": "sqlite-progetto-note-fts",
+      "stack": "sqlite",
+      "files": [
+        "schema.sql",
+        "seed.sql",
+        "search.sql",
+        "README.md"
+      ]
+    },
+    {
+      "id": "postgresql-progetto-coda-transazionale",
+      "stack": "postgresql",
+      "files": [
+        "schema.sql",
+        "seed.sql",
+        "claim.sql",
+        "README.md"
+      ]
+    },
+    {
+      "id": "postgresql-progetto-report-materializzato",
+      "stack": "postgresql",
+      "files": [
+        "schema.sql",
+        "seed.sql",
+        "report.sql",
+        "refresh.sql",
+        "README.md"
+      ]
+    },
+    {
+      "id": "mysql-progetto-magazzino",
+      "stack": "mysql",
+      "files": [
+        "schema.sql",
+        "seed.sql",
+        "reserve.sql",
+        "README.md"
+      ]
+    }
+  ],
+  "summary": {
+    "recipes": 750,
+    "projects": 20,
+    "checks": 400,
+    "failures": 0,
+    "attested": 573
+  },
+  "historical_removed_checks": [
+    {
+      "kind": "node-check",
+      "id": "nodejs-generare-uuid-casuale",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "node-check",
+      "id": "nodejs-rilevare-runtime-e-piattaforma",
+      "passed": true,
+      "details": "Comandi"
+    },
+    {
+      "kind": "django-system-check",
+      "id": "django-selezionare-soltanto-le-colonne-necessarie",
+      "passed": true,
+      "details": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "kind": "django-system-check",
+      "id": "django-verificare-esistenza-senza-caricare-oggetti",
+      "passed": true,
+      "details": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-definire-una-minimal-api-get",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.17\n"
+    },
+    {
+      "kind": "aspnet-build",
+      "id": "aspnet-restituire-testo-semplice",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.24\n"
+    }
+  ],
+  "retry_history": [
+    {
+      "kind": "node-api-http",
+      "id": "nodejs-progetto-api-locale-catalogo-prodotti",
+      "details": "cannot access local variable 'data' where it is not associated with a value"
+    },
+    {
+      "kind": "next-build",
+      "id": "nextjs-progetto-dashboard-server-con-ricerca-e-pagina",
+      "details": "▲ Next.js 16.4.3 (Turbopack)\n✓ Running next.config took 39ms\n\n  Creating an optimized production build ...\n✓ Compiled successfully in 1038ms\n  Running TypeScript ...\n  Finished TypeScript in 2ms ...\n  Collecting page data using 4 workers ...\n  Generating static pages using 4 workers (0/3) ...\n⚠ Warning: Next.js ignored package-lock.json in C:\\Users\\danie because it would include your home directory (C:\\Users\\danie).\n To use this directory, set `turbopack.root` in your Next.js config.\n\nError occurred prerendering page \"/_not-found\". Read more: https://nextjs.org/docs/messages/prerender-error\nError: EPERM: operation not permitted, mkdir 'C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\web-qa\\next\\projects\\nextjs-progetto-dashboard-server-con-ricerca-e-pagina\\.next\\server\\app\\_not-found.segments\\_not-found'\n    at ignore-listed frames {\n  errno: -4048,\n  code: 'EPERM',\n  syscall: 'mkdir',\n  path: 'C:\\\\Users\\\\danie\\\\Desktop\\\\Software in sviluppo\\\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\\\.cache\\\\web-qa\\\\next\\\\projects\\\\nextjs-progetto-dashboard-server-con-ricerca-e-pagina\\\\.next\\\\server\\\\app\\\\_not-found.segments\\\\_not-found'\n}\nExport encountered an error on /_not-found/page: /_not-found, exiting the build.\n⨯ Next.js build worker exited with code: 1 and signal: null\n"
+    },
+    {
+      "kind": "fastapi-pytest",
+      "id": "fastapi-progetto-api-attivita-con-repository-sqlite",
+      "details": "              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n..\\..\\python\\_pytest\\fixtures.py:639: in _get_active_fixturedef\n    fixturedef.execute(request=subrequest)\n..\\..\\python\\_pytest\\fixtures.py:1127: in execute\n    result = ihook.pytest_fixture_setup(fixturedef=self, request=request)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n..\\..\\python\\pluggy\\_caller.py:197: in __call__\n    return self._hookexec(\n..\\..\\python\\pluggy\\_manager.py:183: in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n..\\..\\python\\_pytest\\setuponly.py:36: in pytest_fixture_setup\n    return (yield)\n            ^^^^^\n..\\..\\python\\_pytest\\fixtures.py:1195: in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n..\\..\\python\\_pytest\\fixtures.py:922: in call_fixture_func\n    fixture_result = next(generator)\n                     ^^^^^^^^^^^^^^^\n..\\..\\python\\_pytest\\tmpdir.py:264: in tmp_path\n    path = _mk_tmp(request, tmp_path_factory)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n..\\..\\python\\_pytest\\tmpdir.py:251: in _mk_tmp\n    return factory.mktemp(name, numbered=True)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n..\\..\\python\\_pytest\\tmpdir.py:130: in mktemp\n    basename = self._ensure_relative_to_basetemp(basename)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n..\\..\\python\\_pytest\\tmpdir.py:111: in _ensure_relative_to_basetemp\n    if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():\n        ^^^^^^^^^^^^^^^^^^\n..\\..\\python\\_pytest\\tmpdir.py:186: in getbasetemp\n    basetemp = make_numbered_dir_with_cleanup(\n..\\..\\python\\_pytest\\pathlib.py:407: in make_numbered_dir_with_cleanup\n    raise e\n..\\..\\python\\_pytest\\pathlib.py:388: in make_numbered_dir_with_cleanup\n    p = make_numbered_dir(root, prefix, mode)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nroot = WindowsPath('C:/Users/danie/AppData/Local/Packages/sandbox.{6131da39-e450-4dd4-ab08-c1fcdb664856}/AC/Temp/pytest-of-danie')\nprefix = 'pytest-', mode = 448\n\n    def make_numbered_dir(root: Path, prefix: str, mode: int = 0o700) -> Path:\n        \"\"\"Create a directory with an increased number as suffix for the given prefix.\"\"\"\n        for i in range(10):\n            # try up to 10 times to create the folder\n            max_existing = max(map(parse_num, find_suffixes(root, prefix)), default=-1)\n            new_number = max_existing + 1\n            new_path = root.joinpath(f\"{prefix}{new_number}\")\n            try:\n                new_path.mkdir(mode=mode)\n            except Exception:\n                pass\n            else:\n                _force_symlink(root, prefix + \"current\", new_path)\n                return new_path\n        else:\n>           raise OSError(\n                \"could not create numbered dir with prefix \"\n                f\"{prefix} in {root} after 10 tries\"\n            )\nE           OSError: could not create numbered dir with prefix pytest- in C:\\Users\\danie\\AppData\\Local\\Packages\\sandbox.{6131da39-e450-4dd4-ab08-c1fcdb664856}\\AC\\Temp\\pytest-of-danie after 10 tries\n\n..\\..\\python\\_pytest\\pathlib.py:240: OSError\n============================== warnings summary ===============================\n..\\..\\python\\_pytest\\config\\__init__.py:1474\n  C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\web-qa\\python\\_pytest\\config\\__init__.py:1474: PytestConfigWarning: Unknown config option: qt_api\n  \n    self._warn_or_fail_if_strict(f\"Unknown config option: {key}\\n\")\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n=========================== short test summary info ===========================\nERROR test_app.py::test_flow - OSError: could not create numbered dir with pr...\n1 warning, 1 error in 1.72s\n"
+    },
+    {
+      "kind": "fastapi-pytest",
+      "id": "fastapi-progetto-api-preventivi-con-validazione-e-test",
+      "details": "Command '['C:\\\\Users\\\\danie\\\\AppData\\\\Local\\\\hermes\\\\hermes-agent\\\\venv\\\\Scripts\\\\python.exe', '-m', 'pytest', '-q']' timed out after 90 seconds"
+    }
+  ],
+  "lifecycle": {
+    "date": "2026-10-29",
+    "recipes": 14,
+    "checks": [
+      {
+        "id": "nodejs-inizializzare-ambiente-e-progetto-nodejs",
+        "kind": "static-files",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "id": "nodejs-inizializzare-ambiente-e-progetto-nodejs",
+        "kind": "node-test-or-check",
+        "passed": true,
+        "details": "30\n"
+      },
+      {
+        "id": "nodejs-debug-test-e-produzione-nodejs",
+        "kind": "static-files",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "id": "nodejs-debug-test-e-produzione-nodejs",
+        "kind": "node-test-or-check",
+        "passed": true,
+        "details": "✔ totale (0.3937ms)\n✔ quantità invalida (0.2644ms)\nℹ tests 2\nℹ suites 0\nℹ pass 2\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 80.6803\n"
+      },
+      {
+        "id": "react-inizializzare-ambiente-e-progetto-react",
+        "kind": "static-files",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "id": "react-inizializzare-ambiente-e-progetto-react",
+        "kind": "vite-build",
+        "passed": true,
+        "details": "vite v7.1.7 building for production...\ntransforming...\n✓ 25 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                   0.35 kB │ gzip:  0.26 kB\ndist/assets/index-Bwppf2oS.css    0.40 kB │ gzip:  0.26 kB\ndist/assets/index-CvYESiua.js   186.82 kB │ gzip: 58.82 kB │ map: 875.19 kB\n✓ built in 485ms\n"
+      },
+      {
+        "id": "react-debug-test-e-produzione-react",
+        "kind": "static-files",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "id": "react-debug-test-e-produzione-react",
+        "kind": "vite-build",
+        "passed": true,
+        "details": "vite v7.1.7 building for production...\ntransforming...\n✓ 26 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                   0.35 kB │ gzip:  0.26 kB\ndist/assets/index-Bwppf2oS.css    0.40 kB │ gzip:  0.26 kB\ndist/assets/index-5UWZ1A9T.js   187.07 kB │ gzip: 58.96 kB │ map: 875.86 kB\n✓ built in 501ms\n"
+      },
+      {
+        "id": "react-debug-test-e-produzione-react",
+        "kind": "node-tests",
+        "passed": true,
+        "details": "✔ moltiplica (0.5543ms)\n✔ rifiuta zero (0.2014ms)\nℹ tests 2\nℹ suites 0\nℹ pass 2\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 73.3155\n"
+      },
+      {
+        "id": "nextjs-inizializzare-ambiente-e-progetto-nextjs",
+        "kind": "static-files",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "id": "nextjs-inizializzare-ambiente-e-progetto-nextjs",
+        "kind": "next-build",
+        "passed": true,
+        "details": "▲ Next.js 16.4.3 (Turbopack)\n✓ Running next.config took 97ms\n\n  Creating an optimized production build ...\n✓ Compiled successfully in 2.1s\n  Running TypeScript ...\n  Finished TypeScript in 3ms ...\n  Collecting page data using 4 workers ...\n  Generating static pages using 4 workers (0/3) ...\n✓ Generating static pages using 4 workers (3/3) in 863ms\n  Finalizing page optimization ...\n\nRoute (app)\n┌ ○ /\n└ ○ /_not-found\n\n\n○  (Static)  prerendered as static content\n\n⚠ Warning: Next.js ignored package-lock.json in C:\\Users\\danie because it would include your home directory (C:\\Users\\danie).\n To use this directory, set `turbopack.root` in your Next.js config.\n\n"
+      },
+      {
+        "id": "nextjs-debug-test-e-produzione-nextjs",
+        "kind": "static-files",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "id": "nextjs-debug-test-e-produzione-nextjs",
+        "kind": "next-build",
+        "passed": true,
+        "details": "▲ Next.js 16.4.3 (Turbopack)\n✓ Running next.config took 47ms\n\n  Creating an optimized production build ...\n✓ Compiled successfully in 1050ms\n  Running TypeScript ...\n  Finished TypeScript in 2ms ...\n  Collecting page data using 4 workers ...\n  Generating static pages using 4 workers (0/3) ...\n✓ Generating static pages using 4 workers (3/3) in 733ms\n  Finalizing page optimization ...\n\nRoute (app)\n┌ ○ /\n└ ○ /_not-found\n\n\n○  (Static)  prerendered as static content\n\n⚠ Warning: Next.js ignored package-lock.json in C:\\Users\\danie because it would include your home directory (C:\\Users\\danie).\n To use this directory, set `turbopack.root` in your Next.js config.\n\n"
+      },
+      {
+        "id": "nextjs-debug-test-e-produzione-nextjs",
+        "kind": "node-tests",
+        "passed": true,
+        "details": "✔ totale (0.5448ms)\nℹ tests 1\nℹ suites 0\nℹ pass 1\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 75.0114\n"
+      },
+      {
+        "id": "aspnet-inizializzare-ambiente-e-progetto-aspnet",
+        "kind": "static-files",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "id": "aspnet-inizializzare-ambiente-e-progetto-aspnet",
+        "kind": "dotnet-build",
+        "passed": true,
+        "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:02.80\n"
+      },
+      {
+        "id": "aspnet-debug-test-e-produzione-aspnet",
+        "kind": "static-files",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "id": "aspnet-debug-test-e-produzione-aspnet",
+        "kind": "dotnet-build",
+        "passed": true,
+        "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.48\n"
+      },
+      {
+        "id": "aspnet-debug-test-e-produzione-aspnet",
+        "kind": "dotnet-tests",
+        "passed": true,
+        "details": "2controlli superati\n"
+      },
+      {
+        "id": "fastapi-inizializzare-ambiente-e-progetto-fastapi",
+        "kind": "static-files",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "id": "fastapi-inizializzare-ambiente-e-progetto-fastapi",
+        "kind": "fastapi-testclient",
+        "passed": true,
+        "details": "health200\n"
+      },
+      {
+        "id": "fastapi-debug-test-e-produzione-fastapi",
+        "kind": "static-files",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "id": "fastapi-debug-test-e-produzione-fastapi",
+        "kind": "fastapi-testclient",
+        "passed": true,
+        "details": "..                                                                       [100%]\n============================== warnings summary ===============================\n..\\..\\python\\starlette\\testclient.py:37\n  C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\web-qa\\python\\starlette\\testclient.py:37: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.\n    _PortalFactoryType = typing.Callable[[], typing.ContextManager[anyio.abc.BlockingPortal]]\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n2 passed, 1 warning in 0.81s\n"
+      },
+      {
+        "id": "html-css-inizializzare-ambiente-e-progetto-html-css",
+        "kind": "static-files",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "id": "html-css-inizializzare-ambiente-e-progetto-html-css",
+        "kind": "node-test-or-check",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "id": "html-css-debug-test-e-produzione-html-css",
+        "kind": "static-files",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "id": "html-css-debug-test-e-produzione-html-css",
+        "kind": "node-test-or-check",
+        "passed": true,
+        "details": "✔ totale (0.3754ms)\n✔ rifiuta zero (0.1326ms)\nℹ tests 2\nℹ suites 0\nℹ pass 2\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 73.8241\n"
+      },
+      {
+        "id": "django-inizializzare-ambiente-e-progetto-django",
+        "kind": "static-files",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "id": "django-inizializzare-ambiente-e-progetto-django",
+        "kind": "django-check",
+        "passed": true,
+        "details": "System check identified no issues (0 silenced).\n"
+      },
+      {
+        "id": "django-debug-test-e-produzione-django",
+        "kind": "static-files",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "id": "django-debug-test-e-produzione-django",
+        "kind": "django-check",
+        "passed": true,
+        "details": "System check identified no issues (0 silenced).\n"
+      },
+      {
+        "id": "django-debug-test-e-produzione-django",
+        "kind": "django-tests",
+        "passed": true,
+        "details": "Found 2 test(s).\nSystem check identified no issues (0 silenced).\nCreating test database for alias 'default'...\n\n..\n----------------------------------------------------------------------\nRan 2 tests in 0.006s\n\nOK\nDestroying test database for alias 'default'...\n\n"
+      }
+    ],
+    "failures": [],
+    "limits": [
+      "Breakpoint VSCode configurati ma nessuna sessione F5 attestata.",
+      "Processi di produzione descritti; nessuna distribuzione pubblica.",
+      "Django check --deploy segnala intenzionalmente la configurazione locale da sostituire."
+    ]
+  },
+  "current_source_counts": {
+    "nodejs": 90,
+    "react": 100,
+    "nextjs": 100,
+    "aspnet": 65,
+    "fastapi": 65,
+    "html-css": 45,
+    "django": 35,
+    "sql": 50,
+    "sqlite": 65,
+    "postgresql": 75,
+    "mysql": 60
+  },
+  "current_static": {
+    "python": 448,
+    "json": 216,
+    "javascript_jsx": 597
+  }
+}

@@ -1,0 +1,11 @@
+#include <QtWidgets>
+#include <QtCore>
+#include <QtGui>
+
+int main(int argc, char **argv) {
+ QApplication app(argc,argv);
+ QWidget window; window.resize(720,480);
+ auto *layout=new QVBoxLayout(&window);
+ auto *bar=new QStatusBar; auto *b=new QPushButton("Completa"); QObject::connect(b,&QPushButton::clicked,bar,[bar]{bar->showMessage("Completato",2000);}); layout->addWidget(b); layout->addWidget(bar);
+ window.show(); return app.exec();
+}

@@ -1,0 +1,10 @@
+package main
+
+import (
+"fmt"
+"sync"
+)
+
+func main(){
+var group sync.WaitGroup;for i:=0;i<3;i++{group.Add(1);go func(){defer group.Done()}()};group.Wait();fmt.Println("3 lavori conclusi")
+}

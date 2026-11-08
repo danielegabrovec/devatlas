@@ -1,0 +1,11 @@
+#include <QtWidgets>
+#include <QtCore>
+#include <QtGui>
+
+int main(int argc, char **argv) {
+ QApplication app(argc,argv);
+ QWidget window; window.resize(720,480);
+ auto *layout=new QVBoxLayout(&window);
+ auto *group=new QButtonGroup(&window); for(const auto &name: {"JSON","CSV","XML"}) { auto *radio=new QRadioButton(name); group->addButton(radio); layout->addWidget(radio); }
+ window.show(); return app.exec();
+}

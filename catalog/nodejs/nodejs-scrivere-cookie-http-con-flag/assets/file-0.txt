@@ -1,0 +1,1 @@
+import{createServer}from'node:http';createServer((q,r)=>{r.setHeader('Set-Cookie','theme=dark; Path=/; HttpOnly; SameSite=Lax');r.end('cookie dimostrativo locale')}).listen(3000,'127.0.0.1');

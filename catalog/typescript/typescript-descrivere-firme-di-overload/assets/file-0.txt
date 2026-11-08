@@ -1,0 +1,7 @@
+function duplicate(value: string): string;
+function duplicate(value: number): number;
+function duplicate(value: string | number): string | number {
+  return typeof value === "number" ? value*2 : value+value;
+}
+console.log(duplicate("a"), duplicate(3));
+export {};

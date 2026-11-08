@@ -1,0 +1,2 @@
+const {contextBridge,ipcRenderer}=require('electron');
+contextBridge.exposeInMainWorld('recipe',{run:()=>ipcRenderer.invoke('demo:run')});

@@ -1,0 +1,76 @@
+{
+  "id": "csharp-proiettare-dati-con-select",
+  "title": "Proiettare dati con Select",
+  "summary": "Crea una sequenza derivata mantenendo separata la sorgente.",
+  "stack": "csharp",
+  "group": "Linguaggi",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "C# 12, .NET 8; compatibile con SDK successivi che supportano net8.0",
+  "prerequisites": "SDK .NET 8+ e targeting pack net8.0; dotnet nel PATH. Nessun pacchetto NuGet esterno. Il primo restore può richiedere i pack della piattaforma.",
+  "tags": [
+    "linq",
+    "select",
+    "projection"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "Program.cs",
+      "language": "csharp",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "6d810b142db0a2ee371ab38ec2936f6b5ac98931159b21d8c9049ee20b72ae43"
+    },
+    {
+      "id": "file-1",
+      "path": "Example.csproj",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "018d1186081490e61d9f248a3125aa306f29a48251342ca10dd28089fca23061"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "a6ab050e69e8749fcac96582499274e673f30a134815997941d92c9f8a8947f7"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "csharp-abbinare-elementi-con-zip",
+    "csharp-aggregare-con-un-valore-iniziale",
+    "csharp-deduplicare-record-per-una-proprieta"
+  ],
+  "expected": "Importi 12.20 e 24.40 con formato della cultura corrente.",
+  "errors": [
+    "Se manca il targeting pack net8.0, installare il relativo SDK/pack; eventuali warning CS1998 indicano soltanto un Main dimostrativo senza await."
+  ],
+  "sources": [
+    "https://learn.microsoft.com/en-us/dotnet/csharp/",
+    "https://learn.microsoft.com/en-us/dotnet/api/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "details": "Eseguito su Windows x64 il 29/10/2026. Ambiente: SDK .NET 10.0.401, C#12, target net8.0, runtime .NET8.0.31. Sorgenti compilati/controllati e programmi eseguiti; per i progetti sono stati eseguiti anche i test inclusi. Report: reports/languages-source-validation.json e reports/languages-runtime-validation.json. Linux e macOS non eseguiti.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

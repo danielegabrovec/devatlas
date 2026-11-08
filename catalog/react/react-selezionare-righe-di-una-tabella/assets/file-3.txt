@@ -1,0 +1,3 @@
+import React, {useState,useEffect,useMemo,useRef,useReducer,useId,useContext,createContext,useCallback,useLayoutEffect,useTransition,useDeferredValue,useSyncExternalStore,useImperativeHandle,forwardRef,memo,lazy,Suspense,Component} from 'react';
+import {createPortal} from 'react-dom';
+export default function App(){const[ids,set]=useState([]);return <><table><tbody>{[1,2,3].map(id=><tr key={id}><td><label><input type='checkbox' checked={ids.includes(id)} onChange={()=>set(ids.includes(id)?ids.filter(x=>x!==id):[...ids,id])}/>Riga {id}</label></td></tr>)}</tbody></table><p>Scelte:{ids.join(', ')}</p></>}

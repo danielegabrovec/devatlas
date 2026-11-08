@@ -1,0 +1,3 @@
+Set-StrictMode -Version Latest
+$ErrorActionPreference='Stop'
+1..8 | ForEach-Object -Parallel { [pscustomobject]@{Value=$_;Square=$_*$_} } -ThrottleLimit 3 | Sort-Object Value

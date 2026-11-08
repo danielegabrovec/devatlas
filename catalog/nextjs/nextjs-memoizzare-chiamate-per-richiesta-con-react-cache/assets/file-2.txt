@@ -1,0 +1,1 @@
+import{cache}from'react';const load=cache(async id=>({id,name:'Ada'}));export default async function Page(){const[a,b]=await Promise.all([load(1),load(1)]);return <p>{a.name}; stesso oggetto:{String(a===b)}</p>}

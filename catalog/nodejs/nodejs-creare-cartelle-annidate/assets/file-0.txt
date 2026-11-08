@@ -1,0 +1,1 @@
+import{mkdir}from'node:fs/promises';console.log(await mkdir('output/reports',{recursive:true}));

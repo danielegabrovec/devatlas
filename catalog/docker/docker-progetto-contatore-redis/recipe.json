@@ -1,0 +1,95 @@
+{
+  "id": "docker-progetto-contatore-redis",
+  "title": "Progetto completo: servizio HTTP e contatore persistente Redis",
+  "summary": "Coordinare due servizi locali con healthcheck, rete interna e volume nominato.",
+  "stack": "docker",
+  "group": "Strumenti",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Docker Engine 27+; Compose 2.29+; Linux containers",
+  "prerequisites": "Docker Desktop configurato per container Linux su Windows, oppure Docker Engine Linux. Porta locale 8089 libera. Internet necessario per scaricare l'immagine Python; i file sono esempi, nessun container viene avviato dal catalogo.",
+  "tags": [
+    "project",
+    "Docker",
+    "Redis",
+    "healthcheck",
+    "persistence"
+  ],
+  "project": true,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "Dockerfile",
+      "language": "dockerfile",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "6baac2b24670a856fd7027a66781e509b1e977bbf01342e74d53c05aea4840cd"
+    },
+    {
+      "id": "file-1",
+      "path": "app.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "3f48b32ffdc7cee96a654bcef77149e1346663b711e571618aa380602c103da2"
+    },
+    {
+      "id": "file-2",
+      "path": "compose.yaml",
+      "language": "yaml",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "0fbc45b65c8d899dcde0626ddbf4061f33361c428c8beff0a5a22f3aee685958"
+    },
+    {
+      "id": "file-3",
+      "path": "README.md",
+      "language": "markdown",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "be1ae8df64050da033043d1a904b425c7b87cda0b31b96641373ce2c84293306"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "ef139c2f2d4a7402f06d3095289df7618373b7781acb615e6e51474c19df6ecf"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "docker-aggiungere-un-healthcheck-nell-immagine",
+    "docker-assegnare-etichette-al-servizio",
+    "docker-attendere-il-superamento-dell-healthcheck"
+  ],
+  "expected": "Il numero di visite cresce e resta disponibile dopo ricreazione dei container.",
+  "errors": [
+    "Redis non healthy: controllare docker compose logs redis.",
+    "HTTP 503: Redis non raggiungibile dopo l'avvio."
+  ],
+  "sources": [
+    "https://docs.docker.com/compose/",
+    "https://docs.docker.com/reference/dockerfile/",
+    "https://docs.docker.com/compose/how-tos/startup-order/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "details": "Controlli statici sui sorgenti: AST Python, parser PowerShell/Bash dove disponibili, node --check per JavaScript, JSON e XML secondo i file presenti. Nessuna compilazione C#/XAML/C++ né esecuzione Docker/CI/packaging attestata. Report: reports/desktop-tools-qa.json.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

@@ -1,0 +1,1 @@
+SELECT has_schema_privilege(current_user,current_schema(),'USAGE');

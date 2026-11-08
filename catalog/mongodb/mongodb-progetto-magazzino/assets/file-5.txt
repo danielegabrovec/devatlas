@@ -1,0 +1,1 @@
+import {connect} from './db.mjs';import {reserve} from './stock.mjs';const {client,items}=await connect();try{console.log(await reserve(items,process.argv[2]||'keyboard',process.argv[3]||'1'));}catch(error){console.error(error.message);process.exitCode=1;}finally{await client.close();}

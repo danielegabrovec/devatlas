@@ -1,0 +1,2 @@
+const rows = ["a,b", "", "c"];
+console.log(rows.flatMap(row => row === "" ? [] : row.split(",")));

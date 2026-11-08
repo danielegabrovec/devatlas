@@ -1,0 +1,66 @@
+{
+  "id": "powershell-raggruppare-elementi-e-contarli",
+  "title": "Raggruppare elementi e contarli",
+  "summary": "Usare Group-Object per aggregare eventi per categoria.",
+  "stack": "powershell",
+  "group": "Strumenti",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "PowerShell 7.4+",
+  "prerequisites": "PowerShell 7.4 o successivo (pwsh), non Windows PowerShell 5.1.",
+  "tags": [
+    "powershell",
+    "raggruppare-elementi-e-contarli",
+    "workflow"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "example.ps1",
+      "language": "powershell",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "8bda7bc25c4f0eea0778f9e079cf3817d4577be1a87cee99006c81ad647d1340"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "81aad1821298699efaf15c56f7bf9323fd4197932372431ecdb7764f88170265"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "powershell-analizzare-un-documento-xml-senza-stringhe-concatenate",
+    "powershell-avviare-e-raccogliere-un-job-locale",
+    "powershell-calcolare-sha-256-di-un-file-locale"
+  ],
+  "expected": "Usare Group-Object per aggregare eventi per categoria.",
+  "errors": [
+    "Comando non trovato: verificare la dipendenza e riaprire il terminale dopo l'installazione.",
+    "Accesso negato: scegliere una cartella di lavoro o temporanea scrivibile."
+  ],
+  "sources": [
+    "https://learn.microsoft.com/powershell/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "details": "Controlli statici sui sorgenti: AST Python, parser PowerShell/Bash dove disponibili, node --check per JavaScript, JSON e XML secondo i file presenti. Nessuna compilazione C#/XAML/C++ né esecuzione Docker/CI/packaging attestata. Report: reports/desktop-tools-qa.json.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

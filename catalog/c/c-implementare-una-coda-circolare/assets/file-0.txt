@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdint.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <errno.h>
+#include <limits.h>
+
+
+int main(void){
+int buffer[4];size_t head=0,tail=0,count=0;
+for(int value=1;value<=3;value++){if(count==4)return 1;buffer[tail]=value;tail=(tail+1)%4;count++;}
+while(count){printf("%d ",buffer[head]);head=(head+1)%4;count--;}puts("");
+return 0;
+}

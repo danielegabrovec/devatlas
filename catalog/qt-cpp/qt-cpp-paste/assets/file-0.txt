@@ -1,0 +1,11 @@
+#include <QtWidgets>
+#include <QtCore>
+#include <QtGui>
+
+int main(int argc, char **argv) {
+ QApplication app(argc,argv);
+ QWidget window; window.resize(720,480);
+ auto *layout=new QVBoxLayout(&window);
+ auto *label=new QLabel; auto *b=new QPushButton("Leggi appunti"); QObject::connect(b,&QPushButton::clicked,label,[label]{label->setText(QGuiApplication::clipboard()->text());}); layout->addWidget(b); layout->addWidget(label);
+ window.show(); return app.exec();
+}

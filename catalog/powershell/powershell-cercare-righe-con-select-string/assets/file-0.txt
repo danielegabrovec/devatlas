@@ -1,0 +1,3 @@
+Set-StrictMode -Version Latest
+$ErrorActionPreference='Stop'
+"INFO start","ERROR esempio","INFO end" | Select-String -Pattern "^ERROR" | Select-Object LineNumber,Line

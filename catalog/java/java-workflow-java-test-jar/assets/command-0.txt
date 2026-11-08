@@ -1,0 +1,5 @@
+New-Item -ItemType Directory -Path out,dist -Force | Out-Null
+javac -encoding UTF-8 --release 17 -d out src/Main.java src/math/Calculator.java tests/CalculatorTest.java
+java -cp out CalculatorTest
+jar --create --file dist/app.jar --main-class Main -C out Main.class -C out math
+java -jar dist/app.jar

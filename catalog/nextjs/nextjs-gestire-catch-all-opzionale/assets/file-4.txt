@@ -1,0 +1,1 @@
+export default async function Page({params}){const{parts=[]}=await params;return <h1>{parts.length?parts.join(' / '):'Tutto il negozio'}</h1>}

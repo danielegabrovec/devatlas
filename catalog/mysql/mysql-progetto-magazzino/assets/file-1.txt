@@ -1,0 +1,1 @@
+INSERT INTO stock_demo VALUES(1,'Tastiera',8),(2,'Mouse',4) AS new ON DUPLICATE KEY UPDATE qty=new.qty;

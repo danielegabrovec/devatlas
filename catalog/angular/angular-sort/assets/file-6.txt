@@ -1,0 +1,7 @@
+import {Component,signal,computed,effect,inject,DestroyRef,ChangeDetectionStrategy} from '@angular/core';
+import {CommonModule} from '@angular/common';import {FormsModule} from '@angular/forms';
+
+@Component({selector:'app-root',standalone:true,imports:[CommonModule,FormsModule],changeDetection:ChangeDetectionStrategy.OnPush,template:`<main><button (click)="toggle()">Inverti ordine</button><ul>@for(row of sorted();track row.id){<li>{{row.name}} {{row.price}}</li>}</ul></main>`})
+export class AppComponent{
+descending=signal(false);rows=[{id:1,name:'Monitor',price:180},{id:2,name:'Mouse',price:20}];sorted=computed(()=>[...this.rows].sort((a,b)=>(this.descending()?-1:1)*(a.price-b.price)));toggle(){this.descending.update(v=>!v);}
+}

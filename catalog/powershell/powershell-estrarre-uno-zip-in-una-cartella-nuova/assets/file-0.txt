@@ -1,0 +1,8 @@
+Set-StrictMode -Version Latest
+$ErrorActionPreference='Stop'
+$root = Join-Path ([IO.Path]::GetTempPath()) ([guid]::NewGuid().ToString())
+New-Item -ItemType Directory -Path $root | Out-Null
+Set-Content -LiteralPath (Join-Path $root "note.txt") -Value "Demo"
+Compress-Archive -LiteralPath (Join-Path $root "note.txt") -DestinationPath ($root+".zip")
+Expand-Archive -LiteralPath ($root+".zip") -DestinationPath ($root+"-estratto")
+Get-ChildItem -LiteralPath ($root+"-estratto")

@@ -1,0 +1,1 @@
+SELECT strftime('%Y-%m-%dT%H:%M:%SZ','2026-10-29 08:30:00');

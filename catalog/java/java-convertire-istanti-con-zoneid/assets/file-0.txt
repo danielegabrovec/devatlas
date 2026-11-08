@@ -1,0 +1,18 @@
+import java.util.*;
+import java.util.stream.*;
+import java.util.regex.*;
+import java.util.concurrent.*;
+import java.nio.file.*;
+import java.nio.charset.StandardCharsets;
+import java.io.*;
+import java.math.*;
+import java.time.*;
+import java.time.format.DateTimeFormatter;
+import java.text.Normalizer;
+
+public class Main{
+public static void main(String[] args)throws Exception{
+Instant instant=Instant.parse("2026-01-10T12:00:00Z");System.out.println(instant.atZone(ZoneId.of("Europe/Rome")));
+}
+
+}

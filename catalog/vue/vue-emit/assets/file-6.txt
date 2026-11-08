@@ -1,0 +1,1 @@
+<script setup>const emit=defineEmits(['choose']);</script><template><button @click="emit('choose','PDF')">Scegli PDF</button></template>

@@ -1,0 +1,7 @@
+trait Label{fn label(&self)->String;}
+struct User{name:String}
+impl Label for User{fn label(&self)->String{format!("Utente {}",self.name)}}
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+let user=User{name:String::from("Ada")};println!("{}",user.label());
+Ok(())
+}

@@ -1,0 +1,4 @@
+from django.contrib.auth.decorators import login_required
+from django.http import JsonResponse
+@login_required
+def home(request): return JsonResponse({'username':request.user.username})

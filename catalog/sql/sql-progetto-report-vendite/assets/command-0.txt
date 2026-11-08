@@ -1,0 +1,1 @@
+sqlite3 demo.sqlite ".read schema.sql" ".read report.sql"

@@ -1,0 +1,3 @@
+swift --version
+swift package describe
+swift run SwiftStarter

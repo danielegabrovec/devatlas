@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block title %}Guida{% endblock %}{% block content %}<h1>Guida</h1>{% endblock %}

@@ -1,0 +1,1 @@
+export async function POST(request){const f=await request.formData();return Response.json({name:String(f.get('name')??'')})}

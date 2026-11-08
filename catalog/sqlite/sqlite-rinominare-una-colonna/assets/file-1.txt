@@ -1,0 +1,1 @@
+ALTER TABLE people RENAME COLUMN city TO citta; SELECT citta FROM people;

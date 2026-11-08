@@ -1,0 +1,74 @@
+{
+  "id": "swift-navigare-tra-viste-swiftui-con-navigationstack",
+  "title": "Navigare tra viste SwiftUI con NavigationStack",
+  "summary": "Usa destinazioni tipizzate per aprire un dettaglio da una lista senza gestire manualmente un controller.",
+  "stack": "swift",
+  "group": "Linguaggi",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "macOS",
+    "iOS"
+  ],
+  "ide": [
+    "Xcode",
+    "VS Code"
+  ],
+  "versions": "Swift6.4; Package.swift tools-version6.0, Linux/macOS",
+  "prerequisites": "Toolchain Swift6.4 su Linux o macOS. Per SwiftUI/iOS occorrono macOS, Xcode e un target Apple. Non sono attestati esecuzioni o compilazioni Swift su Windows.",
+  "tags": [
+    "SwiftUI",
+    "NavigationStack",
+    "iOS",
+    "macOS"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "ContentView.swift",
+      "language": "swift",
+      "role": "snippet",
+      "source": "assets/file-0.txt",
+      "sha256": "7a845ccb70e3f701d03c4bfd79708d693623b876f1c5f3d10c73a90472c89deb"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "bash",
+      "role": "command",
+      "shell": "Bash",
+      "os": "macOS",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "489644f91d5f66760f69b82458c4cb93486131f12c1fded085e052fb0cad7333"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "swift-mostrare-stato-e-azioni-in-una-vista-swiftui-ios",
+    "swift-calcolare-differenze-tra-set",
+    "swift-inizializzare-un-package-swift-cli-su-linux-o-macos"
+  ],
+  "expected": "Selezionando una riga si apre il dettaglio; la navigazione indietro è gestita dallo stack.",
+  "errors": [
+    "No such module SwiftUI: servono macOS/Xcode e Apple SDK; il package CLI Linux non fornisce SwiftUI.",
+    "API non disponibile per il deployment target: usa i target iOS17+/macOS14+ indicati e conserva l'App SwiftUI che mostra ContentView.",
+    "La vista non si aggiorna: modifica lo stato tramite @State nel contesto della vista e usa gli identificativi coerenti delle righe."
+  ],
+  "sources": [
+    "https://www.swift.org/documentation/",
+    "https://www.swift.org/install/linux/",
+    "https://www.swift.org/install/macos/",
+    "https://www.swift.org/blog/swift-6.4-released/",
+    "https://developer.apple.com/documentation/swiftui/navigationstack"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

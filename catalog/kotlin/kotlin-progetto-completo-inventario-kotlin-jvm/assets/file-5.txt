@@ -1,0 +1,3 @@
+# Inventario Kotlin
+
+Kotlin/JVM2.3.21, Gradle9.3.0, JDK17+. Nessuna dipendenza applicativa esterna; stdlib segue la versione del plugin. `gradle smoke`, `gradle run`, `gradle installDist`. Per compilazione CLI: `kotlinc src/main/kotlin/Inventory.kt src/main/kotlin/InventoryCli.kt -jvm-target 17 -include-runtime -d inventory.jar` e `java -jar inventory.jar`. Per test CLI includi Inventory.kt e src/test/kotlin/InventoryTest.kt, poi avvia il JAR. Stato in memoria e dati sintetici: viti7,dadi2. snapshot restituisce una copia; non è un repository concorrente. Il primo restore Gradle richiede rete/cache. La distribuzione richiede JVM17+ e non produce un'app Android.

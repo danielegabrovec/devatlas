@@ -1,0 +1,2 @@
+import { area } from "./math.mjs";
+console.log(area(3, 4));

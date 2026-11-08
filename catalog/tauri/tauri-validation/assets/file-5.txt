@@ -1,0 +1,5 @@
+#![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
+use tauri::Manager;
+
+#[tauri::command]fn demo(value:i64)->Result<String,String>{if !(1..=100).contains(&value){return Err("Valore ammesso:1..100".into())}Ok(format!("Valore valido:{}",value))}
+fn main(){tauri::Builder::default().invoke_handler(tauri::generate_handler![demo]).run(tauri::generate_context!()).expect("Tauri application failed");}

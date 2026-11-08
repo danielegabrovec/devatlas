@@ -1,0 +1,135 @@
+{
+  "id": "tauri-center",
+  "title": "Centrare la finestra sul monitor",
+  "summary": "Delegare la posizione al sistema nativo anziché calcolare coordinate assolute.",
+  "stack": "tauri",
+  "group": "Desktop e GUI",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Tauri2.12.4;tauri-build2.7.3;Rust>=1.90;CLI2.12.4",
+  "prerequisites": "Windows x64 con RustMSVC1.90+, Visual Studio Desktop development with C++, Windows SDK e WebView2 Runtime. Node24 e npm per la CLI locale. Questi esempi producono Windows; non attestano build Linux/macOS/mobile.",
+  "tags": [
+    "tauri",
+    "center",
+    "IPC",
+    "Rust",
+    "capability"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "package.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "c6a87e7db58450b9ace9e3af4699f6031c07015024e503bfc7dbc3f50e31a30a"
+    },
+    {
+      "id": "file-1",
+      "path": "src-tauri/Cargo.toml",
+      "language": "toml",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "380e5e1999f52261476878df332672cc505ae8060847a7f9fd3377a15fc3662b"
+    },
+    {
+      "id": "file-2",
+      "path": "src-tauri/build.rs",
+      "language": "rust",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "0a3b2085a573f30c1b1adbc081756b95c5f8d5eb4e9906a70370be8e18d22bea"
+    },
+    {
+      "id": "file-3",
+      "path": "src-tauri/tauri.conf.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "17cad0699c04f49de4dba7a7166124dcc27f64b5aec779839d183fea3d8b0b8b"
+    },
+    {
+      "id": "file-4",
+      "path": "src-tauri/capabilities/main.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "9ceabe24eb20b735a9d92228ecfa873b9ab1bf97d60af27c5b8d275b55fa5a29"
+    },
+    {
+      "id": "file-5",
+      "path": "src-tauri/src/main.rs",
+      "language": "rust",
+      "role": "file",
+      "source": "assets/file-5.txt",
+      "sha256": "06045312d9587f06ff09348d69cdfe62b14af5a4ecdf07485a405e19dcb1666b"
+    },
+    {
+      "id": "file-6",
+      "path": "web/index.html",
+      "language": "html",
+      "role": "file",
+      "source": "assets/file-6.txt",
+      "sha256": "ade7452c6ed51adb3fcb36aaca3845f3bd5b4561c43226633a11589529d586e6"
+    },
+    {
+      "id": "file-7",
+      "path": "web/style.css",
+      "language": "css",
+      "role": "file",
+      "source": "assets/file-7.txt",
+      "sha256": "4d882cea0ded97badeec37c742b0ae048df5f53942e1d81315f58af8cb839b47"
+    },
+    {
+      "id": "file-8",
+      "path": "web/main.js",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-8.txt",
+      "sha256": "a4b0e96475adc96ab4c3d115efcad46c7a668f99d3ab481f1456f4b921e8e0fd"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "1965fe5d479505f1e80638083dd92bfa86389a60f6f77693b578249ec5cf4668"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "tauri-events",
+    "tauri-fullscreen",
+    "tauri-minimize"
+  ],
+  "expected": "La finestra viene centrata.",
+  "errors": [
+    "link.exe o Windows SDK non trovato: usare RustMSVC e il workload C++ Visual Studio richiesti; una toolchain GNU non equivale al target MSVC del progetto.",
+    "Comando window non consentito: verificare nella capability della finestra main il permesso core specifico, senza disabilitare tutte le restrizioni.",
+    "window.__TAURI__ assente: avviare npm run dev dalla radice Tauri e mantenere withGlobalTauri, invece di aprire index.html in un browser ordinario."
+  ],
+  "sources": [
+    "https://v2.tauri.app/start/prerequisites/",
+    "https://v2.tauri.app/develop/calling-rust/",
+    "https://v2.tauri.app/security/capabilities/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Schema/configurazioni e sintassi JavaScript/PowerShell secondo i file presenti; nessuna attestazione serverMongo/Redis o finestraTauri. Report: reports/expansion-frameworks-qa.json."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

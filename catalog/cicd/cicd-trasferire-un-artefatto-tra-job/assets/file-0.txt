@@ -1,0 +1,58 @@
+{
+  "name": "Verifica locale dimostrativa",
+  "on": {
+    "workflow_dispatch": {}
+  },
+  "permissions": {
+    "contents": "read"
+  },
+  "jobs": {
+    "test": {
+      "runs-on": "ubuntu-latest",
+      "steps": [
+        {
+          "uses": "actions/checkout@v7",
+          "with": {
+            "persist-credentials": false
+          }
+        },
+        {
+          "uses": "actions/setup-python@v7",
+          "with": {
+            "python-version": "3.13"
+          }
+        },
+        {
+          "name": "Test",
+          "run": "python -m unittest -v"
+        },
+        {
+          "run": "python --version > runtime.txt"
+        },
+        {
+          "uses": "actions/upload-artifact@v7",
+          "with": {
+            "name": "runtime",
+            "path": "runtime.txt"
+          }
+        }
+      ]
+    },
+    "consume": {
+      "needs": "test",
+      "runs-on": "ubuntu-latest",
+      "steps": [
+        {
+          "uses": "actions/download-artifact@v7",
+          "with": {
+            "name": "runtime",
+            "path": "incoming"
+          }
+        },
+        {
+          "run": "cat incoming/runtime.txt"
+        }
+      ]
+    }
+  }
+}

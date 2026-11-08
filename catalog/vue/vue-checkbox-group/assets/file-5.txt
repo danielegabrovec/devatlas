@@ -1,0 +1,5 @@
+<script setup>
+import {ref,reactive,computed,watch,watchEffect,onMounted,onUnmounted,nextTick,provide,inject,defineAsyncComponent,shallowRef,triggerRef,readonly,toRefs} from 'vue';
+const choices=ref([]);
+</script>
+<template><main><label><input type="checkbox" value="PDF" v-model="choices">PDF</label><label><input type="checkbox" value="CSV" v-model="choices">CSV</label><p>{{choices.join(", ")}}</p></main></template>

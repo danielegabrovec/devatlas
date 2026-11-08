@@ -1,0 +1,3 @@
+const data = { supplied: undefined };
+console.log(Object.hasOwn(data, "supplied"));
+console.log(Object.hasOwn(data, "missing"));

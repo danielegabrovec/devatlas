@@ -1,0 +1,15 @@
+from typing import Annotated, Literal
+from enum import Enum
+from uuid import UUID
+from datetime import date, datetime, timezone
+from decimal import Decimal
+from pathlib import Path as FilePath
+import asyncio, json, os, secrets, time
+from contextlib import asynccontextmanager
+from fastapi import FastAPI, Query, Path, Body, Header, Cookie, Response, HTTPException, Depends, Request, APIRouter, BackgroundTasks, File, UploadFile, Form
+from fastapi.responses import JSONResponse, HTMLResponse, PlainTextResponse, RedirectResponse, StreamingResponse, FileResponse
+from pydantic import BaseModel, Field, ConfigDict, field_validator
+app = FastAPI(title='Laboratorio')
+@app.get('/demo')
+def demo(tag: Annotated[list[str], Query()]=[]):
+    return {'tags': tag}

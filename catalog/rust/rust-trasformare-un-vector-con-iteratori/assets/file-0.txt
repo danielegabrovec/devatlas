@@ -1,0 +1,4 @@
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+let values=vec![2,3,4];let squares:Vec<i32>=values.iter().map(|value|value*value).collect();println!("{:?} {:?}",values,squares);
+Ok(())
+}

@@ -1,0 +1,1 @@
+<template><article class="card"><h2><slot name="title">Titolo</slot></h2><slot/></article></template>

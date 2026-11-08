@@ -1,0 +1,1 @@
+DELETE FROM orders WHERE status='cancelled' AND NOT EXISTS(SELECT 1 FROM order_items i WHERE i.order_id=orders.id); SELECT COUNT(*) FROM orders;

@@ -1,0 +1,7 @@
+import {Component,signal,computed,effect,inject,DestroyRef,ChangeDetectionStrategy} from '@angular/core';
+import {CommonModule} from '@angular/common';import {FormsModule} from '@angular/forms';
+
+@Component({selector:'app-root',standalone:true,imports:[CommonModule,FormsModule],changeDetection:ChangeDetectionStrategy.OnPush,template:`<main><button (click)="toggle()">Dettagli</button>@if(visible()){<p>Dettagli aperti</p>}@else{<p>Dettagli chiusi</p>}</main>`})
+export class AppComponent{
+visible=signal(false);toggle(){this.visible.update(v=>!v);}
+}

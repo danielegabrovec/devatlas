@@ -1,0 +1,1 @@
+SELECT regexp_match('ordine-123','ordine-([0-9]+)');

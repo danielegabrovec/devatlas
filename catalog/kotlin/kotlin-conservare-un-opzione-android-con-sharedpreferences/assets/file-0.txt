@@ -1,0 +1,8 @@
+package example
+import android.content.Context
+class Preferences(context:Context) {
+ private val store=context.getSharedPreferences("catalog_demo",Context.MODE_PRIVATE)
+ var showDetails:Boolean
+  get()=store.getBoolean("details",false)
+  set(value){store.edit().putBoolean("details",value).apply()}
+}

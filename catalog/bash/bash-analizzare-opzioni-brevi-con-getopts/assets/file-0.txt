@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+name="mondo"
+while getopts ":n:" flag; do case "$flag" in n) name=$OPTARG;; *) printf "Uso: -n nome\n" >&2; exit 2;; esac; done
+printf "Ciao %s\n" "$name"

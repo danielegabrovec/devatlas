@@ -1,0 +1,1 @@
+SELECT * FROM jsonb_to_record('{"name":"Ada","age":35}'::jsonb) AS x(name text,age integer);

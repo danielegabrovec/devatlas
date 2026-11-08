@@ -1,0 +1,3 @@
+.\bootstrap.ps1
+flutter analyze
+flutter build windows --debug

@@ -1,0 +1,6 @@
+package inventory
+import("errors";"strings")
+type Store struct{values map[string]int}
+func New()*Store{return &Store{values:make(map[string]int)}}
+func(s *Store)Add(name string,quantity int)error{name=strings.TrimSpace(name);if name==""||quantity<=0{return errors.New("nome non vuoto e quantita positiva richiesti")};s.values[name]+=quantity;return nil}
+func(s *Store)Quantity(name string)int{return s.values[name]}

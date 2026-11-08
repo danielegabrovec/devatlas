@@ -1,0 +1,5 @@
+type Flags<T> = { [K in keyof T]: boolean };
+type Features = { search: string; export: number };
+const flags: Flags<Features> = { search: true, export: false };
+console.log(flags);
+export {};

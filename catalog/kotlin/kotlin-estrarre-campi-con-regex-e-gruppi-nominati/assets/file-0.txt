@@ -1,0 +1,5 @@
+fun main() {
+val pattern = Regex("""item-(?<id>\d+)""")
+val match = pattern.matchEntire("item-123")
+println(match?.groups?.get("id")?.value)
+}

@@ -1,0 +1,3 @@
+payload = b"\xef\xbb\xbfNome;Eta\nAda;36"
+text = payload.decode("utf-8-sig")
+print(text.splitlines()[0])

@@ -1,0 +1,9 @@
+async function withTimeout(promise, ms) {
+  let timer;
+  try {
+    return await Promise.race([promise, new Promise((_, reject) => {
+      timer = setTimeout(() => reject(new Error("timeout")), ms);
+    })]);
+  } finally { clearTimeout(timer); }
+}
+console.log(await withTimeout(Promise.resolve("ok"), 100));

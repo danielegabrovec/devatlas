@@ -1,0 +1,9 @@
+services:
+  web:
+    build: .
+    ports:
+      - "127.0.0.1:8089:8000"
+    volumes:
+      - recipe-data:/data
+volumes:
+  recipe-data:

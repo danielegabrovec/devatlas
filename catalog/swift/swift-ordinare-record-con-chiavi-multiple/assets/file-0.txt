@@ -1,0 +1,4 @@
+import Foundation
+
+let rows=[("Rossi","Luca"),("Rossi","Ada")]
+print(rows.sorted{($0.0,$0.1)<($1.0,$1.1)}.map{$0.1})

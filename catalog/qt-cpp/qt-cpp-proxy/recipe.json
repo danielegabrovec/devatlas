@@ -1,0 +1,80 @@
+{
+  "id": "qt-cpp-proxy",
+  "title": "Filtrare righe con QSortFilterProxyModel",
+  "summary": "Applicare una ricerca case-insensitive al modello.",
+  "stack": "qt-cpp",
+  "group": "Desktop e GUI",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "Qt Creator",
+    "Visual Studio",
+    "VS Code"
+  ],
+  "versions": "C++17; Qt 6.10–6.12; CMake 3.24+",
+  "prerequisites": "Qt 6.10 o 6.12 desktop con compilatore coerente (MSVC2022 x64 su Windows), CMake e Ninja. Aprire il terminale Qt/MSVC già configurato.",
+  "tags": [
+    "proxy",
+    "Qt Widgets",
+    "CMake",
+    "C++17"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.cpp",
+      "language": "cpp",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "5741bc591a0fdad941a98c61f47279f08e3fede5e3e21de3fcf96ee64d463f89"
+    },
+    {
+      "id": "file-1",
+      "path": "CMakeLists.txt",
+      "language": "cmake",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "cd6133e681c8fc1416465187bf50811897cba5775d499ae2818ab2ca4eb92547"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "690ec81b1f9d51e4ac1571ec67d09f5c05abbf6848343a97c987eab148e6acd1"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "qt-cpp-busy",
+    "qt-cpp-color",
+    "qt-cpp-combodata"
+  ],
+  "expected": "Applicare una ricerca case-insensitive al modello.",
+  "errors": [
+    "Qt6Config.cmake non trovato: usare il terminale Qt o impostare CMAKE_PREFIX_PATH alla propria installazione Qt.",
+    "Non mescolare librerie Qt MinGW con un progetto compilato tramite MSVC."
+  ],
+  "sources": [
+    "https://doc.qt.io/qt-6/qtwidgets-index.html",
+    "https://doc.qt.io/qt-6/cmake-manual.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "documentato",
+    "details": "Esempio originale revisionato nel catalogo; esecuzione non attestata.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

@@ -1,0 +1,3 @@
+import React, {useState,useEffect,useMemo,useRef,useReducer,useId,useContext,createContext,useCallback,useLayoutEffect,useTransition,useDeferredValue,useSyncExternalStore,useImperativeHandle,forwardRef,memo,lazy,Suspense,Component} from 'react';
+import {createPortal} from 'react-dom';
+export default function App(){const[s,set]=useState('');return <><button onClick={async()=>{try{await navigator.clipboard.writeText('Codice da copiare');set('Copiato')}catch{set('Copia negata')}}}>Copia</button><output role='status'>{s}</output></>}

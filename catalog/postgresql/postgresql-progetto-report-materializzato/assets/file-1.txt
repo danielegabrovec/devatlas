@@ -1,0 +1,1 @@
+INSERT INTO report_demo.sales(day,amount) VALUES('2026-01-10',10),('2026-01-11',20);

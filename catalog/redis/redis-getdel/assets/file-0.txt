@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+p="atlas_demo:getdel"
+cli(){ redis-cli -e --raw -h 127.0.0.1 -p 6381 "$@"; }
+cli SET "$p:token" synthetic-token
+cli GETDEL "$p:token"
+cli EXISTS "$p:token"

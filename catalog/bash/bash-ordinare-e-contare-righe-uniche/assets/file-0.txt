@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+set -euo pipefail
+printf "test\nbuild\ntest\npackage\n" | LC_ALL=C sort | uniq -c

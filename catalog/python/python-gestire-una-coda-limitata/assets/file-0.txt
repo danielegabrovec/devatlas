@@ -1,0 +1,5 @@
+from collections import deque
+recent = deque(maxlen=3)
+recent.extend(["a", "b", "c", "d"])
+print(list(recent))
+print(recent.popleft())

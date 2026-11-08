@@ -1,0 +1,84 @@
+{
+  "id": "typescript-richiedere-una-mappa-completa-con-record",
+  "title": "Richiedere una mappa completa con Record",
+  "summary": "Obbliga a fornire un valore per ogni elemento di una union di chiavi.",
+  "stack": "typescript",
+  "group": "Linguaggi",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "TypeScript 6.0.3, strict; Node.js 22+ per esecuzione",
+  "prerequisites": "Node.js 22+ e npm. Il progetto dichiara TypeScript 6.0.3: npm install richiede accesso iniziale al registry o cache già disponibile. Consultazione ed export sono offline.",
+  "tags": [
+    "record",
+    "complete",
+    "map"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.ts",
+      "language": "typescript",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "ec9cf196a3d706bd17bdc8b446ae1262f570a5df678d0af112532d53d0533fb2"
+    },
+    {
+      "id": "file-1",
+      "path": "package.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "74837ba0c57287f1a6ebe47bb0351a4263fbc925d6bdfd64afdedb4294e206d7"
+    },
+    {
+      "id": "file-2",
+      "path": "tsconfig.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "2f9bbbd31188df2a60d8588ddfecf0d0a25db0a931fefe357a67d4f4940269ca"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "a3a636e7bb00d65bd80e0ae9d472ad00b5c46341000eacafbfba914d6ae4bd82"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "typescript-tipizzare-una-mappa-di-oggetti",
+    "typescript-collegare-nomi-evento-e-payload",
+    "typescript-richiedere-un-metodo-con-una-classe-astratta"
+  ],
+  "expected": "Ciao; rimuovere en produce errore a compilazione.",
+  "errors": [
+    "Se tsc segnala un errore, non ignorarlo: noEmitOnError impedisce la generazione del JavaScript; conservare strict e le versioni dichiarate."
+  ],
+  "sources": [
+    "https://www.typescriptlang.org/docs/handbook/intro.html",
+    "https://www.typescriptlang.org/docs/handbook/utility-types.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "details": "Eseguito su Windows x64 il 29/10/2026. Ambiente: TypeScript6.0.3 strict, target ES2022, Node.js24.15.0. Sorgenti compilati/controllati e programmi eseguiti; per i progetti sono stati eseguiti anche i test inclusi. Report: reports/languages-source-validation.json e reports/languages-runtime-validation.json. Linux e macOS non eseguiti.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

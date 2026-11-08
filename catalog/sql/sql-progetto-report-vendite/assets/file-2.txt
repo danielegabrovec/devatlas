@@ -1,0 +1,5 @@
+# Report vendite
+Usare soltanto un file demo.sqlite dedicato: schema.sql elimina gli oggetti del laboratorio e tutti i loro dati.
+Eseguire schema.sql poi report.sql con sqlite3 su demo.sqlite.
+Il report pagati restituisce Ada con totale270; i pezzi complessivi sono6.
+Schema e dati sono solo didattici.

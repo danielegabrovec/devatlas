@@ -1,0 +1,1 @@
+body{font:16px system-ui;margin:32px;background:#142338;color:#edf4ff}button,input{font:inherit;padding:10px;margin:8px}pre{white-space:pre-wrap}button:focus-visible,input:focus-visible{outline:3px solid #70d5dc}

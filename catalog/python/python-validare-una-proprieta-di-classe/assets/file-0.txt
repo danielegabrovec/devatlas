@@ -1,0 +1,12 @@
+class Account:
+    def __init__(self, balance):
+        self.balance = balance
+    @property
+    def balance(self):
+        return self._balance
+    @balance.setter
+    def balance(self, value):
+        if value < 0:
+            raise ValueError("Saldo negativo")
+        self._balance = value
+print(Account(20).balance)

@@ -1,0 +1,1 @@
+SELECT '{"active":true,"level":2}'::jsonb @> '{"active":true}'::jsonb;

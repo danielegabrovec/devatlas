@@ -1,0 +1,5 @@
+<script setup>
+import {ref,reactive,computed,watch,watchEffect,onMounted,onUnmounted,nextTick,provide,inject,defineAsyncComponent,shallowRef,triggerRef,readonly,toRefs} from 'vue';
+import ThemeLabel from './ThemeLabel.vue';const theme=ref('chiaro');provide('theme',readonly(theme));
+</script>
+<template><main><button @click="theme=theme==='chiaro'?'scuro':'chiaro'">Tema</button><ThemeLabel/></main></template>

@@ -1,0 +1,87 @@
+{
+  "id": "c-workflow-c-library-test",
+  "title": "Compilare test e distribuire una libreria statica C",
+  "summary": "Costruisce un oggetto, lo archivia in .a e collega un test contro la libreria prodotta.",
+  "stack": "c",
+  "group": "Linguaggi",
+  "section": "Compilazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "ISO C17, GCC 11+",
+  "prerequisites": "Compilatore ISO C17 (GCC/Clang). Su Windows usare una toolchain GCC UCRT64 nel PATH. Nessuna estensione POSIX necessaria agli esempi.",
+  "tags": [
+    "workflow",
+    "build, test e distribuzione",
+    "build",
+    "test",
+    "distribution"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "include/math_demo.h",
+      "language": "cpp",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "cbd9b06b478ac3a53d6438a1a62025e264bf09aba14a75f07fca97ef7ed02553"
+    },
+    {
+      "id": "file-1",
+      "path": "src/math_demo.c",
+      "language": "c",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "5cc4e877fcf5167ff4a0e13a8a9585d25ba13e169d6a39f0e6bedba5aae14b44"
+    },
+    {
+      "id": "file-2",
+      "path": "tests/test_math.c",
+      "language": "c",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "193c996b08eac8593699734dbe27c4cd7ee87d095ed068614bc042cb8c747d71"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "74466623684d77e8d894982950065b8eb41c26b36ad105be58080395074b27d1"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "c-workflow-c-gdb",
+    "c-workflow-c-toolchain",
+    "c-progetto-completo-statistiche-su-misure-c"
+  ],
+  "expected": "Il test collegato alla libreria stampa test passato; dist contiene libmath_demo.a.",
+  "errors": [
+    "Unresolved symbol può dipendere dall'ordine del link o dal nome -l; -lmath_demo cerca libmath_demo.a. Non mescolare oggetti di ABI diverse."
+  ],
+  "sources": [
+    "https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf",
+    "https://gcc.gnu.org/onlinedocs/gcc/C-Dialect-Options.html",
+    "https://sourceware.org/binutils/docs/binutils/ar.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Sorgenti e configurazioni verificati su Windows x64: PowerShell parser, source compiler. Report: reports/languages-workflows-validation.json. Non attestati sessioni interattive di debug, installazioni di dipendenze o distribuzione completa del workflow; nessuna esecuzione Linux/macOS."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

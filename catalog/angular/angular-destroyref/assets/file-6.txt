@@ -1,0 +1,7 @@
+import {Component,signal,computed,effect,inject,DestroyRef,ChangeDetectionStrategy} from '@angular/core';
+import {CommonModule} from '@angular/common';import {FormsModule} from '@angular/forms';
+
+@Component({selector:'app-root',standalone:true,imports:[CommonModule,FormsModule],changeDetection:ChangeDetectionStrategy.OnPush,template:`<main><p>Secondi: {{seconds()}}</p></main>`})
+export class AppComponent{
+seconds=signal(0);constructor(){const timer=setInterval(()=>this.seconds.update(n=>n+1),1000);inject(DestroyRef).onDestroy(()=>clearInterval(timer));}
+}

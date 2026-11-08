@@ -1,0 +1,1 @@
+psql --host=127.0.0.1 --dbname cookbook_demo -v ON_ERROR_STOP=1 -f schema.sql -f seed.sql -f claim.sql

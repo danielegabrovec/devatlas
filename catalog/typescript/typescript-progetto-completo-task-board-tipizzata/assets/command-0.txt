@@ -1,0 +1,4 @@
+npm install --ignore-scripts
+npm run build
+node dist/test.js
+npm start

@@ -1,0 +1,19 @@
+using System;
+using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Collections.ObjectModel;
+using Microsoft.Maui.Controls;
+using Microsoft.Maui.Graphics;
+using Microsoft.Maui.ApplicationModel.DataTransfer;
+using Microsoft.Maui.Storage;
+namespace RecipeApp;
+public class MainPage:ContentPage {
+ public MainPage(){ Title="Ricetta MAUI"; var panel=new VerticalStackLayout{Spacing=12,Padding=20};
+var rows=new ObservableCollection<string>(); var edit=new Entry{Placeholder="Nota"}; var list=new CollectionView{ItemsSource=rows,HeightRequest=220}; var button=new Button{Text="Aggiungi"}; var status=new Label();
+var path=Path.Combine(FileSystem.AppDataDirectory,"notes.json");
+try{if(File.Exists(path)){var saved=System.Text.Json.JsonSerializer.Deserialize<string[]>(File.ReadAllText(path)) ?? Array.Empty<string>(); foreach(var value in saved) rows.Add(value);}}catch(Exception ex){status.Text=ex.Message;}
+button.Clicked+=async (_,_)=>{var text=edit.Text?.Trim(); if(string.IsNullOrEmpty(text)) return; button.IsEnabled=false; try{var next=rows.Append(text).ToArray(); var temp=path+".tmp"; await File.WriteAllTextAsync(temp,System.Text.Json.JsonSerializer.Serialize(next)); File.Move(temp,path,true); rows.Add(text); edit.Text=""; status.Text="Salvato";}catch(Exception ex){status.Text=ex.Message;}finally{button.IsEnabled=true;}};
+panel.Children.Add(edit); panel.Children.Add(button); panel.Children.Add(list); panel.Children.Add(status);
+ Content=new ScrollView{Content=panel}; }
+}

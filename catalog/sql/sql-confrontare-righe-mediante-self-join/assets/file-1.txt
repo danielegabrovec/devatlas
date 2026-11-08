@@ -1,0 +1,1 @@
+SELECT a.name,b.name FROM people a JOIN people b ON a.city=b.city AND a.id<b.id;

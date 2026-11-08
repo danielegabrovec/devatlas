@@ -1,0 +1,1 @@
+import{revalidatePath}from'next/cache';export default function Page(){async function refresh(){'use server';revalidatePath('/')}return <form action={refresh}><button>Rivalida home</button></form>}

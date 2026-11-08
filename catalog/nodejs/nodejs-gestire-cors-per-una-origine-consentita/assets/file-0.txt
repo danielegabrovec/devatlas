@@ -1,0 +1,1 @@
+import{createServer}from'node:http';createServer((q,r)=>{if(q.headers.origin==='http://localhost:5173')r.setHeader('Access-Control-Allow-Origin','http://localhost:5173');r.setHeader('Vary','Origin');r.end('demo')}).listen(3000,'127.0.0.1');

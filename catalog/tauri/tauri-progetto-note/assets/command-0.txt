@@ -1,0 +1,3 @@
+npm install
+cargo test --manifest-path src-tauri/Cargo.toml
+npm run dev

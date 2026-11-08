@@ -1,0 +1,92 @@
+{
+  "id": "fastapi-rilasciare-risorse-con-dipendenza-yield",
+  "title": "Rilasciare risorse con dipendenza yield",
+  "summary": "Rilasciare risorse con dipendenza yield. Endpoint dell’esempio: GET /demo. Validazione e risposte usano Depends.",
+  "stack": "fastapi",
+  "group": "Web e backend",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "FastAPI0.115.12; Pydantic2.11.7; Python3.11+",
+  "prerequisites": "Python3.11+ con venv; porta8000 libera. Dipendenze in requirements.txt; /docs permette di provare le rotte. Database e autenticazione di produzione non sono inclusi negli esempi in memoria.",
+  "tags": [
+    "fastapi",
+    "example",
+    "rilasciare",
+    "risorse",
+    "con",
+    "dipendenza"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "app.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "8cb654afd20aec445952604c408c6ab4610c98be9332367a0e3b45f8c64cb683"
+    },
+    {
+      "id": "file-1",
+      "path": "requirements.txt",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "65739c3d8a1fb7a7b9789cb1cbac8f6de99f1222bbdaf6453bb604f722b13fdf"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "47161fb765f637e48fb2dce09f6846cc47520fc64455cea0290a876578ac59bd"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "fastapi-applicare-dipendenza-a-tutte-le-rotte-router",
+    "fastapi-caricare-risorse-nel-lifespan",
+    "fastapi-riutilizzare-una-dipendenza-di-paginazione"
+  ],
+  "expected": "Il risultato mostra il comportamento descritto nel titolo; i dati dimostrativi sono inclusi nel sorgente.",
+  "errors": [
+    "Comando non trovato: installare la toolchain elencata nei prerequisiti.",
+    "Dipendenza mancante: eseguire l'installazione nella radice esportata, senza cambiare le versioni dichiarate."
+  ],
+  "sources": [
+    "https://fastapi.tiangolo.com/",
+    "https://docs.pydantic.dev/latest/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Sintassi dei file Python o JavaScript/JSX e JSON controllata sulle fonti correnti; esecuzione di questa singola ricetta non attestata.",
+    "files_sha256": {
+      "app.py": "8cb654afd20aec445952604c408c6ab4610c98be9332367a0e3b45f8c64cb683",
+      "requirements.txt": "65739c3d8a1fb7a7b9789cb1cbac8f6de99f1222bbdaf6453bb604f722b13fdf"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md",
+  "editorial": {
+    "version": 1,
+    "method": "Fatti ricavati staticamente dai file dell’esempio",
+    "facts": [
+      "Endpoint dell’esempio: GET /demo.",
+      "Validazione e risposte usano Depends."
+    ]
+  }
+}

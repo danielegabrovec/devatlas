@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug winui C#",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "${workspaceFolder}/bin/Debug/net8.0-windows10.0.19041.0/win-x64/{{project_name}}.exe",
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "Build Debug",
+      "stopAtEntry": false
+    }
+  ]
+}

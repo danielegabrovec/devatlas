@@ -1,0 +1,4 @@
+#include "contacts.hpp"
+#include <stdexcept>
+#include <iostream>
+int main(){Contacts contacts;contacts.add("Ada","ada@example.test");if(contacts.find("Ada")!="ada@example.test")throw std::logic_error("Ricerca errata");if(contacts.find("assente"))throw std::logic_error("Assenza errata");try{contacts.add("","a");return 1;}catch(const std::invalid_argument&){}std::cout<<"3 contratti verificati\n";}

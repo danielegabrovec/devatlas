@@ -1,0 +1,68 @@
+{
+  "id": "javascript-congelare-la-struttura-superficiale-di-un-oggetto",
+  "title": "Congelare la struttura superficiale di un oggetto",
+  "summary": "Impedisce modifiche alle proprietà dirette; i riferimenti annidati restano mutabili.",
+  "stack": "javascript",
+  "group": "Linguaggi",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "ECMAScript 2022+; Node.js 22+ per eseguire i file .mjs",
+  "prerequisites": "Node.js 22+ nel PATH. Gli esempi riguardano il linguaggio e le API standard; nessun pacchetto npm.",
+  "tags": [
+    "freeze",
+    "immutable",
+    "shallow"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.mjs",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "1a91d8ba175814d429b061a20ba36ce7b916e455217a39648933bb472cdbd37d"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "14355a5fac325262ed55e1f6230485a705d922683ec75317a95e55545d9db931"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "javascript-copiare-un-array-senza-condividere-la-struttura",
+    "javascript-rendere-iterabile-un-oggetto",
+    "javascript-accedere-a-proprieta-annidate-opzionali"
+  ],
+  "expected": "TypeError in modulo strict, poi 8080 false.",
+  "errors": [
+    "Comando non trovato: installare la toolchain e riaprire il terminale."
+  ],
+  "sources": [
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "details": "Eseguito su Windows x64 il 29/10/2026. Ambiente: Node.js24.15.0, moduli ESM. Sorgenti compilati/controllati e programmi eseguiti; per i progetti sono stati eseguiti anche i test inclusi. Report: reports/languages-source-validation.json e reports/languages-runtime-validation.json. Linux e macOS non eseguiti.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

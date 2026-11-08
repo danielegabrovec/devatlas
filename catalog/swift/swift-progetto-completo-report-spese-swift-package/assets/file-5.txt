@@ -1,0 +1,3 @@
+# Report spese Swift
+
+Toolchain di riferimento Swift6.4 su Linux/macOS, manifest tools-version6.0, nessuna dipendenza esterna. `swift test`, `swift run expense-cli data/expenses.json`, `swift build -c release`. I dati sintetici producono casa2000/libri2000 centesimi. Il programma lavora su un file locale passato come argomento e restituisce errore nonzero per input invalido. I test sono in un target XCTest separato. Non è un progetto iOS: il core value-type può essere riusato in un target Apple; l'accesso al file va adattato al sandbox dell'app. Nessuna esecuzione su Windows attestata.

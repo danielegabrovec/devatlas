@@ -1,0 +1,5 @@
+<script setup>
+import {ref,reactive,computed,watch,watchEffect,onMounted,onUnmounted,nextTick,provide,inject,defineAsyncComponent,shallowRef,triggerRef,readonly,toRefs} from 'vue';
+const visible=ref(false);
+</script>
+<template><main><button @click="visible=!visible">Dettagli</button><p v-if="visible">Informazioni complete</p><p v-else>Dettagli chiusi</p></main></template>

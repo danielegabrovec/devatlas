@@ -1,0 +1,1 @@
+SELECT REGEXP_REPLACE('123-456','[^0-9]','');

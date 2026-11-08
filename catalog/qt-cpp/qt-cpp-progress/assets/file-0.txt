@@ -1,0 +1,11 @@
+#include <QtWidgets>
+#include <QtCore>
+#include <QtGui>
+
+int main(int argc, char **argv) {
+ QApplication app(argc,argv);
+ QWidget window; window.resize(720,480);
+ auto *layout=new QVBoxLayout(&window);
+ auto *bar=new QProgressBar; bar->setValue(0); auto *timer=new QTimer(&window); QObject::connect(timer,&QTimer::timeout,bar,[bar,timer]{bar->setValue(bar->value()+10); if(bar->value()>=100) timer->stop();}); timer->start(200); layout->addWidget(bar);
+ window.show(); return app.exec();
+}

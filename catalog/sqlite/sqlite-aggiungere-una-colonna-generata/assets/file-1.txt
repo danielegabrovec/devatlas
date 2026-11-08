@@ -1,0 +1,1 @@
+CREATE TABLE righe(prezzo REAL,quantita INTEGER,totale REAL GENERATED ALWAYS AS(prezzo*quantita) STORED); INSERT INTO righe(prezzo,quantita) VALUES(5,3); SELECT totale FROM righe;

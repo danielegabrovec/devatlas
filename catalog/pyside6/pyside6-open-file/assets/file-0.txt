@@ -1,0 +1,30 @@
+import sys, json, sqlite3, tempfile, logging
+from pathlib import Path
+from PySide6.QtCore import *
+from PySide6.QtGui import *
+from PySide6.QtWidgets import *
+
+def build(root, layout):
+    edit = QPlainTextEdit()
+    button = QPushButton("Apri testo")
+    def load():
+        path, _ = QFileDialog.getOpenFileName(root, "Apri", "", "Testo (*.txt);;Tutti (*)")
+        if not path:
+            return
+        try:
+            edit.setPlainText(Path(path).read_text(encoding="utf-8"))
+        except (OSError, UnicodeError) as exc:
+            QMessageBox.warning(root, "Lettura non riuscita", str(exc))
+    button.clicked.connect(load)
+    layout.addWidget(button)
+    layout.addWidget(edit)
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    window = QWidget()
+    window.setWindowTitle("Ricetta Qt")
+    window.resize(720, 480)
+    layout = QVBoxLayout(window)
+    build(window, layout)
+    window.show()
+    sys.exit(app.exec())

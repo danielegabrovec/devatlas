@@ -1,0 +1,5 @@
+function isString(value: unknown): value is string { return typeof value === "string"; }
+const values: unknown[] = ["Ada", 42, "Luca"];
+const names = values.filter(isString);
+console.log(names.map(name => name.toUpperCase()));
+export {};

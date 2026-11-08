@@ -1,0 +1,1 @@
+export default async function Page({searchParams}){const p=await searchParams;const tags=Array.isArray(p.tag)?p.tag:p.tag?[p.tag]:[];return <ul>{tags.map((t,i)=><li key={i}>{t}</li>)}</ul>}

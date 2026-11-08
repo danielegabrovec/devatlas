@@ -1,0 +1,102 @@
+{
+  "id": "go-progetto-completo-inventario-in-memoria-go",
+  "title": "Progetto completo inventario in memoria Go",
+  "summary": "Organizza dominio, programma e test tabellari in package separati senza servizi o moduli esterni.",
+  "stack": "go",
+  "group": "Linguaggi",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Go 1.22+",
+  "prerequisites": "Toolchain Go1.22+ nel PATH. Tutti i moduli usano solo la libreria standard e non richiedono download di dipendenze.",
+  "tags": [
+    "project",
+    "package",
+    "module",
+    "testing",
+    "map"
+  ],
+  "project": true,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.go",
+      "language": "go",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "d85cca139e4fe827766c59d1aefb56676ef079da5c6d9773a05ef32695c855cb"
+    },
+    {
+      "id": "file-1",
+      "path": "go.mod",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "b263a2b3ac4f7eb119e74a14178fde9fe5173b8ed46074650155e5c22aea4a78"
+    },
+    {
+      "id": "file-2",
+      "path": "inventory/store.go",
+      "language": "go",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "0373b5321e3f0ff6a7acfbcfca98e7ab344ca71dbb3ef4ad92b518e088c543c4"
+    },
+    {
+      "id": "file-3",
+      "path": "inventory/store_test.go",
+      "language": "go",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "6aa55d9c424f0d27454cdd6ccda4db2acecf373ec484182a4f4f8505fd57f391"
+    },
+    {
+      "id": "file-4",
+      "path": "README.md",
+      "language": "markdown",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "a0a209a830c1a7b39407a582de0990b60d1ec66f98356cac35d5601cf6b88bee"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "6d5e9e1d67da269b8d808f3bc475208ac8308150cf06a10e1bc9fc386ac9b306"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "go-workflow-go-module",
+    "go-analizzare-date-usando-un-layout-go",
+    "go-contare-frequenze-con-map"
+  ],
+  "expected": "Due test passano e il programma stampa5.",
+  "errors": [
+    "Comando non trovato: installare la toolchain e riaprire il terminale."
+  ],
+  "sources": [
+    "https://go.dev/doc/",
+    "https://pkg.go.dev/std"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "details": "Eseguito su Windows x64 il 29/10/2026. Ambiente: Go1.27.0 windows/amd64, libreria standard. Sorgenti compilati/controllati e programmi eseguiti; per i progetti sono stati eseguiti anche i test inclusi. Report: reports/languages-source-validation.json e reports/languages-runtime-validation.json. Linux e macOS non eseguiti.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

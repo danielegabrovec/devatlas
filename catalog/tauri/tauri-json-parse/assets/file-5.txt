@@ -1,0 +1,5 @@
+#![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
+use tauri::Manager;
+
+#[derive(serde::Deserialize,serde::Serialize)]struct Item{name:String,qty:u32}#[tauri::command]fn demo(text:String)->Result<Item,String>{let item:Item=serde_json::from_str(&text).map_err(|e|e.to_string())?;if item.name.trim().is_empty(){return Err("Nome vuoto".into())}Ok(item)}
+fn main(){tauri::Builder::default().invoke_handler(tauri::generate_handler![demo]).run(tauri::generate_context!()).expect("Tauri application failed");}

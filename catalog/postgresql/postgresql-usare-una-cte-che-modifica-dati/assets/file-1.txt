@@ -1,0 +1,1 @@
+WITH changed AS(UPDATE products SET stock=stock+1 WHERE id=1 RETURNING *) SELECT name,stock FROM changed;

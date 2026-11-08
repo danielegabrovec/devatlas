@@ -1,0 +1,1 @@
+SELECT o.id,p.name,o.total FROM orders o JOIN people p ON p.id=o.person_id;

@@ -1,0 +1,25 @@
+import sys, json, sqlite3, tempfile, logging
+from pathlib import Path
+from PySide6.QtCore import *
+from PySide6.QtGui import *
+from PySide6.QtWidgets import *
+
+def build(root, layout):
+    group = QButtonGroup(root)
+    label = QLabel("Scegli un formato")
+    for number, name in enumerate(["JSON", "CSV", "XML"]):
+        button = QRadioButton(name)
+        group.addButton(button, number)
+        layout.addWidget(button)
+    group.idClicked.connect(lambda number: label.setText(f"Formato: {number}"))
+    layout.addWidget(label)
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    window = QWidget()
+    window.setWindowTitle("Ricetta Qt")
+    window.resize(720, 480)
+    layout = QVBoxLayout(window)
+    build(window, layout)
+    window.show()
+    sys.exit(app.exec())

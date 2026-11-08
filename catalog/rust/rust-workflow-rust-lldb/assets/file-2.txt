@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Rust",
+      "type": "lldb",
+      "request": "launch",
+      "cargo": {
+        "args": [
+          "build",
+          "--bin=rust_debug",
+          "--offline"
+        ],
+        "filter": {
+          "name": "rust_debug",
+          "kind": "bin"
+        }
+      },
+      "cwd": "${workspaceFolder}",
+      "args": []
+    }
+  ]
+}

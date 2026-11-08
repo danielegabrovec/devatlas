@@ -1,0 +1,2 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Laboratorio HTML/CSS</title><link rel="stylesheet" href="style.css"></head><body><table><caption>Ordini</caption><thead><tr><th scope='col'>Nome</th><th scope='col'>Importo</th></tr></thead><tbody><tr><th scope='row'>Ada</th><td>42€</td></tr></tbody></table></body></html>

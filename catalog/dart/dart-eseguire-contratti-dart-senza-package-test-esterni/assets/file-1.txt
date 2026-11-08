@@ -1,0 +1,3 @@
+import '../lib/math_core.dart';
+void expect(bool value,String label){if(!value)throw StateError(label);}
+void main(){expect(area(3,4)==12,'area');try{area(-1,2);throw StateError('Validazione assente');}on ArgumentError{}print('2 contratti verificati');}

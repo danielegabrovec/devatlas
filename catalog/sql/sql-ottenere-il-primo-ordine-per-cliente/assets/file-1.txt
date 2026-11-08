@@ -1,0 +1,1 @@
+WITH r AS(SELECT id,person_id,ROW_NUMBER() OVER(PARTITION BY person_id ORDER BY created_at,id) AS n FROM orders) SELECT id,person_id FROM r WHERE n=1;

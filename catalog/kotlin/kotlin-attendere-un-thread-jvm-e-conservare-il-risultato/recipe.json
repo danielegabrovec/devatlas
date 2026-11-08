@@ -1,0 +1,71 @@
+{
+  "id": "kotlin-attendere-un-thread-jvm-e-conservare-il-risultato",
+  "title": "Attendere un thread JVM e conservare il risultato",
+  "summary": "Protegge il punto di completamento con join senza introdurre una dipendenza coroutines.",
+  "stack": "kotlin",
+  "group": "Linguaggi",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "IntelliJ IDEA",
+    "Android Studio"
+  ],
+  "versions": "Kotlin2.3.21/JVM17; Gradle9.3.0 per i progetti Gradle",
+  "prerequisites": "JDK17+ e compilatore Kotlin2.3.21. Per Gradle usare9.3.0 e plugin Kotlin2.3.21 (prima acquisizione plugin richiede rete/cache). Le varianti Android richiedono un progetto Android già configurato e relativo SDK.",
+  "tags": [
+    "thread",
+    "JVM",
+    "join"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "Main.kt",
+      "language": "kotlin",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "80af30653a0449481b2cba8b475e9614c66c274353772a011d3c90dac445a9c0"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "508a4f224848d105f458d1a56cf3172c4f8a57869c1c7413f44f17581dd8f68d"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "kotlin-conservare-un-opzione-android-con-sharedpreferences",
+    "kotlin-progetto-completo-inventario-kotlin-jvm",
+    "kotlin-debuggare-kotlin-jvm-con-jdwp"
+  ],
+  "expected": "42; join stabilisce la visibilità del risultato dopo la terminazione.",
+  "errors": [
+    "Risultato letto troppo presto: esegui join prima di leggere lo stato scritto dal worker.",
+    "InterruptedException durante join: gestisci l'interruzione secondo il contratto del chiamante, senza assumere che il lavoro sia completato."
+  ],
+  "sources": [
+    "https://kotlinlang.org/docs/command-line.html",
+    "https://kotlinlang.org/docs/collections-overview.html",
+    "https://kotlinlang.org/docs/gradle-configure-project.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: kotlin compile, kotlin program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Compilatore Kotlin2.3.21 della cache Gradle, JDK25.0.4.1, target17. Pipeline Gradle, sessioni debugger e SDK Android non eseguiti."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

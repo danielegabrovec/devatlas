@@ -1,0 +1,5 @@
+<script setup>
+import {ref,reactive,computed,watch,watchEffect,onMounted,onUnmounted,nextTick,provide,inject,defineAsyncComponent,shallowRef,triggerRef,readonly,toRefs} from 'vue';
+import NameField from './NameField.vue';const name=ref('Ada');
+</script>
+<template><main><NameField v-model="name"/><p>{{name}}</p></main></template>

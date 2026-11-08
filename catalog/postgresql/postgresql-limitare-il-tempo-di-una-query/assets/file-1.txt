@@ -1,0 +1,1 @@
+BEGIN; SET LOCAL statement_timeout='2s'; SELECT count(*) FROM products; COMMIT;

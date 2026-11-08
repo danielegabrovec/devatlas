@@ -1,0 +1,105 @@
+{
+  "id": "flutter-deploy",
+  "title": "Preparare una build Flutter Windows Release",
+  "summary": "Distribuisci tutta la directory Release prodotta sotto build/windows, incluse DLL e data. Verifica su un Windows compatibile. La ricetta non crea firma o installer; Android richiede flutter build apk e la propria configurazione di firma, iOS richiede macOS/Xcode.",
+  "stack": "flutter",
+  "group": "Desktop e GUI",
+  "section": "Distribuzione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Android"
+  ],
+  "ide": [
+    "VS Code",
+    "Android Studio"
+  ],
+  "versions": "Flutter3.47 stable;Dart3.x incluso;API compatibili Flutter3.35+",
+  "prerequisites": "Flutter SDK stable3.47 e Dart incluso. Windows richiede Visual Studio con Desktop development with C++, non soltanto VS Code. Android richiede Android SDK/JDK e dispositivo o emulatore. macOS/iOS richiedono un Mac con Xcode e non sono verificati qui.",
+  "tags": [
+    "flutter",
+    "deploy",
+    "SDK",
+    "Windows",
+    "Android"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "bootstrap.ps1",
+      "language": "powershell",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "94c0fd813a85c12931c35b42eb24c1f6278d25a21d8fc10a005c49b814243829"
+    },
+    {
+      "id": "file-1",
+      "path": "recipe/pubspec.yaml",
+      "language": "yaml",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "9bcf9aad8af2481ec6415f439bab177617a910a4aed8d53b6735c9dcf204f588"
+    },
+    {
+      "id": "file-2",
+      "path": "recipe/analysis_options.yaml",
+      "language": "yaml",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "19c47ba237c5751421e4bc644bef9cb2617fdf9a46b0aafb84e5206858c9dcc0"
+    },
+    {
+      "id": "file-3",
+      "path": "recipe/lib/main.dart",
+      "language": "dart",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "4418a46ef46d0e191b50c34578ee0302365ade1dd00bace29b795b01866d7375"
+    },
+    {
+      "id": "file-4",
+      "path": "recipe/test/widget_test.dart",
+      "language": "dart",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "09f0673b13555aaceba55726ddefb2e4abd9e8d511d3b79c301cb451948bfcd4"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "8e1a6e2a10add63d72f77bf68b12e56761b0d99155f30f6b9c6693ba957909b2"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "flutter-build",
+    "flutter-debug",
+    "flutter-setup"
+  ],
+  "expected": "La procedura produce l’esito descritto quando SDK e piattaforma sono disponibili; nessun test mobile èpresunto.",
+  "errors": [
+    "Target of URI does not exist per flutter/material.dart: eseguire bootstrap e flutter pub get nel progetto app generato, non direttamente nella cartella recipe.",
+    "Build Windows senza compilatore: risolvere flutter doctor installando il workload Desktop development with C++ di Visual Studio; la sola estensione VS Code non fornisce il toolchain.",
+    "No supported devices connected: controllare flutter devices e selezionare una destinazione predisposta; Android richiede SDK/licenze ed emulatore o dispositivo, iOS richiede macOS/Xcode."
+  ],
+  "sources": [
+    "https://docs.flutter.dev/release/release-notes/release-notes-3.47.0",
+    "https://docs.flutter.dev/platform-integration/windows/setup",
+    "https://docs.flutter.dev/testing/overview"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "documentato",
+    "details": "Esempio originale revisionato nel catalogo; esecuzione non attestata.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

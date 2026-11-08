@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+p="atlas_demo:hll"
+cli(){ redis-cli -e --raw -h 127.0.0.1 -p 6381 "$@"; }
+cli DEL "$p:visitors"
+cli PFADD "$p:visitors" Ada Grace Ada
+cli PFCOUNT "$p:visitors"

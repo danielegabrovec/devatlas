@@ -1,0 +1,4 @@
+fn u16le(out:&mut Vec<u8>,value:u16){out.extend(value.to_le_bytes());}
+fn u32le(out:&mut Vec<u8>,value:u32){out.extend(value.to_le_bytes());}
+fn icon()->Vec<u8>{let mut dib=Vec::new();u32le(&mut dib,40);u32le(&mut dib,32);u32le(&mut dib,64);u16le(&mut dib,1);u16le(&mut dib,32);u32le(&mut dib,0);u32le(&mut dib,4096);for _ in 0..4{u32le(&mut dib,0);}for y in 0..32{for x in 0..32{let mark=(12..20).contains(&x)||(12..20).contains(&y);dib.extend(if mark{[245u8,245,245,255]}else{[145,73,40,255]});}}dib.extend([0u8;128]);let mut ico=Vec::new();u16le(&mut ico,0);u16le(&mut ico,1);u16le(&mut ico,1);ico.extend([32u8,32,0,0]);u16le(&mut ico,1);u16le(&mut ico,32);u32le(&mut ico,dib.len()as u32);u32le(&mut ico,22);ico.extend(dib);ico}
+fn main(){std::fs::create_dir_all("icons").expect("icons directory");std::fs::write("icons/icon.ico",icon()).expect("icon write");tauri_build::build();}

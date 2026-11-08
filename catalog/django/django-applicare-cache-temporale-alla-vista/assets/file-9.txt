@@ -1,0 +1,4 @@
+from notes.models import Note
+Note.objects.all().delete()
+Note.objects.bulk_create([Note(title='Python',body='Leggere file',priority=2),Note(title='SQL',body='Unire tabelle',priority=3),Note(title='React',body='Gestire form',done=True)])
+print('Creati3dati sintetici')

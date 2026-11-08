@@ -1,0 +1,26 @@
+{
+  "name": "recipe-electron-lifecycle",
+  "version": "1.0.0",
+  "private": true,
+  "main": "main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "debug": "electron --inspect-brk=9229 .",
+    "package": "electron-builder --dir --win --x64"
+  },
+  "devDependencies": {
+    "electron": "45.1.0",
+    "electron-builder": "26.0.12"
+  },
+  "build": {
+    "appId": "it.ricettario.lifecycle",
+    "productName": "{{project_name}}",
+    "files": [
+      "main.cjs",
+      "preload.cjs",
+      "renderer.js",
+      "totals.cjs",
+      "index.html"
+    ]
+  }
+}

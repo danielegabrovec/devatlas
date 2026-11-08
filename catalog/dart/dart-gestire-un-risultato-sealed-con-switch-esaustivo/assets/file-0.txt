@@ -1,0 +1,8 @@
+sealed class Outcome<T>{const Outcome();}
+final class Success<T> extends Outcome<T>{final T value;const Success(this.value);}
+final class Failure<T> extends Outcome<T>{final String message;const Failure(this.message);}
+Future<void> main() async {
+final Outcome<int> result=Success(42);
+final label=switch(result){Success<int>(value:final value)=>'valore $value',Failure<int>(message:final message)=>message};
+print(label);
+}

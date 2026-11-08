@@ -1,0 +1,2 @@
+mongodump --uri="mongodb://127.0.0.1:27018" --db=atlas_demo_setup --out=backup-demo
+mongorestore --uri="mongodb://127.0.0.1:27018" --nsInclude="atlas_demo_setup.*" --nsFrom="atlas_demo_setup.*" --nsTo="atlas_demo_restored.*" backup-demo

@@ -1,0 +1,5 @@
+def total(values):
+    result = sum(values)
+    return result
+if __name__ == "__main__":
+    print(total([2, 3, 5]))

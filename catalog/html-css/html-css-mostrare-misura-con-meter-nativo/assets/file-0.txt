@@ -1,0 +1,2 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Laboratorio HTML/CSS</title><link rel="stylesheet" href="style.css"></head><body><label for='capacity'>Capacità utilizzata</label><meter id='capacity' min='0' max='100' low='20' high='80' optimum='30' value='65'>65%</meter></body></html>

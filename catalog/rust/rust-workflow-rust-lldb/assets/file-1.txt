@@ -1,0 +1,2 @@
+fn total(values:&[i32])->i32{let result=values.iter().sum();result}
+fn main(){let values=[2,3,5];println!("{}",total(&values));}

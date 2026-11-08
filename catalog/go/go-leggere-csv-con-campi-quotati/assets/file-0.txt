@@ -1,0 +1,11 @@
+package main
+
+import (
+"fmt"
+"encoding/csv"
+"strings"
+)
+
+func main(){
+reader:=csv.NewReader(strings.NewReader("\"Rossi, Ada\",36\n"));records,err:=reader.ReadAll();if err!=nil{panic(err)};fmt.Println(records[0][0],len(records[0]))
+}

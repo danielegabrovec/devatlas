@@ -1,0 +1,1 @@
+import {Component,input} from '@angular/core';@Component({selector:'app-greeting',standalone:true,template:'<p>Ciao {{name()}}</p>'})export class Greeting{name=input('Ospite');}

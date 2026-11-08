@@ -1,0 +1,1 @@
+'use client';export default function GlobalError({reset}){return <html lang='it'><body><h1>Errore applicazione</h1><button onClick={reset}>Riprova</button></body></html>}

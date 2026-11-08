@@ -1,0 +1,1 @@
+import{createHmac}from'node:crypto';console.log(createHmac('sha256','chiave-demo-non-produzione').update('messaggio').digest('hex'));

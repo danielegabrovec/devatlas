@@ -1,0 +1,5 @@
+import Foundation
+
+let before:Set<String>=["a","b"],after:Set<String>=["b","c"]
+print(after.subtracting(before).sorted())
+print(before.subtracting(after).sorted())

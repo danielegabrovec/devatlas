@@ -1,0 +1,17 @@
+import json
+from pathlib import Path
+class Inventory:
+    def __init__(self, path):
+        self.path = Path(path)
+        self.data = json.loads(self.path.read_text(encoding="utf-8")) if self.path.exists() else {}
+        if not isinstance(self.data, dict) or any(not isinstance(k, str) or type(v) is not int or v < 0 for k, v in self.data.items()):
+            raise ValueError("Inventario non valido")
+    def add(self, name, quantity):
+        if not name.strip() or quantity <= 0:
+            raise ValueError("Nome non vuoto e quantità positiva richiesti")
+        self.data[name] = self.data.get(name, 0) + quantity
+        pending = self.path.with_suffix(self.path.suffix + ".tmp")
+        pending.write_text(json.dumps(self.data, ensure_ascii=False, indent=2), encoding="utf-8")
+        pending.replace(self.path)
+    def items(self):
+        return sorted(self.data.items())

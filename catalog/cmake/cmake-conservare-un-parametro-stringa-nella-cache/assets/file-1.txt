@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.24)
+project(RecipeBuild VERSION 1.2.0 LANGUAGES CXX)
+add_executable(recipe main.cpp)
+set(RECIPE_CHANNEL "local" CACHE STRING "Release channel")
+set_property(CACHE RECIPE_CHANNEL PROPERTY STRINGS local beta stable)
+message(STATUS "Recipe channel: ${RECIPE_CHANNEL}")

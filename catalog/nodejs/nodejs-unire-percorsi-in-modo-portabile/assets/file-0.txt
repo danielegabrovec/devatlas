@@ -1,0 +1,1 @@
+import{join,resolve,extname,basename}from'node:path';console.log(join('data','report.csv'),resolve('.'),extname('a.csv'),basename('a.csv','.csv'));

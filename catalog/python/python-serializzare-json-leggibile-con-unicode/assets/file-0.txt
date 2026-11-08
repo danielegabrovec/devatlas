@@ -1,0 +1,5 @@
+import json
+data = {"nome": "Città", "valori": [1, 2]}
+text = json.dumps(data, ensure_ascii=False, indent=2, sort_keys=True)
+print(text)
+print(json.loads(text) == data)

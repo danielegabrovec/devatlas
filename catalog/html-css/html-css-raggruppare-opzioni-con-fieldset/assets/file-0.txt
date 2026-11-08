@@ -1,0 +1,2 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Laboratorio HTML/CSS</title><link rel="stylesheet" href="style.css"></head><body><form><fieldset><legend>Formato</legend><label><input type='radio' name='format' value='pdf' checked>PDF</label><label><input type='radio' name='format' value='html'>HTML</label></fieldset></form></body></html>

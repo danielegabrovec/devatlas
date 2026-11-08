@@ -1,0 +1,4 @@
+Set-StrictMode -Version Latest
+$ErrorActionPreference='Stop'
+$job=Start-Job -ScriptBlock { 1..5 | Measure-Object -Sum }
+try { $job | Wait-Job | Receive-Job } finally { Remove-Job -Job $job }

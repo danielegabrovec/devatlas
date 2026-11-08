@@ -1,0 +1,66 @@
+{
+  "id": "powershell-leggere-un-file-utf-8-come-stringa-unica",
+  "title": "Leggere un file UTF-8 come stringa unica",
+  "summary": "Usare Raw per preservare righe e spazi di un documento.",
+  "stack": "powershell",
+  "group": "Strumenti",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "PowerShell 7.4+",
+  "prerequisites": "PowerShell 7.4 o successivo (pwsh), non Windows PowerShell 5.1.",
+  "tags": [
+    "powershell",
+    "leggere-un-file-utf-8-come-stringa-unica",
+    "workflow"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "example.ps1",
+      "language": "powershell",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "f11b2fd26aa77c52e0d918fe38e0985e23185c53bebd90fc6c2b19f876569b90"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "81aad1821298699efaf15c56f7bf9323fd4197932372431ecdb7764f88170265"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "powershell-calcolare-sha-256-di-un-file-locale",
+    "powershell-confrontare-due-insiemi-di-file-attesi",
+    "powershell-leggere-il-contenuto-di-una-directory-in-modo-stabile"
+  ],
+  "expected": "Usare Raw per preservare righe e spazi di un documento.",
+  "errors": [
+    "Comando non trovato: verificare la dipendenza e riaprire il terminale dopo l'installazione.",
+    "Accesso negato: scegliere una cartella di lavoro o temporanea scrivibile."
+  ],
+  "sources": [
+    "https://learn.microsoft.com/powershell/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "details": "Controlli statici sui sorgenti: AST Python, parser PowerShell/Bash dove disponibili, node --check per JavaScript, JSON e XML secondo i file presenti. Nessuna compilazione C#/XAML/C++ né esecuzione Docker/CI/packaging attestata. Report: reports/desktop-tools-qa.json.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

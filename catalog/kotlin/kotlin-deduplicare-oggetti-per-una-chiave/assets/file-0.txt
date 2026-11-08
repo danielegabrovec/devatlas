@@ -1,0 +1,5 @@
+data class User(val id: Int, val name: String)
+fun main() {
+val users = listOf(User(1,"prima"),User(1,"seconda"),User(2,"terza"))
+println(users.distinctBy { it.id }.map { it.name })
+}

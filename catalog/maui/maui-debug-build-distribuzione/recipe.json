@@ -1,0 +1,155 @@
+{
+  "id": "maui-debug-build-distribuzione",
+  "title": "Debug e pubblicazione desktop .NET MAUI Windows",
+  "summary": "Osservare nel debugger il calcolo richiamato dalla UI e pubblicare una cartella Windows x64 con i runtime necessari.",
+  "stack": "maui",
+  "group": "Desktop e GUI",
+  "section": "Debug",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows"
+  ],
+  "ide": [
+    "VS Code",
+    "Visual Studio"
+  ],
+  "versions": ".NET 10; MAUI Controls 10.0.31; destinazione Windows",
+  "prerequisites": "Windows 10 build 19041+; .NET 10 SDK con workload MAUI Windows installato; Visual Studio 2026 con MAUI. Non occorrono Android o un Mac per questo esempio Windows.",
+  "tags": [
+    ".NET MAUI Windows",
+    "debug",
+    "coreclr",
+    "breakpoint",
+    "publish",
+    "self-contained",
+    "Windows"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "MainPage.cs",
+      "language": "csharp",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "9503cc26d62934025ca05bc05ec580a3c000baa870490ced0069caa9b4051c35"
+    },
+    {
+      "id": "file-1",
+      "path": "App.cs",
+      "language": "csharp",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "aa98be97f62791ed0036e1b9a4f85a038725933a044971f7e91420ee3f55b219"
+    },
+    {
+      "id": "file-2",
+      "path": "MauiProgram.cs",
+      "language": "csharp",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "d8818c4e61b2e8037126b60c246221cf4a0d49a9a6328e1b0254eef2ff89b976"
+    },
+    {
+      "id": "file-3",
+      "path": "Platforms/Windows/App.xaml",
+      "language": "xml",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "25c3fc072ac197781deb7c13b2961d68221c5616f792f6fdd3c4c3d345c35f52"
+    },
+    {
+      "id": "file-4",
+      "path": "Platforms/Windows/App.xaml.cs",
+      "language": "csharp",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "32b0e1f3cd46b4d3e17ea78b69003ed4c73663319b962ca2d0ffeea0a2c1becf"
+    },
+    {
+      "id": "file-5",
+      "path": "{{project_name}}.csproj",
+      "language": "xml",
+      "role": "file",
+      "source": "assets/file-5.txt",
+      "sha256": "2708f9712ca94ca1dd6e2cf4e4576c60490122e9808f907d4aaebe05ebe6e251"
+    },
+    {
+      "id": "file-6",
+      "path": "Invoice.cs",
+      "language": "csharp",
+      "role": "file",
+      "source": "assets/file-6.txt",
+      "sha256": "b3faaa9d4929baf61261c0f37fe8123c11032d13ae1e771d010dd967c2323cf4"
+    },
+    {
+      "id": "file-7",
+      "path": ".vscode/tasks.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-7.txt",
+      "sha256": "3e171a7f4f336e154c8e28c02635c954d26ccde96d717169e6e41b5a1a708342"
+    },
+    {
+      "id": "file-8",
+      "path": ".vscode/launch.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-8.txt",
+      "sha256": "aac1b539351a994e94f960e796aa20736f100feb6132b8f57518f1786475fc18"
+    },
+    {
+      "id": "command-0",
+      "path": "Restore e avvio locale",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "9b8a159bfb107aac3f146e26f8aca903749047fefa78ab60c646c79ed4403d06"
+    },
+    {
+      "id": "command-1",
+      "path": "Pubblicazione in cartella",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-1.txt",
+      "sha256": "20a5cf684b9f0f72ac3fb55b6c81ce3efed9c1f52ab959951fefc94ee233cd82"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "project_name",
+      "label": "Nome dell'applicazione",
+      "type": "identifier",
+      "default": "RecipeDesktop",
+      "required": true
+    }
+  ],
+  "related": [
+    "maui-inizializzazione-ambiente",
+    "maui-activity",
+    "maui-alert"
+  ],
+  "expected": "Il pulsante Calcola mostra 19.75; il debugger raggiunge Invoice.Total e il publish prepara una cartella x64 completa.",
+  "errors": [
+    "Breakpoint vuoto: usare Debug, il percorso program corrispondente al framework/RID e l'estensione C# di VS Code.",
+    "App presente solo sulla macchina di sviluppo: controllare le opzioni self-contained e consegnare tutta la directory publish."
+  ],
+  "sources": [
+    "https://learn.microsoft.com/dotnet/maui/get-started/first-app",
+    "https://learn.microsoft.com/dotnet/maui/windows/deployment/publish-unpackaged-cli?view=net-maui-10.0"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "details": "Controlli statici sui sorgenti: AST Python, parser PowerShell/Bash dove disponibili, node --check per JavaScript, JSON e XML secondo i file presenti. Nessuna compilazione C#/XAML/C++ né esecuzione Docker/CI/packaging attestata. Report: reports/desktop-tools-qa.json.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

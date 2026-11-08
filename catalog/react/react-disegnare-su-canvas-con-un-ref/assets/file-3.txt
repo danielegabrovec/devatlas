@@ -1,0 +1,3 @@
+import React, {useState,useEffect,useMemo,useRef,useReducer,useId,useContext,createContext,useCallback,useLayoutEffect,useTransition,useDeferredValue,useSyncExternalStore,useImperativeHandle,forwardRef,memo,lazy,Suspense,Component} from 'react';
+import {createPortal} from 'react-dom';
+export default function App(){const r=useRef(null);useEffect(()=>{const c=r.current.getContext('2d');c.fillStyle='#1769c5';c.fillRect(10,10,120,60)},[]);return <canvas ref={r} width='200' height='100' aria-label='Rettangolo blu'>Rettangolo blu</canvas>}

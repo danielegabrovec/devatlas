@@ -1,0 +1,15 @@
+{
+  "recipes": 110,
+  "projects": 4,
+  "error_entries": 233,
+  "empty_errors": 0,
+  "asset_hashes_unchanged": true,
+  "guide_hashes_unchanged": true,
+  "verification_unchanged": true,
+  "statuses": {
+    "eseguito": 50,
+    "statico": 56,
+    "compilato": 4
+  },
+  "code_tests_rerun": false
+}

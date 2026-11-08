@@ -1,0 +1,4 @@
+type Point = [x: number, y: number];
+function distance([x, y]: Point): number { return Math.hypot(x, y); }
+console.log(distance([3, 4]));
+export {};

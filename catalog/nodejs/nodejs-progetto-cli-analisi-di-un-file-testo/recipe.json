@@ -1,0 +1,119 @@
+{
+  "id": "nodejs-progetto-cli-analisi-di-un-file-testo",
+  "title": "Progetto: CLI analisi di un file testo",
+  "summary": "Output:2righe,3parole; node--test controlla la funzione pura.",
+  "stack": "nodejs",
+  "group": "Web e backend",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Node.js 24 LTS+; ESM",
+  "prerequisites": "Node.js24+ nel PATH. Esempi server: porta3000 libera, browser locale; Ctrl+C arresta. Le richieste example.com richiedono rete.",
+  "tags": [
+    "nodejs",
+    "example",
+    "progetto:",
+    "cli",
+    "analisi",
+    "di"
+  ],
+  "project": true,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "src/count.mjs",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "84bea60e704f4aeef0f46958890467008552898fa94952e8bdaf960fab866b9c"
+    },
+    {
+      "id": "file-1",
+      "path": "src/main.mjs",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "31a26a61b3bfc58749c06b6d9e52b67c65aa0253d1c9a213fbc6f4f2f6322df3"
+    },
+    {
+      "id": "file-2",
+      "path": "test/count.test.mjs",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "ee96cee11cdf40f0dd1dbb85528fd8cac24191e7a680165031104a49b7f92641"
+    },
+    {
+      "id": "file-3",
+      "path": "sample.txt",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "50e800ff5e4974cfbe135890f361efd817baf213b49f48a1647b5bd896cfed78"
+    },
+    {
+      "id": "file-4",
+      "path": "package.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "9d06f106077fadd79f3da6332f70771021d630ef9beca3d06f616c92b2751630"
+    },
+    {
+      "id": "file-5",
+      "path": "README.md",
+      "language": "markdown",
+      "role": "file",
+      "source": "assets/file-5.txt",
+      "sha256": "49a487ba85f5a375ac6d8522138f639c6b7fad7ca85d224803d7667aaf762c75"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "647a248b93e413f02a8bf37f1f093c290c17d01b8ad17f654e4a44527645ccad"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "nodejs-progetto-api-locale-catalogo-prodotti",
+    "nodejs-progetto-pipeline-di-importazione-ndjson",
+    "nodejs-analizzare-argomenti-cli-tipizzati"
+  ],
+  "expected": "Output:2righe,3parole; node--test controlla la funzione pura.",
+  "errors": [
+    "Comando non trovato: installare la toolchain elencata nei prerequisiti.",
+    "Dipendenza mancante: eseguire l'installazione nella radice esportata, senza cambiare le versioni dichiarate."
+  ],
+  "sources": [
+    "https://nodejs.org/docs/latest-v24.x/api/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "date": "2026-10-29",
+    "details": "Test node --test superati su Node24/Windows; Avvio CLI verificato su dati sintetici.",
+    "files_sha256": {
+      "src/count.mjs": "84bea60e704f4aeef0f46958890467008552898fa94952e8bdaf960fab866b9c",
+      "src/main.mjs": "31a26a61b3bfc58749c06b6d9e52b67c65aa0253d1c9a213fbc6f4f2f6322df3",
+      "test/count.test.mjs": "ee96cee11cdf40f0dd1dbb85528fd8cac24191e7a680165031104a49b7f92641",
+      "sample.txt": "50e800ff5e4974cfbe135890f361efd817baf213b49f48a1647b5bd896cfed78",
+      "package.json": "9d06f106077fadd79f3da6332f70771021d630ef9beca3d06f616c92b2751630",
+      "README.md": "49a487ba85f5a375ac6d8522138f639c6b7fad7ca85d224803d7667aaf762c75"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

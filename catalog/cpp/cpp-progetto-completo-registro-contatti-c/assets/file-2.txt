@@ -1,0 +1,4 @@
+#include "contacts.hpp"
+#include <stdexcept>
+void Contacts::add(const std::string& name,const std::string& email){if(name.empty()||email.find('@')==std::string::npos)throw std::invalid_argument("Contatto non valido");entries.insert_or_assign(name,email);}
+std::optional<std::string> Contacts::find(const std::string& name)const{auto it=entries.find(name);if(it==entries.end())return std::nullopt;return it->second;}

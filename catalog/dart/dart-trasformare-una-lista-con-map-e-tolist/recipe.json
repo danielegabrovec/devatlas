@@ -1,0 +1,70 @@
+{
+  "id": "dart-trasformare-una-lista-con-map-e-tolist",
+  "title": "Trasformare una lista con map e toList",
+  "summary": "Materializza una trasformazione lazy soltanto quando serve un risultato indicizzabile.",
+  "stack": "dart",
+  "group": "Linguaggi",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Dart3.13.x; librerie SDK, nessuna dipendenza Pub esterna",
+  "prerequisites": "Dart SDK3.13.x nel PATH. Gli esempi dart:io sono nativi; per riusarli su web occorre sostituire accesso filesystem/isolate dove non supportato. Nessun package esterno necessario ai capstone.",
+  "tags": [
+    "map",
+    "Iterable",
+    "toList"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.dart",
+      "language": "dart",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "7a97e968d477a172682e36170e9fb8b6a248bd15d4b77b0b35a8c2f6f558f8fe"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "7ed1d0120ff7cd104704e65f61394f4493baec4c941cafc797f5e11b53ea5d71"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "dart-raggruppare-elementi-con-putifabsent",
+    "dart-validare-json-con-un-map-pattern-tipizzato",
+    "dart-aggiungere-una-extension-per-validare-testo"
+  ],
+  "expected": "[4,9,16]; source non è modificata.",
+  "errors": [
+    "Risultato ancora Iterable: usa toList quando serve una lista materializzata e indicizzabile.",
+    "La sorgente non cambia: map produce una trasformazione distinta e non aggiorna gli elementi originali."
+  ],
+  "sources": [
+    "https://dart.dev/language",
+    "https://dart.dev/resources/whats-new",
+    "https://dart.dev/tools/dart-compile"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

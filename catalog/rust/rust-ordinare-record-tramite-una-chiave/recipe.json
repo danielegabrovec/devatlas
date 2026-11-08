@@ -1,0 +1,68 @@
+{
+  "id": "rust-ordinare-record-tramite-una-chiave",
+  "title": "Ordinare record tramite una chiave",
+  "summary": "Ordina una sequenza in place in base al campo numerico.",
+  "stack": "rust",
+  "group": "Linguaggi",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Rust stable 1.75+, edition 2021",
+  "prerequisites": "Toolchain Rust tramite rustup: rustc e cargo nel PATH. Gli esempi usano soltanto std; nessuna crate da scaricare.",
+  "tags": [
+    "sort_by_key",
+    "records",
+    "vector"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.rs",
+      "language": "rust",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "18a90f025e0da3495e76326ae3cbb65feb99e0fe5072bab9a396d3a6838fa5f3"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "fba11acd72fb5b0cc91b91aca2c88d17fbb0f469cd7beda66f05bc4a7f5276fd"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "rust-filtrare-e-copiare-elementi-di-un-vector",
+    "rust-leggere-tramite-prestito-immutabile",
+    "rust-modificare-tramite-prestito-mutabile"
+  ],
+  "expected": "Luca precede Ada.",
+  "errors": [
+    "Il borrow checker segnala riferimenti o mutazioni non validi: correggere la proprietà dei dati invece di introdurre unsafe per aggirarlo."
+  ],
+  "sources": [
+    "https://doc.rust-lang.org/book/",
+    "https://doc.rust-lang.org/std/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "details": "Eseguito su Windows x64 il 29/10/2026. Ambiente: rustc1.99.0, edition2021, Cargo offline e std. Sorgenti compilati/controllati e programmi eseguiti; per i progetti sono stati eseguiti anche i test inclusi. Report: reports/languages-source-validation.json e reports/languages-runtime-validation.json. Linux e macOS non eseguiti.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

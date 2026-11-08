@@ -1,0 +1,5 @@
+import re
+import unicodedata
+title = "Caffè e Python: primi passi!"
+ascii_title = unicodedata.normalize("NFKD", title).encode("ascii", "ignore").decode()
+print(re.sub(r"[^a-z0-9]+", "-", ascii_title.lower()).strip("-"))

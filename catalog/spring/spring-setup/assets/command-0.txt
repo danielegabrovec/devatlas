@@ -1,0 +1,3 @@
+java -version
+mvn --version
+mvn spring-boot:run

@@ -1,0 +1,3 @@
+import React, {useState,useEffect,useMemo,useRef,useReducer,useId,useContext,createContext,useCallback,useLayoutEffect,useTransition,useDeferredValue,useSyncExternalStore,useImperativeHandle,forwardRef,memo,lazy,Suspense,Component} from 'react';
+import {createPortal} from 'react-dom';
+export default function App(){const Theme=useMemo(()=>createContext('light'),[]);const[theme,set]=useState('light');return <Theme.Provider value={theme}><button onClick={()=>set(theme==='light'?'dark':'light')}>{theme}</button><Theme.Consumer>{t=><p>Tema condiviso:{t}</p>}</Theme.Consumer></Theme.Provider>}

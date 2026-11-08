@@ -1,0 +1,1 @@
+import{readFile,writeFile}from'node:fs/promises';await writeFile('demo.txt','Ciao');console.log(await readFile('demo.txt','utf8'));

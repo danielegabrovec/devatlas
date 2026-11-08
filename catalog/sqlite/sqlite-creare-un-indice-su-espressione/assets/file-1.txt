@@ -1,0 +1,1 @@
+CREATE INDEX idx_email_lower ON people(lower(email)); EXPLAIN QUERY PLAN SELECT id FROM people WHERE lower(email)='ada@example.test';

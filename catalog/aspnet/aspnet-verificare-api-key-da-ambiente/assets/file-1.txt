@@ -1,0 +1,12 @@
+using System.Text;
+using System.Text.Json;
+using System.Diagnostics;
+using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.RateLimiting;
+using System.Threading.RateLimiting;
+var builder=WebApplication.CreateBuilder(args);
+
+var app=builder.Build();
+app.MapGet("/demo",(HttpRequest r,IConfiguration c)=>{var expected=c["DemoApiKey"];if(string.IsNullOrEmpty(expected))return Results.Problem("Configurare DemoApiKey",statusCode:503);return r.Headers["X-Api-Key"]==expected?Results.Ok(new{ok=true}):Results.Unauthorized();});
+app.Run();

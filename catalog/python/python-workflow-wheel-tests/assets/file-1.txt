@@ -1,0 +1,4 @@
+def area(width: float, height: float) -> float:
+    if width < 0 or height < 0:
+        raise ValueError("Lati non negativi richiesti")
+    return width * height

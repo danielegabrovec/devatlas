@@ -1,0 +1,1 @@
+<script setup>defineProps({name:{type:String,default:'Ospite'}});</script><template><p>Ciao {{name}}</p></template>

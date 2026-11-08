@@ -1,0 +1,1 @@
+INSERT INTO notes(title,body) VALUES('Python','Leggere file'),('SQL','Cercare nei dati');

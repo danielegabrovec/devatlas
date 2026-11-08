@@ -1,0 +1,15 @@
+package it.atlas;
+import java.util.*;
+import java.util.concurrent.*;
+import java.net.URI;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.http.*;
+import org.springframework.web.server.ResponseStatusException;
+import org.springframework.beans.factory.annotation.*;
+import org.springframework.stereotype.*;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.*;
+@RestController
+public class DemoController {
+public record Item(long id,String title){} @PostMapping("/items") public ResponseEntity<Item> create(@RequestBody Item input){Item saved=new Item(1,input.title());return ResponseEntity.created(URI.create("/items/1")).body(saved);}
+}

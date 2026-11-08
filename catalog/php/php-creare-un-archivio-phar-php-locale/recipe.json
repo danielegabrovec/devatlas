@@ -1,0 +1,79 @@
+{
+  "id": "php-creare-un-archivio-phar-php-locale",
+  "title": "Creare un archivio PHAR PHP locale",
+  "summary": "Incorpora uno script in un PHAR firmato con digest SHA256 senza pubblicarlo online.",
+  "stack": "php",
+  "group": "Linguaggi",
+  "section": "Distribuzione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "PHP8.4/8.5 CLI, strict_types; estensioni indicate nella singola scheda",
+  "prerequisites": "PHP8.4 o8.5 CLI nel PATH. PDO SQLite richiede pdo_sqlite; le altre estensioni necessarie sono indicate. Il server incorporato è destinato al laboratorio locale.",
+  "tags": [
+    "PHAR",
+    "distribution",
+    "SHA256"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "app/main.php",
+      "language": "php",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "08a4ac61fecab71553e8e7a388be4faf04aa62cf588bd1f4c2b7d1ba52f3fae7"
+    },
+    {
+      "id": "file-1",
+      "path": "build-phar.php",
+      "language": "php",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "54d499974d6d63de9828898336d580461c016c706746bf9f6a247dc7877d20d7"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "b0aba500917e8bcbdea16e590fb7354c371a7c8b7fe915ffc3c2f0088945bbdc"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "php-restituire-un-endpoint-json-php-locale",
+    "php-progetto-completo-rubrica-json-php",
+    "php-controllare-sintassi-php-prima-della-consegna"
+  ],
+  "expected": "PHAR pronto; l'artefatto richiede un runtime PHP compatibile sulla macchina destinataria.",
+  "errors": [
+    "Creazione PHAR rifiutata per phar.readonly: usa -d phar.readonly=0 soltanto nel processo di build.",
+    "Class Phar non trovata: verifica che l'estensione Phar sia disponibile nella distribuzione PHP.",
+    "Il PHAR non parte sulla destinazione: l'archivio richiede un runtime PHP compatibile e non è un eseguibile autonomo."
+  ],
+  "sources": [
+    "https://www.php.net/manual/en/",
+    "https://www.php.net/supported-versions.php",
+    "https://www.php.net/manual/en/book.phar.php"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: php PHAR execute, php lint, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

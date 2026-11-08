@@ -1,0 +1,1 @@
+SELECT ARRAY['python','sql'] && ARRAY['sql','go'];

@@ -1,0 +1,4 @@
+gcc -std=c17 main.c stats.c -o demo.exe
+gcc -std=c17 test.c stats.c -o tests.exe
+.\tests.exe
+.\demo.exe

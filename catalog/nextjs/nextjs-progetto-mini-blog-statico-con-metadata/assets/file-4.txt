@@ -1,0 +1,1 @@
+export const posts=[{slug:'inizio',title:'Iniziare',body:'Creare un progetto e una pagina.'},{slug:'ricerca',title:'Ricerca',body:'Filtrare contenuti con parole chiave.'}];

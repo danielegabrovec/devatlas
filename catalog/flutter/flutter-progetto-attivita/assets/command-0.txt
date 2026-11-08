@@ -1,0 +1,4 @@
+.\bootstrap.ps1
+flutter analyze
+flutter test
+flutter run -d windows

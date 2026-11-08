@@ -1,0 +1,5 @@
+<script setup>
+import {ref,reactive,computed,watch,watchEffect,onMounted,onUnmounted,nextTick,provide,inject,defineAsyncComponent,shallowRef,triggerRef,readonly,toRefs} from 'vue';
+const descending=ref(false);const rows=ref([{id:1,name:'Monitor',price:180},{id:2,name:'Mouse',price:20}]);const sorted=computed(()=>[...rows.value].sort((a,b)=>(descending.value?-1:1)*(a.price-b.price)));
+</script>
+<template><main><button @click="descending=!descending">Inverti</button><table><tbody><tr v-for="row in sorted" :key="row.id"><td>{{row.name}}</td><td>{{row.price}}</td></tr></tbody></table></main></template>

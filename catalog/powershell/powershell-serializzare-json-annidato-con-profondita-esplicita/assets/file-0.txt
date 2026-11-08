@@ -1,0 +1,6 @@
+Set-StrictMode -Version Latest
+$ErrorActionPreference='Stop'
+$value = @{Project="Demo";Build=@{Mode="Debug";Targets=@("app","tests")}}
+$json = $value | ConvertTo-Json -Depth 6
+$json
+($json | ConvertFrom-Json).Build.Targets

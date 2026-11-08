@@ -1,0 +1,24 @@
+import sys, json, sqlite3, tempfile, logging
+from pathlib import Path
+from PySide6.QtCore import *
+from PySide6.QtGui import *
+from PySide6.QtWidgets import *
+
+def build(root, layout):
+    table = QTableWidget(2, 2)
+    table.setHorizontalHeaderLabels(["Prodotto", "Quantità"])
+    for row, values in enumerate([("Matite", "12"), ("Quaderni", "4")]):
+        for column, value in enumerate(values):
+            table.setItem(row, column, QTableWidgetItem(value))
+    table.setSortingEnabled(True)
+    layout.addWidget(table)
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    window = QWidget()
+    window.setWindowTitle("Ricetta Qt")
+    window.resize(720, 480)
+    layout = QVBoxLayout(window)
+    build(window, layout)
+    window.show()
+    sys.exit(app.exec())

@@ -1,0 +1,2 @@
+const rows = [{ id: 1, active: true }, { id: 2, active: false }];
+console.log(rows.filter(row => row.active).map(row => row.id));

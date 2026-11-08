@@ -1,0 +1,1 @@
+import{notFound}from'next/navigation';export default async function Page({params}){const{id}=await params;if(id!=='1')notFound();return <h1>Elemento1</h1>}

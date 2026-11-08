@@ -1,0 +1,87 @@
+{
+  "id": "rust-workflow-rust-lldb",
+  "title": "Debuggare Rust con CodeLLDB",
+  "summary": "Abilita simboli completi nel profilo dev e fornisce un lancio VS Code che costruisce il target corretto.",
+  "stack": "rust",
+  "group": "Linguaggi",
+  "section": "Debug",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Rust stable 1.75+, edition 2021",
+  "prerequisites": "Toolchain Rust tramite rustup: rustc e cargo nel PATH. Gli esempi usano soltanto std; nessuna crate da scaricare.",
+  "tags": [
+    "workflow",
+    "debug",
+    "debugger",
+    "test",
+    "distribution"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "Cargo.toml",
+      "language": "toml",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "955342459543d8cc272d57563c7a69bf5b695a72a26dc7f830eeff42c54afd20"
+    },
+    {
+      "id": "file-1",
+      "path": "src/main.rs",
+      "language": "rust",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "624ec4848910469fa8d862e7a50641d743f131d8416122cc5056ea1ada14d348"
+    },
+    {
+      "id": "file-2",
+      "path": ".vscode/launch.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "1e4540ef5e5dfe39bea0631e200dd755956776e082df609bfa3310b8c84d67a9"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "f678536d55b6407056268fa9b55b3c382f2b52a096e8c3e6acc2d0e4d6406e27"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "rust-workflow-cargo-test-release",
+    "rust-workflow-cargo-init",
+    "rust-progetto-completo-lista-attivita-rust"
+  ],
+  "expected": "Il debugger entra nella funzione; il programma completato stampa10.",
+  "errors": [
+    "Se il debugger non riconosce il binario, controlla target e supporto dell'adapter. Il solo rustc non installa necessariamente un debugger nativo completo."
+  ],
+  "sources": [
+    "https://doc.rust-lang.org/book/",
+    "https://doc.rust-lang.org/std/",
+    "https://github.com/vadimcn/codelldb/blob/master/MANUAL.md"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Sorgenti e configurazioni verificati su Windows x64: JSON parse, PowerShell parser, TOML parse, source compiler. Report: reports/languages-workflows-validation.json. Non attestati sessioni interattive di debug, installazioni di dipendenze o distribuzione completa del workflow; nessuna esecuzione Linux/macOS."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

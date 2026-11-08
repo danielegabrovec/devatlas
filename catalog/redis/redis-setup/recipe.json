@@ -1,0 +1,90 @@
+{
+  "id": "redis-setup",
+  "title": "Inizializzare Redis in un processo locale dedicato",
+  "summary": "Usare una porta distinta e una directory dati separata in Linux o WSL.",
+  "stack": "redis",
+  "group": "Database",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Linux"
+  ],
+  "ide": [
+    "VS Code",
+    "WSL"
+  ],
+  "versions": "Redis Open Source8.2;redis-cli;Node client6.3.1",
+  "prerequisites": "Redis8.2 e redis-cli in Linux/WSL, server didattico su127.0.0.1:6381. Le ricette toccano solo prefissi atlas_demo propri; non usano FLUSHALL o FLUSHDB.",
+  "tags": [
+    "redis",
+    "setup",
+    "WSL",
+    "redis-server",
+    "localhost"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "redis.conf",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "edce95c4c61a79da239724be976a124cf6831875f01aefae5dfde335fc306fea"
+    },
+    {
+      "id": "file-1",
+      "path": "check.sh",
+      "language": "bash",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "af3d55746bed346de212f7ce88833e19987e340b14427acd0eef2973f73f8884"
+    },
+    {
+      "id": "command-0",
+      "path": "Terminale server",
+      "language": "bash",
+      "role": "command",
+      "shell": "Bash",
+      "os": "Linux",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "a3d8db5b8494fce5313d54ea4a7659bb8ea613b0fcde961c321e3e76a5d34a5a"
+    },
+    {
+      "id": "command-1",
+      "path": "Secondo terminale: controllo",
+      "language": "bash",
+      "role": "command",
+      "shell": "Bash",
+      "os": "Linux",
+      "cwd": ".",
+      "source": "assets/command-1.txt",
+      "sha256": "5bc58af63fa66815bdc42010bd70fd1aed66eb7c5d1132555c164689caa9e6e2"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "redis-backup",
+    "redis-progetto-magazzino",
+    "redis-bitmap"
+  ],
+  "expected": "PONG e world nel secondo terminale.",
+  "errors": [
+    "Connessione rifiutata: verificare il solo processo didattico su127.0.0.1:6381.",
+    "WRONGTYPE o altro errore Redis: controllare TYPE e namespace della chiave; i wrapper redis-cli usano -e perché set -e della shell da solo non converte una risposta Redis di errore in fallimento."
+  ],
+  "sources": [
+    "https://redis.io/docs/latest/develop/get-started/",
+    "https://redis.io/commands/",
+    "https://redis.io/docs/latest/develop/clients/nodejs/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Schema/configurazioni e sintassi JavaScript/PowerShell secondo i file presenti; nessuna attestazione serverMongo/Redis o finestraTauri. Report: reports/expansion-frameworks-qa.json."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

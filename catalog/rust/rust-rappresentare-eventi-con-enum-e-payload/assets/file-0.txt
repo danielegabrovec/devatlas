@@ -1,0 +1,5 @@
+enum Event{Move{x:i32,y:i32},Quit}
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+let event=Event::Move{x:2,y:3};match event{Event::Move{x,y}=>println!("{},{}",x,y),Event::Quit=>println!("uscita")};let _quit=Event::Quit;
+Ok(())
+}

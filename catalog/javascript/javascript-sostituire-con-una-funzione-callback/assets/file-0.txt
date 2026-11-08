@@ -1,0 +1,2 @@
+const source = "first_name";
+console.log(source.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase()));

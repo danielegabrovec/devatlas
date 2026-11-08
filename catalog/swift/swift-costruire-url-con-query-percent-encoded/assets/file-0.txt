@@ -1,0 +1,7 @@
+import Foundation
+
+var parts=URLComponents(string:"https://example.test/search")!
+let unreserved=CharacterSet(charactersIn:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._~")
+let value="C++ e Swift".addingPercentEncoding(withAllowedCharacters:unreserved)!
+parts.percentEncodedQuery="q="+value
+print(parts.url!.absoluteString)

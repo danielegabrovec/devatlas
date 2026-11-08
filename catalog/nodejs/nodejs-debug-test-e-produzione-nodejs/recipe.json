@@ -1,0 +1,120 @@
+{
+  "id": "nodejs-debug-test-e-produzione-nodejs",
+  "title": "Debug test e produzione nodejs",
+  "summary": "Apri la cartella in VSCode, imposta un breakpoint in pricing.mjs e premiF5. npm test esercita un caso valido e il rifiuto di quantità0; npm run check verifica sintassi. Node JavaScript non richiede compilazione: npm pack --dry-run mostra i file che verrebbero distribuiti senza pubblicare un pacchetto.",
+  "stack": "nodejs",
+  "group": "Web e backend",
+  "section": "Debug",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Node.js 24 LTS+; ESM",
+  "prerequisites": "Node.js24+ nel PATH. Esempi server: porta3000 libera, browser locale; Ctrl+C arresta. Le richieste example.com richiedono rete.",
+  "tags": [
+    "nodejs",
+    "debug",
+    "breakpoint",
+    "test",
+    "build",
+    "production",
+    "release"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "package.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "dd9bc24571ace7ef6166da1ca9a32bfead156709d7a1a30e836f84ee71fc1750"
+    },
+    {
+      "id": "file-1",
+      "path": ".nvmrc",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "68ca3fba3b7e864770cb61aeb306d4bd4354b68ab4dd38450860c5d823e42a53"
+    },
+    {
+      "id": "file-2",
+      "path": "src/main.mjs",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "f11e502bb2f0991d9181c925a1cecff609a4ad89cd9b639710beb5022516fc62"
+    },
+    {
+      "id": "file-3",
+      "path": "src/pricing.mjs",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "98f2dab1882628bbfd5d82ce6eb4b04da7440c50b8212a29b715c15ce4c29277"
+    },
+    {
+      "id": "file-4",
+      "path": "test/pricing.test.mjs",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "a067ae4fe866ff39b74fc1004f76342aafe88b881f89940d450794795c6aab7a"
+    },
+    {
+      "id": "file-5",
+      "path": ".vscode/launch.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-5.txt",
+      "sha256": "6c5ae5ec6382eef47ebc932c023e26a54fda705c441f709e9a828f25df4eb368"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "df1dadfa37b8d42009d741e2b3710c1cda12c4bd66c85c72c4bbcb2b38ff5b73"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "nodejs-simulare-funzione-con-mock-del-test-runner",
+    "nodejs-testare-una-funzione-con-node-test",
+    "nodejs-progetto-api-locale-catalogo-prodotti"
+  ],
+  "expected": "I test inclusi completano con esito positivo. La configurazione VSCode permette breakpoint sul sorgente; i comandi distinguono verifica, build e avvio di produzione.",
+  "errors": [
+    "Comando non trovato: installare la toolchain elencata nei prerequisiti.",
+    "Dipendenza mancante: eseguire l'installazione nella radice esportata, senza cambiare le versioni dichiarate."
+  ],
+  "sources": [
+    "https://nodejs.org/docs/latest-v24.x/api/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "date": "2026-10-29",
+    "details": "Verifiche lifecycle su Windows: static-files, node-test-or-check. Configurazione debugger controllata come JSON; sessione F5 e distribuzione remota non attestate.",
+    "files_sha256": {
+      "package.json": "dd9bc24571ace7ef6166da1ca9a32bfead156709d7a1a30e836f84ee71fc1750",
+      ".nvmrc": "68ca3fba3b7e864770cb61aeb306d4bd4354b68ab4dd38450860c5d823e42a53",
+      "src/main.mjs": "f11e502bb2f0991d9181c925a1cecff609a4ad89cd9b639710beb5022516fc62",
+      "src/pricing.mjs": "98f2dab1882628bbfd5d82ce6eb4b04da7440c50b8212a29b715c15ce4c29277",
+      "test/pricing.test.mjs": "a067ae4fe866ff39b74fc1004f76342aafe88b881f89940d450794795c6aab7a",
+      ".vscode/launch.json": "6c5ae5ec6382eef47ebc932c023e26a54fda705c441f709e9a828f25df4eb368"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

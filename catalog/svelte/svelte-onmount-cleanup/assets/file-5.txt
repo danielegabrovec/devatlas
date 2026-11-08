@@ -1,0 +1,5 @@
+<script>
+import {onMount,tick,setContext,getContext} from 'svelte';
+let seconds=$state(0);onMount(()=>{const timer=setInterval(()=>seconds++,1000);return()=>clearInterval(timer);});
+</script>
+<main><p>Secondi: {seconds}</p></main>

@@ -1,0 +1,24 @@
+{
+  "version": "1.3.0",
+  "success": true,
+  "checks": {
+    "install_returncode": 0,
+    "files_installed": true,
+    "executable_matches": true,
+    "catalog_matches": true,
+    "portable_flag_excluded": true,
+    "registered_version": "1.3.0",
+    "installed_app_returncode": 0,
+    "external_profile_created": true,
+    "installed_flow_verified": true,
+    "uninstall_returncode": 0,
+    "application_removed": true,
+    "personal_data_preserved": true,
+    "test_registration_removed": true
+  },
+  "payload_executable_sha256": "81eca521b236eec1d8fa9d10fe68597dbdd16ed8155dd05da394fce7557d2db6",
+  "catalog_sha256": "24df217def587694c36a8e9d6796228c8f60065cb514d77f4eb202add29b2076",
+  "installer_script_sha256": "682af7807d15f5f4fb060992a13b6ed77f130b8d48d7e030a2a8615bf55a1e96",
+  "production_installer_sha256": "c7fe0f962699f5073baff80dfaa810746dbc7ebbf8fc3d7ae148f62c7aa66d41",
+  "limits": "Stesso script e payload della release, AppId di prova isolato, installazione per utente sul PC corrente. Nessuna installazione reale di DevAtlas né suo registro di disinstallazione vengono sostituiti; profilo esterno conservato."
+}

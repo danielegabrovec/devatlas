@@ -1,0 +1,5 @@
+fn sum_text(a:&str,b:&str)->Result<i32,std::num::ParseIntError>{Ok(a.parse::<i32>()?+b.parse::<i32>()?)}
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+println!("{}",sum_text("2","3")?);
+Ok(())
+}

@@ -1,0 +1,1 @@
+import{writeFile}from'node:fs/promises';await writeFile('demo.env','ATLAS_MODE=local\n');process.loadEnvFile('demo.env');console.log(process.env.ATLAS_MODE);

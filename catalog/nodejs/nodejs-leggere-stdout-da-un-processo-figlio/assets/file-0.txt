@@ -1,0 +1,1 @@
+import{spawn}from'node:child_process';const p=spawn(process.execPath,['-e','console.log(21*2)']);p.stdout.pipe(process.stdout);p.on('error',console.error);

@@ -1,0 +1,1 @@
+SELECT json_valid('{"ok":true}') AS valido,json_valid('{x}') AS invalido;

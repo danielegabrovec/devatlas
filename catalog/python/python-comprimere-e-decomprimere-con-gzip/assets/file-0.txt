@@ -1,0 +1,4 @@
+import gzip
+data = "ripetizione " * 20
+packed = gzip.compress(data.encode("utf-8"), mtime=0)
+print(gzip.decompress(packed).decode("utf-8") == data)

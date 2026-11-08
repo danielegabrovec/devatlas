@@ -1,0 +1,11 @@
+#include <QtWidgets>
+#include <QtCore>
+#include <QtGui>
+
+int main(int argc, char **argv) {
+ QApplication app(argc,argv);
+ QWidget window; window.resize(720,480);
+ auto *layout=new QVBoxLayout(&window);
+ auto *grid=new QGridLayout; grid->addWidget(new QLabel("Titolo"),0,0,1,2); grid->addWidget(new QPushButton("A"),1,0); grid->addWidget(new QPushButton("B"),1,1); layout->addLayout(grid);
+ window.show(); return app.exec();
+}

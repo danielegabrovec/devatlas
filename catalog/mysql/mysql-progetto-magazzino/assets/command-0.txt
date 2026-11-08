@@ -1,0 +1,1 @@
+mysql --host=127.0.0.1 --default-character-set=utf8mb4 --database=cookbook_demo --execute="source schema.sql; source seed.sql; source reserve.sql;"

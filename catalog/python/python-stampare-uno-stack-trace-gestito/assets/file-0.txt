@@ -1,0 +1,5 @@
+import traceback
+try:
+    int("non numero")
+except ValueError:
+    print(traceback.format_exc().strip())

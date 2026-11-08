@@ -1,0 +1,68 @@
+{
+  "id": "python-campionare-dati-in-modo-riproducibile",
+  "title": "Campionare dati in modo riproducibile",
+  "summary": "Isola il generatore pseudo-casuale per ottenere test deterministici.",
+  "stack": "python",
+  "group": "Linguaggi",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Python 3.11–3.13; esempi con libreria standard",
+  "prerequisites": "CPython 3.11 o successivo nel PATH. Nessun pacchetto esterno; sqlite3 deve essere incluso nella distribuzione.",
+  "tags": [
+    "random",
+    "seed",
+    "sampling"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "8cb97d1fb56dc8c7f9bf7f83a76d80ad1585a0e526b1e3651035c428d7af1823"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "a6228c53b33871b4ad5a33b621f4a3e7e5a864da2f1243e958bdf22f735c24b8"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "python-creare-cartelle-annidate-in-modo-idempotente",
+    "python-generare-un-token-casuale-per-identificazione",
+    "python-passare-dati-con-queue-tra-thread"
+  ],
+  "expected": "[1, 0, 4] con il generatore indicato; non usare random per segreti.",
+  "errors": [
+    "Comando non trovato: installare la toolchain e riaprire il terminale."
+  ],
+  "sources": [
+    "https://docs.python.org/3.13/library/",
+    "https://docs.python.org/3.13/tutorial/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "details": "Eseguito su Windows x64 il 29/10/2026. Ambiente: CPython 3.11.15, libreria standard. Sorgenti compilati/controllati e programmi eseguiti; per i progetti sono stati eseguiti anche i test inclusi. Report: reports/languages-source-validation.json e reports/languages-runtime-validation.json. Linux e macOS non eseguiti.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

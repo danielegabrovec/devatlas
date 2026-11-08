@@ -1,0 +1,4 @@
+import Foundation
+enum DemoError:Error{case failed}
+func work()throws{print("apertura");defer{print("chiusura")};throw DemoError.failed}
+do{try work()}catch{print("errore gestito")}

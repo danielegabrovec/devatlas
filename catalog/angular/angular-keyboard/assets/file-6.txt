@@ -1,0 +1,7 @@
+import {Component,signal,computed,effect,inject,DestroyRef,ChangeDetectionStrategy} from '@angular/core';
+import {CommonModule} from '@angular/common';import {FormsModule} from '@angular/forms';
+
+@Component({selector:'app-root',standalone:true,imports:[CommonModule,FormsModule],changeDetection:ChangeDetectionStrategy.OnPush,template:`<main><input [(ngModel)]="value" (keyup.enter)="saved.set(value)" (keyup.escape)="value=''" placeholder="Invio salva, Escape svuota"><p>{{saved()}}</p></main>`})
+export class AppComponent{
+value='';saved=signal('');
+}

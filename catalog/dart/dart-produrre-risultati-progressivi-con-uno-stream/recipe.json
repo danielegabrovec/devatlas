@@ -1,0 +1,70 @@
+{
+  "id": "dart-produrre-risultati-progressivi-con-uno-stream",
+  "title": "Produrre risultati progressivi con uno Stream",
+  "summary": "Consuma un generatore async* senza accumulare tutti gli eventi.",
+  "stack": "dart",
+  "group": "Linguaggi",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Dart3.13.x; librerie SDK, nessuna dipendenza Pub esterna",
+  "prerequisites": "Dart SDK3.13.x nel PATH. Gli esempi dart:io sono nativi; per riusarli su web occorre sostituire accesso filesystem/isolate dove non supportato. Nessun package esterno necessario ai capstone.",
+  "tags": [
+    "Stream",
+    "async*",
+    "await for"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.dart",
+      "language": "dart",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "75a653c95b541a96c0c8d5fdc603fab0193e00acbcd5c4d67fc0acb6aec756a9"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "7ed1d0120ff7cd104704e65f61394f4493baec4c941cafc797f5e11b53ea5d71"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "dart-attendere-risultati-concorrenti-con-future-wait",
+    "dart-aggiungere-una-extension-per-validare-testo",
+    "dart-applicare-un-timeout-a-una-future"
+  ],
+  "expected": "1 e2 in eventi separati.",
+  "errors": [
+    "Nessun evento consumato: usa await for o una sottoscrizione attiva allo Stream.",
+    "Bad state su una seconda sottoscrizione: non trattare uno stream single-subscription come un broadcast."
+  ],
+  "sources": [
+    "https://dart.dev/language",
+    "https://dart.dev/resources/whats-new",
+    "https://dart.dev/tools/dart-compile"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

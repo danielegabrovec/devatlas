@@ -1,0 +1,4 @@
+Future<void> main() async {
+String? nickname=null;
+print(nickname?.toUpperCase() ?? 'Nome assente');
+}

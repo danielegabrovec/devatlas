@@ -1,0 +1,22 @@
+from typing import Annotated, Literal
+from enum import Enum
+from uuid import UUID
+from datetime import date, datetime, timezone
+from decimal import Decimal
+from pathlib import Path as FilePath
+import asyncio, json, os, secrets, time
+from contextlib import asynccontextmanager
+from fastapi import FastAPI, Query, Path, Body, Header, Cookie, Response, HTTPException, Depends, Request, APIRouter, BackgroundTasks, File, UploadFile, Form
+from fastapi.responses import JSONResponse, HTMLResponse, PlainTextResponse, RedirectResponse, StreamingResponse, FileResponse
+from pydantic import BaseModel, Field, ConfigDict, field_validator
+app = FastAPI(title='Laboratorio')
+@app.middleware('http')
+async def request_id(request: Request,call_next):
+    from uuid import uuid4
+    request.state.request_id=str(uuid4())
+    response=await call_next(request)
+    response.headers['X-Request-ID']=request.state.request_id
+    return response
+@app.get('/demo')
+def demo(request: Request):
+    return {'id':request.state.request_id}

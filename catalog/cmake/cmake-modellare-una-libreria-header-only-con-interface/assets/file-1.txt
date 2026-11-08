@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.24)
+project(RecipeBuild VERSION 1.2.0 LANGUAGES CXX)
+add_executable(recipe main.cpp)
+add_library(recipe_headers INTERFACE)
+target_include_directories(recipe_headers INTERFACE "${CMAKE_CURRENT_SOURCE_DIR}/include")
+target_compile_features(recipe_headers INTERFACE cxx_std_17)
+target_link_libraries(recipe PRIVATE recipe_headers)

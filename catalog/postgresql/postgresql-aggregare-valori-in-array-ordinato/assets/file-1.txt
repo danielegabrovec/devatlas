@@ -1,0 +1,1 @@
+SELECT array_agg(name ORDER BY name) FROM people;

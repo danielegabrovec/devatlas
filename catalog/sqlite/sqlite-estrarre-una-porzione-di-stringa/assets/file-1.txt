@@ -1,0 +1,1 @@
+SELECT substr(email,1,instr(email,'@')-1) FROM people;

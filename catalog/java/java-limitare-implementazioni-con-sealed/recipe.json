@@ -1,0 +1,68 @@
+{
+  "id": "java-limitare-implementazioni-con-sealed",
+  "title": "Limitare implementazioni con sealed",
+  "summary": "Dichiara in modo esplicito i tipi permessi per una gerarchia.",
+  "stack": "java",
+  "group": "Linguaggi",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Java17+ senza feature preview",
+  "prerequisites": "JDK17+ nel PATH, comandi javac e java. Non basta un JRE; nessuna dipendenza Maven/Gradle necessaria.",
+  "tags": [
+    "sealed",
+    "permits",
+    "hierarchy"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "Main.java",
+      "language": "java",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "7a68ad8540be93126113642158b9a5d8918a8f579dd163f510f093bca85c99ce"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "c53ca3f42abd5e5a071c21404b8dd4d23c70870a0a107bae23c07e482ec12b6a"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "java-accumulare-conteggi-con-map-merge",
+    "java-analizzare-una-data-civile-con-localdate",
+    "java-calcolare-importi-esatti-con-bigdecimal"
+  ],
+  "expected": "16.0",
+  "errors": [
+    "Il nome della classe pubblica deve corrispondere a Main.java. Usare JDK17+ e non abilitare feature preview per questi esempi."
+  ],
+  "sources": [
+    "https://dev.java/learn/",
+    "https://docs.oracle.com/en/java/javase/17/docs/api/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "details": "Eseguito su Windows x64 il 29/10/2026. Ambiente: JDK25.0.4.1, compilazione --release17. Sorgenti compilati/controllati e programmi eseguiti; per i progetti sono stati eseguiti anche i test inclusi. Report: reports/languages-source-validation.json e reports/languages-runtime-validation.json. Linux e macOS non eseguiti.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

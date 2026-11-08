@@ -1,0 +1,1 @@
+SELECT JSON_UNQUOTE(JSON_EXTRACT('{"user":"Ada"}','$.user'));

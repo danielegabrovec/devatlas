@@ -1,0 +1,35 @@
+{
+  "name": "Verifica locale dimostrativa",
+  "on": {
+    "workflow_dispatch": {}
+  },
+  "permissions": {
+    "contents": "read"
+  },
+  "jobs": {
+    "test": {
+      "runs-on": "ubuntu-latest",
+      "steps": [
+        {
+          "uses": "actions/checkout@v7",
+          "with": {
+            "persist-credentials": false
+          }
+        },
+        {
+          "uses": "actions/setup-python@v7",
+          "with": {
+            "python-version": "3.13"
+          }
+        },
+        {
+          "run": "python -m pip install ruff==0.11.13\npython -m ruff check --select E9,F63,F7,F82 app.py test_app.py"
+        },
+        {
+          "name": "Test",
+          "run": "python -m unittest -v"
+        }
+      ]
+    }
+  }
+}

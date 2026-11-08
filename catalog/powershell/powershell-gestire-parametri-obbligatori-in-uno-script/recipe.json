@@ -1,0 +1,66 @@
+{
+  "id": "powershell-gestire-parametri-obbligatori-in-uno-script",
+  "title": "Gestire parametri obbligatori in uno script",
+  "summary": "Validare un parametro prima di eseguire il corpo.",
+  "stack": "powershell",
+  "group": "Strumenti",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "PowerShell 7.4+",
+  "prerequisites": "PowerShell 7.4 o successivo (pwsh), non Windows PowerShell 5.1.",
+  "tags": [
+    "powershell",
+    "gestire-parametri-obbligatori-in-uno-script",
+    "workflow"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "example.ps1",
+      "language": "powershell",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "68a8a5b9c4f4d28d09415ae0eb8c91d99df004875cba7a04e8190ec64a56d1f4"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "91f56ca8008e4d6b1444a935cc5afe3899e9f693a43fba92b9d55cf043d03f9d"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "powershell-estrarre-uno-zip-in-una-cartella-nuova",
+    "powershell-gestire-risorse-idisposable-con-finally",
+    "powershell-analizzare-un-documento-xml-senza-stringhe-concatenate"
+  ],
+  "expected": "Validare un parametro prima di eseguire il corpo.",
+  "errors": [
+    "Comando non trovato: verificare la dipendenza e riaprire il terminale dopo l'installazione.",
+    "Accesso negato: scegliere una cartella di lavoro o temporanea scrivibile."
+  ],
+  "sources": [
+    "https://learn.microsoft.com/powershell/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "details": "Controlli statici sui sorgenti: AST Python, parser PowerShell/Bash dove disponibili, node --check per JavaScript, JSON e XML secondo i file presenti. Nessuna compilazione C#/XAML/C++ né esecuzione Docker/CI/packaging attestata. Report: reports/desktop-tools-qa.json.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

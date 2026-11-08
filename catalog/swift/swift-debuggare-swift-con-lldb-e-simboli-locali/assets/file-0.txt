@@ -1,0 +1,2 @@
+func total(_ values:[Int])->Int{let result=values.reduce(0,+);return result}
+print(total([2,3,5]))

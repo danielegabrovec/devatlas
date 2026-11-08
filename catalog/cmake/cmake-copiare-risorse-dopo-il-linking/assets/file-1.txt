@@ -1,0 +1,4 @@
+cmake_minimum_required(VERSION 3.24)
+project(RecipeBuild VERSION 1.2.0 LANGUAGES CXX)
+add_executable(recipe main.cpp)
+add_custom_command(TARGET recipe POST_BUILD COMMAND "${CMAKE_COMMAND}" -E copy_if_different "${CMAKE_CURRENT_SOURCE_DIR}/message.txt" "$<TARGET_FILE_DIR:recipe>/message.txt" VERBATIM)

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+p="atlas_demo:lua-rate"
+cli(){ redis-cli -e --raw -h 127.0.0.1 -p 6381 "$@"; }
+cli DEL "$p:limit"
+script="local n=redis.call('INCR',KEYS[1]);if n==1 then redis.call('EXPIRE',KEYS[1],ARGV[1]);end;return n"
+cli EVAL "$script" 1 "$p:limit" 60
+cli TTL "$p:limit"

@@ -1,0 +1,8 @@
+Set-StrictMode -Version Latest
+$ErrorActionPreference='Stop'
+$folder = Join-Path ([IO.Path]::GetTempPath()) ([guid]::NewGuid().ToString())
+New-Item -ItemType Directory -Path $folder | Out-Null
+Set-Content -LiteralPath (Join-Path $folder "readme.txt") -Value "Pacchetto"
+$zip = $folder+".zip"
+Compress-Archive -Path (Join-Path $folder "*") -DestinationPath $zip
+Get-Item -LiteralPath $zip

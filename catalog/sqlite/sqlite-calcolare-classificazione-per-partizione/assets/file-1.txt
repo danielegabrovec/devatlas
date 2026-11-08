@@ -1,0 +1,1 @@
+SELECT person_id,total,rank() OVER(PARTITION BY person_id ORDER BY total DESC) FROM orders;

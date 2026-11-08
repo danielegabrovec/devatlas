@@ -1,0 +1,1 @@
+mongosh "mongodb://127.0.0.1:27018/atlas_demo_upsert" --quiet --file demo.js

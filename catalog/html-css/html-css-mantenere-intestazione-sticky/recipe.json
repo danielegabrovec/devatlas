@@ -1,0 +1,86 @@
+{
+  "id": "html-css-mantenere-intestazione-sticky",
+  "title": "Mantenere intestazione sticky",
+  "summary": "Mantenere intestazione sticky. Regole CSS dimostrate: display: block; position: sticky.",
+  "stack": "html-css",
+  "group": "Web e backend",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "HTML Living Standard; CSS moderno; Chromium120+",
+  "prerequisites": "Browser moderno. Aprire index.html dalla cartella esportata. Per testare API soggette a secure context servire da localhost. Nessuna libreria esterna.",
+  "tags": [
+    "html-css",
+    "example",
+    "mantenere",
+    "intestazione",
+    "sticky"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "index.html",
+      "language": "html",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "63e7ed2a89fe439d8691d00e92b4e06a05f30035edb978642ebdeb16c5d2723f"
+    },
+    {
+      "id": "file-1",
+      "path": "style.css",
+      "language": "css",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "9128fd5d9bbaf885388951c875fd4b0b198d1b3400884a0c03191f8078aaf508"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "fdac105a58844c6c5521c56037e6af7465195e1460f09ee2b9741d77b22aa1de"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "html-css-progetto-biblioteca-responsive-con-filtri-locali",
+    "html-css-adattare-componenti-con-container-query",
+    "html-css-adattare-tema-a-prefers-color-scheme"
+  ],
+  "expected": "La pagina visualizza il componente indicato; le regole CSS sono ispezionabili negli strumenti sviluppatore del browser.",
+  "errors": [
+    "Comando non trovato: installare la toolchain elencata nei prerequisiti.",
+    "Dipendenza mancante: eseguire l'installazione nella radice esportata, senza cambiare le versioni dichiarate."
+  ],
+  "sources": [
+    "https://html.spec.whatwg.org/",
+    "https://developer.mozilla.org/en-US/docs/Web/CSS"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "documentato",
+    "details": "Esempio originale revisionato nel catalogo; esecuzione non attestata.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md",
+  "editorial": {
+    "version": 1,
+    "method": "Fatti ricavati staticamente dai file dell’esempio",
+    "facts": [
+      "Regole CSS dimostrate: display: block; position: sticky."
+    ]
+  }
+}

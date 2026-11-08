@@ -1,0 +1,12 @@
+using System;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Collections.ObjectModel;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
+namespace RecipeApp;
+public class MainWindow:Window {
+ public MainWindow(){Title="Ricetta WinUI"; var panel=new StackPanel{Spacing=12,Margin=new Thickness(20)};
+var rows=new ObservableCollection<string>{"Prima nota"}; var list=new ListView{ItemsSource=rows}; var b=new Button{Content="Aggiungi"}; b.Click+=(_,_)=>rows.Add($"Nota {rows.Count+1}"); panel.Children.Add(list); panel.Children.Add(b);
+ Content=panel; }
+}

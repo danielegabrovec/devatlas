@@ -1,0 +1,4 @@
+from urllib.parse import urlencode, parse_qs
+query = urlencode({"q": "C++ e Qt", "page": 2})
+print(query)
+print(parse_qs(query))

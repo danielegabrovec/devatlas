@@ -1,0 +1,71 @@
+{
+  "id": "swift-preparare-una-cli-swift-per-la-distribuzione-nativa",
+  "title": "Preparare una CLI Swift per la distribuzione nativa",
+  "summary": "Produce un binario ottimizzato e lo prova dalla cartella di consegna senza promettere cross-compilazione automatica.",
+  "stack": "swift",
+  "group": "Linguaggi",
+  "section": "Distribuzione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "Xcode",
+    "VS Code"
+  ],
+  "versions": "Swift6.4; Package.swift tools-version6.0, Linux/macOS",
+  "prerequisites": "Toolchain Swift6.4 su Linux o macOS. Per SwiftUI/iOS occorrono macOS, Xcode e un target Apple. Non sono attestati esecuzioni o compilazioni Swift su Windows.",
+  "tags": [
+    "swiftc",
+    "distribution",
+    "native"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.swift",
+      "language": "swift",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "4822f3ddfd5d9bb0d0d18c04c9c1de1ff885f573db3b4180be0e97ec89c4b19e"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "bash",
+      "role": "command",
+      "shell": "Bash",
+      "os": "Linux/macOS",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "145e9261b241a36b5a5b712c24c3085247201536e5790d817cd28d605a6ae881"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "swift-inizializzare-un-package-swift-cli-su-linux-o-macos",
+    "swift-progetto-completo-report-spese-swift-package",
+    "swift-compilare-un-target-swift-con-configurazioni-debug-e-release"
+  ],
+  "expected": "CLI Swift pronta; dist contiene il binario della piattaforma usata per la build.",
+  "errors": [
+    "Exec format error: il binario appartiene a OS o architettura differenti dalla macchina destinataria.",
+    "Libreria dinamica Swift non trovata: ispeziona dipendenze con ldd su Linux o otool -L su macOS e prova sull'ambiente di destinazione."
+  ],
+  "sources": [
+    "https://www.swift.org/documentation/",
+    "https://www.swift.org/install/linux/",
+    "https://www.swift.org/install/macos/",
+    "https://www.swift.org/blog/swift-6.4-released/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

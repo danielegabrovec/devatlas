@@ -1,0 +1,30 @@
+import sys, json, sqlite3, tempfile, logging
+from pathlib import Path
+from PySide6.QtCore import *
+from PySide6.QtGui import *
+from PySide6.QtWidgets import *
+
+def build(root, layout):
+    class Signals(QObject):
+        result = Signal(str)
+    class Task(QRunnable):
+        def __init__(self):
+            super().__init__()
+            self.signals = Signals()
+        def run(self):
+            self.signals.result.emit(str(sum(range(10000))))
+    label = QLabel("In attesa")
+    layout.addWidget(label)
+    root.task = Task()
+    root.task.signals.result.connect(label.setText)
+    QThreadPool.globalInstance().start(root.task)
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    window = QWidget()
+    window.setWindowTitle("Ricetta Qt")
+    window.resize(720, 480)
+    layout = QVBoxLayout(window)
+    build(window, layout)
+    window.show()
+    sys.exit(app.exec())

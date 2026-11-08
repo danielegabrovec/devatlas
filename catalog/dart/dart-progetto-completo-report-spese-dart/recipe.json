@@ -1,0 +1,113 @@
+{
+  "id": "dart-progetto-completo-report-spese-dart",
+  "title": "Progetto completo report spese Dart",
+  "summary": "Separa modello, validazione JSON, aggregazione e CLI; i test restano indipendenti da package Pub esterni.",
+  "stack": "dart",
+  "group": "Linguaggi",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Dart3.13.x; librerie SDK, nessuna dipendenza Pub esterna",
+  "prerequisites": "Dart SDK3.13.x nel PATH. Gli esempi dart:io sono nativi; per riusarli su web occorre sostituire accesso filesystem/isolate dove non supportato. Nessun package esterno necessario ai capstone.",
+  "tags": [
+    "project",
+    "Dart CLI",
+    "JSON",
+    "testing",
+    "Flutter reuse"
+  ],
+  "project": true,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "pubspec.yaml",
+      "language": "yaml",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "d977fe20af5b346ae64ca086f63e82eaa5b969412bf4d6cd635a6b1a24cb6424"
+    },
+    {
+      "id": "file-1",
+      "path": "lib/ledger.dart",
+      "language": "dart",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "9dd56d011beb40fd8f82dcfab1e4ef0f3d1125a8239ea3ce68b11d8c66484043"
+    },
+    {
+      "id": "file-2",
+      "path": "bin/ledger.dart",
+      "language": "dart",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "97a670aeea1cf511a6d3221ccd94da2fea3de0b7935e7024dab91cf4ab3176ce"
+    },
+    {
+      "id": "file-3",
+      "path": "test/smoke.dart",
+      "language": "dart",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "7fbf53a7a0f1ea274a36b7daba07289ffdf315997a8913caeef75022ab8e1a5b"
+    },
+    {
+      "id": "file-4",
+      "path": "data/expenses.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "d8e9473866f007308263fdfa6fd540daf87d3363ddf18ca4765c8f491f4e8de6"
+    },
+    {
+      "id": "file-5",
+      "path": "README.md",
+      "language": "markdown",
+      "role": "file",
+      "source": "assets/file-5.txt",
+      "sha256": "b30ee61ffa42c2f370c3fbcb2bf104abdb68879f297ef72f8a2ca82d37b1a4d5"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "d2cdfcbfe7615faddf8c5b55064ddfaad4bbce7740c2a8c64b1bcaeebd6b17b4"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "dart-analizzare-e-compilare-una-cli-dart-nativa",
+    "dart-costruire-un-modello-immutabile-con-invarianti",
+    "dart-eseguire-contratti-dart-senza-package-test-esterni"
+  ],
+  "expected": "Due contratti verificati; CLI: casa2000 e libri2000.",
+  "errors": [
+    "FormatException: il JSON deve essere una lista di record category:String e cents:int non negativi.",
+    "FileSystemException: il file dati non esiste o non è leggibile; passa il percorso come argomento dalla directory corretta.",
+    "StateError nei contratti: controlla aggregazione per categoria e rifiuto degli importi invalidi prima di integrare il modello in una UI."
+  ],
+  "sources": [
+    "https://dart.dev/language",
+    "https://dart.dev/resources/whats-new",
+    "https://dart.dev/tools/dart-compile"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: JSON parse, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

@@ -1,0 +1,6 @@
+import {Board} from "./board.js";
+function assert(value:boolean,message:string):void { if(!value) throw new Error(message); }
+const board=new Board(); const task=board.add("Studiare TypeScript"); board.complete(task.id);
+assert(board.list()[0].done,"Completamento");
+try { board.add(" "); throw new Error("Validazione non eseguita"); } catch(error) { assert(error instanceof TypeError,"Tipo errore"); }
+console.log("2 contratti verificati");

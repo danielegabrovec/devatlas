@@ -1,0 +1,1 @@
+import {connect} from './db.mjs';const {client}=await connect();try{await client.set('atlas_capstone:stock:keyboard','8',{NX:true});console.log(await client.get('atlas_capstone:stock:keyboard'));}finally{await client.close();}

@@ -1,0 +1,8 @@
+sealed class Outcome {
+ data class Success(val value:Int):Outcome()
+ data class Failure(val message:String):Outcome()
+}
+fun main() {
+val result: Outcome = Outcome.Success(42)
+println(when(result) { is Outcome.Success -> result.value.toString(); is Outcome.Failure -> result.message })
+}

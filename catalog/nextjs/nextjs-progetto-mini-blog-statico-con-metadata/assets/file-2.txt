@@ -1,0 +1,1 @@
+import Link from'next/link';import{posts}from'../lib/posts';export default function Page(){return <><h1>Blog</h1><ul>{posts.map(p=><li key={p.slug}><Link href={'/posts/'+p.slug}>{p.title}</Link></li>)}</ul></>}

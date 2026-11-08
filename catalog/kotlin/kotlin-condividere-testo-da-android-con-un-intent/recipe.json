@@ -1,0 +1,70 @@
+{
+  "id": "kotlin-condividere-testo-da-android-con-un-intent",
+  "title": "Condividere testo da Android con un Intent",
+  "summary": "Apre il selettore di condivisione del sistema senza associare l'app a un servizio specifico.",
+  "stack": "kotlin",
+  "group": "Linguaggi",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Android"
+  ],
+  "ide": [
+    "IntelliJ IDEA",
+    "Android Studio"
+  ],
+  "versions": "Kotlin2.3.21/JVM17; Gradle9.3.0 per i progetti Gradle",
+  "prerequisites": "JDK17+ e compilatore Kotlin2.3.21. Per Gradle usare9.3.0 e plugin Kotlin2.3.21 (prima acquisizione plugin richiede rete/cache). Le varianti Android richiedono un progetto Android già configurato e relativo SDK.",
+  "tags": [
+    "Android",
+    "Intent",
+    "sharing"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "src/main/java/example/Share.kt",
+      "language": "kotlin",
+      "role": "snippet",
+      "source": "assets/file-0.txt",
+      "sha256": "7859713e8e0f85ab21055c3881fc675891e4fdccb4e416855006ef033338cea2"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "5d657f6e197a2781be059442c993a1ce63f3f410851e124df69689f28b575e92"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "kotlin-conservare-un-opzione-android-con-sharedpreferences",
+    "kotlin-aggiungere-una-extension-function-pura",
+    "kotlin-analizzare-date-civili-con-java-time"
+  ],
+  "expected": "Il chooser Android offre le app che gestiscono text/plain.",
+  "errors": [
+    "Unresolved reference Activity/Intent: inserisci il file nel source set Android con il package della tua app.",
+    "Lancio da un contesto non adatto: richiama il chooser da una Activity attiva e rispetta le restrizioni Android sulle attività in background."
+  ],
+  "sources": [
+    "https://kotlinlang.org/docs/command-line.html",
+    "https://kotlinlang.org/docs/collections-overview.html",
+    "https://kotlinlang.org/docs/gradle-configure-project.html",
+    "https://developer.android.com/training/sharing/send"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Compilatore Kotlin2.3.21 della cache Gradle, JDK25.0.4.1, target17. Pipeline Gradle, sessioni debugger e SDK Android non eseguiti."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

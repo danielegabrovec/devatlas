@@ -1,0 +1,2 @@
+php tests/smoke.php
+php bin/addressbook.php data/contacts.json list

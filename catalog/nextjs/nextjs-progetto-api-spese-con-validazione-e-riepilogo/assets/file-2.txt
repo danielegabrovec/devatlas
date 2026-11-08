@@ -1,0 +1,1 @@
+'use client';import{useState}from'react';export default function Page(){const[data,set]=useState(null);return <><h1>API spese in memoria</h1><button onClick={async()=>set(await(await fetch('/api/expenses')).json())}>Leggi</button><pre>{JSON.stringify(data,null,2)}</pre></>}

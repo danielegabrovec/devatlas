@@ -1,0 +1,11 @@
+#include <QtWidgets>
+#include <QtCore>
+#include <QtGui>
+
+int main(int argc, char **argv) {
+ QApplication app(argc,argv);
+ QWidget window; window.resize(720,480);
+ auto *layout=new QVBoxLayout(&window);
+ auto *check=new QCheckBox("Log: parziale significa eredita"); check->setTristate(true); check->setCheckState(Qt::PartiallyChecked); layout->addWidget(check);
+ window.show(); return app.exec();
+}

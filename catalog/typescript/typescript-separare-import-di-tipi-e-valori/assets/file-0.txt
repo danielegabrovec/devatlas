@@ -1,0 +1,5 @@
+import type { Item } from "./contracts.js";
+import { label } from "./contracts.js";
+const item: Item = {id:7};
+console.log(label(item));
+export {};

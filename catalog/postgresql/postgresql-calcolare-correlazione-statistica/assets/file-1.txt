@@ -1,0 +1,1 @@
+SELECT corr(price::float,stock::float) FROM products;

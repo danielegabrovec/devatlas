@@ -1,0 +1,18 @@
+from queue import Queue
+from threading import Thread
+queue = Queue()
+def consume():
+    while True:
+        item = queue.get()
+        try:
+            if item is None:
+                return
+            print(item * 2)
+        finally:
+            queue.task_done()
+worker = Thread(target=consume)
+worker.start()
+queue.put(3)
+queue.put(None)
+queue.join()
+worker.join()

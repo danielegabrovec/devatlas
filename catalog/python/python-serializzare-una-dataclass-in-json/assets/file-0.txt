@@ -1,0 +1,7 @@
+from dataclasses import dataclass, asdict
+import json
+@dataclass
+class Item:
+    name: str
+    quantity: int
+print(json.dumps(asdict(Item("pane", 2)), ensure_ascii=False))

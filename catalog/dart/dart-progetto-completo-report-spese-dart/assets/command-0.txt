@@ -1,0 +1,3 @@
+dart pub get --offline
+dart run test/smoke.dart
+dart run bin/ledger.dart data/expenses.json

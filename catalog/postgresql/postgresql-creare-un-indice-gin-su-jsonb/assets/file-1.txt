@@ -1,0 +1,1 @@
+CREATE TABLE documents(id integer,payload jsonb); CREATE INDEX docs_payload ON documents USING gin(payload); INSERT INTO documents VALUES(1,'{"active":true}'); SELECT * FROM documents WHERE payload @> '{"active":true}';

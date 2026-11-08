@@ -1,0 +1,1 @@
+import Image from'next/image';export default function Page(){return <Image src='/demo.svg' alt='Rettangolo blu' width={300} height={160} unoptimized/>}

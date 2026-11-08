@@ -1,0 +1,1 @@
+SELECT id,total,ROW_NUMBER() OVER(ORDER BY total DESC,id) AS posizione FROM orders;

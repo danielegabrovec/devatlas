@@ -1,0 +1,5 @@
+<script>
+import {onMount,tick,setContext,getContext} from 'svelte';
+import {writable} from 'svelte/store';const count=writable(0);
+</script>
+<main><button onclick={()=>count.update(n=>n+1)}>Contatore store: {$count}</button></main>

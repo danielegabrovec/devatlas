@@ -1,0 +1,66 @@
+{
+  "id": "git-elencare-soltanto-i-file-tracciati",
+  "title": "Elencare soltanto i file tracciati",
+  "summary": "Usare ls-files come inventario dei sorgenti versionati.",
+  "stack": "git",
+  "group": "Strumenti",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Git 2.45+",
+  "prerequisites": "Git 2.45+ e PowerShell 7. La ricetta crea un repository nuovo nella cartella temporanea; non eseguirla dentro un repository di produzione per risparmiare il setup.",
+  "tags": [
+    "git",
+    "elencare-soltanto-i-file-tracciati",
+    "workflow"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "example.ps1",
+      "language": "powershell",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "3ccba7afaa53e10c88404e019a7b404f402664b06021543993fa8599e058d8b1"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "81aad1821298699efaf15c56f7bf9323fd4197932372431ecdb7764f88170265"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "git-accantonare-anche-file-non-tracciati",
+    "git-cercare-testo-nei-file-tracciati",
+    "git-rimuovere-un-file-soltanto-dall-indice"
+  ],
+  "expected": "Usare ls-files come inventario dei sorgenti versionati.",
+  "errors": [
+    "Comando non trovato: verificare la dipendenza e riaprire il terminale dopo l'installazione.",
+    "Accesso negato: scegliere una cartella di lavoro o temporanea scrivibile."
+  ],
+  "sources": [
+    "https://git-scm.com/docs"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "details": "Controlli statici sui sorgenti: AST Python, parser PowerShell/Bash dove disponibili, node --check per JavaScript, JSON e XML secondo i file presenti. Nessuna compilazione C#/XAML/C++ né esecuzione Docker/CI/packaging attestata. Report: reports/desktop-tools-qa.json.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

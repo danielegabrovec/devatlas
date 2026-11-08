@@ -1,0 +1,5 @@
+<script setup>
+import {ref,reactive,computed,watch,watchEffect,onMounted,onUnmounted,nextTick,provide,inject,defineAsyncComponent,shallowRef,triggerRef,readonly,toRefs} from 'vue';
+const query=ref('');const committed=ref('');watch(query,(text,_,cleanup)=>{const timer=setTimeout(()=>committed.value=text,250);cleanup(()=>clearTimeout(timer));});
+</script>
+<template><main><input v-model="query" placeholder="Digita velocemente"><p>Query applicata: {{committed}}</p></main></template>

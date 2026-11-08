@@ -1,0 +1,1 @@
+export default function Page(){const data={'@context':'https://schema.org','@type':'WebSite',name:'Atlante',url:'https://example.test'};return <><h1>Atlante</h1><script type='application/ld+json' dangerouslySetInnerHTML={{__html:JSON.stringify(data).replace(/</g,'\u003c')}}/></>}

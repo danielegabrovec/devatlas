@@ -1,0 +1,5 @@
+function subtotal(prices){
+  const result=prices.reduce((a,b)=>a+b,0);
+  return result;
+}
+console.log(subtotal([2,3,5]));

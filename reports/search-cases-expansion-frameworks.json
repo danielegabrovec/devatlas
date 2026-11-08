@@ -1,0 +1,242 @@
+[
+  {
+    "query": "Vue pausa digitazione timer ricerca",
+    "expected_ids": [
+      "vue-debounce"
+    ]
+  },
+  {
+    "query": "Vue stato riusabile due contatori separati",
+    "expected_ids": [
+      "vue-composable"
+    ]
+  },
+  {
+    "query": "Vue input del figlio v-model defineModel",
+    "expected_ids": [
+      "vue-component-model"
+    ]
+  },
+  {
+    "query": "Vue dialogo sotto body Teleport",
+    "expected_ids": [
+      "vue-teleport"
+    ]
+  },
+  {
+    "query": "Vue test modello attività ID immutabili",
+    "expected_ids": [
+      "vue-progetto-attivita"
+    ]
+  },
+  {
+    "query": "Svelte5 derivare prezzo quantità",
+    "expected_ids": [
+      "svelte-derived"
+    ]
+  },
+  {
+    "query": "Svelte cancellare timeout effetto precedente",
+    "expected_ids": [
+      "svelte-effect-cleanup"
+    ]
+  },
+  {
+    "query": "Svelte restituire valore tramite bindable",
+    "expected_ids": [
+      "svelte-bindable"
+    ]
+  },
+  {
+    "query": "Svelte chiamare un blocco snippet parametrico",
+    "expected_ids": [
+      "svelte-snippet"
+    ]
+  },
+  {
+    "query": "Svelte checkbox attività completate",
+    "expected_ids": [
+      "svelte-progetto-attivita"
+    ]
+  },
+  {
+    "query": "Angular Observable vista unsubscribe automatico",
+    "expected_ids": [
+      "angular-asyncpipe"
+    ]
+  },
+  {
+    "query": "Angular service inject contatore condiviso",
+    "expected_ids": [
+      "angular-service"
+    ]
+  },
+  {
+    "query": "Angular input signal componente figlio",
+    "expected_ids": [
+      "angular-input"
+    ]
+  },
+  {
+    "query": "Angular reazione alle modifiche signal effect",
+    "expected_ids": [
+      "angular-effect"
+    ]
+  },
+  {
+    "query": "Angular attività test stesso modello ESM",
+    "expected_ids": [
+      "angular-progetto-attivita"
+    ]
+  },
+  {
+    "query": "Spring DTO titolo vuoto risposta400",
+    "expected_ids": [
+      "spring-validation"
+    ]
+  },
+  {
+    "query": "Spring eccezione dominio gestore comune",
+    "expected_ids": [
+      "spring-advice"
+    ]
+  },
+  {
+    "query": "Spring stock H2 transazione insufficiente",
+    "expected_ids": [
+      "spring-jdbc-transaction"
+    ]
+  },
+  {
+    "query": "Spring collegare debugger JVM porta locale",
+    "expected_ids": [
+      "spring-debug"
+    ]
+  },
+  {
+    "query": "Spring servizio attività lista snapshot test",
+    "expected_ids": [
+      "spring-progetto-attivita"
+    ]
+  },
+  {
+    "query": "Flutter modulo messaggio campo non valido",
+    "expected_ids": [
+      "flutter-form"
+    ]
+  },
+  {
+    "query": "Flutter seconda pagina restituisce risultato",
+    "expected_ids": [
+      "flutter-navigation"
+    ]
+  },
+  {
+    "query": "Flutter attesa Future senza riavviare richiesta",
+    "expected_ids": [
+      "flutter-future"
+    ]
+  },
+  {
+    "query": "Flutter runner Windows primo progetto doctor",
+    "expected_ids": [
+      "flutter-setup"
+    ]
+  },
+  {
+    "query": "Flutter attività modello immutabile test",
+    "expected_ids": [
+      "flutter-progetto-attivita"
+    ]
+  },
+  {
+    "query": "Tauri stato Mutex tra chiamate",
+    "expected_ids": [
+      "tauri-state"
+    ]
+  },
+  {
+    "query": "Tauri evento Rust listener rimosso",
+    "expected_ids": [
+      "tauri-events"
+    ]
+  },
+  {
+    "query": "Tauri errore con codice e messaggio",
+    "expected_ids": [
+      "tauri-structured-error"
+    ]
+  },
+  {
+    "query": "Tauri file directory dati applicazione",
+    "expected_ids": [
+      "tauri-app-data"
+    ]
+  },
+  {
+    "query": "Tauri note conservate dopo chiusura",
+    "expected_ids": [
+      "tauri-progetto-note"
+    ]
+  },
+  {
+    "query": "MongoDB arrayFilters solo depositoA",
+    "expected_ids": [
+      "mongodb-array-filter"
+    ]
+  },
+  {
+    "query": "MongoDB join collezioni lookup quantità",
+    "expected_ids": [
+      "mongodb-lookup"
+    ]
+  },
+  {
+    "query": "MongoDB facet pagina e conteggio insieme",
+    "expected_ids": [
+      "mongodb-facet"
+    ]
+  },
+  {
+    "query": "MongoDB indice scadenza documenti TTL",
+    "expected_ids": [
+      "mongodb-ttl"
+    ]
+  },
+  {
+    "query": "MongoDB prenotazione stock atomica Node",
+    "expected_ids": [
+      "mongodb-progetto-magazzino"
+    ]
+  },
+  {
+    "query": "Redis incremento prima scadenza Lua",
+    "expected_ids": [
+      "redis-lua-rate"
+    ]
+  },
+  {
+    "query": "Redis transazione unica connessione MULTI EXEC",
+    "expected_ids": [
+      "redis-transaction"
+    ]
+  },
+  {
+    "query": "Redis aggiornamento valore conserva TTL",
+    "expected_ids": [
+      "redis-ttl-update"
+    ]
+  },
+  {
+    "query": "Redis stream confermare messaggio pending",
+    "expected_ids": [
+      "redis-consumer-group"
+    ]
+  },
+  {
+    "query": "Redis stock insufficiente decremento atomico",
+    "expected_ids": [
+      "redis-progetto-magazzino"
+    ]
+  }
+]

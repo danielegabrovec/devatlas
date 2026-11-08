@@ -1,0 +1,11 @@
+from PySide6.QtWidgets import QVBoxLayout, QLabel, QPushButton
+class Ui_MainForm:
+    def setupUi(self, form):
+        form.setObjectName("MainForm")
+        layout = QVBoxLayout(form)
+        self.resultLabel = QLabel("Premi Calcola", form)
+        self.resultLabel.setObjectName("resultLabel")
+        self.calcButton = QPushButton("Calcola", form)
+        self.calcButton.setObjectName("calcButton")
+        layout.addWidget(self.resultLabel)
+        layout.addWidget(self.calcButton)

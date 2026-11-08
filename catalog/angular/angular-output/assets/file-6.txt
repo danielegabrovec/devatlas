@@ -1,0 +1,7 @@
+import {Component,signal,computed,effect,inject,DestroyRef,ChangeDetectionStrategy} from '@angular/core';
+import {CommonModule} from '@angular/common';import {FormsModule} from '@angular/forms';
+import {Choice} from './choice';
+@Component({selector:'app-root',standalone:true,imports:[CommonModule,FormsModule,Choice],changeDetection:ChangeDetectionStrategy.OnPush,template:`<main><app-choice (chosen)="result.set($event)"/><p>{{result()}}</p></main>`})
+export class AppComponent{
+result=signal('Nessuna scelta');
+}

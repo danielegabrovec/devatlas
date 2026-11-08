@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+while IFS= read -r line; do printf "Riga: %s\n" "$line"; done <<'DATA'
+C:\demo\file
+seconda riga
+DATA

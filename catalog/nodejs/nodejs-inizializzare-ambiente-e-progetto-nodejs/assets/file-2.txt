@@ -1,0 +1,1 @@
+import{total}from'./pricing.mjs';console.log(total(10,3));

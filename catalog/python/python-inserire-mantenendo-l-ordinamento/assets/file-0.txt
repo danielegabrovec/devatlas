@@ -1,0 +1,4 @@
+import bisect
+values = [10, 20, 40]
+bisect.insort(values, 30)
+print(values, bisect.bisect_left(values, 20))

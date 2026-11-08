@@ -1,0 +1,5 @@
+<script>
+import {onMount,tick,setContext,getContext} from 'svelte';
+import NameField from './NameField.svelte';let name=$state('Ada');
+</script>
+<main><NameField bind:value={name}/><p>{name}</p></main>

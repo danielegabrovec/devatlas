@@ -1,0 +1,5 @@
+fun main(){
+ val inventory=Inventory()
+ listOf("viti" to 3,"dadi" to 2,"viti" to 4).forEach{(name,quantity)->inventory.add(name,quantity)}
+ inventory.snapshot().forEach{(name,quantity)->println("$name: $quantity")}
+}

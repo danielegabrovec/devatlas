@@ -1,0 +1,6 @@
+def append_value(value, values=None):
+    if values is None:
+        values = []
+    values.append(value)
+    return values
+print(append_value(1), append_value(2))

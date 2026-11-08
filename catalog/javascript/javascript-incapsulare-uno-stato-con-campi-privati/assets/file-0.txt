@@ -1,0 +1,10 @@
+class Wallet {
+  #balance = 0;
+  deposit(amount) {
+    if (!Number.isFinite(amount) || amount <= 0) throw new RangeError("Importo positivo richiesto");
+    this.#balance += amount;
+  }
+  get balance() { return this.#balance; }
+}
+const wallet = new Wallet(); wallet.deposit(12);
+console.log(wallet.balance);

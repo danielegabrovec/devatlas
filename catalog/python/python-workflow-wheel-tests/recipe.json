@@ -1,0 +1,87 @@
+{
+  "id": "python-workflow-wheel-tests",
+  "title": "Costruire wheel e sdist Python dopo i test",
+  "summary": "Crea una libreria installabile e produce artefatti locali soltanto dopo il test del contratto.",
+  "stack": "python",
+  "group": "Linguaggi",
+  "section": "Compilazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Python 3.11–3.13; esempi con libreria standard",
+  "prerequisites": "CPython 3.11 o successivo nel PATH. Nessun pacchetto esterno; sqlite3 deve essere incluso nella distribuzione.",
+  "tags": [
+    "workflow",
+    "build, test e distribuzione",
+    "build",
+    "test",
+    "distribution"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "pyproject.toml",
+      "language": "toml",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "31c5b74d3a4b75ae213a47fa7035cf9d74d2678ac531eac0b27a1cfb7a4a3c9d"
+    },
+    {
+      "id": "file-1",
+      "path": "geometry.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "4e8e2b0dbe06df3adc7256b55134362323d58747f3af2e7873fa7ca9fe781b47"
+    },
+    {
+      "id": "file-2",
+      "path": "test_geometry.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "11dd8c767bb7ed8724a1582f5a530b03265310b61aeaaf6749385fa99827182e"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "03a9bed29986ccab5039598789d4fab3b4ceba8524ce145ec658329c7b972d9e"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "python-workflow-debug-exe",
+    "python-workflow-venv-package",
+    "python-copiare-un-file-conservando-i-metadati"
+  ],
+  "expected": "Due test passano; dist contiene un .whl e un .tar.gz. Il wheel di questo esempio puro Python non contiene estensioni native.",
+  "errors": [
+    "Un errore relativo a build o setuptools richiede l'installazione dei requisiti nel contesto corretto. Non confondere il sorgente modificabile con il wheel già costruito."
+  ],
+  "sources": [
+    "https://docs.python.org/3.13/library/",
+    "https://docs.python.org/3.13/tutorial/",
+    "https://packaging.python.org/en/latest/tutorials/packaging-projects/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Sorgenti e configurazioni verificati su Windows x64: PowerShell parser, Python AST, TOML parse. Report: reports/languages-workflows-validation.json. Non attestati sessioni interattive di debug, installazioni di dipendenze o distribuzione completa del workflow; nessuna esecuzione Linux/macOS."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

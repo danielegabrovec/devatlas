@@ -1,0 +1,2 @@
+int total(List<int> values){final result=values.fold<int>(0,(sum,value)=>sum+value);return result;}
+void main(){print(total([2,3,5]));}

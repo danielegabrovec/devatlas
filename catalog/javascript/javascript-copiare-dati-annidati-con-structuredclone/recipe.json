@@ -1,0 +1,69 @@
+{
+  "id": "javascript-copiare-dati-annidati-con-structuredclone",
+  "title": "Copiare dati annidati con structuredClone",
+  "summary": "Crea una copia indipendente di una struttura di dati clonabile.",
+  "stack": "javascript",
+  "group": "Linguaggi",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "ECMAScript 2022+; Node.js 22+ per eseguire i file .mjs",
+  "prerequisites": "Node.js 22+ nel PATH. Gli esempi riguardano il linguaggio e le API standard; nessun pacchetto npm.",
+  "tags": [
+    "structuredclone",
+    "deep",
+    "copy",
+    "date"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.mjs",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "315e4a7c0a5004c4125c04aa19daf1b651fdde60333c82a157448259443a3a16"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "14355a5fac325262ed55e1f6230485a705d922683ec75317a95e55545d9db931"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "javascript-copiare-un-array-senza-condividere-la-struttura",
+    "javascript-formattare-una-data-senza-dipendere-dal-fuso-locale",
+    "javascript-rileggere-date-da-json-con-reviver"
+  ],
+  "expected": "2 true; le funzioni non sono clonabili.",
+  "errors": [
+    "Comando non trovato: installare la toolchain e riaprire il terminale."
+  ],
+  "sources": [
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "details": "Eseguito su Windows x64 il 29/10/2026. Ambiente: Node.js24.15.0, moduli ESM. Sorgenti compilati/controllati e programmi eseguiti; per i progetti sono stati eseguiti anche i test inclusi. Report: reports/languages-source-validation.json e reports/languages-runtime-validation.json. Linux e macOS non eseguiti.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

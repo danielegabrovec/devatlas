@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -euo pipefail
+p="atlas_demo:tests"
+cli(){ redis-cli -e --raw -h 127.0.0.1 -p 6381 "$@"; }
+cli DEL "$p:count"
+cli INCRBY "$p:count" 3 >/dev/null
+value=$(cli GET "$p:count")
+[[ "$value" == 3 ]] || { printf "Contatore errato\n" >&2; exit 1; }
+cli EXPIRE "$p:count" 60 >/dev/null
+[[ $(cli TTL "$p:count") -gt 0 ]] || { printf "TTL errato\n" >&2; exit 1; }
+printf "2 controlli superati\n"

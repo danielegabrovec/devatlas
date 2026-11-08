@@ -1,0 +1,83 @@
+{
+  "id": "sql-conservare-duplicati-con-union-all",
+  "title": "Conservare duplicati con UNION ALL",
+  "summary": "Laboratorio con dati sintetici: conservare duplicati con union all.",
+  "stack": "sql",
+  "group": "Database",
+  "section": "Database",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "SQL comune; esecuzione dimostrativa SQLite 3.45+",
+  "prerequisites": "Client sqlite3 nel PATH; cartella scrivibile. Il catalogo è offline; il client DB va installato separatamente.",
+  "tags": [
+    "database",
+    "query",
+    "sql",
+    "conservare",
+    "duplicati",
+    "con"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "fixture.sql",
+      "language": "sql",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "33f90072656f6c20af05d81eb1aab7784ab7095873af1a1e8bc0368d43535808"
+    },
+    {
+      "id": "file-1",
+      "path": "query.sql",
+      "language": "sql",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "350adc539adcb2a5efb44f40ac30a1b08556bda76ec354fead696948d7e5befd"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "6a77e116400bc671246fa442591aa4e6d0eeceb35dd068d9a625abbe58c2c747"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "sql-conservare-clienti-senza-ordini",
+    "sql-eliminare-duplicati-dalle-citta",
+    "sql-unire-insiemi-senza-duplicati"
+  ],
+  "expected": "La query termina senza errori e mostra il risultato dell'operazione indicata; per DDL il client conferma la creazione dell'oggetto.",
+  "errors": [
+    "Tabella già esistente: rieseguire la fixture in un database di laboratorio vuoto.",
+    "Funzione o estensione assente: controllare versione e opzioni del motore indicati nei prerequisiti."
+  ],
+  "sources": [
+    "https://www.sqlite.org/lang.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "date": "2026-10-29",
+    "details": "Esecuzione SQLite 3.50.4 in memoria su dati sintetici; 2 ciclo/i completi. Vincoli e ripetibilità DDL verificati quando applicabili. Nessuna attestazione WAL concorrente su file. Report: reports/catalog-independent-review.json.",
+    "files_sha256": {
+      "fixture.sql": "33f90072656f6c20af05d81eb1aab7784ab7095873af1a1e8bc0368d43535808",
+      "query.sql": "350adc539adcb2a5efb44f40ac30a1b08556bda76ec354fead696948d7e5befd"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

@@ -1,0 +1,7 @@
+[
+  {"query":"pythno CSV virgole", "expected_ids":["python-analizzare-campi-csv-con-virgole-tra-virgolette"]},
+  {"query":"pysid6 debounce", "expected_ids":["pyside6-debounce"]},
+  {"query":"postgress SKIP LOCKED", "expected_ids":["postgresql-prelevare-lavoro-con-skip-locked"]},
+  {"query":"python JSONDecodeError riga colonna", "expected_ids":["python-segnalare-la-posizione-di-un-errore-json"]},
+  {"query":"WinUI ContentDialog XamlRoot", "expected_ids":["winui-dialog"]}
+]

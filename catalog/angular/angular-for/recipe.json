@@ -1,0 +1,135 @@
+{
+  "id": "angular-for",
+  "title": "Iterare righe con @for e track",
+  "summary": "Usare identificatori stabili e mostrare lo stato vuoto.",
+  "stack": "angular",
+  "group": "Web e backend",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Angular22.2.3;CLI/build22.2.5;TypeScript6.0.3",
+  "prerequisites": "Node24.15.0+ e npm; dipendenze del manifest. Angular22 richiede TypeScript>=6.0 e<6.1, non il latest7. L'esempio client funziona su loopback; nessuna pubblicazione automatica.",
+  "tags": [
+    "angular",
+    "for",
+    "component",
+    "reactivity"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "package.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "f35f8c5fc01e02a554c2e71845bc3a19869602c054a75b26080e36d2c9187923"
+    },
+    {
+      "id": "file-1",
+      "path": "angular.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "4f2511f3cd19df996b2561c73c9a4f8ae8df5b5d15a590e2736da66a1fb0b494"
+    },
+    {
+      "id": "file-2",
+      "path": "tsconfig.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "7618118e6f1efb55ee2b0d0c5983ec958dadacc6f1aa7c18b6c5583556fba915"
+    },
+    {
+      "id": "file-3",
+      "path": "tsconfig.app.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "caa84e8abdba5afa155da8dc22276ae5144efe50508f6c346ecf99e7ad5015f3"
+    },
+    {
+      "id": "file-4",
+      "path": "src/index.html",
+      "language": "html",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "6e65c940d53cdd60c1172b50efd19333075624974f454e85b44bf89f86d691d0"
+    },
+    {
+      "id": "file-5",
+      "path": "src/main.ts",
+      "language": "typescript",
+      "role": "file",
+      "source": "assets/file-5.txt",
+      "sha256": "d5291f94c7a4c2022af79eef530ea5f0aee95eb0fef7a5b31f55d22334eaa2c5"
+    },
+    {
+      "id": "file-6",
+      "path": "src/app.ts",
+      "language": "typescript",
+      "role": "file",
+      "source": "assets/file-6.txt",
+      "sha256": "bb0a1b34a2c8844f197c16b0e69bbdad27502633c25015db13550e1c05b14761"
+    },
+    {
+      "id": "file-7",
+      "path": "src/styles.css",
+      "language": "css",
+      "role": "file",
+      "source": "assets/file-7.txt",
+      "sha256": "3a55e171e6b5aa1fd06425bb3b1afc255712258cdf803e79a027d168dd724afc"
+    },
+    {
+      "id": "file-8",
+      "path": "public/.gitkeep",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-8.txt",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "1965fe5d479505f1e80638083dd92bfa86389a60f6f77693b578249ec5cf4668"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "angular-track-empty",
+    "angular-sort",
+    "angular-asyncpipe"
+  ],
+  "expected": "Rimuovendo tutte le righe compare lo stato vuoto.",
+  "errors": [
+    "Import non risolto: installare dal manifest esportato e mantenere i file di supporto.",
+    "Versione Node non supportata: controllare i requisiti del framework prima di reinstallare dipendenze."
+  ],
+  "sources": [
+    "https://angular.dev/installation",
+    "https://angular.dev/reference/versions",
+    "https://angular.dev/guide/signals"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "compilato",
+    "date": "2026-10-29",
+    "details": "Build reale angular su Nodev24.15.0/Windows con dipendenze del manifest. Interazioni browser e hosting non attestati. Report: reports/expansion-web-qa.json."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

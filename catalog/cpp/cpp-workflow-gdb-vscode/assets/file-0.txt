@@ -1,0 +1,3 @@
+#include <iostream>
+int total(int a,int b){int result=a+b;return result;}
+int main(){int value=total(2,3);std::cout<<value<<'\n';}

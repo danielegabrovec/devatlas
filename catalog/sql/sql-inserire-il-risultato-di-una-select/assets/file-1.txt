@@ -1,0 +1,1 @@
+CREATE TABLE adulti(name VARCHAR(80)); INSERT INTO adulti(name) SELECT name FROM people WHERE age>=18; SELECT * FROM adulti;

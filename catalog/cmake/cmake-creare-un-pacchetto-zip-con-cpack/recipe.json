@@ -1,0 +1,79 @@
+{
+  "id": "cmake-creare-un-pacchetto-zip-con-cpack",
+  "title": "Creare un pacchetto ZIP con CPack",
+  "summary": "Usare i file installabili come contenuto del pacchetto.",
+  "stack": "cmake",
+  "group": "Strumenti",
+  "section": "Compilazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code",
+    "Visual Studio",
+    "CLion"
+  ],
+  "versions": "CMake 3.24+; C++17/20",
+  "prerequisites": "CMake 3.24+, compilatore C++ installato. Su Windows usare Developer PowerShell MSVC o una toolchain già configurata.",
+  "tags": [
+    "CMake",
+    "build",
+    "creare-un-pacchetto-zip-con-cpack"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.cpp",
+      "language": "cpp",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "ca4f11174323d8829cfc1a8ade6bec91b0b642894dbfc2188979e7518b48463f"
+    },
+    {
+      "id": "file-1",
+      "path": "CMakeLists.txt",
+      "language": "cmake",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "105f5108cc350f06749598cb4575790c702e80029552ee8c8b5cf1eb30954d92"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "6fae3d8215ced7b6d0962b9be8aeb7989aba2ed6b1fba5e8be6745545e4e7414"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "cmake-abilitare-addresssanitizer-solo-su-gcc-e-clang",
+    "cmake-aggiungere-include-privati-a-un-target",
+    "cmake-aggiungere-una-macro-soltanto-alle-build-debug"
+  ],
+  "expected": "Usare i file installabili come contenuto del pacchetto.",
+  "errors": [
+    "Ninja non trovato: installarlo se si usa il preset o il compilation database.",
+    "Compilatore non trovato: aprire il terminale di sviluppo della toolchain."
+  ],
+  "sources": [
+    "https://cmake.org/cmake/help/latest/guide/tutorial/index.html",
+    "https://cmake.org/cmake/help/latest/manual/cmake-buildsystem.7.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "documentato",
+    "details": "Esempio originale revisionato nel catalogo; esecuzione non attestata.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

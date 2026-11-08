@@ -1,0 +1,8 @@
+const user = new Proxy({ age: 0 }, {
+  set(target, key, value) {
+    if (key === "age" && (!Number.isInteger(value) || value < 0)) throw new RangeError("Età non valida");
+    return Reflect.set(target, key, value);
+  }
+});
+user.age = 36;
+console.log(user.age);

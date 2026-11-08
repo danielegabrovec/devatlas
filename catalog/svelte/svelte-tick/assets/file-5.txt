@@ -1,0 +1,5 @@
+<script>
+import {onMount,tick,setContext,getContext} from 'svelte';
+let visible=$state(false);let box;let width=$state(0);async function show(){visible=true;await tick();width=box.getBoundingClientRect().width;}
+</script>
+<main><button onclick={show}>Mostra e misura</button>{#if visible}<div bind:this={box} class="card">Contenuto</div>{/if}<p>Larghezza: {width.toFixed(0)}</p></main>

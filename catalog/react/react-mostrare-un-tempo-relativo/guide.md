@@ -1,0 +1,13 @@
+## Obiettivo
+Mostrare un tempo relativo.
+
+Il componente completo è in src/App.jsx; il punto di ingresso e lo stile sono inclusi. Lo stato e gli handler sono locali al componente: prova il controllo mostrato nel browser su localhost5173.
+
+## Procedura
+Esporta tutti i file mantenendo i percorsi indicati. Il codice è completo; esegui i comandi dalla radice esportata. L'installazione iniziale delle dipendenze richiede rete o una cache già disponibile. I contenuti e l'esportazione dal catalogo funzionano offline.
+
+## Controllo
+Interagisci con il controllo o richiama la rotta indicata nel sorgente e osserva il risultato. Confronta gli input validi e invalidi prima di integrare il codice.
+
+## Integrazione
+Le risorse in memoria e i dati sintetici servono alla dimostrazione. Per usarli in un progetto esistente conserva il confine tra logica, stato e risorse esterne mostrato dall'esempio.

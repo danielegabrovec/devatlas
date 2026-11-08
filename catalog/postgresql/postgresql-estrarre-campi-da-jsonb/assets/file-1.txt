@@ -1,0 +1,1 @@
+SELECT '{"user":{"name":"Ada"}}'::jsonb #>> '{user,name}';

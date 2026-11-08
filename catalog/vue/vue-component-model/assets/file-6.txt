@@ -1,0 +1,1 @@
+<script setup>const model=defineModel({type:String,default:''});</script><template><input v-model="model" aria-label="Nome"></template>

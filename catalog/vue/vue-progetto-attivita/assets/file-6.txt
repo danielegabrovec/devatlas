@@ -1,0 +1,2 @@
+export function addTask(rows,title){const clean=title.trim();if(!clean)throw new Error('Titolo vuoto');return [...rows,{id:Math.max(0,...rows.map(r=>r.id))+1,title:clean,done:false}];}
+export function completed(rows){return rows.filter(row=>row.done).length;}

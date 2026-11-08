@@ -1,0 +1,7 @@
+function assertString(value: unknown): asserts value is string {
+  if (typeof value !== "string") throw new TypeError("Stringa richiesta");
+}
+const value: unknown = "ciao";
+assertString(value);
+console.log(value.toUpperCase());
+export {};

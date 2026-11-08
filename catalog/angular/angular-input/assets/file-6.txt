@@ -1,0 +1,7 @@
+import {Component,signal,computed,effect,inject,DestroyRef,ChangeDetectionStrategy} from '@angular/core';
+import {CommonModule} from '@angular/common';import {FormsModule} from '@angular/forms';
+import {Greeting} from './greeting';
+@Component({selector:'app-root',standalone:true,imports:[CommonModule,FormsModule,Greeting],changeDetection:ChangeDetectionStrategy.OnPush,template:`<main><input [ngModel]="name()" (ngModelChange)="name.set($event)"><app-greeting [name]="name()"/></main>`})
+export class AppComponent{
+name=signal('Ada');
+}

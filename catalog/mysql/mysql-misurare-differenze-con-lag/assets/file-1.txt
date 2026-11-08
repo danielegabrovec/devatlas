@@ -1,0 +1,1 @@
+SELECT id,total-LAG(total) OVER(ORDER BY id) AS differenza FROM orders;

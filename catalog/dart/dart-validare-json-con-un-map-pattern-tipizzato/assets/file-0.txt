@@ -1,0 +1,7 @@
+import 'dart:convert';
+
+Future<void> main() async {
+final Object? value=jsonDecode('{"name":"Ada","age":36}');
+if(value case {'name':String name,'age':int age}){print('$name:$age');}
+else{throw const FormatException('Record non valido');}
+}

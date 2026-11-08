@@ -1,0 +1,5 @@
+async function* values() {
+  yield await Promise.resolve(2);
+  yield await Promise.resolve(3);
+}
+for await (const value of values()) console.log(value);

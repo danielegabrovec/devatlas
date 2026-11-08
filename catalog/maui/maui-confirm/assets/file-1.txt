@@ -1,0 +1,15 @@
+using System;
+using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Collections.ObjectModel;
+using Microsoft.Maui.Controls;
+using Microsoft.Maui.Graphics;
+using Microsoft.Maui.ApplicationModel.DataTransfer;
+using Microsoft.Maui.Storage;
+namespace RecipeApp;
+public class MainPage:ContentPage {
+ public MainPage(){ Title="Ricetta MAUI"; var panel=new VerticalStackLayout{Spacing=12,Padding=20};
+var edit=new Entry{Text="Dato"}; var b=new Button{Text="Svuota"}; b.Clicked+=async (_,_)=>{if(await DisplayAlertAsync("Conferma","Svuotare il campo?","Sì","No")) edit.Text="";}; panel.Children.Add(edit); panel.Children.Add(b);
+ Content=new ScrollView{Content=panel}; }
+}

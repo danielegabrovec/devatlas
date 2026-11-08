@@ -1,0 +1,11 @@
+#include <QtWidgets>
+#include <QtCore>
+#include <QtGui>
+
+int main(int argc, char **argv) {
+ QApplication app(argc,argv);
+ QWidget window; window.resize(720,480);
+ auto *layout=new QVBoxLayout(&window);
+ auto *group=new QGroupBox("Proxy"); group->setCheckable(true); auto *form=new QFormLayout(group); form->addRow("Host",new QLineEdit); layout->addWidget(group);
+ window.show(); return app.exec();
+}

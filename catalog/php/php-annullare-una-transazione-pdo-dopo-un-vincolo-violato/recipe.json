@@ -1,0 +1,70 @@
+{
+  "id": "php-annullare-una-transazione-pdo-dopo-un-vincolo-violato",
+  "title": "Annullare una transazione PDO dopo un vincolo violato",
+  "summary": "Rende atomiche due scritture e chiama rollback quando il secondo inserimento fallisce.",
+  "stack": "php",
+  "group": "Linguaggi",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "PHP8.4/8.5 CLI, strict_types; estensioni indicate nella singola scheda",
+  "prerequisites": "PHP8.4 o8.5 CLI nel PATH. PDO SQLite richiede pdo_sqlite; le altre estensioni necessarie sono indicate. Il server incorporato è destinato al laboratorio locale.",
+  "tags": [
+    "PDO",
+    "transaction",
+    "rollback"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.php",
+      "language": "php",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "e9267476e2ce99e4de5b30bf12d75fad53f77b9499408fbec86f621cee95f151"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "6b562f889c3cbc3f5a590988ba75708ac4420e630da5e7dc0d7e50b352bb29c2"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "php-eseguire-query-pdo-sqlite-parametrizzate",
+    "php-analizzare-opzioni-cli-con-getopt",
+    "php-applicare-un-default-soltanto-quando-il-dato-manca"
+  ],
+  "expected": "0 righe; la prima scrittura viene annullata insieme alla seconda. Richiede pdo_sqlite.",
+  "errors": [
+    "PDOException could not find driver: abilita pdo_sqlite nel PHP CLI effettivamente usato.",
+    "SQLSTATE23000 per un vincolo: gestisci l'eccezione e rollback se la transazione è attiva; non proseguire come se commit fosse riuscito.",
+    "Parametri non associati: ogni placeholder della query deve avere il proprio valore nell'execute, senza concatenare input SQL."
+  ],
+  "sources": [
+    "https://www.php.net/manual/en/",
+    "https://www.php.net/supported-versions.php"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: php lint, php program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

@@ -1,0 +1,3 @@
+# Progetto: pipeline di importazione NDJSON
+Due record validi producono totale30; il test copre record invalido.
+Node24+. Eseguire i comandi dalla radice. Nessuna dipendenza esterna. Dati solo didattici.

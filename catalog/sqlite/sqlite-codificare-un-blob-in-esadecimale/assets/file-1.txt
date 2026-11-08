@@ -1,0 +1,1 @@
+SELECT hex(X'0001CAFE'),length(X'0001CAFE');

@@ -1,0 +1,1 @@
+package it.atlas;import org.springframework.web.bind.annotation.*;import org.springframework.http.*;@RestControllerAdvice public class Errors{@ExceptionHandler(IllegalArgumentException.class)ResponseEntity<ProblemDetail> bad(IllegalArgumentException error){return ResponseEntity.badRequest().body(ProblemDetail.forStatusAndDetail(HttpStatus.BAD_REQUEST,error.getMessage()));}}

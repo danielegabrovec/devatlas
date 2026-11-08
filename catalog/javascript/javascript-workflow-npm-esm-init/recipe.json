@@ -1,0 +1,87 @@
+{
+  "id": "javascript-workflow-npm-esm-init",
+  "title": "Inizializzare un package JavaScript ESM",
+  "summary": "Definisce punto d'ingresso e script npm per una CLI senza dipendenze.",
+  "stack": "javascript",
+  "group": "Linguaggi",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "ECMAScript 2022+; Node.js 22+ per eseguire i file .mjs",
+  "prerequisites": "Node.js 22+ nel PATH. Gli esempi riguardano il linguaggio e le API standard; nessun pacchetto npm.",
+  "tags": [
+    "workflow",
+    "inizializzazione",
+    "setup",
+    "test",
+    "distribution"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "package.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "3d586881da329d9a8051182f57241d058d7df8185398ecbd449609ea660fe178"
+    },
+    {
+      "id": "file-1",
+      "path": "src/main.mjs",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "e5efb9469e47d4e3faeeec0d9ac824aa9425bec759ad7ac07e6a450a1587d933"
+    },
+    {
+      "id": "file-2",
+      "path": ".gitignore",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "ba79bbc25fa8951489e77f28f1561c2e9388115cb33f1c606424f8e08169f96b"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "310544b6f9820ddf413faae6f5a6aba4658ac848052cf845bc41eda8de1e4db0"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "javascript-workflow-js-inspector",
+    "javascript-workflow-js-test-pack",
+    "javascript-progetto-completo-analizzatore-spese-json"
+  ],
+  "expected": "Ciao Luca; npm aggiunge il proprio intestazione prima dell'output dello script.",
+  "errors": [
+    "Cannot find module indica directory di lavoro errata o file non esportati. Non mescolare require CommonJS con import ESM senza una scelta esplicita."
+  ],
+  "sources": [
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference",
+    "https://docs.npmjs.com/cli/v11/commands/npm-init"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Sorgenti e configurazioni verificati su Windows x64: JSON parse, PowerShell parser, source compiler. Report: reports/languages-workflows-validation.json. Non attestati sessioni interattive di debug, installazioni di dipendenze o distribuzione completa del workflow; nessuna esecuzione Linux/macOS."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

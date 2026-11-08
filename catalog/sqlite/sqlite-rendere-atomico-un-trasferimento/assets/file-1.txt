@@ -1,0 +1,1 @@
+BEGIN IMMEDIATE; WITH allowed AS MATERIALIZED(SELECT id FROM products WHERE id=1 AND stock>=1 AND EXISTS(SELECT 1 FROM products WHERE id=2 AND stock>=0)) UPDATE products SET stock=stock+CASE WHEN id=1 THEN -1 ELSE 1 END WHERE id IN(1,2) AND EXISTS(SELECT 1 FROM allowed) RETURNING id,stock; COMMIT; SELECT id,stock FROM products ORDER BY id;

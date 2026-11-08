@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdint.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <errno.h>
+#include <limits.h>
+
+
+int main(void){
+const char *text="123";char *end=NULL;errno=0;long value=strtol(text,&end,10);
+if(errno||end==text||*end!='\0'||value<INT_MIN||value>INT_MAX){fputs("intero non valido\n",stderr);return 1;}
+printf("%d\n",(int)value);
+return 0;
+}

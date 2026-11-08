@@ -1,0 +1,1 @@
+CREATE TABLE misure(id INTEGER PRIMARY KEY,valore DECIMAL(8,2) CHECK(valore>=0)); INSERT INTO misure VALUES(1,2.5); SELECT * FROM misure;

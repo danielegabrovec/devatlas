@@ -1,0 +1,1 @@
+CREATE MATERIALIZED VIEW sales_totals AS SELECT person_id,SUM(total) AS total FROM orders GROUP BY person_id; SELECT * FROM sales_totals;

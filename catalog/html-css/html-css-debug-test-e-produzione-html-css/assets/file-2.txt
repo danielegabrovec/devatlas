@@ -1,0 +1,1 @@
+import{total}from'./lib.js';document.getElementById('result').textContent='Totale:'+total(10,3);

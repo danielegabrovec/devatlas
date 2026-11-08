@@ -1,0 +1,7 @@
+#![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
+use tauri::Manager;
+
+fn square(value:i64)->Option<i64>{value.checked_mul(value)}
+#[tauri::command]fn demo()->Option<i64>{square(4)}
+#[cfg(test)]mod tests{use super::*;#[test]fn squares(){assert_eq!(square(4),Some(16));assert_eq!(square(-3),Some(9));assert_eq!(square(i64::MAX),None);}}
+fn main(){tauri::Builder::default().invoke_handler(tauri::generate_handler![demo]).run(tauri::generate_context!()).expect("Tauri application failed");}

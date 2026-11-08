@@ -1,0 +1,20 @@
+import sqlite3
+from contextlib import contextmanager
+from pathlib import Path
+DB=Path('tasks.sqlite')
+@contextmanager
+def connect():
+    c=sqlite3.connect(DB)
+    c.row_factory=sqlite3.Row
+    c.execute('CREATE TABLE IF NOT EXISTS tasks(id INTEGER PRIMARY KEY,title TEXT NOT NULL,done INTEGER NOT NULL DEFAULT 0)')
+    try:
+        with c: yield c
+    finally: c.close()
+def list_tasks():
+    with connect() as c: return [dict(x) for x in c.execute('SELECT * FROM tasks ORDER BY id')]
+def create(title):
+    with connect() as c:
+        cursor=c.execute('INSERT INTO tasks(title) VALUES(?)',(title,))
+        return {'id':cursor.lastrowid,'title':title,'done':0}
+def finish(task_id):
+    with connect() as c: return c.execute('UPDATE tasks SET done=1 WHERE id=?',(task_id,)).rowcount

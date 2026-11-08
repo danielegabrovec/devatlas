@@ -1,0 +1,2 @@
+# Ricerca locale
+Tre documenti in un database in memoria; nessuna rete e nessuna modifica a database esistenti.

@@ -1,0 +1,2 @@
+const pairs = [["theme", "dark"], ["size", 14]];
+console.log(Object.fromEntries(pairs));

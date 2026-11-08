@@ -1,0 +1,8 @@
+type Result<T> = {ok:true;value:T}|{ok:false;error:string};
+function parsePositive(text:string):Result<number> {
+  const value=Number(text);
+  return text.trim()!==""&&Number.isFinite(value)&&value>0 ? {ok:true,value} : {ok:false,error:"Numero positivo richiesto"};
+}
+const result=parsePositive("12");
+console.log(result.ok ? result.value : result.error);
+export {};

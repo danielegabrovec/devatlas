@@ -1,0 +1,5 @@
+from pathlib import Path
+root = Path.cwd().resolve()
+for relative in ["reports/output.txt", "../outside.txt"]:
+    candidate = (root / relative).resolve()
+    print(relative, candidate.is_relative_to(root))

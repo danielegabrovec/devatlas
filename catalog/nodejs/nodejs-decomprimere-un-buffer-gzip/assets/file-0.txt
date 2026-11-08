@@ -1,0 +1,1 @@
+import{gzipSync,gunzipSync}from'node:zlib';const b=gzipSync('contenuto');console.log(gunzipSync(b).toString('utf8'));

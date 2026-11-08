@@ -1,0 +1,5 @@
+<script setup>
+import {ref,reactive,computed,watch,watchEffect,onMounted,onUnmounted,nextTick,provide,inject,defineAsyncComponent,shallowRef,triggerRef,readonly,toRefs} from 'vue';
+const email=ref('');const message=ref('');function submit(){message.value=/^[^@]+@[^@]+\.[^@]+$/.test(email.value)?'Indirizzo acquisito':'Controlla email';}
+</script>
+<template><main><form @submit.prevent="submit"><input v-model.trim="email" aria-label="Email"><button>Conferma</button></form><p role="status">{{message}}</p></main></template>

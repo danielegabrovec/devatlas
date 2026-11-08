@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.24)
+project(ComponentDemo LANGUAGES CXX)
+add_executable(recipe main.cpp)
+install(TARGETS recipe RUNTIME DESTINATION bin COMPONENT Runtime)
+install(FILES api.hpp DESTINATION include COMPONENT Development)

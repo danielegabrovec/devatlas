@@ -1,0 +1,3 @@
+import React, {useState,useEffect,useMemo,useRef,useReducer,useId,useContext,createContext,useCallback,useLayoutEffect,useTransition,useDeferredValue,useSyncExternalStore,useImperativeHandle,forwardRef,memo,lazy,Suspense,Component} from 'react';
+import {createPortal} from 'react-dom';
+export default function App(){const[q,set]=useState('');const names=['Ada','Grace','Alan'];return <><label>Cerca<input value={q} onChange={e=>set(e.target.value)}/></label><ul>{names.filter(n=>n.toLowerCase().includes(q.toLowerCase())).map(n=><li key={n}>{n}</li>)}</ul></>}

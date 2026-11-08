@@ -1,0 +1,4 @@
+from math import gcd
+a, b = 42, 56
+divisor = gcd(a, b)
+print(a // divisor, b // divisor)

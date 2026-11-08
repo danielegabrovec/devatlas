@@ -1,0 +1,4 @@
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+let result="21".parse::<i32>().map(|value|value*2);println!("{:?}",result);
+Ok(())
+}

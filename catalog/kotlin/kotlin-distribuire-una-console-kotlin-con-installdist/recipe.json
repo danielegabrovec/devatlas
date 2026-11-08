@@ -1,0 +1,87 @@
+{
+  "id": "kotlin-distribuire-una-console-kotlin-con-installdist",
+  "title": "Distribuire una console Kotlin con installDist",
+  "summary": "Produce script di avvio e librerie runtime senza pubblicare su repository esterni.",
+  "stack": "kotlin",
+  "group": "Linguaggi",
+  "section": "Distribuzione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "IntelliJ IDEA",
+    "Android Studio"
+  ],
+  "versions": "Kotlin2.3.21/JVM17; Gradle9.3.0 per i progetti Gradle",
+  "prerequisites": "JDK17+ e compilatore Kotlin2.3.21. Per Gradle usare9.3.0 e plugin Kotlin2.3.21 (prima acquisizione plugin richiede rete/cache). Le varianti Android richiedono un progetto Android già configurato e relativo SDK.",
+  "tags": [
+    "installDist",
+    "application",
+    "JAR"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "settings.gradle.kts",
+      "language": "kotlin",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "a261f3417417bfe4fefb0b74bf97b7020309057917fcb5341ffddafaf1549bd7"
+    },
+    {
+      "id": "file-1",
+      "path": "build.gradle.kts",
+      "language": "kotlin",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "e010927e996bda135e817a92f2b8f2dd02c9f698e7430db73b10bdd4f9676e81"
+    },
+    {
+      "id": "file-2",
+      "path": "src/main/kotlin/Main.kt",
+      "language": "kotlin",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "8b542338511fbdc8598179d07d222c608e74c215e51a675ced747c045d4ed020"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "102d390ba4a0f6f46da31b5156f5bd524580009637a2925556b44cb3844ec997"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "kotlin-inizializzare-una-console-kotlin-jvm",
+    "kotlin-progetto-completo-inventario-kotlin-jvm",
+    "kotlin-compilare-kotlin-con-un-progetto-gradle-bloccato"
+  ],
+  "expected": "La cartella build/install/kotlin-dist contiene bin/lib e stampa Distribuzione pronta.",
+  "errors": [
+    "Lo script installDist non trova una libreria: consegna tutta la cartella bin/lib e non soltanto il file .bat.",
+    "Java non trovato sulla destinazione: installDist include le librerie Kotlin ma non una JVM; serve Java17+."
+  ],
+  "sources": [
+    "https://kotlinlang.org/docs/command-line.html",
+    "https://kotlinlang.org/docs/collections-overview.html",
+    "https://kotlinlang.org/docs/gradle-configure-project.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "compilato",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: kotlin compile, kotlin program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Compilatore Kotlin2.3.21 della cache Gradle, JDK25.0.4.1, target17. Pipeline Gradle, sessioni debugger e SDK Android non eseguiti."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

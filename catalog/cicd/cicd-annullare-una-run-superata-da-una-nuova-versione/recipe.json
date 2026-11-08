@@ -1,0 +1,87 @@
+{
+  "id": "cicd-annullare-una-run-superata-da-una-nuova-versione",
+  "title": "Annullare una run superata da una nuova versione",
+  "summary": "Definire un gruppo concurrency per workflow e riferimento.",
+  "stack": "cicd",
+  "group": "Strumenti",
+  "section": "Test",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "GitHub Actions; azioni ufficiali v7; Python 3.13",
+  "prerequisites": "Repository GitHub con Actions disponibile. Nessun workflow è caricato o avviato automaticamente dall'app: i file sono configurazioni da revisionare e copiare. Runner aggiornati necessari per le azioni v7.",
+  "tags": [
+    "GitHub Actions",
+    "CI",
+    "annullare-una-run-superata-da-una-nuova-versione"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": ".github/workflows/ci.yml",
+      "language": "yaml",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "765091c7c0c07200b6bec7b1b0b0eb812eba5f3ce8f31ae3b032a19abecc72d7"
+    },
+    {
+      "id": "file-1",
+      "path": "app.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "27dd4e4b948e08e0492366cd45a4678807aaea92337d5eabf9d03cae87b041ed"
+    },
+    {
+      "id": "file-2",
+      "path": "test_app.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "29a22002884ffd9d85a8a976c5cbfc587b68640f8ca2c8fc115ebf3593f43a08"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "0cb75608b5cfbe1b9f38eb692f27012393d93837abbd7b77582c9db3be2a86b6"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "cicd-scrivere-un-riepilogo-nella-pagina-della-run",
+    "cicd-avviare-la-ci-soltanto-per-percorsi-pertinenti",
+    "cicd-avviare-verifiche-su-push-e-pull-request"
+  ],
+  "expected": "Definire un gruppo concurrency per workflow e riferimento.",
+  "errors": [
+    "Workflow non visibile: verificare che il file sia nel ramo appropriato e nella directory .github/workflows.",
+    "Action non compatibile con runner self-hosted vecchio: aggiornare il runner prima di usare v7."
+  ],
+  "sources": [
+    "https://docs.github.com/actions/writing-workflows/workflow-syntax-for-github-actions",
+    "https://github.com/actions/checkout",
+    "https://github.com/actions/setup-python",
+    "https://github.com/actions/upload-artifact"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "details": "Controlli statici sui sorgenti: AST Python, parser PowerShell/Bash dove disponibili, node --check per JavaScript, JSON e XML secondo i file presenti. Nessuna compilazione C#/XAML/C++ né esecuzione Docker/CI/packaging attestata. Report: reports/desktop-tools-qa.json.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

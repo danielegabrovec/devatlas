@@ -1,0 +1,7 @@
+Set-StrictMode -Version Latest
+$ErrorActionPreference='Stop'
+$folder = Join-Path ([IO.Path]::GetTempPath()) ("demo cartella "+[guid]::NewGuid())
+New-Item -ItemType Directory -Path $folder | Out-Null
+$file = Join-Path $folder "appunti [1].txt"
+Set-Content -LiteralPath $file -Value "Ciao" -Encoding utf8
+Get-Content -LiteralPath $file

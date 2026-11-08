@@ -1,0 +1,7 @@
+import {Component,signal,computed,effect,inject,DestroyRef,ChangeDetectionStrategy} from '@angular/core';
+import {CommonModule} from '@angular/common';import {FormsModule} from '@angular/forms';
+
+@Component({selector:'app-root',standalone:true,imports:[CommonModule,FormsModule],changeDetection:ChangeDetectionStrategy.OnPush,template:`<main><input [ngModel]="query()" (ngModelChange)="query.set($event)" placeholder="Cerca"><ul>@for(item of filtered();track item){<li>{{item}}</li>}</ul></main>`})
+export class AppComponent{
+query=signal('');all=['Python','PostgreSQL','Rust'];filtered=computed(()=>this.all.filter(x=>x.toLowerCase().includes(this.query().toLowerCase())));
+}

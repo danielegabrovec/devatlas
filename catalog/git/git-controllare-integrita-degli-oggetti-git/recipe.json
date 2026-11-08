@@ -1,0 +1,66 @@
+{
+  "id": "git-controllare-integrita-degli-oggetti-git",
+  "title": "Controllare integrità degli oggetti Git",
+  "summary": "Usare fsck in lettura su un repository locale.",
+  "stack": "git",
+  "group": "Strumenti",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Git 2.45+",
+  "prerequisites": "Git 2.45+ e PowerShell 7. La ricetta crea un repository nuovo nella cartella temporanea; non eseguirla dentro un repository di produzione per risparmiare il setup.",
+  "tags": [
+    "git",
+    "controllare-integrita-degli-oggetti-git",
+    "workflow"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "example.ps1",
+      "language": "powershell",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "233dab99bfa6b9b9c2b38f92dad0204fbcf2bb4bf6c6c1d326ce09c2ad5e5588"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "81aad1821298699efaf15c56f7bf9323fd4197932372431ecdb7764f88170265"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "git-accantonare-anche-file-non-tracciati",
+    "git-accantonare-modifiche-con-stash",
+    "git-aggiungere-un-solo-file-all-indice"
+  ],
+  "expected": "Usare fsck in lettura su un repository locale.",
+  "errors": [
+    "Comando non trovato: verificare la dipendenza e riaprire il terminale dopo l'installazione.",
+    "Accesso negato: scegliere una cartella di lavoro o temporanea scrivibile."
+  ],
+  "sources": [
+    "https://git-scm.com/docs"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "details": "Controlli statici sui sorgenti: AST Python, parser PowerShell/Bash dove disponibili, node --check per JavaScript, JSON e XML secondo i file presenti. Nessuna compilazione C#/XAML/C++ né esecuzione Docker/CI/packaging attestata. Report: reports/desktop-tools-qa.json.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

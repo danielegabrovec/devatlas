@@ -1,0 +1,1 @@
+const stream=new ReadableStream({start(c){c.enqueue('dato');c.close()}});for await(const value of stream)console.log(value);

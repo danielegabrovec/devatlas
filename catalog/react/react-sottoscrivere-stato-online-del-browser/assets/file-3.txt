@@ -1,0 +1,3 @@
+import React, {useState,useEffect,useMemo,useRef,useReducer,useId,useContext,createContext,useCallback,useLayoutEffect,useTransition,useDeferredValue,useSyncExternalStore,useImperativeHandle,forwardRef,memo,lazy,Suspense,Component} from 'react';
+import {createPortal} from 'react-dom';
+export default function App(){const subscribe=useCallback(cb=>{window.addEventListener('online',cb);window.addEventListener('offline',cb);return()=>{window.removeEventListener('online',cb);window.removeEventListener('offline',cb)}},[]);const online=useSyncExternalStore(subscribe,()=>navigator.onLine,()=>true);return <p>{online?'Online':'Offline'}</p>}

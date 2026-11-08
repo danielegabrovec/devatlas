@@ -1,0 +1,1 @@
+ALTER TABLE products ADD CONSTRAINT stock_nonnegative CHECK(stock>=0); SELECT stock FROM products;

@@ -1,0 +1,18 @@
+from django.shortcuts import render,redirect,get_object_or_404
+from django.views.decorators.http import require_POST
+from .models import Note
+from .forms import NoteForm
+def home(request):
+    q=request.GET.get('q','')
+    rows=Note.objects.filter(title__icontains=q).order_by('-priority','id')
+    form=NoteForm(request.POST or None)
+    if request.method=='POST' and form.is_valid():
+        form.save()
+        return redirect('home')
+    return render(request,'notebook.html',{'notes':rows,'form':form,'q':q})
+@require_POST
+def finish(request,pk):
+    n=get_object_or_404(Note,pk=pk)
+    n.done=True
+    n.save(update_fields=['done'])
+    return redirect('home')

@@ -1,0 +1,4 @@
+import Foundation
+public struct Expense:Codable,Sendable{public let category:String;public let cents:Int;public init(category:String,cents:Int){self.category=category;self.cents=cents}}
+public enum LedgerError:Error{case invalidAmount;case overflow}
+public func totals(_ rows:[Expense])throws->[String:Int]{var result:[String:Int]=[:];for row in rows{guard !row.category.isEmpty,row.cents>=0 else{throw LedgerError.invalidAmount};let(next,overflow)=(result[row.category] ?? 0).addingReportingOverflow(row.cents);guard !overflow else{throw LedgerError.overflow};result[row.category]=next};return result}

@@ -1,0 +1,1 @@
+SELECT concat_ws(' - ',name,city) FROM people;

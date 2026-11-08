@@ -1,0 +1,10 @@
+package main
+
+import (
+"fmt"
+"errors"
+)
+
+func main(){
+cause:=errors.New("record assente");wrapped:=fmt.Errorf("lettura utente: %w",cause);fmt.Println(wrapped);fmt.Println(errors.Is(wrapped,cause))
+}

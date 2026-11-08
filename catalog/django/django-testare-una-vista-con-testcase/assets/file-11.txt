@@ -1,0 +1,8 @@
+from django.test import TestCase
+from .models import Note
+class ViewTests(TestCase):
+    def test_list(self):
+        Note.objects.create(title='Prova')
+        response=self.client.get('/')
+        self.assertEqual(response.status_code,200)
+        self.assertEqual(response.json()['items'][0]['title'],'Prova')

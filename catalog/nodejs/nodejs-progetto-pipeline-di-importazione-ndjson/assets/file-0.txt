@@ -1,0 +1,1 @@
+export function parse(line){const x=JSON.parse(line);if(typeof x.name!=='string'||!Number.isFinite(x.total))throw Error('record invalido');return x}

@@ -1,0 +1,110 @@
+{
+  "id": "svelte-tick",
+  "title": "Attendere la creazione di un nodo con tick",
+  "summary": "Leggere una misura dopo il completamento dell'aggiornamento DOM.",
+  "stack": "svelte",
+  "group": "Web e backend",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Svelte5.57.3;Vite8.3.5;vite-plugin-svelte7.3.1",
+  "prerequisites": "Node24.15.0+ e npm; dipendenze del manifest. Angular22 richiede TypeScript>=6.0 e<6.1, non il latest7. L'esempio client funziona su loopback; nessuna pubblicazione automatica.",
+  "tags": [
+    "svelte",
+    "tick",
+    "component",
+    "reactivity"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "package.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "b5bb4c82762a8e04239e26f8286d39b4562259d7fdc339dfcf86414cb3a6ffb2"
+    },
+    {
+      "id": "file-1",
+      "path": "index.html",
+      "language": "html",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "8b6cc02ed5e55b11b189e50779c7b088f7d2531a1a43b59505b7efbc8565ffd9"
+    },
+    {
+      "id": "file-2",
+      "path": "vite.config.js",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "eabec43759970968f82837437564a73ee7d30bbe0c37afe7d464dbb29715c447"
+    },
+    {
+      "id": "file-3",
+      "path": "src/main.js",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "875eb8d464a09a28919f8bb70354d5cb1be8717fdbbf801f8b4ae8f62738dca3"
+    },
+    {
+      "id": "file-4",
+      "path": "src/style.css",
+      "language": "css",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "3a55e171e6b5aa1fd06425bb3b1afc255712258cdf803e79a027d168dd724afc"
+    },
+    {
+      "id": "file-5",
+      "path": "src/App.svelte",
+      "language": "svelte",
+      "role": "file",
+      "source": "assets/file-5.txt",
+      "sha256": "a59d9e80d6dc96806c0a6676b282cf8824b3f9efddc7a60ed155065ff16eacab"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "1965fe5d479505f1e80638083dd92bfa86389a60f6f77693b578249ec5cf4668"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "svelte-await-block",
+    "svelte-bind-group",
+    "svelte-bind-this"
+  ],
+  "expected": "La misura è letta quando il blocco esiste.",
+  "errors": [
+    "Import non risolto: installare dal manifest esportato e mantenere i file di supporto.",
+    "Versione Node non supportata: controllare i requisiti del framework prima di reinstallare dipendenze."
+  ],
+  "sources": [
+    "https://svelte.dev/docs/svelte/overview",
+    "https://svelte.dev/docs/svelte/$state"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "compilato",
+    "date": "2026-10-29",
+    "details": "Build reale svelte su Nodev24.15.0/Windows con dipendenze del manifest. Interazioni browser e hosting non attestati. Report: reports/expansion-web-qa.json."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

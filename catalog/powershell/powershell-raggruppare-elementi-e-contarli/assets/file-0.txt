@@ -1,0 +1,3 @@
+Set-StrictMode -Version Latest
+$ErrorActionPreference='Stop'
+"build","test","build","package","test","test" | Group-Object | Sort-Object Count -Descending | Select-Object Name,Count

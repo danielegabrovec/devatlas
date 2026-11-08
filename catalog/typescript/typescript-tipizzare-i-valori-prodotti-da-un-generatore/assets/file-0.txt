@@ -1,0 +1,4 @@
+function* count(): Generator<number, string, void> { yield 1; yield 2; return "fine"; }
+const iterator=count();
+console.log(iterator.next(),iterator.next(),iterator.next());
+export {};

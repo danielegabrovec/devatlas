@@ -1,0 +1,1025 @@
+{
+  "platform": "Windows x64",
+  "date": "2026-10-29",
+  "recipes": 27,
+  "checks": 90,
+  "failures": 0,
+  "limitations": "Validazione sorgenti e configurazioni; workflow interattivi di debug, creazione venv, acquisizione pacchetti e distribuzione completa non eseguiti.",
+  "results": [
+    {
+      "id": "python-workflow-debug-exe",
+      "file": "main.py",
+      "check": "Python AST",
+      "ok": true
+    },
+    {
+      "id": "python-workflow-debug-exe",
+      "file": ".vscode\\launch.json",
+      "check": "JSON parse",
+      "ok": true
+    },
+    {
+      "id": "python-workflow-venv-package",
+      "file": "pyproject.toml",
+      "check": "TOML parse",
+      "ok": true
+    },
+    {
+      "id": "python-workflow-venv-package",
+      "file": "src\\catalog_hello\\__init__.py",
+      "check": "Python AST",
+      "ok": true
+    },
+    {
+      "id": "python-workflow-venv-package",
+      "file": "src\\catalog_hello\\__main__.py",
+      "check": "Python AST",
+      "ok": true
+    },
+    {
+      "id": "python-workflow-wheel-tests",
+      "file": "pyproject.toml",
+      "check": "TOML parse",
+      "ok": true
+    },
+    {
+      "id": "python-workflow-wheel-tests",
+      "file": "geometry.py",
+      "check": "Python AST",
+      "ok": true
+    },
+    {
+      "id": "python-workflow-wheel-tests",
+      "file": "test_geometry.py",
+      "check": "Python AST",
+      "ok": true
+    },
+    {
+      "id": "cpp-workflow-gdb-vscode",
+      "file": ".vscode\\launch.json",
+      "check": "JSON parse",
+      "ok": true
+    },
+    {
+      "id": "cpp-workflow-toolchain-project",
+      "file": ".vscode\\c_cpp_properties.json",
+      "check": "JSON parse",
+      "ok": true
+    },
+    {
+      "id": "csharp-workflow-dotnet-debug",
+      "file": "App.csproj",
+      "check": "MSBuild XML parse",
+      "ok": true
+    },
+    {
+      "id": "csharp-workflow-dotnet-debug",
+      "file": ".vscode\\launch.json",
+      "check": "JSON parse",
+      "ok": true
+    },
+    {
+      "id": "csharp-workflow-dotnet-debug",
+      "file": ".vscode\\tasks.json",
+      "check": "JSON parse",
+      "ok": true
+    },
+    {
+      "id": "csharp-workflow-dotnet-init",
+      "file": "App.csproj",
+      "check": "MSBuild XML parse",
+      "ok": true
+    },
+    {
+      "id": "csharp-workflow-dotnet-test-publish",
+      "file": "App.csproj",
+      "check": "MSBuild XML parse",
+      "ok": true
+    },
+    {
+      "id": "csharp-workflow-dotnet-test-publish",
+      "file": "tests\\Smoke.csproj",
+      "check": "MSBuild XML parse",
+      "ok": true
+    },
+    {
+      "id": "javascript-workflow-js-inspector",
+      "file": ".vscode\\launch.json",
+      "check": "JSON parse",
+      "ok": true
+    },
+    {
+      "id": "javascript-workflow-js-test-pack",
+      "file": "package.json",
+      "check": "JSON parse",
+      "ok": true
+    },
+    {
+      "id": "javascript-workflow-npm-esm-init",
+      "file": "package.json",
+      "check": "JSON parse",
+      "ok": true
+    },
+    {
+      "id": "typescript-workflow-ts-sourcemap-debug",
+      "file": "package.json",
+      "check": "JSON parse",
+      "ok": true
+    },
+    {
+      "id": "typescript-workflow-ts-sourcemap-debug",
+      "file": "tsconfig.json",
+      "check": "JSON parse",
+      "ok": true
+    },
+    {
+      "id": "typescript-workflow-ts-sourcemap-debug",
+      "file": ".vscode\\launch.json",
+      "check": "JSON parse",
+      "ok": true
+    },
+    {
+      "id": "typescript-workflow-ts-sourcemap-debug",
+      "file": ".vscode\\tasks.json",
+      "check": "JSON parse",
+      "ok": true
+    },
+    {
+      "id": "typescript-workflow-ts-strict-init",
+      "file": "package.json",
+      "check": "JSON parse",
+      "ok": true
+    },
+    {
+      "id": "typescript-workflow-ts-strict-init",
+      "file": "tsconfig.json",
+      "check": "JSON parse",
+      "ok": true
+    },
+    {
+      "id": "typescript-workflow-ts-test-package",
+      "file": "package.json",
+      "check": "JSON parse",
+      "ok": true
+    },
+    {
+      "id": "typescript-workflow-ts-test-package",
+      "file": "tsconfig.json",
+      "check": "JSON parse",
+      "ok": true
+    },
+    {
+      "id": "rust-workflow-cargo-init",
+      "file": "Cargo.toml",
+      "check": "TOML parse",
+      "ok": true
+    },
+    {
+      "id": "rust-workflow-cargo-test-release",
+      "file": "Cargo.toml",
+      "check": "TOML parse",
+      "ok": true
+    },
+    {
+      "id": "rust-workflow-rust-lldb",
+      "file": "Cargo.toml",
+      "check": "TOML parse",
+      "ok": true
+    },
+    {
+      "id": "rust-workflow-rust-lldb",
+      "file": ".vscode\\launch.json",
+      "check": "JSON parse",
+      "ok": true
+    },
+    {
+      "id": "go-workflow-go-delve",
+      "file": ".vscode\\launch.json",
+      "check": "JSON parse",
+      "ok": true
+    },
+    {
+      "id": "java-workflow-java-jdb",
+      "file": ".vscode\\settings.json",
+      "check": "JSON parse",
+      "ok": true
+    },
+    {
+      "id": "java-workflow-java-jdb",
+      "file": ".vscode\\launch.json",
+      "check": "JSON parse",
+      "ok": true
+    },
+    {
+      "id": "java-workflow-java-jdk-init",
+      "file": ".vscode\\settings.json",
+      "check": "JSON parse",
+      "ok": true
+    },
+    {
+      "id": "c-workflow-c-gdb",
+      "file": ".vscode\\launch.json",
+      "check": "JSON parse",
+      "ok": true
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "-Iinclude",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-workflow-cmake-tests-release\\main.cpp",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-workflow-cmake-tests-release\\test.cpp"
+      ],
+      "seconds": 0.547,
+      "output": "",
+      "id": "cpp-workflow-cmake-tests-release",
+      "check": "source compiler"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "-Iinclude",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-workflow-gdb-vscode\\main.cpp"
+      ],
+      "seconds": 0.5,
+      "output": "",
+      "id": "cpp-workflow-gdb-vscode",
+      "check": "source compiler"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "-Iinclude",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-workflow-toolchain-project\\src\\main.cpp"
+      ],
+      "seconds": 0.516,
+      "output": "",
+      "id": "cpp-workflow-toolchain-project",
+      "check": "source compiler"
+    },
+    {
+      "ok": true,
+      "command": [
+        "dotnet",
+        "build",
+        "App.csproj",
+        "-v:q",
+        "--nologo"
+      ],
+      "seconds": 2.969,
+      "output": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:02.74\n",
+      "id": "csharp-workflow-dotnet-debug",
+      "check": "source compiler"
+    },
+    {
+      "ok": true,
+      "command": [
+        "dotnet",
+        "build",
+        "App.csproj",
+        "-v:q",
+        "--nologo"
+      ],
+      "seconds": 2.485,
+      "output": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:02.29\n",
+      "id": "csharp-workflow-dotnet-init",
+      "check": "source compiler"
+    },
+    {
+      "ok": true,
+      "command": [
+        "dotnet",
+        "build",
+        "App.csproj",
+        "-v:q",
+        "--nologo"
+      ],
+      "seconds": 2.422,
+      "output": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:02.22\n",
+      "id": "csharp-workflow-dotnet-test-publish",
+      "check": "source compiler"
+    },
+    {
+      "ok": true,
+      "command": [
+        "dotnet",
+        "build",
+        "tests/Smoke.csproj",
+        "-v:q",
+        "--nologo"
+      ],
+      "seconds": 9.094,
+      "output": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:08.86\n",
+      "id": "csharp-workflow-dotnet-test-publish",
+      "check": "source compiler"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-workflow-js-inspector\\main.mjs"
+      ],
+      "seconds": 0.047,
+      "output": "",
+      "id": "javascript-workflow-js-inspector",
+      "check": "source compiler"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-workflow-js-test-pack\\src\\math.mjs"
+      ],
+      "seconds": 0.047,
+      "output": "",
+      "id": "javascript-workflow-js-test-pack",
+      "check": "source compiler"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-workflow-js-test-pack\\test\\math.test.mjs"
+      ],
+      "seconds": 0.047,
+      "output": "",
+      "id": "javascript-workflow-js-test-pack",
+      "check": "source compiler"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-workflow-npm-esm-init\\src\\main.mjs"
+      ],
+      "seconds": 0.047,
+      "output": "",
+      "id": "javascript-workflow-npm-esm-init",
+      "check": "source compiler"
+    },
+    {
+      "ok": true,
+      "command": [
+        "C:\\Users\\danie\\AppData\\Roaming\\npm\\tsc.cmd",
+        "-p",
+        "tsconfig.json",
+        "--noEmit"
+      ],
+      "seconds": 0.75,
+      "output": "",
+      "id": "typescript-workflow-ts-sourcemap-debug",
+      "check": "source compiler"
+    },
+    {
+      "ok": true,
+      "command": [
+        "C:\\Users\\danie\\AppData\\Roaming\\npm\\tsc.cmd",
+        "-p",
+        "tsconfig.json",
+        "--noEmit"
+      ],
+      "seconds": 0.75,
+      "output": "",
+      "id": "typescript-workflow-ts-strict-init",
+      "check": "source compiler"
+    },
+    {
+      "ok": true,
+      "command": [
+        "C:\\Users\\danie\\AppData\\Roaming\\npm\\tsc.cmd",
+        "-p",
+        "tsconfig.json",
+        "--noEmit"
+      ],
+      "seconds": 0.75,
+      "output": "",
+      "id": "typescript-workflow-ts-test-package",
+      "check": "source compiler"
+    },
+    {
+      "ok": true,
+      "command": [
+        "cargo",
+        "check",
+        "--offline"
+      ],
+      "seconds": 0.422,
+      "output": "    Checking rust_starter v0.1.0 (C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\rust\\rust-workflow-cargo-init)\n    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.34s\n",
+      "id": "rust-workflow-cargo-init",
+      "check": "source compiler"
+    },
+    {
+      "ok": true,
+      "command": [
+        "cargo",
+        "check",
+        "--offline"
+      ],
+      "seconds": 0.343,
+      "output": "    Checking rust_release v0.1.0 (C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\rust\\rust-workflow-cargo-test-release)\n    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.27s\n",
+      "id": "rust-workflow-cargo-test-release",
+      "check": "source compiler"
+    },
+    {
+      "ok": true,
+      "command": [
+        "cargo",
+        "check",
+        "--offline"
+      ],
+      "seconds": 0.343,
+      "output": "    Checking rust_debug v0.1.0 (C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\rust\\rust-workflow-rust-lldb)\n    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.27s\n",
+      "id": "rust-workflow-rust-lldb",
+      "check": "source compiler"
+    },
+    {
+      "ok": true,
+      "command": [
+        "go",
+        "test",
+        "./..."
+      ],
+      "seconds": 8.735,
+      "output": "?   \texample.test/go_debug\t[no test files]\n",
+      "id": "go-workflow-go-delve",
+      "check": "source compiler"
+    },
+    {
+      "ok": true,
+      "command": [
+        "go",
+        "test",
+        "./..."
+      ],
+      "seconds": 8.579,
+      "output": "?   \texample.test/go_starter\t[no test files]\n",
+      "id": "go-workflow-go-module",
+      "check": "source compiler"
+    },
+    {
+      "ok": true,
+      "command": [
+        "go",
+        "test",
+        "./..."
+      ],
+      "seconds": 9.797,
+      "output": "ok  \texample.test/go_build\t0.257s\n",
+      "id": "go-workflow-go-test-binary",
+      "check": "source compiler"
+    },
+    {
+      "ok": true,
+      "command": [
+        "javac",
+        "-encoding",
+        "UTF-8",
+        "--release",
+        "17",
+        "-d",
+        "classes",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-workflow-java-jdb\\src\\Main.java"
+      ],
+      "seconds": 0.656,
+      "output": "",
+      "id": "java-workflow-java-jdb",
+      "check": "source compiler"
+    },
+    {
+      "ok": true,
+      "command": [
+        "javac",
+        "-encoding",
+        "UTF-8",
+        "--release",
+        "17",
+        "-d",
+        "classes",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-workflow-java-jdk-init\\src\\Main.java"
+      ],
+      "seconds": 0.703,
+      "output": "",
+      "id": "java-workflow-java-jdk-init",
+      "check": "source compiler"
+    },
+    {
+      "ok": true,
+      "command": [
+        "javac",
+        "-encoding",
+        "UTF-8",
+        "--release",
+        "17",
+        "-d",
+        "classes",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-workflow-java-test-jar\\src\\math\\Calculator.java",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-workflow-java-test-jar\\src\\Main.java",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-workflow-java-test-jar\\tests\\CalculatorTest.java"
+      ],
+      "seconds": 0.704,
+      "output": "",
+      "id": "java-workflow-java-test-jar",
+      "check": "source compiler"
+    },
+    {
+      "ok": true,
+      "command": [
+        "gcc",
+        "-std=c17",
+        "-fsyntax-only",
+        "-Iinclude",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\c\\c-workflow-c-gdb\\main.c"
+      ],
+      "seconds": 0.359,
+      "output": "",
+      "id": "c-workflow-c-gdb",
+      "check": "source compiler"
+    },
+    {
+      "ok": true,
+      "command": [
+        "gcc",
+        "-std=c17",
+        "-fsyntax-only",
+        "-Iinclude",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\c\\c-workflow-c-library-test\\src\\math_demo.c",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\c\\c-workflow-c-library-test\\tests\\test_math.c"
+      ],
+      "seconds": 0.281,
+      "output": "",
+      "id": "c-workflow-c-library-test",
+      "check": "source compiler"
+    },
+    {
+      "ok": true,
+      "command": [
+        "gcc",
+        "-std=c17",
+        "-fsyntax-only",
+        "-Iinclude",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\c\\c-workflow-c-toolchain\\src\\greeting.c",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\c\\c-workflow-c-toolchain\\src\\main.c"
+      ],
+      "seconds": 0.266,
+      "output": "",
+      "id": "c-workflow-c-toolchain",
+      "check": "source compiler"
+    },
+    {
+      "ok": true,
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\parse-workflow.ps1",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\c\\c-workflow-c-gdb\\workflow-commands.ps1"
+      ],
+      "seconds": 0.187,
+      "output": "",
+      "id": "c-workflow-c-gdb",
+      "check": "PowerShell parser"
+    },
+    {
+      "ok": true,
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\parse-workflow.ps1",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\c\\c-workflow-c-library-test\\workflow-commands.ps1"
+      ],
+      "seconds": 0.125,
+      "output": "",
+      "id": "c-workflow-c-library-test",
+      "check": "PowerShell parser"
+    },
+    {
+      "ok": true,
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\parse-workflow.ps1",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\c\\c-workflow-c-toolchain\\workflow-commands.ps1"
+      ],
+      "seconds": 0.125,
+      "output": "",
+      "id": "c-workflow-c-toolchain",
+      "check": "PowerShell parser"
+    },
+    {
+      "ok": true,
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\parse-workflow.ps1",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-workflow-cmake-tests-release\\workflow-commands.ps1"
+      ],
+      "seconds": 0.141,
+      "output": "",
+      "id": "cpp-workflow-cmake-tests-release",
+      "check": "PowerShell parser"
+    },
+    {
+      "ok": true,
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\parse-workflow.ps1",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-workflow-gdb-vscode\\workflow-commands.ps1"
+      ],
+      "seconds": 0.125,
+      "output": "",
+      "id": "cpp-workflow-gdb-vscode",
+      "check": "PowerShell parser"
+    },
+    {
+      "ok": true,
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\parse-workflow.ps1",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-workflow-toolchain-project\\workflow-commands.ps1"
+      ],
+      "seconds": 0.125,
+      "output": "",
+      "id": "cpp-workflow-toolchain-project",
+      "check": "PowerShell parser"
+    },
+    {
+      "ok": true,
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\parse-workflow.ps1",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\csharp\\csharp-workflow-dotnet-debug\\workflow-commands.ps1"
+      ],
+      "seconds": 0.141,
+      "output": "",
+      "id": "csharp-workflow-dotnet-debug",
+      "check": "PowerShell parser"
+    },
+    {
+      "ok": true,
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\parse-workflow.ps1",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\csharp\\csharp-workflow-dotnet-init\\workflow-commands.ps1"
+      ],
+      "seconds": 0.125,
+      "output": "",
+      "id": "csharp-workflow-dotnet-init",
+      "check": "PowerShell parser"
+    },
+    {
+      "ok": true,
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\parse-workflow.ps1",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\csharp\\csharp-workflow-dotnet-test-publish\\workflow-commands.ps1"
+      ],
+      "seconds": 0.125,
+      "output": "",
+      "id": "csharp-workflow-dotnet-test-publish",
+      "check": "PowerShell parser"
+    },
+    {
+      "ok": true,
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\parse-workflow.ps1",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\go\\go-workflow-go-delve\\workflow-commands.ps1"
+      ],
+      "seconds": 0.125,
+      "output": "",
+      "id": "go-workflow-go-delve",
+      "check": "PowerShell parser"
+    },
+    {
+      "ok": true,
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\parse-workflow.ps1",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\go\\go-workflow-go-module\\workflow-commands.ps1"
+      ],
+      "seconds": 0.125,
+      "output": "",
+      "id": "go-workflow-go-module",
+      "check": "PowerShell parser"
+    },
+    {
+      "ok": true,
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\parse-workflow.ps1",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\go\\go-workflow-go-test-binary\\workflow-commands.ps1"
+      ],
+      "seconds": 0.14,
+      "output": "",
+      "id": "go-workflow-go-test-binary",
+      "check": "PowerShell parser"
+    },
+    {
+      "ok": true,
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\parse-workflow.ps1",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-workflow-java-jdb\\workflow-commands.ps1"
+      ],
+      "seconds": 0.125,
+      "output": "",
+      "id": "java-workflow-java-jdb",
+      "check": "PowerShell parser"
+    },
+    {
+      "ok": true,
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\parse-workflow.ps1",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-workflow-java-jdk-init\\workflow-commands.ps1"
+      ],
+      "seconds": 0.125,
+      "output": "",
+      "id": "java-workflow-java-jdk-init",
+      "check": "PowerShell parser"
+    },
+    {
+      "ok": true,
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\parse-workflow.ps1",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-workflow-java-test-jar\\workflow-commands.ps1"
+      ],
+      "seconds": 0.125,
+      "output": "",
+      "id": "java-workflow-java-test-jar",
+      "check": "PowerShell parser"
+    },
+    {
+      "ok": true,
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\parse-workflow.ps1",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-workflow-js-inspector\\workflow-commands.ps1"
+      ],
+      "seconds": 0.125,
+      "output": "",
+      "id": "javascript-workflow-js-inspector",
+      "check": "PowerShell parser"
+    },
+    {
+      "ok": true,
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\parse-workflow.ps1",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-workflow-js-test-pack\\workflow-commands.ps1"
+      ],
+      "seconds": 0.14,
+      "output": "",
+      "id": "javascript-workflow-js-test-pack",
+      "check": "PowerShell parser"
+    },
+    {
+      "ok": true,
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\parse-workflow.ps1",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-workflow-npm-esm-init\\workflow-commands.ps1"
+      ],
+      "seconds": 0.125,
+      "output": "",
+      "id": "javascript-workflow-npm-esm-init",
+      "check": "PowerShell parser"
+    },
+    {
+      "ok": true,
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\parse-workflow.ps1",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-workflow-debug-exe\\workflow-commands.ps1"
+      ],
+      "seconds": 0.125,
+      "output": "",
+      "id": "python-workflow-debug-exe",
+      "check": "PowerShell parser"
+    },
+    {
+      "ok": true,
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\parse-workflow.ps1",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-workflow-venv-package\\workflow-commands.ps1"
+      ],
+      "seconds": 0.125,
+      "output": "",
+      "id": "python-workflow-venv-package",
+      "check": "PowerShell parser"
+    },
+    {
+      "ok": true,
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\parse-workflow.ps1",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-workflow-wheel-tests\\workflow-commands.ps1"
+      ],
+      "seconds": 0.125,
+      "output": "",
+      "id": "python-workflow-wheel-tests",
+      "check": "PowerShell parser"
+    },
+    {
+      "ok": true,
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\parse-workflow.ps1",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\rust\\rust-workflow-cargo-init\\workflow-commands.ps1"
+      ],
+      "seconds": 0.125,
+      "output": "",
+      "id": "rust-workflow-cargo-init",
+      "check": "PowerShell parser"
+    },
+    {
+      "ok": true,
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\parse-workflow.ps1",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\rust\\rust-workflow-cargo-test-release\\workflow-commands.ps1"
+      ],
+      "seconds": 0.125,
+      "output": "",
+      "id": "rust-workflow-cargo-test-release",
+      "check": "PowerShell parser"
+    },
+    {
+      "ok": true,
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\parse-workflow.ps1",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\rust\\rust-workflow-rust-lldb\\workflow-commands.ps1"
+      ],
+      "seconds": 0.125,
+      "output": "",
+      "id": "rust-workflow-rust-lldb",
+      "check": "PowerShell parser"
+    },
+    {
+      "ok": true,
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\parse-workflow.ps1",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\typescript\\typescript-workflow-ts-sourcemap-debug\\workflow-commands.ps1"
+      ],
+      "seconds": 0.141,
+      "output": "",
+      "id": "typescript-workflow-ts-sourcemap-debug",
+      "check": "PowerShell parser"
+    },
+    {
+      "ok": true,
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\parse-workflow.ps1",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\typescript\\typescript-workflow-ts-strict-init\\workflow-commands.ps1"
+      ],
+      "seconds": 0.125,
+      "output": "",
+      "id": "typescript-workflow-ts-strict-init",
+      "check": "PowerShell parser"
+    },
+    {
+      "ok": true,
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\parse-workflow.ps1",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\typescript\\typescript-workflow-ts-test-package\\workflow-commands.ps1"
+      ],
+      "seconds": 0.125,
+      "output": "",
+      "id": "typescript-workflow-ts-test-package",
+      "check": "PowerShell parser"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\typescript\\typescript-workflow-ts-test-package\\test\\check.mjs"
+      ],
+      "seconds": 0.047,
+      "output": "",
+      "id": "typescript-workflow-ts-test-package",
+      "check": "JS test runner syntax"
+    }
+  ]
+}

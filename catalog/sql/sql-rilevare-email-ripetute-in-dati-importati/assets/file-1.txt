@@ -1,0 +1,1 @@
+WITH imported(email) AS(SELECT 'ada@example.test' UNION ALL SELECT 'ada@example.test' UNION ALL SELECT 'grace@example.test') SELECT email,COUNT(*) AS duplicati FROM imported GROUP BY email HAVING COUNT(*)>1;

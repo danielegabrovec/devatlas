@@ -1,0 +1,1 @@
+console.error('Dati di ingresso mancanti');process.exitCode=2;

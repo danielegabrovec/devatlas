@@ -1,0 +1,66 @@
+{
+  "id": "bash-definire-una-funzione-con-output-e-return",
+  "title": "Definire una funzione con output e return",
+  "summary": "Restituire dati su stdout e usare return per lo stato.",
+  "stack": "bash",
+  "group": "Strumenti",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Linux"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Bash 5; GNU coreutils",
+  "prerequisites": "Linux o distribuzione Linux in WSL, Bash 5 e strumenti GNU. Gli script non sono dichiarati verificati su macOS.",
+  "tags": [
+    "bash",
+    "definire-una-funzione-con-output-e-return",
+    "workflow"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "example.sh",
+      "language": "bash",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "47c846ae5cbea25cac177c1518ca4cdde851f01c486b3617cb410391e93346c6"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "bash",
+      "role": "command",
+      "shell": "Bash",
+      "os": "Linux",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "fea259a4c1b96a6455781dc38efc618814e6181d7273f9acfe47e443291df2c2"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "bash-analizzare-opzioni-brevi-con-getopts",
+    "bash-associare-chiavi-a-valori-in-bash",
+    "bash-avviare-due-lavori-e-attenderne-la-conclusione"
+  ],
+  "expected": "Restituire dati su stdout e usare return per lo stato.",
+  "errors": [
+    "Comando non trovato: verificare la dipendenza e riaprire il terminale dopo l'installazione.",
+    "Accesso negato: scegliere una cartella di lavoro o temporanea scrivibile."
+  ],
+  "sources": [
+    "https://www.gnu.org/software/bash/manual/bash.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "documentato",
+    "details": "Esempio originale revisionato nel catalogo; esecuzione non attestata.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

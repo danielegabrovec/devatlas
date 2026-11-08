@@ -1,0 +1,1 @@
+import {validSku,validCount} from './model.mjs';export async function reserve(items,sku,count){sku=validSku(sku);count=validCount(count);const row=await items.findOneAndUpdate({_id:sku,qty:{$gte:count}},{$inc:{qty:-count}},{returnDocument:'after'});if(!row)throw new Error('Stock insufficiente');return row;}

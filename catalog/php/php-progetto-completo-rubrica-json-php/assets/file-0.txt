@@ -1,0 +1,7 @@
+{
+  "name": "example/catalog-addressbook",
+  "type": "project",
+  "require": {
+    "php": ">=8.4 <8.6"
+  }
+}

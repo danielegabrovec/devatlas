@@ -1,0 +1,4 @@
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+let values=vec![1,2,3,4];let even:Vec<i32>=values.iter().copied().filter(|value|value%2==0).collect();println!("{:?}",even);
+Ok(())
+}

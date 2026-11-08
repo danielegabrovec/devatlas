@@ -1,0 +1,2 @@
+# Attività locali
+Installare dipendenze, eseguire node --test e npm run build. Il modello valida titoli e ID. La UI usa stato del framework; i test non simulano un browser. Nessun servizio remoto.

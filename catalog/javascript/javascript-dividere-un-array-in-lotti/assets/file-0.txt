@@ -1,0 +1,7 @@
+function chunks(values, size) {
+  if (!Number.isInteger(size) || size <= 0) throw new RangeError("Dimensione positiva richiesta");
+  const result = [];
+  for (let i = 0; i < values.length; i += size) result.push(values.slice(i, i + size));
+  return result;
+}
+console.log(chunks([1, 2, 3, 4, 5], 2));

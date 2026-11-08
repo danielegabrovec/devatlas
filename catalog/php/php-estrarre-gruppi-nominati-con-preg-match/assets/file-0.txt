@@ -1,0 +1,5 @@
+<?php
+declare(strict_types=1);
+$result=preg_match('/\Aitem-(?<id>\d+)\z/','item-123',$match);
+if($result===false)throw new RuntimeException(preg_last_error_msg());
+echo $result===1?$match['id']:'assente',PHP_EOL;

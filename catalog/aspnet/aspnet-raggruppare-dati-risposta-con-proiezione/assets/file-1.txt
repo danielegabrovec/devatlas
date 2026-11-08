@@ -1,0 +1,12 @@
+using System.Text;
+using System.Text.Json;
+using System.Diagnostics;
+using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.RateLimiting;
+using System.Threading.RateLimiting;
+var builder=WebApplication.CreateBuilder(args);
+
+var app=builder.Build();
+app.MapGet("/demo",()=>new[]{new{City="Roma",Amount=10},new{City="Roma",Amount=20}}.GroupBy(x=>x.City).Select(g=>new{city=g.Key,total=g.Sum(x=>x.Amount)}));
+app.Run();

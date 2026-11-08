@@ -1,0 +1,86 @@
+{
+  "id": "dart-inizializzare-un-package-dart-senza-dipendenze",
+  "title": "Inizializzare un package Dart senza dipendenze",
+  "summary": "Dichiara il vincolo SDK e avvia una CLI da una struttura bin/lib riconoscibile da Pub.",
+  "stack": "dart",
+  "group": "Linguaggi",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Dart3.13.x; librerie SDK, nessuna dipendenza Pub esterna",
+  "prerequisites": "Dart SDK3.13.x nel PATH. Gli esempi dart:io sono nativi; per riusarli su web occorre sostituire accesso filesystem/isolate dove non supportato. Nessun package esterno necessario ai capstone.",
+  "tags": [
+    "Dart SDK",
+    "Pub",
+    "setup"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "pubspec.yaml",
+      "language": "yaml",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "4e7c475d70f8d791bb24069b8e4982c5df4d2a378e62b938a70c949c479593e5"
+    },
+    {
+      "id": "file-1",
+      "path": "lib/greeting.dart",
+      "language": "dart",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "44f1c79da76b4ce63fd737a2a84f6bc6bc14f400ac1fcbacec26b1eac682e3c5"
+    },
+    {
+      "id": "file-2",
+      "path": "bin/main.dart",
+      "language": "dart",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "7946abde74b65dfe0ad932a6ec0c5f5ef41929aeb8c02d26f867796e2e75be97"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "370c9a40503432fd51121b7806a8372a41a2236b38035b9d52eced76579b7ade"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "dart-eseguire-contratti-dart-senza-package-test-esterni",
+    "dart-gestire-null-senza-force-unwrap-in-dart",
+    "dart-progetto-completo-report-spese-dart"
+  ],
+  "expected": "Ciao Ada; il package non richiede download di librerie Pub esterne.",
+  "errors": [
+    "Version solving failed per SDK: dart --version deve rispettare il vincolo3.13.x di pubspec.yaml.",
+    "Pub non trova il package: esegui dart pub get dalla directory che contiene pubspec.yaml; non servono dipendenze esterne per questi esempi."
+  ],
+  "sources": [
+    "https://dart.dev/language",
+    "https://dart.dev/resources/whats-new",
+    "https://dart.dev/tools/dart-compile"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

@@ -1,0 +1,1 @@
+INSERT INTO products VALUES(1,'Tastiera',55,9) AS new ON DUPLICATE KEY UPDATE price=new.price; SELECT * FROM products WHERE id=1;

@@ -1,0 +1,1 @@
+PRAGMA foreign_keys=ON; CREATE TABLE IF NOT EXISTS notes(id INTEGER PRIMARY KEY,title TEXT NOT NULL,body TEXT NOT NULL); CREATE VIRTUAL TABLE IF NOT EXISTS search USING fts5(title,body,content='notes',content_rowid='id'); CREATE TRIGGER IF NOT EXISTS notes_ai AFTER INSERT ON notes BEGIN INSERT INTO search(rowid,title,body) VALUES(new.id,new.title,new.body); END;

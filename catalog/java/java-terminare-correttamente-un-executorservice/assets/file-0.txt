@@ -1,0 +1,18 @@
+import java.util.*;
+import java.util.stream.*;
+import java.util.regex.*;
+import java.util.concurrent.*;
+import java.nio.file.*;
+import java.nio.charset.StandardCharsets;
+import java.io.*;
+import java.math.*;
+import java.time.*;
+import java.time.format.DateTimeFormatter;
+import java.text.Normalizer;
+
+public class Main{
+public static void main(String[] args)throws Exception{
+ExecutorService pool=Executors.newFixedThreadPool(2);try{Future<Integer> result=pool.submit(()->6*7);System.out.println(result.get());}finally{pool.shutdown();if(!pool.awaitTermination(5,TimeUnit.SECONDS))pool.shutdownNow();}
+}
+
+}

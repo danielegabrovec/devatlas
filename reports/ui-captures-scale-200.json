@@ -1,0 +1,42 @@
+[
+  {
+    "name": "01-biblioteca-chiaro",
+    "width": 1620,
+    "height": 1000,
+    "dpr": 2.0,
+    "search_visible": true,
+    "reader_visible": true,
+    "code_blocks": 0,
+    "theme": "light"
+  },
+  {
+    "name": "02-ricetta-chiaro",
+    "width": 1620,
+    "height": 1000,
+    "dpr": 2.0,
+    "search_visible": true,
+    "reader_visible": true,
+    "code_blocks": 2,
+    "theme": "light"
+  },
+  {
+    "name": "03-guida-scuro",
+    "width": 1620,
+    "height": 1000,
+    "dpr": 2.0,
+    "search_visible": true,
+    "reader_visible": true,
+    "code_blocks": 2,
+    "theme": "dark"
+  },
+  {
+    "name": "04-finestra-compatta",
+    "width": 960,
+    "height": 600,
+    "dpr": 2.0,
+    "search_visible": true,
+    "reader_visible": true,
+    "code_blocks": 2,
+    "theme": "dark"
+  }
+]

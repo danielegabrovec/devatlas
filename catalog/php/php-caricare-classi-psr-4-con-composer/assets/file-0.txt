@@ -1,0 +1,11 @@
+{
+  "name": "example/catalog-autoload",
+  "require": {
+    "php": ">=8.4 <8.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Atlas\\": "src/"
+    }
+  }
+}

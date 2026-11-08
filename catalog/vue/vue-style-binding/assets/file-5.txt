@@ -1,0 +1,5 @@
+<script setup>
+import {ref,reactive,computed,watch,watchEffect,onMounted,onUnmounted,nextTick,provide,inject,defineAsyncComponent,shallowRef,triggerRef,readonly,toRefs} from 'vue';
+const progress=ref(30);
+</script>
+<template><main><input type="range" v-model.number="progress" min="0" max="100"><div class="active" :style="{width:progress+'%',height:'24px'}"></div></main></template>

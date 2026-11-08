@@ -1,0 +1,7 @@
+import {Component,signal,computed,effect,inject,DestroyRef,ChangeDetectionStrategy} from '@angular/core';
+import {CommonModule} from '@angular/common';import {FormsModule} from '@angular/forms';
+
+@Component({selector:'app-root',standalone:true,imports:[CommonModule,FormsModule],changeDetection:ChangeDetectionStrategy.OnPush,template:`<main><button (click)="clear()">Svuota</button><ul>@for(row of rows();track row;let i=$index){<li>{{i+1}}. {{row}}</li>}@empty{<li>Nessuna attività</li>}</ul></main>`})
+export class AppComponent{
+rows=signal(['Compila','Testa']);clear(){this.rows.set([]);}
+}

@@ -1,0 +1,21 @@
+{
+  "name": "recipe-electron-package",
+  "version": "1.0.0",
+  "private": true,
+  "main": "main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-builder --dir"
+  },
+  "devDependencies": {
+    "electron": "45.1.0",
+    "electron-builder": "26.0.12"
+  },
+  "build": {
+    "appId": "it.ricettario.demo",
+    "files": [
+      "main.cjs",
+      "index.html"
+    ]
+  }
+}

@@ -1,0 +1,1 @@
+export default async function Page({params}){const{parts}=await params;return <p>Percorso: {parts.join(' / ')}</p>}

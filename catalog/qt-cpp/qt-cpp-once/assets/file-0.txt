@@ -1,0 +1,11 @@
+#include <QtWidgets>
+#include <QtCore>
+#include <QtGui>
+
+int main(int argc, char **argv) {
+ QApplication app(argc,argv);
+ QWidget window; window.resize(720,480);
+ auto *layout=new QVBoxLayout(&window);
+ auto *label=new QLabel("Attesa"); layout->addWidget(label); QTimer::singleShot(1000,label,[label]{label->setText("Pronto");});
+ window.show(); return app.exec();
+}

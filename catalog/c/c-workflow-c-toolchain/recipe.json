@@ -1,0 +1,87 @@
+{
+  "id": "c-workflow-c-toolchain",
+  "title": "Inizializzare un progetto C17 con header e sorgenti",
+  "summary": "Controlla GCC e compila un programma con include espliciti e warning abilitati.",
+  "stack": "c",
+  "group": "Linguaggi",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "ISO C17, GCC 11+",
+  "prerequisites": "Compilatore ISO C17 (GCC/Clang). Su Windows usare una toolchain GCC UCRT64 nel PATH. Nessuna estensione POSIX necessaria agli esempi.",
+  "tags": [
+    "workflow",
+    "inizializzazione",
+    "setup",
+    "test",
+    "distribution"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "include/greeting.h",
+      "language": "cpp",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "335b63176876a16f83901ae639103c373a3feb39496b52d670dc0cd4b6eb95d0"
+    },
+    {
+      "id": "file-1",
+      "path": "src/greeting.c",
+      "language": "c",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "33911f172cd25bbb82229b71e2cc02ce6e9117ac843c50b8e4f1cae80729b66a"
+    },
+    {
+      "id": "file-2",
+      "path": "src/main.c",
+      "language": "c",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "f925fea4752d943e98fd81076496f1dea0d94fe43022b6e38097bae5ccf281cf"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "c7b376d74c49467f63a12208eb0cb01892a36f7a25807bfbf3b1b8b6755adbe9"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "c-progetto-completo-statistiche-su-misure-c",
+    "c-workflow-c-gdb",
+    "c-workflow-c-library-test"
+  ],
+  "expected": "C17 pronto senza simboli non risolti.",
+  "errors": [
+    "undefined reference to greeting indica src/greeting.c mancante nel comando. Un header deve dichiarare il contratto ed evitare definizioni globali ripetute."
+  ],
+  "sources": [
+    "https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf",
+    "https://gcc.gnu.org/onlinedocs/gcc/C-Dialect-Options.html",
+    "https://gcc.gnu.org/onlinedocs/gcc/Overall-Options.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Sorgenti e configurazioni verificati su Windows x64: PowerShell parser, source compiler. Report: reports/languages-workflows-validation.json. Non attestati sessioni interattive di debug, installazioni di dipendenze o distribuzione completa del workflow; nessuna esecuzione Linux/macOS."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

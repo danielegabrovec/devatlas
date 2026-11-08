@@ -1,0 +1,111 @@
+{
+  "id": "html-css-inizializzare-ambiente-e-progetto-html-css",
+  "title": "Inizializzare ambiente e progetto html-css",
+  "summary": "Non occorre un framework: index.html collega CSS e modulo JavaScript locali. I moduli ESM vanno serviti da HTTP locale, non da file://. Il server Python serve soltanto questa cartella esportata su localhost8080; apri il browser e verifica Totale:30.",
+  "stack": "html-css",
+  "group": "Web e backend",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "HTML Living Standard; CSS moderno; Chromium120+",
+  "prerequisites": "Browser moderno. Aprire index.html dalla cartella esportata. Per testare API soggette a secure context servire da localhost. Nessuna libreria esterna.",
+  "tags": [
+    "html-css",
+    "initialize",
+    "bootstrap",
+    "setup",
+    "environment",
+    "configuration"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "index.html",
+      "language": "html",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "2a06b6af9deed7f23edb860d774e5213a28df262ca1407d46b6bce88c3e3dd6f"
+    },
+    {
+      "id": "file-1",
+      "path": "style.css",
+      "language": "css",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "b984c9ae2cf2187e41c6fbfb470368218f16365f4f8bc10fe9e4864c5f8b0890"
+    },
+    {
+      "id": "file-2",
+      "path": "app.js",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "4450b566391f1c1afe408f6fc93d9af742e8a68a019da040223fd94513138ce0"
+    },
+    {
+      "id": "file-3",
+      "path": "lib.js",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "ba6e6d0f215cf4d5cb4a7384fe70d180d8bd8ae683acf896db050480ce915cce"
+    },
+    {
+      "id": "file-4",
+      "path": "package.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "a90fc33418afa2b9cbf4768524b021135b965ecdf993457505bfae3ac44a8428"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "78c5c7c26d734fa4ffdcf3f4e803a59ac81557f3f617722018ab4e534028e11e"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "html-css-progetto-biblioteca-responsive-con-filtri-locali",
+    "html-css-adattare-componenti-con-container-query",
+    "html-css-adattare-tema-a-prefers-color-scheme"
+  ],
+  "expected": "L’applicazione si avvia localmente con il file di configurazione fornito. La versione della toolchain è verificabile dai comandi iniziali.",
+  "errors": [
+    "Comando non trovato: installare la toolchain elencata nei prerequisiti.",
+    "Dipendenza mancante: eseguire l'installazione nella radice esportata, senza cambiare le versioni dichiarate."
+  ],
+  "sources": [
+    "https://html.spec.whatwg.org/",
+    "https://developer.mozilla.org/en-US/docs/Web/CSS"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Verifiche lifecycle su Windows: static-files, node-test-or-check. Configurazione debugger controllata come JSON; sessione F5 e distribuzione remota non attestate.",
+    "files_sha256": {
+      "index.html": "2a06b6af9deed7f23edb860d774e5213a28df262ca1407d46b6bce88c3e3dd6f",
+      "style.css": "b984c9ae2cf2187e41c6fbfb470368218f16365f4f8bc10fe9e4864c5f8b0890",
+      "app.js": "4450b566391f1c1afe408f6fc93d9af742e8a68a019da040223fd94513138ce0",
+      "lib.js": "ba6e6d0f215cf4d5cb4a7384fe70d180d8bd8ae683acf896db050480ce915cce",
+      "package.json": "a90fc33418afa2b9cbf4768524b021135b965ecdf993457505bfae3ac44a8428"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

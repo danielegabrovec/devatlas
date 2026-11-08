@@ -1,0 +1,1 @@
+CREATE TABLE presenze(person_id INTEGER,giorno VARCHAR(10),PRIMARY KEY(person_id,giorno)); INSERT INTO presenze VALUES(1,'2026-10-29'); SELECT * FROM presenze;

@@ -1,0 +1,2 @@
+swiftc -g -Onone main.swift -o debug-app
+lldb ./debug-app

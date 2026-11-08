@@ -1,0 +1,173 @@
+{
+  "id": "django-proteggere-una-vista-con-login-required",
+  "title": "Proteggere una vista con login_required",
+  "summary": "Il progetto completo usa l’app notes e SQLite locale. Le modifiche specifiche sono nei file notes/views.py, config/urls.py, templates/registration/login.html. I template mantengono autoescape e i form POST includono CSRF. Per admin/login crea un utente con createsuperuser; non sono presenti password predefinite.",
+  "stack": "django",
+  "group": "Web e backend",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Django5.2.6 LTS; Python3.11+",
+  "prerequisites": "Python3.11+ e venv. SQLite incluso in Python. DEBUG e SECRET_KEY sono solo per localhost; non pubblicare queste impostazioni. Porta8000 libera.",
+  "tags": [
+    "django",
+    "example",
+    "proteggere",
+    "una",
+    "vista",
+    "con"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "manage.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "8849c817101501786e131101f2f5fac10aed33241675ed49d15f6fdbe255a916"
+    },
+    {
+      "id": "file-1",
+      "path": "config/__init__.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "id": "file-2",
+      "path": "config/settings.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "54048c44dbd37b177b6a8b19ab8beb2ddb8d57fd188f71892befb6d5eea9f7da"
+    },
+    {
+      "id": "file-3",
+      "path": "config/urls.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "bcf068ad7c6854ad8b7232fe71ec86360c639f1a4ff5fc5451de5c7db6a0663d"
+    },
+    {
+      "id": "file-4",
+      "path": "notes/__init__.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "id": "file-5",
+      "path": "notes/models.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-5.txt",
+      "sha256": "0743f30d484e49ffbd6fc1ca213128e5ac20db06cab71e514caa6c10f2b87932"
+    },
+    {
+      "id": "file-6",
+      "path": "notes/views.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-6.txt",
+      "sha256": "f27cc0e0824ff36c551f2ec02e535ad1964ec419d219a433ddff431735ad020e"
+    },
+    {
+      "id": "file-7",
+      "path": "notes/migrations/__init__.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-7.txt",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "id": "file-8",
+      "path": "notes/migrations/0001_initial.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-8.txt",
+      "sha256": "3cfe7127344a2e96310c96dfa94d0c909e45906ea99aee534c0c62c621a35c53"
+    },
+    {
+      "id": "file-9",
+      "path": "seed.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-9.txt",
+      "sha256": "e446c7a8a041d25a77373ae88eabbc2459d58f04f7c6cda06472b172fa48e6a0"
+    },
+    {
+      "id": "file-10",
+      "path": "requirements.txt",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-10.txt",
+      "sha256": "1a56de810d0e0b7d26f28a7849f418e166230196b7c58d94601f4624f172e57d"
+    },
+    {
+      "id": "file-11",
+      "path": "templates/registration/login.html",
+      "language": "html",
+      "role": "file",
+      "source": "assets/file-11.txt",
+      "sha256": "a3db2d2806a6d41256a952ad28157816ef046f323c096c0be356cb32696a6f4d"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "b4e9a13a5d5b2b0539267c7b9130bb1dc034a7b53f537955748aefdd3d5af3da"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "django-applicare-cache-temporale-alla-vista",
+    "django-limitare-una-vista-al-metodo-get",
+    "django-testare-una-vista-con-testcase"
+  ],
+  "expected": "Il risultato mostra il comportamento descritto nel titolo; i dati dimostrativi sono inclusi nel sorgente.",
+  "errors": [
+    "Comando non trovato: installare la toolchain elencata nei prerequisiti.",
+    "Dipendenza mancante: eseguire l'installazione nella radice esportata, senza cambiare le versioni dichiarate."
+  ],
+  "sources": [
+    "https://docs.djangoproject.com/en/5.2/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Sintassi dei file Python o JavaScript/JSX e JSON controllata sulle fonti correnti; esecuzione di questa singola ricetta non attestata.",
+    "files_sha256": {
+      "manage.py": "8849c817101501786e131101f2f5fac10aed33241675ed49d15f6fdbe255a916",
+      "config/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "config/settings.py": "54048c44dbd37b177b6a8b19ab8beb2ddb8d57fd188f71892befb6d5eea9f7da",
+      "config/urls.py": "bcf068ad7c6854ad8b7232fe71ec86360c639f1a4ff5fc5451de5c7db6a0663d",
+      "notes/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "notes/models.py": "0743f30d484e49ffbd6fc1ca213128e5ac20db06cab71e514caa6c10f2b87932",
+      "notes/views.py": "f27cc0e0824ff36c551f2ec02e535ad1964ec419d219a433ddff431735ad020e",
+      "notes/migrations/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "notes/migrations/0001_initial.py": "3cfe7127344a2e96310c96dfa94d0c909e45906ea99aee534c0c62c621a35c53",
+      "seed.py": "e446c7a8a041d25a77373ae88eabbc2459d58f04f7c6cda06472b172fa48e6a0",
+      "requirements.txt": "1a56de810d0e0b7d26f28a7849f418e166230196b7c58d94601f4624f172e57d",
+      "templates/registration/login.html": "a3db2d2806a6d41256a952ad28157816ef046f323c096c0be356cb32696a6f4d"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

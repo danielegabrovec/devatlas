@@ -1,0 +1,28 @@
+import sys, json, sqlite3, tempfile, logging
+from pathlib import Path
+from PySide6.QtCore import *
+from PySide6.QtGui import *
+from PySide6.QtWidgets import *
+
+def build(root, layout):
+    items = QListWidget()
+    items.addItems(["Uno", "Due"])
+    items.setContextMenuPolicy(Qt.ContextMenuPolicy.CustomContextMenu)
+    def menu_at(point):
+        menu = QMenu(items)
+        action = menu.addAction("Copia selezione")
+        chosen = menu.exec(items.viewport().mapToGlobal(point))
+        if chosen == action and items.currentItem():
+            QGuiApplication.clipboard().setText(items.currentItem().text())
+    items.customContextMenuRequested.connect(menu_at)
+    layout.addWidget(items)
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    window = QWidget()
+    window.setWindowTitle("Ricetta Qt")
+    window.resize(720, 480)
+    layout = QVBoxLayout(window)
+    build(window, layout)
+    window.show()
+    sys.exit(app.exec())

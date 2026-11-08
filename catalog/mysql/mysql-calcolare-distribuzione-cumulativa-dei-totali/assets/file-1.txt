@@ -1,0 +1,1 @@
+SELECT id,total,CUME_DIST() OVER(ORDER BY total) AS quota_cumulativa FROM orders;

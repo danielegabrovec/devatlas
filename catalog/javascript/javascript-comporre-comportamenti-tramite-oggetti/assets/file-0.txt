@@ -1,0 +1,5 @@
+function createService(repository) {
+  return { greeting: id => `Ciao ${repository.get(id).name}` };
+}
+const service = createService({ get: id => ({ id, name: "Ada" }) });
+console.log(service.greeting(7));

@@ -1,0 +1,11 @@
+#include <QtWidgets>
+#include <QtCore>
+#include <QtGui>
+
+int main(int argc, char **argv) {
+ QApplication app(argc,argv);
+ QWidget window; window.resize(720,480);
+ auto *layout=new QVBoxLayout(&window);
+ auto *model=new QStringListModel(QStringList{"Python","PySide6","Rust"},&window); auto *proxy=new QSortFilterProxyModel(&window); proxy->setSourceModel(model); proxy->setFilterCaseSensitivity(Qt::CaseInsensitive); auto *edit=new QLineEdit; QObject::connect(edit,&QLineEdit::textChanged,proxy,&QSortFilterProxyModel::setFilterFixedString); auto *view=new QListView; view->setModel(proxy); layout->addWidget(edit); layout->addWidget(view);
+ window.show(); return app.exec();
+}

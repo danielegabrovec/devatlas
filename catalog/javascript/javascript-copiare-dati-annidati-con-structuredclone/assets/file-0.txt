@@ -1,0 +1,4 @@
+const source = { points: [1, 2], created: new Date("2026-01-01T00:00:00Z") };
+const copy = structuredClone(source);
+copy.points.push(3);
+console.log(source.points.length, copy.created instanceof Date);

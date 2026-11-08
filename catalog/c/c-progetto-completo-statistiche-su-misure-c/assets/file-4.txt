@@ -1,0 +1,3 @@
+# Statistiche C17
+
+Compilare main.c e stats.c per il programma, test.c e stats.c per i test. Non unire main.c e test.c: entrambi hanno main. La funzione rifiuta input vuoti, puntatori nulli e misure non finite; gli input devono restare entro una scala che non provochi overflow dei calcoli double intermedi. Non alloca memoria e non conserva riferimenti ai dati. Nessuna libreria esterna.

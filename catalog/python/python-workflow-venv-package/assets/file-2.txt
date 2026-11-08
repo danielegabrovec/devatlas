@@ -1,0 +1,2 @@
+from . import greet
+print(greet("Ada"))

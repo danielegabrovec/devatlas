@@ -1,0 +1,4 @@
+dotnet --info
+dotnet workload list
+dotnet restore {{project_name}}.csproj
+dotnet run --project {{project_name}}.csproj -f net10.0-windows10.0.19041.0

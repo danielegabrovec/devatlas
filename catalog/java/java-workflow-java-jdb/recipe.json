@@ -1,0 +1,87 @@
+{
+  "id": "java-workflow-java-jdb",
+  "title": "Debuggare Java con jdb o VS Code",
+  "summary": "Mantiene simboli di debug e fornisce una configurazione Java con arresto all'ingresso.",
+  "stack": "java",
+  "group": "Linguaggi",
+  "section": "Debug",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Java17+ senza feature preview",
+  "prerequisites": "JDK17+ nel PATH, comandi javac e java. Non basta un JRE; nessuna dipendenza Maven/Gradle necessaria.",
+  "tags": [
+    "workflow",
+    "debug",
+    "debugger",
+    "test",
+    "distribution"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "src/Main.java",
+      "language": "java",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "a07320bbda34210d5ccd8fcbf18adeb21573728c1c4725b0c7dec424a3efaa6c"
+    },
+    {
+      "id": "file-1",
+      "path": ".vscode/settings.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "a960a3e09ecc25f3f50bc0ef1c7fc83ac308429c37d6a615deb6b3f940ce6353"
+    },
+    {
+      "id": "file-2",
+      "path": ".vscode/launch.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "87a241cd4f593db7465d584279f11c152c24d13f5088f63dd9b583eb88fbbd3a"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "9f30730f6327113ff7868790fb9d65bc5b1f03411df424982675cb731c2af4be"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "java-workflow-java-jdk-init",
+    "java-workflow-java-test-jar",
+    "java-progetto-completo-catalogo-libri-java"
+  ],
+  "expected": "Il debugger mostra stack e variabili locali; completando il programma si ottiene10.",
+  "errors": [
+    "Se locals non mostra i nomi ricompila con -g. jdb rimane interattivo e il classpath deve puntare alla directory contenente Main.class."
+  ],
+  "sources": [
+    "https://dev.java/learn/",
+    "https://docs.oracle.com/en/java/javase/17/docs/api/",
+    "https://docs.oracle.com/en/java/javase/17/docs/specs/man/jdb.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Sorgenti e configurazioni verificati su Windows x64: JSON parse, PowerShell parser, source compiler. Report: reports/languages-workflows-validation.json. Non attestati sessioni interattive di debug, installazioni di dipendenze o distribuzione completa del workflow; nessuna esecuzione Linux/macOS."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

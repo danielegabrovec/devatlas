@@ -1,0 +1,5 @@
+<script>
+import {onMount,tick,setContext,getContext} from 'svelte';
+let email=$state('');let message=$state('');function submit(event){event.preventDefault();message=/^[^@]+@[^@]+\.[^@]+$/.test(email)?'Acquisita':'Controlla email';}
+</script>
+<main><form onsubmit={submit}><input bind:value={email} aria-label="Email"><button>Conferma</button></form><p role="status">{message}</p></main>

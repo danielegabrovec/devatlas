@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.24)
+project(RecipeBuild VERSION 1.2.0 LANGUAGES CXX)
+add_executable(recipe main.cpp)
+include(CTest)
+add_test(NAME recipe_output COMMAND recipe)
+set_tests_properties(recipe_output PROPERTIES TIMEOUT 5 PASS_REGULAR_EXPRESSION "Build pronto")

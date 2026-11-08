@@ -1,0 +1,4 @@
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+let mut heap=std::collections::BinaryHeap::from([2,9,4]);while let Some(value)=heap.pop(){println!("{}",value);}
+Ok(())
+}

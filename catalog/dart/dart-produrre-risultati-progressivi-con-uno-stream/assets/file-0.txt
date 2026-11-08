@@ -1,0 +1,4 @@
+Stream<int> samples() async* {yield 1;yield 2;}
+Future<void> main() async {
+await for(final value in samples()){print(value);}
+}

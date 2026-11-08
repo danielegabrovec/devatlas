@@ -1,0 +1,12 @@
+using System;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Collections.ObjectModel;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
+namespace RecipeApp;
+public class MainWindow:Window {
+ public MainWindow(){Title="Ricetta WinUI"; var panel=new StackPanel{Spacing=12,Margin=new Thickness(20)};
+var b=new Button{Content="Esporta"}; ToolTipService.SetToolTip(b,"Crea una copia locale del documento"); panel.Children.Add(b);
+ Content=panel; }
+}

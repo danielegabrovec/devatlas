@@ -1,0 +1,2 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Laboratorio HTML/CSS</title><link rel="stylesheet" href="style.css"></head><body><form><label for='code'>Codice:3lettere maiuscole</label><input id='code' pattern='[A-Z]{3}' maxlength='3' required title='Tre lettere maiuscole'><button>Verifica</button></form></body></html>

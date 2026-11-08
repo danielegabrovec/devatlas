@@ -1,0 +1,6 @@
+import Foundation
+let domain="example.catalog.preferences.demo"
+let defaults=UserDefaults(suiteName:domain)!
+defaults.set(true,forKey:"details")
+print(defaults.bool(forKey:"details"))
+defaults.removePersistentDomain(forName:domain)

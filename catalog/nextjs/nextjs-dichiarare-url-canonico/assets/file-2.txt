@@ -1,0 +1,1 @@
+export const metadata={metadataBase:new URL('https://example.test'),alternates:{canonical:'/'}};export default function Page(){return <h1>Home canonica</h1>}

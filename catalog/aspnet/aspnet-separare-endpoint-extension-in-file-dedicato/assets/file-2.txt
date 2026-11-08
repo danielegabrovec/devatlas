@@ -1,0 +1,1 @@
+public static class CatalogEndpoints{public static void MapCatalog(this WebApplication app){app.MapGet("/catalog",()=>new[]{"Python","SQL"});}}

@@ -1,0 +1,69 @@
+{
+  "id": "python-ottenere-l-identificativo-sqlite-appena-inserito",
+  "title": "Ottenere l'identificativo SQLite appena inserito",
+  "summary": "Legge lastrowid dal cursore dell'inserimento pertinente.",
+  "stack": "python",
+  "group": "Linguaggi",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Python 3.11–3.13; esempi con libreria standard",
+  "prerequisites": "CPython 3.11 o successivo nel PATH. Nessun pacchetto esterno; sqlite3 deve essere incluso nella distribuzione.",
+  "tags": [
+    "sqlite",
+    "lastrowid",
+    "insert",
+    "identity"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "e2cdcf5de8d5c35c7342a62080639409ee50c26a2b071ccbc0bcebcc42e81223"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "a6228c53b33871b4ad5a33b621f4a3e7e5a864da2f1243e958bdf22f735c24b8"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "python-adattare-decimal-per-sqlite-esplicitamente",
+    "python-annullare-una-transazione-sqlite",
+    "python-definire-stati-con-enum"
+  ],
+  "expected": "1 nel database appena creato.",
+  "errors": [
+    "Comando non trovato: installare la toolchain e riaprire il terminale."
+  ],
+  "sources": [
+    "https://docs.python.org/3.13/library/",
+    "https://docs.python.org/3.13/tutorial/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "details": "Eseguito su Windows x64 il 29/10/2026. Ambiente: CPython 3.11.15, libreria standard. Sorgenti compilati/controllati e programmi eseguiti; per i progetti sono stati eseguiti anche i test inclusi. Report: reports/languages-source-validation.json e reports/languages-runtime-validation.json. Linux e macOS non eseguiti.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

@@ -1,0 +1,5 @@
+data class Person(val surname: String,val name: String)
+fun main() {
+val rows = listOf(Person("Rossi","Luca"),Person("Rossi","Ada"))
+println(rows.sortedWith(compareBy<Person> { it.surname }.thenBy { it.name }))
+}

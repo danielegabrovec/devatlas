@@ -1,0 +1,6 @@
+class Inventory {
+ private val quantities=linkedMapOf<String,Int>()
+ fun add(name:String,quantity:Int){val key=name.trim();require(key.isNotEmpty()&&quantity>0){"Nome e quantita positiva richiesti"};quantities[key]=Math.addExact(quantities[key]?:0,quantity)}
+ fun quantity(name:String):Int=quantities[name]?:0
+ fun snapshot():Map<String,Int> = quantities.toMap()
+}

@@ -1,0 +1,1 @@
+SELECT name FROM people WHERE age>=35 AND city='Roma';

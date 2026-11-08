@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.24)
+project(RicettaQt LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+find_package(Qt6 6.10 REQUIRED COMPONENTS Widgets)
+qt_standard_project_setup()
+qt_add_executable(RicettaQt main.cpp)
+target_link_libraries(RicettaQt PRIVATE Qt6::Widgets)

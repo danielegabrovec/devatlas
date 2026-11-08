@@ -1,0 +1,94 @@
+{
+  "id": "python-progetto-completo-cli-inventario-json",
+  "title": "Progetto completo CLI inventario JSON",
+  "summary": "Realizza una CLI con persistenza JSON, validazione e test separati; i file vengono scritti soltanto nel percorso passato dall'utente.",
+  "stack": "python",
+  "group": "Linguaggi",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Python 3.11–3.13; esempi con libreria standard",
+  "prerequisites": "CPython 3.11 o successivo nel PATH. Nessun pacchetto esterno; sqlite3 deve essere incluso nella distribuzione.",
+  "tags": [
+    "project",
+    "cli",
+    "json",
+    "unittest",
+    "persistence"
+  ],
+  "project": true,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "12d263312b48a3328807d5c13642a3bd445467769effab58f539c575d36a4587"
+    },
+    {
+      "id": "file-1",
+      "path": "inventory.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "f89a0841c7544e898b480adc95489cf1299ee591fb8bd384e1806deb7c3fd9ab"
+    },
+    {
+      "id": "file-2",
+      "path": "test_inventory.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "b387b6bd719f42abc1d643ab8f01d33c637c49c286db85924b97de2af571c6f1"
+    },
+    {
+      "id": "file-3",
+      "path": "README.md",
+      "language": "markdown",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "72b4919ea157c513e5cd6077d8c45243442bcd8dedff0de0c5dfbf20574c1f70"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "ab424e843529144cfbe9aa8fcade9b269914aa5b0ebc132ee4b5276798c3325e"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "python-analizzare-argomenti-cli-con-argparse",
+    "python-scrivere-un-test-unitario-con-unittest",
+    "python-segnalare-la-posizione-di-un-errore-json"
+  ],
+  "expected": "Due test passano. Alla prima esecuzione la CLI stampa viti: 3; i dati rimangono nel JSON per l'avvio successivo.",
+  "errors": [
+    "Comando non trovato: installare la toolchain e riaprire il terminale."
+  ],
+  "sources": [
+    "https://docs.python.org/3.13/library/",
+    "https://docs.python.org/3.13/tutorial/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "details": "Eseguito su Windows x64 il 29/10/2026. Ambiente: CPython 3.11.15, libreria standard. Sorgenti compilati/controllati e programmi eseguiti; per i progetti sono stati eseguiti anche i test inclusi. Report: reports/languages-source-validation.json e reports/languages-runtime-validation.json. Linux e macOS non eseguiti.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

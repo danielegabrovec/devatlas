@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+p="atlas_demo:list"
+cli(){ redis-cli -e --raw -h 127.0.0.1 -p 6381 "$@"; }
+cli DEL "$p:jobs"
+cli RPUSH "$p:jobs" first second
+cli LPOP "$p:jobs"
+cli LRANGE "$p:jobs" 0 -1

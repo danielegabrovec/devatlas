@@ -1,0 +1,2 @@
+New-Item -ItemType Directory -Path .mongo-data -Force | Out-Null
+mongod --config mongod.yaml

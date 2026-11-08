@@ -1,0 +1,1 @@
+<script>let {name='Ospite'}=$props();</script><p>Ciao {name}</p>

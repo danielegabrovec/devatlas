@@ -1,0 +1,5 @@
+Set-StrictMode -Version Latest
+$ErrorActionPreference='Stop'
+$path = Join-Path ([IO.Path]::GetTempPath()) ("demo-"+[guid]::NewGuid()+".csv")
+@([pscustomobject]@{Nome="Città";Valore=42}) | Export-Csv -LiteralPath $path -NoTypeInformation -Encoding utf8
+Import-Csv -LiteralPath $path

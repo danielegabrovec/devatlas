@@ -1,0 +1,2 @@
+redis-cli -h 127.0.0.1 -p 6381 --rdb atlas-lab.rdb
+redis-check-rdb atlas-lab.rdb

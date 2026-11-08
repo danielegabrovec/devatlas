@@ -1,0 +1,11 @@
+type Action = { type: "add"; value: number } | { type: "clear" };
+function unreachable(value: never): never { throw new Error(`Variante inattesa: ${String(value)}`); }
+function apply(action: Action): number {
+  switch (action.type) {
+    case "add": return action.value;
+    case "clear": return 0;
+    default: return unreachable(action);
+  }
+}
+console.log(apply({ type: "add", value: 3 }));
+export {};

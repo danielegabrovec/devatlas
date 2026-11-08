@@ -1,0 +1,4 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {area} from '../dist/index.js';
+test('area emessa',()=>assert.equal(area(3,4),12));

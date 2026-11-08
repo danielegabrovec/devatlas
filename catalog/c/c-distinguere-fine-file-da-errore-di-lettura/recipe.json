@@ -1,0 +1,69 @@
+{
+  "id": "c-distinguere-fine-file-da-errore-di-lettura",
+  "title": "Distinguere fine file da errore di lettura",
+  "summary": "Verifica ferror dopo un ciclo fgetc invece di assumere che ogni EOF sia normale.",
+  "stack": "c",
+  "group": "Linguaggi",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "ISO C17, GCC 11+",
+  "prerequisites": "Compilatore ISO C17 (GCC/Clang). Su Windows usare una toolchain GCC UCRT64 nel PATH. Nessuna estensione POSIX necessaria agli esempi.",
+  "tags": [
+    "eof",
+    "ferror",
+    "fgetc",
+    "stream"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.c",
+      "language": "c",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "f2b124b6105179c859c0ee13d432ce0c8ae3aa1f5be2eb4ca3136d0b4d7f499e"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "0433ed81d94ad565e0f654ba44d31feca3f06f9d4ee83ed9e3f2402cddc091e8"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "c-scrivere-e-rileggere-byte-con-fread-e-fwrite",
+    "c-allocare-un-array-controllando-overflow-di-dimensione",
+    "c-analizzare-campi-con-larghezze-limitate"
+  ],
+  "expected": "3; ch è int per poter rappresentare sia i byte sia EOF.",
+  "errors": [
+    "Non ignorare warning su puntatori e dimensioni. Controllare sempre il risultato di allocazioni e operazioni I/O prima di usare il dato."
+  ],
+  "sources": [
+    "https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf",
+    "https://gcc.gnu.org/onlinedocs/gcc/C-Dialect-Options.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "details": "Eseguito su Windows x64 il 29/10/2026. Ambiente: GCC16.2.0 MSYS2 UCRT64, ISO C17. Sorgenti compilati/controllati e programmi eseguiti; per i progetti sono stati eseguiti anche i test inclusi. Report: reports/languages-source-validation.json e reports/languages-runtime-validation.json. Linux e macOS non eseguiti.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

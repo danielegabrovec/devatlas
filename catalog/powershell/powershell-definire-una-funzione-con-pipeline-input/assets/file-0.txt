@@ -1,0 +1,4 @@
+Set-StrictMode -Version Latest
+$ErrorActionPreference='Stop'
+function Get-Square { [CmdletBinding()] param([Parameter(ValueFromPipeline)][int]$Value) process { $Value*$Value } }
+1..5 | Get-Square

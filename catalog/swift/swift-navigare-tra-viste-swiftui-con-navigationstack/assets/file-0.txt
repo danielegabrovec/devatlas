@@ -1,0 +1,5 @@
+import SwiftUI
+struct ContentView:View{
+ let topics=["Optional","Package","Concurrency"]
+ var body:some View{NavigationStack{List(topics,id:\.self){topic in NavigationLink(topic,value:topic)}.navigationTitle("Guide").navigationDestination(for:String.self){topic in Text("Guida: \(topic)").padding()}}}
+}

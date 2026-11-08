@@ -1,0 +1,208 @@
+{
+  "id": "django-progetto-taccuino-django-con-creazione-ricerca-e-test",
+  "title": "Progetto: taccuino Django con creazione ricerca e test",
+  "summary": "Un taccuino funzionante separa modello, ModelForm, viste, URL, template e test. Creazione e completamento usano POST/CSRF; ricerca GET è senza effetti collaterali.",
+  "stack": "django",
+  "group": "Web e backend",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Django5.2.6 LTS; Python3.11+",
+  "prerequisites": "Python3.11+ e venv. SQLite incluso in Python. DEBUG e SECRET_KEY sono solo per localhost; non pubblicare queste impostazioni. Porta8000 libera.",
+  "tags": [
+    "django",
+    "example",
+    "progetto:",
+    "taccuino",
+    "django",
+    "con"
+  ],
+  "project": true,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "manage.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "8849c817101501786e131101f2f5fac10aed33241675ed49d15f6fdbe255a916"
+    },
+    {
+      "id": "file-1",
+      "path": "config/__init__.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "id": "file-2",
+      "path": "config/settings.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "54048c44dbd37b177b6a8b19ab8beb2ddb8d57fd188f71892befb6d5eea9f7da"
+    },
+    {
+      "id": "file-3",
+      "path": "config/urls.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "489775f7f3a7e6dab15777205b255a8552fca9458dd8027a21640f9cacd026c7"
+    },
+    {
+      "id": "file-4",
+      "path": "notes/__init__.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "id": "file-5",
+      "path": "notes/models.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-5.txt",
+      "sha256": "0743f30d484e49ffbd6fc1ca213128e5ac20db06cab71e514caa6c10f2b87932"
+    },
+    {
+      "id": "file-6",
+      "path": "notes/views.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-6.txt",
+      "sha256": "3b519fd2f2a107db7514cb46a0e681b60743f17b4cb3266f9a39b7725d1b3d89"
+    },
+    {
+      "id": "file-7",
+      "path": "notes/migrations/__init__.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-7.txt",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "id": "file-8",
+      "path": "notes/migrations/0001_initial.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-8.txt",
+      "sha256": "3cfe7127344a2e96310c96dfa94d0c909e45906ea99aee534c0c62c621a35c53"
+    },
+    {
+      "id": "file-9",
+      "path": "seed.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-9.txt",
+      "sha256": "e446c7a8a041d25a77373ae88eabbc2459d58f04f7c6cda06472b172fa48e6a0"
+    },
+    {
+      "id": "file-10",
+      "path": "requirements.txt",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-10.txt",
+      "sha256": "1a56de810d0e0b7d26f28a7849f418e166230196b7c58d94601f4624f172e57d"
+    },
+    {
+      "id": "file-11",
+      "path": "notes/forms.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-11.txt",
+      "sha256": "368ff265d0f20efd5fea8c7946de4ad6efc09bb9b0ea04caa8c344a181c0189d"
+    },
+    {
+      "id": "file-12",
+      "path": "templates/notebook.html",
+      "language": "html",
+      "role": "file",
+      "source": "assets/file-12.txt",
+      "sha256": "91aefb458e2ac1ccb510d78e72313037bb9e9d96ee0910bfda5d55e86c2ba40a"
+    },
+    {
+      "id": "file-13",
+      "path": "notes/tests.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-13.txt",
+      "sha256": "9968cdabee180a398eb898a3e66792c1decf25a30d3adfc692ee0734b5f57de3"
+    },
+    {
+      "id": "file-14",
+      "path": "README.md",
+      "language": "markdown",
+      "role": "file",
+      "source": "assets/file-14.txt",
+      "sha256": "1899f3c08a961c8b365fc8b9ff6ade8598edbb8e5047ff891d2c083de3c16620"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "2ee669051a7d8a1a1009ab284ff7f3bf446510975fc0f9c9016227426e14df3d"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "port",
+      "label": "Porta locale",
+      "type": "port",
+      "default": 8000,
+      "required": true
+    }
+  ],
+  "related": [
+    "django-registrare-un-modeladmin-con-ricerca",
+    "django-aggiornare-valori-atomicamente-con-f",
+    "django-aggiungere-messaggi-dopo-redirect"
+  ],
+  "expected": "Le note si creano, si trovano per titolo e si completano; i3test coprono i flussi principali.",
+  "errors": [
+    "Comando non trovato: installare la toolchain elencata nei prerequisiti.",
+    "Dipendenza mancante: eseguire l'installazione nella radice esportata, senza cambiare le versioni dichiarate."
+  ],
+  "sources": [
+    "https://docs.djangoproject.com/en/5.2/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "date": "2026-10-29",
+    "details": "Django5.2.6 system check e test del progetto superati su SQLite temporaneo/Windows. Nessuna pubblicazione remota.",
+    "files_sha256": {
+      "manage.py": "8849c817101501786e131101f2f5fac10aed33241675ed49d15f6fdbe255a916",
+      "config/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "config/settings.py": "54048c44dbd37b177b6a8b19ab8beb2ddb8d57fd188f71892befb6d5eea9f7da",
+      "config/urls.py": "489775f7f3a7e6dab15777205b255a8552fca9458dd8027a21640f9cacd026c7",
+      "notes/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "notes/models.py": "0743f30d484e49ffbd6fc1ca213128e5ac20db06cab71e514caa6c10f2b87932",
+      "notes/views.py": "3b519fd2f2a107db7514cb46a0e681b60743f17b4cb3266f9a39b7725d1b3d89",
+      "notes/migrations/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "notes/migrations/0001_initial.py": "3cfe7127344a2e96310c96dfa94d0c909e45906ea99aee534c0c62c621a35c53",
+      "seed.py": "e446c7a8a041d25a77373ae88eabbc2459d58f04f7c6cda06472b172fa48e6a0",
+      "requirements.txt": "1a56de810d0e0b7d26f28a7849f418e166230196b7c58d94601f4624f172e57d",
+      "notes/forms.py": "368ff265d0f20efd5fea8c7946de4ad6efc09bb9b0ea04caa8c344a181c0189d",
+      "templates/notebook.html": "91aefb458e2ac1ccb510d78e72313037bb9e9d96ee0910bfda5d55e86c2ba40a",
+      "notes/tests.py": "9968cdabee180a398eb898a3e66792c1decf25a30d3adfc692ee0734b5f57de3",
+      "README.md": "1899f3c08a961c8b365fc8b9ff6ade8598edbb8e5047ff891d2c083de3c16620"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

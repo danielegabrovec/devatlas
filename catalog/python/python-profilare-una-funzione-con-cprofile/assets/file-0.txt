@@ -1,0 +1,4 @@
+import cProfile
+def workload():
+    return sum(i * i for i in range(10000))
+cProfile.run("workload()", sort="cumulative")

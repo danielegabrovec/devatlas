@@ -1,0 +1,81 @@
+{
+  "id": "nodejs-leggere-stdout-da-un-processo-figlio",
+  "title": "Leggere stdout da un processo figlio",
+  "summary": "Leggere stdout da un processo figlio. Moduli standard utilizzati: node:child_process.",
+  "stack": "nodejs",
+  "group": "Web e backend",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Node.js 24 LTS+; ESM",
+  "prerequisites": "Node.js24+ nel PATH. Esempi server: porta3000 libera, browser locale; Ctrl+C arresta. Le richieste example.com richiedono rete.",
+  "tags": [
+    "nodejs",
+    "example",
+    "leggere",
+    "stdout",
+    "da",
+    "un"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.mjs",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "aa6baf634f32c4c298f9f916010e7762f1d361d705e9d1f1732a9e80567ce79c"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "14355a5fac325262ed55e1f6230485a705d922683ec75317a95e55545d9db931"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "nodejs-eseguire-processo-senza-shell",
+    "nodejs-leggere-dimensione-e-data-file",
+    "nodejs-leggere-metadati-di-un-modulo-esm"
+  ],
+  "expected": "Il risultato mostra il comportamento descritto nel titolo; i dati dimostrativi sono inclusi nel sorgente.",
+  "errors": [
+    "Comando non trovato: installare la toolchain elencata nei prerequisiti.",
+    "Dipendenza mancante: eseguire l'installazione nella radice esportata, senza cambiare le versioni dichiarate."
+  ],
+  "sources": [
+    "https://nodejs.org/docs/latest-v24.x/api/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Sintassi dei file Python o JavaScript/JSX e JSON controllata sulle fonti correnti; esecuzione di questa singola ricetta non attestata.",
+    "files_sha256": {
+      "main.mjs": "aa6baf634f32c4c298f9f916010e7762f1d361d705e9d1f1732a9e80567ce79c"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md",
+  "editorial": {
+    "version": 1,
+    "method": "Fatti ricavati staticamente dai file dell’esempio",
+    "facts": [
+      "Moduli standard utilizzati: node:child_process."
+    ]
+  }
+}

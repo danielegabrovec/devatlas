@@ -1,0 +1,3 @@
+# Inventario Go
+
+Go1.22+. `go test ./...` esegue due test; `go run .` stampa5. Nessuna dipendenza esterna. Il dominio è in memoria, privo di accessi concorrenti: aggiungere un mutex o confinare l'istanza a una sola goroutine se usato in concorrenza. La cartella inventory è un package importato usando il modulo dichiarato in go.mod.

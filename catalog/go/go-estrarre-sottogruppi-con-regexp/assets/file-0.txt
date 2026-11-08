@@ -1,0 +1,10 @@
+package main
+
+import (
+"fmt"
+"regexp"
+)
+
+func main(){
+pattern:=regexp.MustCompile(`^item-(\d+)$`);matches:=pattern.FindStringSubmatch("item-123");if len(matches)==2{fmt.Println(matches[1])}
+}

@@ -1,0 +1,6 @@
+import Foundation
+struct Item:Codable {let name:String;let cents:Int}
+let item=Item(name:"libro",cents:1250)
+let data=try JSONEncoder().encode(item)
+let decoded=try JSONDecoder().decode(Item.self,from:data)
+print(decoded.name,decoded.cents)

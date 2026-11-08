@@ -1,0 +1,71 @@
+{
+  "id": "swift-leggere-testo-utf-8-in-un-file-temporaneo",
+  "title": "Leggere testo UTF-8 in un file temporaneo",
+  "summary": "Usa FileManager e rimuove la risorsa con defer.",
+  "stack": "swift",
+  "group": "Linguaggi",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "Xcode",
+    "VS Code"
+  ],
+  "versions": "Swift6.4; Package.swift tools-version6.0, Linux/macOS",
+  "prerequisites": "Toolchain Swift6.4 su Linux o macOS. Per SwiftUI/iOS occorrono macOS, Xcode e un target Apple. Non sono attestati esecuzioni o compilazioni Swift su Windows.",
+  "tags": [
+    "FileManager",
+    "defer",
+    "UTF8"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.swift",
+      "language": "swift",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "c0d22b748a4e7604ef3cd81e2c4234b8e683045b03b1770deabc30b0d8374b53"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "bash",
+      "role": "command",
+      "shell": "Bash",
+      "os": "Linux/macOS",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "d8fc89c18fa66be9cc6a7339c1d47da4b05a944894fb741751e25ea8f2f0b8f5"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "swift-contare-grafemi-e-byte-unicode",
+    "swift-garantire-cleanup-con-defer-anche-dopo-throw",
+    "swift-analizzare-un-istante-iso8601-utc"
+  ],
+  "expected": "Città; il file viene rimosso al termine dello scope.",
+  "errors": [
+    "CocoaError per file non leggibile/scrivibile: controlla il percorso temporaneo e i permessi.",
+    "File lasciato dopo un errore: mantieni la rimozione nel defer nello stesso scope che ha creato la risorsa."
+  ],
+  "sources": [
+    "https://www.swift.org/documentation/",
+    "https://www.swift.org/install/linux/",
+    "https://www.swift.org/install/macos/",
+    "https://www.swift.org/blog/swift-6.4-released/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

@@ -1,0 +1,1 @@
+SELECT DISTINCT city FROM people WHERE city IS NOT NULL ORDER BY city;

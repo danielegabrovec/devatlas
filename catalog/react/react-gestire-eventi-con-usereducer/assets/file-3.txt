@@ -1,0 +1,3 @@
+import React, {useState,useEffect,useMemo,useRef,useReducer,useId,useContext,createContext,useCallback,useLayoutEffect,useTransition,useDeferredValue,useSyncExternalStore,useImperativeHandle,forwardRef,memo,lazy,Suspense,Component} from 'react';
+import {createPortal} from 'react-dom';
+export default function App(){const[n,dispatch]=useReducer((s,a)=>a==='reset'?0:s+1,0);return <><button onClick={()=>dispatch('add')}>{n}</button><button onClick={()=>dispatch('reset')}>Azzera</button></>}

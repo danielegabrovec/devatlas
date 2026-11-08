@@ -1,0 +1,1069 @@
+{
+  "date": "2026-10-29",
+  "docker_probe": {
+    "info": {
+      "command": [
+        "docker",
+        "info",
+        "--format",
+        "{{json .ServerVersion}}"
+      ],
+      "exit_code": 1,
+      "stdout": "\"\"",
+      "stderr": "failed to connect to the docker API at npipe:////./pipe/dockerDesktopLinuxEngine; check if the path is correct and if the daemon is running: open //./pipe/dockerDesktopLinuxEngine: Impossibile trovare il file specificato."
+    },
+    "images": {
+      "command": [
+        "docker",
+        "image",
+        "ls",
+        "--format",
+        "{{.Repository}}:{{.Tag}}"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "failed to connect to the docker API at npipe:////./pipe/dockerDesktopLinuxEngine; check if the path is correct and if the daemon is running: open //./pipe/dockerDesktopLinuxEngine: Impossibile trovare il file specificato."
+    }
+  },
+  "counts": {
+    "sql": 50,
+    "sqlite": 65,
+    "postgresql": 75,
+    "mysql": 60
+  },
+  "database_projects": 5,
+  "server_execution": {
+    "postgresql": 0,
+    "mysql": 0
+  },
+  "sqlite_version": "3.50.4",
+  "sqlite_checks": [
+    {
+      "id": "sql-aggiornare-prezzi-con-espressione",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-aggregare-condizionalmente-piu-stati",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-assegnare-ranghi-senza-buchi",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-attribuire-alias-leggibili-ai-calcoli",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-calcolare-il-totale-degli-ordini-pagati",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-calcolare-la-media-ignorando-null",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-calcolare-la-quota-del-totale",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-calcolare-un-totale-progressivo",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-calcolare-una-subquery-correlata",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-cancellare-soltanto-righe-annullate",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-cercare-un-prefisso-testuale",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-classificare-importi-con-case",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-combinare-alternative-con-or",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-confrontare-con-una-media-calcolata",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-confrontare-righe-mediante-self-join",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-conservare-clienti-senza-ordini",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-conservare-duplicati-con-union-all",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-contare-righe-e-valori-presenti",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-creare-un-prodotto-cartesiano-controllato",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-creare-un-vincolo-check",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-creare-una-chiave-composta",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-eliminare-duplicati-dalle-citta",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-escludere-uno-stato",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-esporre-una-vista-di-lettura",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-filtrare-con-condizioni-congiunte",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-filtrare-gruppi-con-having",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-indicizzare-una-colonna-di-ricerca",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-individuare-valori-mancanti",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-inserire-il-risultato-di-una-select",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-inserire-righe-con-colonne-esplicite",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-leggere-il-valore-precedente",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-numerare-righe-con-row-number",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-ordinare-per-piu-criteri",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-ottenere-il-primo-ordine-per-cliente",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-progetto-report-vendite",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli. Report Ada=270 e quantità complessiva=6."
+    },
+    {
+      "id": "sql-proiettare-soltanto-le-colonne-necessarie",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-proteggere-una-divisione-per-zero",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-raggruppare-clienti-per-citta",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-rilevare-email-ripetute-in-dati-importati",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-selezionare-un-insieme-di-stati",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-sommare-quantita-attraverso-tre-tabelle",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-sostituire-null-in-visualizzazione",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-trovare-clienti-privi-di-ordini",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-trovare-gli-estremi-del-listino",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-trovare-l-ultimo-acquisto-senza-funzioni-finestra",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-unire-insiemi-senza-duplicati",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-unire-ordini-e-clienti",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-usare-una-cte-per-separare-aggregazione-e-filtro",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-verificare-esistenza-di-un-acquisto",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sql-verificare-un-intervallo-inclusivo",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-aggiornare-con-una-tabella-sorgente",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-aggiornare-statistiche-per-il-planner",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-aggiungere-una-colonna-con-default",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-aggiungere-una-colonna-generata",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-aggregare-risultati-in-un-array-json",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-analizzare-il-piano-di-una-query",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-annullare-una-parte-con-savepoint",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-annullare-una-transazione",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-arrotondare-importi-per-il-report",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-attivare-i-vincoli-referenziali",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-calcolare-classificazione-per-partizione",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-calcolare-mediana-con-funzioni-finestra",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-calcolare-una-data-relativa",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-cercare-con-pattern-glob",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-cercare-sottostringhe-con-trigram",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-codificare-un-blob-in-esadecimale",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-combinare-righe-con-intersect",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-concatenare-righe-con-separatore",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-confrontare-testo-ascii-senza-caso",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-controllare-integrita-del-database",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-convertire-epoch-unix-in-data",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-costruire-oggetti-json-da-colonne",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-creare-ricerca-full-text-fts5",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-creare-un-indice-parziale",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-creare-un-indice-su-espressione",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-creare-una-tabella-strict",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-dividere-righe-in-fasce-ntile",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-elencare-gli-indici-di-una-tabella",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-eseguire-upsert-su-chiave-primaria",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-espandere-un-array-json-in-righe",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-esportare-una-stringa-sql-quotata",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-estrarre-primi-e-ultimi-valori-finestra",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-estrarre-un-campo-json",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-estrarre-una-porzione-di-stringa",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-evidenziare-parole-trovate-in-fts5",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-filtrare-un-aggregato-con-filter",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-formattare-un-timestamp-utc",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-generare-una-serie-ricorsiva",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-ignorare-un-inserimento-gia-presente",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-impedire-stock-negativo-con-trigger",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-ispezionare-gli-oggetti-del-catalogo",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-ispezionare-struttura-e-tipi-di-tabella",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-ispezionare-tipi-dinamici-delle-espressioni",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-limitare-attesa-su-database-occupato",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-misurare-differenza-in-giorni",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-misurare-pagine-e-dimensione-pagina",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-misurare-quante-righe-sono-cambiate",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-modificare-un-documento-json",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-mostrare-dettagli-delle-foreign-key",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-paginare-stabilmente-tramite-chiave",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-pesare-risultati-fts5-con-bm25",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-progetto-note-fts",
+      "cycles": 1,
+      "passed": true,
+      "expected_checked": "La ricerca FTS restituisce soltanto la nota Python su un database nuovo."
+    },
+    {
+      "id": "sqlite-raggruppare-fatturato-per-mese",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-recuperare-id-intero-autoassegnato",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-rendere-atomico-un-trasferimento",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-restituire-la-riga-appena-inserita",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-rinominare-una-colonna",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-ripulire-spazi-e-caratteri-esterni",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-risparmiare-spazio-con-without-rowid",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-scatenare-un-audit-dopo-un-aggiornamento",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-sottrarre-insiemi-con-except",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-usare-journal-wal-per-letture-concorrenti",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-validare-json-prima-dell-importazione",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-verificare-versione-e-opzioni-sqlite",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    },
+    {
+      "id": "sqlite-verificare-violazioni-delle-foreign-key",
+      "cycles": 2,
+      "passed": true,
+      "expected_checked": "Fixture e query completate due volte sullo stesso DB; inserimento con FK inesistente rifiutato in entrambi i cicli."
+    }
+  ],
+  "failures": [],
+  "primary_sources": {
+    "mysql_fk": "https://dev.mysql.com/doc/refman/8.4/en/ansi-diff-foreign-keys.html",
+    "pg_drop": "https://www.postgresql.org/docs/18/sql-dropschema.html",
+    "pg_refresh": "https://www.postgresql.org/docs/18/sql-refreshmaterializedview.html",
+    "pg_select": "https://www.postgresql.org/docs/18/sql-select.html",
+    "mysql_upsert": "https://dev.mysql.com/doc/refman/8.4/en/insert-on-duplicate.html",
+    "mysql_json": "https://dev.mysql.com/doc/refman/8.4/en/json-table-functions.html",
+    "mysql_client": "https://dev.mysql.com/doc/refman/8.4/en/mysql-commands.html",
+    "mysql_client_source": "https://raw.githubusercontent.com/mysql/mysql-server/8.4/client/mysql.cc",
+    "sqlite_materialized": "https://www.sqlite.org/lang_with.html"
+  },
+  "resources_created": [],
+  "limits": [
+    "Docker daemon non disponibile al controllo: nessun avvio Docker Desktop, download immagini, container o collegamento a database esistenti.",
+    "PostgreSQL75/MySQL60: nessuna esecuzione su server attestata; revisione semantica stratificata di20schede complessive, inclusi5capstoneDB.",
+    "SQLite usa database nuovi in memoria: la prova WAL non attesta concorrenza su file.",
+    "Nessun contenuto o stato di verifica degli altri stack viene rigenerato."
+  ],
+  "transfer_cases": [
+    {
+      "source_stock": 8,
+      "destination_missing": false,
+      "stocks_after": [
+        7,
+        1
+      ],
+      "total_before": 11,
+      "total_after": 11,
+      "passed": true
+    },
+    {
+      "source_stock": 1,
+      "destination_missing": false,
+      "stocks_after": [
+        0,
+        1
+      ],
+      "total_before": 4,
+      "total_after": 4,
+      "passed": true
+    },
+    {
+      "source_stock": 0,
+      "destination_missing": false,
+      "stocks_after": [
+        0,
+        0
+      ],
+      "total_before": 3,
+      "total_after": 3,
+      "passed": true
+    },
+    {
+      "source_stock": 8,
+      "destination_missing": true,
+      "stocks_after": [
+        8,
+        null
+      ],
+      "total_before": 11,
+      "total_after": 11,
+      "passed": true
+    }
+  ],
+  "semantic_sample": [
+    {
+      "id": "sql-progetto-report-vendite",
+      "title": "Progetto: report vendite con schema relazionale",
+      "project": true,
+      "method": "semantic-review-and-sqlite-memory-execution",
+      "review": "Report pagati Ada=270 e somma quantità=6 confermati realmente in memoria.",
+      "files_sha256": {
+        "schema.sql": "33f90072656f6c20af05d81eb1aab7784ab7095873af1a1e8bc0368d43535808",
+        "report.sql": "0e70a9970accb64b9111528af9c173929d0095dad368c53efe822b9d19e8c6bc",
+        "README.md": "712e29fdab2acce20f26ec74426f4fd37c56121f16a5052f497982c85931a14e"
+      }
+    },
+    {
+      "id": "sqlite-progetto-note-fts",
+      "title": "Progetto: archivio note SQLite con ricerca FTS",
+      "project": true,
+      "method": "semantic-review-and-sqlite-memory-execution",
+      "review": "Schema/seed/search coerenti; risultato Python verificato realmente; il progetto richiede un file nuovo e documenta il trigger insert-only.",
+      "files_sha256": {
+        "schema.sql": "9618ca6c2d46a42ff765a12beb7e650d2d4c375e334a314c4ba488f9a0a6c3b5",
+        "seed.sql": "263e4cc35dc56a8bf5f4f2721acf5d4ef0d8b03335d3ea04fd75773dbb3d2bbf",
+        "search.sql": "fbd504e7ae60bf703458f4d09a7d625a521ebf37bd5ddd0833ccb4c594fabcea",
+        "README.md": "28ef27ee27d632d94350c8e595ff61ac01b9feb71663cdc469f7d30528b44f67"
+      }
+    },
+    {
+      "id": "postgresql-progetto-coda-transazionale",
+      "title": "Progetto: coda lavori transazionale PostgreSQL",
+      "project": true,
+      "method": "semantic-source-review",
+      "review": "Claim seleziona e aggiorna lo stesso job nella stessa transazione con SKIP LOCKED; RETURNING descrive il job assegnato.",
+      "files_sha256": {
+        "schema.sql": "4938819f36aa1e69ca8d69e6cfc7492417a8f86a609182fbbd3bef5ede116d33",
+        "seed.sql": "fee7a8872fd5a2de8d76e4687427509ae1f9091cf1b6e8229e428799d75eff10",
+        "claim.sql": "dbba24b68f3ab9d4d4ed02683ca3613ed4e59309e088311b0627eab90ce51896",
+        "README.md": "e18a07239b3449134053c63b467209bdf65da6a941cfbae6974071b507ad5305"
+      }
+    },
+    {
+      "id": "postgresql-progetto-report-materializzato",
+      "title": "Progetto: report PostgreSQL con vista materializzata",
+      "project": true,
+      "method": "semantic-source-review",
+      "review": "Indice UNIQUE sulla colonna month, vista inizialmente popolata e REFRESH CONCURRENTLY rispettano i prerequisiti documentati; totale iniziale atteso30.",
+      "files_sha256": {
+        "schema.sql": "ec6dd5b50fb31d8b8d8324e5b5fbb5e2d98887cd78b1aadd8238540416a526c0",
+        "seed.sql": "42f18626509fa7017b9c743393308d798422e65530e726a02e173a480ebe6790",
+        "report.sql": "4f42a3955d590f070f11360265a1a9f1917e5eddfe01839e11bb032f61891455",
+        "refresh.sql": "4898786182947d4a550655967e6fe71684d1caeef86e60b22b20517b0565cd1c",
+        "README.md": "cb7aabac3f01fa00e0cf7c609f0f4efe8cec0a9a9b9431996b0e0bb52070305f"
+      }
+    },
+    {
+      "id": "mysql-progetto-magazzino",
+      "title": "Progetto: magazzino MySQL con transazione controllata",
+      "project": true,
+      "method": "semantic-source-review",
+      "review": "InnoDB e UPDATE condizionale proteggono lo stock; ROW_COUNT viene letto subito dopo UPDATE; dati iniziali8 diventano6.",
+      "files_sha256": {
+        "schema.sql": "328aa1b513801cd8fae1b8d3bfc7ea61efcfe9e3e6d417235dfb5b7034aea547",
+        "seed.sql": "c87aff3ed642980991b18de01a72029763f1085fe1663f83c90002d5e43ffd2a",
+        "reserve.sql": "95877cab31a2ec447eb9b99642710ffa04165659bdf268d858111de01dd5a3fb",
+        "README.md": "4ea84e5044a313bcc05f8d8c4a6575d17b97fcf39b535f60a72d1564e7d1bda7"
+      }
+    },
+    {
+      "id": "postgresql-modificare-un-percorso-jsonb",
+      "title": "Modificare un percorso JSONB",
+      "project": false,
+      "method": "semantic-source-review",
+      "review": "jsonb_set usa un percorso testuale e un nuovo valore JSONB; stock atteso4.",
+      "files_sha256": {
+        "fixture.sql": "3cde102e6b2763c11b4b999c7f19f5720452a7331a606e5951db70c431aa19e3",
+        "query.sql": "6667adf627cfec7a76abc76e049fd0a916df07d28195ce29658eefec18468aa2"
+      }
+    },
+    {
+      "id": "postgresql-applicare-un-join-lateral",
+      "title": "Applicare un join LATERAL",
+      "project": false,
+      "method": "semantic-source-review",
+      "review": "LEFT JOIN LATERAL mantiene Alan senza ordini; sui dati demo i totali sono Ada180,Linus20,Grace50,AlanNULL.",
+      "files_sha256": {
+        "fixture.sql": "3cde102e6b2763c11b4b999c7f19f5720452a7331a606e5951db70c431aa19e3",
+        "query.sql": "6e247d6a2f7d9a11cab3eda850b20eaa62255de0a898827e1fe6ca4cd0bd0f30"
+      }
+    },
+    {
+      "id": "postgresql-definire-una-funzione-plpgsql",
+      "title": "Definire una funzione PLpgSQL",
+      "project": false,
+      "method": "semantic-source-review",
+      "review": "Firma, corpo dollar-quoted e lingua sono coerenti; stock_label(3) deve restituire disponibile.",
+      "files_sha256": {
+        "fixture.sql": "3cde102e6b2763c11b4b999c7f19f5720452a7331a606e5951db70c431aa19e3",
+        "query.sql": "dba38927ebde2070a9a079cc9d8d255a96211b235cee6832c968f3c42f00099f"
+      }
+    },
+    {
+      "id": "postgresql-creare-una-colonna-generata",
+      "title": "Creare una colonna generata",
+      "project": false,
+      "method": "semantic-source-review",
+      "review": "Espressione price*qty valida per STORED; INSERT omette la colonna generata e produce15.",
+      "files_sha256": {
+        "fixture.sql": "3cde102e6b2763c11b4b999c7f19f5720452a7331a606e5951db70c431aa19e3",
+        "query.sql": "83eae366a7a6482b20d1b8245d69aba2aca72a4c0f17f7380d558208ace3c1c5"
+      }
+    },
+    {
+      "id": "postgresql-creare-un-indice-gin-su-jsonb",
+      "title": "Creare un indice GIN su JSONB",
+      "project": false,
+      "method": "semantic-source-review",
+      "review": "Operatore di contenimento @> è compatibile con GIN jsonb; indice creato prima dell'inserimento, risultato atteso documento1.",
+      "files_sha256": {
+        "fixture.sql": "3cde102e6b2763c11b4b999c7f19f5720452a7331a606e5951db70c431aa19e3",
+        "query.sql": "2420feb834c750ec91a0a72c65e74377759eae723981894814769e526bf6bc3e"
+      }
+    },
+    {
+      "id": "postgresql-prelevare-lavoro-con-skip-locked",
+      "title": "Prelevare lavoro con SKIP LOCKED",
+      "project": false,
+      "method": "semantic-source-review",
+      "review": "Sintassi locking PostgreSQL corretta; la scheda dimostra il lock temporaneo, mentre il capstone coda aggiunge la presa in carico persistente.",
+      "files_sha256": {
+        "fixture.sql": "3cde102e6b2763c11b4b999c7f19f5720452a7331a606e5951db70c431aa19e3",
+        "query.sql": "bfd3c08f27b4d4d35a720d706e0790014291c04ee9736251e23b32558266a88f"
+      }
+    },
+    {
+      "id": "postgresql-seguire-una-gerarchia-ricorsiva",
+      "title": "Seguire una gerarchia ricorsiva",
+      "project": false,
+      "method": "semantic-source-review",
+      "review": "CTE iniziale e recursive walk coerenti: radice1 profondità0, nodo2 profondità1, nodo3 profondità2.",
+      "files_sha256": {
+        "fixture.sql": "3cde102e6b2763c11b4b999c7f19f5720452a7331a606e5951db70c431aa19e3",
+        "query.sql": "bf201c0104246a4d96f8712cf0f08b3095b02d0885c5607e846dad4c6a99e113"
+      }
+    },
+    {
+      "id": "mysql-fare-upsert-su-chiave-duplicata",
+      "title": "Fare UPSERT su chiave duplicata",
+      "project": false,
+      "method": "semantic-source-review",
+      "review": "Alias della nuova riga supportato da MySQL8.4; sul duplicato aggiorna solo price a55, lasciando stock8.",
+      "files_sha256": {
+        "fixture.sql": "c45408f1a107787e5c8fe1cd11207756546a51c3aae5de756038dc710ae39e96",
+        "query.sql": "3170346494999034d0b0dc6e6143ba3ac4a208f8c41ecd69b645779c681ec769"
+      }
+    },
+    {
+      "id": "mysql-espandere-json-table",
+      "title": "Espandere JSON_TABLE",
+      "project": false,
+      "method": "semantic-source-review",
+      "review": "Array path $[*], colonna INT PATH '$' e alias x coerenti con la funzione8.4; righe attese1,2,3.",
+      "files_sha256": {
+        "fixture.sql": "c45408f1a107787e5c8fe1cd11207756546a51c3aae5de756038dc710ae39e96",
+        "query.sql": "ae2622c8bac52aaed4455b5cbc48a176cd9acc421777c5f799e0da583ef50574"
+      }
+    },
+    {
+      "id": "mysql-creare-un-indice-funzionale",
+      "title": "Creare un indice funzionale",
+      "project": false,
+      "method": "semantic-source-review",
+      "review": "Sintassi con doppie parentesi e LOWER su VARCHAR valida; EXPLAIN non promette che il planner scelga l'indice su quattro righe.",
+      "files_sha256": {
+        "fixture.sql": "c45408f1a107787e5c8fe1cd11207756546a51c3aae5de756038dc710ae39e96",
+        "query.sql": "8ce5e0d580f99272a14433c7822f4b837ae20b14f473038685180da237ae2397"
+      }
+    },
+    {
+      "id": "mysql-definire-una-vista-di-soli-ordini-pagati",
+      "title": "Definire una vista di soli ordini pagati",
+      "project": false,
+      "method": "semantic-source-review",
+      "review": "Predicato status='paid' e WITH CHECK OPTION coerenti; fixture ora rimuove anche la vista per rendere ripetibile CREATE VIEW.",
+      "files_sha256": {
+        "fixture.sql": "c45408f1a107787e5c8fe1cd11207756546a51c3aae5de756038dc710ae39e96",
+        "query.sql": "417d14ff6d019ffbf44b2e510374175f36160a9687f3a1bfe367d089a078d505"
+      }
+    },
+    {
+      "id": "mysql-creare-colonne-generate-persistenti",
+      "title": "Creare colonne generate persistenti",
+      "project": false,
+      "method": "semantic-source-review",
+      "review": "Espressione deterministica price*qty e inserimento nelle sole colonne base coerenti; totale15, reset ora rimuove lines.",
+      "files_sha256": {
+        "fixture.sql": "c45408f1a107787e5c8fe1cd11207756546a51c3aae5de756038dc710ae39e96",
+        "query.sql": "e31b3f9ae882e1b4a2b2b374003dcb0c1818454c2e2523212d319d0864f2c4f0"
+      }
+    },
+    {
+      "id": "mysql-prelevare-un-lavoro-con-skip-locked",
+      "title": "Prelevare un lavoro con SKIP LOCKED",
+      "project": false,
+      "method": "semantic-source-review",
+      "review": "Ordine MySQL LIMIT prima di FOR UPDATE SKIP LOCKED rispettato; il lock viene rilasciato a COMMIT, senza presa in carico persistente implicita.",
+      "files_sha256": {
+        "fixture.sql": "c45408f1a107787e5c8fe1cd11207756546a51c3aae5de756038dc710ae39e96",
+        "query.sql": "c911d0272f71e4018d51e0dce3b9498d50338459b1db116a26b27d398268befa"
+      }
+    },
+    {
+      "id": "mysql-mostrare-ddl-esatto-di-una-tabella",
+      "title": "Mostrare DDL esatto di una tabella",
+      "project": false,
+      "method": "semantic-source-review",
+      "review": "Fixture corretta a FOREIGN KEY esplicite InnoDB; inline REFERENCES precedenti erano ignorate da MySQL8.4.",
+      "files_sha256": {
+        "fixture.sql": "c45408f1a107787e5c8fe1cd11207756546a51c3aae5de756038dc710ae39e96",
+        "query.sql": "179f8b1f3da6a22ee1a9ed9b1f3a161de709ec9aafde09e39fc70574f1da8de7"
+      }
+    },
+    {
+      "id": "sqlite-rendere-atomico-un-trasferimento",
+      "title": "Rendere atomico un trasferimento",
+      "project": false,
+      "method": "semantic-review-and-sqlite-memory-execution",
+      "review": "Corretto il credito senza addebito con sorgente esaurito; test reali8/1/0 e destinazione assente conservano il totale.",
+      "files_sha256": {
+        "fixture.sql": "33f90072656f6c20af05d81eb1aab7784ab7095873af1a1e8bc0368d43535808",
+        "query.sql": "096d864252155740a3c06115e92d886ffc96d10a2e7d453227fd148a34dd2adc"
+      }
+    }
+  ],
+  "findings_fixed": [
+    {
+      "problem": "MySQL8.4 ignorava REFERENCES inline nelle fixture.",
+      "fix": "FOREIGN KEY di tabella esplicite; ENGINE=InnoDB.",
+      "source": "https://dev.mysql.com/doc/refman/8.4/en/ansi-diff-foreign-keys.html"
+    },
+    {
+      "problem": "Guida PostgreSQL descriveva reset di sole quattro tabelle, ma lo schema atlas_demo veniva eliminato con CASCADE.",
+      "fix": "Descrizione e ambito completo del reset allineati al codice; database didattico esplicito.",
+      "source": "https://www.postgresql.org/docs/18/sql-dropschema.html"
+    },
+    {
+      "problem": "Fixture SQL/SQLite/MySQL non rimuovevano tutti gli oggetti extra delle query DDL.",
+      "fix": "Reset esplicito degli oggetti del laboratorio;113ricetteSQL/SQLite ripetute due volte, MySQL controllato strutturalmente senza server."
+    },
+    {
+      "problem": "Trasferimento SQLite con sorgente0 creava una unità di stock.",
+      "fix": "Singolo UPDATE condizionato da CTE materializzata; origine/destinazione cambiano insieme o nessuna cambia, somma conservata.",
+      "source": "https://www.sqlite.org/lang_with.html"
+    }
+  ],
+  "other_stacks_unchanged": true,
+  "summary": {
+    "recipes": 250,
+    "projects": 5,
+    "sqlite_recipes_executed": 115,
+    "sqlite_cycles": 229,
+    "semantic_sample": 20,
+    "failures": 0
+  },
+  "command_review": {
+    "postgresql": "Client psql sul loopback, ON_ERROR_STOP e sequenza di file conservati.",
+    "mysql": "Client sul loopback e charset utf8mb4 espliciti. La sequenza di comandi source separati da punto e virgola è accettata dal parser client8.4; non è stata segnalata come bug.",
+    "mysql_primary_source": "https://raw.githubusercontent.com/mysql/mysql-server/8.4/client/mysql.cc",
+    "sqlite": "Sequenza fixture/query verificata sul medesimo database in memoria; invocazione CLI documentata, non eseguita con sqlite3.exe."
+  },
+  "source_sha256": {
+    "tools/database_catalog.py": "48395004787705a08d729350dd97b9f1aa822f6d7804001162a5e56a3e435964",
+    "tools/qa_database_independent.py": "a3836afc60f3a11f5d25f0551b38746ffb79a1506a1e19158a6ae9ee46068204"
+  }
+}

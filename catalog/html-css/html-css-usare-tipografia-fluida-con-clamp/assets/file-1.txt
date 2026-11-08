@@ -1,0 +1,1 @@
+*{box-sizing:border-box}body{font:16px/1.5 system-ui;margin:2rem;color:#172033}button,input,select,textarea{font:inherit;margin:.3rem;padding:.5rem}label{display:block}a{color:#075ea8}h1{font-size:clamp(2rem,5vw,4.5rem);line-height:1.1}

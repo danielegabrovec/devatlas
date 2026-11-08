@@ -1,0 +1,129 @@
+{
+  "date": "2026-10-29",
+  "version_target": "1.2.0",
+  "status": "source_ui_verified",
+  "standalone_verified": false,
+  "catalog_target": {
+    "recipes": 2140,
+    "stacks": 46,
+    "projects": 52
+  },
+  "verification_scope": "Sorgenti UI e profili sintetici. La consegna compilata con 2.140 schede richiede il rapporto finale del packaging; questa verifica riguarda i sorgenti.",
+  "features_added": [
+    "Ricerche salvate: crea, applica, aggiorna, rinomina ed elimina testo, filtri, ambito e navigazione tramite una preferenza SQLite versionata.",
+    "Nomi Unicode normalizzati in NFC, univoci senza distinzione tra maiuscole e minuscole; i dati non leggibili vengono conservati senza essere sovrascritti dal salvataggio UI.",
+    "Preferiti, cronologia e schede personali ricalcolano gli ID al ripristino; raccolte o tecnologie mancanti producono un avviso e un ripristino parziale.",
+    "Confronto di due schede e blocchi selezionabili, con parametri indipendenti validati, copia separata e lettura senza modifiche ai sorgenti.",
+    "Differenze per righe calcolate in un worker; richieste successive accorpate e risultati obsoleti scartati. Colori per aggiunte, rimozioni e modifiche; scorrimento sincronizzato disattivabile.",
+    "Filtro Dove cercare: tutto, codice o titoli. Sistemi dinamici, inclusi Android, iOS, Web ed eventuali altri sistemi presenti.",
+    "Percorsi guidati dinamici per le tecnologie con almeno due schede; contatori ricavati dal catalogo. Verificato anche uno scenario sintetico con 46 tecnologie.",
+    "Distruzione differita dei dialoghi modali propri e dei menu contestuali dopo la lettura dei risultati, evitando accumulo di modelli e widget."
+  ],
+  "saved_search_model": {
+    "setting": "saved_searches",
+    "version": 1,
+    "fields": [
+      "id",
+      "name",
+      "text",
+      "filters",
+      "navigation"
+    ],
+    "max_items": 100,
+    "max_name_characters": 80,
+    "max_query_characters": 2000,
+    "max_encoded_bytes": 524288,
+    "personal_recipe_ids_persisted": false,
+    "schema_changes": false
+  },
+  "comparison_limits": {
+    "max_utf8_bytes_per_asset": 2097152,
+    "max_lines_per_asset": 20000,
+    "max_parameters": 64,
+    "max_assets_per_recipe": 1000,
+    "large_assets_use_simplified_coloring": true,
+    "executes_assets": false
+  },
+  "tests": {
+    "tests": 82,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "duration_seconds": 60.975,
+    "junit": "reports/productivity-tests.xml",
+    "environment": {
+      "python": "3.13.13",
+      "pyside6": "6.12.0",
+      "platform": "win32",
+      "qt_platform": "offscreen"
+    },
+    "command": ".venv\\Scripts\\python -m pytest tests/test_ui.py tests/test_ui_extended.py tests/test_productivity.py --basetemp=.cache/pytest/productivity-final --junitxml=reports/productivity-tests.xml -q",
+    "coverage": [
+      "Creazione, aggiornamento, rinomina ed eliminazione ricerche con testo, filtri, progetti e ambito ripristinati.",
+      "Normalizzazione NFC, duplicati, limiti di 100 ricerche e 512 KiB; JSON malformato conservato.",
+      "Raccolta rimossa e schede personali dinamiche; ripristino backup su un profilo nuovo con UUID della raccolta rimappato.",
+      "46 percorsi sintetici e sistemi aggiunti dopo il caricamento.",
+      "Differenze Unicode, file vuoto, newline finale, aggiunte, rimozioni e modifiche.",
+      "I parametri invalidi bloccano la copia soltanto nel lato interessato.",
+      "Un blocco contenente codice che scriverebbe un file viene visualizzato senza eseguirlo.",
+      "Interfaccia reattiva durante il lavoro del worker e risultati obsoleti scartati.",
+      "Scorrimento, temi, layout a 800 pixel e fattori Qt del 150% e 200%.",
+      "Distruzione delle risorse C++ dopo chiusura dei quattro dialoghi e dei due menu contestuali.",
+      "Regressioni UI della versione 1.1, inclusi IPC, backup, indicizzazione e CLI."
+    ]
+  },
+  "text_diff_benchmarks": {
+    "common_prefix_5001_seconds": 0.001497,
+    "alternating_20000_seconds": 0.003232
+  },
+  "screenshots": [
+    {
+      "path": "reports/ui-state/1.2-offscreen/comparison-dark.png",
+      "width_px": 1000,
+      "height_px": 650,
+      "sha256": "1de9a9ca8b284b2a80e2ce4a7ce0059ff567dd0cb7c7f72f856e7d28d3946324"
+    },
+    {
+      "path": "reports/ui-state/1.2-offscreen/comparison-dpi-1.5.png",
+      "width_px": 1425,
+      "height_px": 975,
+      "sha256": "2b9580fe08668024c2f7f7fef44a91bee54af858093af368f066808c187d6d70"
+    },
+    {
+      "path": "reports/ui-state/1.2-offscreen/comparison-dpi-2.png",
+      "width_px": 1900,
+      "height_px": 1300,
+      "sha256": "c357280e958747f9cd6ada3e366409b152a38726d1fdc85649b4cf1208dc12fc"
+    },
+    {
+      "path": "reports/ui-state/1.2-offscreen/comparison-light.png",
+      "width_px": 1000,
+      "height_px": 650,
+      "sha256": "403561953c91e8f3bf9952d4064b585d0d56f646596e6d64ca5315005df67cfa"
+    },
+    {
+      "path": "reports/ui-state/1.2-offscreen/saved-searches-1280.png",
+      "width_px": 1280,
+      "height_px": 800,
+      "sha256": "b5f34c285d75ced6954d8fa5740c25f4518d7441b50cb85606ccfa6b69fe92e0"
+    },
+    {
+      "path": "reports/ui-state/1.2-offscreen/saved-searches-800.png",
+      "width_px": 800,
+      "height_px": 600,
+      "sha256": "89867ad5990f550a839c4fca83545b82bc061ae19be33fb64d93a3ec4b38669f"
+    }
+  ],
+  "source_sha256": {
+    "devatlas/app.py": "034a956479176b4ffc83ed804a6c479e949b7e67b072d85af484256b2e0779eb",
+    "devatlas/codewidgets.py": "f46ae81343bc982ea5568e79e5ebb8e937d8e8c6380a81b3de17c7b8a70c6ab0",
+    "devatlas/saved_searches.py": "46aa6539d8b71f84b28930a71fd84dd7b02d3b59df5413fcd7cd9cd21544387f",
+    "tests/test_productivity.py": "c42d2042e5755d6567d1ec11c8608494e1308bcf1e2999295fdd903cac0fb6d3"
+  },
+  "limits": [
+    "Screenshot dei soli widget Qt offscreen, con fattori DPI emulati: non costituiscono una prova del monitor o del gestore finestre fisico.",
+    "Tutti i profili, le query e le schede di prova sono sintetici nella cache; nessun dato personale reale o automazione di altre app.",
+    "Le differenze riguardano le righe delle versioni renderizzate; il codice confrontato non viene compilato o eseguito.",
+    "Sorgenti verificati su Windows e Python 3.13. Il packaging finale verifica separatamente lo standalone con 2.140 schede, 46 tecnologie e 52 progetti."
+  ]
+}

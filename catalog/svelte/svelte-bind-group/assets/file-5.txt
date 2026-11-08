@@ -1,0 +1,5 @@
+<script>
+import {onMount,tick,setContext,getContext} from 'svelte';
+let choices=$state([]);
+</script>
+<main><label><input type="checkbox" bind:group={choices} value="PDF">PDF</label><label><input type="checkbox" bind:group={choices} value="CSV">CSV</label><p>{choices.join(", ")}</p></main>

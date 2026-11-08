@@ -1,0 +1,2 @@
+# Calc
+Configura, compila, esegui CTest e installa in stage. I controlli non usano assert, quindi restano attivi anche in Release.

@@ -1,0 +1,129 @@
+{
+  "id": "react-inizializzare-ambiente-e-progetto-react",
+  "title": "Inizializzare ambiente e progetto react",
+  "summary": "Il package blocca React19.1.1/Vite7.1.7; index.html e src/main.jsx costituiscono l’ingresso. Avvia su localhost5173. strictPort evita di cambiare silenziosamente porta quando è occupata. Interrompi il server con Ctrl+C.",
+  "stack": "react",
+  "group": "Web e backend",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "React19.1.1; Vite7.1.7; Node22.12+",
+  "prerequisites": "Node22.12+ e npm. Browser moderno; alcune Clipboard API richiedono localhost o HTTPS. Gli esempi fetch richiedono rete.",
+  "tags": [
+    "react",
+    "initialize",
+    "bootstrap",
+    "setup",
+    "environment",
+    "configuration"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "package.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "a2a56926730ced0852f9629e1b4f027328418d42b9671016c11090e82e6d3c4b"
+    },
+    {
+      "id": "file-1",
+      "path": "index.html",
+      "language": "html",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "815df6781104f7f0e284365a213518642f7aee3ab24988776b32e77e4b9eb035"
+    },
+    {
+      "id": "file-2",
+      "path": "src/main.jsx",
+      "language": "jsx",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "bb189f86dc8c4a2c586d9bbd1e1cefc2b8e9af260fd92d7d68086100c71a9212"
+    },
+    {
+      "id": "file-3",
+      "path": "src/App.jsx",
+      "language": "jsx",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "0c8353a25ea197bfdd6aec255239ec87ed774680abc1eade7e243f840f858850"
+    },
+    {
+      "id": "file-4",
+      "path": "src/style.css",
+      "language": "css",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "ab78ab3385290b548318351011a467a5f61fd8151a1d7484dfc74ae055205494"
+    },
+    {
+      "id": "file-5",
+      "path": ".nvmrc",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-5.txt",
+      "sha256": "68ca3fba3b7e864770cb61aeb306d4bd4354b68ab4dd38450860c5d823e42a53"
+    },
+    {
+      "id": "file-6",
+      "path": "vite.config.js",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-6.txt",
+      "sha256": "d3d6ab0c33aadea2c59c84ab3fea88548c892633d9c93818587f4c8e73e73ede"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "6b00f25e3b1f6714ef0c0dd6cf2fff426fa346fd7fbd2209291f9f22d52c31b9"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "react-progetto-catalogo-con-ricerca-filtri-e-ordinamento",
+    "react-progetto-lista-attivita-persistente",
+    "react-progetto-tabella-importazione-tsv-con-esportazione"
+  ],
+  "expected": "L’applicazione si avvia localmente con il file di configurazione fornito. La versione della toolchain è verificabile dai comandi iniziali.",
+  "errors": [
+    "Comando non trovato: installare la toolchain elencata nei prerequisiti.",
+    "Dipendenza mancante: eseguire l'installazione nella radice esportata, senza cambiare le versioni dichiarate."
+  ],
+  "sources": [
+    "https://react.dev/reference/react",
+    "https://react.dev/learn"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "compilato",
+    "date": "2026-10-29",
+    "details": "Verifiche lifecycle su Windows: static-files, vite-build. Configurazione debugger controllata come JSON; sessione F5 e distribuzione remota non attestate.",
+    "files_sha256": {
+      "package.json": "a2a56926730ced0852f9629e1b4f027328418d42b9671016c11090e82e6d3c4b",
+      "index.html": "815df6781104f7f0e284365a213518642f7aee3ab24988776b32e77e4b9eb035",
+      "src/main.jsx": "bb189f86dc8c4a2c586d9bbd1e1cefc2b8e9af260fd92d7d68086100c71a9212",
+      "src/App.jsx": "0c8353a25ea197bfdd6aec255239ec87ed774680abc1eade7e243f840f858850",
+      "src/style.css": "ab78ab3385290b548318351011a467a5f61fd8151a1d7484dfc74ae055205494",
+      ".nvmrc": "68ca3fba3b7e864770cb61aeb306d4bd4354b68ab4dd38450860c5d823e42a53",
+      "vite.config.js": "d3d6ab0c33aadea2c59c84ab3fea88548c892633d9c93818587f4c8e73e73ede"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

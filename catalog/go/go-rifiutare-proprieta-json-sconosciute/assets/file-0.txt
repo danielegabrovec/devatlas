@@ -1,0 +1,11 @@
+package main
+
+import (
+"fmt"
+"encoding/json"
+"strings"
+)
+
+func main(){
+var config struct{Port int `json:"port"`};decoder:=json.NewDecoder(strings.NewReader(`{"port":8080,"typo":true}`));decoder.DisallowUnknownFields();err:=decoder.Decode(&config);fmt.Println(err!=nil)
+}

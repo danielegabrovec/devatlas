@@ -1,0 +1,1 @@
+export const metadata={openGraph:{title:'Atlante',description:'Ricette di programmazione',url:'https://example.test',type:'website'}};export default function Page(){return <h1>Atlante</h1>}

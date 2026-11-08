@@ -1,0 +1,4 @@
+Set-StrictMode -Version Latest
+$ErrorActionPreference='Stop'
+$ports=@{api=8000;web=3000}
+if($ports.ContainsKey("api")){"API: $($ports.api)"}

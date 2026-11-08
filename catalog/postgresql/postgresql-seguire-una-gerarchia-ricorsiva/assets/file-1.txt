@@ -1,0 +1,1 @@
+WITH RECURSIVE tree(id,parent) AS(VALUES(1,NULL::integer),(2,1),(3,2)),walk AS(SELECT id,parent,0 AS depth FROM tree WHERE parent IS NULL UNION ALL SELECT t.id,t.parent,w.depth+1 FROM tree t JOIN walk w ON t.parent=w.id) SELECT * FROM walk;

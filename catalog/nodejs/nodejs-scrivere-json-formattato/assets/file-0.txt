@@ -1,0 +1,1 @@
+import{writeFile}from'node:fs/promises';await writeFile('config.json',JSON.stringify({theme:'dark'},null,2));console.log('config.json scritto');

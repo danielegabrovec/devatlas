@@ -1,0 +1,1 @@
+import{createServer}from'node:http';createServer((q,r)=>{r.writeHead(q.url==='/health'?200:404,{'content-type':'application/json'});r.end(JSON.stringify({uptime:process.uptime()}))}).listen(3000,'127.0.0.1');

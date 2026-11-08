@@ -1,0 +1,4 @@
+fun main() {
+val result = runCatching { "non numero".toInt() }
+println(result.getOrElse { -1 })
+}

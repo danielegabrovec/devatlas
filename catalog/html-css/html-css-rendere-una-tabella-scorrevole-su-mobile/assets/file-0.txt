@@ -1,0 +1,2 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Laboratorio HTML/CSS</title><link rel="stylesheet" href="style.css"></head><body><div class='table-wrap' tabindex='0' role='region' aria-label='Tabella ordini'><table><tr><th>Cliente</th><th>Importo</th><th>Data</th><th>Note</th></tr><tr><td>Ada</td><td>42€</td><td>29/10/2026</td><td>Ordine completo</td></tr></table></div></body></html>

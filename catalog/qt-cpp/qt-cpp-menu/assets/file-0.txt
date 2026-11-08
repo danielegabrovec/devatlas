@@ -1,0 +1,11 @@
+#include <QtWidgets>
+#include <QtCore>
+#include <QtGui>
+
+int main(int argc, char **argv) {
+ QApplication app(argc,argv);
+ QWidget window; window.resize(720,480);
+ auto *layout=new QVBoxLayout(&window);
+ auto *bar=new QMenuBar; auto *menu=bar->addMenu("File"); auto *action=menu->addAction("Chiudi"); action->setShortcut(QKeySequence::Close); QObject::connect(action,&QAction::triggered,&window,&QWidget::close); layout->setMenuBar(bar);
+ window.show(); return app.exec();
+}

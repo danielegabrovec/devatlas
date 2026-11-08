@@ -1,0 +1,79 @@
+{
+  "id": "cmake-impostare-timeout-e-risultato-atteso-di-un-test",
+  "title": "Impostare timeout e risultato atteso di un test",
+  "summary": "Combinare TIMEOUT e PASS_REGULAR_EXPRESSION in CTest.",
+  "stack": "cmake",
+  "group": "Strumenti",
+  "section": "Compilazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code",
+    "Visual Studio",
+    "CLion"
+  ],
+  "versions": "CMake 3.24+; C++17/20",
+  "prerequisites": "CMake 3.24+, compilatore C++ installato. Su Windows usare Developer PowerShell MSVC o una toolchain già configurata.",
+  "tags": [
+    "CMake",
+    "build",
+    "impostare-timeout-e-risultato-atteso-di-un-test"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.cpp",
+      "language": "cpp",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "ca4f11174323d8829cfc1a8ade6bec91b0b642894dbfc2188979e7518b48463f"
+    },
+    {
+      "id": "file-1",
+      "path": "CMakeLists.txt",
+      "language": "cmake",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "5438fb5a303fc69de59ca3422ff1b5370f3c1c5ae485a5594d976ce002226a8c"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "97a87335090795259d4a59dc504f25885e05cf15802bb9207e81bf51f6318c60"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "cmake-registrare-un-test-eseguibile-con-ctest",
+    "cmake-abilitare-addresssanitizer-solo-su-gcc-e-clang",
+    "cmake-aggiungere-include-privati-a-un-target"
+  ],
+  "expected": "Combinare TIMEOUT e PASS_REGULAR_EXPRESSION in CTest.",
+  "errors": [
+    "Ninja non trovato: installarlo se si usa il preset o il compilation database.",
+    "Compilatore non trovato: aprire il terminale di sviluppo della toolchain."
+  ],
+  "sources": [
+    "https://cmake.org/cmake/help/latest/guide/tutorial/index.html",
+    "https://cmake.org/cmake/help/latest/manual/cmake-buildsystem.7.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "documentato",
+    "details": "Esempio originale revisionato nel catalogo; esecuzione non attestata.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

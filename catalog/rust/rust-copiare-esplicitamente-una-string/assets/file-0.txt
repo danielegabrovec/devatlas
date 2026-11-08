@@ -1,0 +1,4 @@
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+let first=String::from("Ada");let second=first.clone();println!("{} {}",first,second);
+Ok(())
+}

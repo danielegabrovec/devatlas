@@ -1,0 +1,5 @@
+fun main() {
+var calls = 0
+val config by lazy { calls++; "pronto" }
+println(calls); println(config); println(config); println(calls)
+}

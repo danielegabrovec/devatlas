@@ -1,0 +1,5 @@
+<script setup>
+import {ref,reactive,computed,watch,watchEffect,onMounted,onUnmounted,nextTick,provide,inject,defineAsyncComponent,shallowRef,triggerRef,readonly,toRefs} from 'vue';
+const rows=ref([{id:1,name:'Ada'},{id:2,name:'Grace'}]);function remove(id){rows.value=rows.value.filter(r=>r.id!==id);}
+</script>
+<template><main><ul><li v-for="row in rows" :key="row.id">{{row.name}} <button @click="remove(row.id)">Rimuovi</button></li></ul></main></template>

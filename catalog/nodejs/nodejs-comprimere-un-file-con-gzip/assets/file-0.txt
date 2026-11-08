@@ -1,0 +1,1 @@
+import{pipeline}from'node:stream/promises';import{createGzip}from'node:zlib';import{createReadStream,createWriteStream}from'node:fs';await pipeline(createReadStream(import.meta.filename),createGzip(),createWriteStream('source.gz'));

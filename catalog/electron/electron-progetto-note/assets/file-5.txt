@@ -1,0 +1,4 @@
+const list=document.querySelector('#notes'),input=document.querySelector('#note'),button=document.querySelector('#add'),status=document.querySelector('#status');
+function render(rows){list.replaceChildren(...rows.map(text=>{const item=document.createElement('li');item.textContent=text;return item;}));}
+window.notes.list().then(render).catch(error=>status.textContent=error.message);
+button.addEventListener('click',async()=>{button.disabled=true;try{render(await window.notes.add(input.value));input.value='';status.textContent='Salvato';}catch(error){status.textContent=error.message;}finally{button.disabled=false;}});

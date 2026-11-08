@@ -1,0 +1,3 @@
+import React, {useState,useEffect,useMemo,useRef,useReducer,useId,useContext,createContext,useCallback,useLayoutEffect,useTransition,useDeferredValue,useSyncExternalStore,useImperativeHandle,forwardRef,memo,lazy,Suspense,Component} from 'react';
+import {createPortal} from 'react-dom';
+export default function App(){const[state,set]=useState({loading:false});async function load(){set({loading:true});try{await new Promise(r=>setTimeout(r,300));set({loading:false,data:'Pronto'})}catch(e){set({loading:false,error:e.message})}}return <><button disabled={state.loading} onClick={load}>Carica</button><p role='status'>{state.loading?'Attendi':state.error??state.data}</p></>}

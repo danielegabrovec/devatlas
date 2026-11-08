@@ -1,0 +1,7 @@
+import {Component,signal,computed,effect,inject,DestroyRef,ChangeDetectionStrategy} from '@angular/core';
+import {CommonModule} from '@angular/common';import {FormsModule} from '@angular/forms';
+
+@Component({selector:'app-root',standalone:true,imports:[CommonModule,FormsModule],changeDetection:ChangeDetectionStrategy.OnPush,template:`<main><p>{{date|date:"yyyy-MM-dd":"UTC"}}</p><p>{{amount|number:"1.2-2"}}</p></main>`})
+export class AppComponent{
+date=new Date('2026-10-29T12:00:00Z');amount=1234.5;
+}

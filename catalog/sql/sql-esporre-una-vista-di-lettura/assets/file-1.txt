@@ -1,0 +1,1 @@
+CREATE VIEW pagati AS SELECT id,person_id,total FROM orders WHERE status='paid'; SELECT * FROM pagati;

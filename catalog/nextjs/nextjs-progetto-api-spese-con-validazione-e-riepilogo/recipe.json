@@ -1,0 +1,145 @@
+{
+  "id": "nextjs-progetto-api-spese-con-validazione-e-riepilogo",
+  "title": "Progetto: API spese con validazione e riepilogo",
+  "summary": "GET/api/expenses mostra elementi e totale; POST con {name,amount} aggiunge. Persistenza solo nel processo locale: riavvio azzera, deployment multiprocesso non condivide dati.",
+  "stack": "nextjs",
+  "group": "Web e backend",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Next16.4.3 App Router; React19.3; Node22.12+",
+  "prerequisites": "Node22.12+, npm e browser. Esempi fetch remoti richiedono rete. App su localhost3000; dataset in memoria solo dimostrativi. Su Windows esporta il progetto in un percorso breve, per esempio C:\\Dev. I percorsi annidati generati da Next.js possono superare i limiti di alcuni ambienti Windows e causare EPERM durante il prerender: il QA del catalogo è riuscito usando un percorso breve.",
+  "tags": [
+    "nextjs",
+    "example",
+    "progetto:",
+    "api",
+    "spese",
+    "con"
+  ],
+  "project": true,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "package.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "469da40e3a1954beb8d51adf85a43bcf10085277c2686348c47032c3e66bd204"
+    },
+    {
+      "id": "file-1",
+      "path": "app/layout.js",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "d21e686f7157ebd71b8eb35a56077f4420d276a946d65aa41cf3b16d18ebe08c"
+    },
+    {
+      "id": "file-2",
+      "path": "app/page.js",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "29984be0f7e1e6e43e8671b0ffe50998c28005dc0d639651da37a76e57d7bfea"
+    },
+    {
+      "id": "file-3",
+      "path": "app/globals.css",
+      "language": "css",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "ab78ab3385290b548318351011a467a5f61fd8151a1d7484dfc74ae055205494"
+    },
+    {
+      "id": "file-4",
+      "path": "lib/model.js",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "880020c920c77f58fed4857cf5f954ea5cc4d7a6522e83ac4b48dbdf6261c393"
+    },
+    {
+      "id": "file-5",
+      "path": "app/api/expenses/route.js",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-5.txt",
+      "sha256": "f59ee7c1a5a9c4ed1d0cc2e319bb6ef26f1b5a625694e94b44e993a7918acd87"
+    },
+    {
+      "id": "file-6",
+      "path": "test/model.test.mjs",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-6.txt",
+      "sha256": "1cb6d03763378065aa6ab6286cfd181bfc3aab4cb98c1014aeb2bb1f44bae32c"
+    },
+    {
+      "id": "file-7",
+      "path": "README.md",
+      "language": "markdown",
+      "role": "file",
+      "source": "assets/file-7.txt",
+      "sha256": "e89ae9339a02a7a233b62ab02051d0d4524dd62514d22726a623a6133acd3577"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "93bab900e91e1a9a3180ddf066878f943f7e92edb22c9d4b8328489588059317"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "port",
+      "label": "Porta locale",
+      "type": "port",
+      "default": 3000,
+      "required": true
+    }
+  ],
+  "related": [
+    "nextjs-progetto-dashboard-server-con-ricerca-e-pagina",
+    "nextjs-progetto-mini-blog-statico-con-metadata",
+    "nextjs-creare-una-server-action-di-validazione"
+  ],
+  "expected": "GET/api/expenses mostra elementi e totale; POST con {name,amount} aggiunge. Persistenza solo nel processo locale: riavvio azzera, deployment multiprocesso non condivide dati.",
+  "errors": [
+    "Comando non trovato: installare la toolchain elencata nei prerequisiti.",
+    "Dipendenza mancante: eseguire l'installazione nella radice esportata, senza cambiare le versioni dichiarate."
+  ],
+  "sources": [
+    "https://nextjs.org/docs/app"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "compilato",
+    "date": "2026-10-29",
+    "details": "Build produzione Next16.4.3 e React19.3 completata su Windows; verifica di compilazione/prerender, nessuna attestazione deployment remoto o tutti i flussi UI.",
+    "files_sha256": {
+      "package.json": "469da40e3a1954beb8d51adf85a43bcf10085277c2686348c47032c3e66bd204",
+      "app/layout.js": "d21e686f7157ebd71b8eb35a56077f4420d276a946d65aa41cf3b16d18ebe08c",
+      "app/page.js": "29984be0f7e1e6e43e8671b0ffe50998c28005dc0d639651da37a76e57d7bfea",
+      "app/globals.css": "ab78ab3385290b548318351011a467a5f61fd8151a1d7484dfc74ae055205494",
+      "lib/model.js": "880020c920c77f58fed4857cf5f954ea5cc4d7a6522e83ac4b48dbdf6261c393",
+      "app/api/expenses/route.js": "f59ee7c1a5a9c4ed1d0cc2e319bb6ef26f1b5a625694e94b44e993a7918acd87",
+      "test/model.test.mjs": "1cb6d03763378065aa6ab6286cfd181bfc3aab4cb98c1014aeb2bb1f44bae32c",
+      "README.md": "e89ae9339a02a7a233b62ab02051d0d4524dd62514d22726a623a6133acd3577"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

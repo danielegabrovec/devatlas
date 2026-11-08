@@ -1,0 +1,1 @@
+import{stat}from'node:fs/promises';const s=await stat(import.meta.filename);console.log(s.size,s.mtime.toISOString());

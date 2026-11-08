@@ -1,0 +1,71 @@
+{
+  "id": "swift-conservare-una-preferenza-apple-con-userdefaults",
+  "title": "Conservare una preferenza Apple con UserDefaults",
+  "summary": "Usa un dominio dimostrativo separato e ripristina il valore tramite la medesima chiave.",
+  "stack": "swift",
+  "group": "Linguaggi",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "macOS"
+  ],
+  "ide": [
+    "Xcode",
+    "VS Code"
+  ],
+  "versions": "Swift6.4; Package.swift tools-version6.0, Linux/macOS",
+  "prerequisites": "Toolchain Swift6.4 su Linux o macOS. Per SwiftUI/iOS occorrono macOS, Xcode e un target Apple. Non sono attestati esecuzioni o compilazioni Swift su Windows.",
+  "tags": [
+    "UserDefaults",
+    "Apple",
+    "preferences"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.swift",
+      "language": "swift",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "a6bc61d37b4d27a4e62266058eb90c903b2a17b298d29cc0e0ea2705dd6779c2"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "bash",
+      "role": "command",
+      "shell": "Bash",
+      "os": "macOS",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "d8fc89c18fa66be9cc6a7339c1d47da4b05a944894fb741751e25ea8f2f0b8f5"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "swift-analizzare-un-istante-iso8601-utc",
+    "swift-calcolare-differenze-tra-set",
+    "swift-codificare-e-decodificare-json-con-codable"
+  ],
+  "expected": "true; il dominio dimostrativo viene rimosso alla fine.",
+  "errors": [
+    "La lettura restituisce il default: suiteName e chiave devono coincidere con quelli usati nella scrittura.",
+    "Dati di prova scomparsi: il laboratorio rimuove intenzionalmente il proprio persistentDomain alla fine; non usare il dominio di un'app reale."
+  ],
+  "sources": [
+    "https://www.swift.org/documentation/",
+    "https://www.swift.org/install/linux/",
+    "https://www.swift.org/install/macos/",
+    "https://www.swift.org/blog/swift-6.4-released/",
+    "https://developer.apple.com/documentation/foundation/userdefaults"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

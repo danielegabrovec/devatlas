@@ -1,0 +1,87 @@
+{
+  "id": "swift-eseguire-test-swift-package-con-xctest",
+  "title": "Eseguire test Swift Package con XCTest",
+  "summary": "Aggiunge un target di test al package e verifica il contratto pubblico della libreria.",
+  "stack": "swift",
+  "group": "Linguaggi",
+  "section": "Test",
+  "difficulty": "Intermedio",
+  "os": [
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "Xcode",
+    "VS Code"
+  ],
+  "versions": "Swift6.4; Package.swift tools-version6.0, Linux/macOS",
+  "prerequisites": "Toolchain Swift6.4 su Linux o macOS. Per SwiftUI/iOS occorrono macOS, Xcode e un target Apple. Non sono attestati esecuzioni o compilazioni Swift su Windows.",
+  "tags": [
+    "XCTest",
+    "swift test",
+    "SPM"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "Package.swift",
+      "language": "swift",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "bd6da48e97ce2acbc9a6a9c926d237ebb7473be491144a782e1370d1883e4a28"
+    },
+    {
+      "id": "file-1",
+      "path": "Sources/MathCore/Math.swift",
+      "language": "swift",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "04dc6ad67f7ebb579bf6d33d99bbeeeb3fd71c90969db0777f31879e5f09a49f"
+    },
+    {
+      "id": "file-2",
+      "path": "Tests/MathCoreTests/MathCoreTests.swift",
+      "language": "swift",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "07e7e01d3b310d4c018397753a7824eeffeba5decaf52711558fb26d01755c12"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "bash",
+      "role": "command",
+      "shell": "Bash",
+      "os": "Linux/macOS",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "ddd997c908db8e5b38aca81d2739479f47e2b61e9ebe483cb4a152a1c5323281"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "swift-progetto-completo-report-spese-swift-package",
+    "swift-inizializzare-un-package-swift-cli-su-linux-o-macos",
+    "swift-compilare-un-target-swift-con-configurazioni-debug-e-release"
+  ],
+  "expected": "Il test testArea passa; un valore atteso errato fa fallire il comando.",
+  "errors": [
+    "No such module MathCore nel test: il test deve appartenere al target dipendente dichiarato nel package, non essere lanciato come script isolato.",
+    "XCTAssertEqual fallisce: confronta il contratto di area con input e valore atteso; compilazione riuscita non equivale a test superato."
+  ],
+  "sources": [
+    "https://www.swift.org/documentation/",
+    "https://www.swift.org/install/linux/",
+    "https://www.swift.org/install/macos/",
+    "https://www.swift.org/blog/swift-6.4-released/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

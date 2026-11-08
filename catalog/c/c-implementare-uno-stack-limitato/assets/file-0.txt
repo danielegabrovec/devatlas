@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdint.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <errno.h>
+#include <limits.h>
+
+
+int main(void){
+int stack[4];size_t size=0;if(size<4)stack[size++]=7;if(size<4)stack[size++]=9;
+while(size>0)printf("%d ",stack[--size]);puts("");
+return 0;
+}

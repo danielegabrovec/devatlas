@@ -1,0 +1,139 @@
+{
+  "id": "pyqt6-debug-build-distribuzione",
+  "title": "Debug, form Designer e distribuzione PyQt6",
+  "summary": "Seguire lo slot di un pulsante nel debugger, rigenerare il form dal file UI e preparare il bundle del binding scelto.",
+  "stack": "pyqt6",
+  "group": "Desktop e GUI",
+  "section": "Debug",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows"
+  ],
+  "ide": [
+    "VS Code",
+    "Qt Designer"
+  ],
+  "versions": "Python 3.13; PyQt6 6.11.x",
+  "prerequisites": "Python 3.13, ambiente virtuale dedicato e PyQt6==6.11.*. Non installare entrambi i binding nello stesso ambiente.",
+  "tags": [
+    "PyQt6",
+    "debugpy",
+    "Designer",
+    "uic",
+    "build",
+    "deployment",
+    "breakpoint"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "737e2a0c79b6b9144d55c64b08ae974bd4ef37fd36c65c8d0969e44f0cf23faf"
+    },
+    {
+      "id": "file-1",
+      "path": "ui_main.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "5f7e9e5a552825cc154ffc4c4ed00c921869da8521dc215aaed2592be6077a04"
+    },
+    {
+      "id": "file-2",
+      "path": "form.ui",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "2fd23e19b019ea20b65d879836470b1851e7a6c589398443812dc12441386485"
+    },
+    {
+      "id": "file-3",
+      "path": "totals.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "d0cb38a3e2f2378d3ee39d0b0675208ecec0b12f40e73333ab1ee821c1d36514"
+    },
+    {
+      "id": "file-4",
+      "path": "requirements.txt",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "c994909f86b62ac345b7bbae9ceb384464899557c0539ca9300f82ec9ff2e8e8"
+    },
+    {
+      "id": "file-5",
+      "path": ".vscode/launch.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-5.txt",
+      "sha256": "15a653704697f176a098bdbf4e27f4c32588c6dbfc59b89ce8c44f4ebbfbac41"
+    },
+    {
+      "id": "file-6",
+      "path": "requirements-build.txt",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-6.txt",
+      "sha256": "fb907d4ab04c2969195c304aae6fe037b99653daa60c7f5ef31f1b81361f9493"
+    },
+    {
+      "id": "command-0",
+      "path": "Ambiente e generazione form",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "2c716cf08edf69b1cccf494e35e27c208f7e31f64fed72118152af98450d673c"
+    },
+    {
+      "id": "command-1",
+      "path": "Build distribuibile",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-1.txt",
+      "sha256": "4273b9df5f204d0de1dc3c5695656c7b1e4d0c6f016c562ff6fd70e45f56eedd"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "project_name",
+      "label": "Nome dell'applicazione",
+      "type": "identifier",
+      "default": "RecipeDesktop",
+      "required": true
+    }
+  ],
+  "related": [
+    "pyqt6-form-layout",
+    "pyqt6-action-menu",
+    "pyqt6-busy-progress"
+  ],
+  "expected": "Il pulsante Calcola mostra Totale: 19.75; il debugger si ferma in totals.py e il bundle include il solo binding scelto.",
+  "errors": [
+    "No module named ui_main: eseguire il compilatore UI dalla cartella con form.ui; una implementazione originale equivalente è già fornita.",
+    "Il breakpoint non viene raggiunto: selezionare .venv come interprete e premere Calcola dopo F5."
+  ],
+  "sources": [
+    "https://www.riverbankcomputing.com/static/Docs/PyQt6/",
+    "https://pyinstaller.org/en/stable/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "details": "Controlli statici sui sorgenti: AST Python, parser PowerShell/Bash dove disponibili, node --check per JavaScript, JSON e XML secondo i file presenti. Nessuna compilazione C#/XAML/C++ né esecuzione Docker/CI/packaging attestata. Report: reports/desktop-tools-qa.json.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

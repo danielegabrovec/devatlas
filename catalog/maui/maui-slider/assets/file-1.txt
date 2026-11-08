@@ -1,0 +1,15 @@
+using System;
+using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Collections.ObjectModel;
+using Microsoft.Maui.Controls;
+using Microsoft.Maui.Graphics;
+using Microsoft.Maui.ApplicationModel.DataTransfer;
+using Microsoft.Maui.Storage;
+namespace RecipeApp;
+public class MainPage:ContentPage {
+ public MainPage(){ Title="Ricetta MAUI"; var panel=new VerticalStackLayout{Spacing=12,Padding=20};
+var slider=new Slider{Minimum=0,Maximum=100,Value=25}; var label=new Label(); slider.ValueChanged+=(_,e)=>label.Text=$"{e.NewValue:F0}%"; panel.Children.Add(slider); panel.Children.Add(label);
+ Content=new ScrollView{Content=panel}; }
+}

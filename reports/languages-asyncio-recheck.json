@@ -1,0 +1,50 @@
+[
+  {
+    "ok": true,
+    "command": [
+      "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.venv\\Scripts\\python.exe",
+      "main.py"
+    ],
+    "seconds": 0.312,
+    "output": "tempo scaduto\n",
+    "id": "python-applicare-un-timeout-asincrono",
+    "check": "execute Python3.13 application venv",
+    "python": "3.13"
+  },
+  {
+    "ok": true,
+    "command": [
+      "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.venv\\Scripts\\python.exe",
+      "main.py"
+    ],
+    "seconds": 0.266,
+    "output": "[4, 6]\n",
+    "id": "python-eseguire-coroutine-concorrenti-con-gather",
+    "check": "execute Python3.13 application venv",
+    "python": "3.13"
+  },
+  {
+    "ok": true,
+    "command": [
+      "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.venv\\Scripts\\python.exe",
+      "main.py"
+    ],
+    "seconds": 0.281,
+    "output": "[0, 1, 2, 3, 4]\n",
+    "id": "python-limitare-la-concorrenza-con-semaphore",
+    "check": "execute Python3.13 application venv",
+    "python": "3.13"
+  },
+  {
+    "ok": true,
+    "command": [
+      "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.venv\\Scripts\\python.exe",
+      "main.py"
+    ],
+    "seconds": 0.219,
+    "output": "completato\n",
+    "id": "python-spostare-lavoro-bloccante-in-un-thread",
+    "check": "execute Python3.13 application venv",
+    "python": "3.13"
+  }
+]

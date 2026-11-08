@@ -1,0 +1,2 @@
+const date = new Date("2026-10-29T23:00:00Z");
+console.log(new Intl.DateTimeFormat("it-IT", { timeZone: "UTC", dateStyle: "short" }).format(date));

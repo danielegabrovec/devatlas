@@ -1,0 +1,5 @@
+<script>
+import {onMount,tick,setContext,getContext} from 'svelte';
+let profile=$state({name:'Ada',city:'Roma'});
+</script>
+<main><input bind:value={profile.name} aria-label="Nome"><input bind:value={profile.city} aria-label="Città"><p>{profile.name} · {profile.city}</p></main>

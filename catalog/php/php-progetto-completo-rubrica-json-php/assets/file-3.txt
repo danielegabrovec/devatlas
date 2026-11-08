@@ -1,0 +1,5 @@
+<?php
+declare(strict_types=1);
+require __DIR__.'/../src/AddressBook.php';
+$path=tempnam(sys_get_temp_dir(),'atlas-php-');if($path===false)throw new RuntimeException('tempfile');unlink($path);
+try{$book=new Atlas\AddressBook($path);$book->add('Ada','ada@example.test');if((new Atlas\AddressBook($path))->list()!==['Ada'=>'ada@example.test'])throw new RuntimeException('Persistenza');try{$book->add('','bad');throw new RuntimeException('Validazione assente');}catch(InvalidArgumentException $expected){}echo '2 contratti verificati',PHP_EOL;}finally{if(is_file($path))unlink($path);}

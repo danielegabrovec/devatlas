@@ -1,0 +1,1 @@
+package it.atlas;import org.junit.jupiter.api.Test;import static org.junit.jupiter.api.Assertions.*;class GreetingTest{@Test void names(){var service=new GreetingService();assertEquals("Ciao Ada",service.hello(" Ada "));assertEquals("Ciao Grace",service.hello("Grace"));}}

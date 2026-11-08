@@ -1,0 +1,1 @@
+import{createServer}from'node:http';createServer(async(q,r)=>{const chunks=[];let size=0;for await(const c of q){size+=c.length;if(size>1024){r.writeHead(413);r.end();return}chunks.push(c)}const body=Buffer.concat(chunks).toString('utf8');try{const value=JSON.parse(body);r.end(JSON.stringify(value))}catch{r.writeHead(400);r.end('JSON invalido')}}).listen(3000,'127.0.0.1');

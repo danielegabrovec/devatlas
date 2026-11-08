@@ -1,0 +1,1 @@
+import test from'node:test';import assert from'node:assert/strict';import{find}from'../src/products.mjs';test('id esistente',()=>assert.equal(find(1).name,'Tastiera'));test('id assente',()=>assert.equal(find(9),undefined));

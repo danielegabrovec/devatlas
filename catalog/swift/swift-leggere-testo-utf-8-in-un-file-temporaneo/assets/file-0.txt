@@ -1,0 +1,6 @@
+import Foundation
+
+let path=FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString).appendingPathExtension("txt")
+try "Città".write(to:path,atomically:true,encoding:.utf8)
+defer{try? FileManager.default.removeItem(at:path)}
+print(try String(contentsOf:path,encoding:.utf8))

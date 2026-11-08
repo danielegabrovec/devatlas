@@ -1,0 +1,1 @@
+import{AsyncLocalStorage}from'node:async_hooks';const ctx=new AsyncLocalStorage();await ctx.run({id:'req-1'},async()=>{await Promise.resolve();console.log(ctx.getStore())});

@@ -1,0 +1,1 @@
+SELECT p.name,SUM(i.qty) AS pezzi FROM products p JOIN order_items i ON i.product_id=p.id JOIN orders o ON o.id=i.order_id WHERE o.status='paid' GROUP BY p.id,p.name;

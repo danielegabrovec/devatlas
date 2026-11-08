@@ -1,0 +1,23 @@
+import sys, json, sqlite3, tempfile, logging
+from pathlib import Path
+from PyQt6.QtCore import *
+from PyQt6.QtGui import *
+from PyQt6.QtWidgets import *
+Signal = pyqtSignal
+Slot = pyqtSlot
+
+def build(root, layout):
+    edit = QLineEdit()
+    edit.setPlaceholderText("AB1234")
+    edit.setValidator(QRegularExpressionValidator(QRegularExpression("[A-Z]{2}[0-9]{4}"), edit))
+    layout.addWidget(edit)
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    window = QWidget()
+    window.setWindowTitle("Ricetta Qt")
+    window.resize(720, 480)
+    layout = QVBoxLayout(window)
+    build(window, layout)
+    window.show()
+    sys.exit(app.exec())

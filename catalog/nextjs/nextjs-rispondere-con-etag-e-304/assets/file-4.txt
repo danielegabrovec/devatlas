@@ -1,0 +1,1 @@
+export function GET(request){const etag='"v1"';if(request.headers.get('if-none-match')===etag)return new Response(null,{status:304});return Response.json({version:1},{headers:{ETag:etag}})}

@@ -1,0 +1,1 @@
+export async function generateMetadata({params}){const{slug}=await params;return{title:'Articolo '+slug}}export default async function Page({params}){return <h1>{(await params).slug}</h1>}

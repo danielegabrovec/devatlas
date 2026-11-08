@@ -1,0 +1,5 @@
+<?php
+declare(strict_types=1);
+$rows=[['surname'=>'Rossi','name'=>'Luca'],['surname'=>'Rossi','name'=>'Ada']];
+usort($rows,static fn(array $a,array $b):int=>[$a['surname'],$a['name']]<=>[$b['surname'],$b['name']]);
+echo $rows[0]['name'],PHP_EOL;

@@ -1,0 +1,19 @@
+import java.util.*;
+import java.util.stream.*;
+import java.util.regex.*;
+import java.util.concurrent.*;
+import java.nio.file.*;
+import java.nio.charset.StandardCharsets;
+import java.io.*;
+import java.math.*;
+import java.time.*;
+import java.time.format.DateTimeFormatter;
+import java.text.Normalizer;
+
+public class Main{
+public static void main(String[] args)throws Exception{
+Shape shape=new Square(4);System.out.println(shape.area());
+}
+sealed interface Shape permits Square{double area();}
+record Square(double side)implements Shape{public double area(){return side*side;}}
+}

@@ -1,0 +1,4 @@
+<?php
+declare(strict_types=1);
+$total=array_reduce([2,3,5],static fn(int $sum,int $value):int=>$sum+$value,0);
+echo $total,PHP_EOL;

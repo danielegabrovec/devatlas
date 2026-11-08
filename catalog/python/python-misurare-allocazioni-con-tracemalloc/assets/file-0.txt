@@ -1,0 +1,6 @@
+import tracemalloc
+tracemalloc.start()
+values = [str(i) for i in range(10000)]
+current, peak = tracemalloc.get_traced_memory()
+print(current > 0, peak >= current, len(values))
+tracemalloc.stop()

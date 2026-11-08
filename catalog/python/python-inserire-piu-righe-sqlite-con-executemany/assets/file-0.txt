@@ -1,0 +1,5 @@
+import sqlite3
+with sqlite3.connect(":memory:") as db:
+    db.execute("CREATE TABLE items(value INTEGER)")
+    db.executemany("INSERT INTO items VALUES (?)", [(2,), (3,), (5,)])
+    print(db.execute("SELECT SUM(value) FROM items").fetchone()[0])

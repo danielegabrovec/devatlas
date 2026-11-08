@@ -1,0 +1,2 @@
+for number, line in enumerate(["rosso", "blu"], start=1):
+    print(f"{number}: {line}")

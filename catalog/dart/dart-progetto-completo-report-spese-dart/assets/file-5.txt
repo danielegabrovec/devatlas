@@ -1,0 +1,3 @@
+# Report spese Dart
+
+SDK3.13.x, nessun package Pub esterno. `dart pub get --offline`, `dart run test/smoke.dart`, `dart run bin/ledger.dart data/expenses.json`. I dati sintetici danno casa2000/libri2000 centesimi. Il modello e l'aggregazione non dipendono da Flutter e possono essere riusati in un'app Android/iOS Flutter; la CLI con dart:io richiede invece runtime nativo e accesso al file. I test usano controlli espliciti, non assert disattivabili. Gli importi del laboratorio sono piccoli interi; per sistemi finanziari reali va definita e testata anche la politica di overflow/range del target e la valuta. Nessun server o dato reale necessario.

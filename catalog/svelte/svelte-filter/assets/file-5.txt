@@ -1,0 +1,5 @@
+<script>
+import {onMount,tick,setContext,getContext} from 'svelte';
+let query=$state('');const all=['Python','PostgreSQL','Rust'];let filtered=$derived(all.filter(x=>x.toLowerCase().includes(query.toLowerCase())));
+</script>
+<main><input bind:value={query} placeholder="Cerca"><ul>{#each filtered as item (item)}<li>{item}</li>{/each}</ul></main>

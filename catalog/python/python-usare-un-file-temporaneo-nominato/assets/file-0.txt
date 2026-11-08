@@ -1,0 +1,9 @@
+from pathlib import Path
+from tempfile import NamedTemporaryFile
+with NamedTemporaryFile(delete=False, suffix=".txt") as stream:
+    stream.write(b"temporary")
+    path = Path(stream.name)
+try:
+    print(path.read_text(encoding="utf-8"))
+finally:
+    path.unlink()

@@ -1,0 +1,23 @@
+import sys, json, sqlite3, tempfile, logging
+from pathlib import Path
+from PySide6.QtCore import *
+from PySide6.QtGui import *
+from PySide6.QtWidgets import *
+
+def build(root, layout):
+    edit = QLineEdit()
+    edit.setValidator(QIntValidator(1, 120, edit))
+    label = QLabel("Inserisci un'età tra 1 e 120")
+    edit.textChanged.connect(lambda _: label.setText("Valido" if edit.hasAcceptableInput() else "Completa il valore"))
+    layout.addWidget(edit)
+    layout.addWidget(label)
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    window = QWidget()
+    window.setWindowTitle("Ricetta Qt")
+    window.resize(720, 480)
+    layout = QVBoxLayout(window)
+    build(window, layout)
+    window.show()
+    sys.exit(app.exec())

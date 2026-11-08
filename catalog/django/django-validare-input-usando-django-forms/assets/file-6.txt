@@ -1,0 +1,6 @@
+from django.http import JsonResponse
+from .forms import SearchForm
+def home(request):
+    form=SearchForm(request.GET)
+    if not form.is_valid(): return JsonResponse({'errors':form.errors.get_json_data()},status=400)
+    return JsonResponse(form.cleaned_data)

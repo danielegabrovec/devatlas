@@ -1,0 +1,5 @@
+const levels = ["info", "warn", "error"] as const;
+type Level = typeof levels[number];
+const current: Level = "warn";
+console.log(current);
+export {};

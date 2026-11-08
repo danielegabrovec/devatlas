@@ -1,0 +1,4 @@
+before, after = {"a", "b"}, {"b", "c"}
+print("aggiunti", sorted(after - before))
+print("rimossi", sorted(before - after))
+print("comuni", sorted(before & after))

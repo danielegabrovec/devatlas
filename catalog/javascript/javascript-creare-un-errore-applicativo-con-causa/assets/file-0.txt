@@ -1,0 +1,5 @@
+try {
+  try { JSON.parse("{"); } catch (cause) { throw new Error("Configurazione non valida", { cause }); }
+} catch (error) {
+  console.log(error.message, error.cause.name);
+}

@@ -1,0 +1,2 @@
+# Note Tauri
+RustMSVC1.90+, WebView2 e tool C++ Windows. npm install, cargo test --manifest-path src-tauri/Cargo.toml, npm run dev. Ogni invocazione aggiunge una nota e salva JSON nello spazio app it.atlas.tauri.tasks. File malformato interrompe l’avvio invece di sovrascriverlo. La risposta mostra tutte le note; i test Rust coprono validazione/ID/immutabilità, non la WebView.

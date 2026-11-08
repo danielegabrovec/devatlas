@@ -1,0 +1,2 @@
+composer install --no-interaction
+php main.php

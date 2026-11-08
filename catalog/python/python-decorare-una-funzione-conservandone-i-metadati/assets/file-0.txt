@@ -1,0 +1,11 @@
+from functools import wraps
+def traced(function):
+    @wraps(function)
+    def wrapper(*args, **kwargs):
+        print("chiamata", function.__name__)
+        return function(*args, **kwargs)
+    return wrapper
+@traced
+def square(value):
+    return value * value
+print(square(4), square.__name__)

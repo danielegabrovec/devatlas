@@ -1,0 +1,1 @@
+SELECT person_id,SUM(total) AS spesa FROM orders GROUP BY person_id HAVING SUM(total)>100;

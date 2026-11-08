@@ -1,0 +1,87 @@
+{
+  "id": "html-css-mostrare-misura-con-meter-nativo",
+  "title": "Mostrare misura con meter nativo",
+  "summary": "Mostrare misura con meter nativo. Regole CSS dimostrate: display: block.",
+  "stack": "html-css",
+  "group": "Web e backend",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "HTML Living Standard; CSS moderno; Chromium120+",
+  "prerequisites": "Browser moderno. Aprire index.html dalla cartella esportata. Per testare API soggette a secure context servire da localhost. Nessuna libreria esterna.",
+  "tags": [
+    "html-css",
+    "example",
+    "mostrare",
+    "misura",
+    "con",
+    "meter"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "index.html",
+      "language": "html",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "d908b858cb30554ec948d476f215187efb5b19b24881eaead25370b281dc17bb"
+    },
+    {
+      "id": "file-1",
+      "path": "style.css",
+      "language": "css",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "2ac577f774d650fe059b8c5378453550ecd9dd6df89ac705829345c6b1245188"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "fdac105a58844c6c5521c56037e6af7465195e1460f09ee2b9741d77b22aa1de"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "html-css-mostrare-popover-nativo-senza-librerie",
+    "html-css-mostrare-codice-preservando-spazi",
+    "html-css-mostrare-un-dialog-modale-accessibile"
+  ],
+  "expected": "La pagina visualizza il componente indicato; le regole CSS sono ispezionabili negli strumenti sviluppatore del browser.",
+  "errors": [
+    "Comando non trovato: installare la toolchain elencata nei prerequisiti.",
+    "Dipendenza mancante: eseguire l'installazione nella radice esportata, senza cambiare le versioni dichiarate."
+  ],
+  "sources": [
+    "https://html.spec.whatwg.org/",
+    "https://developer.mozilla.org/en-US/docs/Web/CSS"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "documentato",
+    "details": "Esempio originale revisionato nel catalogo; esecuzione non attestata.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md",
+  "editorial": {
+    "version": 1,
+    "method": "Fatti ricavati staticamente dai file dell’esempio",
+    "facts": [
+      "Regole CSS dimostrate: display: block."
+    ]
+  }
+}

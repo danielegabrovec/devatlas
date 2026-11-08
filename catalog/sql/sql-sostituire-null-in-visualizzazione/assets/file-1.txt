@@ -1,0 +1,1 @@
+SELECT name,COALESCE(city,'Non indicata') AS city FROM people;

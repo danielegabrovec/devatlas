@@ -1,0 +1,9 @@
+def describe(event):
+    match event:
+        case ("move", x, y) if x >= 0 and y >= 0:
+            return f"posizione {x},{y}"
+        case ("quit",):
+            return "uscita"
+        case _:
+            return "evento non supportato"
+print(describe(("move", 2, 3)))

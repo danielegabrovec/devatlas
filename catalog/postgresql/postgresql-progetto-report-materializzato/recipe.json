@@ -1,0 +1,108 @@
+{
+  "id": "postgresql-progetto-report-materializzato",
+  "title": "Progetto: report PostgreSQL con vista materializzata",
+  "summary": "Separare acquisizione dati e report persistente con aggiornamento concorrente.",
+  "stack": "postgresql",
+  "group": "Database",
+  "section": "Database",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "PostgreSQL 18; psql",
+  "prerequisites": "Server locale e client installati; database didattico cookbook_demo già creato; credenziali fornite dal client, mai nel sorgente.",
+  "tags": [
+    "project",
+    "schema",
+    "seed",
+    "report"
+  ],
+  "project": true,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "schema.sql",
+      "language": "sql",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "ec6dd5b50fb31d8b8d8324e5b5fbb5e2d98887cd78b1aadd8238540416a526c0"
+    },
+    {
+      "id": "file-1",
+      "path": "seed.sql",
+      "language": "sql",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "42f18626509fa7017b9c743393308d798422e65530e726a02e173a480ebe6790"
+    },
+    {
+      "id": "file-2",
+      "path": "report.sql",
+      "language": "sql",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "4f42a3955d590f070f11360265a1a9f1917e5eddfe01839e11bb032f61891455"
+    },
+    {
+      "id": "file-3",
+      "path": "refresh.sql",
+      "language": "sql",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "4898786182947d4a550655967e6fe71684d1caeef86e60b22b20517b0565cd1c"
+    },
+    {
+      "id": "file-4",
+      "path": "README.md",
+      "language": "markdown",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "cb7aabac3f01fa00e0cf7c609f0f4efe8cec0a9a9b9431996b0e0bb52070305f"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "c400b662fded180e2261ffb39dd8ac4641bc6b5d61a4a2513df7041377d7995c"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "postgresql-progetto-coda-transazionale",
+    "postgresql-aggiornare-una-vista-materializzata",
+    "postgresql-esporre-una-vista-materializzata"
+  ],
+  "expected": "Le query di controllo restituiscono i risultati indicati nel README.",
+  "errors": [
+    "Non usare uno schema con dati reali: gli script ricreano gli oggetti del laboratorio."
+  ],
+  "sources": [
+    "https://www.postgresql.org/docs/18/sql.html",
+    "https://www.postgresql.org/docs/18/sql-dropschema.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "documentato",
+    "date": "2026-10-29",
+    "details": "Revisione documentale PostgreSQL18/MySQL8.4 e fixture di laboratorio; server non eseguito perché Docker non era attivo. Report: reports/catalog-independent-review.json.",
+    "files_sha256": {
+      "schema.sql": "ec6dd5b50fb31d8b8d8324e5b5fbb5e2d98887cd78b1aadd8238540416a526c0",
+      "seed.sql": "42f18626509fa7017b9c743393308d798422e65530e726a02e173a480ebe6790",
+      "report.sql": "4f42a3955d590f070f11360265a1a9f1917e5eddfe01839e11bb032f61891455",
+      "refresh.sql": "4898786182947d4a550655967e6fe71684d1caeef86e60b22b20517b0565cd1c",
+      "README.md": "cb7aabac3f01fa00e0cf7c609f0f4efe8cec0a9a9b9431996b0e0bb52070305f"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

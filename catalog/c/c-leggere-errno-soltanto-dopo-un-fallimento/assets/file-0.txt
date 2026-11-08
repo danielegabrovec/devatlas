@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdint.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <errno.h>
+#include <limits.h>
+
+
+int main(void){
+errno=0;char *end;long value=strtol("999999999999999999999999999999999999",&end,10);(void)value;
+if(errno==ERANGE)puts("numero fuori intervallo");else puts("conversione riuscita");
+return 0;
+}

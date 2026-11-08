@@ -1,0 +1,1 @@
+import{createServer}from'node:http';const s=createServer((q,r)=>{r.writeHead(200,{'content-type':'application/json'});r.end(JSON.stringify({ok:true}))});s.listen(3000,'127.0.0.1',()=>console.log('http://127.0.0.1:3000; Ctrl+C per chiudere'));

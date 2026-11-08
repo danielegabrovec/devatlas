@@ -1,0 +1,8 @@
+import 'dart:io';
+import 'dart:convert';
+
+Future<void> main() async {
+final directory=await Directory.systemTemp.createTemp('atlas-dart-');
+try{final file=File('${directory.path}/note.txt');await file.writeAsString('Città',encoding:utf8);print(await file.readAsString(encoding:utf8));}
+finally{await directory.delete(recursive:true);}
+}

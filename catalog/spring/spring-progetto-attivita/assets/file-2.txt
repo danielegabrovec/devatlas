@@ -1,0 +1,15 @@
+package it.atlas;
+import java.util.*;
+import java.util.concurrent.*;
+import java.net.URI;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.http.*;
+import org.springframework.web.server.ResponseStatusException;
+import org.springframework.beans.factory.annotation.*;
+import org.springframework.stereotype.*;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.*;
+@RestController
+public class DemoController {
+private final TaskService service;public DemoController(TaskService service){this.service=service;}public record Input(@NotBlank String title){}@GetMapping("/tasks")public List<TaskService.Task> list(){return service.list();}@PostMapping("/tasks")public ResponseEntity<TaskService.Task> add(@Valid @RequestBody Input input){var task=service.add(input.title());return ResponseEntity.created(URI.create("/tasks/"+task.id())).body(task);}
+}

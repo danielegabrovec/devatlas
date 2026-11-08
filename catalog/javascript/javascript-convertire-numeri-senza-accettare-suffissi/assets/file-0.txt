@@ -1,0 +1,4 @@
+for (const text of ["42", "42px", ""]) {
+  const value = text.trim() === "" ? NaN : Number(text);
+  console.log(text, Number.isFinite(value));
+}

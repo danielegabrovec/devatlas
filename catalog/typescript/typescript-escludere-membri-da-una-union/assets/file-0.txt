@@ -1,0 +1,5 @@
+type State = "idle" | "running" | "done";
+type ActiveState = Exclude<State, "idle">;
+const state: ActiveState = "running";
+console.log(state);
+export {};

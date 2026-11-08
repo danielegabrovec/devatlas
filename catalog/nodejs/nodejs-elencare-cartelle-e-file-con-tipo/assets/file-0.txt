@@ -1,0 +1,1 @@
+import{readdir}from'node:fs/promises';for(const e of await readdir('.',{withFileTypes:true}))console.log(e.name,e.isDirectory());

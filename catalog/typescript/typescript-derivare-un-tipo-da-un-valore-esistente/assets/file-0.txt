@@ -1,0 +1,5 @@
+const defaults = { retries: 3, enabled: true };
+type Options = typeof defaults;
+const custom: Options = { retries: 5, enabled: false };
+console.log(custom.retries);
+export {};

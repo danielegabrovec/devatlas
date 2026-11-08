@@ -1,0 +1,95 @@
+{
+  "id": "cmake-separare-una-libreria-statica-dall-eseguibile",
+  "title": "Separare una libreria statica dall'eseguibile",
+  "summary": "Collegare una libreria tramite nome target e propagare i suoi include.",
+  "stack": "cmake",
+  "group": "Strumenti",
+  "section": "Compilazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code",
+    "Visual Studio",
+    "CLion"
+  ],
+  "versions": "CMake 3.24+; C++17/20",
+  "prerequisites": "CMake 3.24+, compilatore C++ installato. Su Windows usare Developer PowerShell MSVC o una toolchain già configurata.",
+  "tags": [
+    "CMake",
+    "build",
+    "separare-una-libreria-statica-dall-eseguibile"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.cpp",
+      "language": "cpp",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "6f2a41e630f1dbcbc26760eadaefcf0d675539882e487c606c38b31e579ee31e"
+    },
+    {
+      "id": "file-1",
+      "path": "CMakeLists.txt",
+      "language": "cmake",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "7c88d834dabd6e7eca03ff0aec0efacab37089e4b9f91652b3fee61abb790646"
+    },
+    {
+      "id": "file-2",
+      "path": "math.cpp",
+      "language": "cpp",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "becdd40662f89b319639e39ee89478405d385a3c00283256831e191051332ea0"
+    },
+    {
+      "id": "file-3",
+      "path": "include/math.hpp",
+      "language": "cpp",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "577f97a361fe7188a80bd30802feee67f36e3ee35ad0c3395abaf440f6e39610"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "7309db546187378027992cf9b39b6b166c51ebd4475b1a1d1b0e421f92b6bb06"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "cmake-inizializzare-un-eseguibile-cmake",
+    "cmake-installare-un-eseguibile-in-una-directory-staging",
+    "cmake-modellare-una-libreria-header-only-con-interface"
+  ],
+  "expected": "Collegare una libreria tramite nome target e propagare i suoi include.",
+  "errors": [
+    "Ninja non trovato: installarlo se si usa il preset o il compilation database.",
+    "Compilatore non trovato: aprire il terminale di sviluppo della toolchain."
+  ],
+  "sources": [
+    "https://cmake.org/cmake/help/latest/guide/tutorial/index.html",
+    "https://cmake.org/cmake/help/latest/manual/cmake-buildsystem.7.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "documentato",
+    "details": "Esempio originale revisionato nel catalogo; esecuzione non attestata.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

@@ -1,0 +1,1 @@
+SELECT regexp_replace('tel: 123-456','[^0-9]','','g');

@@ -1,0 +1,1 @@
+import{copyFile,constants}from'node:fs/promises';try{await copyFile(import.meta.filename,'copy.mjs',constants.COPYFILE_EXCL);console.log('copiato')}catch(e){console.log(e.code)}

@@ -1,0 +1,3 @@
+from notes.models import Note
+for note in Note.objects.order_by('id').iterator(chunk_size=100):
+    print(note.id,note.title)

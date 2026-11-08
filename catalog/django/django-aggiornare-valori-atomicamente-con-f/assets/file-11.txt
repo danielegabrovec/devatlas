@@ -1,0 +1,4 @@
+from django.db.models import F
+from notes.models import Note
+Note.objects.filter(done=False).update(priority=F('priority')+1)
+print(list(Note.objects.values('title','priority')))

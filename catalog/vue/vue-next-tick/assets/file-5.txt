@@ -1,0 +1,5 @@
+<script setup>
+import {ref,reactive,computed,watch,watchEffect,onMounted,onUnmounted,nextTick,provide,inject,defineAsyncComponent,shallowRef,triggerRef,readonly,toRefs} from 'vue';
+const visible=ref(false);const box=ref(null);const width=ref(0);async function reveal(){visible.value=true;await nextTick();width.value=box.value.getBoundingClientRect().width;}
+</script>
+<template><main><button @click="reveal">Mostra e misura</button><div ref="box" v-if="visible" class="card">Contenuto</div><p>Larghezza: {{width.toFixed(0)}}</p></main></template>

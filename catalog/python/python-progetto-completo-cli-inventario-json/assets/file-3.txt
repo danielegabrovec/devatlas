@@ -1,0 +1,5 @@
+# Inventario Python
+
+Richiede Python 3.11+. Nessuna dipendenza esterna.
+
+Eseguire `python -m unittest -v`, quindi `python main.py add viti 3` e `python main.py list`. Il JSON viene salvato nella cartella corrente; `--file percorso.json` sceglie il file. Esecuzioni successive sommano le quantità. Il file provvisorio viene sostituito nella stessa directory; non sono gestite scritture simultanee da processi diversi.

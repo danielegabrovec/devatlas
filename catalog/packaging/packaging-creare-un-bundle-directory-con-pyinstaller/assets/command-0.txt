@@ -1,0 +1,2 @@
+python -m pip install pyinstaller==6.16.0
+python -m PyInstaller --clean --onedir --name RecipeCli app.py

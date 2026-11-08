@@ -1,0 +1,4 @@
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+use std::collections::HashSet;let a:HashSet<_>=[1,2,3].into_iter().collect();let b:HashSet<_>=[2,4].into_iter().collect();let mut difference:Vec<_>=a.difference(&b).copied().collect();difference.sort();println!("{:?}",difference);
+Ok(())
+}

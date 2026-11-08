@@ -1,0 +1,26 @@
+[
+  {
+    "file": "tools\\languages_cpp.py",
+    "unchanged_literal_values": 2
+  },
+  {
+    "file": "tools\\languages_csharp.py",
+    "unchanged_literal_values": 1
+  },
+  {
+    "file": "tools\\languages_go.py",
+    "unchanged_literal_values": 1
+  },
+  {
+    "file": "tools\\languages_javascript.py",
+    "unchanged_literal_values": 1
+  },
+  {
+    "file": "tools\\web_react.py",
+    "unchanged_literal_values": 2
+  },
+  {
+    "file": "tools\\workflow_ci_packaging.py",
+    "unchanged_literal_values": 1
+  }
+]

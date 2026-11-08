@@ -1,0 +1,25 @@
+import sys, json, sqlite3, tempfile, logging
+from pathlib import Path
+from PyQt6.QtCore import *
+from PyQt6.QtGui import *
+from PyQt6.QtWidgets import *
+Signal = pyqtSignal
+Slot = pyqtSlot
+
+def build(root, layout):
+    slider = QSlider(Qt.Orientation.Horizontal)
+    slider.setRange(0, 100)
+    display = QLCDNumber()
+    slider.valueChanged.connect(display.display)
+    layout.addWidget(slider)
+    layout.addWidget(display)
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    window = QWidget()
+    window.setWindowTitle("Ricetta Qt")
+    window.resize(720, 480)
+    layout = QVBoxLayout(window)
+    build(window, layout)
+    window.show()
+    sys.exit(app.exec())

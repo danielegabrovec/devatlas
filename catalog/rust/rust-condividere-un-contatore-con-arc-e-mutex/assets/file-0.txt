@@ -1,0 +1,4 @@
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+use std::sync::{Arc,Mutex};let count=Arc::new(Mutex::new(0));let mut threads=Vec::new();for _ in 0..2{let count=Arc::clone(&count);threads.push(std::thread::spawn(move||{for _ in 0..1000{*count.lock().expect("mutex avvelenato")+=1;}}));}for thread in threads{thread.join().expect("worker fallito");}println!("{}",*count.lock().expect("mutex avvelenato"));
+Ok(())
+}

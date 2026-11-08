@@ -1,0 +1,1 @@
+SELECT status,person_id,SUM(total) FROM orders GROUP BY GROUPING SETS((status),(person_id),());

@@ -1,0 +1,1122 @@
+{
+  "date": "2026-10-29",
+  "version": "1.3",
+  "read_only_sources": true,
+  "contrast_checks": [
+    {
+      "theme": "light",
+      "pair": "body/window",
+      "foreground": "#ff18243a",
+      "background": "#ffedf1f8",
+      "ratio": 13.70899564028396,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "pair": "body/surface",
+      "foreground": "#ff18243a",
+      "background": "#ffffffff",
+      "ratio": 15.52925666261617,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "pair": "body/raised",
+      "foreground": "#ff18243a",
+      "background": "#fff5f7fc",
+      "ratio": 14.488394381969584,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "pair": "muted/window",
+      "foreground": "#ff526078",
+      "background": "#ffedf1f8",
+      "ratio": 5.612400842674771,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "pair": "muted/surface",
+      "foreground": "#ff526078",
+      "background": "#ffffffff",
+      "ratio": 6.357607476602458,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "pair": "muted/raised",
+      "foreground": "#ff526078",
+      "background": "#fff5f7fc",
+      "ratio": 5.931483164195259,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "pair": "muted/selection",
+      "foreground": "#ff526078",
+      "background": "#ffe9ecff",
+      "ratio": 5.421195127328194,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "pair": "accent/surface",
+      "foreground": "#ff4f46e5",
+      "background": "#ffffffff",
+      "ratio": 6.2875283553755885,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "pair": "accent/selection",
+      "foreground": "#ff4f46e5",
+      "background": "#ffe9ecff",
+      "ratio": 5.361437963659202,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "pair": "badge/selection",
+      "foreground": "#ff3730a3",
+      "background": "#ffe9ecff",
+      "ratio": 8.470248948884455,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "pair": "primary-hover",
+      "foreground": "#ffffffff",
+      "background": "#ff4338ca",
+      "ratio": 7.903111288543206,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "pair": "success/surface",
+      "foreground": "#ff166534",
+      "background": "#ffffffff",
+      "ratio": 7.130309921614325,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "pair": "warning/surface",
+      "foreground": "#ff854d0e",
+      "background": "#ffffffff",
+      "ratio": 6.851099566632828,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "pair": "focus/surface",
+      "foreground": "#ff4f46e5",
+      "background": "#ffffffff",
+      "ratio": 6.2875283553755885,
+      "threshold": 3.0,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "pair": "focus/raised",
+      "foreground": "#ff4f46e5",
+      "background": "#fff5f7fc",
+      "ratio": 5.866101158582526,
+      "threshold": 3.0,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "pair": "technology badge/Linguaggi",
+      "foreground": "#ff1e40af",
+      "background": "#ffe5edff",
+      "ratio": 7.430362838708642,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "pair": "technology badge/Desktop e GUI",
+      "foreground": "#ff5b21b6",
+      "background": "#ffefe7ff",
+      "ratio": 7.504543497789895,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "pair": "technology badge/Web e backend",
+      "foreground": "#ff115e59",
+      "background": "#ffdff5ef",
+      "ratio": 6.660826607730663,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "pair": "technology badge/Database",
+      "foreground": "#ff92400e",
+      "background": "#fffff0d6",
+      "ratio": 6.309144313847966,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "pair": "technology badge/Strumenti",
+      "foreground": "#ff334155",
+      "background": "#ffe9eef6",
+      "ratio": 8.887974004406827,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "pair": "custom scrollbar thumb/track",
+      "foreground": "#ff6b7891",
+      "background": "#fff5f7fc",
+      "ratio": 4.150403233237435,
+      "threshold": 3.0,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "pair": "input text",
+      "foreground": "#ff18243a",
+      "background": "#ffffffff",
+      "ratio": 15.52925666261617,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "pair": "placeholder",
+      "foreground": "#ff526078",
+      "background": "#ffffffff",
+      "ratio": 6.357607476602458,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "pair": "search placeholder",
+      "foreground": "#ff526078",
+      "background": "#fff5f7fc",
+      "ratio": 5.931483164195259,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "pair": "primary button",
+      "foreground": "#ffffffff",
+      "background": "#ff4f46e5",
+      "ratio": 6.2875283553755885,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "pair": "secondary button",
+      "foreground": "#ff18243a",
+      "background": "#ffffffff",
+      "ratio": 15.52925666261617,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "pair": "body/window",
+      "foreground": "#ffedf2fb",
+      "background": "#ff0c1220",
+      "ratio": 16.64698633783531,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "pair": "body/surface",
+      "foreground": "#ffedf2fb",
+      "background": "#ff151e2e",
+      "ratio": 14.871974568957672,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "pair": "body/raised",
+      "foreground": "#ffedf2fb",
+      "background": "#ff1d293d",
+      "ratio": 13.011373121557527,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "pair": "muted/window",
+      "foreground": "#ffb0bdd2",
+      "background": "#ff0c1220",
+      "ratio": 9.844676151310201,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "pair": "muted/surface",
+      "foreground": "#ffb0bdd2",
+      "background": "#ff151e2e",
+      "ratio": 8.794971677795452,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "pair": "muted/raised",
+      "foreground": "#ffb0bdd2",
+      "background": "#ff1d293d",
+      "ratio": 7.694651275976987,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "pair": "muted/selection",
+      "foreground": "#ffb0bdd2",
+      "background": "#ff29385c",
+      "ratio": 6.0929869489146276,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "pair": "accent/surface",
+      "foreground": "#ffb9bcff",
+      "background": "#ff151e2e",
+      "ratio": 9.307647262670113,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "pair": "accent/selection",
+      "foreground": "#ffb9bcff",
+      "background": "#ff29385c",
+      "ratio": 6.448158717751008,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "pair": "badge/selection",
+      "foreground": "#ffd9ddff",
+      "background": "#ff29385c",
+      "ratio": 8.672898777561775,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "pair": "primary-hover",
+      "foreground": "#ff151e2e",
+      "background": "#ffd2d4ff",
+      "ratio": 11.615895467045831,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "pair": "success/surface",
+      "foreground": "#ff86efac",
+      "background": "#ff151e2e",
+      "ratio": 11.897712984381426,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "pair": "warning/surface",
+      "foreground": "#fffcd34d",
+      "background": "#ff151e2e",
+      "ratio": 11.585855968396643,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "pair": "focus/surface",
+      "foreground": "#ffb9bcff",
+      "background": "#ff151e2e",
+      "ratio": 9.307647262670113,
+      "threshold": 3.0,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "pair": "focus/raised",
+      "foreground": "#ffb9bcff",
+      "background": "#ff1d293d",
+      "ratio": 8.143187097107326,
+      "threshold": 3.0,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "pair": "technology badge/Linguaggi",
+      "foreground": "#ffb8d0ff",
+      "background": "#ff233b60",
+      "ratio": 7.237264103632877,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "pair": "technology badge/Desktop e GUI",
+      "foreground": "#ffd4bfff",
+      "background": "#ff3a2857",
+      "ratio": 7.831800248262068,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "pair": "technology badge/Web e backend",
+      "foreground": "#ff9de7d1",
+      "background": "#ff173d38",
+      "ratio": 8.395452237841058,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "pair": "technology badge/Database",
+      "foreground": "#fffbd38d",
+      "background": "#ff49331d",
+      "ratio": 8.34241816540751,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "pair": "technology badge/Strumenti",
+      "foreground": "#ffd0dced",
+      "background": "#ff2b3a50",
+      "ratio": 8.302624280684176,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "pair": "custom scrollbar thumb/track",
+      "foreground": "#ff7b8eae",
+      "background": "#ff1d293d",
+      "ratio": 4.400460873294387,
+      "threshold": 3.0,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "pair": "input text",
+      "foreground": "#ffedf2fb",
+      "background": "#ff151e2e",
+      "ratio": 14.871974568957672,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "pair": "placeholder",
+      "foreground": "#ffb0bdd2",
+      "background": "#ff151e2e",
+      "ratio": 8.794971677795452,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "pair": "search placeholder",
+      "foreground": "#ffb0bdd2",
+      "background": "#ff1d293d",
+      "ratio": 7.694651275976987,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "pair": "primary button",
+      "foreground": "#ff151e2e",
+      "background": "#ffb9bcff",
+      "ratio": 9.307647262670113,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "pair": "secondary button",
+      "foreground": "#ffedf2fb",
+      "background": "#ff151e2e",
+      "ratio": 14.871974568957672,
+      "threshold": 4.5,
+      "passed": true
+    }
+  ],
+  "keyboard_checks": [
+    {
+      "case": "index ready",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 800,
+      "case": "requested client width retained",
+      "passed": true,
+      "details": {
+        "actual_width": 800,
+        "height": 720
+      }
+    },
+    {
+      "theme": "light",
+      "width": 800,
+      "case": "Ctrl+K focuses search",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 800,
+      "case": "empty search returns no rows",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 800,
+      "case": "empty query can be cleared by keyboard",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 800,
+      "case": "filter toggle reachable by Tab",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 800,
+      "case": "Space expands filters",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 800,
+      "case": "filter names accessible",
+      "passed": true,
+      "details": [
+        "Filtro Sezione",
+        "Filtro Difficoltà",
+        "Filtro Sistema",
+        "Filtro Shell",
+        "Filtro IDE",
+        "Filtro Verifica",
+        "Filtro Dove cercare"
+      ]
+    },
+    {
+      "theme": "light",
+      "width": 800,
+      "case": "filter input reachable by Tab",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 800,
+      "case": "filter changes by keyboard",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 800,
+      "case": "filter request settles with an active chip",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 800,
+      "case": "visible filter controls remain inside client area",
+      "passed": true,
+      "details": []
+    },
+    {
+      "theme": "light",
+      "width": 800,
+      "case": "keyboard returns from filters to results",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 800,
+      "case": "active chip visible beside results",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 800,
+      "case": "active filter chip reachable by Tab",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 800,
+      "case": "active filter removed by keyboard",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 800,
+      "case": "Ctrl+P opens focused palette and Esc closes it",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 800,
+      "case": "focus returns to a visible control after owner activation",
+      "passed": true,
+      "details": {
+        "widget": "QLineEdit",
+        "object_name": "search",
+        "offscreen_window_manager_activation_simulated": true
+      }
+    },
+    {
+      "theme": "light",
+      "width": 950,
+      "case": "requested client width retained",
+      "passed": true,
+      "details": {
+        "actual_width": 950,
+        "height": 720
+      }
+    },
+    {
+      "theme": "light",
+      "width": 950,
+      "case": "Ctrl+K focuses search",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 950,
+      "case": "empty search returns no rows",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 950,
+      "case": "empty query can be cleared by keyboard",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 950,
+      "case": "filter toggle reachable by Tab",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 950,
+      "case": "Space expands filters",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 950,
+      "case": "filter names accessible",
+      "passed": true,
+      "details": [
+        "Filtro Sezione",
+        "Filtro Difficoltà",
+        "Filtro Sistema",
+        "Filtro Shell",
+        "Filtro IDE",
+        "Filtro Verifica",
+        "Filtro Dove cercare"
+      ]
+    },
+    {
+      "theme": "light",
+      "width": 950,
+      "case": "filter input reachable by Tab",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 950,
+      "case": "filter changes by keyboard",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 950,
+      "case": "filter request settles with an active chip",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 950,
+      "case": "visible filter controls remain inside client area",
+      "passed": true,
+      "details": []
+    },
+    {
+      "theme": "light",
+      "width": 950,
+      "case": "keyboard returns from filters to results",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 950,
+      "case": "active chip visible beside results",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 950,
+      "case": "active filter chip reachable by Tab",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 950,
+      "case": "active filter removed by keyboard",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 950,
+      "case": "Ctrl+P opens focused palette and Esc closes it",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 950,
+      "case": "focus returns to a visible control after owner activation",
+      "passed": true,
+      "details": {
+        "widget": "QLineEdit",
+        "object_name": "search",
+        "offscreen_window_manager_activation_simulated": true
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 800,
+      "case": "requested client width retained",
+      "passed": true,
+      "details": {
+        "actual_width": 800,
+        "height": 720
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 800,
+      "case": "Ctrl+K focuses search",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 800,
+      "case": "empty search returns no rows",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 800,
+      "case": "empty query can be cleared by keyboard",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 800,
+      "case": "filter toggle reachable by Tab",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 800,
+      "case": "Space expands filters",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 800,
+      "case": "filter names accessible",
+      "passed": true,
+      "details": [
+        "Filtro Sezione",
+        "Filtro Difficoltà",
+        "Filtro Sistema",
+        "Filtro Shell",
+        "Filtro IDE",
+        "Filtro Verifica",
+        "Filtro Dove cercare"
+      ]
+    },
+    {
+      "theme": "dark",
+      "width": 800,
+      "case": "filter input reachable by Tab",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 800,
+      "case": "filter changes by keyboard",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 800,
+      "case": "filter request settles with an active chip",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 800,
+      "case": "visible filter controls remain inside client area",
+      "passed": true,
+      "details": []
+    },
+    {
+      "theme": "dark",
+      "width": 800,
+      "case": "keyboard returns from filters to results",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 800,
+      "case": "active chip visible beside results",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 800,
+      "case": "active filter chip reachable by Tab",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 800,
+      "case": "active filter removed by keyboard",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 800,
+      "case": "Ctrl+P opens focused palette and Esc closes it",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 800,
+      "case": "focus returns to a visible control after owner activation",
+      "passed": true,
+      "details": {
+        "widget": "QLineEdit",
+        "object_name": "search",
+        "offscreen_window_manager_activation_simulated": true
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 950,
+      "case": "requested client width retained",
+      "passed": true,
+      "details": {
+        "actual_width": 950,
+        "height": 720
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 950,
+      "case": "Ctrl+K focuses search",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 950,
+      "case": "empty search returns no rows",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 950,
+      "case": "empty query can be cleared by keyboard",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 950,
+      "case": "filter toggle reachable by Tab",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 950,
+      "case": "Space expands filters",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 950,
+      "case": "filter names accessible",
+      "passed": true,
+      "details": [
+        "Filtro Sezione",
+        "Filtro Difficoltà",
+        "Filtro Sistema",
+        "Filtro Shell",
+        "Filtro IDE",
+        "Filtro Verifica",
+        "Filtro Dove cercare"
+      ]
+    },
+    {
+      "theme": "dark",
+      "width": 950,
+      "case": "filter input reachable by Tab",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 950,
+      "case": "filter changes by keyboard",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 950,
+      "case": "filter request settles with an active chip",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 950,
+      "case": "visible filter controls remain inside client area",
+      "passed": true,
+      "details": []
+    },
+    {
+      "theme": "dark",
+      "width": 950,
+      "case": "keyboard returns from filters to results",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 950,
+      "case": "active chip visible beside results",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 950,
+      "case": "active filter chip reachable by Tab",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 950,
+      "case": "active filter removed by keyboard",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 950,
+      "case": "Ctrl+P opens focused palette and Esc closes it",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 950,
+      "case": "focus returns to a visible control after owner activation",
+      "passed": true,
+      "details": {
+        "widget": "QLineEdit",
+        "object_name": "search",
+        "offscreen_window_manager_activation_simulated": true
+      }
+    }
+  ],
+  "screenshots": [
+    "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\reports\\accessibility13-light-800-empty.png",
+    "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\reports\\accessibility13-light-800-filters.png",
+    "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\reports\\accessibility13-light-800-palette.png",
+    "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\reports\\accessibility13-light-950-empty.png",
+    "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\reports\\accessibility13-light-950-filters.png",
+    "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\reports\\accessibility13-light-950-palette.png",
+    "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\reports\\accessibility13-dark-800-empty.png",
+    "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\reports\\accessibility13-dark-800-filters.png",
+    "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\reports\\accessibility13-dark-800-palette.png",
+    "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\reports\\accessibility13-dark-950-empty.png",
+    "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\reports\\accessibility13-dark-950-filters.png",
+    "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\reports\\accessibility13-dark-950-palette.png"
+  ],
+  "issues": [],
+  "limits": [
+    "Audit dei ruoli semantici campionati e flussi Qt; non certificazione WCAG completa.",
+    "Rendering di soli widget posseduti, offscreen, con font caricati tramite qt_bootstrap; nessuna acquisizione desktop o Computer Use.",
+    "Nessun test con screen reader NVDA/JAWS o monitor fisico ad alto DPI.",
+    "Le misure AA usano soglie4.5:1 per testo normale e3:1 per focus/non-testuale essenziale, senza arrotondare prima del confronto. Controlli disabilitati/decorazioni esclusi.",
+    "Il plugin offscreen non riattiva il parent alla chiusura di un dialogo, anche nel controllo QDialog standard: il harness simula esplicitamente tale attivazione del window manager prima di verificare il ritorno del focus. Nessun cambiamento al runtime."
+  ],
+  "sources": [
+    "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+    "https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html",
+    "https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance.html"
+  ],
+  "source_hashes": {
+    "theme.py": "3c682446b0e96a70ef1ccfd54a5562e3fab972bd1a5b8150a22caa318006d36b",
+    "ui_components.py": "99329f086e14032cc27db5cde8fe8aa486ad5fb265c4acb0ea8345a7e35fa706",
+    "app.py": "8a825970222e097989f6ed1423f3c5d91fcb4af95ce7d1582d0bb0b4ba234abf",
+    "commandpalette.py": "0c934221bea6a70ccb4f4f5190eb53c5fc5f76736744698d643c86228d4938c4",
+    "codewidgets.py": "e54f08d612c743e2a813f6dfdecc9d3b652999bf72c9de9b3fb05fc9906c563b",
+    "assets/devatlas.svg": "d2097201ac4e4846b15d7e28390d294d0f9e86d07d1ab74ded4a4c2417fb88f8",
+    "assets/menu.svg": "564a7283ea2e330a12b09bad062a54b9afc81c6220ffcf19cf7cd96af1585cb6",
+    "assets/ui-chevron-dark.svg": "ce19262c42a4dc2160688bde5c9ebd7fe033264225ffbf890ebdd5afdd0c252d",
+    "assets/ui-chevron-light.svg": "1fff6004d0beb67cbc0e9d4c7f1fd980ca75f1f4bf9989102d2fcc390bd6d037"
+  },
+  "offscreen_modal_control": [
+    {
+      "case": "stock-QDialog",
+      "before": {
+        "focus": "QLineEdit",
+        "visible": true,
+        "active": "QWidget"
+      },
+      "after": {
+        "focus": null,
+        "visible": null,
+        "active": null
+      },
+      "after_owner_activation": {
+        "focus": "QLineEdit",
+        "visible": true,
+        "active": "QWidget"
+      }
+    },
+    {
+      "case": "CommandPalette",
+      "before": {
+        "focus": "QLineEdit",
+        "visible": true,
+        "active": "QWidget"
+      },
+      "after": {
+        "focus": null,
+        "visible": null,
+        "active": null
+      },
+      "after_owner_activation": {
+        "focus": "QLineEdit",
+        "visible": true,
+        "active": "QWidget"
+      }
+    }
+  ],
+  "control_checks": [
+    {
+      "theme": "light",
+      "case": "painted dropdown indicator visible",
+      "contrasting_pixels": 22,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "case": "painted dropdown indicator visible",
+      "contrasting_pixels": 22,
+      "passed": true
+    }
+  ],
+  "font_check": {
+    "resolved_family": "Inter",
+    "latin_glyph_available": true
+  },
+  "source_unchanged": {
+    "theme.py": true,
+    "ui_components.py": true,
+    "app.py": true,
+    "commandpalette.py": true,
+    "codewidgets.py": true,
+    "assets/devatlas.svg": true,
+    "assets/menu.svg": true,
+    "assets/ui-chevron-dark.svg": true,
+    "assets/ui-chevron-light.svg": true
+  },
+  "summary": {
+    "contrast_passed": 52,
+    "contrast_total": 52,
+    "control_passed": 2,
+    "control_total": 2,
+    "keyboard_passed": 69,
+    "keyboard_total": 69,
+    "issues": 0
+  },
+  "status": "final",
+  "visual_review": {
+    "font_tofu_observed": false,
+    "reviewed_images": [
+      "reports/accessibility13-dark-800-filters.png",
+      "reports/accessibility13-light-950-empty.png",
+      "reports/accessibility13-dark-950-palette.png"
+    ],
+    "observations": [
+      "Testo Inter leggibile; nessun glifo sostitutivo osservato nelle immagini campionate.",
+      "Chip filtro attivo visibile e rimozione tramite tastiera verificata; gli stati vuoti hanno azione di azzeramento.",
+      "La freccia dei menu a discesa è visibile nei temi e misurata anche nel rendering del probe."
+    ]
+  },
+  "resolved_before_final": [
+    {
+      "finding": "Placeholder Qt con alpha128 sotto4.5",
+      "final_evidence": "Ruoli PlaceholderText ora opachi; tutti i confronti text/base passano."
+    },
+    {
+      "finding": "Thumb scrollbar personalizzata sotto3",
+      "final_evidence": [
+        {
+          "theme": "light",
+          "pair": "custom scrollbar thumb/track",
+          "foreground": "#ff6b7891",
+          "background": "#fff5f7fc",
+          "ratio": 4.150403233237435,
+          "threshold": 3.0,
+          "passed": true
+        },
+        {
+          "theme": "dark",
+          "pair": "custom scrollbar thumb/track",
+          "foreground": "#ff7b8eae",
+          "background": "#ff1d293d",
+          "ratio": 4.400460873294387,
+          "threshold": 3.0,
+          "passed": true
+        }
+      ]
+    }
+  ]
+}

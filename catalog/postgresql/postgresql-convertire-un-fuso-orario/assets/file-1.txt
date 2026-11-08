@@ -1,0 +1,1 @@
+SELECT '2026-01-10 12:00+00'::timestamptz AT TIME ZONE 'Europe/Rome';

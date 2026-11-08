@@ -1,0 +1,5 @@
+interface Order { id: number; customer: { name: string; email: string } }
+type Customer = Order["customer"];
+const customer: Customer = { name: "Ada", email: "ada@example.test" };
+console.log(customer.name);
+export {};

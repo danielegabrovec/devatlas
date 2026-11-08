@@ -1,0 +1,70 @@
+{
+  "id": "pyside6-datetime",
+  "title": "Scegliere data e ora insieme",
+  "summary": "Configurare un controllo unico per un appuntamento locale.",
+  "stack": "pyside6",
+  "group": "Desktop e GUI",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Python 3.13; PySide6 6.12.x",
+  "prerequisites": "Python 3.13, ambiente virtuale dedicato e PySide6==6.12.*. Non installare entrambi i binding nello stesso ambiente.",
+  "tags": [
+    "datetime",
+    "Qt Widgets",
+    "signals",
+    "PySide6"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "f2cc3174122b1ead1492c32c6e3aa9b1d75e515d9d55361768f6be42caa87f97"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "fa7903108ae7aa3f1394a5a95ac8f4c30affc3b7ad588d4cb1c04cdec3ebb03d"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "pyside6-combo-data",
+    "pyside6-date-edit",
+    "pyside6-delegate"
+  ],
+  "expected": "Il controllo permette di cambiare giorno e orario.",
+  "errors": [
+    "ModuleNotFoundError: eseguire pip con lo stesso interprete .venv usato per avviare main.py.",
+    "Non creare QApplication due volte nello stesso processo; riavviare l'esempio in un processo separato."
+  ],
+  "sources": [
+    "https://doc.qt.io/qtforpython-6/",
+    "https://doc.qt.io/qt-6/qtwidgets-index.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "details": "Avvio reale Windows con PySide6 6.12.0, piattaforma offscreen, costruzione finestra e ciclo eventi 150 ms. Interazioni e altri sistemi non verificati. Report: reports/desktop-tools-qa.json.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "dart-ordinare-record-con-piu-chiavi",
+  "title": "Ordinare record con più chiavi",
+  "summary": "Confronta cognome e nome e dichiara un criterio deterministico per i pareggi.",
+  "stack": "dart",
+  "group": "Linguaggi",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Dart3.13.x; librerie SDK, nessuna dipendenza Pub esterna",
+  "prerequisites": "Dart SDK3.13.x nel PATH. Gli esempi dart:io sono nativi; per riusarli su web occorre sostituire accesso filesystem/isolate dove non supportato. Nessun package esterno necessario ai capstone.",
+  "tags": [
+    "sort",
+    "compareTo",
+    "records"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.dart",
+      "language": "dart",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "d03242e85c285f80b6eb54866bfc3c8c2bf0948384d908ae3439e4b643f7e1d7"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "7ed1d0120ff7cd104704e65f61394f4493baec4c941cafc797f5e11b53ea5d71"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "dart-destrutturare-un-record-posizionale",
+    "dart-aggiungere-una-extension-per-validare-testo",
+    "dart-applicare-un-timeout-a-una-future"
+  ],
+  "expected": "[Ada,Luca]; sort modifica la lista su cui viene invocato.",
+  "errors": [
+    "Comparatore con tipo errato: sort richiede un risultato int negativo/zero/positivo.",
+    "Lista originale modificata per errore: sort opera in place; crea una copia se serve conservarla."
+  ],
+  "sources": [
+    "https://dart.dev/language",
+    "https://dart.dev/resources/whats-new",
+    "https://dart.dev/tools/dart-compile"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

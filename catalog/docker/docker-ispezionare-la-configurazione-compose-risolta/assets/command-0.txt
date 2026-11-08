@@ -1,0 +1,2 @@
+docker compose config --quiet
+docker compose config

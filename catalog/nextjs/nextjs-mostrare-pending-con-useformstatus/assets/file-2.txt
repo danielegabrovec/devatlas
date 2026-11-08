@@ -1,0 +1,1 @@
+import Button from'./button';export default function Page(){async function submit(){'use server';await new Promise(r=>setTimeout(r,300))}return <form action={submit}><Button/></form>}

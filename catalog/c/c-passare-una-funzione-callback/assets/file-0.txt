@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdint.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <errno.h>
+#include <limits.h>
+
+typedef int(*Transform)(int);static int twice(int n){return n*2;}static int apply(int n,Transform transform){return transform(n);}
+int main(void){
+printf("%d\n",apply(7,twice));
+return 0;
+}

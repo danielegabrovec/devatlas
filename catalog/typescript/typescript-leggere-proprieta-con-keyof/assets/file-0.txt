@@ -1,0 +1,4 @@
+function get<T, K extends keyof T>(value: T, key: K): T[K] { return value[key]; }
+const user = { id: 7, name: "Ada" };
+console.log(get(user, "name").toUpperCase());
+export {};

@@ -1,0 +1,2 @@
+const a = "café", b = "cafe\u0301";
+console.log(a === b, a.normalize("NFC") === b.normalize("NFC"));

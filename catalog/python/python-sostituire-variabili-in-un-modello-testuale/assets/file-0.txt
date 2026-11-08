@@ -1,0 +1,3 @@
+from string import Template
+template = Template("Ciao $nome, hai $numero messaggi.")
+print(template.substitute(nome="Ada", numero=3))

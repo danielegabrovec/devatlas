@@ -1,0 +1,1 @@
+if(Pricing.Total(10,3)!=30)throw new Exception("Totale errato");try{Pricing.Total(10,0);throw new Exception("Eccezione attesa");}catch(ArgumentException){}Console.WriteLine("2controlli superati");

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+if (( $# != 1 )); then printf "Uso: bash example.sh nome\n" >&2; exit 2; fi
+printf "Nome: %s\n" "$1"

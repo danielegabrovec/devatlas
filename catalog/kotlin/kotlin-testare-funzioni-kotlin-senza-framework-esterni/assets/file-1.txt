@@ -1,0 +1,1 @@
+fun main(){check(area(3,4)==12);check(runCatching{area(-1,2)}.isFailure);println("2 contratti verificati")}

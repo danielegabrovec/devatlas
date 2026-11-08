@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+scratch=$(mktemp)
+trap 'rm -f -- "$scratch"' EXIT
+printf "dati temporanei\n" > "$scratch"
+cat -- "$scratch"

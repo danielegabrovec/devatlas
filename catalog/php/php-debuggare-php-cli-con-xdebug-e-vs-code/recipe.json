@@ -1,0 +1,79 @@
+{
+  "id": "php-debuggare-php-cli-con-xdebug-e-vs-code",
+  "title": "Debuggare PHP CLI con Xdebug e VS Code",
+  "summary": "Collega il processo CLI a un listener locale mantenendo il php.ini già configurato con Xdebug.",
+  "stack": "php",
+  "group": "Linguaggi",
+  "section": "Debug",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "PHP8.4/8.5 CLI, strict_types; estensioni indicate nella singola scheda",
+  "prerequisites": "PHP8.4 o8.5 CLI nel PATH. PDO SQLite richiede pdo_sqlite; le altre estensioni necessarie sono indicate. Il server incorporato è destinato al laboratorio locale.",
+  "tags": [
+    "Xdebug",
+    "VS Code",
+    "breakpoint"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.php",
+      "language": "php",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "f9f77bb797fca223f84728cf62bc6ab1ff2d5968f09213c6258d985a597b5cd8"
+    },
+    {
+      "id": "file-1",
+      "path": ".vscode/launch.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "87acae159ef51076376a98bf69eae75fc24debcdaa6335bdf38ae13874e712b1"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "97c41c2fedeabca00609d6a969ae9a3d6d8ab5122b72b674e9f21aeb7fe377b1"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "php-progetto-completo-rubrica-json-php",
+    "php-inizializzare-php-cli-con-una-configurazione-esplicita",
+    "php-analizzare-opzioni-cli-con-getopt"
+  ],
+  "expected": "Con il listener avviato il breakpoint permette di ispezionare values/total; output10.",
+  "errors": [
+    "php --ri xdebug non trova l'estensione: installa/abilita una build Xdebug compatibile con versione e architettura del PHP in uso.",
+    "Il breakpoint non viene raggiunto: avvia il listener VS Code e verifica client_host127.0.0.1, porta9003 e start_with_request.",
+    "PHP CLI e server usano configurazioni diverse: confronta il php.ini effettivo prima di cambiare opzioni globali."
+  ],
+  "sources": [
+    "https://www.php.net/manual/en/",
+    "https://www.php.net/supported-versions.php",
+    "https://xdebug.org/docs/step_debug"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: JSON parse, php lint, php program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

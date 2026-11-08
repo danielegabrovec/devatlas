@@ -1,0 +1,10 @@
+package main
+
+import (
+"fmt"
+"strings"
+)
+
+func main(){
+var result []string;for _,part:=range strings.Split(" a, ,b ",","){value:=strings.TrimSpace(part);if value!=""{result=append(result,value)}};fmt.Println(result)
+}

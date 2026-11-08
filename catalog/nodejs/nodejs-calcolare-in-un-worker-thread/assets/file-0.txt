@@ -1,0 +1,1 @@
+import{Worker}from'node:worker_threads';const worker=new Worker("const{parentPort}=require('node:worker_threads');parentPort.postMessage(6*7)",{eval:true});worker.on('message',console.log);worker.on('error',console.error);

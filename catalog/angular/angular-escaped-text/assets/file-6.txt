@@ -1,0 +1,7 @@
+import {Component,signal,computed,effect,inject,DestroyRef,ChangeDetectionStrategy} from '@angular/core';
+import {CommonModule} from '@angular/common';import {FormsModule} from '@angular/forms';
+
+@Component({selector:'app-root',standalone:true,imports:[CommonModule,FormsModule],changeDetection:ChangeDetectionStrategy.OnPush,template:`<main><textarea [(ngModel)]="text" aria-label="Testo"></textarea><pre>{{text}}</pre></main>`})
+export class AppComponent{
+text='<b>Resta testo</b>';
+}

@@ -1,0 +1,73 @@
+{
+  "id": "swift-mostrare-stato-e-azioni-in-una-vista-swiftui-ios",
+  "title": "Mostrare stato e azioni in una vista SwiftUI iOS",
+  "summary": "Collega un contatore a una vista con @State e aggiorna la presentazione attraverso un pulsante.",
+  "stack": "swift",
+  "group": "Linguaggi",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "macOS",
+    "iOS"
+  ],
+  "ide": [
+    "Xcode",
+    "VS Code"
+  ],
+  "versions": "Swift6.4; Package.swift tools-version6.0, Linux/macOS",
+  "prerequisites": "Toolchain Swift6.4 su Linux o macOS. Per SwiftUI/iOS occorrono macOS, Xcode e un target Apple. Non sono attestati esecuzioni o compilazioni Swift su Windows.",
+  "tags": [
+    "SwiftUI",
+    "iOS",
+    "State"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "ContentView.swift",
+      "language": "swift",
+      "role": "snippet",
+      "source": "assets/file-0.txt",
+      "sha256": "b68f3230f67c278a4bef68bdc3db1f7fbf72da68e0fc05fa3bed05d826a9e36b"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "bash",
+      "role": "command",
+      "shell": "Bash",
+      "os": "macOS",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "489644f91d5f66760f69b82458c4cb93486131f12c1fded085e052fb0cad7333"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "swift-navigare-tra-viste-swiftui-con-navigationstack",
+    "swift-proteggere-stato-asincrono-con-un-actor",
+    "swift-analizzare-un-istante-iso8601-utc"
+  ],
+  "expected": "Il pulsante incrementa il testo della vista senza mutare manualmente una label.",
+  "errors": [
+    "No such module SwiftUI: servono macOS/Xcode e Apple SDK; il package CLI Linux non fornisce SwiftUI.",
+    "API non disponibile per il deployment target: usa i target iOS17+/macOS14+ indicati e conserva l'App SwiftUI che mostra ContentView.",
+    "La vista non si aggiorna: modifica lo stato tramite @State nel contesto della vista e usa gli identificativi coerenti delle righe."
+  ],
+  "sources": [
+    "https://www.swift.org/documentation/",
+    "https://www.swift.org/install/linux/",
+    "https://www.swift.org/install/macos/",
+    "https://www.swift.org/blog/swift-6.4-released/",
+    "https://developer.apple.com/documentation/swiftui/state"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

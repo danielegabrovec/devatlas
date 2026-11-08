@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Collections.Concurrent;
+using System.Diagnostics;
+using System.Globalization;
+using System.IO;
+using System.IO.Compression;
+using System.Linq;
+using System.Text;
+using System.Text.Json;
+using System.Text.RegularExpressions;
+using System.Threading;
+using System.Threading.Channels;
+using System.Threading.Tasks;
+using System.Xml.Linq;
+
+public static class Program {
+ public static async Task Main(string[] args) {
+var gate=new object();int count=0;
+await Task.WhenAll(Enumerable.Range(0,4).Select(_=>Task.Run(()=>{for(int i=0;i<1000;i++){lock(gate){count++;}}})));
+Console.WriteLine(count);
+ }
+}

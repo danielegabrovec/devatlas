@@ -1,0 +1,4 @@
+const metadata = new WeakMap();
+const item = { id: 7 };
+metadata.set(item, { visited: true });
+console.log(metadata.get(item).visited, Object.keys(item));

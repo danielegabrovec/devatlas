@@ -1,0 +1,94 @@
+{
+  "id": "qt-cpp-inizializzazione-ambiente",
+  "title": "Inizializzare Qt C++ con MSVC e CMake",
+  "summary": "Selezionare un kit Qt compatibile con il compilatore e avviare una finestra Widgets da un progetto CMake completo.",
+  "stack": "qt-cpp",
+  "group": "Desktop e GUI",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows"
+  ],
+  "ide": [
+    "VS Code",
+    "Visual Studio"
+  ],
+  "versions": "C++17; Qt 6.10–6.12; CMake 3.24+",
+  "prerequisites": "Qt 6.10 o 6.12 desktop con compilatore coerente (MSVC2022 x64 su Windows), CMake e Ninja. Aprire il terminale Qt/MSVC già configurato.",
+  "tags": [
+    "Qt6",
+    "C++",
+    "MSVC",
+    "CMake",
+    "initialize",
+    "windeployqt"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.cpp",
+      "language": "cpp",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "035a5d00787d7418f3733ce685cee8aae21225257f72c11eebe284a4c6dd5e34"
+    },
+    {
+      "id": "file-1",
+      "path": "CMakeLists.txt",
+      "language": "cmake",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "fc04334f22deb1ece96c52775bfac5b110b81dfc34980f2d301727430690e53a"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "f5d03a7a20bf692f68e62ca8b22555de368c241e34296fca881b60655138000e"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "project_name",
+      "label": "Nome dell'applicazione",
+      "type": "identifier",
+      "default": "RecipeDesktop",
+      "required": true
+    },
+    {
+      "name": "qt_dir",
+      "label": "Cartella Qt MSVC x64",
+      "type": "path",
+      "default": "C:/Qt/6.12.0/msvc2022_64",
+      "required": true
+    }
+  ],
+  "related": [
+    "qt-cpp-debug-build-distribuzione",
+    "qt-cpp-busy",
+    "qt-cpp-color"
+  ],
+  "expected": "CMake trova Qt Widgets, costruisce {{project_name}} e apre una finestra il cui contatore aumenta al clic.",
+  "errors": [
+    "Qt6Config.cmake non trovato: indicare qt_dir alla directory del kit, non alla cartella bin.",
+    "LNK2019 o architettura incompatibile: usare un kit Qt MSVC x64 e Developer PowerShell x64 coerenti; MinGW richiede una configurazione diversa."
+  ],
+  "sources": [
+    "https://doc.qt.io/qt-6/cmake-get-started.html",
+    "https://doc.qt.io/qt-6/windows-deployment.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Controlli su configurazioni JSON/XML, AST Python, node --check e parser PowerShell secondo i file presenti. Installazioni, sessioni debugger e build distribuibili non eseguite. Report: reports/desktop-lifecycle-qa.json."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

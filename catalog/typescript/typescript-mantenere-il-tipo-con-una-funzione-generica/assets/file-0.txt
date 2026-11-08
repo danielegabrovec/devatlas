@@ -1,0 +1,4 @@
+function identity<T>(value: T): T { return value; }
+const value = identity({ id: 7 });
+console.log(value.id);
+export {};

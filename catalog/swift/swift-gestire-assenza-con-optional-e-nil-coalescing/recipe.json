@@ -1,0 +1,71 @@
+{
+  "id": "swift-gestire-assenza-con-optional-e-nil-coalescing",
+  "title": "Gestire assenza con Optional e nil coalescing",
+  "summary": "Legge un valore opzionale senza forzare l'unwrapping.",
+  "stack": "swift",
+  "group": "Linguaggi",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "Xcode",
+    "VS Code"
+  ],
+  "versions": "Swift6.4; Package.swift tools-version6.0, Linux/macOS",
+  "prerequisites": "Toolchain Swift6.4 su Linux o macOS. Per SwiftUI/iOS occorrono macOS, Xcode e un target Apple. Non sono attestati esecuzioni o compilazioni Swift su Windows.",
+  "tags": [
+    "optional",
+    "nil",
+    "coalescing"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.swift",
+      "language": "swift",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "e5cd21f0a6a194c485dc85472ba75e98307dc17f8f1f667915cf06bb25b27033"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "bash",
+      "role": "command",
+      "shell": "Bash",
+      "os": "Linux/macOS",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "d8fc89c18fa66be9cc6a7339c1d47da4b05a944894fb741751e25ea8f2f0b8f5"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "swift-scartare-conversioni-fallite-con-compactmap",
+    "swift-analizzare-un-istante-iso8601-utc",
+    "swift-calcolare-differenze-tra-set"
+  ],
+  "expected": "Nome assente; nessuna eccezione da force unwrap.",
+  "errors": [
+    "Value of optional type must be unwrapped: usa optional binding, ?. oppure ?? prima di richiamare metodi non opzionali.",
+    "Unexpectedly found nil: sostituire i controlli con force unwrap non risolve l'assenza del dato."
+  ],
+  "sources": [
+    "https://www.swift.org/documentation/",
+    "https://www.swift.org/install/linux/",
+    "https://www.swift.org/install/macos/",
+    "https://www.swift.org/blog/swift-6.4-released/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

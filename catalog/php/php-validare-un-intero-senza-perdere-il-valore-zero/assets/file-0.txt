@@ -1,0 +1,6 @@
+<?php
+declare(strict_types=1);
+foreach (['0','42','abc'] as $text) {
+ $value=filter_var($text,FILTER_VALIDATE_INT);
+ echo $value===false ? "non valido\n" : "$value\n";
+}

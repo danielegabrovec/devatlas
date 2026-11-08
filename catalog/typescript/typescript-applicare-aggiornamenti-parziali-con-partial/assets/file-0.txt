@@ -1,0 +1,4 @@
+interface User { name: string; active: boolean }
+function patch(user: User, changes: Partial<User>): User { return {...user, ...changes}; }
+console.log(patch({name:"Ada",active:false}, {active:true}));
+export {};

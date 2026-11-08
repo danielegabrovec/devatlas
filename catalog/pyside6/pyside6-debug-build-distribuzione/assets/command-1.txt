@@ -1,0 +1,3 @@
+.\.venv\Scripts\pyside6-deploy.exe main.py --init
+.\.venv\Scripts\pyside6-deploy.exe --dry-run --mode standalone
+.\.venv\Scripts\pyside6-deploy.exe --mode standalone

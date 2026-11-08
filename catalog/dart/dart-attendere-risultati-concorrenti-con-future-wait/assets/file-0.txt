@@ -1,0 +1,4 @@
+Future<void> main() async {
+final values=await Future.wait([Future.value(2),Future.value(3)]);
+print(values);
+}

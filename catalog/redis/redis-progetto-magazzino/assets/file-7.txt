@@ -1,0 +1,2 @@
+# Magazzino redis
+Richiede un server didattico già avviato sul loopback e porta distinta. npm install, npm test, npm run seed, npm run reserve -- keyboard 2. Il seed usa soltanto inserimento se assente e non ripristina automaticamente le scorte già consumate. Test del modello e adattatore simulato non equivalgono a test sul server.

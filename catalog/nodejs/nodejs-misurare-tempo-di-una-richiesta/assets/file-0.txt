@@ -1,0 +1,1 @@
+import{createServer}from'node:http';createServer((q,r)=>{const start=performance.now();r.on('finish',()=>console.log(q.method,q.url,performance.now()-start));r.end('ok')}).listen(3000,'127.0.0.1');

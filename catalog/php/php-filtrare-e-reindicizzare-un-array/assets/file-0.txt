@@ -1,0 +1,5 @@
+<?php
+declare(strict_types=1);
+$values=[1,2,3,4];
+$even=array_values(array_filter($values,static fn(int $value):bool=>$value%2===0));
+echo json_encode($even,JSON_THROW_ON_ERROR),PHP_EOL;

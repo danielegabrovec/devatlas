@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdint.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <errno.h>
+#include <limits.h>
+
+
+int main(void){
+size_t count=5;if(count>SIZE_MAX/sizeof(int))return 1;
+int *values=malloc(count*sizeof *values);if(!values)return 1;
+for(size_t i=0;i<count;i++)values[i]=(int)i;
+printf("%d\n",values[4]);free(values);
+return 0;
+}

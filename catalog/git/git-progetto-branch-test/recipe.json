@@ -1,0 +1,76 @@
+{
+  "id": "git-progetto-branch-test",
+  "title": "Progetto completo: branch, test e merge locali",
+  "summary": "Un laboratorio Git autonomo crea un repository isolato, implementa una funzione, esegue un controllo e integra il ramo.",
+  "stack": "git",
+  "group": "Strumenti",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Git 2.45+",
+  "prerequisites": "Git 2.45+ e PowerShell 7. La ricetta crea un repository nuovo nella cartella temporanea; non eseguirla dentro un repository di produzione per risparmiare il setup.",
+  "tags": [
+    "project",
+    "git",
+    "branch",
+    "merge",
+    "test"
+  ],
+  "project": true,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "lab.ps1",
+      "language": "powershell",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "b2c3e09f5a8052678d1091851d45b3884e899f8d6642347d556f303eba5f389c"
+    },
+    {
+      "id": "file-1",
+      "path": "README.md",
+      "language": "markdown",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "10deb31b69d824e6f78a4120ea7edef26252c49120b640561fff4ecdd91b91bc"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "57f447467ab1401324619f0337cfc49860e8d716628ca3c8354282b88f02da86"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "git-unire-un-branch-con-merge-esplicito",
+    "git-creare-e-selezionare-un-branch",
+    "git-elencare-branch-con-ultimo-commit"
+  ],
+  "expected": "La cronologia contiene commit iniziale, feature, merge e tag v0.1.0.",
+  "errors": [
+    "Git non trovato nel PATH.",
+    "PowerShell non può eseguire script se la politica locale lo impedisce: usare un ambiente dove gli script locali sono consentiti."
+  ],
+  "sources": [
+    "https://git-scm.com/docs"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "details": "Controlli statici sui sorgenti: AST Python, parser PowerShell/Bash dove disponibili, node --check per JavaScript, JSON e XML secondo i file presenti. Nessuna compilazione C#/XAML/C++ né esecuzione Docker/CI/packaging attestata. Report: reports/desktop-tools-qa.json.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

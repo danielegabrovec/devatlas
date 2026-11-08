@@ -1,0 +1,102 @@
+{
+  "id": "c-progetto-completo-statistiche-su-misure-c",
+  "title": "Progetto completo statistiche su misure C",
+  "summary": "Separa API, implementazione, programma e test di una funzione che calcola min/max/media senza dipendenze.",
+  "stack": "c",
+  "group": "Linguaggi",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "ISO C17, GCC 11+",
+  "prerequisites": "Compilatore ISO C17 (GCC/Clang). Su Windows usare una toolchain GCC UCRT64 nel PATH. Nessuna estensione POSIX necessaria agli esempi.",
+  "tags": [
+    "project",
+    "header",
+    "library",
+    "statistics",
+    "test"
+  ],
+  "project": true,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.c",
+      "language": "c",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "f08c5d8c881742eceb9d07bbc24856b5ee3f86610a2b7fac7e4c74797863dd34"
+    },
+    {
+      "id": "file-1",
+      "path": "stats.h",
+      "language": "cpp",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "3c05ee44ba52644fbd69a24d3bf1a950f47ab40e28717588ec37cda6067603d7"
+    },
+    {
+      "id": "file-2",
+      "path": "stats.c",
+      "language": "c",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "3cef4955a97b14a9f5884f7a7179ead63c3bdf59f4691d39965353c7a99fd885"
+    },
+    {
+      "id": "file-3",
+      "path": "test.c",
+      "language": "c",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "68de0bb636950a58b1e6ba17f92f32ecf592e566f0c0629a6a7ccd3e2af06f29"
+    },
+    {
+      "id": "file-4",
+      "path": "README.md",
+      "language": "markdown",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "1557387d6b3f970e1723110d0acf20154058718fe463c960c61d0c63d351c3f0"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "fb0976dcdbcd6b16d4f501c8dd6cba190ea24b7f2e0c73f095b174b350150f19"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "c-workflow-c-toolchain",
+    "c-workflow-c-gdb",
+    "c-workflow-c-library-test"
+  ],
+  "expected": "2 contratti verificati; min 2.0, max 9.0, media 5.0.",
+  "errors": [
+    "Comando non trovato: installare la toolchain e riaprire il terminale."
+  ],
+  "sources": [
+    "https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf",
+    "https://gcc.gnu.org/onlinedocs/gcc/C-Dialect-Options.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "details": "Eseguito su Windows x64 il 29/10/2026. Ambiente: GCC16.2.0 MSYS2 UCRT64, ISO C17. Sorgenti compilati/controllati e programmi eseguiti; per i progetti sono stati eseguiti anche i test inclusi. Report: reports/languages-source-validation.json e reports/languages-runtime-validation.json. Linux e macOS non eseguiti.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

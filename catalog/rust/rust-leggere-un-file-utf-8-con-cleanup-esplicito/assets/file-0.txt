@@ -1,0 +1,4 @@
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+let stamp=std::time::SystemTime::now().duration_since(std::time::UNIX_EPOCH)?.as_nanos();let path=std::env::temp_dir().join(format!("catalog-rust-{}-{}.txt",std::process::id(),stamp));std::fs::write(&path,"Città")?;let result=std::fs::read_to_string(&path);std::fs::remove_file(&path)?;println!("{}",result?);
+Ok(())
+}

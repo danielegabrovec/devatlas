@@ -1,0 +1,2 @@
+from notes.models import Note
+print(Note.objects.filter(priority__gte=2).query)

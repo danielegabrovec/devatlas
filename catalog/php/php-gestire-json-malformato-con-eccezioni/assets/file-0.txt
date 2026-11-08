@@ -1,0 +1,6 @@
+<?php
+declare(strict_types=1);
+try {
+ $record=json_decode('{"name":"Città"}',true,512,JSON_THROW_ON_ERROR);
+ echo json_encode($record,JSON_UNESCAPED_UNICODE|JSON_THROW_ON_ERROR),PHP_EOL;
+} catch(JsonException $error){fwrite(STDERR,$error->getMessage().PHP_EOL);exit(1);}

@@ -1,0 +1,2 @@
+# Contatore locale
+Avvia con Compose e apri localhost:8089. Redis non espone porte host. Il volume visits conserva il conteggio dopo compose down.

@@ -1,0 +1,87 @@
+{
+  "id": "html-css-offrire-un-link-salta-contenuto",
+  "title": "Offrire un link salta contenuto",
+  "summary": "Offrire un link salta contenuto. Regole CSS dimostrate: display: block; position: absolute.",
+  "stack": "html-css",
+  "group": "Web e backend",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "HTML Living Standard; CSS moderno; Chromium120+",
+  "prerequisites": "Browser moderno. Aprire index.html dalla cartella esportata. Per testare API soggette a secure context servire da localhost. Nessuna libreria esterna.",
+  "tags": [
+    "html-css",
+    "example",
+    "offrire",
+    "un",
+    "link",
+    "salta"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "index.html",
+      "language": "html",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "b2f078ac71e0721fb05c6366d1467a41218a6b4009dab98a883cd36230530718"
+    },
+    {
+      "id": "file-1",
+      "path": "style.css",
+      "language": "css",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "a864fc8a12badb37085cf5a5428fcfdc1e7cf6a32584b87d85bcf4710f7a7363"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "fdac105a58844c6c5521c56037e6af7465195e1460f09ee2b9741d77b22aa1de"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "html-css-affiancare-sidebar-e-contenuto-con-grid",
+    "html-css-aprire-link-esterno-con-relazione-sicura",
+    "html-css-centrare-contenuto-in-entrambe-le-direzioni"
+  ],
+  "expected": "La pagina visualizza il componente indicato; le regole CSS sono ispezionabili negli strumenti sviluppatore del browser.",
+  "errors": [
+    "Comando non trovato: installare la toolchain elencata nei prerequisiti.",
+    "Dipendenza mancante: eseguire l'installazione nella radice esportata, senza cambiare le versioni dichiarate."
+  ],
+  "sources": [
+    "https://html.spec.whatwg.org/",
+    "https://developer.mozilla.org/en-US/docs/Web/CSS"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "documentato",
+    "details": "Esempio originale revisionato nel catalogo; esecuzione non attestata.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md",
+  "editorial": {
+    "version": 1,
+    "method": "Fatti ricavati staticamente dai file dell’esempio",
+    "facts": [
+      "Regole CSS dimostrate: display: block; position: absolute."
+    ]
+  }
+}

@@ -1,0 +1,1 @@
+SELECT name,IFNULL(city,'Non indicata') FROM people;

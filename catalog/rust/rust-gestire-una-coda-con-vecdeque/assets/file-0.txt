@@ -1,0 +1,4 @@
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+let mut queue=std::collections::VecDeque::new();queue.push_back("prima");queue.push_back("seconda");while let Some(item)=queue.pop_front(){println!("{}",item);}
+Ok(())
+}

@@ -1,0 +1,1 @@
+const u=new URL('https://example.test/?tag=sql&tag=python');console.log(u.searchParams.getAll('tag'));

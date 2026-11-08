@@ -1,0 +1,11 @@
+#include <QtWidgets>
+#include <QtCore>
+#include <QtGui>
+
+int main(int argc, char **argv) {
+ QApplication app(argc,argv);
+ QWidget window; window.resize(720,480);
+ auto *layout=new QVBoxLayout(&window);
+ auto *edit=new QPlainTextEdit("Qt crea finestre. Qt gestisce eventi."); auto *b=new QPushButton("Trova Qt"); QObject::connect(b,&QPushButton::clicked,edit,[edit]{if(!edit->find("Qt")){edit->moveCursor(QTextCursor::Start);edit->find("Qt");}}); layout->addWidget(b); layout->addWidget(edit);
+ window.show(); return app.exec();
+}

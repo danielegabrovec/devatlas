@@ -1,0 +1,5 @@
+<script>
+import {onMount,tick,setContext,getContext} from 'svelte';
+let text=$state('<b>Resta testo</b>');
+</script>
+<main><textarea bind:value={text} aria-label="Testo"></textarea><pre>{text}</pre></main>

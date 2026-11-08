@@ -1,0 +1,110 @@
+{
+  "id": "nextjs-inizializzare-ambiente-e-progetto-nextjs",
+  "title": "Inizializzare ambiente e progetto nextjs",
+  "summary": "La radice app contiene layout globale e pagina iniziale. Il layout genera html/body; il componente pagina resta server finché non serve interattività. Dopo npm install avvia su localhost3000. Mantieni package.json e il lock generato insieme per reinstallazioni ripetibili.",
+  "stack": "nextjs",
+  "group": "Web e backend",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Next16.4.3 App Router; React19.3; Node22.12+",
+  "prerequisites": "Node22.12+, npm e browser. Esempi fetch remoti richiedono rete. App su localhost3000; dataset in memoria solo dimostrativi.",
+  "tags": [
+    "nextjs",
+    "initialize",
+    "bootstrap",
+    "setup",
+    "environment",
+    "configuration"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "package.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "b27b29cdabfae2410cd930c91108180351cabb2dec45d64df2e2e1c395f4bc53"
+    },
+    {
+      "id": "file-1",
+      "path": "app/layout.js",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "d21e686f7157ebd71b8eb35a56077f4420d276a946d65aa41cf3b16d18ebe08c"
+    },
+    {
+      "id": "file-2",
+      "path": "app/page.js",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "16c52961932a9fc3c6edd042df5e6942c674d6b0d21491ae4c46400d4fe3a69e"
+    },
+    {
+      "id": "file-3",
+      "path": "app/globals.css",
+      "language": "css",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "ab78ab3385290b548318351011a467a5f61fd8151a1d7484dfc74ae055205494"
+    },
+    {
+      "id": "file-4",
+      "path": ".nvmrc",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "68ca3fba3b7e864770cb61aeb306d4bd4354b68ab4dd38450860c5d823e42a53"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "6b00f25e3b1f6714ef0c0dd6cf2fff426fa346fd7fbd2209291f9f22d52c31b9"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "nextjs-progetto-api-spese-con-validazione-e-riepilogo",
+    "nextjs-progetto-dashboard-server-con-ricerca-e-pagina",
+    "nextjs-progetto-mini-blog-statico-con-metadata"
+  ],
+  "expected": "L’applicazione si avvia localmente con il file di configurazione fornito. La versione della toolchain è verificabile dai comandi iniziali.",
+  "errors": [
+    "Comando non trovato: installare la toolchain elencata nei prerequisiti.",
+    "Dipendenza mancante: eseguire l'installazione nella radice esportata, senza cambiare le versioni dichiarate."
+  ],
+  "sources": [
+    "https://nextjs.org/docs/app"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "compilato",
+    "date": "2026-10-29",
+    "details": "Verifiche lifecycle su Windows: static-files, next-build. Configurazione debugger controllata come JSON; sessione F5 e distribuzione remota non attestate.",
+    "files_sha256": {
+      "package.json": "b27b29cdabfae2410cd930c91108180351cabb2dec45d64df2e2e1c395f4bc53",
+      "app/layout.js": "d21e686f7157ebd71b8eb35a56077f4420d276a946d65aa41cf3b16d18ebe08c",
+      "app/page.js": "16c52961932a9fc3c6edd042df5e6942c674d6b0d21491ae4c46400d4fe3a69e",
+      "app/globals.css": "ab78ab3385290b548318351011a467a5f61fd8151a1d7484dfc74ae055205494",
+      ".nvmrc": "68ca3fba3b7e864770cb61aeb306d4bd4354b68ab4dd38450860c5d823e42a53"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

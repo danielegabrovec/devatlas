@@ -1,0 +1,3 @@
+import 'dart:io';
+import '../lib/ledger.dart';
+Future<void> main(List<String> args)async{try{final path=args.isEmpty?'data/expenses.json':args.first;final rows=parseExpenses(await File(path).readAsString());final result=totals(rows);for(final key in result.keys.toList()..sort()){stdout.writeln('$key: ${result[key]}');}}catch(error){stderr.writeln('Errore: $error');exitCode=1;}}

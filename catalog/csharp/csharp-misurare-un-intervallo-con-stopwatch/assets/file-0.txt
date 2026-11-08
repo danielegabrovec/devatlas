@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Collections.Concurrent;
+using System.Diagnostics;
+using System.Globalization;
+using System.IO;
+using System.IO.Compression;
+using System.Linq;
+using System.Text;
+using System.Text.Json;
+using System.Text.RegularExpressions;
+using System.Threading;
+using System.Threading.Channels;
+using System.Threading.Tasks;
+using System.Xml.Linq;
+
+public static class Program {
+ public static async Task Main(string[] args) {
+var timer=Stopwatch.StartNew();long sum=0;for(int i=0;i<10000;i++)sum+=i;timer.Stop();
+Console.WriteLine($"{sum} {timer.Elapsed.TotalMilliseconds:F3}ms");
+ }
+}

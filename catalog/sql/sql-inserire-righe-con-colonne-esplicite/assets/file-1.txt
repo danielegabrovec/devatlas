@@ -1,0 +1,1 @@
+INSERT INTO people(id,name,city,age,email) VALUES(5,'Barbara','Torino',39,'barbara@example.test'); SELECT name FROM people WHERE id=5;

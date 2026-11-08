@@ -1,0 +1,4 @@
+fun main() {
+val values = generateSequence(1) { it + 1 }.filter { it % 2 == 0 }.take(3).toList()
+println(values)
+}

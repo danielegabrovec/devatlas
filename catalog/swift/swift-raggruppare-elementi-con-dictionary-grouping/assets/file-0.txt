@@ -1,0 +1,5 @@
+import Foundation
+
+let rows=[("A",2),("B",4),("A",3)]
+let grouped=Dictionary(grouping:rows,by:{$0.0})
+print(grouped.mapValues{$0.reduce(0){$0+$1.1}})

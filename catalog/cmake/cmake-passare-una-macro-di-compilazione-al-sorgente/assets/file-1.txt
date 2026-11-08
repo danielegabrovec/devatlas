@@ -1,0 +1,4 @@
+cmake_minimum_required(VERSION 3.24)
+project(RecipeBuild VERSION 1.2.0 LANGUAGES CXX)
+add_executable(recipe main.cpp)
+target_compile_definitions(recipe PRIVATE RECIPE_MODE=1)

@@ -1,0 +1,71 @@
+{
+  "id": "swift-ordinare-record-con-chiavi-multiple",
+  "title": "Ordinare record con chiavi multiple",
+  "summary": "Usa una tupla di stringhe come criterio lessicografico senza alterare la sorgente.",
+  "stack": "swift",
+  "group": "Linguaggi",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "Xcode",
+    "VS Code"
+  ],
+  "versions": "Swift6.4; Package.swift tools-version6.0, Linux/macOS",
+  "prerequisites": "Toolchain Swift6.4 su Linux o macOS. Per SwiftUI/iOS occorrono macOS, Xcode e un target Apple. Non sono attestati esecuzioni o compilazioni Swift su Windows.",
+  "tags": [
+    "sorted",
+    "tuple",
+    "comparison"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.swift",
+      "language": "swift",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "67da514103d3999a2c86705dd2b3ee11fec0366574afdfa72d80a7f935c126ae"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "bash",
+      "role": "command",
+      "shell": "Bash",
+      "os": "Linux/macOS",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "d8fc89c18fa66be9cc6a7339c1d47da4b05a944894fb741751e25ea8f2f0b8f5"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "swift-analizzare-un-istante-iso8601-utc",
+    "swift-calcolare-differenze-tra-set",
+    "swift-codificare-e-decodificare-json-con-codable"
+  ],
+  "expected": "[Ada, Luca]",
+  "errors": [
+    "La sorgente resta invariata: sorted produce una collezione nuova.",
+    "Ordine instabile/incoerente: il comparatore deve applicare le chiavi nella stessa direzione e rispettare un ordinamento coerente."
+  ],
+  "sources": [
+    "https://www.swift.org/documentation/",
+    "https://www.swift.org/install/linux/",
+    "https://www.swift.org/install/macos/",
+    "https://www.swift.org/blog/swift-6.4-released/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

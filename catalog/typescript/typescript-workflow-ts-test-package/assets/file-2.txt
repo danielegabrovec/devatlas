@@ -1,0 +1,1 @@
+export function area(width:number,height:number):number{if(width<0||height<0)throw new RangeError('Lati negativi');return width*height;}

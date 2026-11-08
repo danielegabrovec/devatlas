@@ -1,0 +1,108 @@
+{
+  "id": "nextjs-gestire-query-multivalore-lato-server",
+  "title": "Gestire query multivalore lato server",
+  "summary": "Gestire query multivalore lato server. File della funzionalità: app/page.js.",
+  "stack": "nextjs",
+  "group": "Web e backend",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Next16.4.3 App Router; React19.3; Node22.12+",
+  "prerequisites": "Node22.12+, npm e browser. Esempi fetch remoti richiedono rete. App su localhost3000; dataset in memoria solo dimostrativi.",
+  "tags": [
+    "nextjs",
+    "example",
+    "gestire",
+    "query",
+    "multivalore",
+    "lato"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "package.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "b27b29cdabfae2410cd930c91108180351cabb2dec45d64df2e2e1c395f4bc53"
+    },
+    {
+      "id": "file-1",
+      "path": "app/layout.js",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "d21e686f7157ebd71b8eb35a56077f4420d276a946d65aa41cf3b16d18ebe08c"
+    },
+    {
+      "id": "file-2",
+      "path": "app/page.js",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "32c512d2314b47a05165082ffe0f51ce8955590a4b66f8257307e013c5fca7cd"
+    },
+    {
+      "id": "file-3",
+      "path": "app/globals.css",
+      "language": "css",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "ab78ab3385290b548318351011a467a5f61fd8151a1d7484dfc74ae055205494"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "1965fe5d479505f1e80638083dd92bfa86389a60f6f77693b578249ec5cf4668"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "nextjs-progetto-dashboard-server-con-ricerca-e-pagina",
+    "nextjs-aggiornare-dati-server-con-router-refresh",
+    "nextjs-aggiornare-query-preservando-parametri"
+  ],
+  "expected": "Il risultato mostra il comportamento descritto nel titolo; i dati dimostrativi sono inclusi nel sorgente.",
+  "errors": [
+    "Comando non trovato: installare la toolchain elencata nei prerequisiti.",
+    "Dipendenza mancante: eseguire l'installazione nella radice esportata, senza cambiare le versioni dichiarate."
+  ],
+  "sources": [
+    "https://nextjs.org/docs/app"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Sintassi dei file Python o JavaScript/JSX e JSON controllata sulle fonti correnti; esecuzione di questa singola ricetta non attestata.",
+    "files_sha256": {
+      "package.json": "b27b29cdabfae2410cd930c91108180351cabb2dec45d64df2e2e1c395f4bc53",
+      "app/layout.js": "d21e686f7157ebd71b8eb35a56077f4420d276a946d65aa41cf3b16d18ebe08c",
+      "app/page.js": "32c512d2314b47a05165082ffe0f51ce8955590a4b66f8257307e013c5fca7cd",
+      "app/globals.css": "ab78ab3385290b548318351011a467a5f61fd8151a1d7484dfc74ae055205494"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md",
+  "editorial": {
+    "version": 1,
+    "method": "Fatti ricavati staticamente dai file dell’esempio",
+    "facts": [
+      "File della funzionalità: app/page.js."
+    ]
+  }
+}

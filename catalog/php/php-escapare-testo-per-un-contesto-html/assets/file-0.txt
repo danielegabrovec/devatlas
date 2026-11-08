@@ -1,0 +1,4 @@
+<?php
+declare(strict_types=1);
+$input='<script>alert("demo")</script>';
+echo htmlspecialchars($input,ENT_QUOTES|ENT_SUBSTITUTE,'UTF-8'),PHP_EOL;

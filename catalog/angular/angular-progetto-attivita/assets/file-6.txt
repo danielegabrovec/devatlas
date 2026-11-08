@@ -1,0 +1,7 @@
+import {Component,signal,computed,effect,inject,DestroyRef,ChangeDetectionStrategy} from '@angular/core';
+import {CommonModule} from '@angular/common';import {FormsModule} from '@angular/forms';
+import {Task,addTask,completed} from './model.mjs';
+@Component({selector:'app-root',standalone:true,imports:[CommonModule,FormsModule],changeDetection:ChangeDetectionStrategy.OnPush,template:`<main><h1>Attività</h1><form (ngSubmit)="add()"><input name="title" [(ngModel)]="title" aria-label="Nuova attività"><button>Aggiungi</button></form><p class="error" role="status">{{error()}}</p><ul>@for(row of rows();track row.id){<li><label><input type="checkbox" [checked]="row.done" (change)="toggle(row.id)">{{row.title}}</label></li>}</ul><p>Completate: {{done()}}</p></main>`})
+export class AppComponent{
+rows=signal<Task[]>([]);title='';error=signal('');done=computed(()=>completed(this.rows()));add(){try{this.rows.set(addTask(this.rows(),this.title));this.title='';this.error.set('');}catch(e){this.error.set(e instanceof Error?e.message:String(e));}}toggle(id:number){this.rows.update(rows=>rows.map(row=>row.id===id?{...row,done:!row.done}:row));}
+}

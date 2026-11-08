@@ -1,0 +1,9 @@
+import com.sun.net.httpserver.HttpServer
+import java.net.InetSocketAddress
+
+fun main() {
+val server = HttpServer.create(InetSocketAddress("127.0.0.1",8085),0)
+server.createContext("/health") { exchange -> val data = "ok".toByteArray(); exchange.sendResponseHeaders(200,data.size.toLong()); exchange.responseBody.use { it.write(data) } }
+server.start(); println("http://127.0.0.1:8085/health - premi Invio per terminare")
+try { readlnOrNull() } finally { server.stop(0) }
+}

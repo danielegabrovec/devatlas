@@ -1,0 +1,1 @@
+SELECT id,total,DENSE_RANK() OVER(ORDER BY total DESC) AS rango FROM orders;

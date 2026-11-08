@@ -1,0 +1,3 @@
+const source = [1, 2];
+const copy = [...source, 3];
+console.log(source, copy);

@@ -1,0 +1,119 @@
+{
+  "id": "fastapi-progetto-api-attivita-con-repository-sqlite",
+  "title": "Progetto: API attività con repository SQLite",
+  "summary": "POST/tasks crea; GET/tasks elenca; PATCH/tasks/id completa. SQLite persiste dopo riavvio; il test usa una cartella temporanea.",
+  "stack": "fastapi",
+  "group": "Web e backend",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "FastAPI0.115.12; Pydantic2.11.7; Python3.11+",
+  "prerequisites": "Python3.11+ con venv; porta8000 libera. Dipendenze in requirements.txt; /docs permette di provare le rotte. Database e autenticazione di produzione non sono inclusi negli esempi in memoria.",
+  "tags": [
+    "fastapi",
+    "example",
+    "progetto:",
+    "api",
+    "attività",
+    "con"
+  ],
+  "project": true,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "repository.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "6ff81dc4a944d59c5b3c6e49d252212c97990b4708a47f739ef2c5b535959195"
+    },
+    {
+      "id": "file-1",
+      "path": "app.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "757596ac8cf9f86d5bbb8fac0cb3c91d6d44a7e83c6044e84290923b42616e5e"
+    },
+    {
+      "id": "file-2",
+      "path": "test_app.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "bc411e91da3890081aa10cedb66a2e95da2c3751e25197b5d895b549f52ea4a8"
+    },
+    {
+      "id": "file-3",
+      "path": "requirements.txt",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "65739c3d8a1fb7a7b9789cb1cbac8f6de99f1222bbdaf6453bb604f722b13fdf"
+    },
+    {
+      "id": "file-4",
+      "path": "README.md",
+      "language": "markdown",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "54d88410d75efb85599c5e17f12465f64ca7b53ab23af1412df7c22f1fe8807d"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "0f2939768ea0875044532f9c5c4a205b7c3604f20c6de4ae27d0e86f7f97485a"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "port",
+      "label": "Porta locale",
+      "type": "port",
+      "default": 8000,
+      "required": true
+    }
+  ],
+  "related": [
+    "fastapi-progetto-api-preventivi-con-validazione-e-test",
+    "fastapi-eseguire-attivita-breve-dopo-la-risposta",
+    "fastapi-organizzare-api-tramite-apirouter"
+  ],
+  "expected": "POST/tasks crea; GET/tasks elenca; PATCH/tasks/id completa. SQLite persiste dopo riavvio; il test usa una cartella temporanea.",
+  "errors": [
+    "Comando non trovato: installare la toolchain elencata nei prerequisiti.",
+    "Dipendenza mancante: eseguire l'installazione nella radice esportata, senza cambiare le versioni dichiarate."
+  ],
+  "sources": [
+    "https://fastapi.tiangolo.com/",
+    "https://docs.pydantic.dev/latest/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "date": "2026-10-29",
+    "details": "TestClient/pytest superati su FastAPI0.115.12,Pydantic2.11.7,Httpx0.28.1 isolati nella cache, Windows; SQLite temporaneo nei test del repository.",
+    "files_sha256": {
+      "repository.py": "6ff81dc4a944d59c5b3c6e49d252212c97990b4708a47f739ef2c5b535959195",
+      "app.py": "757596ac8cf9f86d5bbb8fac0cb3c91d6d44a7e83c6044e84290923b42616e5e",
+      "test_app.py": "bc411e91da3890081aa10cedb66a2e95da2c3751e25197b5d895b549f52ea4a8",
+      "requirements.txt": "65739c3d8a1fb7a7b9789cb1cbac8f6de99f1222bbdaf6453bb604f722b13fdf",
+      "README.md": "54d88410d75efb85599c5e17f12465f64ca7b53ab23af1412df7c22f1fe8807d"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

@@ -1,0 +1,5 @@
+Future<void> main() async {
+final point=(3,4);
+final (x,y)=point;
+print(x*x+y*y);
+}

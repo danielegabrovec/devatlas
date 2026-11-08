@@ -1,0 +1,7 @@
+async function traced<T>(action:()=>Promise<T>):Promise<T> {
+  console.log("inizio");
+  try { return await action(); } finally { console.log("fine"); }
+}
+const result=await traced(async()=>({id:7}));
+console.log(result.id);
+export {};

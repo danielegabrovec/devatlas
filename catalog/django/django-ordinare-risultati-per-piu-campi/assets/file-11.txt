@@ -1,0 +1,2 @@
+from notes.models import Note
+print(list(Note.objects.order_by('-priority','id').values_list('title',flat=True)))

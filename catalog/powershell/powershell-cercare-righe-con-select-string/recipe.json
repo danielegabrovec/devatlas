@@ -1,0 +1,66 @@
+{
+  "id": "powershell-cercare-righe-con-select-string",
+  "title": "Cercare righe con Select-String",
+  "summary": "Estrarre numero di riga e contenuto corrispondente a un pattern.",
+  "stack": "powershell",
+  "group": "Strumenti",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "PowerShell 7.4+",
+  "prerequisites": "PowerShell 7.4 o successivo (pwsh), non Windows PowerShell 5.1.",
+  "tags": [
+    "powershell",
+    "cercare-righe-con-select-string",
+    "workflow"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "example.ps1",
+      "language": "powershell",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "e1de80156dd5a96ebab70ae4530de926339a33017ab4bd92f87a3bd0a943f0a2"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "81aad1821298699efaf15c56f7bf9323fd4197932372431ecdb7764f88170265"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "powershell-proiettare-proprieta-con-select-object",
+    "powershell-analizzare-un-documento-xml-senza-stringhe-concatenate",
+    "powershell-avviare-e-raccogliere-un-job-locale"
+  ],
+  "expected": "Estrarre numero di riga e contenuto corrispondente a un pattern.",
+  "errors": [
+    "Comando non trovato: verificare la dipendenza e riaprire il terminale dopo l'installazione.",
+    "Accesso negato: scegliere una cartella di lavoro o temporanea scrivibile."
+  ],
+  "sources": [
+    "https://learn.microsoft.com/powershell/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "details": "Controlli statici sui sorgenti: AST Python, parser PowerShell/Bash dove disponibili, node --check per JavaScript, JSON e XML secondo i file presenti. Nessuna compilazione C#/XAML/C++ né esecuzione Docker/CI/packaging attestata. Report: reports/desktop-tools-qa.json.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

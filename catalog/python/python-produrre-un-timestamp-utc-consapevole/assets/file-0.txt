@@ -1,0 +1,4 @@
+from datetime import datetime, timezone
+now = datetime.now(timezone.utc)
+print(now.isoformat(timespec="seconds"))
+print(now.utcoffset().total_seconds())

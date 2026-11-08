@@ -1,0 +1,68 @@
+{
+  "id": "java-verificare-contratti-senza-dipendere-da-ea",
+  "title": "Verificare contratti senza dipendere da -ea",
+  "summary": "Usa verifiche esplicite quando i test devono essere attivi in ogni configurazione JVM.",
+  "stack": "java",
+  "group": "Linguaggi",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Java17+ senza feature preview",
+  "prerequisites": "JDK17+ nel PATH, comandi javac e java. Non basta un JRE; nessuna dipendenza Maven/Gradle necessaria.",
+  "tags": [
+    "testing",
+    "assertion",
+    "contract"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "Main.java",
+      "language": "java",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "a5506ff7022f12a1fed36eae8fc9e3514a7fae5ae498200f80346d6bdddf605e"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "c53ca3f42abd5e5a071c21404b8dd4d23c70870a0a107bae23c07e482ec12b6a"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "java-copiare-una-lista-senza-condividere-il-contenitore",
+    "java-progetto-completo-catalogo-libri-java",
+    "java-accumulare-conteggi-con-map-merge"
+  ],
+  "expected": "2 contratti verificati; assert Java richiederebbe -ea per essere eseguito.",
+  "errors": [
+    "Il nome della classe pubblica deve corrispondere a Main.java. Usare JDK17+ e non abilitare feature preview per questi esempi."
+  ],
+  "sources": [
+    "https://dev.java/learn/",
+    "https://docs.oracle.com/en/java/javase/17/docs/api/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "details": "Eseguito su Windows x64 il 29/10/2026. Ambiente: JDK25.0.4.1, compilazione --release17. Sorgenti compilati/controllati e programmi eseguiti; per i progetti sono stati eseguiti anche i test inclusi. Report: reports/languages-source-validation.json e reports/languages-runtime-validation.json. Linux e macOS non eseguiti.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

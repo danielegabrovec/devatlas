@@ -1,0 +1,87 @@
+{
+  "id": "html-css-conservare-proporzioni-di-anteprime",
+  "title": "Conservare proporzioni di anteprime",
+  "summary": "Conservare proporzioni di anteprime. Regole CSS dimostrate: display: block; aspect-ratio: 16/9; display: grid.",
+  "stack": "html-css",
+  "group": "Web e backend",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "HTML Living Standard; CSS moderno; Chromium120+",
+  "prerequisites": "Browser moderno. Aprire index.html dalla cartella esportata. Per testare API soggette a secure context servire da localhost. Nessuna libreria esterna.",
+  "tags": [
+    "html-css",
+    "example",
+    "conservare",
+    "proporzioni",
+    "di",
+    "anteprime"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "index.html",
+      "language": "html",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "00eda31f907ea44da51aef27cf4cf350ff8d5791e7864f131bb12d78aa29e883"
+    },
+    {
+      "id": "file-1",
+      "path": "style.css",
+      "language": "css",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "b47f0e64a27099d3dee69a3778a8001a3c9a45116e6b1f77309e2ca8b58bd3be"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "fdac105a58844c6c5521c56037e6af7465195e1460f09ee2b9741d77b22aa1de"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "html-css-progetto-biblioteca-responsive-con-filtri-locali",
+    "html-css-adattare-componenti-con-container-query",
+    "html-css-adattare-tema-a-prefers-color-scheme"
+  ],
+  "expected": "La pagina visualizza il componente indicato; le regole CSS sono ispezionabili negli strumenti sviluppatore del browser.",
+  "errors": [
+    "Comando non trovato: installare la toolchain elencata nei prerequisiti.",
+    "Dipendenza mancante: eseguire l'installazione nella radice esportata, senza cambiare le versioni dichiarate."
+  ],
+  "sources": [
+    "https://html.spec.whatwg.org/",
+    "https://developer.mozilla.org/en-US/docs/Web/CSS"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "documentato",
+    "details": "Esempio originale revisionato nel catalogo; esecuzione non attestata.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md",
+  "editorial": {
+    "version": 1,
+    "method": "Fatti ricavati staticamente dai file dell’esempio",
+    "facts": [
+      "Regole CSS dimostrate: display: block; aspect-ratio: 16/9; display: grid."
+    ]
+  }
+}

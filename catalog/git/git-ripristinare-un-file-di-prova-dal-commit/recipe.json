@@ -1,0 +1,66 @@
+{
+  "id": "git-ripristinare-un-file-di-prova-dal-commit",
+  "title": "Ripristinare un file di prova dal commit",
+  "summary": "Scartare consapevolmente soltanto la modifica del repository temporaneo.",
+  "stack": "git",
+  "group": "Strumenti",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Git 2.45+",
+  "prerequisites": "Git 2.45+ e PowerShell 7. La ricetta crea un repository nuovo nella cartella temporanea; non eseguirla dentro un repository di produzione per risparmiare il setup.",
+  "tags": [
+    "git",
+    "ripristinare-un-file-di-prova-dal-commit",
+    "workflow"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "example.ps1",
+      "language": "powershell",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "7fe2c0a9943273567e915681ab8272f06ef034f3934d88da32d7b8c05f5cd3a3"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "81aad1821298699efaf15c56f7bf9323fd4197932372431ecdb7764f88170265"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "git-accantonare-anche-file-non-tracciati",
+    "git-aggiungere-un-solo-file-all-indice",
+    "git-annullare-un-commit-con-revert"
+  ],
+  "expected": "Scartare consapevolmente soltanto la modifica del repository temporaneo.",
+  "errors": [
+    "Comando non trovato: verificare la dipendenza e riaprire il terminale dopo l'installazione.",
+    "Accesso negato: scegliere una cartella di lavoro o temporanea scrivibile."
+  ],
+  "sources": [
+    "https://git-scm.com/docs"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "details": "Controlli statici sui sorgenti: AST Python, parser PowerShell/Bash dove disponibili, node --check per JavaScript, JSON e XML secondo i file presenti. Nessuna compilazione C#/XAML/C++ né esecuzione Docker/CI/packaging attestata. Report: reports/desktop-tools-qa.json.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

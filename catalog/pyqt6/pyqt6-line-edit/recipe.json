@@ -1,0 +1,70 @@
+{
+  "id": "pyqt6-line-edit",
+  "title": "Leggere un campo di testo in tempo reale",
+  "summary": "Usare textChanged per aggiornare una breve anteprima.",
+  "stack": "pyqt6",
+  "group": "Desktop e GUI",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Python 3.13; PyQt6 6.11.x",
+  "prerequisites": "Python 3.13, ambiente virtuale dedicato e PyQt6==6.11.*. Non installare entrambi i binding nello stesso ambiente.",
+  "tags": [
+    "line-edit",
+    "Qt Widgets",
+    "signals",
+    "PyQt6"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "57b67504261707cc34261f7996d036978957a17bbaa37792a4b17224f7b19233"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "65b3fcfde11e4b565937a387dc27960bc5a81fd5e3a5dce6681fd3a937962212"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "pyqt6-clipboard",
+    "pyqt6-clipboard-read",
+    "pyqt6-completer"
+  ],
+  "expected": "Il conteggio segue inserimenti e cancellazioni.",
+  "errors": [
+    "ModuleNotFoundError: eseguire pip con lo stesso interprete .venv usato per avviare main.py.",
+    "Non creare QApplication due volte nello stesso processo; riavviare l'esempio in un processo separato."
+  ],
+  "sources": [
+    "https://www.riverbankcomputing.com/static/Docs/PyQt6/",
+    "https://doc.qt.io/qt-6/qtwidgets-index.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "details": "Controlli statici sui sorgenti: AST Python, parser PowerShell/Bash dove disponibili, node --check per JavaScript, JSON e XML secondo i file presenti. Nessuna compilazione C#/XAML/C++ né esecuzione Docker/CI/packaging attestata. Report: reports/desktop-tools-qa.json.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

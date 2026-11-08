@@ -1,0 +1,7 @@
+import {Component,signal,computed,effect,inject,DestroyRef,ChangeDetectionStrategy} from '@angular/core';
+import {CommonModule} from '@angular/common';import {FormsModule} from '@angular/forms';
+
+@Component({selector:'app-root',standalone:true,imports:[CommonModule,FormsModule],changeDetection:ChangeDetectionStrategy.OnPush,template:`<main><ul>@for(row of rows();track row.id){<li>{{row.name}}<button (click)="remove(row.id)">Rimuovi</button></li>}@empty{<li>Nessuna riga</li>}</ul></main>`})
+export class AppComponent{
+rows=signal([{id:1,name:'Ada'},{id:2,name:'Grace'}]);remove(id:number){this.rows.update(rows=>rows.filter(x=>x.id!==id));}
+}

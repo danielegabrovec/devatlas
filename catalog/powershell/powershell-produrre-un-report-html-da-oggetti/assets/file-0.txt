@@ -1,0 +1,5 @@
+Set-StrictMode -Version Latest
+$ErrorActionPreference='Stop'
+$file=Join-Path ([IO.Path]::GetTempPath()) ([guid]::NewGuid().ToString()+".html")
+@([pscustomobject]@{Step="Build";Status="OK"},[pscustomobject]@{Step="Test";Status="OK"}) | ConvertTo-Html -Title "Report locale" | Set-Content -LiteralPath $file -Encoding utf8
+$file

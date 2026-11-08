@@ -1,0 +1,11 @@
+#include <QtWidgets>
+#include <QtCore>
+#include <QtGui>
+
+int main(int argc, char **argv) {
+ QApplication app(argc,argv);
+ QWidget window; window.resize(720,480);
+ auto *layout=new QVBoxLayout(&window);
+ auto *edit=new QPlainTextEdit; auto *b=new QPushButton("Apri"); layout->addWidget(b); layout->addWidget(edit); QObject::connect(b,&QPushButton::clicked,&window,[&window,edit]{const auto path=QFileDialog::getOpenFileName(&window,"Apri"); if(path.isEmpty()) return; QFile f(path); if(f.open(QIODevice::ReadOnly)) edit->setPlainText(QString::fromUtf8(f.readAll())); else QMessageBox::warning(&window,"Lettura",f.errorString());});
+ window.show(); return app.exec();
+}

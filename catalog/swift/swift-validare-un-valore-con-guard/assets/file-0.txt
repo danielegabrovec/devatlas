@@ -1,0 +1,3 @@
+import Foundation
+func positive(_ text:String)->Int?{guard let value=Int(text),value>0 else{return nil};return value}
+print(positive("12") ?? -1)

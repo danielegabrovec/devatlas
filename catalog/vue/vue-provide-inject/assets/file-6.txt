@@ -1,0 +1,1 @@
+<script setup>import {inject} from 'vue';const theme=inject('theme');</script><template><p>Tema: {{theme}}</p></template>

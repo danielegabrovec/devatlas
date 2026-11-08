@@ -1,0 +1,87 @@
+{
+  "id": "cmake-riutilizzare-file-oggetto-con-object-library",
+  "title": "Riutilizzare file oggetto con OBJECT library",
+  "summary": "Compilare una unità condivisa senza produrre una libreria separata.",
+  "stack": "cmake",
+  "group": "Strumenti",
+  "section": "Compilazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code",
+    "Visual Studio",
+    "CLion"
+  ],
+  "versions": "CMake 3.24+; C++17/20",
+  "prerequisites": "CMake 3.24+, compilatore C++ installato. Su Windows usare Developer PowerShell MSVC o una toolchain già configurata.",
+  "tags": [
+    "CMake",
+    "build",
+    "riutilizzare-file-oggetto-con-object-library"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.cpp",
+      "language": "cpp",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "ca4f11174323d8829cfc1a8ade6bec91b0b642894dbfc2188979e7518b48463f"
+    },
+    {
+      "id": "file-1",
+      "path": "CMakeLists.txt",
+      "language": "cmake",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "05098bfffc729ba37ddbdfe3dbd187b7e7f5ce831b0e3a4ba87d2329987c4478"
+    },
+    {
+      "id": "file-2",
+      "path": "helper.cpp",
+      "language": "cpp",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "e9605daa2ce55746765146182bd044a934fc985e5ab3a5fdb9aa18cef96e3039"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "7309db546187378027992cf9b39b6b166c51ebd4475b1a1d1b0e421f92b6bb06"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "cmake-generare-un-header-con-configure-file",
+    "cmake-abilitare-addresssanitizer-solo-su-gcc-e-clang",
+    "cmake-aggiungere-include-privati-a-un-target"
+  ],
+  "expected": "Compilare una unità condivisa senza produrre una libreria separata.",
+  "errors": [
+    "Ninja non trovato: installarlo se si usa il preset o il compilation database.",
+    "Compilatore non trovato: aprire il terminale di sviluppo della toolchain."
+  ],
+  "sources": [
+    "https://cmake.org/cmake/help/latest/guide/tutorial/index.html",
+    "https://cmake.org/cmake/help/latest/manual/cmake-buildsystem.7.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "documentato",
+    "details": "Esempio originale revisionato nel catalogo; esecuzione non attestata.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

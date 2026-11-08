@@ -1,0 +1,86 @@
+{
+  "id": "php-caricare-classi-psr-4-con-composer",
+  "title": "Caricare classi PSR-4 con Composer",
+  "summary": "Separa namespace e file e lascia che Composer generi l'autoloader.",
+  "stack": "php",
+  "group": "Linguaggi",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "PHP8.4/8.5 CLI, strict_types; estensioni indicate nella singola scheda",
+  "prerequisites": "PHP8.4 o8.5 CLI nel PATH. PDO SQLite richiede pdo_sqlite; le altre estensioni necessarie sono indicate. Il server incorporato è destinato al laboratorio locale.",
+  "tags": [
+    "PSR-4",
+    "Composer",
+    "autoload"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "composer.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "dc858747f4ae1c124bafe88a80be3930058b975ef8c825d8c4ba60825507dc3b"
+    },
+    {
+      "id": "file-1",
+      "path": "src/Greeter.php",
+      "language": "php",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "66124d0510b92c4e5189bc98f3ccdb6f42f4c8b727144244882608f264945920"
+    },
+    {
+      "id": "file-2",
+      "path": "main.php",
+      "language": "php",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "84a81519a246eb559afd9649d746bec7dc6006d804e972b5e11c0dea187f0578"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "1fdc2b4c015d9c8042dbe692d3223c1da7f1e8ec379373ddad7ec97162966a35"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "php-analizzare-opzioni-cli-con-getopt",
+    "php-annullare-una-transazione-pdo-dopo-un-vincolo-violato",
+    "php-applicare-un-default-soltanto-quando-il-dato-manca"
+  ],
+  "expected": "Ciao Ada; non sono richiesti pacchetti applicativi di terze parti.",
+  "errors": [
+    "vendor/autoload.php non trovato: esegui Composer nella directory del composer.json esportato.",
+    "Class Atlas\\Greeter not found: allinea namespace, prefisso PSR-4, cartella src e maiuscole/minuscole dei nomi file."
+  ],
+  "sources": [
+    "https://www.php.net/manual/en/",
+    "https://www.php.net/supported-versions.php",
+    "https://getcomposer.org/doc/04-schema.md#autoload"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: JSON parse, php lint, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

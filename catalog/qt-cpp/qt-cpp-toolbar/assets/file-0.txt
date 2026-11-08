@@ -1,0 +1,11 @@
+#include <QtWidgets>
+#include <QtCore>
+#include <QtGui>
+
+int main(int argc, char **argv) {
+ QApplication app(argc,argv);
+ QWidget window; window.resize(720,480);
+ auto *layout=new QVBoxLayout(&window);
+ auto *bar=new QToolBar; auto *label=new QLabel("In attesa"); auto *action=bar->addAction("Aggiorna"); QObject::connect(action,&QAction::triggered,label,[label]{label->setText(QTime::currentTime().toString());}); layout->addWidget(bar); layout->addWidget(label);
+ window.show(); return app.exec();
+}

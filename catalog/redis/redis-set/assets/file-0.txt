@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+p="atlas_demo:set"
+cli(){ redis-cli -e --raw -h 127.0.0.1 -p 6381 "$@"; }
+cli DEL "$p:tags"
+cli SADD "$p:tags" sql python sql
+cli SCARD "$p:tags"
+cli SMEMBERS "$p:tags"

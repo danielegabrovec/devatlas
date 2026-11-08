@@ -1,0 +1,87 @@
+{
+  "id": "cpp-workflow-toolchain-project",
+  "title": "Inizializzare un progetto C++ con header separati",
+  "summary": "Predispone include e src e verifica che il compilatore scelto possa collegare un programma C++20.",
+  "stack": "cpp",
+  "group": "Linguaggi",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "C++20, GCC 13+ oppure Clang 16+/MSVC con libreria C++20",
+  "prerequisites": "Compilatore e libreria standard C++20. Comandi pronti per GCC/g++; su Windows usare MSYS2 UCRT64 o una toolchain GCC nel PATH. Nessuna libreria esterna.",
+  "tags": [
+    "workflow",
+    "inizializzazione",
+    "setup",
+    "test",
+    "distribution"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "include/greeting.hpp",
+      "language": "cpp",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "61ebf9aaed245a76314e39ba4baecdeef49f1d1641b9054e755f0a70fca05980"
+    },
+    {
+      "id": "file-1",
+      "path": "src/main.cpp",
+      "language": "cpp",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "d61861beb10cbad9da5f91a7e5edef9aecc04c87b685fc1855278c9ebc4a779e"
+    },
+    {
+      "id": "file-2",
+      "path": ".vscode/c_cpp_properties.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "2a284461a4ffbc407ca8e666b62ece9daf20323283c4ca3687a637a64bf0b89e"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "c78c9e603800037c1a6ad511c223e6bf3479a3b1e0518f37c2a3f48a54903a61"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "cpp-progetto-completo-registro-contatti-c",
+    "cpp-workflow-cmake-tests-release",
+    "cpp-workflow-gdb-vscode"
+  ],
+  "expected": "Ciao Ada; l'header viene risolto dall'opzione -Iinclude.",
+  "errors": [
+    "g++ non trovato indica PATH/toolchain mancanti; fatal error greeting.hpp indica -Iinclude mancante o directory di lavoro errata."
+  ],
+  "sources": [
+    "https://learn.microsoft.com/en-us/cpp/standard-library/cpp-standard-library-reference",
+    "https://isocpp.org/get-started",
+    "https://code.visualstudio.com/docs/languages/cpp"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Sorgenti e configurazioni verificati su Windows x64: JSON parse, PowerShell parser, source compiler. Report: reports/languages-workflows-validation.json. Non attestati sessioni interattive di debug, installazioni di dipendenze o distribuzione completa del workflow; nessuna esecuzione Linux/macOS."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

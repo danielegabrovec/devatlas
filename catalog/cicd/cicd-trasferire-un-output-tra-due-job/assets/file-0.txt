@@ -1,0 +1,51 @@
+{
+  "name": "Verifica locale dimostrativa",
+  "on": {
+    "workflow_dispatch": {}
+  },
+  "permissions": {
+    "contents": "read"
+  },
+  "jobs": {
+    "test": {
+      "runs-on": "ubuntu-latest",
+      "steps": [
+        {
+          "uses": "actions/checkout@v7",
+          "with": {
+            "persist-credentials": false
+          }
+        },
+        {
+          "uses": "actions/setup-python@v7",
+          "with": {
+            "python-version": "3.13"
+          }
+        },
+        {
+          "name": "Test",
+          "run": "python -m unittest -v"
+        },
+        {
+          "id": "result",
+          "run": "echo 'status=passed' >> \"$GITHUB_OUTPUT\""
+        }
+      ],
+      "outputs": {
+        "result": "${{ steps.result.outputs.status }}"
+      }
+    },
+    "report": {
+      "needs": "test",
+      "runs-on": "ubuntu-latest",
+      "steps": [
+        {
+          "env": {
+            "STATUS": "${{ needs.test.outputs.result }}"
+          },
+          "run": "printf '%s\\n' \"$STATUS\""
+        }
+      ]
+    }
+  }
+}

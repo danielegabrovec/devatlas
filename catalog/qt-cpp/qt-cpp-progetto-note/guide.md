@@ -1,0 +1,2 @@
+## Uso
+Salva tutti i file nella cartella, configura con CMake e avvia. Inserisci due note, chiudi e riapri per verificarne il ripristino. Il salvataggio avviene soltanto sul comando Aggiungi; il campo vuoto viene ignorato. QSettings usa il formato nativo della piattaforma. Nessuna verifica su Linux o macOS è dichiarata.

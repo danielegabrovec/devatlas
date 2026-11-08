@@ -1,0 +1,1 @@
+int area(int width,int height){if(width<0||height<0)throw ArgumentError('Lati negativi');return width*height;}

@@ -1,0 +1,200 @@
+[
+  {
+    "query": "node leggere un log riga per riga",
+    "expected_ids": [
+      "nodejs-leggere-un-file-per-righe"
+    ]
+  },
+  {
+    "query": "node execFile avviare programma con argomenti",
+    "expected_ids": [
+      "nodejs-eseguire-processo-senza-shell"
+    ]
+  },
+  {
+    "query": "node promise massimo due lavori contemporanei",
+    "expected_ids": [
+      "nodejs-limitare-concorrenza-con-coda-worker"
+    ]
+  },
+  {
+    "query": "react ottenere campi del modulo al submit",
+    "expected_ids": [
+      "react-leggere-un-form-con-formdata"
+    ]
+  },
+  {
+    "query": "react aspettare digitazione prima di cercare",
+    "expected_ids": [
+      "react-applicare-debounce-a-un-campo-ricerca"
+    ]
+  },
+  {
+    "query": "react revokeObjectURL pulire preview file",
+    "expected_ids": [
+      "react-liberare-object-url-delle-anteprime"
+    ]
+  },
+  {
+    "query": "next leggere preferenza salvata nei cookies",
+    "expected_ids": [
+      "nextjs-leggere-cookie-con-api-asincrona"
+    ]
+  },
+  {
+    "query": "next api endpoint parametro id await params",
+    "expected_ids": [
+      "nextjs-leggere-params-asincroni-nel-route-handler"
+    ]
+  },
+  {
+    "query": "next revalidateTag aggiornare cache catalogo",
+    "expected_ids": [
+      "nextjs-rivalidare-un-tag-con-profilo-max"
+    ]
+  },
+  {
+    "query": "aspnet limitare richieste al minuto",
+    "expected_ids": [
+      "aspnet-applicare-rate-limiting-a-una-rotta"
+    ]
+  },
+  {
+    "query": "aspnet errore http application problem json",
+    "expected_ids": [
+      "aspnet-restituire-problem-details"
+    ]
+  },
+  {
+    "query": "aspnet CancellationToken client interrompe richiesta",
+    "expected_ids": [
+      "aspnet-rispettare-cancellazione-della-richiesta"
+    ]
+  },
+  {
+    "query": "fastapi body persona con indirizzo nested model",
+    "expected_ids": [
+      "fastapi-validare-modelli-annidati"
+    ]
+  },
+  {
+    "query": "fastapi cleanup dependency yield finally",
+    "expected_ids": [
+      "fastapi-rilasciare-risorse-con-dipendenza-yield"
+    ]
+  },
+  {
+    "query": "fastapi rifiutare file oltre un megabyte",
+    "expected_ids": [
+      "fastapi-limitare-dimensione-upload-leggendo-chunk"
+    ]
+  },
+  {
+    "query": "css schede su colonne adattive auto fit minmax",
+    "expected_ids": [
+      "html-css-creare-una-griglia-responsive-automatica"
+    ]
+  },
+  {
+    "query": "html accessibilità saltare navigazione tastiera",
+    "expected_ids": [
+      "html-css-offrire-un-link-salta-contenuto"
+    ]
+  },
+  {
+    "query": "css prefers reduced motion evitare movimento",
+    "expected_ids": [
+      "html-css-disattivare-animazioni-per-movimento-ridotto"
+    ]
+  },
+  {
+    "query": "django ORM incremento contatore senza race condition",
+    "expected_ids": [
+      "django-aggiornare-valori-atomicamente-con-f"
+    ]
+  },
+  {
+    "query": "django creare record form post csrf token",
+    "expected_ids": [
+      "django-inviare-modelform-con-protezione-csrf"
+    ]
+  },
+  {
+    "query": "django manage py comando conteggio personalizzato",
+    "expected_ids": [
+      "django-aggiungere-un-comando-management-personalizzato"
+    ]
+  },
+  {
+    "query": "sql clienti senza acquisti not exists",
+    "expected_ids": [
+      "sql-trovare-clienti-privi-di-ordini"
+    ]
+  },
+  {
+    "query": "sql mostrare testo quando campo mancante coalesce",
+    "expected_ids": [
+      "sql-sostituire-null-in-visualizzazione"
+    ]
+  },
+  {
+    "query": "sql somma cumulativa per ordine window",
+    "expected_ids": [
+      "sql-calcolare-un-totale-progressivo"
+    ]
+  },
+  {
+    "query": "sqlite database is locked busy timeout",
+    "expected_ids": [
+      "sqlite-limitare-attesa-su-database-occupato"
+    ]
+  },
+  {
+    "query": "sqlite fts5 ricerca frammenti parola trigram",
+    "expected_ids": [
+      "sqlite-cercare-sottostringhe-con-trigram"
+    ]
+  },
+  {
+    "query": "sqlite controllare riferimenti orfani foreign key check",
+    "expected_ids": [
+      "sqlite-verificare-violazioni-delle-foreign-key"
+    ]
+  },
+  {
+    "query": "postgres inserire o aggiornare on conflict",
+    "expected_ids": [
+      "postgresql-fare-upsert-con-excluded"
+    ]
+  },
+  {
+    "query": "postgres coda worker evitare righe bloccate",
+    "expected_ids": [
+      "postgresql-prelevare-lavoro-con-skip-locked"
+    ]
+  },
+  {
+    "query": "postgres una riga più recente per cliente",
+    "expected_ids": [
+      "postgresql-estrarre-l-ultimo-ordine-con-distinct-on"
+    ]
+  },
+  {
+    "query": "mysql array json trasformare elementi in righe",
+    "expected_ids": [
+      "mysql-espandere-json-table"
+    ]
+  },
+  {
+    "query": "mysql null safe equality confronto valori mancanti",
+    "expected_ids": [
+      "mysql-confrontare-null-in-modo-sicuro"
+    ]
+  },
+  {
+    "query": "mysql rename table scambiare nomi atomicamente",
+    "expected_ids": [
+      "mysql-rinominare-atomicamente-due-tabelle-mysql"
+    ]
+  }
+]

@@ -1,0 +1,3 @@
+interface User {name:string}
+const user:User={name:'Ada'};
+console.log(`Ciao ${user.name}`);

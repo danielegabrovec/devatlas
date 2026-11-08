@@ -1,0 +1,1 @@
+import{setTimeout}from'node:timers/promises';let calls=0;async function operation(){if(++calls<3)throw Error('temporaneo');return'ok'}for(let n=0;n<3;n++){try{console.log(await operation());break}catch(e){if(n===2)throw e;await setTimeout(20*2**n)}}

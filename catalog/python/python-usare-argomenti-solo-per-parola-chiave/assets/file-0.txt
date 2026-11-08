@@ -1,0 +1,3 @@
+def render(text, *, uppercase=False):
+    return text.upper() if uppercase else text
+print(render("ciao", uppercase=True))

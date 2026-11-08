@@ -1,0 +1,10 @@
+import csv
+from django.http import HttpResponse
+from .models import Note
+def home(request):
+    r=HttpResponse(content_type='text/csv')
+    r['Content-Disposition']='attachment; filename=notes.csv'
+    w=csv.writer(r)
+    w.writerow(['id','title','done'])
+    for row in Note.objects.values_list('id','title','done'): w.writerow(row)
+    return r

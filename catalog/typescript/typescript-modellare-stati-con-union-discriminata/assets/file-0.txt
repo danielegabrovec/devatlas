@@ -1,0 +1,6 @@
+type State = { kind: "loading" } | { kind: "ready"; value: number };
+function describe(state: State): string {
+  return state.kind === "ready" ? `valore ${state.value}` : "attesa";
+}
+console.log(describe({ kind: "ready", value: 7 }));
+export {};

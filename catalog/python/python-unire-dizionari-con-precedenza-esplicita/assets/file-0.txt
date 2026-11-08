@@ -1,0 +1,5 @@
+defaults = {"theme": "light", "size": 12}
+user = {"size": 16}
+merged = defaults | user
+print(merged)
+print(defaults)

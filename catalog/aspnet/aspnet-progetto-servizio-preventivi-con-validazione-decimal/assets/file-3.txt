@@ -1,0 +1,9 @@
+POST http://127.0.0.1:5000/quote
+Content-Type: application/json
+
+{"price":10,"quantity":3,"discount":10}
+###
+POST http://127.0.0.1:5000/quote
+Content-Type: application/json
+
+{"price":-1,"quantity":1,"discount":0}

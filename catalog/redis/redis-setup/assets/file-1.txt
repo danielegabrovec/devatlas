@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+p="atlas_demo:setup"
+cli(){ redis-cli -e --raw -h 127.0.0.1 -p 6381 "$@"; }
+cli PING
+cli SET "$p:hello" world EX 60
+cli GET "$p:hello"

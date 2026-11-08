@@ -1,0 +1,1 @@
+class ValidationError extends Error{constructor(field){super('Campo invalido: '+field);this.name='ValidationError';this.field=field}}try{throw new ValidationError('email')}catch(e){console.log(e.name,e.field)}

@@ -1,0 +1,1 @@
+SAVEPOINT prova; UPDATE people SET city='Napoli' WHERE id=1; ROLLBACK TO prova; RELEASE prova; SELECT city FROM people WHERE id=1;

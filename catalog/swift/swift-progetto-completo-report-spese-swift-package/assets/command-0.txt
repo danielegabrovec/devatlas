@@ -1,0 +1,3 @@
+swift test
+swift run expense-cli data/expenses.json
+swift build -c release

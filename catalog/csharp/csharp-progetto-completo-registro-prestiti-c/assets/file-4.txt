@@ -1,0 +1,3 @@
+# Registro prestiti
+
+Richiede SDK .NET 8+ e targeting pack net8.0. `dotnet run --project Example.csproj` esegue il dominio e i due autotest; `dotnet build -c Release` compila. Nessun pacchetto esterno. Il registro è in memoria e viene ricreato a ogni avvio: il JSON stampato è un report, non una persistenza automatica. Gli ID crescono soltanto nel processo corrente.

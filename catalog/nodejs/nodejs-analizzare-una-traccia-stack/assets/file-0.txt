@@ -1,0 +1,1 @@
+function load(){throw Error('record mancante')}try{load()}catch(e){console.log(e.stack)}

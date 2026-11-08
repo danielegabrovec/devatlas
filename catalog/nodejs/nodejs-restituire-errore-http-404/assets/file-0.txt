@@ -1,0 +1,1 @@
+import{createServer}from'node:http';createServer((q,r)=>{r.writeHead(404,{'content-type':'application/json'});r.end(JSON.stringify({error:'not found'}))}).listen(3000,'127.0.0.1');

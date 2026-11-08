@@ -1,0 +1,1 @@
+import{Suspense}from'react';async function Stats(){await new Promise(r=>setTimeout(r,500));return <p>42elementi</p>}export default function Page(){return <><h1>Dashboard</h1><Suspense fallback={<p>Statistiche…</p>}><Stats/></Suspense></>}

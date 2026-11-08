@@ -1,0 +1,1 @@
+SELECT p.name,s.stato FROM people p CROSS JOIN(SELECT 'email' AS stato UNION ALL SELECT 'telefono') s ORDER BY p.id,s.stato;

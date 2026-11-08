@@ -1,0 +1,3 @@
+from decimal import Decimal, ROUND_HALF_UP
+total = Decimal("1.005").quantize(Decimal("0.01"), rounding=ROUND_HALF_UP)
+print(total)

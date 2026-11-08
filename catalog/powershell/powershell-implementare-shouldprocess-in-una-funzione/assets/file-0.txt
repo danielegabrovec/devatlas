@@ -1,0 +1,4 @@
+Set-StrictMode -Version Latest
+$ErrorActionPreference='Stop'
+function Set-DemoValue { [CmdletBinding(SupportsShouldProcess)] param([string]$Value) if($PSCmdlet.ShouldProcess("stato demo","Imposta $Value")){"Valore applicato: $Value"} }
+Set-DemoValue -Value "release" -WhatIf

@@ -1,0 +1,1 @@
+export default async function Page({searchParams}){const q=await searchParams;const term=typeof q.q==='string'?q.q:'';return <h1>Ricerca:{term}</h1>}

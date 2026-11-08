@@ -1,0 +1,4 @@
+py -3.13 -m pdb main.py
+py -3.13 -m pip install pyinstaller
+py -3.13 -m PyInstaller --onefile --name totals main.py
+.\dist\totals.exe

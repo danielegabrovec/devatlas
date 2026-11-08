@@ -1,0 +1,5 @@
+<script setup>
+import {ref,reactive,computed,watch,watchEffect,onMounted,onUnmounted,nextTick,provide,inject,defineAsyncComponent,shallowRef,triggerRef,readonly,toRefs} from 'vue';
+const options=[{id:'dev',name:'Sviluppo'},{id:'prod',name:'Produzione'}];const selected=ref(options[0]);
+</script>
+<template><main><select v-model="selected"><option v-for="item in options" :key="item.id" :value="item">{{item.name}}</option></select><p>ID: {{selected.id}}</p></main></template>

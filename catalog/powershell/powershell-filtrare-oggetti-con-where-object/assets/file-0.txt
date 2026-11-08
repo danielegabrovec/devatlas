@@ -1,0 +1,3 @@
+Set-StrictMode -Version Latest
+$ErrorActionPreference='Stop'
+1..10 | Where-Object { $_ % 2 -eq 0 }

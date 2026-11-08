@@ -1,0 +1,1 @@
+SELECT sum(total) FILTER(WHERE status='paid') FROM orders;

@@ -1,0 +1,10 @@
+package main
+
+import (
+"fmt"
+"time"
+)
+
+func main(){
+values:=make(chan int);timer:=time.NewTimer(5*time.Millisecond);defer timer.Stop();select{case value:=<-values:fmt.Println(value);case <-timer.C:fmt.Println("tempo scaduto")}
+}

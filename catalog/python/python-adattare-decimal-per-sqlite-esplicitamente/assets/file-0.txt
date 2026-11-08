@@ -1,0 +1,7 @@
+from decimal import Decimal
+import sqlite3
+with sqlite3.connect(":memory:") as db:
+    db.execute("CREATE TABLE amounts(value TEXT)")
+    db.execute("INSERT INTO amounts VALUES (?)", (str(Decimal("12.30")),))
+    amount = Decimal(db.execute("SELECT value FROM amounts").fetchone()[0])
+    print(amount)

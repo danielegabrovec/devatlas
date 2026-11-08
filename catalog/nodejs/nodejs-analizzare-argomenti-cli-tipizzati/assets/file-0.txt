@@ -1,0 +1,1 @@
+import{parseArgs}from'node:util';const{values}=parseArgs({options:{verbose:{type:'boolean'},name:{type:'string',default:'Ada'}}});console.log(values);

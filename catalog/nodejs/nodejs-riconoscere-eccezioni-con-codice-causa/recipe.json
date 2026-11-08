@@ -1,0 +1,74 @@
+{
+  "id": "nodejs-riconoscere-eccezioni-con-codice-causa",
+  "title": "Riconoscere eccezioni con codice causa",
+  "summary": "Il file main.mjs è un programma ESM autonomo. Avviarlo nella cartella esportata; gli eventuali file vengono creati soltanto in questa cartella.",
+  "stack": "nodejs",
+  "group": "Web e backend",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Node.js 24 LTS+; ESM",
+  "prerequisites": "Node.js24+ nel PATH. Esempi server: porta3000 libera, browser locale; Ctrl+C arresta. Le richieste example.com richiedono rete.",
+  "tags": [
+    "nodejs",
+    "example",
+    "riconoscere",
+    "eccezioni",
+    "con",
+    "codice"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.mjs",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "ff29b9d952a2c767ac1f993a460c43c4d1878bd899554e6be9c315642fc975f0"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "14355a5fac325262ed55e1f6230485a705d922683ec75317a95e55545d9db931"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "nodejs-progetto-api-locale-catalogo-prodotti",
+    "nodejs-progetto-cli-analisi-di-un-file-testo",
+    "nodejs-progetto-pipeline-di-importazione-ndjson"
+  ],
+  "expected": "Il risultato mostra il comportamento descritto nel titolo; i dati dimostrativi sono inclusi nel sorgente.",
+  "errors": [
+    "Comando non trovato: installare la toolchain elencata nei prerequisiti.",
+    "Dipendenza mancante: eseguire l'installazione nella radice esportata, senza cambiare le versioni dichiarate."
+  ],
+  "sources": [
+    "https://nodejs.org/docs/latest-v24.x/api/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Sintassi dei file Python o JavaScript/JSX e JSON controllata sulle fonti correnti; esecuzione di questa singola ricetta non attestata.",
+    "files_sha256": {
+      "main.mjs": "ff29b9d952a2c767ac1f993a460c43c4d1878bd899554e6be9c315642fc975f0"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

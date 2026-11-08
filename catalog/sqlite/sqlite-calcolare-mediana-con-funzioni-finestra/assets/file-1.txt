@@ -1,0 +1,1 @@
+WITH v AS(SELECT total,row_number() OVER(ORDER BY total) r,count(*) OVER() n FROM orders) SELECT avg(total) FROM v WHERE r IN((n+1)/2,(n+2)/2);

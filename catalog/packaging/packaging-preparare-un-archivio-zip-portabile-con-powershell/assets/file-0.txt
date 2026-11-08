@@ -1,0 +1,9 @@
+Set-StrictMode -Version Latest
+$ErrorActionPreference='Stop'
+$root=Join-Path ([IO.Path]::GetTempPath()) ("package-"+[guid]::NewGuid())
+$dist=Join-Path $root "dist"
+New-Item -ItemType Directory -Path $dist | Out-Null
+Set-Content -LiteralPath (Join-Path $dist "README.txt") -Value "Pacchetto dimostrativo"
+$target=Join-Path $root "release.zip"
+Compress-Archive -Path (Join-Path $dist "*") -DestinationPath $target
+Get-Item -LiteralPath $target

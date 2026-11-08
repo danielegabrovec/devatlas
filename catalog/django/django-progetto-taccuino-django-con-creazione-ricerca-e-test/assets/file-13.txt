@@ -1,0 +1,15 @@
+from django.test import TestCase
+from .models import Note
+class NotebookTests(TestCase):
+    def test_create(self):
+        r=self.client.post('/',{'title':'Prova','body':'Test','priority':2})
+        self.assertEqual(r.status_code,302)
+        self.assertEqual(Note.objects.count(),1)
+    def test_complete(self):
+        n=Note.objects.create(title='Prova')
+        self.assertEqual(self.client.post(f'/notes/{n.pk}/done/').status_code,302)
+        n.refresh_from_db()
+        self.assertTrue(n.done)
+    def test_search(self):
+        Note.objects.create(title='Python')
+        self.assertContains(self.client.get('/?q=Python'),'Python')

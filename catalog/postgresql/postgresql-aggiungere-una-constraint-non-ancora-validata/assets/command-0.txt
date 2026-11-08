@@ -1,0 +1,1 @@
+psql --host=127.0.0.1 --dbname cookbook_demo --set ON_ERROR_STOP=1 --file fixture.sql --file query.sql

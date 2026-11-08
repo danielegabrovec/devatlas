@@ -1,0 +1,95 @@
+{
+  "id": "csharp-workflow-dotnet-debug",
+  "title": "Debuggare C# con configurazione coreclr",
+  "summary": "Costruisce la configurazione Debug e collega VS Code al DLL net8.0 con simboli PDB.",
+  "stack": "csharp",
+  "group": "Linguaggi",
+  "section": "Debug",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "C# 12, .NET 8; compatibile con SDK successivi che supportano net8.0",
+  "prerequisites": "SDK .NET 8+ e targeting pack net8.0; dotnet nel PATH. Nessun pacchetto NuGet esterno. Il primo restore può richiedere i pack della piattaforma.",
+  "tags": [
+    "workflow",
+    "debug",
+    "debugger",
+    "test",
+    "distribution"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "App.csproj",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "65ea1f12a5bf55eda2e007274ffd468778d6a61343cb512f5daf6bede7a7b4e2"
+    },
+    {
+      "id": "file-1",
+      "path": "Program.cs",
+      "language": "csharp",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "1a6787e131b26593c14b89f88b3f6fbe6ad100ec80541ef13e8f7c07c25fa76e"
+    },
+    {
+      "id": "file-2",
+      "path": ".vscode/launch.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "b2c024c109dbed2c17a2774c3d1a4c8855fcc60052cba26f9b20d40d9fd1c9d1"
+    },
+    {
+      "id": "file-3",
+      "path": ".vscode/tasks.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "0374e59c21c82c088bae9fa50756443996fed48900307903bed7ce11fa4bec84"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "fef5b1c709ce0490f5381556ae07625de942f0572baae458ac194fbea93fd493"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "csharp-workflow-dotnet-init",
+    "csharp-workflow-dotnet-test-publish",
+    "csharp-progetto-completo-registro-prestiti-c"
+  ],
+  "expected": "Il debugger arresta la console e consente watch di left,right,total; la stampa finale è5.",
+  "errors": [
+    "Se il percorso DLL non esiste, controlla target framework, nome progetto e configurazione Debug. Non usare un PDB proveniente da una build diversa."
+  ],
+  "sources": [
+    "https://learn.microsoft.com/en-us/dotnet/csharp/",
+    "https://learn.microsoft.com/en-us/dotnet/api/",
+    "https://code.visualstudio.com/docs/csharp/debugging"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Sorgenti e configurazioni verificati su Windows x64: JSON parse, MSBuild XML parse, PowerShell parser, source compiler. Report: reports/languages-workflows-validation.json. Non attestati sessioni interattive di debug, installazioni di dipendenze o distribuzione completa del workflow; nessuna esecuzione Linux/macOS."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

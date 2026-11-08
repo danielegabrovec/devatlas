@@ -1,0 +1,5 @@
+<?php
+declare(strict_types=1);
+$start=new DateTimeImmutable('2026-10-29T00:00:00+00:00');
+$end=$start->add(new DateInterval('P7D'));
+echo $start->format('Y-m-d'),' ',$end->format('Y-m-d'),PHP_EOL;

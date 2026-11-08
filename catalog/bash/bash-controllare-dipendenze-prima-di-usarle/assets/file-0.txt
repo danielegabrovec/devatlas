@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+for tool in tar sha256sum; do command -v "$tool" >/dev/null || { printf "Manca %s\n" "$tool" >&2; exit 1; }; done
+printf "Dipendenze presenti\n"

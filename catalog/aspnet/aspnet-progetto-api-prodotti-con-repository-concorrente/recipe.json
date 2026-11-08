@@ -1,0 +1,127 @@
+{
+  "id": "aspnet-progetto-api-prodotti-con-repository-concorrente",
+  "title": "Progetto: API prodotti con repository concorrente",
+  "summary": "POST/products crea, GET elenca e legge per ID. Repository thread safe ma volatile: riavvio azzera. requests.http contiene prove ripetibili.",
+  "stack": "aspnet",
+  "group": "Web e backend",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "ASP.NET Core10; .NET SDK10",
+  "prerequisites": "SDK.NET10 e browser. Eseguire dotnet run --urls http://127.0.0.1:5000. Ogni esempio è un progetto separato; dati in memoria solo dimostrativi.",
+  "tags": [
+    "aspnet",
+    "example",
+    "progetto:",
+    "api",
+    "prodotti",
+    "con"
+  ],
+  "project": true,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "Demo.csproj",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "8b4e038e6509a65ca98a58d89dcf34b9460c567d46d96222581bbfa1d469e8cf"
+    },
+    {
+      "id": "file-1",
+      "path": "Product.cs",
+      "language": "csharp",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "392a728b99011fcf6b934749f5a97eae30f2b158ad80cfe4a7df35b183d5a755"
+    },
+    {
+      "id": "file-2",
+      "path": "ProductStore.cs",
+      "language": "csharp",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "97ceeabb2ce922f300c4b090ac1c5e62b00f611972b942026977dd162e843ab9"
+    },
+    {
+      "id": "file-3",
+      "path": "Program.cs",
+      "language": "csharp",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "c44008fa0b5bf056610118e3ccc1d0bdc2d459a83e76647872dd2d89ebfb3d90"
+    },
+    {
+      "id": "file-4",
+      "path": "requests.http",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "dcc1d44a23db49353f495e53d7c413defe8745fbd5588a7b8d9114eeb66ce99a"
+    },
+    {
+      "id": "file-5",
+      "path": "README.md",
+      "language": "markdown",
+      "role": "file",
+      "source": "assets/file-5.txt",
+      "sha256": "7f745dd27ad4784506c108037b6a01b02bb4e85d964656315b53880f14654163"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "dc430643a0d580433aac8588ff1a02e8785349124bf8997176fe5d079c3dd6c1"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "port",
+      "label": "Porta locale",
+      "type": "port",
+      "default": 5000,
+      "required": true
+    }
+  ],
+  "related": [
+    "aspnet-progetto-servizio-preventivi-con-validazione-decimal",
+    "aspnet-verificare-api-key-da-ambiente",
+    "aspnet-accettare-formdata-senza-autenticazione-cookie"
+  ],
+  "expected": "POST/products crea, GET elenca e legge per ID. Repository thread safe ma volatile: riavvio azzera. requests.http contiene prove ripetibili.",
+  "errors": [
+    "Comando non trovato: installare la toolchain elencata nei prerequisiti.",
+    "Dipendenza mancante: eseguire l'installazione nella radice esportata, senza cambiare le versioni dichiarate."
+  ],
+  "sources": [
+    "https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-10.0"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "compilato",
+    "date": "2026-10-29",
+    "details": "Compilazione dotnet build completata con SDK.NET10 su Windows; endpoint non tutti interrogati, nessuna attestazione esecuzione multipiattaforma.",
+    "files_sha256": {
+      "Demo.csproj": "8b4e038e6509a65ca98a58d89dcf34b9460c567d46d96222581bbfa1d469e8cf",
+      "Product.cs": "392a728b99011fcf6b934749f5a97eae30f2b158ad80cfe4a7df35b183d5a755",
+      "ProductStore.cs": "97ceeabb2ce922f300c4b090ac1c5e62b00f611972b942026977dd162e843ab9",
+      "Program.cs": "c44008fa0b5bf056610118e3ccc1d0bdc2d459a83e76647872dd2d89ebfb3d90",
+      "requests.http": "dcc1d44a23db49353f495e53d7c413defe8745fbd5588a7b8d9114eeb66ce99a",
+      "README.md": "7f745dd27ad4784506c108037b6a01b02bb4e85d964656315b53880f14654163"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

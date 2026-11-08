@@ -1,0 +1,5 @@
+import Foundation
+protocol Named{var name:String{get}}
+struct User:Named{let name:String}
+func label<T:Named>(_ value:T)->String{"Utente "+value.name}
+print(label(User(name:"Ada")))

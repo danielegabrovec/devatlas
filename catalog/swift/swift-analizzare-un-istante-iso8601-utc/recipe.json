@@ -1,0 +1,71 @@
+{
+  "id": "swift-analizzare-un-istante-iso8601-utc",
+  "title": "Analizzare un istante ISO8601 UTC",
+  "summary": "Converte testo standard in Date e ne stampa una rappresentazione indipendente dalla locale.",
+  "stack": "swift",
+  "group": "Linguaggi",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "Xcode",
+    "VS Code"
+  ],
+  "versions": "Swift6.4; Package.swift tools-version6.0, Linux/macOS",
+  "prerequisites": "Toolchain Swift6.4 su Linux o macOS. Per SwiftUI/iOS occorrono macOS, Xcode e un target Apple. Non sono attestati esecuzioni o compilazioni Swift su Windows.",
+  "tags": [
+    "ISO8601DateFormatter",
+    "Date",
+    "UTC"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.swift",
+      "language": "swift",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "4ca8cdac5d92700510d75baab095ba90c0293c375b247ddd669290ba1f0baf30"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "bash",
+      "role": "command",
+      "shell": "Bash",
+      "os": "Linux/macOS",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "d8fc89c18fa66be9cc6a7339c1d47da4b05a944894fb741751e25ea8f2f0b8f5"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "swift-calcolare-differenze-tra-set",
+    "swift-codificare-e-decodificare-json-con-codable",
+    "swift-conservare-una-preferenza-apple-con-userdefaults"
+  ],
+  "expected": "2026-10-29T10:00:00Z",
+  "errors": [
+    "Il formatter restituisce nil: verifica formato, offset e opzioni del timestamp ISO8601.",
+    "Ora inattesa nella presentazione: distingui l'istante Date dal fuso usato per mostrarlo."
+  ],
+  "sources": [
+    "https://www.swift.org/documentation/",
+    "https://www.swift.org/install/linux/",
+    "https://www.swift.org/install/macos/",
+    "https://www.swift.org/blog/swift-6.4-released/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

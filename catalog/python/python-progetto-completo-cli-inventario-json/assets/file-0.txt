@@ -1,0 +1,18 @@
+import argparse
+from inventory import Inventory
+def main():
+    parser = argparse.ArgumentParser(description="Inventario locale")
+    parser.add_argument("--file", default="inventory.json")
+    commands = parser.add_subparsers(dest="command", required=True)
+    add = commands.add_parser("add")
+    add.add_argument("name")
+    add.add_argument("quantity", type=int)
+    commands.add_parser("list")
+    args = parser.parse_args()
+    inventory = Inventory(args.file)
+    if args.command == "add":
+        inventory.add(args.name, args.quantity)
+    for name, quantity in inventory.items():
+        print(f"{name}: {quantity}")
+if __name__ == "__main__":
+    main()

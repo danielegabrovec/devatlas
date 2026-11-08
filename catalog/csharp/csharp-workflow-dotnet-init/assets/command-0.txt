@@ -1,0 +1,3 @@
+dotnet --list-sdks
+dotnet restore App.csproj
+dotnet run --project App.csproj

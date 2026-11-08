@@ -1,0 +1,7 @@
+import json
+from pathlib import Path
+items=json.loads(Path("third_party.json").read_text(encoding="utf-8"))
+lines=["# Componenti di terze parti",""]
+for item in items:
+    lines.extend([f"## {item['name']} {item['version']}",f"Licenza dichiarata: {item['license']}",f"Fonte: {item['source']}",""])
+Path("THIRD_PARTY_NOTICES.md").write_text("\n".join(lines),encoding="utf-8")

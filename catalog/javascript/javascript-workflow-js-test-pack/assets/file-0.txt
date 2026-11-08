@@ -1,0 +1,12 @@
+{
+  "name": "catalog-js-math",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": "./src/math.mjs",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "test": "node --test"
+  }
+}

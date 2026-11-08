@@ -1,0 +1,8 @@
+from django.views.generic import ListView
+from .models import Note
+class Notes(ListView):
+    model=Note
+    paginate_by=2
+    ordering='id'
+    template_name='notes.html'
+home=Notes.as_view()

@@ -1,0 +1,6 @@
+interface Options { port?: number; host?: string }
+function normalize(options: Options): Required<Options> {
+  return {port: options.port ?? 8080, host: options.host ?? "localhost"};
+}
+console.log(normalize({}).port);
+export {};

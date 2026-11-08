@@ -1,0 +1,3 @@
+import XCTest
+@testable import ExpenseCore
+final class ExpenseCoreTests:XCTestCase{func testTotals()throws{XCTAssertEqual(try totals([Expense(category:"casa",cents:120),Expense(category:"casa",cents:30)]),["casa":150])};func testInvalid(){XCTAssertThrowsError(try totals([Expense(category:"A",cents:-1)]))}}

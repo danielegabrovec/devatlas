@@ -1,0 +1,6 @@
+#include "totals.hpp"
+double total(const QList<double>& prices){
+ double subtotal=0;
+ for(double price:prices) subtotal+=price;
+ return subtotal;
+}

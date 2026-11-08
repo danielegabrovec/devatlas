@@ -1,0 +1,4 @@
+type Events = { saved: {id:number}; failed: {message:string} };
+function emit<K extends keyof Events>(name: K, payload: Events[K]): void { console.log(name,payload); }
+emit("saved", {id:7});
+export {};

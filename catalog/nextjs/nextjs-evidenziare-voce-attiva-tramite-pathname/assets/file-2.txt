@@ -1,0 +1,1 @@
+'use client';import{usePathname}from'next/navigation';import Link from'next/link';export default function Page(){const p=usePathname();return <nav><Link href='/' aria-current={p==='/'?'page':undefined}>Home</Link></nav>}

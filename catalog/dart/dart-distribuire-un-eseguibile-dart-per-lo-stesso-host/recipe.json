@@ -1,0 +1,70 @@
+{
+  "id": "dart-distribuire-un-eseguibile-dart-per-lo-stesso-host",
+  "title": "Distribuire un eseguibile Dart per lo stesso host",
+  "summary": "Conserva l'artefatto AOT in dist e ne distingue l'uso da una snapshot che richiede il runtime.",
+  "stack": "dart",
+  "group": "Linguaggi",
+  "section": "Distribuzione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Dart3.13.x; librerie SDK, nessuna dipendenza Pub esterna",
+  "prerequisites": "Dart SDK3.13.x nel PATH. Gli esempi dart:io sono nativi; per riusarli su web occorre sostituire accesso filesystem/isolate dove non supportato. Nessun package esterno necessario ai capstone.",
+  "tags": [
+    "distribution",
+    "AOT",
+    "native"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.dart",
+      "language": "dart",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "544d08ab05def53644e632742fc14423c92b3fa605bda1d4cebfe8f302dc1a9b"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "5fd47ba16e61cb105953e27e1c884cfe1c01dba6ae0ea6230ff3753074fe73db"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "dart-analizzare-e-compilare-una-cli-dart-nativa",
+    "dart-progetto-completo-report-spese-dart",
+    "dart-debuggare-dart-con-vm-service-e-vs-code"
+  ],
+  "expected": "Dart su windows nel caso Windows; il nome binario e il comando di avvio cambiano sugli altri host.",
+  "errors": [
+    "Il binario non si avvia: verifica OS/architettura, permessi di esecuzione e nome del file prodotto.",
+    "Confusione tra snapshot ed exe: una snapshot AOT richiede dartaotruntime, mentre compile exe incorpora il runtime minimo."
+  ],
+  "sources": [
+    "https://dart.dev/language",
+    "https://dart.dev/resources/whats-new",
+    "https://dart.dev/tools/dart-compile"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

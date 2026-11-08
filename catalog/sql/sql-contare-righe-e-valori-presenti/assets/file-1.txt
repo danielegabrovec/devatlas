@@ -1,0 +1,1 @@
+SELECT COUNT(*) AS righe,COUNT(age) AS eta_presenti FROM people;

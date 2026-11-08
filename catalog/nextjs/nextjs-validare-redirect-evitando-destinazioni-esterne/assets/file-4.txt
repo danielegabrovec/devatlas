@@ -1,0 +1,1 @@
+export function GET(request){const raw=new URL(request.url).searchParams.get('next')??'/';const safe=raw.startsWith('/')&&!raw.startsWith('//')&&!raw.includes('\\')?raw:'/';return Response.redirect(new URL(safe,request.url),303)}

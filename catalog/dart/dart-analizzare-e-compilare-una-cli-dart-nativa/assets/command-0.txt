@@ -1,0 +1,3 @@
+dart analyze main.dart
+dart compile exe main.dart -o app.exe
+.\app.exe

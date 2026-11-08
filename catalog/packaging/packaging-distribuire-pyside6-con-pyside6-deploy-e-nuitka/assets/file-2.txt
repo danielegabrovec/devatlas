@@ -1,0 +1,7 @@
+[project]
+name="recipe-gui"
+version="1.0.0"
+[tool.pyside6.deploy]
+title="RecipeGui"
+input_file="main.py"
+mode="standalone"

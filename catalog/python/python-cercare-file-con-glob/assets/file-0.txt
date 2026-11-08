@@ -1,0 +1,7 @@
+from pathlib import Path
+from tempfile import TemporaryDirectory
+with TemporaryDirectory() as folder:
+    root = Path(folder)
+    for name in ["a.py", "b.txt", "c.py"]:
+        (root / name).touch()
+    print(sorted(path.name for path in root.glob("*.py")))

@@ -1,0 +1,6 @@
+from tempfile import TemporaryFile
+with TemporaryFile(mode="w+", encoding="utf-8") as stream:
+    stream.write("uno\ndue\n")
+    stream.seek(0)
+    for number, line in enumerate(stream, 1):
+        print(number, line.rstrip("\n"))

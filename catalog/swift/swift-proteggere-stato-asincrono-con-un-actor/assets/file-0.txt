@@ -1,0 +1,5 @@
+import Foundation
+actor Counter{private var count=0;func increment(){count+=1};func current()->Int{count}}
+let counter=Counter()
+await counter.increment()
+print(await counter.current())

@@ -1,0 +1,5 @@
+import sqlite3
+with sqlite3.connect(":memory:") as db:
+    cursor = db.execute("SELECT 1 UNION ALL SELECT 2 UNION ALL SELECT 3")
+    while batch := cursor.fetchmany(2):
+        print([row[0] for row in batch])

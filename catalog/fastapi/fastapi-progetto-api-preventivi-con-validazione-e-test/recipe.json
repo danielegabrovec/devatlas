@@ -1,0 +1,119 @@
+{
+  "id": "fastapi-progetto-api-preventivi-con-validazione-e-test",
+  "title": "Progetto: API preventivi con validazione e test",
+  "summary": "POST/quote con prezzo10,quantità3,sconto10 restituisce27.00; campi invalidi ricevono422. Calcolo Decimal separato dalla rotta.",
+  "stack": "fastapi",
+  "group": "Web e backend",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "FastAPI0.115.12; Pydantic2.11.7; Python3.11+",
+  "prerequisites": "Python3.11+ con venv; porta8000 libera. Dipendenze in requirements.txt; /docs permette di provare le rotte. Database e autenticazione di produzione non sono inclusi negli esempi in memoria.",
+  "tags": [
+    "fastapi",
+    "example",
+    "progetto:",
+    "api",
+    "preventivi",
+    "con"
+  ],
+  "project": true,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "pricing.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "5efc933f9d3d795b4a7bda7941de2c3b44e6c7de904d7577f2506b46cab1bd63"
+    },
+    {
+      "id": "file-1",
+      "path": "app.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "500761dc75067e2eb45080ffcfe1c3bb2223b10fe81d8b68a57861caa130a4de"
+    },
+    {
+      "id": "file-2",
+      "path": "test_pricing.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "f473037ad1a624b90742748f2b4cda540ed9066a98327ac65fbd2eacb9cd51c1"
+    },
+    {
+      "id": "file-3",
+      "path": "requirements.txt",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "65739c3d8a1fb7a7b9789cb1cbac8f6de99f1222bbdaf6453bb604f722b13fdf"
+    },
+    {
+      "id": "file-4",
+      "path": "README.md",
+      "language": "markdown",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "9124de3a4ea7ad4d3865028dad372e50d83702a86e6c2ea0cf7b6a1d1d0f7ab2"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "0f2939768ea0875044532f9c5c4a205b7c3604f20c6de4ae27d0e86f7f97485a"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "port",
+      "label": "Porta locale",
+      "type": "port",
+      "default": 8000,
+      "required": true
+    }
+  ],
+  "related": [
+    "fastapi-progetto-api-attivita-con-repository-sqlite",
+    "fastapi-organizzare-api-tramite-apirouter",
+    "fastapi-verificare-una-api-key-da-ambiente"
+  ],
+  "expected": "POST/quote con prezzo10,quantità3,sconto10 restituisce27.00; campi invalidi ricevono422. Calcolo Decimal separato dalla rotta.",
+  "errors": [
+    "Comando non trovato: installare la toolchain elencata nei prerequisiti.",
+    "Dipendenza mancante: eseguire l'installazione nella radice esportata, senza cambiare le versioni dichiarate."
+  ],
+  "sources": [
+    "https://fastapi.tiangolo.com/",
+    "https://docs.pydantic.dev/latest/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "date": "2026-10-29",
+    "details": "TestClient/pytest superati su FastAPI0.115.12,Pydantic2.11.7,Httpx0.28.1 isolati nella cache, Windows; SQLite temporaneo nei test del repository.",
+    "files_sha256": {
+      "pricing.py": "5efc933f9d3d795b4a7bda7941de2c3b44e6c7de904d7577f2506b46cab1bd63",
+      "app.py": "500761dc75067e2eb45080ffcfe1c3bb2223b10fe81d8b68a57861caa130a4de",
+      "test_pricing.py": "f473037ad1a624b90742748f2b4cda540ed9066a98327ac65fbd2eacb9cd51c1",
+      "requirements.txt": "65739c3d8a1fb7a7b9789cb1cbac8f6de99f1222bbdaf6453bb604f722b13fdf",
+      "README.md": "9124de3a4ea7ad4d3865028dad372e50d83702a86e6c2ea0cf7b6a1d1d0f7ab2"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

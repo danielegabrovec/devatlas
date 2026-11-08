@@ -1,0 +1,5 @@
+import calendar
+from datetime import date
+year, month = 2028, 2
+last = calendar.monthrange(year, month)[1]
+print(date(year, month, last))

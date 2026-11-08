@@ -1,0 +1,8 @@
+type Product = {name:string;price:number};
+function parseProduct(text:string):Product {
+  const value:unknown=JSON.parse(text);
+  if(typeof value!=="object"||value===null||!("name" in value)||typeof value.name!=="string"||!("price" in value)||typeof value.price!=="number"||!Number.isFinite(value.price)) throw new TypeError("Prodotto non valido");
+  return {name:value.name,price:value.price};
+}
+console.log(parseProduct('{"name":"libro","price":12}'));
+export {};

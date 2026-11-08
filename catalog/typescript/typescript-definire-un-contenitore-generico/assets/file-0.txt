@@ -1,0 +1,4 @@
+interface Box<T> { value: T; updated: boolean }
+const box: Box<number> = {value:42,updated:false};
+console.log(box.value.toFixed(1));
+export {};

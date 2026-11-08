@@ -1,0 +1,1 @@
+SELECT JSON_OBJECT('id',id,'name',name) FROM people;

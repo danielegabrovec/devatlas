@@ -1,0 +1,5 @@
+interface User { id: number; name: string; secret: string }
+type PublicUser = Pick<User, "id" | "name">;
+const user: PublicUser = {id:7,name:"Ada"};
+console.log(user);
+export {};

@@ -1,0 +1,1 @@
+*{box-sizing:border-box}body{font:16px/1.5 system-ui;margin:2rem;color:#172033}button,input,select,textarea{font:inherit;margin:.3rem;padding:.5rem}label{display:block}a{color:#075ea8}.option{display:block;padding:1rem;border:2px solid #bbc}.option:has(input:checked){background:#e2f2e8;border-color:#15803d}

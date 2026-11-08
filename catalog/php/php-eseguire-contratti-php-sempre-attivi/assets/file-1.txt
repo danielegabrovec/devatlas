@@ -1,0 +1,6 @@
+<?php
+declare(strict_types=1);
+require __DIR__."/Math.php";
+if(area(3,4)!==12)throw new RuntimeException("Area errata");
+try{area(-1,2);throw new RuntimeException("Validazione assente");}catch(InvalidArgumentException $expected){}
+echo "2 contratti verificati",PHP_EOL;

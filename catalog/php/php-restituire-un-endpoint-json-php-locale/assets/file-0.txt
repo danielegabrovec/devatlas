@@ -1,0 +1,6 @@
+<?php
+declare(strict_types=1);
+header('Content-Type: application/json; charset=utf-8');
+$page=filter_var($_GET['page']??'1',FILTER_VALIDATE_INT,['options'=>['min_range'=>1]]);
+if($page===false){http_response_code(400);echo json_encode(['error'=>'page non valida'],JSON_THROW_ON_ERROR);return;}
+echo json_encode(['page'=>$page,'items'=>['Ada','Luca']],JSON_THROW_ON_ERROR);

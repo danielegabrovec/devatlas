@@ -1,0 +1,87 @@
+{
+  "id": "go-workflow-go-delve",
+  "title": "Debuggare Go con Delve e VS Code",
+  "summary": "Disabilita ottimizzazioni/inlining e prepara breakpoint nel package main.",
+  "stack": "go",
+  "group": "Linguaggi",
+  "section": "Debug",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Go 1.22+",
+  "prerequisites": "Toolchain Go1.22+ nel PATH. Tutti i moduli usano solo la libreria standard e non richiedono download di dipendenze.",
+  "tags": [
+    "workflow",
+    "debug",
+    "debugger",
+    "test",
+    "distribution"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "go.mod",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "6ca5aa54db1abf6744cb9a551591e8b005934761fd16810f0869fd1e91e7ecd4"
+    },
+    {
+      "id": "file-1",
+      "path": "main.go",
+      "language": "go",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "9a2e58b85660c92c43a941e604b6a9681f6d48d6874e7f85759392fb63c3a53d"
+    },
+    {
+      "id": "file-2",
+      "path": ".vscode/launch.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "1b05b6260b715b5611ffe7413675220aa0175ddea7017bcc406f06c131a3b9a7"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "1c83ea7e36b5adf404956b2245a797506ee847da7a5eebe31c157363792d80d5"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "go-workflow-go-module",
+    "go-workflow-go-test-binary",
+    "go-progetto-completo-inventario-in-memoria-go"
+  ],
+  "expected": "Delve consente di leggere valori e stack; la console completata stampa10.",
+  "errors": [
+    "Un Delve vecchio può rifiutare un nuovo Go: aggiorna l'adapter. dlv exec rimane interattivo; non aspettarti una terminazione automatica senza continue/exit."
+  ],
+  "sources": [
+    "https://go.dev/doc/",
+    "https://pkg.go.dev/std",
+    "https://github.com/go-delve/delve/tree/master/Documentation"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Sorgenti e configurazioni verificati su Windows x64: JSON parse, PowerShell parser, source compiler. Report: reports/languages-workflows-validation.json. Non attestati sessioni interattive di debug, installazioni di dipendenze o distribuzione completa del workflow; nessuna esecuzione Linux/macOS."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+p="atlas_demo:debug"
+cli(){ redis-cli -e --raw -h 127.0.0.1 -p 6381 "$@"; }
+cli SET "$p:key" value EX 60
+cli TYPE "$p:key"
+cli PTTL "$p:key"
+cli INFO stats
+cli SLOWLOG GET 5

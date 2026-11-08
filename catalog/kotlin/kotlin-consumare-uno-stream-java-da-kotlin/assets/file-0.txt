@@ -1,0 +1,6 @@
+import java.util.stream.Stream
+
+fun main() {
+val total = Stream.of(2,3,5).use { stream -> stream.mapToInt { it }.sum() }
+println(total)
+}

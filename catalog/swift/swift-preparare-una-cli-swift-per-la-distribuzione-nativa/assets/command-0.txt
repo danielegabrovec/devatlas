@@ -1,0 +1,4 @@
+swiftc -O main.swift -o atlas-swift
+mkdir -p dist
+cp atlas-swift dist/
+./dist/atlas-swift

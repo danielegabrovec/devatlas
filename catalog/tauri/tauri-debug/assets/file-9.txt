@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Tauri Debug",
+      "program": "${workspaceFolder}/src-tauri/target/debug/atlas_tauri.exe",
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+import{createServer}from'node:http';createServer((q,r)=>{const tag='"demo-v1"';if(q.headers['if-none-match']===tag){r.writeHead(304);r.end();return}r.writeHead(200,{'ETag':tag,'Cache-Control':'max-age=60'});r.end('demo')}).listen(3000,'127.0.0.1');

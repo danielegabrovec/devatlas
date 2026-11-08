@@ -1,0 +1,5 @@
+type Kind<T> = T extends string ? "text" : "other";
+const textKind: Kind<string> = "text";
+const numberKind: Kind<number> = "other";
+console.log(textKind, numberKind);
+export {};

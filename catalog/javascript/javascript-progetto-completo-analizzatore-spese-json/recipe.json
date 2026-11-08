@@ -1,0 +1,102 @@
+{
+  "id": "javascript-progetto-completo-analizzatore-spese-json",
+  "title": "Progetto completo analizzatore spese JSON",
+  "summary": "Separa validazione, aggregazione e test di un report di spese; nessun servizio e nessuna dipendenza npm.",
+  "stack": "javascript",
+  "group": "Linguaggi",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "ECMAScript 2022+; Node.js 22+ per eseguire i file .mjs",
+  "prerequisites": "Node.js 22+ nel PATH. Gli esempi riguardano il linguaggio e le API standard; nessun pacchetto npm.",
+  "tags": [
+    "project",
+    "module",
+    "map",
+    "test",
+    "money"
+  ],
+  "project": true,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.mjs",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "03ddb60e15eaeb61dceab7585ecfa557dd161508e2674246f5e81b1420dd8f37"
+    },
+    {
+      "id": "file-1",
+      "path": "expenses.mjs",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "df37b184fb91bc9caecc633ff83c2ddb7fc15844a63296df5ecd1c72d0078aaa"
+    },
+    {
+      "id": "file-2",
+      "path": "data.mjs",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "c2d7dcc006c913242e91e4b4602053f9cc554a5b5b23d81662328032fd90a174"
+    },
+    {
+      "id": "file-3",
+      "path": "expenses.test.mjs",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "6845882c98ca341f086bec94b630ce6c415a4ec430132721bc450d31ec8e269c"
+    },
+    {
+      "id": "file-4",
+      "path": "README.md",
+      "language": "markdown",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "fa40c3a3b93d09196d65668834e811af2478180cfb5e9e26c77eee2c63f47f5d"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "3d3a547cde28291f2758597411e55e4fae9fc14862d1679704c6482a8911753e"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "javascript-workflow-npm-esm-init",
+    "javascript-esportare-e-importare-funzioni-esm",
+    "javascript-raggruppare-record-con-un-accumulatore-map"
+  ],
+  "expected": "Due test superati; report con casa 2000 e libri 2000 centesimi.",
+  "errors": [
+    "Comando non trovato: installare la toolchain e riaprire il terminale."
+  ],
+  "sources": [
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "details": "Eseguito su Windows x64 il 29/10/2026. Ambiente: Node.js24.15.0, moduli ESM. Sorgenti compilati/controllati e programmi eseguiti; per i progetti sono stati eseguiti anche i test inclusi. Report: reports/languages-source-validation.json e reports/languages-runtime-validation.json. Linux e macOS non eseguiti.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

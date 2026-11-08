@@ -1,0 +1,6 @@
+<?php
+declare(strict_types=1);
+$options=getopt('',['name:','count:']);
+$name=$options['name']??'Ada';$count=filter_var($options['count']??'1',FILTER_VALIDATE_INT,['options'=>['min_range'=>1,'max_range'=>5]]);
+if(!is_string($name)||$count===false)throw new InvalidArgumentException('Opzioni non valide');
+for($i=0;$i<$count;$i++)echo "Ciao $name",PHP_EOL;

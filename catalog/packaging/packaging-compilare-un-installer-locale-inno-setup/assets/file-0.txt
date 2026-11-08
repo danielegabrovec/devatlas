@@ -1,0 +1,11 @@
+[Setup]
+AppName=Recipe Demo
+AppVersion=1.0.0
+DefaultDirName={localappdata}\Programs\RecipeDemo
+PrivilegesRequired=lowest
+OutputDir=output
+OutputBaseFilename=RecipeDemo-Setup
+Compression=lzma2
+SolidCompression=yes
+[Files]
+Source: "README.txt"; DestDir: "{app}"; Flags: ignoreversion

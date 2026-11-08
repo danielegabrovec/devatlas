@@ -1,0 +1,1 @@
+export const products=[{id:1,name:'Tastiera',price:50},{id:2,name:'Mouse',price:20},{id:3,name:'Monitor',price:180},{id:4,name:'Hub',price:25}];export function search(q){return products.filter(p=>p.name.toLowerCase().includes(q.toLowerCase()))}

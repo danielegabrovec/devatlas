@@ -1,0 +1,1 @@
+SELECT id FROM people EXCEPT SELECT person_id FROM orders;

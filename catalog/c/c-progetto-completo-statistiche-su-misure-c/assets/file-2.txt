@@ -1,0 +1,3 @@
+#include "stats.h"
+#include <math.h>
+bool stats(const double *values,size_t count,struct Stats *result){if(!values||!count||!result)return false;double min=values[0],max=values[0],mean=0;for(size_t i=0;i<count;i++){if(!isfinite(values[i]))return false;if(values[i]<min)min=values[i];if(values[i]>max)max=values[i];mean+=(values[i]-mean)/(double)(i+1);}*result=(struct Stats){min,max,mean};return true;}

@@ -1,0 +1,3 @@
+import React, {useState,useEffect,useMemo,useRef,useReducer,useId,useContext,createContext,useCallback,useLayoutEffect,useTransition,useDeferredValue,useSyncExternalStore,useImperativeHandle,forwardRef,memo,lazy,Suspense,Component} from 'react';
+import {createPortal} from 'react-dom';
+export default function App(){const[raw,set]=useState('');const n=raw===''?null:Number(raw);return <label>Importo<input type='number' value={raw} onChange={e=>set(e.target.value)}/><output>{n===null?'Nessun valore':n*2}</output></label>}

@@ -1,0 +1,4 @@
+Future<void> main() async {
+final values=[1,2,3,4];
+print(values.where((value)=>value.isEven).toList());
+}

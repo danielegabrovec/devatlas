@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdint.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <errno.h>
+#include <limits.h>
+
+
+int main(void){
+FILE *stream=tmpfile();if(!stream)return 1;
+fputs("Ada Rossi\n",stream);rewind(stream);char line[64];
+if(fgets(line,sizeof line,stream)){line[strcspn(line,"\r\n")]='\0';puts(line);}fclose(stream);
+return 0;
+}

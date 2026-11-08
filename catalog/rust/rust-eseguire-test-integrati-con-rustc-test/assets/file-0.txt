@@ -1,0 +1,6 @@
+fn total(values:&[i32])->i32{values.iter().sum()}
+#[cfg(test)]mod tests{use super::*;#[test]fn sums(){assert_eq!(total(&[2,3]),5);}#[test]fn empty(){assert_eq!(total(&[]),0);}}
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+println!("Compilare anche con --test per eseguire i contratti");
+Ok(())
+}

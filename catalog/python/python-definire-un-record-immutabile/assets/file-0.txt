@@ -1,0 +1,11 @@
+from dataclasses import dataclass, FrozenInstanceError
+@dataclass(frozen=True)
+class Point:
+    x: int
+    y: int
+p = Point(2, 3)
+print(p == Point(2, 3))
+try:
+    p.x = 8
+except FrozenInstanceError:
+    print("immutabile")

@@ -1,0 +1,8 @@
+export function summarize(rows) {
+  const totals = new Map();
+  for (const row of rows) {
+    if (typeof row.category !== "string" || !Number.isSafeInteger(row.cents) || row.cents < 0) throw new TypeError("Spesa non valida");
+    totals.set(row.category, (totals.get(row.category) ?? 0) + row.cents);
+  }
+  return Object.fromEntries([...totals].sort(([a], [b]) => a.localeCompare(b)));
+}

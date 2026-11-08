@@ -1,0 +1,84 @@
+{
+  "id": "fastapi-inizializzare-ambiente-e-progetto-fastapi",
+  "title": "Inizializzare ambiente e progetto fastapi",
+  "summary": "Crea il venv e installa le versioni dichiarate senza modificare Python globale. app:app significa modulo app.py e istanza app. /docs espone OpenAPI; /health restituisce ok=true. Su Linux/macOS il Python del venv si trova in .venv/bin/python. --reload serve soltanto durante lo sviluppo.",
+  "stack": "fastapi",
+  "group": "Web e backend",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "FastAPI0.115.12; Pydantic2.11.7; Python3.11+",
+  "prerequisites": "Python3.11+ con venv; porta8000 libera. Dipendenze in requirements.txt; /docs permette di provare le rotte. Database e autenticazione di produzione non sono inclusi negli esempi in memoria.",
+  "tags": [
+    "fastapi",
+    "initialize",
+    "bootstrap",
+    "setup",
+    "environment",
+    "configuration"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "app.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "8917b26f99138e686105d9e42630d7a3e10575866207f172f1527e3883a4296e"
+    },
+    {
+      "id": "file-1",
+      "path": "requirements.txt",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "65739c3d8a1fb7a7b9789cb1cbac8f6de99f1222bbdaf6453bb604f722b13fdf"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "c9375ec116d9a6692ba3c48f72163f6bf43a616c5ea3131ea32531e91da8d807"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "fastapi-progetto-api-attivita-con-repository-sqlite",
+    "fastapi-progetto-api-preventivi-con-validazione-e-test",
+    "fastapi-verificare-una-api-key-da-ambiente"
+  ],
+  "expected": "L’applicazione si avvia localmente con il file di configurazione fornito. La versione della toolchain è verificabile dai comandi iniziali.",
+  "errors": [
+    "Comando non trovato: installare la toolchain elencata nei prerequisiti.",
+    "Dipendenza mancante: eseguire l'installazione nella radice esportata, senza cambiare le versioni dichiarate."
+  ],
+  "sources": [
+    "https://fastapi.tiangolo.com/",
+    "https://docs.pydantic.dev/latest/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "date": "2026-10-29",
+    "details": "TestClient/pytest superati su FastAPI0.115.12,Pydantic2.11.7,Httpx0.28.1 isolati nella cache, Windows; SQLite temporaneo nei test del repository.",
+    "files_sha256": {
+      "app.py": "8917b26f99138e686105d9e42630d7a3e10575866207f172f1527e3883a4296e",
+      "requirements.txt": "65739c3d8a1fb7a7b9789cb1cbac8f6de99f1222bbdaf6453bb604f722b13fdf"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

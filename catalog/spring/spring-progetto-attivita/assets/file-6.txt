@@ -1,0 +1,2 @@
+# API attività
+JDK21 e Maven. Eseguire mvn test, mvn package, java -jar target/spring-lab-1.0.0.jar. GET/tasks legge la lista; POST/tasks con JSON {"title":"Prima"} crea una attività. Lo stato èin memoria e riparte vuoto. I metodi sincronizzati proteggono ID e lista dalle richieste concorrenti.

@@ -1,0 +1,141 @@
+{
+  "date": "2026-10-29",
+  "version": "1.1.0",
+  "scope": "Interfaccia Qt, editor personale, avvio e ciclo indicizzazione; dati sintetici isolati.",
+  "bugs_fixed": [
+    {
+      "cause": "Aggiunta di file/comandi e rimozione parametri non impostavano sempre dirty; i nuovi selettori di tipo non erano collegati.",
+      "fix": "Tutte le modifiche strutturali e i nuovi controlli attivano la conferma per modifiche non salvate."
+    },
+    {
+      "cause": "Salvataggio editor rendeva obbligatori anche parametri dichiarati facoltativi.",
+      "fix": "Colonna Obbligatorio preserva required=False; selezione progetto completo disponibile."
+    },
+    {
+      "cause": "Editor continuava a usare il lexer iniziale e il tema precedente.",
+      "fix": "Lexer aggiornato quando cambia file/linguaggio/shell; colori seguono la palette e numeri di riga si ridimensionano con il documento."
+    },
+    {
+      "cause": "Preview non valida disabilitava il pulsante Copia ma lasciava selezionabile il vecchio editor; tornando su parametri invalidi potevano restare riferimenti a widget eliminati.",
+      "fix": "Editor e pulsanti disabilitati durante validazione; blocchi ricreati senza riferimenti obsoleti, parametri conservati soltanto nella sessione."
+    },
+    {
+      "cause": "Ricaricare navigazione perdeva selezione e stato espanso; avvio/ricostruzione indice attendevano sul thread UI.",
+      "fix": "Selezione e gruppi espansi preservati; indicizzazione asincrona con snapshot, coalescing, generazioni e force rebuild atomico senza unlink dal thread UI."
+    },
+    {
+      "cause": "Cartella dati e inizializzazione registro erano fuori dalla gestione errori iniziale.",
+      "fix": "Errore leggibile su cartella/registro non scrivibile, senza cambiare profilo o cancellare dati."
+    },
+    {
+      "cause": "Seconda istanza sullo stesso profilo poteva competere sulla ricostruzione SQLite.",
+      "fix": "QLockFile per profilo e QLocalServer/QLocalSocket per riattivare la finestra già aperta."
+    },
+    {
+      "cause": "CLI smoke chiudeva prima della nuova indicizzazione in background e non attestava la ricerca.",
+      "fix": "Smoke attende indice pronto, ricerca reale e lettore con blocchi; exit1 su errore o zero risultati, scadenza20s e rapporto locale smoke-test.json."
+    }
+  ],
+  "features_added": [
+    "Rinomina ed eliminazione raccolte dai menu File e contestuale; le schede, i preferiti e le note restano conservati.",
+    "Percorsi guidati con ordine dei passi, progetti finali, precedente/successivo, completamento e ripresa persistente per tecnologia.",
+    "Dettagli della verifica consultabili anche in vista rapida; istruzioni per tipi dei parametri e fonti con etichette compatte.",
+    "Stato di preparazione ricerca non bloccante; lettore/editor disponibili durante aggiornamento, export raccolta sospeso fino a indice pronto.",
+    "Fallback sul catalogo incluso quando quello locale automatico è corrotto; originale e dati personali conservati, banner non bloccante.",
+    "Banner per schede personali non valide e preferenze salvate nel backup per recupero manuale."
+  ],
+  "tests": {
+    "environment": {
+      "python": "3.13.13",
+      "pyside6": "6.12.0",
+      "platform": "win32",
+      "qt_platform": "offscreen"
+    },
+    "command": ".venv\\Scripts\\python -m pytest tests/test_ui.py tests/test_ui_extended.py --basetemp=.cache/pytest/ui-reviewed --junitxml=reports/ui-review-tests.xml -q",
+    "tests": 41,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "duration_seconds": 42.706,
+    "junit": "reports/ui-review-tests.xml",
+    "scenarios": [
+      "Ricerca/selezione, navigazione tastiera e temi",
+      "Parametri validi/invalidi, copia ed export identici al rendering",
+      "Nuova/copia/modifica personale e metadati file/comandi",
+      "Note, preferiti, raccolte, import/export e backup/ripristino su profilo distinto",
+      "Indice lento: heartbeat UI, modifiche accorpate, errori e retry",
+      "Lock per profilo e riattivazione locale della seconda istanza",
+      "CLI smoke con indice rallentato e fallimento con ricerca senza risultati",
+      "Finestre1540/950/800 e fattori Qt100/150/200% con editor ridimensionato"
+    ]
+  },
+  "screenshots": [
+    {
+      "path": "reports/ui-state/1.1-offscreen/dpi-1.5.png",
+      "width_px": 1425,
+      "height_px": 975,
+      "sha256": "ae5418b6f96d2549c1a2af702af7f08f56cc0ccd3d0b7050c26da7ef965256d5"
+    },
+    {
+      "path": "reports/ui-state/1.1-offscreen/dpi-1.png",
+      "width_px": 950,
+      "height_px": 650,
+      "sha256": "eaf44753c0a05c134c9b91bb38456d3e4450ddb67979c4b05380e7414580a672"
+    },
+    {
+      "path": "reports/ui-state/1.1-offscreen/dpi-2.png",
+      "width_px": 1900,
+      "height_px": 1300,
+      "sha256": "4bea748f7e6c5c62324814292d0c8231a2b958e6365d0b16db28872e7520b88f"
+    },
+    {
+      "path": "reports/ui-state/1.1-offscreen/editor-dpi-1.5.png",
+      "width_px": 1275,
+      "height_px": 750,
+      "sha256": "f2c6c08cffca1124b3daf08221a294480bd56bc2d445e181e008807e2c203bf1"
+    },
+    {
+      "path": "reports/ui-state/1.1-offscreen/editor-dpi-1.png",
+      "width_px": 850,
+      "height_px": 500,
+      "sha256": "c249f614d414405bb8cc7a52f8581045f706d197f07406be421363f7bbbf183c"
+    },
+    {
+      "path": "reports/ui-state/1.1-offscreen/editor-dpi-2.png",
+      "width_px": 1700,
+      "height_px": 1000,
+      "sha256": "71b2dbf6199a4ca16706bb86dc3136c29c6e0f1659795278e8caa4941f491790"
+    },
+    {
+      "path": "reports/ui-state/1.1-offscreen/workflow-dark-950.png",
+      "width_px": 950,
+      "height_px": 650,
+      "sha256": "e20f4e2b939009f780574e0745ac4917eaa551aa19066079c57b40d8a841a37a"
+    },
+    {
+      "path": "reports/ui-state/1.1-offscreen/workflow-light-1540.png",
+      "width_px": 1540,
+      "height_px": 940,
+      "sha256": "9013ce4e80a6a27a86c44cd78478f8d31be30b067f4c0f9259554c1724bf5d88"
+    },
+    {
+      "path": "reports/ui-state/1.1-offscreen/workflow-light-800.png",
+      "width_px": 800,
+      "height_px": 520,
+      "sha256": "f3239fafd3c5a1d0fda9da7624ba22df6bed5f32227823fc3014a0cecd759d3f"
+    }
+  ],
+  "source_sha256": {
+    "devatlas/app.py": "5ccd6bbb9bb807836eb0b5ca7fb877fb075e813c94e0014281a80c8834673dad",
+    "devatlas/editor.py": "3e37192298c5cb24455f292ee95cded916244a26f319bef9e8745006adce5dc2",
+    "devatlas/codewidgets.py": "ab1bc1cf68080496cd6490b3322e2046d3f36862814a5233fe97f861c48fa0c5",
+    "devatlas/theme.py": "8963bbeec945dfb35dfcce73414dd31bad7d84943d8b6f63b3db22299fca6ecd",
+    "tests/test_ui_extended.py": "7a5459d344e142d960a4512e2ba9d3296785290df4b3798864f2db28426262e6"
+  },
+  "limits": [
+    "Catture dei widget tramite Qt offscreen e DPI emulati: nessuna attestazione di monitor/DPI fisico o window manager nativo.",
+    "Nessuna automazione delle altre app o di finestre OS; dialoghi file nativi sostituiti con percorsi sintetici nei test.",
+    "IPC locale verificato fuori dal sandbox perché il sandbox blocca le named pipe. Nessuna connessione Internet dell’app.",
+    "Nessun dato personale reale aperto, importato o modificato; verifica dello standalone compilato a carico del packaging finale."
+  ]
+}

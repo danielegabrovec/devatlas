@@ -1,0 +1,1 @@
+<!doctype html><html lang="it"><title>Note</title><ul>{% for n in object_list %}<li>{{ n.title }}</li>{% endfor %}</ul>{% if page_obj.has_next %}<a href="?page={{ page_obj.next_page_number }}">Successiva</a>{% endif %}</html>

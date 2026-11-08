@@ -1,0 +1,7 @@
+import {Component,signal,computed,effect,inject,DestroyRef,ChangeDetectionStrategy} from '@angular/core';
+import {CommonModule} from '@angular/common';import {FormsModule} from '@angular/forms';
+import {Card} from './card';
+@Component({selector:'app-root',standalone:true,imports:[CommonModule,FormsModule,Card],changeDetection:ChangeDetectionStrategy.OnPush,template:`<main><app-card><h2 title>Documento</h2><p>Corpo del documento</p></app-card></main>`})
+export class AppComponent{
+
+}

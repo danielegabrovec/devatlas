@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdint.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <errno.h>
+#include <limits.h>
+
+
+int main(void){
+int actual=6*7;if(actual!=42){fputs("contratto violato\n",stderr);return 1;}puts("contratto verificato");
+return 0;
+}

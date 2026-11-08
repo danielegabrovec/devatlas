@@ -1,0 +1,1 @@
+const rows=[{id:1},{id:2},{id:3}];export function GET(request){const raw=Number(new URL(request.url).searchParams.get('after')??0);if(!Number.isInteger(raw)||raw<0)return Response.json({error:'cursore invalido'},{status:400});const items=rows.filter(x=>x.id>raw).slice(0,2);return Response.json({items,next:items.at(-1)?.id??null})}

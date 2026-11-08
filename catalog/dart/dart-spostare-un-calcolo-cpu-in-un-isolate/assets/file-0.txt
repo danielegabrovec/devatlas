@@ -1,0 +1,7 @@
+import 'dart:isolate';
+
+Future<void> main() async {
+final values=List<int>.generate(10000,(index)=>index);
+final total=await Isolate.run(()=>values.fold<int>(0,(sum,value)=>sum+value));
+print(total);
+}

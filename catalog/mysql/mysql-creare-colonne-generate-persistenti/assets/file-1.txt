@@ -1,0 +1,1 @@
+CREATE TABLE lines(price DECIMAL(10,2),qty INT,total DECIMAL(12,2) GENERATED ALWAYS AS(price*qty) STORED); INSERT INTO lines(price,qty) VALUES(5,3); SELECT * FROM lines;

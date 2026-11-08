@@ -1,0 +1,3 @@
+for (const value of [0 / 0, 1 / 0, 42]) {
+  console.log({ value, nan: Number.isNaN(value), finite: Number.isFinite(value) });
+}

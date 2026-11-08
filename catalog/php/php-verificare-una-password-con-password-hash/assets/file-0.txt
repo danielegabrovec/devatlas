@@ -1,0 +1,5 @@
+<?php
+declare(strict_types=1);
+$hash=password_hash('segreto-dimostrativo',PASSWORD_DEFAULT);
+var_export(password_verify('segreto-dimostrativo',$hash));
+echo PHP_EOL;

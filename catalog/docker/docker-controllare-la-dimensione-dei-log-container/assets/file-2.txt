@@ -1,0 +1,10 @@
+services:
+  web:
+    build: .
+    ports:
+      - "127.0.0.1:8089:8000"
+    logging:
+      driver: json-file
+      options:
+        max-size: "2m"
+        max-file: "2"

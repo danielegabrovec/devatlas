@@ -1,0 +1,2 @@
+function total(prices){const subtotal=prices.reduce((sum,price)=>sum+price,0);return Math.round(subtotal*100)/100;}
+module.exports={total};

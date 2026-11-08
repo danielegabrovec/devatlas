@@ -1,0 +1,2 @@
+docker compose up --build -d
+docker compose exec -T web python --version

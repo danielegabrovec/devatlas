@@ -1,0 +1,3 @@
+int left=2,right=3;
+int total=left+right;
+Console.WriteLine(total);

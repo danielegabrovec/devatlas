@@ -1,0 +1,1 @@
+export function GET(request){const q=new URL(request.url).searchParams.get('q')??'';return Response.json({q})}

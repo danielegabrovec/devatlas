@@ -1,0 +1,6 @@
+import java.nio.file.Files
+
+fun main() {
+val path = Files.createTempFile("kotlin-catalog-", ".txt")
+try { Files.writeString(path,"Città",Charsets.UTF_8); println(Files.readString(path,Charsets.UTF_8)) } finally { Files.deleteIfExists(path) }
+}

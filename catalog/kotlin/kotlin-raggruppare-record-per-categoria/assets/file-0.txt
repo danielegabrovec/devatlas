@@ -1,0 +1,5 @@
+data class Item(val category: String, val amount: Int)
+fun main() {
+val groups = listOf(Item("A",2),Item("B",4),Item("A",3)).groupBy { it.category }
+println(groups.mapValues { (_,rows) -> rows.sumOf { it.amount } })
+}

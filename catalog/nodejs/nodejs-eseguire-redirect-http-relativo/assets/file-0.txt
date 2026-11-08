@@ -1,0 +1,1 @@
+import{createServer}from'node:http';createServer((q,r)=>{if(q.url==='/old'){r.writeHead(308,{Location:'/new'});r.end()}else r.end('Nuova pagina')}).listen(3000,'127.0.0.1');

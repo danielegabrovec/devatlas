@@ -1,0 +1,1 @@
+'use client';import{useActionState}from'react';import{validate}from'./actions';export default function Page(){const[state,action,pending]=useActionState(validate,{message:''});return <form action={action}><label>Nome<input name='name'/></label><button disabled={pending}>Invia</button><p role='status'>{state.message}</p></form>}

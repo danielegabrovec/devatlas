@@ -1,0 +1,1 @@
+SELECT jsonb_agg(jsonb_build_object('id',id,'name',name)) FROM people;

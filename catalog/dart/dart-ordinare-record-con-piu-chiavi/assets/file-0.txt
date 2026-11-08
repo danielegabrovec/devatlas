@@ -1,0 +1,5 @@
+Future<void> main() async {
+final people=[('Rossi','Luca'),('Rossi','Ada')];
+people.sort((a,b){final first=a.$1.compareTo(b.$1);return first!=0?first:a.$2.compareTo(b.$2);});
+print(people.map((item)=>item.$2).toList());
+}

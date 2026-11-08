@@ -1,0 +1,5 @@
+from django.http import JsonResponse
+from .forms import NameForm
+def home(request):
+    f=NameForm(request.GET)
+    return JsonResponse(f.cleaned_data if f.is_valid() else {'errors':f.errors.get_json_data()})

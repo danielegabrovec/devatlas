@@ -1,0 +1,11 @@
+import sqlite3
+source, target = sqlite3.connect(":memory:"), sqlite3.connect(":memory:")
+try:
+    source.execute("CREATE TABLE items(id INTEGER)")
+    source.execute("INSERT INTO items VALUES (7)")
+    source.commit()
+    source.backup(target)
+    print(target.execute("SELECT id FROM items").fetchone()[0])
+finally:
+    source.close()
+    target.close()

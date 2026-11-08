@@ -1,0 +1,5 @@
+Set-StrictMode -Version Latest
+$ErrorActionPreference='Stop'
+$file = Join-Path ([IO.Path]::GetTempPath()) ([guid]::NewGuid().ToString()+".txt")
+Set-Content -LiteralPath $file -Value "contenuto" -Encoding utf8
+Get-FileHash -LiteralPath $file -Algorithm SHA256

@@ -1,0 +1,2 @@
+# Note C++
+Compila con Qt Widgets e CMake. QSettings conserva la lista notes nello spazio Ricettario/CppNotes.

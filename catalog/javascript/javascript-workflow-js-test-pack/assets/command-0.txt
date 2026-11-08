@@ -1,0 +1,4 @@
+node --check src/math.mjs
+npm test
+npm pack --dry-run
+npm pack

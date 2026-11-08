@@ -1,0 +1,9 @@
+package main
+
+import (
+"fmt"
+)
+
+func main(){
+source:=[]int{1,2};target:=make([]int,len(source));copy(target,source);target[0]=9;fmt.Println(source,target)
+}

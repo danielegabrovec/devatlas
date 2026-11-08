@@ -1,0 +1,4166 @@
+{
+  "platform": "win32",
+  "date": "2026-10-29",
+  "recipes": 500,
+  "requested": [
+    "c",
+    "cpp",
+    "csharp",
+    "go",
+    "java",
+    "javascript",
+    "python",
+    "rust",
+    "typescript"
+  ],
+  "checks": 384,
+  "failures": 0,
+  "results": [
+    {
+      "id": "python-abbinare-sequenze-controllando-la-lunghezza",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-abbinare-sequenze-controllando-la-lunghezza\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-accumulare-importi-per-chiave",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-accumulare-importi-per-chiave\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-adattare-decimal-per-sqlite-esplicitamente",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-adattare-decimal-per-sqlite-esplicitamente\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-analizzare-argomenti-cli-con-argparse",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-analizzare-argomenti-cli-con-argparse\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-analizzare-campi-csv-con-virgole-tra-virgolette",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-analizzare-campi-csv-con-virgole-tra-virgolette\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-analizzare-e-formattare-una-data",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-analizzare-e-formattare-una-data\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-annullare-una-transazione-sqlite",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-annullare-una-transazione-sqlite\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-appiattire-una-sequenza-di-liste",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-appiattire-una-sequenza-di-liste\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-applicare-un-timeout-asincrono",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-applicare-un-timeout-asincrono\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-arrotondare-importi-con-decimal",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-arrotondare-importi-con-decimal\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-calcolare-con-frazioni-esatte",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-calcolare-con-frazioni-esatte\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-calcolare-differenze-tra-insiemi",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-calcolare-differenze-tra-insiemi\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-calcolare-giorni-tra-due-date",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-calcolare-giorni-tra-due-date\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-calcolare-media-e-deviazione-standard",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-calcolare-media-e-deviazione-standard\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-calcolare-quartili-con-metodo-esplicito",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-calcolare-quartili-con-metodo-esplicito\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-calcolare-sha-256-leggendo-a-blocchi",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-calcolare-sha-256-leggendo-a-blocchi\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-campionare-dati-in-modo-riproducibile",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-campionare-dati-in-modo-riproducibile\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-cercare-file-con-glob",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-cercare-file-con-glob\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-codificare-e-decodificare-utf-8",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-codificare-e-decodificare-utf-8\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-comprimere-e-decomprimere-con-gzip",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-comprimere-e-decomprimere-con-gzip\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-configurare-log-con-livelli",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-configurare-log-con-livelli\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-confrontare-due-file-per-contenuto",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-confrontare-due-file-per-contenuto\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-confrontare-due-versioni-di-testo",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-confrontare-due-versioni-di-testo\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-confrontare-elementi-consecutivi",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-confrontare-elementi-consecutivi\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-confrontare-testo-senza-distinguere-maiuscole",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-confrontare-testo-senza-distinguere-maiuscole\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-contare-frequenze-con-counter",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-contare-frequenze-con-counter\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-controllare-che-un-percorso-rimanga-nella-radice",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-controllare-che-un-percorso-rimanga-nella-radice\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-convertire-byte-in-base64",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-convertire-byte-in-base64\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-convertire-orari-con-offset-fisso",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-convertire-orari-con-offset-fisso\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-copiare-un-file-conservando-i-metadati",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-copiare-un-file-conservando-i-metadati\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-creare-cartelle-annidate-in-modo-idempotente",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-creare-cartelle-annidate-in-modo-idempotente\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-creare-e-leggere-un-archivio-zip",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-creare-e-leggere-un-archivio-zip\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-creare-query-string-da-parametri",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-creare-query-string-da-parametri\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-creare-un-iteratore-personalizzato",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-creare-un-iteratore-personalizzato\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-creare-una-chiusura-con-stato",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-creare-una-chiusura-con-stato\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-creare-uno-slug-leggibile",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-creare-uno-slug-leggibile\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-decorare-una-funzione-conservandone-i-metadati",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-decorare-una-funzione-conservandone-i-metadati\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-definire-stati-con-enum",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-definire-stati-con-enum\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-definire-un-record-immutabile",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-definire-un-record-immutabile\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-descrivere-un-interfaccia-con-protocol",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-descrivere-un-interfaccia-con-protocol\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-distribuire-calcoli-in-processi-separati",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-distribuire-calcoli-in-processi-separati\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-distribuire-operazioni-con-threadpoolexecutor",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-distribuire-operazioni-con-threadpoolexecutor\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-dividere-una-lista-in-blocchi",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-dividere-una-lista-in-blocchi\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-dividere-una-riga-con-un-massimo-di-separatori",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-dividere-una-riga-con-un-massimo-di-separatori\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-duplicare-un-database-sqlite-con-backup",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-duplicare-un-database-sqlite-con-backup\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-eliminare-duplicati-mantenendo-l-ordine",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-eliminare-duplicati-mantenendo-l-ordine\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-enumerare-a-partire-da-uno",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-enumerare-a-partire-da-uno\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-eseguire-coroutine-concorrenti-con-gather",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-eseguire-coroutine-concorrenti-con-gather\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-eseguire-query-sqlite-parametrizzate-da-python",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-eseguire-query-sqlite-parametrizzate-da-python\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-eseguire-un-processo-senza-shell",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-eseguire-un-processo-senza-shell\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-esportare-sql-da-un-collegamento-python",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-esportare-sql-da-un-collegamento-python\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-estrarre-attivita-per-priorita",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-estrarre-attivita-per-priorita\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-estrarre-elementi-da-xml",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-estrarre-elementi-da-xml\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-estrarre-gruppi-con-nome-da-un-log",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-estrarre-gruppi-con-nome-da-un-log\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-evitare-un-valore-predefinito-mutabile",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-evitare-un-valore-predefinito-mutabile\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-fissare-argomenti-con-partial",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-fissare-argomenti-con-partial\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-formattare-colonne-numeriche",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-formattare-colonne-numeriche\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-generare-un-prodotto-cartesiano",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-generare-un-prodotto-cartesiano\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-generare-un-token-casuale-per-identificazione",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-generare-un-token-casuale-per-identificazione\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-gestire-errori-di-dominio-con-eccezioni-dedicate",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-gestire-errori-di-dominio-con-eccezioni-dedicate\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-gestire-una-coda-limitata",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-gestire-una-coda-limitata\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-gestire-una-risorsa-con-contextmanager",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-gestire-una-risorsa-con-contextmanager\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-impacchettare-numeri-in-un-protocollo-binario",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-impacchettare-numeri-in-un-protocollo-binario\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-individuare-un-eseguibile-nel-path",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-individuare-un-eseguibile-nel-path\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-inserire-mantenendo-l-ordinamento",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-inserire-mantenendo-l-ordinamento\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-inserire-piu-righe-sqlite-con-executemany",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-inserire-piu-righe-sqlite-con-executemany\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-leggere-configurazioni-a-piu-livelli",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-leggere-configurazioni-a-piu-livelli\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-leggere-configurazioni-toml",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-leggere-configurazioni-toml\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-leggere-e-scrivere-csv-con-intestazioni",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-leggere-e-scrivere-csv-con-intestazioni\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-leggere-e-scrivere-testo-con-pathlib",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-leggere-e-scrivere-testo-con-pathlib\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-leggere-opzioni-ini-tipizzate",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-leggere-opzioni-ini-tipizzate\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-leggere-righe-sqlite-per-nome-colonna",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-leggere-righe-sqlite-per-nome-colonna\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-leggere-sqlite-a-blocchi-con-fetchmany",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-leggere-sqlite-a-blocchi-con-fetchmany\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-leggere-un-file-con-bom-utf-8",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-leggere-un-file-con-bom-utf-8\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-leggere-un-file-riga-per-riga",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-leggere-un-file-riga-per-riga\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-leggere-un-tratto-binario-con-seek",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-leggere-un-tratto-binario-con-seek\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-leggere-una-data-iso-con-offset",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-leggere-una-data-iso-con-offset\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-leggere-una-variabile-di-ambiente-con-default",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-leggere-una-variabile-di-ambiente-con-default\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-limitare-la-concorrenza-con-semaphore",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-limitare-la-concorrenza-con-semaphore\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-mandare-a-capo-un-paragrafo",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-mandare-a-capo-un-paragrafo\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-mascherare-cifre-con-una-sostituzione-regex",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-mascherare-cifre-con-una-sostituzione-regex\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-memorizzare-risultati-puri-con-cache",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-memorizzare-risultati-puri-con-cache\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-misurare-allocazioni-con-tracemalloc",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-misurare-allocazioni-con-tracemalloc\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-misurare-una-durata-con-un-orologio-monotono",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-misurare-una-durata-con-un-orologio-monotono\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-normalizzare-accenti-unicode",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-normalizzare-accenti-unicode\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-ordinare-record-su-piu-campi",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-ordinare-record-su-piu-campi\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-ordinare-senza-modificare-la-lista-originale",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-ordinare-senza-modificare-la-lista-originale\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-ottenere-l-identificativo-sqlite-appena-inserito",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-ottenere-l-identificativo-sqlite-appena-inserito\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-passare-dati-con-queue-tra-thread",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-passare-dati-con-queue-tra-thread\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-produrre-un-timestamp-utc-consapevole",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-produrre-un-timestamp-utc-consapevole\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-profilare-una-funzione-con-cprofile",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-profilare-una-funzione-con-cprofile\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-progetto-completo-cli-inventario-json",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-progetto-completo-cli-inventario-json\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-progetto-completo-cli-inventario-json",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-progetto-completo-cli-inventario-json\\inventory.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-progetto-completo-cli-inventario-json",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-progetto-completo-cli-inventario-json\\test_inventory.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-proteggere-uno-stato-condiviso-con-lock",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-proteggere-uno-stato-condiviso-con-lock\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-raggruppare-record-per-categoria",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-raggruppare-record-per-categoria\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-registrare-una-funzione-python-in-sqlite",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-registrare-una-funzione-python-in-sqlite\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-restituire-piu-risultati-con-una-tupla",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-restituire-piu-risultati-con-una-tupla\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-ripulire-spazi-e-righe-vuote",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-ripulire-spazi-e-righe-vuote\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-scrivere-byte-e-verificarne-la-lunghezza",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-scrivere-byte-e-verificarne-la-lunghezza\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-scrivere-un-test-unitario-con-unittest",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-scrivere-un-test-unitario-con-unittest\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-segnalare-la-posizione-di-un-errore-json",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-segnalare-la-posizione-di-un-errore-json\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-selezionare-comportamenti-con-match",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-selezionare-comportamenti-con-match\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-semplificare-rapporti-con-mcd",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-semplificare-rapporti-con-mcd\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-serializzare-json-leggibile-con-unicode",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-serializzare-json-leggibile-con-unicode\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-serializzare-una-dataclass-in-json",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-serializzare-una-dataclass-in-json\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-sommare-durate-senza-manipolare-stringhe",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-sommare-durate-senza-manipolare-stringhe\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-sostituire-atomicamente-un-file-nella-stessa-directory",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-sostituire-atomicamente-un-file-nella-stessa-directory\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-sostituire-un-collaboratore-con-mock",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-sostituire-un-collaboratore-con-mock\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-sostituire-variabili-in-un-modello-testuale",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-sostituire-variabili-in-un-modello-testuale\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-spostare-lavoro-bloccante-in-un-thread",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-spostare-lavoro-bloccante-in-un-thread\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-stampare-uno-stack-trace-gestito",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-stampare-uno-stack-trace-gestito\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-trasporre-una-matrice-rettangolare",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-trasporre-una-matrice-rettangolare\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-trovare-i-maggiori-valori-senza-ordinare-tutto",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-trovare-i-maggiori-valori-senza-ordinare-tutto\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-trovare-l-ultimo-giorno-del-mese",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-trovare-l-ultimo-giorno-del-mese\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-trovare-mediana-e-moda",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-trovare-mediana-e-moda\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-trovare-un-periodo-comune",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-trovare-un-periodo-comune\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-unire-dizionari-con-precedenza-esplicita",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-unire-dizionari-con-precedenza-esplicita\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-usare-argomenti-solo-per-parola-chiave",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-usare-argomenti-solo-per-parola-chiave\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-usare-un-file-temporaneo-nominato",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-usare-un-file-temporaneo-nominato\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-validare-un-codice-con-espressione-regolare",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-validare-un-codice-con-espressione-regolare\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "id": "python-validare-una-proprieta-di-classe",
+      "file": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\python\\python-validare-una-proprieta-di-classe\\main.py",
+      "check": "ast",
+      "ok": true
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-accedere-a-proprieta-annidate-opzionali\\main.mjs"
+      ],
+      "seconds": 0.062,
+      "output": "",
+      "id": "javascript-accedere-a-proprieta-annidate-opzionali",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-accumulare-un-totale-con-reduce\\main.mjs"
+      ],
+      "seconds": 0.063,
+      "output": "",
+      "id": "javascript-accumulare-un-totale-con-reduce",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-applicare-un-timeout-a-una-promise\\main.mjs"
+      ],
+      "seconds": 0.063,
+      "output": "",
+      "id": "javascript-applicare-un-timeout-a-una-promise",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-attendere-promise-in-parallelo-con-ordine-stabile\\main.mjs"
+      ],
+      "seconds": 0.062,
+      "output": "",
+      "id": "javascript-attendere-promise-in-parallelo-con-ordine-stabile",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-attendere-un-valore-asincrono\\main.mjs"
+      ],
+      "seconds": 0.062,
+      "output": "",
+      "id": "javascript-attendere-un-valore-asincrono",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-calcolare-con-interi-oltre-la-precisione-number\\main.mjs"
+      ],
+      "seconds": 0.047,
+      "output": "",
+      "id": "javascript-calcolare-con-interi-oltre-la-precisione-number",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-codificare-componenti-di-un-url\\main.mjs"
+      ],
+      "seconds": 0.063,
+      "output": "",
+      "id": "javascript-codificare-componenti-di-un-url",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-comporre-comportamenti-tramite-oggetti\\main.mjs"
+      ],
+      "seconds": 0.062,
+      "output": "",
+      "id": "javascript-comporre-comportamenti-tramite-oggetti",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-confrontare-valori-senza-coercizione\\main.mjs"
+      ],
+      "seconds": 0.078,
+      "output": "",
+      "id": "javascript-confrontare-valori-senza-coercizione",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-congelare-la-struttura-superficiale-di-un-oggetto\\main.mjs"
+      ],
+      "seconds": 0.062,
+      "output": "",
+      "id": "javascript-congelare-la-struttura-superficiale-di-un-oggetto",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-conservare-il-valore-con-un-espressione-condizionale\\main.mjs"
+      ],
+      "seconds": 0.063,
+      "output": "",
+      "id": "javascript-conservare-il-valore-con-un-espressione-condizionale",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-consumare-un-generatore-asincrono\\main.mjs"
+      ],
+      "seconds": 0.047,
+      "output": "",
+      "id": "javascript-consumare-un-generatore-asincrono",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-controllare-tutti-o-almeno-un-elemento\\main.mjs"
+      ],
+      "seconds": 0.047,
+      "output": "",
+      "id": "javascript-controllare-tutti-o-almeno-un-elemento",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-convertire-numeri-senza-accettare-suffissi\\main.mjs"
+      ],
+      "seconds": 0.062,
+      "output": "",
+      "id": "javascript-convertire-numeri-senza-accettare-suffissi",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-copiare-dati-annidati-con-structuredclone\\main.mjs"
+      ],
+      "seconds": 0.078,
+      "output": "",
+      "id": "javascript-copiare-dati-annidati-con-structuredclone",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-copiare-un-array-senza-condividere-la-struttura\\main.mjs"
+      ],
+      "seconds": 0.062,
+      "output": "",
+      "id": "javascript-copiare-un-array-senza-condividere-la-struttura",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-costruire-un-dizionario-da-coppie\\main.mjs"
+      ],
+      "seconds": 0.062,
+      "output": "",
+      "id": "javascript-costruire-un-dizionario-da-coppie",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-creare-un-contatore-con-closure\\main.mjs"
+      ],
+      "seconds": 0.063,
+      "output": "",
+      "id": "javascript-creare-un-contatore-con-closure",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-creare-un-errore-applicativo-con-causa\\main.mjs"
+      ],
+      "seconds": 0.063,
+      "output": "",
+      "id": "javascript-creare-un-errore-applicativo-con-causa",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-creare-un-generatore-lazy\\main.mjs"
+      ],
+      "seconds": 0.063,
+      "output": "",
+      "id": "javascript-creare-un-generatore-lazy",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-deduplicare-un-array-con-set\\main.mjs"
+      ],
+      "seconds": 0.063,
+      "output": "",
+      "id": "javascript-deduplicare-un-array-con-set",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-destrutturare-oggetti-con-rinomina-e-default\\main.mjs"
+      ],
+      "seconds": 0.062,
+      "output": "",
+      "id": "javascript-destrutturare-oggetti-con-rinomina-e-default",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-diagnosticare-un-valore-non-finito\\main.mjs"
+      ],
+      "seconds": 0.078,
+      "output": "",
+      "id": "javascript-diagnosticare-un-valore-non-finito",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-distinguere-proprieta-assente-da-valore-undefined\\main.mjs"
+      ],
+      "seconds": 0.078,
+      "output": "",
+      "id": "javascript-distinguere-proprieta-assente-da-valore-undefined",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-dividere-un-array-in-lotti\\main.mjs"
+      ],
+      "seconds": 0.078,
+      "output": "",
+      "id": "javascript-dividere-un-array-in-lotti",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-eseguire-tentativi-asincroni-limitati\\main.mjs"
+      ],
+      "seconds": 0.063,
+      "output": "",
+      "id": "javascript-eseguire-tentativi-asincroni-limitati",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-espandere-e-filtrare-con-flatmap\\main.mjs"
+      ],
+      "seconds": 0.078,
+      "output": "",
+      "id": "javascript-espandere-e-filtrare-con-flatmap",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-esportare-e-importare-funzioni-esm\\main.mjs"
+      ],
+      "seconds": 0.078,
+      "output": "",
+      "id": "javascript-esportare-e-importare-funzioni-esm",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-esportare-e-importare-funzioni-esm\\math.mjs"
+      ],
+      "seconds": 0.078,
+      "output": "",
+      "id": "javascript-esportare-e-importare-funzioni-esm",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-esprimere-condizioni-con-uno-switch-esaustivo-a-runtime\\main.mjs"
+      ],
+      "seconds": 0.078,
+      "output": "",
+      "id": "javascript-esprimere-condizioni-con-uno-switch-esaustivo-a-runtime",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-estrarre-tutte-le-corrispondenze-regex\\main.mjs"
+      ],
+      "seconds": 0.078,
+      "output": "",
+      "id": "javascript-estrarre-tutte-le-corrispondenze-regex",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-filtrare-record-per-condizione\\main.mjs"
+      ],
+      "seconds": 0.078,
+      "output": "",
+      "id": "javascript-filtrare-record-per-condizione",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-fissare-this-con-bind\\main.mjs"
+      ],
+      "seconds": 0.078,
+      "output": "",
+      "id": "javascript-fissare-this-con-bind",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-formattare-una-data-senza-dipendere-dal-fuso-locale\\main.mjs"
+      ],
+      "seconds": 0.078,
+      "output": "",
+      "id": "javascript-formattare-una-data-senza-dipendere-dal-fuso-locale",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-formattare-valuta-con-una-locale\\main.mjs"
+      ],
+      "seconds": 0.078,
+      "output": "",
+      "id": "javascript-formattare-valuta-con-una-locale",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-incapsulare-uno-stato-con-campi-privati\\main.mjs"
+      ],
+      "seconds": 0.063,
+      "output": "",
+      "id": "javascript-incapsulare-uno-stato-con-campi-privati",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-intercettare-assegnazioni-con-proxy\\main.mjs"
+      ],
+      "seconds": 0.063,
+      "output": "",
+      "id": "javascript-intercettare-assegnazioni-con-proxy",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-nascondere-metadati-con-weakmap\\main.mjs"
+      ],
+      "seconds": 0.078,
+      "output": "",
+      "id": "javascript-nascondere-metadati-con-weakmap",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-normalizzare-unicode-prima-del-confronto\\main.mjs"
+      ],
+      "seconds": 0.078,
+      "output": "",
+      "id": "javascript-normalizzare-unicode-prima-del-confronto",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-ordinare-numeri-senza-ordinamento-lessicografico\\main.mjs"
+      ],
+      "seconds": 0.078,
+      "output": "",
+      "id": "javascript-ordinare-numeri-senza-ordinamento-lessicografico",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-ordinare-testo-con-regole-locali\\main.mjs"
+      ],
+      "seconds": 0.063,
+      "output": "",
+      "id": "javascript-ordinare-testo-con-regole-locali",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-progetto-completo-analizzatore-spese-json\\main.mjs"
+      ],
+      "seconds": 0.063,
+      "output": "",
+      "id": "javascript-progetto-completo-analizzatore-spese-json",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-progetto-completo-analizzatore-spese-json\\expenses.mjs"
+      ],
+      "seconds": 0.078,
+      "output": "",
+      "id": "javascript-progetto-completo-analizzatore-spese-json",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-progetto-completo-analizzatore-spese-json\\data.mjs"
+      ],
+      "seconds": 0.093,
+      "output": "",
+      "id": "javascript-progetto-completo-analizzatore-spese-json",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-progetto-completo-analizzatore-spese-json\\expenses.test.mjs"
+      ],
+      "seconds": 0.078,
+      "output": "",
+      "id": "javascript-progetto-completo-analizzatore-spese-json",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-raccogliere-successi-e-fallimenti-asincroni\\main.mjs"
+      ],
+      "seconds": 0.093,
+      "output": "",
+      "id": "javascript-raccogliere-successi-e-fallimenti-asincroni",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-raggruppare-record-con-un-accumulatore-map\\main.mjs"
+      ],
+      "seconds": 0.078,
+      "output": "",
+      "id": "javascript-raggruppare-record-con-un-accumulatore-map",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-rendere-iterabile-un-oggetto\\main.mjs"
+      ],
+      "seconds": 0.078,
+      "output": "",
+      "id": "javascript-rendere-iterabile-un-oggetto",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-ricevere-un-numero-variabile-di-argomenti\\main.mjs"
+      ],
+      "seconds": 0.063,
+      "output": "",
+      "id": "javascript-ricevere-un-numero-variabile-di-argomenti",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-rilasciare-sempre-una-risorsa-con-finally\\main.mjs"
+      ],
+      "seconds": 0.063,
+      "output": "",
+      "id": "javascript-rilasciare-sempre-una-risorsa-con-finally",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-rileggere-date-da-json-con-reviver\\main.mjs"
+      ],
+      "seconds": 0.078,
+      "output": "",
+      "id": "javascript-rileggere-date-da-json-con-reviver",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-scambiare-variabili-senza-un-temporaneo\\main.mjs"
+      ],
+      "seconds": 0.078,
+      "output": "",
+      "id": "javascript-scambiare-variabili-senza-un-temporaneo",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-sostituire-con-una-funzione-callback\\main.mjs"
+      ],
+      "seconds": 0.078,
+      "output": "",
+      "id": "javascript-sostituire-con-una-funzione-callback",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-trasformare-elementi-con-map\\main.mjs"
+      ],
+      "seconds": 0.078,
+      "output": "",
+      "id": "javascript-trasformare-elementi-con-map",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-trovare-un-record-e-gestire-l-assenza\\main.mjs"
+      ],
+      "seconds": 0.078,
+      "output": "",
+      "id": "javascript-trovare-un-record-e-gestire-l-assenza",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-usare-oggetti-come-chiavi-con-map\\main.mjs"
+      ],
+      "seconds": 0.078,
+      "output": "",
+      "id": "javascript-usare-oggetti-come-chiavi-con-map",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-usare-un-default-solo-per-valori-nulli\\main.mjs"
+      ],
+      "seconds": 0.078,
+      "output": "",
+      "id": "javascript-usare-un-default-solo-per-valori-nulli",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-verificare-multipli-con-resto-non-negativo\\main.mjs"
+      ],
+      "seconds": 0.078,
+      "output": "",
+      "id": "javascript-verificare-multipli-con-resto-non-negativo",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "node",
+        "--check",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\javascript\\javascript-verificare-un-contratto-con-assert\\main.mjs"
+      ],
+      "seconds": 0.063,
+      "output": "",
+      "id": "javascript-verificare-un-contratto-con-assert",
+      "check": "node syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "rustc",
+        "--edition=2021",
+        "--emit=metadata",
+        "main.rs"
+      ],
+      "seconds": 0.36,
+      "output": "",
+      "id": "rust-abbinare-iteratori-con-zip",
+      "check": "rustc metadata"
+    },
+    {
+      "ok": true,
+      "command": [
+        "rustc",
+        "--edition=2021",
+        "--emit=metadata",
+        "main.rs"
+      ],
+      "seconds": 0.36,
+      "output": "",
+      "id": "rust-accumulare-frequenze-con-hashmap-entry",
+      "check": "rustc metadata"
+    },
+    {
+      "ok": true,
+      "command": [
+        "rustc",
+        "--edition=2021",
+        "--emit=metadata",
+        "main.rs"
+      ],
+      "seconds": 0.36,
+      "output": "",
+      "id": "rust-analizzare-un-numero-con-parse",
+      "check": "rustc metadata"
+    },
+    {
+      "ok": true,
+      "command": [
+        "rustc",
+        "--edition=2021",
+        "--emit=metadata",
+        "main.rs"
+      ],
+      "seconds": 0.297,
+      "output": "",
+      "id": "rust-calcolare-differenze-con-hashset",
+      "check": "rustc metadata"
+    },
+    {
+      "ok": true,
+      "command": [
+        "rustc",
+        "--edition=2021",
+        "--emit=metadata",
+        "main.rs"
+      ],
+      "seconds": 0.14,
+      "output": "",
+      "id": "rust-collegare-la-durata-di-un-risultato-ai-prestiti",
+      "check": "rustc metadata"
+    },
+    {
+      "ok": true,
+      "command": [
+        "rustc",
+        "--edition=2021",
+        "--emit=metadata",
+        "main.rs"
+      ],
+      "seconds": 0.14,
+      "output": "",
+      "id": "rust-combinare-operazioni-fallibili-con-result",
+      "check": "rustc metadata"
+    },
+    {
+      "ok": true,
+      "command": [
+        "rustc",
+        "--edition=2021",
+        "--emit=metadata",
+        "main.rs"
+      ],
+      "seconds": 0.156,
+      "output": "",
+      "id": "rust-condividere-un-contatore-con-arc-e-mutex",
+      "check": "rustc metadata"
+    },
+    {
+      "ok": true,
+      "command": [
+        "rustc",
+        "--edition=2021",
+        "--emit=metadata",
+        "main.rs"
+      ],
+      "seconds": 0.14,
+      "output": "",
+      "id": "rust-copiare-esplicitamente-una-string",
+      "check": "rustc metadata"
+    },
+    {
+      "ok": true,
+      "command": [
+        "rustc",
+        "--edition=2021",
+        "--emit=metadata",
+        "main.rs"
+      ],
+      "seconds": 0.141,
+      "output": "",
+      "id": "rust-definire-metodi-su-una-struct",
+      "check": "rustc metadata"
+    },
+    {
+      "ok": true,
+      "command": [
+        "rustc",
+        "--edition=2021",
+        "--emit=metadata",
+        "main.rs"
+      ],
+      "seconds": 0.156,
+      "output": "",
+      "id": "rust-definire-un-errore-di-dominio",
+      "check": "rustc metadata"
+    },
+    {
+      "ok": true,
+      "command": [
+        "rustc",
+        "--edition=2021",
+        "--emit=metadata",
+        "main.rs"
+      ],
+      "seconds": 0.156,
+      "output": "",
+      "id": "rust-dividere-e-ripulire-campi-testuali",
+      "check": "rustc metadata"
+    },
+    {
+      "ok": true,
+      "command": [
+        "rustc",
+        "--edition=2021",
+        "--emit=metadata",
+        "main.rs"
+      ],
+      "seconds": 0.14,
+      "output": "warning: function `total` is never used\n --> main.rs:1:4\n  |\n1 | fn total(values:&[i32])->i32{values.iter().sum()}\n  |    ^^^^^\n  |\n  = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default\n\nwarning: 1 warning emitted\n\n",
+      "id": "rust-eseguire-test-integrati-con-rustc-test",
+      "check": "rustc metadata"
+    },
+    {
+      "ok": true,
+      "command": [
+        "rustc",
+        "--edition=2021",
+        "--emit=metadata",
+        "main.rs"
+      ],
+      "seconds": 0.14,
+      "output": "",
+      "id": "rust-estrarre-il-massimo-con-binaryheap",
+      "check": "rustc metadata"
+    },
+    {
+      "ok": true,
+      "command": [
+        "rustc",
+        "--edition=2021",
+        "--emit=metadata",
+        "main.rs"
+      ],
+      "seconds": 0.141,
+      "output": "",
+      "id": "rust-filtrare-e-copiare-elementi-di-un-vector",
+      "check": "rustc metadata"
+    },
+    {
+      "ok": true,
+      "command": [
+        "rustc",
+        "--edition=2021",
+        "--emit=metadata",
+        "main.rs"
+      ],
+      "seconds": 0.125,
+      "output": "",
+      "id": "rust-gestire-una-coda-con-vecdeque",
+      "check": "rustc metadata"
+    },
+    {
+      "ok": true,
+      "command": [
+        "rustc",
+        "--edition=2021",
+        "--emit=metadata",
+        "main.rs"
+      ],
+      "seconds": 0.125,
+      "output": "",
+      "id": "rust-implementare-un-trait-per-formattare-un-valore",
+      "check": "rustc metadata"
+    },
+    {
+      "ok": true,
+      "command": [
+        "rustc",
+        "--edition=2021",
+        "--emit=metadata",
+        "main.rs"
+      ],
+      "seconds": 0.11,
+      "output": "",
+      "id": "rust-iterare-caratteri-unicode-invece-di-byte",
+      "check": "rustc metadata"
+    },
+    {
+      "ok": true,
+      "command": [
+        "rustc",
+        "--edition=2021",
+        "--emit=metadata",
+        "main.rs"
+      ],
+      "seconds": 0.11,
+      "output": "",
+      "id": "rust-iterare-chiavi-ordinate-con-btreemap",
+      "check": "rustc metadata"
+    },
+    {
+      "ok": true,
+      "command": [
+        "rustc",
+        "--edition=2021",
+        "--emit=metadata",
+        "main.rs"
+      ],
+      "seconds": 0.11,
+      "output": "",
+      "id": "rust-leggere-tramite-prestito-immutabile",
+      "check": "rustc metadata"
+    },
+    {
+      "ok": true,
+      "command": [
+        "rustc",
+        "--edition=2021",
+        "--emit=metadata",
+        "main.rs"
+      ],
+      "seconds": 0.109,
+      "output": "",
+      "id": "rust-leggere-un-file-utf-8-con-cleanup-esplicito",
+      "check": "rustc metadata"
+    },
+    {
+      "ok": true,
+      "command": [
+        "rustc",
+        "--edition=2021",
+        "--emit=metadata",
+        "main.rs"
+      ],
+      "seconds": 0.109,
+      "output": "",
+      "id": "rust-misurare-una-durata-con-instant",
+      "check": "rustc metadata"
+    },
+    {
+      "ok": true,
+      "command": [
+        "rustc",
+        "--edition=2021",
+        "--emit=metadata",
+        "main.rs"
+      ],
+      "seconds": 0.125,
+      "output": "",
+      "id": "rust-modificare-tramite-prestito-mutabile",
+      "check": "rustc metadata"
+    },
+    {
+      "ok": true,
+      "command": [
+        "rustc",
+        "--edition=2021",
+        "--emit=metadata",
+        "main.rs"
+      ],
+      "seconds": 0.109,
+      "output": "",
+      "id": "rust-ordinare-record-tramite-una-chiave",
+      "check": "rustc metadata"
+    },
+    {
+      "ok": true,
+      "command": [
+        "rustc",
+        "--edition=2021",
+        "--emit=metadata",
+        "main.rs"
+      ],
+      "seconds": 0.094,
+      "output": "",
+      "id": "rust-passare-una-porzione-di-array-come-slice",
+      "check": "rustc metadata"
+    },
+    {
+      "ok": true,
+      "command": [
+        "cargo",
+        "check",
+        "--offline"
+      ],
+      "seconds": 0.438,
+      "output": "    Checking catalog_rust_board v0.1.0 (C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\rust\\rust-progetto-completo-lista-attivita-rust)\n    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.31s\n",
+      "id": "rust-progetto-completo-lista-attivita-rust",
+      "check": "cargo check"
+    },
+    {
+      "ok": true,
+      "command": [
+        "rustc",
+        "--edition=2021",
+        "--emit=metadata",
+        "main.rs"
+      ],
+      "seconds": 0.125,
+      "output": "",
+      "id": "rust-propagare-errori-con-l-operatore-domanda",
+      "check": "rustc metadata"
+    },
+    {
+      "ok": true,
+      "command": [
+        "rustc",
+        "--edition=2021",
+        "--emit=metadata",
+        "main.rs"
+      ],
+      "seconds": 0.125,
+      "output": "",
+      "id": "rust-rappresentare-eventi-con-enum-e-payload",
+      "check": "rustc metadata"
+    },
+    {
+      "ok": true,
+      "command": [
+        "rustc",
+        "--edition=2021",
+        "--emit=metadata",
+        "main.rs"
+      ],
+      "seconds": 0.109,
+      "output": "",
+      "id": "rust-ridurre-una-sequenza-con-fold",
+      "check": "rustc metadata"
+    },
+    {
+      "ok": true,
+      "command": [
+        "rustc",
+        "--edition=2021",
+        "--emit=metadata",
+        "main.rs"
+      ],
+      "seconds": 0.125,
+      "output": "",
+      "id": "rust-rimuovere-duplicati-adiacenti-con-dedup",
+      "check": "rustc metadata"
+    },
+    {
+      "ok": true,
+      "command": [
+        "rustc",
+        "--edition=2021",
+        "--emit=metadata",
+        "main.rs"
+      ],
+      "seconds": 0.125,
+      "output": "",
+      "id": "rust-selezionare-intervalli-con-match",
+      "check": "rustc metadata"
+    },
+    {
+      "ok": true,
+      "command": [
+        "rustc",
+        "--edition=2021",
+        "--emit=metadata",
+        "main.rs"
+      ],
+      "seconds": 0.125,
+      "output": "",
+      "id": "rust-trasferire-proprieta-a-un-thread",
+      "check": "rustc metadata"
+    },
+    {
+      "ok": true,
+      "command": [
+        "rustc",
+        "--edition=2021",
+        "--emit=metadata",
+        "main.rs"
+      ],
+      "seconds": 0.125,
+      "output": "",
+      "id": "rust-trasformare-un-vector-con-iteratori",
+      "check": "rustc metadata"
+    },
+    {
+      "ok": true,
+      "command": [
+        "rustc",
+        "--edition=2021",
+        "--emit=metadata",
+        "main.rs"
+      ],
+      "seconds": 0.125,
+      "output": "",
+      "id": "rust-trasmettere-dati-con-un-canale-mpsc",
+      "check": "rustc metadata"
+    },
+    {
+      "ok": true,
+      "command": [
+        "rustc",
+        "--edition=2021",
+        "--emit=metadata",
+        "main.rs"
+      ],
+      "seconds": 0.11,
+      "output": "",
+      "id": "rust-usare-un-default-con-option",
+      "check": "rustc metadata"
+    },
+    {
+      "ok": true,
+      "command": [
+        "rustc",
+        "--edition=2021",
+        "--emit=metadata",
+        "main.rs"
+      ],
+      "seconds": 0.093,
+      "output": "",
+      "id": "rust-vincolare-un-parametro-generico-con-un-trait",
+      "check": "rustc metadata"
+    },
+    {
+      "ok": true,
+      "command": [
+        "go",
+        "test",
+        "./..."
+      ],
+      "seconds": 21.844,
+      "output": "?   \texample.test/catalog\t[no test files]\n",
+      "id": "go-aggiungere-contesto-a-un-errore-con-wrapping",
+      "check": "go test"
+    },
+    {
+      "ok": true,
+      "command": [
+        "go",
+        "test",
+        "./..."
+      ],
+      "seconds": 21.797,
+      "output": "?   \texample.test/catalog\t[no test files]\n",
+      "id": "go-aggiungere-elementi-a-una-slice",
+      "check": "go test"
+    },
+    {
+      "ok": true,
+      "command": [
+        "go",
+        "test",
+        "./..."
+      ],
+      "seconds": 22.062,
+      "output": "?   \texample.test/catalog\t[no test files]\n",
+      "id": "go-aggiungere-metodi-con-receiver-puntatore",
+      "check": "go test"
+    },
+    {
+      "ok": true,
+      "command": [
+        "go",
+        "test",
+        "./..."
+      ],
+      "seconds": 21.766,
+      "output": "?   \texample.test/catalog\t[no test files]\n",
+      "id": "go-analizzare-date-usando-un-layout-go",
+      "check": "go test"
+    },
+    {
+      "ok": true,
+      "command": [
+        "go",
+        "test",
+        "./..."
+      ],
+      "seconds": 3.328,
+      "output": "?   \texample.test/catalog\t[no test files]\n",
+      "id": "go-applicare-un-timeout-con-select",
+      "check": "go test"
+    },
+    {
+      "ok": true,
+      "command": [
+        "go",
+        "test",
+        "./..."
+      ],
+      "seconds": 3.297,
+      "output": "?   \texample.test/catalog\t[no test files]\n",
+      "id": "go-attendere-goroutine-con-waitgroup",
+      "check": "go test"
+    },
+    {
+      "ok": true,
+      "command": [
+        "go",
+        "test",
+        "./..."
+      ],
+      "seconds": 3.344,
+      "output": "?   \texample.test/catalog\t[no test files]\n",
+      "id": "go-chiudere-un-canale-dal-produttore",
+      "check": "go test"
+    },
+    {
+      "ok": true,
+      "command": [
+        "go",
+        "test",
+        "./..."
+      ],
+      "seconds": 3.063,
+      "output": "?   \texample.test/catalog\t[no test files]\n",
+      "id": "go-contare-frequenze-con-map",
+      "check": "go test"
+    },
+    {
+      "ok": true,
+      "command": [
+        "go",
+        "test",
+        "./..."
+      ],
+      "seconds": 1.375,
+      "output": "?   \texample.test/catalog\t[no test files]\n",
+      "id": "go-contare-rune-invece-di-byte",
+      "check": "go test"
+    },
+    {
+      "ok": true,
+      "command": [
+        "go",
+        "test",
+        "./..."
+      ],
+      "seconds": 1.39,
+      "output": "?   \texample.test/catalog\t[no test files]\n",
+      "id": "go-contenere-un-panic-nel-confine-di-una-funzione",
+      "check": "go test"
+    },
+    {
+      "ok": true,
+      "command": [
+        "go",
+        "test",
+        "./..."
+      ],
+      "seconds": 1.375,
+      "output": "?   \texample.test/catalog\t[no test files]\n",
+      "id": "go-convertire-un-intero-con-strconv-atoi",
+      "check": "go test"
+    },
+    {
+      "ok": true,
+      "command": [
+        "go",
+        "test",
+        "./..."
+      ],
+      "seconds": 1.375,
+      "output": "?   \texample.test/catalog\t[no test files]\n",
+      "id": "go-copiare-una-slice-senza-condividere-i-dati",
+      "check": "go test"
+    },
+    {
+      "ok": true,
+      "command": [
+        "go",
+        "test",
+        "./..."
+      ],
+      "seconds": 1.36,
+      "output": "?   \texample.test/catalog\t[no test files]\n",
+      "id": "go-definire-una-funzione-generica",
+      "check": "go test"
+    },
+    {
+      "ok": true,
+      "command": [
+        "go",
+        "test",
+        "./..."
+      ],
+      "seconds": 1.329,
+      "output": "?   \texample.test/catalog\t[no test files]\n",
+      "id": "go-distinguere-chiave-assente-e-valore-zero",
+      "check": "go test"
+    },
+    {
+      "ok": true,
+      "command": [
+        "go",
+        "test",
+        "./..."
+      ],
+      "seconds": 1.828,
+      "output": "?   \texample.test/catalog\t[no test files]\n",
+      "id": "go-dividere-e-ripulire-campi-stringa",
+      "check": "go test"
+    },
+    {
+      "ok": true,
+      "command": [
+        "go",
+        "test",
+        "./..."
+      ],
+      "seconds": 7.062,
+      "output": "ok  \texample.test/catalog\t0.398s\n",
+      "id": "go-eseguire-test-tabellari-con-testing",
+      "check": "go test"
+    },
+    {
+      "ok": true,
+      "command": [
+        "go",
+        "test",
+        "./..."
+      ],
+      "seconds": 2.578,
+      "output": "?   \texample.test/catalog\t[no test files]\n",
+      "id": "go-estrarre-sottogruppi-con-regexp",
+      "check": "go test"
+    },
+    {
+      "ok": true,
+      "command": [
+        "go",
+        "test",
+        "./..."
+      ],
+      "seconds": 2.156,
+      "output": "?   \texample.test/catalog\t[no test files]\n",
+      "id": "go-formattare-numeri-senza-concatenazioni",
+      "check": "go test"
+    },
+    {
+      "ok": true,
+      "command": [
+        "go",
+        "test",
+        "./..."
+      ],
+      "seconds": 2.344,
+      "output": "?   \texample.test/catalog\t[no test files]\n",
+      "id": "go-leggere-csv-con-campi-quotati",
+      "check": "go test"
+    },
+    {
+      "ok": true,
+      "command": [
+        "go",
+        "test",
+        "./..."
+      ],
+      "seconds": 2.0,
+      "output": "?   \texample.test/catalog\t[no test files]\n",
+      "id": "go-ordinare-una-slice-con-un-comparatore",
+      "check": "go test"
+    },
+    {
+      "ok": true,
+      "command": [
+        "go",
+        "test",
+        "./..."
+      ],
+      "seconds": 3.328,
+      "output": "?   \texample.test/catalog\t[no test files]\nok  \texample.test/catalog/inventory\t0.405s\n",
+      "id": "go-progetto-completo-inventario-in-memoria-go",
+      "check": "go test"
+    },
+    {
+      "ok": true,
+      "command": [
+        "go",
+        "test",
+        "./..."
+      ],
+      "seconds": 2.125,
+      "output": "?   \texample.test/catalog\t[no test files]\n",
+      "id": "go-propagare-cancellazione-con-context",
+      "check": "go test"
+    },
+    {
+      "ok": true,
+      "command": [
+        "go",
+        "test",
+        "./..."
+      ],
+      "seconds": 1.265,
+      "output": "?   \texample.test/catalog\t[no test files]\n",
+      "id": "go-proteggere-aggiornamenti-con-mutex",
+      "check": "go test"
+    },
+    {
+      "ok": true,
+      "command": [
+        "go",
+        "test",
+        "./..."
+      ],
+      "seconds": 1.171,
+      "output": "?   \texample.test/catalog\t[no test files]\n",
+      "id": "go-restituire-un-errore-di-dominio",
+      "check": "go test"
+    },
+    {
+      "ok": true,
+      "command": [
+        "go",
+        "test",
+        "./..."
+      ],
+      "seconds": 1.641,
+      "output": "?   \texample.test/catalog\t[no test files]\n",
+      "id": "go-rifiutare-proprieta-json-sconosciute",
+      "check": "go test"
+    },
+    {
+      "ok": true,
+      "command": [
+        "go",
+        "test",
+        "./..."
+      ],
+      "seconds": 1.781,
+      "output": "?   \texample.test/catalog\t[no test files]\n",
+      "id": "go-rilasciare-risorse-con-defer",
+      "check": "go test"
+    },
+    {
+      "ok": true,
+      "command": [
+        "go",
+        "test",
+        "./..."
+      ],
+      "seconds": 1.953,
+      "output": "?   \texample.test/catalog\t[no test files]\n",
+      "id": "go-scrivere-e-leggere-un-file-temporaneo",
+      "check": "go test"
+    },
+    {
+      "ok": true,
+      "command": [
+        "go",
+        "test",
+        "./..."
+      ],
+      "seconds": 1.891,
+      "output": "?   \texample.test/catalog\t[no test files]\n",
+      "id": "go-serializzare-struct-con-tag-json",
+      "check": "go test"
+    },
+    {
+      "ok": true,
+      "command": [
+        "go",
+        "test",
+        "./..."
+      ],
+      "seconds": 2.078,
+      "output": "?   \texample.test/catalog\t[no test files]\n",
+      "id": "go-usare-un-contatore-atomico",
+      "check": "go test"
+    },
+    {
+      "ok": true,
+      "command": [
+        "go",
+        "test",
+        "./..."
+      ],
+      "seconds": 2.125,
+      "output": "?   \texample.test/catalog\t[no test files]\n",
+      "id": "go-usare-un-interfaccia-strutturale",
+      "check": "go test"
+    },
+    {
+      "ok": true,
+      "command": [
+        "javac",
+        "-encoding",
+        "UTF-8",
+        "--release",
+        "17",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-accumulare-conteggi-con-map-merge\\Main.java"
+      ],
+      "seconds": 0.766,
+      "output": "",
+      "id": "java-accumulare-conteggi-con-map-merge",
+      "check": "javac"
+    },
+    {
+      "ok": true,
+      "command": [
+        "javac",
+        "-encoding",
+        "UTF-8",
+        "--release",
+        "17",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-analizzare-una-data-civile-con-localdate\\Main.java"
+      ],
+      "seconds": 0.547,
+      "output": "",
+      "id": "java-analizzare-una-data-civile-con-localdate",
+      "check": "javac"
+    },
+    {
+      "ok": true,
+      "command": [
+        "javac",
+        "-encoding",
+        "UTF-8",
+        "--release",
+        "17",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-calcolare-importi-esatti-con-bigdecimal\\Main.java"
+      ],
+      "seconds": 0.531,
+      "output": "",
+      "id": "java-calcolare-importi-esatti-con-bigdecimal",
+      "check": "javac"
+    },
+    {
+      "ok": true,
+      "command": [
+        "javac",
+        "-encoding",
+        "UTF-8",
+        "--release",
+        "17",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-calcolare-una-durata-temporale\\Main.java"
+      ],
+      "seconds": 0.546,
+      "output": "",
+      "id": "java-calcolare-una-durata-temporale",
+      "check": "javac"
+    },
+    {
+      "ok": true,
+      "command": [
+        "javac",
+        "-encoding",
+        "UTF-8",
+        "--release",
+        "17",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-comporre-risultati-con-completablefuture\\Main.java"
+      ],
+      "seconds": 0.61,
+      "output": "",
+      "id": "java-comporre-risultati-con-completablefuture",
+      "check": "javac"
+    },
+    {
+      "ok": true,
+      "command": [
+        "javac",
+        "-encoding",
+        "UTF-8",
+        "--release",
+        "17",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-comporre-testo-con-stringbuilder\\Main.java"
+      ],
+      "seconds": 0.578,
+      "output": "",
+      "id": "java-comporre-testo-con-stringbuilder",
+      "check": "javac"
+    },
+    {
+      "ok": true,
+      "command": [
+        "javac",
+        "-encoding",
+        "UTF-8",
+        "--release",
+        "17",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-conservare-la-causa-di-un-eccezione\\Main.java"
+      ],
+      "seconds": 0.563,
+      "output": "",
+      "id": "java-conservare-la-causa-di-un-eccezione",
+      "check": "javac"
+    },
+    {
+      "ok": true,
+      "command": [
+        "javac",
+        "-encoding",
+        "UTF-8",
+        "--release",
+        "17",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-convertire-istanti-con-zoneid\\Main.java"
+      ],
+      "seconds": 0.594,
+      "output": "",
+      "id": "java-convertire-istanti-con-zoneid",
+      "check": "javac"
+    },
+    {
+      "ok": true,
+      "command": [
+        "javac",
+        "-encoding",
+        "UTF-8",
+        "--release",
+        "17",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-convertire-un-intero-gestendo-il-testo-invalido\\Main.java"
+      ],
+      "seconds": 0.578,
+      "output": "",
+      "id": "java-convertire-un-intero-gestendo-il-testo-invalido",
+      "check": "javac"
+    },
+    {
+      "ok": true,
+      "command": [
+        "javac",
+        "-encoding",
+        "UTF-8",
+        "--release",
+        "17",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-copiare-una-lista-senza-condividere-il-contenitore\\Main.java"
+      ],
+      "seconds": 0.594,
+      "output": "",
+      "id": "java-copiare-una-lista-senza-condividere-il-contenitore",
+      "check": "javac"
+    },
+    {
+      "ok": true,
+      "command": [
+        "javac",
+        "-encoding",
+        "UTF-8",
+        "--release",
+        "17",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-deduplicare-mantenendo-l-ordine-con-linkedhashset\\Main.java"
+      ],
+      "seconds": 0.593,
+      "output": "",
+      "id": "java-deduplicare-mantenendo-l-ordine-con-linkedhashset",
+      "check": "javac"
+    },
+    {
+      "ok": true,
+      "command": [
+        "javac",
+        "-encoding",
+        "UTF-8",
+        "--release",
+        "17",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-definire-un-oggetto-valore-con-record\\Main.java"
+      ],
+      "seconds": 0.656,
+      "output": "",
+      "id": "java-definire-un-oggetto-valore-con-record",
+      "check": "javac"
+    },
+    {
+      "ok": true,
+      "command": [
+        "javac",
+        "-encoding",
+        "UTF-8",
+        "--release",
+        "17",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-estrarre-gruppi-da-una-regex\\Main.java"
+      ],
+      "seconds": 0.657,
+      "output": "",
+      "id": "java-estrarre-gruppi-da-una-regex",
+      "check": "javac"
+    },
+    {
+      "ok": true,
+      "command": [
+        "javac",
+        "-encoding",
+        "UTF-8",
+        "--release",
+        "17",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-estrarre-il-minimo-con-priorityqueue\\Main.java"
+      ],
+      "seconds": 0.687,
+      "output": "",
+      "id": "java-estrarre-il-minimo-con-priorityqueue",
+      "check": "javac"
+    },
+    {
+      "ok": true,
+      "command": [
+        "javac",
+        "-encoding",
+        "UTF-8",
+        "--release",
+        "17",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-filtrare-una-sequenza-con-stream\\Main.java"
+      ],
+      "seconds": 0.657,
+      "output": "",
+      "id": "java-filtrare-una-sequenza-con-stream",
+      "check": "javac"
+    },
+    {
+      "ok": true,
+      "command": [
+        "javac",
+        "-encoding",
+        "UTF-8",
+        "--release",
+        "17",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-gestire-una-ricerca-assente-con-optional\\Main.java"
+      ],
+      "seconds": 0.657,
+      "output": "",
+      "id": "java-gestire-una-ricerca-assente-con-optional",
+      "check": "javac"
+    },
+    {
+      "ok": true,
+      "command": [
+        "javac",
+        "-encoding",
+        "UTF-8",
+        "--release",
+        "17",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-leggere-e-scrivere-utf-8-con-files\\Main.java"
+      ],
+      "seconds": 0.609,
+      "output": "",
+      "id": "java-leggere-e-scrivere-utf-8-con-files",
+      "check": "javac"
+    },
+    {
+      "ok": true,
+      "command": [
+        "javac",
+        "-encoding",
+        "UTF-8",
+        "--release",
+        "17",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-limitare-implementazioni-con-sealed\\Main.java"
+      ],
+      "seconds": 0.64,
+      "output": "",
+      "id": "java-limitare-implementazioni-con-sealed",
+      "check": "javac"
+    },
+    {
+      "ok": true,
+      "command": [
+        "javac",
+        "-encoding",
+        "UTF-8",
+        "--release",
+        "17",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-normalizzare-testo-unicode-java\\Main.java"
+      ],
+      "seconds": 0.625,
+      "output": "",
+      "id": "java-normalizzare-testo-unicode-java",
+      "check": "javac"
+    },
+    {
+      "ok": true,
+      "command": [
+        "javac",
+        "-encoding",
+        "UTF-8",
+        "--release",
+        "17",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-ordinare-record-con-comparator\\Main.java"
+      ],
+      "seconds": 0.766,
+      "output": "",
+      "id": "java-ordinare-record-con-comparator",
+      "check": "javac"
+    },
+    {
+      "ok": true,
+      "command": [
+        "javac",
+        "-encoding",
+        "UTF-8",
+        "--release",
+        "17",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-passare-una-implementazione-di-interfaccia\\Main.java"
+      ],
+      "seconds": 0.687,
+      "output": "",
+      "id": "java-passare-una-implementazione-di-interfaccia",
+      "check": "javac"
+    },
+    {
+      "ok": true,
+      "command": [
+        "javac",
+        "-encoding",
+        "UTF-8",
+        "--release",
+        "17",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-preservare-tipi-con-un-metodo-generico\\Main.java"
+      ],
+      "seconds": 0.688,
+      "output": "",
+      "id": "java-preservare-tipi-con-un-metodo-generico",
+      "check": "javac"
+    },
+    {
+      "ok": true,
+      "command": [
+        "javac",
+        "-encoding",
+        "UTF-8",
+        "--release",
+        "17",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-progetto-completo-catalogo-libri-java\\Main.java",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-progetto-completo-catalogo-libri-java\\Inventory.java",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-progetto-completo-catalogo-libri-java\\InventoryTest.java"
+      ],
+      "seconds": 0.703,
+      "output": "",
+      "id": "java-progetto-completo-catalogo-libri-java",
+      "check": "javac"
+    },
+    {
+      "ok": true,
+      "command": [
+        "javac",
+        "-encoding",
+        "UTF-8",
+        "--release",
+        "17",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-raggruppare-e-contare-con-collectors\\Main.java"
+      ],
+      "seconds": 0.672,
+      "output": "",
+      "id": "java-raggruppare-e-contare-con-collectors",
+      "check": "javac"
+    },
+    {
+      "ok": true,
+      "command": [
+        "javac",
+        "-encoding",
+        "UTF-8",
+        "--release",
+        "17",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-ridurre-una-sequenza-con-identita\\Main.java"
+      ],
+      "seconds": 0.625,
+      "output": "",
+      "id": "java-ridurre-una-sequenza-con-identita",
+      "check": "javac"
+    },
+    {
+      "ok": true,
+      "command": [
+        "javac",
+        "-encoding",
+        "UTF-8",
+        "--release",
+        "17",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-rilasciare-automaticamente-con-try-with-resources\\Main.java"
+      ],
+      "seconds": 0.609,
+      "output": "",
+      "id": "java-rilasciare-automaticamente-con-try-with-resources",
+      "check": "javac"
+    },
+    {
+      "ok": true,
+      "command": [
+        "javac",
+        "-encoding",
+        "UTF-8",
+        "--release",
+        "17",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-terminare-correttamente-un-executorservice\\Main.java"
+      ],
+      "seconds": 0.672,
+      "output": "",
+      "id": "java-terminare-correttamente-un-executorservice",
+      "check": "javac"
+    },
+    {
+      "ok": true,
+      "command": [
+        "javac",
+        "-encoding",
+        "UTF-8",
+        "--release",
+        "17",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-trasformare-valori-con-map\\Main.java"
+      ],
+      "seconds": 0.578,
+      "output": "",
+      "id": "java-trasformare-valori-con-map",
+      "check": "javac"
+    },
+    {
+      "ok": true,
+      "command": [
+        "javac",
+        "-encoding",
+        "UTF-8",
+        "--release",
+        "17",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-usare-deque-come-coda\\Main.java"
+      ],
+      "seconds": 0.563,
+      "output": "",
+      "id": "java-usare-deque-come-coda",
+      "check": "javac"
+    },
+    {
+      "ok": true,
+      "command": [
+        "javac",
+        "-encoding",
+        "UTF-8",
+        "--release",
+        "17",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\java\\java-verificare-contratti-senza-dipendere-da-ea\\Main.java"
+      ],
+      "seconds": 0.609,
+      "output": "",
+      "id": "java-verificare-contratti-senza-dipendere-da-ea",
+      "check": "javac"
+    },
+    {
+      "ok": true,
+      "command": [
+        "gcc",
+        "-std=c17",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\c\\c-allocare-un-array-controllando-overflow-di-dimensione\\main.c"
+      ],
+      "seconds": 0.75,
+      "output": "",
+      "id": "c-allocare-un-array-controllando-overflow-di-dimensione",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "gcc",
+        "-std=c17",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\c\\c-analizzare-campi-con-larghezze-limitate\\main.c"
+      ],
+      "seconds": 0.265,
+      "output": "",
+      "id": "c-analizzare-campi-con-larghezze-limitate",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "gcc",
+        "-std=c17",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\c\\c-calcolare-mcd-con-algoritmo-di-euclide\\main.c"
+      ],
+      "seconds": 0.25,
+      "output": "",
+      "id": "c-calcolare-mcd-con-algoritmo-di-euclide",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "gcc",
+        "-std=c17",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\c\\c-cercare-in-un-array-ordinato-con-bsearch\\main.c"
+      ],
+      "seconds": 0.203,
+      "output": "",
+      "id": "c-cercare-in-un-array-ordinato-con-bsearch",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "gcc",
+        "-std=c17",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\c\\c-concatenare-soltanto-dopo-un-controllo-di-capacita\\main.c"
+      ],
+      "seconds": 0.266,
+      "output": "",
+      "id": "c-concatenare-soltanto-dopo-un-controllo-di-capacita",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "gcc",
+        "-std=c17",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\c\\c-convertire-un-intero-con-strtol\\main.c"
+      ],
+      "seconds": 0.281,
+      "output": "",
+      "id": "c-convertire-un-intero-con-strtol",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "gcc",
+        "-std=c17",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\c\\c-costruire-e-liberare-una-lista-concatenata\\main.c"
+      ],
+      "seconds": 0.266,
+      "output": "",
+      "id": "c-costruire-e-liberare-una-lista-concatenata",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "gcc",
+        "-std=c17",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\c\\c-distinguere-fine-file-da-errore-di-lettura\\main.c"
+      ],
+      "seconds": 0.281,
+      "output": "",
+      "id": "c-distinguere-fine-file-da-errore-di-lettura",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "gcc",
+        "-std=c17",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\c\\c-formattare-in-un-buffer-con-snprintf\\main.c"
+      ],
+      "seconds": 0.281,
+      "output": "",
+      "id": "c-formattare-in-un-buffer-con-snprintf",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "gcc",
+        "-std=c17",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\c\\c-gestire-opzioni-come-maschera-di-bit\\main.c"
+      ],
+      "seconds": 0.265,
+      "output": "",
+      "id": "c-gestire-opzioni-come-maschera-di-bit",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "gcc",
+        "-std=c17",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\c\\c-implementare-una-coda-circolare\\main.c"
+      ],
+      "seconds": 0.25,
+      "output": "",
+      "id": "c-implementare-una-coda-circolare",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "gcc",
+        "-std=c17",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\c\\c-implementare-uno-stack-limitato\\main.c"
+      ],
+      "seconds": 0.266,
+      "output": "",
+      "id": "c-implementare-uno-stack-limitato",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "gcc",
+        "-std=c17",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\c\\c-inizializzare-un-array-a-zero-con-calloc\\main.c"
+      ],
+      "seconds": 0.219,
+      "output": "",
+      "id": "c-inizializzare-un-array-a-zero-con-calloc",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "gcc",
+        "-std=c17",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\c\\c-leggere-errno-soltanto-dopo-un-fallimento\\main.c"
+      ],
+      "seconds": 0.235,
+      "output": "",
+      "id": "c-leggere-errno-soltanto-dopo-un-fallimento",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "gcc",
+        "-std=c17",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\c\\c-leggere-una-riga-con-fgets\\main.c"
+      ],
+      "seconds": 0.219,
+      "output": "",
+      "id": "c-leggere-una-riga-con-fgets",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "gcc",
+        "-std=c17",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\c\\c-leggere-una-union-tramite-un-tag\\main.c"
+      ],
+      "seconds": 0.219,
+      "output": "",
+      "id": "c-leggere-una-union-tramite-un-tag",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "gcc",
+        "-std=c17",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\c\\c-mantenere-controlli-di-contratto-nelle-build-ottimizzate\\main.c"
+      ],
+      "seconds": 0.219,
+      "output": "",
+      "id": "c-mantenere-controlli-di-contratto-nelle-build-ottimizzate",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "gcc",
+        "-std=c17",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\c\\c-ordinare-interi-con-qsort\\main.c"
+      ],
+      "seconds": 0.234,
+      "output": "",
+      "id": "c-ordinare-interi-con-qsort",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "gcc",
+        "-std=c17",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\c\\c-passare-un-record-a-una-funzione\\main.c"
+      ],
+      "seconds": 0.203,
+      "output": "",
+      "id": "c-passare-un-record-a-una-funzione",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "gcc",
+        "-std=c17",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\c\\c-passare-una-funzione-callback\\main.c"
+      ],
+      "seconds": 0.234,
+      "output": "",
+      "id": "c-passare-una-funzione-callback",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "gcc",
+        "-std=c17",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\c\\c-progetto-completo-statistiche-su-misure-c\\main.c",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\c\\c-progetto-completo-statistiche-su-misure-c\\stats.c",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\c\\c-progetto-completo-statistiche-su-misure-c\\test.c"
+      ],
+      "seconds": 0.406,
+      "output": "",
+      "id": "c-progetto-completo-statistiche-su-misure-c",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "gcc",
+        "-std=c17",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\c\\c-rappresentare-stati-con-enum\\main.c"
+      ],
+      "seconds": 0.219,
+      "output": "",
+      "id": "c-rappresentare-stati-con-enum",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "gcc",
+        "-std=c17",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\c\\c-ridimensionare-con-realloc-senza-perdere-il-puntatore\\main.c"
+      ],
+      "seconds": 0.235,
+      "output": "",
+      "id": "c-ridimensionare-con-realloc-senza-perdere-il-puntatore",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "gcc",
+        "-std=c17",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\c\\c-scrivere-e-rileggere-byte-con-fread-e-fwrite\\main.c"
+      ],
+      "seconds": 0.235,
+      "output": "",
+      "id": "c-scrivere-e-rileggere-byte-con-fread-e-fwrite",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "gcc",
+        "-std=c17",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\c\\c-spostare-memoria-sovrapposta-con-memmove\\main.c"
+      ],
+      "seconds": 0.203,
+      "output": "",
+      "id": "c-spostare-memoria-sovrapposta-con-memmove",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "C:\\Users\\danie\\AppData\\Roaming\\npm\\tsc.cmd",
+        "-p",
+        "typescript-check.json"
+      ],
+      "seconds": 1.39,
+      "output": "",
+      "id": "typescript-all55",
+      "check": "tsc strict"
+    },
+    {
+      "ok": true,
+      "command": [
+        "dotnet",
+        "build",
+        "Example.csproj",
+        "--nologo",
+        "-v:q"
+      ],
+      "seconds": 23.328,
+      "output": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.80\n",
+      "id": "csharp-progetto-completo-registro-prestiti-c",
+      "check": "dotnet build"
+    },
+    {
+      "ok": true,
+      "command": [
+        "dotnet",
+        "build",
+        "Checks.csproj",
+        "--nologo",
+        "-v:q"
+      ],
+      "seconds": 23.219,
+      "output": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.83\n",
+      "id": "csharp-all69",
+      "check": "dotnet build"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-accedere-a-una-sequenza-con-span\\main.cpp"
+      ],
+      "seconds": 1.063,
+      "output": "",
+      "id": "cpp-accedere-a-una-sequenza-con-span",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-aggiornare-o-inserire-con-insert-or-assign\\main.cpp"
+      ],
+      "seconds": 1.079,
+      "output": "",
+      "id": "cpp-aggiornare-o-inserire-con-insert-or-assign",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-analizzare-campi-numerici-da-una-riga\\main.cpp"
+      ],
+      "seconds": 1.063,
+      "output": "",
+      "id": "cpp-analizzare-campi-numerici-da-una-riga",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-arrotondare-e-stampare-con-precisione\\main.cpp"
+      ],
+      "seconds": 1.063,
+      "output": "",
+      "id": "cpp-arrotondare-e-stampare-con-precisione",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-attendere-un-thread-con-jthread\\main.cpp"
+      ],
+      "seconds": 0.875,
+      "output": "",
+      "id": "cpp-attendere-un-thread-con-jthread",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-attendere-una-condizione-con-predicato\\main.cpp"
+      ],
+      "seconds": 0.875,
+      "output": "",
+      "id": "cpp-attendere-una-condizione-con-predicato",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-calcolare-differenza-tra-insiemi-ordinati\\main.cpp"
+      ],
+      "seconds": 0.875,
+      "output": "",
+      "id": "cpp-calcolare-differenza-tra-insiemi-ordinati",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-calcolare-il-minimo-comune-multiplo\\main.cpp"
+      ],
+      "seconds": 0.859,
+      "output": "",
+      "id": "cpp-calcolare-il-minimo-comune-multiplo",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-calcolare-modulo-e-argomento-complessi\\main.cpp"
+      ],
+      "seconds": 0.891,
+      "output": "",
+      "id": "cpp-calcolare-modulo-e-argomento-complessi",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-calcolare-somme-progressive\\main.cpp"
+      ],
+      "seconds": 0.922,
+      "output": "",
+      "id": "cpp-calcolare-somme-progressive",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-calcolare-un-prodotto-scalare\\main.cpp"
+      ],
+      "seconds": 0.922,
+      "output": "",
+      "id": "cpp-calcolare-un-prodotto-scalare",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-calcolare-una-costante-con-constexpr\\main.cpp"
+      ],
+      "seconds": 0.922,
+      "output": "",
+      "id": "cpp-calcolare-una-costante-con-constexpr",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-cercare-e-sostituire-una-sola-occorrenza\\main.cpp"
+      ],
+      "seconds": 0.906,
+      "output": "",
+      "id": "cpp-cercare-e-sostituire-una-sola-occorrenza",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-cercare-in-una-sequenza-ordinata\\main.cpp"
+      ],
+      "seconds": 0.937,
+      "output": "",
+      "id": "cpp-cercare-in-una-sequenza-ordinata",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-comporre-percorsi-portabili\\main.cpp"
+      ],
+      "seconds": 0.922,
+      "output": "",
+      "id": "cpp-comporre-percorsi-portabili",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-comporre-una-pipeline-lazy-con-ranges\\main.cpp"
+      ],
+      "seconds": 0.969,
+      "output": "",
+      "id": "cpp-comporre-una-pipeline-lazy-con-ranges",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-condividere-una-risorsa-con-shared-ptr\\main.cpp"
+      ],
+      "seconds": 0.844,
+      "output": "",
+      "id": "cpp-condividere-una-risorsa-con-shared-ptr",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-confrontare-double-con-tolleranza\\main.cpp"
+      ],
+      "seconds": 0.843,
+      "output": "",
+      "id": "cpp-confrontare-double-con-tolleranza",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-conservare-l-ordine-dei-pareggi-con-stable-sort\\main.cpp"
+      ],
+      "seconds": 0.86,
+      "output": "",
+      "id": "cpp-conservare-l-ordine-dei-pareggi-con-stable-sort",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-contare-bit-attivi-con-popcount\\main.cpp"
+      ],
+      "seconds": 0.843,
+      "output": "",
+      "id": "cpp-contare-bit-attivi-con-popcount",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-contare-frequenze-con-unordered-map\\main.cpp"
+      ],
+      "seconds": 0.875,
+      "output": "",
+      "id": "cpp-contare-frequenze-con-unordered-map",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-controllare-indici-con-vector-at\\main.cpp"
+      ],
+      "seconds": 0.86,
+      "output": "",
+      "id": "cpp-controllare-indici-con-vector-at",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-controllare-prefissi-e-suffissi\\main.cpp"
+      ],
+      "seconds": 0.859,
+      "output": "",
+      "id": "cpp-controllare-prefissi-e-suffissi",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-controllare-una-somma-prima-dell-overflow\\main.cpp"
+      ],
+      "seconds": 0.86,
+      "output": "",
+      "id": "cpp-controllare-una-somma-prima-dell-overflow",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-convertire-ascii-in-minuscolo-senza-comportamento-indefinito\\main.cpp"
+      ],
+      "seconds": 0.859,
+      "output": "",
+      "id": "cpp-convertire-ascii-in-minuscolo-senza-comportamento-indefinito",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-convertire-un-intero-con-from-chars\\main.cpp"
+      ],
+      "seconds": 0.875,
+      "output": "",
+      "id": "cpp-convertire-un-intero-con-from-chars",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-copiare-soltanto-elementi-selezionati\\main.cpp"
+      ],
+      "seconds": 0.891,
+      "output": "",
+      "id": "cpp-copiare-soltanto-elementi-selezionati",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-costruire-una-stringa-con-ostringstream\\main.cpp"
+      ],
+      "seconds": 0.843,
+      "output": "",
+      "id": "cpp-costruire-una-stringa-con-ostringstream",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-deduplicare-mantenendo-l-ordine-con-un-set-ausiliario\\main.cpp"
+      ],
+      "seconds": 0.859,
+      "output": "",
+      "id": "cpp-deduplicare-mantenendo-l-ordine-con-un-set-ausiliario",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-definire-uguaglianza-di-un-record-c-20\\main.cpp"
+      ],
+      "seconds": 0.859,
+      "output": "",
+      "id": "cpp-definire-uguaglianza-di-un-record-c-20",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-distinguere-dimensione-e-capacita-di-vector\\main.cpp"
+      ],
+      "seconds": 0.86,
+      "output": "",
+      "id": "cpp-distinguere-dimensione-e-capacita-di-vector",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-dividere-una-riga-con-stringstream\\main.cpp"
+      ],
+      "seconds": 0.843,
+      "output": "",
+      "id": "cpp-dividere-una-riga-con-stringstream",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-eliminare-duplicati-adiacenti\\main.cpp"
+      ],
+      "seconds": 0.86,
+      "output": "",
+      "id": "cpp-eliminare-duplicati-adiacenti",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-eliminare-valori-con-erase-if\\main.cpp"
+      ],
+      "seconds": 0.844,
+      "output": "",
+      "id": "cpp-eliminare-valori-con-erase-if",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-estrarre-elementi-da-un-multiset\\main.cpp"
+      ],
+      "seconds": 0.844,
+      "output": "",
+      "id": "cpp-estrarre-elementi-da-un-multiset",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-estrarre-gruppi-con-regex-match\\main.cpp"
+      ],
+      "seconds": 1.0,
+      "output": "",
+      "id": "cpp-estrarre-gruppi-con-regex-match",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-evitare-invalidazione-degli-iteratori-durante-erase\\main.cpp"
+      ],
+      "seconds": 0.875,
+      "output": "",
+      "id": "cpp-evitare-invalidazione-degli-iteratori-durante-erase",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-fondere-due-sequenze-ordinate\\main.cpp"
+      ],
+      "seconds": 0.859,
+      "output": "",
+      "id": "cpp-fondere-due-sequenze-ordinate",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-generare-interi-uniformi-con-mt19937\\main.cpp"
+      ],
+      "seconds": 0.843,
+      "output": "",
+      "id": "cpp-generare-interi-uniformi-con-mt19937",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-gestire-errori-filesystem-senza-eccezioni\\main.cpp"
+      ],
+      "seconds": 0.86,
+      "output": "",
+      "id": "cpp-gestire-errori-filesystem-senza-eccezioni",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-gestire-proprieta-esclusiva-con-unique-ptr\\main.cpp"
+      ],
+      "seconds": 0.906,
+      "output": "",
+      "id": "cpp-gestire-proprieta-esclusiva-con-unique-ptr",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-gestire-un-eccezione-per-riferimento-costante\\main.cpp"
+      ],
+      "seconds": 0.891,
+      "output": "",
+      "id": "cpp-gestire-un-eccezione-per-riferimento-costante",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-incrementare-un-contatore-atomico\\main.cpp"
+      ],
+      "seconds": 0.907,
+      "output": "",
+      "id": "cpp-incrementare-un-contatore-atomico",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-inserire-soltanto-se-la-chiave-non-esiste\\main.cpp"
+      ],
+      "seconds": 0.89,
+      "output": "",
+      "id": "cpp-inserire-soltanto-se-la-chiave-non-esiste",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-interrogare-un-intervallo-di-chiavi-ordinate\\main.cpp"
+      ],
+      "seconds": 0.875,
+      "output": "",
+      "id": "cpp-interrogare-un-intervallo-di-chiavi-ordinate",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-invertire-una-sequenza\\main.cpp"
+      ],
+      "seconds": 0.891,
+      "output": "",
+      "id": "cpp-invertire-una-sequenza",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-iterare-una-map-con-structured-binding\\main.cpp"
+      ],
+      "seconds": 0.875,
+      "output": "",
+      "id": "cpp-iterare-una-map-con-structured-binding",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-leggere-byte-da-un-flusso-binario\\main.cpp"
+      ],
+      "seconds": 0.844,
+      "output": "",
+      "id": "cpp-leggere-byte-da-un-flusso-binario",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-leggere-map-senza-inserire-una-chiave-assente\\main.cpp"
+      ],
+      "seconds": 0.828,
+      "output": "",
+      "id": "cpp-leggere-map-senza-inserire-una-chiave-assente",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-leggere-righe-da-uno-stream\\main.cpp"
+      ],
+      "seconds": 0.843,
+      "output": "",
+      "id": "cpp-leggere-righe-da-uno-stream",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-leggere-una-vista-senza-copiare-stringhe\\main.cpp"
+      ],
+      "seconds": 0.843,
+      "output": "",
+      "id": "cpp-leggere-una-vista-senza-copiare-stringhe",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-mescolare-con-un-motore-casuale-esplicito\\main.cpp"
+      ],
+      "seconds": 0.86,
+      "output": "",
+      "id": "cpp-mescolare-con-un-motore-casuale-esplicito",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-misurare-durata-con-steady-clock\\main.cpp"
+      ],
+      "seconds": 0.875,
+      "output": "",
+      "id": "cpp-misurare-durata-con-steady-clock",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-ordinare-un-vector-in-modo-crescente\\main.cpp"
+      ],
+      "seconds": 0.907,
+      "output": "",
+      "id": "cpp-ordinare-un-vector-in-modo-crescente",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-osservare-una-risorsa-con-weak-ptr\\main.cpp"
+      ],
+      "seconds": 0.907,
+      "output": "",
+      "id": "cpp-osservare-una-risorsa-con-weak-ptr",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-partizionare-elementi-per-predicato\\main.cpp"
+      ],
+      "seconds": 0.921,
+      "output": "",
+      "id": "cpp-partizionare-elementi-per-predicato",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-passare-un-risultato-con-promise-e-future\\main.cpp"
+      ],
+      "seconds": 0.938,
+      "output": "",
+      "id": "cpp-passare-un-risultato-con-promise-e-future",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-progetto-completo-registro-contatti-c\\main.cpp",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-progetto-completo-registro-contatti-c\\contacts.cpp",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-progetto-completo-registro-contatti-c\\test.cpp"
+      ],
+      "seconds": 0.921,
+      "output": "",
+      "id": "cpp-progetto-completo-registro-contatti-c",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-proteggere-un-contatore-con-mutex\\main.cpp"
+      ],
+      "seconds": 0.953,
+      "output": "",
+      "id": "cpp-proteggere-un-contatore-con-mutex",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-rendere-una-classe-non-copiabile\\main.cpp"
+      ],
+      "seconds": 0.907,
+      "output": "",
+      "id": "cpp-rendere-una-classe-non-copiabile",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-restituire-assenza-con-optional\\main.cpp"
+      ],
+      "seconds": 1.0,
+      "output": "",
+      "id": "cpp-restituire-assenza-con-optional",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-restituire-un-risultato-da-async\\main.cpp"
+      ],
+      "seconds": 1.016,
+      "output": "",
+      "id": "cpp-restituire-un-risultato-da-async",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-rimuovere-spazi-laterali-da-una-stringa\\main.cpp"
+      ],
+      "seconds": 0.984,
+      "output": "",
+      "id": "cpp-rimuovere-spazi-laterali-da-una-stringa",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-ruotare-bit-senza-perdere-i-bit-in-uscita\\main.cpp"
+      ],
+      "seconds": 1.062,
+      "output": "",
+      "id": "cpp-ruotare-bit-senza-perdere-i-bit-in-uscita",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-ruotare-una-sequenza-a-sinistra\\main.cpp"
+      ],
+      "seconds": 0.953,
+      "output": "",
+      "id": "cpp-ruotare-una-sequenza-a-sinistra",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-scrivere-e-rileggere-un-file-temporaneo-c\\main.cpp"
+      ],
+      "seconds": 0.953,
+      "output": "",
+      "id": "cpp-scrivere-e-rileggere-un-file-temporaneo-c",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-selezionare-i-primi-valori-con-partial-sort\\main.cpp"
+      ],
+      "seconds": 0.969,
+      "output": "",
+      "id": "cpp-selezionare-i-primi-valori-con-partial-sort",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-semplificare-un-rapporto-con-gcd\\main.cpp"
+      ],
+      "seconds": 0.875,
+      "output": "",
+      "id": "cpp-semplificare-un-rapporto-con-gcd",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-serializzare-un-record-con-std-quoted\\main.cpp"
+      ],
+      "seconds": 0.875,
+      "output": "",
+      "id": "cpp-serializzare-un-record-con-std-quoted",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-sommare-valori-con-accumulate\\main.cpp"
+      ],
+      "seconds": 0.86,
+      "output": "",
+      "id": "cpp-sommare-valori-con-accumulate",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-sostituire-pattern-con-regex-replace\\main.cpp"
+      ],
+      "seconds": 1.078,
+      "output": "",
+      "id": "cpp-sostituire-pattern-con-regex-replace",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-trasformare-una-sequenza-con-transform\\main.cpp"
+      ],
+      "seconds": 0.86,
+      "output": "",
+      "id": "cpp-trasformare-una-sequenza-con-transform",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-trovare-il-mediano-con-nth-element\\main.cpp"
+      ],
+      "seconds": 0.953,
+      "output": "",
+      "id": "cpp-trovare-il-mediano-con-nth-element",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-trovare-il-punto-di-inserimento-con-lower-bound\\main.cpp"
+      ],
+      "seconds": 0.906,
+      "output": "",
+      "id": "cpp-trovare-il-punto-di-inserimento-con-lower-bound",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-trovare-minimo-e-massimo-in-un-passaggio\\main.cpp"
+      ],
+      "seconds": 0.937,
+      "output": "",
+      "id": "cpp-trovare-minimo-e-massimo-in-un-passaggio",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-usare-polimorfismo-con-distruttore-virtuale\\main.cpp"
+      ],
+      "seconds": 0.906,
+      "output": "",
+      "id": "cpp-usare-polimorfismo-con-distruttore-virtuale",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-validare-un-costruttore-mantenendo-un-invariante\\main.cpp"
+      ],
+      "seconds": 0.859,
+      "output": "",
+      "id": "cpp-validare-un-costruttore-mantenendo-un-invariante",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-verificare-un-contratto-anche-senza-assert\\main.cpp"
+      ],
+      "seconds": 0.89,
+      "output": "",
+      "id": "cpp-verificare-un-contratto-anche-senza-assert",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-vincolare-template-con-un-concept\\main.cpp"
+      ],
+      "seconds": 0.859,
+      "output": "",
+      "id": "cpp-vincolare-template-con-un-concept",
+      "check": "compiler syntax"
+    },
+    {
+      "ok": true,
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-fsyntax-only",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\languages-validation\\cpp\\cpp-visitare-una-variant-con-std-visit\\main.cpp"
+      ],
+      "seconds": 0.86,
+      "output": "",
+      "id": "cpp-visitare-una-variant-con-std-visit",
+      "check": "compiler syntax"
+    }
+  ],
+  "note": "Ricontrollo finale C++ dopo header standard espliciti; TypeScript compilato con6.0.3, pin package allineato alla toolchain realmente verificata.",
+  "catalog_snapshot": "Inventario originale; per le27sostituzioni operative usare languages-workflows-validation.json.",
+  "replaced_ids": [
+    "python-formattare-colonne-numeriche",
+    "python-calcolare-quartili-con-metodo-esplicito",
+    "python-individuare-un-eseguibile-nel-path",
+    "cpp-semplificare-un-rapporto-con-gcd",
+    "cpp-calcolare-il-minimo-comune-multiplo",
+    "cpp-calcolare-modulo-e-argomento-complessi",
+    "csharp-limitare-un-valore-con-math-clamp",
+    "csharp-calcolare-una-durata-con-timespan",
+    "csharp-analizzare-un-identificativo-guid",
+    "javascript-scambiare-variabili-senza-un-temporaneo",
+    "javascript-conservare-il-valore-con-un-espressione-condizionale",
+    "javascript-verificare-multipli-con-resto-non-negativo",
+    "typescript-esporre-un-insieme-senza-operazioni-di-modifica",
+    "typescript-usare-un-enum-con-valori-stringa",
+    "typescript-rimuovere-null-e-undefined-da-un-tipo",
+    "rust-iterare-chiavi-ordinate-con-btreemap",
+    "rust-vincolare-un-parametro-generico-con-un-trait",
+    "rust-misurare-una-durata-con-instant",
+    "go-formattare-numeri-senza-concatenazioni",
+    "go-contare-rune-invece-di-byte",
+    "go-usare-un-contatore-atomico",
+    "java-normalizzare-testo-unicode-java",
+    "java-comporre-testo-con-stringbuilder",
+    "java-calcolare-una-durata-temporale",
+    "c-rappresentare-stati-con-enum",
+    "c-gestire-opzioni-come-maschera-di-bit",
+    "c-calcolare-mcd-con-algoritmo-di-euclide"
+  ]
+}

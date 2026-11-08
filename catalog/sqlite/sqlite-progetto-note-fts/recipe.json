@@ -1,0 +1,99 @@
+{
+  "id": "sqlite-progetto-note-fts",
+  "title": "Progetto: archivio note SQLite con ricerca FTS",
+  "summary": "Creare un archivio persistente con indice full text aggiornato agli inserimenti.",
+  "stack": "sqlite",
+  "group": "Database",
+  "section": "Database",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "SQLite 3.45+ con JSON1/FTS5",
+  "prerequisites": "Client sqlite3 nel PATH; cartella scrivibile. Il catalogo è offline; il client DB va installato separatamente.",
+  "tags": [
+    "project",
+    "schema",
+    "seed",
+    "report"
+  ],
+  "project": true,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "schema.sql",
+      "language": "sql",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "9618ca6c2d46a42ff765a12beb7e650d2d4c375e334a314c4ba488f9a0a6c3b5"
+    },
+    {
+      "id": "file-1",
+      "path": "seed.sql",
+      "language": "sql",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "263e4cc35dc56a8bf5f4f2721acf5d4ef0d8b03335d3ea04fd75773dbb3d2bbf"
+    },
+    {
+      "id": "file-2",
+      "path": "search.sql",
+      "language": "sql",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "fbd504e7ae60bf703458f4d09a7d625a521ebf37bd5ddd0833ccb4c594fabcea"
+    },
+    {
+      "id": "file-3",
+      "path": "README.md",
+      "language": "markdown",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "28ef27ee27d632d94350c8e595ff61ac01b9feb71663cdc469f7d30528b44f67"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "a34e606af7c3916412e790ebaf7612b221635bc901a99fbff37986bbc8edbd84"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "sqlite-arrotondare-importi-per-il-report",
+    "sqlite-creare-ricerca-full-text-fts5",
+    "sqlite-aggiornare-con-una-tabella-sorgente"
+  ],
+  "expected": "Le query di controllo restituiscono i risultati indicati nel README.",
+  "errors": [
+    "Non usare uno schema con dati reali: gli script ricreano gli oggetti del laboratorio."
+  ],
+  "sources": [
+    "https://www.sqlite.org/lang.html",
+    "https://www.sqlite.org/fts5.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "date": "2026-10-29",
+    "details": "Esecuzione SQLite 3.50.4 in memoria su dati sintetici; 1 ciclo/i completi. Vincoli e ripetibilità DDL verificati quando applicabili. Nessuna attestazione WAL concorrente su file. Report: reports/catalog-independent-review.json.",
+    "files_sha256": {
+      "schema.sql": "9618ca6c2d46a42ff765a12beb7e650d2d4c375e334a314c4ba488f9a0a6c3b5",
+      "seed.sql": "263e4cc35dc56a8bf5f4f2721acf5d4ef0d8b03335d3ea04fd75773dbb3d2bbf",
+      "search.sql": "fbd504e7ae60bf703458f4d09a7d625a521ebf37bd5ddd0833ccb4c594fabcea",
+      "README.md": "28ef27ee27d632d94350c8e595ff61ac01b9feb71663cdc469f7d30528b44f67"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

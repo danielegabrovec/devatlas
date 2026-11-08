@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdint.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <errno.h>
+#include <limits.h>
+
+
+int main(void){
+char buffer[16];int required=snprintf(buffer,sizeof buffer,"id=%d",42);
+if(required<0||(size_t)required>=sizeof buffer){fputs("buffer insufficiente\n",stderr);return 1;}
+puts(buffer);
+return 0;
+}

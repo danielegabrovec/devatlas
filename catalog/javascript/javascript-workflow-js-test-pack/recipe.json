@@ -1,0 +1,87 @@
+{
+  "id": "javascript-workflow-js-test-pack",
+  "title": "Verificare test e creare un tarball JavaScript",
+  "summary": "Controlla sintassi, esegue node:test e crea un pacchetto npm locale senza pubblicarlo.",
+  "stack": "javascript",
+  "group": "Linguaggi",
+  "section": "Compilazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "ECMAScript 2022+; Node.js 22+ per eseguire i file .mjs",
+  "prerequisites": "Node.js 22+ nel PATH. Gli esempi riguardano il linguaggio e le API standard; nessun pacchetto npm.",
+  "tags": [
+    "workflow",
+    "build, test e distribuzione",
+    "build",
+    "test",
+    "distribution"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "package.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "7080f2f7debfe2fdce2b9f1f382db72a27b7e899dd78bdc67fd7e328d1976619"
+    },
+    {
+      "id": "file-1",
+      "path": "src/math.mjs",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "2251dd95a612d8d214057065541240f2b172f831d65f4fae81ee8fe2625f64fa"
+    },
+    {
+      "id": "file-2",
+      "path": "test/math.test.mjs",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "6522e19f4a632388aac7ccd4269e57275ebe0aedc26e0281f3dedfa4369da0a6"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "82f853ff6421010b7fc6049cf814e8047bfcd9971ad2c8da3c1783269d6d4358"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "javascript-workflow-js-inspector",
+    "javascript-workflow-npm-esm-init",
+    "javascript-verificare-un-contratto-con-assert"
+  ],
+  "expected": "Due test superati e tarball catalog-js-math-0.1.0.tgz con il modulo src.",
+  "errors": [
+    "Un test fallito deve bloccare la consegna. Verificare files/exports prima di creare il tarball per includere soltanto i file previsti."
+  ],
+  "sources": [
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference",
+    "https://nodejs.org/api/test.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Sorgenti e configurazioni verificati su Windows x64: JSON parse, PowerShell parser, source compiler. Report: reports/languages-workflows-validation.json. Non attestati sessioni interattive di debug, installazioni di dipendenze o distribuzione completa del workflow; nessuna esecuzione Linux/macOS."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

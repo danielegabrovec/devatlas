@@ -1,0 +1,5 @@
+#![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
+use tauri::Manager;
+
+#[tauri::command]fn demo(app:tauri::AppHandle)->Result<String,String>{let folder=app.path().app_data_dir().map_err(|e|e.to_string())?;std::fs::create_dir_all(&folder).map_err(|e|e.to_string())?;let file=folder.join("demo.txt");std::fs::write(&file,"Testo locale UTF-8").map_err(|e|e.to_string())?;std::fs::read_to_string(file).map_err(|e|e.to_string())}
+fn main(){tauri::Builder::default().invoke_handler(tauri::generate_handler![demo]).run(tauri::generate_context!()).expect("Tauri application failed");}

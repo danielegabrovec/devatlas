@@ -1,0 +1,85 @@
+{
+  "id": "docker-impedire-acquisizione-di-privilegi-aggiuntivi",
+  "title": "Impedire acquisizione di privilegi aggiuntivi",
+  "summary": "Usare no-new-privileges come opzione del container.",
+  "stack": "docker",
+  "group": "Strumenti",
+  "section": "Configurazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Docker Engine 27+; Compose 2.29+; Linux containers",
+  "prerequisites": "Docker Desktop configurato per container Linux su Windows, oppure Docker Engine Linux. Porta locale 8089 libera. Internet necessario per scaricare l'immagine Python; i file sono esempi, nessun container viene avviato dal catalogo.",
+  "tags": [
+    "Docker",
+    "Compose",
+    "impedire-acquisizione-di-privilegi-aggiuntivi"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "Dockerfile",
+      "language": "dockerfile",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "6baac2b24670a856fd7027a66781e509b1e977bbf01342e74d53c05aea4840cd"
+    },
+    {
+      "id": "file-1",
+      "path": "app.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "ff157b5149701ce9ae4af9e41f91eeba6994cfb5d443a709cfb0d76035af5681"
+    },
+    {
+      "id": "file-2",
+      "path": "compose.yaml",
+      "language": "yaml",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "27e7f3cadfe0abeef28b2f6a659e67532e7e83c7ce8ceec8a7b877dcbe54f90c"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "f3bb84fa2a13c80c304fcc0758f4d971306d48314aaa49cb79477e74e6eae439"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "docker-aggiungere-un-healthcheck-nell-immagine",
+    "docker-aggiungere-un-processo-init-minimo",
+    "docker-assegnare-etichette-al-servizio"
+  ],
+  "expected": "Usare no-new-privileges come opzione del container.",
+  "errors": [
+    "Cannot connect to Docker daemon: avviare Docker Desktop o il servizio Engine.",
+    "Porta 8089 occupata: scegliere una porta locale libera nella mappatura."
+  ],
+  "sources": [
+    "https://docs.docker.com/compose/",
+    "https://docs.docker.com/reference/dockerfile/",
+    "https://docs.docker.com/compose/how-tos/startup-order/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "details": "Controlli statici sui sorgenti: AST Python, parser PowerShell/Bash dove disponibili, node --check per JavaScript, JSON e XML secondo i file presenti. Nessuna compilazione C#/XAML/C++ né esecuzione Docker/CI/packaging attestata. Report: reports/desktop-tools-qa.json.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

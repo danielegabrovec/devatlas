@@ -1,0 +1,1 @@
+INSERT INTO products VALUES(1,'Tastiera',55,9) ON CONFLICT(id) DO UPDATE SET price=excluded.price,stock=excluded.stock; SELECT * FROM products WHERE id=1;

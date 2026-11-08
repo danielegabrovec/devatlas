@@ -1,0 +1,1 @@
+import test from'node:test';import assert from'node:assert/strict';import{validate}from'../lib/model.js';test('negativo',()=>assert.throws(()=>validate({name:'a',amount:-1})));test('valido',()=>assert.equal(validate({name:' a ',amount:2}).name,'a'));

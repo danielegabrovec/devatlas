@@ -1,0 +1,3 @@
+from datetime import datetime
+value = datetime.strptime("29/10/2026", "%d/%m/%Y")
+print(value.strftime("%Y-%m-%d"))

@@ -1,0 +1,3 @@
+function lengthOf<T extends { length: number }>(value: T): number { return value.length; }
+console.log(lengthOf("Ada"), lengthOf([1, 2]));
+export {};

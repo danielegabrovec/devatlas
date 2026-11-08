@@ -1,0 +1,3 @@
+import React, {useState,useEffect,useMemo,useRef,useReducer,useId,useContext,createContext,useCallback,useLayoutEffect,useTransition,useDeferredValue,useSyncExternalStore,useImperativeHandle,forwardRef,memo,lazy,Suspense,Component} from 'react';
+import {createPortal} from 'react-dom';
+export default function App(){const end=useRef(null);return <><button onClick={()=>end.current?.scrollIntoView({behavior:'smooth'})}>Vai in fondo</button><div style={{height:'120vh'}}>Contenuto</div><p ref={end}>Fine</p></>}

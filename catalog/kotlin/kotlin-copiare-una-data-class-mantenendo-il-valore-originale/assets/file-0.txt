@@ -1,0 +1,6 @@
+data class User(val name: String, val age: Int)
+fun main() {
+val original = User("Ada", 36)
+val next = original.copy(age = 37)
+println("${original.age} ${next.age}")
+}

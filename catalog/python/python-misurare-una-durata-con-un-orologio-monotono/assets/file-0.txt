@@ -1,0 +1,4 @@
+from time import perf_counter
+start = perf_counter()
+result = sum(i * i for i in range(10000))
+print(result, perf_counter() - start)

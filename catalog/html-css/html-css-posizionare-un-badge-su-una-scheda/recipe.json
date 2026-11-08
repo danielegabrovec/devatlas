@@ -1,0 +1,87 @@
+{
+  "id": "html-css-posizionare-un-badge-su-una-scheda",
+  "title": "Posizionare un badge su una scheda",
+  "summary": "Posizionare un badge su una scheda. Regole CSS dimostrate: display: block; position: relative; position: absolute.",
+  "stack": "html-css",
+  "group": "Web e backend",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "HTML Living Standard; CSS moderno; Chromium120+",
+  "prerequisites": "Browser moderno. Aprire index.html dalla cartella esportata. Per testare API soggette a secure context servire da localhost. Nessuna libreria esterna.",
+  "tags": [
+    "html-css",
+    "example",
+    "posizionare",
+    "un",
+    "badge",
+    "su"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "index.html",
+      "language": "html",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "9a2c86def2036cfe32220ba3e1a4f8e640f28c7639f62fb585e47136fa8b3282"
+    },
+    {
+      "id": "file-1",
+      "path": "style.css",
+      "language": "css",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "62c840472287da569bd5f05607ef226018a679e10cd22e6bc2ba7e51430d253e"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "fdac105a58844c6c5521c56037e6af7465195e1460f09ee2b9741d77b22aa1de"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "html-css-rendere-una-tabella-scorrevole-su-mobile",
+    "html-css-progetto-biblioteca-responsive-con-filtri-locali",
+    "html-css-adattare-componenti-con-container-query"
+  ],
+  "expected": "La pagina visualizza il componente indicato; le regole CSS sono ispezionabili negli strumenti sviluppatore del browser.",
+  "errors": [
+    "Comando non trovato: installare la toolchain elencata nei prerequisiti.",
+    "Dipendenza mancante: eseguire l'installazione nella radice esportata, senza cambiare le versioni dichiarate."
+  ],
+  "sources": [
+    "https://html.spec.whatwg.org/",
+    "https://developer.mozilla.org/en-US/docs/Web/CSS"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "documentato",
+    "details": "Esempio originale revisionato nel catalogo; esecuzione non attestata.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md",
+  "editorial": {
+    "version": 1,
+    "method": "Fatti ricavati staticamente dai file dell’esempio",
+    "facts": [
+      "Regole CSS dimostrate: display: block; position: relative; position: absolute."
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+from concurrent.futures import ThreadPoolExecutor
+def square(value):
+    return value * value
+with ThreadPoolExecutor(max_workers=2) as pool:
+    print(list(pool.map(square, [2, 3, 4])))

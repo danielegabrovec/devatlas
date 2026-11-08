@@ -1,0 +1,8 @@
+from pathlib import Path
+from tempfile import TemporaryDirectory
+import filecmp
+with TemporaryDirectory() as folder:
+    a, b = Path(folder) / "a", Path(folder) / "b"
+    a.write_bytes(b"abc")
+    b.write_bytes(b"abd")
+    print(filecmp.cmp(a, b, shallow=False))

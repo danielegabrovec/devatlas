@@ -1,0 +1,1 @@
+export default [{ category: "casa", cents: 1250 }, { category: "libri", cents: 2000 }, { category: "casa", cents: 750 }];

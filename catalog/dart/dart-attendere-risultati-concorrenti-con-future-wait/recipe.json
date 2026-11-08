@@ -1,0 +1,70 @@
+{
+  "id": "dart-attendere-risultati-concorrenti-con-future-wait",
+  "title": "Attendere risultati concorrenti con Future wait",
+  "summary": "Raccoglie più Future preservando l'ordine della lista di partenza.",
+  "stack": "dart",
+  "group": "Linguaggi",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Dart3.13.x; librerie SDK, nessuna dipendenza Pub esterna",
+  "prerequisites": "Dart SDK3.13.x nel PATH. Gli esempi dart:io sono nativi; per riusarli su web occorre sostituire accesso filesystem/isolate dove non supportato. Nessun package esterno necessario ai capstone.",
+  "tags": [
+    "Future.wait",
+    "async",
+    "concurrency"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.dart",
+      "language": "dart",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "1836d51f311d4de7079ae9cd9c6d3d9dc3ef02e5828a034350e616c83d21a2d5"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "7ed1d0120ff7cd104704e65f61394f4493baec4c941cafc797f5e11b53ea5d71"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "dart-produrre-risultati-progressivi-con-uno-stream",
+    "dart-applicare-un-timeout-a-una-future",
+    "dart-aggiungere-una-extension-per-validare-testo"
+  ],
+  "expected": "[2,3]; un errore segue la semantica di Future.wait.",
+  "errors": [
+    "Una Future fallisce e l'aggregazione completa con errore: definisci come propagare o raccogliere i fallimenti dei singoli lavori.",
+    "Risultati scambiati: Future.wait conserva l'ordine della lista fornita, non l'ordine di completamento."
+  ],
+  "sources": [
+    "https://dart.dev/language",
+    "https://dart.dev/resources/whats-new",
+    "https://dart.dev/tools/dart-compile"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

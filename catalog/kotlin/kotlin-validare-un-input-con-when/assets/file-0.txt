@@ -1,0 +1,5 @@
+fun main() {
+val value = 82
+val grade = when { value >= 90 -> "A"; value >= 75 -> "B"; value >= 60 -> "C"; else -> "D" }
+println(grade)
+}

@@ -1,0 +1,2 @@
+people = [{"name": "Luca", "surname": "Rossi"}, {"name": "Ada", "surname": "Rossi"}]
+print(sorted(people, key=lambda p: (p["surname"], p["name"])))

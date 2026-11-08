@@ -1,0 +1,4 @@
+type Settings = { theme: string; size: number };
+function show(settings: Readonly<Settings>): string { return `${settings.theme}:${settings.size}`; }
+console.log(show({theme:"dark",size:14}));
+export {};

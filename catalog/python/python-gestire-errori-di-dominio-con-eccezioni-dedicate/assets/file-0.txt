@@ -1,0 +1,10 @@
+class InsufficientStock(Exception):
+    pass
+def reserve(available, requested):
+    if requested > available:
+        raise InsufficientStock(f"Disponibili {available}, richiesti {requested}")
+    return available - requested
+try:
+    reserve(2, 3)
+except InsufficientStock as error:
+    print(error)

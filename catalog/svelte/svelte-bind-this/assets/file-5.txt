@@ -1,0 +1,5 @@
+<script>
+import {onMount,tick,setContext,getContext} from 'svelte';
+let field;onMount(()=>field.focus());
+</script>
+<main><input bind:this={field} placeholder="Focus iniziale"></main>

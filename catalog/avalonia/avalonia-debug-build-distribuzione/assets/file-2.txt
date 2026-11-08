@@ -1,0 +1,9 @@
+using System.Collections.Generic;
+using System.Linq;
+namespace RecipeApp;
+public static class Invoice {
+ public static decimal Total(IEnumerable<decimal> prices){
+  decimal subtotal=prices.Sum();
+  return decimal.Round(subtotal,2);
+ }
+}

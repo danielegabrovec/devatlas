@@ -1,0 +1,86 @@
+{
+  "id": "pyside6-inizializzazione-ambiente",
+  "title": "Inizializzare ambiente e prima finestra PySide6",
+  "summary": "Preparare un ambiente Python separato, installare il binding corretto e avviare un contatore Qt completo.",
+  "stack": "pyside6",
+  "group": "Desktop e GUI",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows"
+  ],
+  "ide": [
+    "VS Code",
+    "Qt Designer"
+  ],
+  "versions": "Python 3.13; PySide6 6.12.x",
+  "prerequisites": "Python 3.13, ambiente virtuale dedicato e PySide6==6.12.*. Non installare entrambi i binding nello stesso ambiente.",
+  "tags": [
+    "PySide6",
+    "initialize",
+    "venv",
+    "install",
+    "Qt platform plugins"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "b6fce73f8eee208ac41ff6efddc9d3c43509b684c8dc43a0542a3ce2b41bac94"
+    },
+    {
+      "id": "file-1",
+      "path": "requirements.txt",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "789684be226a06c150a8a7e609ae46fdb67468107be1260f5d524a6d19977869"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "9f08a0561f2120266f2e0e9b176d6782eff591c6edf01ae5318046eacbcbe663"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "project_name",
+      "label": "Nome dell'applicazione",
+      "type": "identifier",
+      "default": "RecipeDesktop",
+      "required": true
+    }
+  ],
+  "related": [
+    "pyside6-drag-drop",
+    "pyside6-geometry",
+    "pyside6-palette"
+  ],
+  "expected": "Una finestra {{project_name}} mostra zero; ogni clic su Incrementa aumenta il valore.",
+  "errors": [
+    "ModuleNotFoundError: usare l'interprete .venv stampato dal comando diagnostico.",
+    "Qt platform plugin windows non trovato: controllare che il binding abbia la propria cartella plugins/platforms; il sorgente configura il percorso dal modulo installato."
+  ],
+  "sources": [
+    "https://doc.qt.io/qtforpython-6/tutorials/basictutorial/uifiles.html",
+    "https://doc.qt.io/qtforpython-6/deployment/deployment-pyside6-deploy.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "details": "Avvio reale Windows con PySide6 6.12.0, piattaforma offscreen, costruzione finestra e ciclo eventi 150 ms. Interazioni e altri sistemi non verificati. Report: reports/desktop-tools-qa.json.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

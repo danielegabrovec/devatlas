@@ -1,0 +1,15 @@
+package it.atlas;
+import java.util.*;
+import java.util.concurrent.*;
+import java.net.URI;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.http.*;
+import org.springframework.web.server.ResponseStatusException;
+import org.springframework.beans.factory.annotation.*;
+import org.springframework.stereotype.*;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.*;
+@RestController
+public class DemoController {
+@GetMapping("/items/{id}") public ResponseEntity<String> item(@PathVariable("id") long id){Optional<String> result=id==1?Optional.of("Keyboard"):Optional.empty();return ResponseEntity.of(result);}
+}

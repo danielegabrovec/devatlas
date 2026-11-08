@@ -1,0 +1,9 @@
+from pathlib import Path
+from zipfile import ZipFile
+paths=list(Path("dist").glob("*.whl"))
+if len(paths)!=1:raise SystemExit("Attesa esattamente una wheel in dist")
+with ZipFile(paths[0]) as archive:
+    names=archive.namelist()
+    assert "app.py" in names,"Modulo mancante"
+    assert any(name.endswith(".dist-info/METADATA") for name in names),"Metadati mancanti"
+    print("\n".join(names))

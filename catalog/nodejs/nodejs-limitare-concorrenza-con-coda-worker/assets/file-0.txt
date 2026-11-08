@@ -1,0 +1,1 @@
+const jobs=[1,2,3,4],out=[];let next=0;await Promise.all(Array.from({length:2},async()=>{while(next<jobs.length){const id=next++;out[id]=await Promise.resolve(jobs[id]*2)}}));console.log(out);

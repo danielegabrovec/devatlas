@@ -1,0 +1,102 @@
+{
+  "id": "csharp-progetto-completo-registro-prestiti-c",
+  "title": "Progetto completo registro prestiti C#",
+  "summary": "Costruisce un dominio con record, validazione, serializzazione JSON e autotest senza dipendenze NuGet.",
+  "stack": "csharp",
+  "group": "Linguaggi",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "C# 12, .NET 8; compatibile con SDK successivi che supportano net8.0",
+  "prerequisites": "SDK .NET 8+ e targeting pack net8.0; dotnet nel PATH. Nessun pacchetto NuGet esterno. Il primo restore può richiedere i pack della piattaforma.",
+  "tags": [
+    "project",
+    "record",
+    "domain",
+    "json",
+    "test"
+  ],
+  "project": true,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "Program.cs",
+      "language": "csharp",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "f471b20d842c0acdc8ff9f73e0d30e0270b0be1782890913dba1680d27358543"
+    },
+    {
+      "id": "file-1",
+      "path": "Example.csproj",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "018d1186081490e61d9f248a3125aa306f29a48251342ca10dd28089fca23061"
+    },
+    {
+      "id": "file-2",
+      "path": "Register.cs",
+      "language": "csharp",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "cbab6185274e185b3d978ad8e784de7d8233856c8885332df26d442e9a21d87f"
+    },
+    {
+      "id": "file-3",
+      "path": "SelfTests.cs",
+      "language": "csharp",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "1e11adc16f044410f6ca89c0215f31d0e4dbdd03e9ddd9be99355f3255d90504"
+    },
+    {
+      "id": "file-4",
+      "path": "README.md",
+      "language": "markdown",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "05d0abb914ae26b1106e1afe056ed3233941537467fd2c1e0fa048fe79b0f3ee"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "fcc13b5659bf5750592dcded3d5b5440fc86e1d14962661711888e30bd1bbb47"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "csharp-workflow-dotnet-init",
+    "csharp-serializzare-e-rileggere-json-tipizzato",
+    "csharp-workflow-dotnet-debug"
+  ],
+  "expected": "JSON con un prestito Returned true e messaggio 2 contratti verificati.",
+  "errors": [
+    "Comando non trovato: installare la toolchain e riaprire il terminale."
+  ],
+  "sources": [
+    "https://learn.microsoft.com/en-us/dotnet/csharp/",
+    "https://learn.microsoft.com/en-us/dotnet/api/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "details": "Eseguito su Windows x64 il 29/10/2026. Ambiente: SDK .NET 10.0.401, C#12, target net8.0, runtime .NET8.0.31. Sorgenti compilati/controllati e programmi eseguiti; per i progetti sono stati eseguiti anche i test inclusi. Report: reports/languages-source-validation.json e reports/languages-runtime-validation.json. Linux e macOS non eseguiti.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

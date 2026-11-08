@@ -1,0 +1,2 @@
+# Note locali
+Avvia il progetto con i comandi della ricetta. Aggiungi note, chiudi e riapri. Il file notes.json viene conservato nell'area dati utente e sostituito dopo scrittura completa.

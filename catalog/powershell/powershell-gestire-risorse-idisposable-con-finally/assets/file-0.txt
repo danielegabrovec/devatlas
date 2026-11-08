@@ -1,0 +1,4 @@
+Set-StrictMode -Version Latest
+$ErrorActionPreference='Stop'
+$stream=[IO.MemoryStream]::new()
+try { $bytes=[Text.Encoding]::UTF8.GetBytes("Ciao");$stream.Write($bytes,0,$bytes.Length);$stream.Length } finally { $stream.Dispose() }

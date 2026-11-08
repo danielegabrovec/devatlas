@@ -1,0 +1,4 @@
+dotnet --list-sdks
+dotnet restore {{project_name}}.csproj
+dotnet build {{project_name}}.csproj -p:Platform=x64
+dotnet run --project {{project_name}}.csproj -p:Platform=x64

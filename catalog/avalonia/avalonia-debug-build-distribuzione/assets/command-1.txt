@@ -1,0 +1,1 @@
+dotnet publish {{project_name}}.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=false -o dist/win-x64

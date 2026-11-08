@@ -1,0 +1,1 @@
+SELECT TO_BASE64('guida'),FROM_BASE64('Z3VpZGE=');

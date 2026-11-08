@@ -1,0 +1,5 @@
+<script setup>
+import {ref,reactive,computed,watch,watchEffect,onMounted,onUnmounted,nextTick,provide,inject,defineAsyncComponent,shallowRef,triggerRef,readonly,toRefs} from 'vue';
+import {useCounter} from './useCounter.js';const first=useCounter();const second=useCounter();
+</script>
+<template><main><button @click="first.increment">A: {{first.count.value}}</button><button @click="second.increment">B: {{second.count.value}}</button></main></template>

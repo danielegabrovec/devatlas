@@ -1,0 +1,3 @@
+Set-StrictMode -Version Latest
+$ErrorActionPreference='Stop'
+@([pscustomobject]@{Name="B";Size=20},[pscustomobject]@{Name="A";Size=3}) | Sort-Object Size | Format-Table

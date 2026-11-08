@@ -1,0 +1,4 @@
+from datetime import datetime, timezone, timedelta
+instant = datetime(2026, 1, 10, 12, tzinfo=timezone.utc)
+fixed = timezone(timedelta(hours=1))
+print(instant.astimezone(fixed).isoformat())

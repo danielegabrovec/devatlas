@@ -1,0 +1,1 @@
+INSERT INTO queue_demo.jobs(payload) VALUES('{"task":"report"}'),('{"task":"export"}');

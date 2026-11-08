@@ -1,0 +1,1 @@
+import test from'node:test';import assert from'node:assert/strict';import{products,select}from'../src/model.js';test('disponibili',()=>assert.equal(select(products,'',true,'price').length,2));test('ricerca',()=>assert.equal(select(products,'mouse',false,'name')[0].id,2));

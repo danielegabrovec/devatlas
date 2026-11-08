@@ -1,0 +1,1 @@
+export function count(text){return{lines:text.split(/\r?\n/).filter(Boolean).length,words:text.trim()?text.trim().split(/\s+/).length:0}}

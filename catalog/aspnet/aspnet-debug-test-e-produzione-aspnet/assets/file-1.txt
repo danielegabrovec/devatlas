@@ -1,0 +1,1 @@
+var b=WebApplication.CreateBuilder(args);var app=b.Build();app.MapGet("/quote",(decimal price,int qty)=>{try{return Results.Ok(Pricing.Total(price,qty));}catch(ArgumentException){return Results.BadRequest();}});app.Run();

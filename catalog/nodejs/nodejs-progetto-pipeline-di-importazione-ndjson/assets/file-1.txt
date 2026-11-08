@@ -1,0 +1,1 @@
+import{createReadStream}from'node:fs';import{createInterface}from'node:readline';import{parse}from'./import.mjs';let total=0,n=0;for await(const line of createInterface({input:createReadStream('sample.ndjson'),crlfDelay:Infinity})){if(!line.trim())continue;const row=parse(line);total+=row.total;n++}console.log({records:n,total});

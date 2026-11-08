@@ -1,0 +1,1 @@
+SELECT SHA2('contenuto',256);

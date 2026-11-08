@@ -1,0 +1,14 @@
+from threading import Lock, Thread
+lock = Lock()
+counter = 0
+def increment():
+    global counter
+    for _ in range(1000):
+        with lock:
+            counter += 1
+threads = [Thread(target=increment) for _ in range(2)]
+for thread in threads:
+    thread.start()
+for thread in threads:
+    thread.join()
+print(counter)

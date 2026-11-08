@@ -1,0 +1,1 @@
+import{Suspense}from'react';import Search from'./search';export default function Page(){return <Suspense fallback={<p>Attendi</p>}><Search/></Suspense>}

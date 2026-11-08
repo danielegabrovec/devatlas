@@ -1,0 +1,1 @@
+DO $$ BEGIN RAISE NOTICE 'Schema demo: %',current_schema(); END $$;

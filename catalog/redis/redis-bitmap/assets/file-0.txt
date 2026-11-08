@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+p="atlas_demo:bitmap"
+cli(){ redis-cli -e --raw -h 127.0.0.1 -p 6381 "$@"; }
+cli DEL "$p:flags"
+cli SETBIT "$p:flags" 2 1
+cli SETBIT "$p:flags" 5 1
+cli BITCOUNT "$p:flags"

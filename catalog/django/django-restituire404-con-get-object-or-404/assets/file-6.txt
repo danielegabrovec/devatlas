@@ -1,0 +1,6 @@
+from django.http import JsonResponse
+from django.shortcuts import get_object_or_404
+from .models import Note
+def home(request):
+    note=get_object_or_404(Note,pk=request.GET.get('id',0))
+    return JsonResponse({'title':note.title})

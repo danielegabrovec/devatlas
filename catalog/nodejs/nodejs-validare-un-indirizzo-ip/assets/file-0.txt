@@ -1,0 +1,1 @@
+import{isIP}from'node:net';console.log(isIP('127.0.0.1'),isIP('::1'),isIP('999.1.1.1'));

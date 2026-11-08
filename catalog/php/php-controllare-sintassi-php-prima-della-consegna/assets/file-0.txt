@@ -1,0 +1,4 @@
+<?php
+declare(strict_types=1);
+function total(array $values):int{return array_sum($values);}
+echo total([2,3,5]),PHP_EOL;

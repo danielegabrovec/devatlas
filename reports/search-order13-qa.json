@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-29",
+  "bug_reproduced": "Due SearchIndex sullo stesso file divergevano dopo rebuild del secondo: il primo conservava sort_info e cache vecchi e restituiva ordine/ID precedenti anche con DB aggiornato.",
+  "fix": [
+    "Registro weakref per path canonico con RLock, generazione e snapshot committed condivisi.",
+    "Snapshot immutabile anche nelle mappe annidate e nelle collezioni di vocabolario.",
+    "Search e rebuild adottano lo snapshot nuovo e invalidano cache/suggestions locali solo quando cambia la generazione.",
+    "Property generation legge immediatamente la tuple committed senza attendere il lock di un rebuild.",
+    "Vocabolario e snapshot sono preparati prima della pubblicazione atomica del DB, senza diffondere stato di una build fallita."
+  ],
+  "tests": {
+    "command": ".\\.venv\\Scripts\\python.exe -m pytest tests/test_search_shared_snapshot.py tests/test_search_order.py tests/test_search_extended.py tests/test_core.py -q --basetemp=.cache/pytest-shared-sort",
+    "passed": 80,
+    "failed": 0,
+    "skipped": 0,
+    "dedicated_cases": 8,
+    "python": "3.13.13"
+  },
+  "coverage": [
+    "Doppia istanza con ID rimossi/aggiunti e titoli/difficoltà differenti.",
+    "Cache/scope e ordinamento prima della paginazione allineati dopo il commit dell’altra istanza.",
+    "Istanza nuova può cercare sullo snapshot già committed senza un rebuild proprio.",
+    "Immutabilità delle mappe condivise.",
+    "Rollback fault injection su vocabolario, congelamento snapshot e pubblicazione file.",
+    "Rebuild fallito di una istanza stale conserva l’ultimo snapshot committed, non una versione precedente.",
+    "Lettura generation immediata durante writer bloccato; nessuna pubblicazione anticipata.",
+    "Il registro weak non trattiene stato o engine chiusi."
+  ],
+  "compatibility": [
+    "API pubblica search/rebuild invariata; nessuna modifica a SearchQuery o formato dell’indice.",
+    "Generazione del singolo engine continua a crescere solo dopo rebuild riusciti; con più engine il contatore ècondiviso per path.",
+    "Relevance, filtri e cache dei risultati mantengono l’algoritmo precedente."
+  ],
+  "limits": [
+    "La condivisione ènel medesimo processo. L’esclusione di due processi sullo stesso profilo resta delegata a ProfileInstance.",
+    "Modifiche esterne al file SQLite effettuate senza l’API SearchIndex non vengono rilevate da questa generazione in memoria."
+  ],
+  "source_sha256": {
+    "devatlas/search.py": "90dff3fb41e1cbeb9cacf958ea83c497fadd8a1c5bd5bc012c72e31d4b3c0e4a",
+    "tests/test_search_shared_snapshot.py": "2c93fffcc76550671eea8d6b4fa0c35b1bd7278e19e867355502dcac802e91a8"
+  },
+  "source_frozen": true
+}

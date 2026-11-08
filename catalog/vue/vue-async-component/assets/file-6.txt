@@ -1,0 +1,1 @@
+<template><p>Dettagli caricati su richiesta</p></template>

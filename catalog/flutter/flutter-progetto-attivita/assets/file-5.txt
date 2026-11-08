@@ -1,0 +1,2 @@
+class Task{final int id;final String title;final bool done;const Task(this.id,this.title,[this.done=false]);Task toggle()=>Task(id,title,!done);}
+List<Task> addTask(List<Task> rows,String title){final clean=title.trim();if(clean.isEmpty)throw ArgumentError('Titolo vuoto');var id=0;for(final row in rows){if(row.id>id)id=row.id;}return List.unmodifiable([...rows,Task(id+1,clean)]);}

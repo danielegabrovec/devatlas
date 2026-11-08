@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Collections.Concurrent;
+using System.Diagnostics;
+using System.Globalization;
+using System.IO;
+using System.IO.Compression;
+using System.Linq;
+using System.Text;
+using System.Text.Json;
+using System.Text.RegularExpressions;
+using System.Threading;
+using System.Threading.Channels;
+using System.Threading.Tasks;
+using System.Xml.Linq;
+
+public static class Program {
+ public static async Task Main(string[] args) {
+var item=new Stock(); item.Quantity=7; Console.WriteLine(item.Quantity);
+ }
+}
+public class Stock {
+private int quantity;
+public int Quantity {get=>quantity;set {if(value<0)throw new ArgumentOutOfRangeException(nameof(value));quantity=value;}}
+}

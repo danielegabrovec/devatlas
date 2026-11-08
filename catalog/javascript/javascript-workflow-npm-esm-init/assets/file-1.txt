@@ -1,0 +1,2 @@
+const user = process.argv[2] ?? "Ada";
+console.log(`Ciao ${user}`);

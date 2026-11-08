@@ -1,0 +1,15 @@
+package it.atlas;
+import java.util.*;
+import java.util.concurrent.*;
+import java.net.URI;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.http.*;
+import org.springframework.web.server.ResponseStatusException;
+import org.springframework.beans.factory.annotation.*;
+import org.springframework.stereotype.*;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.*;
+@RestController
+public class DemoController {
+@GetMapping("/problem") public ResponseEntity<ProblemDetail> problem(){var p=ProblemDetail.forStatusAndDetail(HttpStatus.CONFLICT,"Stock insufficiente");p.setTitle("Prenotazione rifiutata");return ResponseEntity.status(HttpStatus.CONFLICT).body(p);}
+}

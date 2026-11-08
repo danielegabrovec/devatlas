@@ -1,0 +1,7 @@
+import {Component,signal,computed,effect,inject,DestroyRef,ChangeDetectionStrategy} from '@angular/core';
+import {CommonModule} from '@angular/common';import {FormsModule} from '@angular/forms';
+
+@Component({selector:'app-root',standalone:true,imports:[CommonModule,FormsModule],changeDetection:ChangeDetectionStrategy.OnPush,template:`<main><form (ngSubmit)="submit()"><input name="email" [(ngModel)]="email" aria-label="Email"><button>Conferma</button></form><p role="status">{{message()}}</p></main>`})
+export class AppComponent{
+email='';message=signal('');submit(){this.message.set(/^[^@]+@[^@]+\.[^@]+$/.test(this.email)?'Acquisita':'Controlla email');}
+}

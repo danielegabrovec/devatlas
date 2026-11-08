@@ -1,0 +1,4 @@
+import Foundation
+
+let nickname: String? = nil
+print(nickname?.uppercased() ?? "Nome assente")

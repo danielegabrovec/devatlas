@@ -1,0 +1,2 @@
+left, right = "Straße", "STRASSE"
+print(left.casefold() == right.casefold())

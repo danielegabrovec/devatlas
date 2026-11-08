@@ -1,0 +1,1 @@
+const u=new URL('HTTPS://EXAMPLE.TEST:443/a/../b#anchor');u.hash='';console.log(u.href);

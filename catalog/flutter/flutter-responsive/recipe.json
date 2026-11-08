@@ -1,0 +1,104 @@
+{
+  "id": "flutter-responsive",
+  "title": "Scegliere il layout in base ai vincoli",
+  "summary": "Usare LayoutBuilder invece di dimensioni assolute dello schermo.",
+  "stack": "flutter",
+  "group": "Desktop e GUI",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Android"
+  ],
+  "ide": [
+    "VS Code",
+    "Android Studio"
+  ],
+  "versions": "Flutter3.47 stable;Dart3.x incluso;API compatibili Flutter3.35+",
+  "prerequisites": "Flutter SDK stable3.47 e Dart incluso. Windows richiede Visual Studio con Desktop development with C++, non soltanto VS Code. Android richiede Android SDK/JDK e dispositivo o emulatore. macOS/iOS richiedono un Mac con Xcode e non sono verificati qui.",
+  "tags": [
+    "flutter",
+    "responsive",
+    "widgets",
+    "state"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "bootstrap.ps1",
+      "language": "powershell",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "94c0fd813a85c12931c35b42eb24c1f6278d25a21d8fc10a005c49b814243829"
+    },
+    {
+      "id": "file-1",
+      "path": "recipe/pubspec.yaml",
+      "language": "yaml",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "9bcf9aad8af2481ec6415f439bab177617a910a4aed8d53b6735c9dcf204f588"
+    },
+    {
+      "id": "file-2",
+      "path": "recipe/analysis_options.yaml",
+      "language": "yaml",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "19c47ba237c5751421e4bc644bef9cb2617fdf9a46b0aafb84e5206858c9dcc0"
+    },
+    {
+      "id": "file-3",
+      "path": "recipe/lib/main.dart",
+      "language": "dart",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "1b9260c09f977f8e6b87b84e5cfb9d420b199124ea2b1ea1d40ed5908cb01ce1"
+    },
+    {
+      "id": "file-4",
+      "path": "recipe/test/widget_test.dart",
+      "language": "dart",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "09f0673b13555aaceba55726ddefb2e4abd9e8d511d3b79c301cb451948bfcd4"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "ad1d5267ade35d977279a98370893e6e030d0e9c90088ebbad7dd1063ef7bd62"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "flutter-dropdown",
+    "flutter-animation",
+    "flutter-checkbox"
+  ],
+  "expected": "Oltre600px i pannelli sono affiancati; sotto sono verticali.",
+  "errors": [
+    "Target of URI does not exist per flutter/material.dart: eseguire bootstrap e flutter pub get nel progetto app generato, non direttamente nella cartella recipe.",
+    "Build Windows senza compilatore: risolvere flutter doctor installando il workload Desktop development with C++ di Visual Studio; la sola estensione VS Code non fornisce il toolchain.",
+    "No supported devices connected: controllare flutter devices e selezionare una destinazione predisposta; Android richiede SDK/licenze ed emulatore o dispositivo, iOS richiede macOS/Xcode."
+  ],
+  "sources": [
+    "https://docs.flutter.dev/release/release-notes/release-notes-3.47.0",
+    "https://docs.flutter.dev/platform-integration/windows/setup",
+    "https://docs.flutter.dev/testing/overview"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "documentato",
+    "details": "Esempio originale revisionato nel catalogo; esecuzione non attestata.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

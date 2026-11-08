@@ -1,0 +1,4 @@
+npm install
+npm test
+npm run seed
+npm run reserve -- keyboard 2

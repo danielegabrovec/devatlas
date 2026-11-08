@@ -1,0 +1,1 @@
+import{setTimeout}from'node:timers/promises';await setTimeout(100);console.log('ripreso');

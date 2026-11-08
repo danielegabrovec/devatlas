@@ -1,0 +1,1 @@
+UPDATE products SET stock=stock-i.qty FROM order_items i WHERE i.product_id=products.id AND i.order_id=1; SELECT id,stock FROM products;

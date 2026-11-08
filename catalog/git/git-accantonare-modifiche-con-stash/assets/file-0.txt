@@ -1,0 +1,12 @@
+$work=Join-Path ([IO.Path]::GetTempPath()) ("git-recipe-"+[guid]::NewGuid())
+git init -b main $work
+Set-Location -LiteralPath $work
+git config user.name "Autore Demo"
+git config user.email "demo@example.invalid"
+Set-Content README.md "# Demo"
+git add README.md
+git commit -m "Iniziale"
+Add-Content README.md "Lavoro in corso"
+git stash push -m "Demo WIP"
+git stash list
+git stash pop

@@ -1,0 +1,1 @@
+import test from'node:test';import assert from'node:assert/strict';import{total}from'../src/pricing.mjs';test('totale',()=>assert.equal(total(10,3),30));test('quantità invalida',()=>assert.throws(()=>total(10,0)));

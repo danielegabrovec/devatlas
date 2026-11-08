@@ -1,0 +1,1 @@
+<!doctype html><html lang="it"><title>Nuova nota</title><form method="post">{% csrf_token %}{{ form.as_p }}<button>Salva</button></form></html>

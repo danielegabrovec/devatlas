@@ -1,0 +1,1 @@
+pwsh -NoProfile -File .\lab.ps1

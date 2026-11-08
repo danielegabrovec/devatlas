@@ -1,0 +1,12 @@
+package main
+
+import (
+"fmt"
+)
+
+func main(){
+var labeler Labeler=User{Name:"Ada"};fmt.Println(labeler.Label())
+}
+type Labeler interface{Label()string}
+type User struct{Name string}
+func(u User)Label()string{return "Utente "+u.Name}

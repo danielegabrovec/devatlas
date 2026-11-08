@@ -1,0 +1,10 @@
+#![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
+use tauri::Manager;
+
+#[derive(Clone,serde::Serialize,serde::Deserialize)]struct Task{id:u64,title:String,done:bool}
+fn add(rows:&[Task],title:&str)->Result<Vec<Task>,String>{let title=title.trim();if title.is_empty()||title.chars().count()>200{return Err("Titolo non valido".into())}let next=rows.iter().map(|r|r.id).max().unwrap_or(0).checked_add(1).ok_or("ID esauriti")?;let mut out=rows.to_vec();out.push(Task{id:next,title:title.into(),done:false});Ok(out)}
+struct Notes{rows:std::sync::Mutex<Vec<Task>>,file:std::path::PathBuf}
+#[tauri::command]fn demo(title:String,state:tauri::State<Notes>)->Result<Vec<Task>,String>{let mut rows=state.rows.lock().map_err(|_|"Lock non disponibile")?;let next=add(&rows,&title)?;if let Some(parent)=state.file.parent(){std::fs::create_dir_all(parent).map_err(|e|e.to_string())?;}let temp=state.file.with_extension("tmp");std::fs::write(&temp,serde_json::to_vec_pretty(&next).map_err(|e|e.to_string())?).map_err(|e|e.to_string())?;std::fs::rename(&temp,&state.file).map_err(|e|e.to_string())?;*rows=next.clone();Ok(next)}
+#[cfg(test)]mod tests{use super::*;#[test]fn empty(){assert!(add(&[]," ").is_err());}#[test]fn immutable_ids(){let old=vec![Task{id:4,title:"prima".into(),done:false}];let next=add(&old," seconda ").unwrap();assert_eq!(old.len(),1);assert_eq!(next[1].id,5);assert_eq!(next[1].title,"seconda");}#[test]fn long_title(){assert!(add(&[],&"a".repeat(201)).is_err());}}
+
+fn main(){tauri::Builder::default().setup(|app|{let file=app.path().app_data_dir()?.join("notes.json");let rows=if file.exists(){serde_json::from_slice::<Vec<Task>>(&std::fs::read(&file)?)?}else{Vec::new()};app.manage(Notes{rows:std::sync::Mutex::new(rows),file});Ok(())}).invoke_handler(tauri::generate_handler![demo]).run(tauri::generate_context!()).expect("Tauri application failed");}

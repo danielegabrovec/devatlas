@@ -1,0 +1,11 @@
+$ErrorActionPreference='Stop'
+if(Test-Path -LiteralPath app){throw 'La cartella app esiste: usa una esportazione nuova per non sovrascrivere sorgenti.'}
+flutter create --no-pub --platforms=windows,android --project-name atlas_flutter app
+if($LASTEXITCODE -ne 0){throw 'flutter create non riuscito'}
+Copy-Item -LiteralPath .\recipe\pubspec.yaml -Destination .\app\pubspec.yaml -Force
+Copy-Item -LiteralPath .\recipe\analysis_options.yaml -Destination .\app\analysis_options.yaml -Force
+Copy-Item -Path .\recipe\lib\* -Destination .\app\lib -Recurse -Force
+Copy-Item -Path .\recipe\test\* -Destination .\app\test -Recurse -Force
+Set-Location -LiteralPath app
+flutter pub get
+if($LASTEXITCODE -ne 0){throw 'flutter pub get non riuscito'}

@@ -1,0 +1,3 @@
+from django import forms
+class SearchForm(forms.Form):
+    q=forms.CharField(min_length=2,max_length=50)

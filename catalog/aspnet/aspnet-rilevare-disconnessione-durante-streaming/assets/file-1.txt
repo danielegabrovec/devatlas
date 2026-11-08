@@ -1,0 +1,12 @@
+using System.Text;
+using System.Text.Json;
+using System.Diagnostics;
+using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.RateLimiting;
+using System.Threading.RateLimiting;
+var builder=WebApplication.CreateBuilder(args);
+
+var app=builder.Build();
+app.MapGet("/events",async(HttpContext c)=>{c.Response.ContentType="text/event-stream";for(var i=0;i<3&&!c.RequestAborted.IsCancellationRequested;i++){await c.Response.WriteAsync($"data: {i}\n\n",c.RequestAborted);await c.Response.Body.FlushAsync(c.RequestAborted);await Task.Delay(100,c.RequestAborted);}});
+app.Run();

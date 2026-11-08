@@ -1,0 +1,3 @@
+# Report materializzato
+Schema report_demo vuoto. Eseguire schema, seed, report, refresh.
+Risultato iniziale: gennaio2026 totale30. L'indice univoco consente refresh concurrently. report.sql va eseguito una volta soltanto.

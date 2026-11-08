@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-29",
+  "scope": [
+    "devatlas/codewidgets.py",
+    "devatlas/editor.py",
+    "tests/test_reader_ux13.py"
+  ],
+  "changes": [
+    "Ricerca letterale locale riusabile in blocchi, editor e ciascun lato del confronto: Ctrl+F contestuale, F3/Shift+F3, precedente/successivo, conteggio e distinzione maiuscole.",
+    "Toolbar CodeBlock con wrap ricordato nella sessione per sorgente, espandi/riduci, copia selezione e feedback annunciato alle tecnologie assistive.",
+    "Copia integrale usa sempre il contenuto originale; copia selezione mappa posizioni Qt UTF-16 a Unicode/CRLF originali, senza numeri di riga. Il blocco disabilitato impedisce anche Ctrl+C e copia selezione.",
+    "Altezza del blocco ricalcolata da font/zoom/layout e gutter aggiornato; espansione limitata con scorrimento interno per file lunghi.",
+    "Contrasto di token e numeri di riga adattato alla palette reale, includendo compositing alpha; righe diff con testo leggibile e colori di cambiamento preservati.",
+    "Editor con inferenza linguaggio da estensione e modelli file inseribili soltanto esplicitamente in contenuti vuoti, senza sostituire codice esistente.",
+    "Editor: campi shell/OS/cwd mostrati solo per comandi, menu contestuale file, Ctrl+S e Ctrl+Shift+N; ricerca e wrap non marcano la ricetta come modificata.",
+    "Validazione inline con focus sul campo e percorso visibile; valori CSV quotati, opzioni metadata non elencate e proprietà extra dei parametri restano conservati.",
+    "Salvataggio di soli metadati non normalizza CRLF/NBSP o Unicode del codice. required=False, default numerici e metadata extra rimangono invariati.",
+    "Il codice in sola lettura lascia passare Tab alla navigazione della finestra, senza intrappolare il focus."
+  ],
+  "tests": {
+    "command": ".\\.venv\\Scripts\\python.exe -m pytest tests/test_reader_ux13.py -q --basetemp=.cache/pytest-reader-ux13-final --junitxml=reports/reader13-junit.xml",
+    "passed": 23,
+    "failed": 0,
+    "skipped": 0,
+    "junit": "reports/reader13-junit.xml"
+  },
+  "integration_checked": [
+    "Ctrl+F in MainWindow reale con QAction finestra esistente apre la barra del CodeEditor e non un InputDialog.",
+    "Ricerca diff conserva ExtraSelections delle differenze.",
+    "Copia/export source invariati, incluso clipboard con CRLF, emoji e spazi non separabili.",
+    "Digitare nella ricerca dell’editor non produce stato dirty; Escape chiude la sola barra.",
+    "Screenshot e geometry assertion con QT_SCALE_FACTOR1/1.5/2 nei temi light/dark."
+  ],
+  "environment": {
+    "python": "3.13.13",
+    "PySide6": "6.12.0",
+    "Qt": "6.12.0",
+    "platform": "Windows / Qt offscreen"
+  },
+  "screenshots": [
+    "reports\\ui-state\\1.3-reader-offscreen\\editor-dark-dpi-1.5.png",
+    "reports\\ui-state\\1.3-reader-offscreen\\editor-dark-dpi-1.png",
+    "reports\\ui-state\\1.3-reader-offscreen\\editor-dark-dpi-2.png",
+    "reports\\ui-state\\1.3-reader-offscreen\\editor-light-dpi-1.5.png",
+    "reports\\ui-state\\1.3-reader-offscreen\\editor-light-dpi-1.png",
+    "reports\\ui-state\\1.3-reader-offscreen\\editor-light-dpi-2.png",
+    "reports\\ui-state\\1.3-reader-offscreen\\reader-dark-dpi-1.5.png",
+    "reports\\ui-state\\1.3-reader-offscreen\\reader-dark-dpi-1.png",
+    "reports\\ui-state\\1.3-reader-offscreen\\reader-dark-dpi-2.png",
+    "reports\\ui-state\\1.3-reader-offscreen\\reader-light-dpi-1.5.png",
+    "reports\\ui-state\\1.3-reader-offscreen\\reader-light-dpi-1.png",
+    "reports\\ui-state\\1.3-reader-offscreen\\reader-light-dpi-2.png"
+  ],
+  "visual_review": [
+    "reader-light-dpi-2.png",
+    "editor-dark-dpi-1.5.png"
+  ],
+  "api": {
+    "CodeEditor.show_find()": "Apre la barra locale e restituisce True quando collegata.",
+    "CodeBlock.show_find()": "Apre la ricerca del blocco e aggiorna il layout.",
+    "CodeFindBar(editor,parent)": "Widget riusabile senza modificare il testo né i colori ExtraSelections del diff.",
+    "CodeEditor.metricsChanged": "Segnale interno per font/zoom e ridimensionamento del CodeBlock."
+  },
+  "limits": [
+    "DPI e screenshot sono rendering Qt offscreen, non un collaudo fisico di monitor o screen reader.",
+    "Wrap ricordato nella sola sessione (cache limitata a200sorgenti), senza modificare preferenze/backend.",
+    "La disponibilità dei glifi emoji dipende dal font/backend di rendering; Unicode del contenuto e degli appunti èpreservato.",
+    "Nessun codice del catalogo o dei modelli viene eseguito dalle nuove azioni UI."
+  ],
+  "source_sha256": {
+    "devatlas/codewidgets.py": "e54f08d612c743e2a813f6dfdecc9d3b652999bf72c9de9b3fb05fc9906c563b",
+    "devatlas/editor.py": "4212c42ff9741342c2f0e4ea8cabe5d4f28dbbd7668b2022458bfd92922a5af7",
+    "tests/test_reader_ux13.py": "1bf789b18f35862ec5610ee6b9fd4c4a811fe5c19d1396daed5f9e13a4a96384"
+  }
+}

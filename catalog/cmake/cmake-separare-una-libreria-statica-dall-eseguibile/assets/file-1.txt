@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.24)
+project(RecipeBuild VERSION 1.2.0 LANGUAGES CXX)
+add_executable(recipe main.cpp)
+add_library(mathlib STATIC math.cpp)
+target_include_directories(mathlib PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include")
+target_link_libraries(recipe PRIVATE mathlib)

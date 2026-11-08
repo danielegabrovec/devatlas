@@ -1,0 +1,1 @@
+SELECT name,price/NULLIF(stock,0) AS prezzo_per_unita_stock FROM products;

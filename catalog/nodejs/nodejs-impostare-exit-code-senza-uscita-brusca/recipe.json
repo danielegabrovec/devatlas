@@ -1,0 +1,74 @@
+{
+  "id": "nodejs-impostare-exit-code-senza-uscita-brusca",
+  "title": "Impostare exit code senza uscita brusca",
+  "summary": "Il file main.mjs è un programma ESM autonomo. Avviarlo nella cartella esportata; gli eventuali file vengono creati soltanto in questa cartella.",
+  "stack": "nodejs",
+  "group": "Web e backend",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Node.js 24 LTS+; ESM",
+  "prerequisites": "Node.js24+ nel PATH. Esempi server: porta3000 libera, browser locale; Ctrl+C arresta. Le richieste example.com richiedono rete.",
+  "tags": [
+    "nodejs",
+    "example",
+    "impostare",
+    "exit",
+    "code",
+    "senza"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.mjs",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "2c1bcae2771bb45d1b50fbda0992eed010ecc0ca58887ce44f19f9d053c81d1f"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "14355a5fac325262ed55e1f6230485a705d922683ec75317a95e55545d9db931"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "nodejs-aggiungere-una-riga-senza-sovrascrivere",
+    "nodejs-eseguire-processo-senza-shell",
+    "nodejs-impostare-cache-http-etag"
+  ],
+  "expected": "Il risultato mostra il comportamento descritto nel titolo; i dati dimostrativi sono inclusi nel sorgente.",
+  "errors": [
+    "Comando non trovato: installare la toolchain elencata nei prerequisiti.",
+    "Dipendenza mancante: eseguire l'installazione nella radice esportata, senza cambiare le versioni dichiarate."
+  ],
+  "sources": [
+    "https://nodejs.org/docs/latest-v24.x/api/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Sintassi dei file Python o JavaScript/JSX e JSON controllata sulle fonti correnti; esecuzione di questa singola ricetta non attestata.",
+    "files_sha256": {
+      "main.mjs": "2c1bcae2771bb45d1b50fbda0992eed010ecc0ca58887ce44f19f9d053c81d1f"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

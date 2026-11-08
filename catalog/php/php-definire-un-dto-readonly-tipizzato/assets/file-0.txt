@@ -1,0 +1,7 @@
+<?php
+declare(strict_types=1);
+final readonly class Product {
+ public function __construct(public string $name,public int $cents){if($name===''||$cents<0)throw new InvalidArgumentException('Prodotto non valido');}
+}
+$product=new Product('libro',1250);
+echo $product->name,':',$product->cents,PHP_EOL;

@@ -1,0 +1,5 @@
+import java.io.ByteArrayInputStream
+
+fun main() {
+ByteArrayInputStream("esempio".toByteArray()).use { stream -> println(stream.readBytes().toString(Charsets.UTF_8)) }
+}

@@ -1,0 +1,1 @@
+if(Arithmetic.Add(2,3)!=5)throw new Exception("Somma errata");Console.WriteLine("smoke test passato");

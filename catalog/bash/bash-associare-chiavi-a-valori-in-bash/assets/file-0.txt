@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+declare -A ports=([api]=8000 [web]=3000)
+printf "API: %s\n" "${ports[api]}"

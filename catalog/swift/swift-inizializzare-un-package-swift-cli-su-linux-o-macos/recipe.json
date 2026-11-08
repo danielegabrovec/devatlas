@@ -1,0 +1,80 @@
+{
+  "id": "swift-inizializzare-un-package-swift-cli-su-linux-o-macos",
+  "title": "Inizializzare un package Swift CLI su Linux o macOS",
+  "summary": "Verifica la toolchain e descrive il target eseguibile attraverso Swift Package Manager.",
+  "stack": "swift",
+  "group": "Linguaggi",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "Xcode",
+    "VS Code"
+  ],
+  "versions": "Swift6.4; Package.swift tools-version6.0, Linux/macOS",
+  "prerequisites": "Toolchain Swift6.4 su Linux o macOS. Per SwiftUI/iOS occorrono macOS, Xcode e un target Apple. Non sono attestati esecuzioni o compilazioni Swift su Windows.",
+  "tags": [
+    "SPM",
+    "setup",
+    "Linux",
+    "macOS"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "Package.swift",
+      "language": "swift",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "c454fb9ff4ba1b3ca31a09cb2e5c7c87d8a1b3ec17e8239d54214614f73afe2a"
+    },
+    {
+      "id": "file-1",
+      "path": "Sources/SwiftStarter/main.swift",
+      "language": "swift",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "b82b0ec118776cca4549480ff95d14199fec3eb9d185f20bce49fdc31c6ac788"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "bash",
+      "role": "command",
+      "shell": "Bash",
+      "os": "Linux/macOS",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "6d1715efc74a210450deb07cd99711c7c6c5fbb70a46bceccfd8c6f287567cad"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "swift-eseguire-test-swift-package-con-xctest",
+    "swift-progetto-completo-report-spese-swift-package",
+    "swift-compilare-un-target-swift-con-configurazioni-debug-e-release"
+  ],
+  "expected": "Il package contiene il target SwiftStarter e la console stampa Package Swift pronto.",
+  "errors": [
+    "Could not find Package.swift: esegui Swift Package Manager dalla radice del package esportato.",
+    "Package richiede una versione tools più recente: controlla swift --version e la toolchain selezionata, anche se Xcode è già installato."
+  ],
+  "sources": [
+    "https://www.swift.org/documentation/",
+    "https://www.swift.org/install/linux/",
+    "https://www.swift.org/install/macos/",
+    "https://www.swift.org/blog/swift-6.4-released/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

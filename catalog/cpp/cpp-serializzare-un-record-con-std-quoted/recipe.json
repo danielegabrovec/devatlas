@@ -1,0 +1,79 @@
+{
+  "id": "cpp-serializzare-un-record-con-std-quoted",
+  "title": "Serializzare un record con std::quoted",
+  "summary": "Protegge spazi e virgolette in un formato testuale semplice dichiarato.",
+  "stack": "cpp",
+  "group": "Linguaggi",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "C++20, GCC 13+ oppure Clang 16+/MSVC con libreria C++20",
+  "prerequisites": "Compilatore e libreria standard C++20. Comandi pronti per GCC/g++; su Windows usare MSYS2 UCRT64 o una toolchain GCC nel PATH. Nessuna libreria esterna.",
+  "tags": [
+    "quoted",
+    "serialization",
+    "string"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.cpp",
+      "language": "cpp",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "6b3b8ca2ba23fe9d0afdc727878223ea4872448904b7284828dfac4e45d076d6"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "4f28337b85e696f73b6dd85bdd2d340cf9d3418f3910eaa746a1325f26a874d3"
+    },
+    {
+      "id": "command-1",
+      "path": "Comandi",
+      "language": "bash",
+      "role": "command",
+      "shell": "Bash",
+      "os": "Linux/macOS",
+      "cwd": ".",
+      "source": "assets/command-1.txt",
+      "sha256": "ef856697da2b006a405468d03c2195ed437a4f7403db7ade3e0279bf54b0c27a"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "cpp-cercare-e-sostituire-una-sola-occorrenza",
+    "cpp-controllare-prefissi-e-suffissi",
+    "cpp-definire-uguaglianza-di-un-record-c-20"
+  ],
+  "expected": "7:Ada Rossi; questo formato non è CSV o JSON.",
+  "errors": [
+    "Se un header o simbolo C++20 manca, controllare sia la versione del compilatore sia quella della libreria standard; non rimuovere -std=c++20."
+  ],
+  "sources": [
+    "https://learn.microsoft.com/en-us/cpp/standard-library/cpp-standard-library-reference",
+    "https://isocpp.org/get-started"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "details": "Eseguito su Windows x64 il 29/10/2026. Ambiente: GCC/g++ 16.2.0 MSYS2 UCRT64, C++20. Sorgenti compilati/controllati e programmi eseguiti; per i progetti sono stati eseguiti anche i test inclusi. Report: reports/languages-source-validation.json e reports/languages-runtime-validation.json. Linux e macOS non eseguiti.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

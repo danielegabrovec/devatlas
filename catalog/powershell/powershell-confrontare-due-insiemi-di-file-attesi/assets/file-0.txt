@@ -1,0 +1,5 @@
+Set-StrictMode -Version Latest
+$ErrorActionPreference='Stop'
+$expected=@("app.exe","README.md","LICENSE.txt")
+$actual=@("app.exe","README.md","debug.log")
+Compare-Object -ReferenceObject $expected -DifferenceObject $actual

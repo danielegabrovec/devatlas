@@ -1,0 +1,1 @@
+'use client';export default function Page(){return <p>Etichetta:{process.env.NEXT_PUBLIC_APP_LABEL??'Atlante'}</p>}

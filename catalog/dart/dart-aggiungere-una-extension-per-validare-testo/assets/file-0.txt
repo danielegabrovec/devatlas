@@ -1,0 +1,4 @@
+extension RequiredLabel on String{String requiredLabel(){final value=trim();if(value.isEmpty)throw ArgumentError('Testo vuoto');return value;}}
+Future<void> main() async {
+print('  Ada  '.requiredLabel());
+}

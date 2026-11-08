@@ -1,0 +1,4 @@
+Set-StrictMode -Version Latest
+$ErrorActionPreference='Stop'
+$items = @([pscustomobject]@{Name="api";Port=8000},[pscustomobject]@{Name="web";Port=3000})
+$items | Format-Table -AutoSize

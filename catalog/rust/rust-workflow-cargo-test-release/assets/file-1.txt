@@ -1,0 +1,3 @@
+fn total(values:&[i32])->i32{values.iter().sum()}
+fn main(){println!("{}",total(&[2,3,5]));}
+#[cfg(test)]mod tests{use super::*;#[test]fn sum(){assert_eq!(total(&[2,3]),5);}#[test]fn empty(){assert_eq!(total(&[]),0);}}

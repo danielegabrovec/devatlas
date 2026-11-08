@@ -1,0 +1,1 @@
+fn main(){println!("{}",{{project_name}}::greet("Ada"));}

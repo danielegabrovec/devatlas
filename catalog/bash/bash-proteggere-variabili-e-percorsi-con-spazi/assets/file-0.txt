@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+args=("prima parola" "seconda parola")
+printf "<%s>\n" "${args[@]}"

@@ -1,0 +1,1 @@
+PREPARE q FROM 'SELECT name FROM people WHERE id=?'; SET @person=1; EXECUTE q USING @person; DEALLOCATE PREPARE q;

@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdint.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <errno.h>
+#include <limits.h>
+
+enum Kind{INTEGER,REAL};struct Value{enum Kind kind;union{int integer;double real;}data;};
+int main(void){
+struct Value value={.kind=INTEGER,.data.integer=42};
+if(value.kind==INTEGER)printf("%d\n",value.data.integer);
+return 0;
+}

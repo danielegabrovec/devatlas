@@ -1,0 +1,1 @@
+import{total}from'../lib/pricing.mjs';export default function Page(){return <h1>Totale:{total(10,3)}</h1>}

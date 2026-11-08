@@ -1,0 +1,1 @@
+INSERT INTO products VALUES(1,'Duplicato',10,1) ON CONFLICT(id) DO NOTHING; SELECT COUNT(*) FROM products;

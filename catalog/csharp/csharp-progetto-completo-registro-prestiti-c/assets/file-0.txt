@@ -1,0 +1,4 @@
+using System.Text.Json;
+var register=new Register();register.Add("Ada","Libro C#");register.Return(1);
+Console.WriteLine(JsonSerializer.Serialize(register.List(),new JsonSerializerOptions{WriteIndented=true}));
+SelfTests.Run();

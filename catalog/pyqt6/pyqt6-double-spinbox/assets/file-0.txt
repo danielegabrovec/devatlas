@@ -1,0 +1,25 @@
+import sys, json, sqlite3, tempfile, logging
+from pathlib import Path
+from PyQt6.QtCore import *
+from PyQt6.QtGui import *
+from PyQt6.QtWidgets import *
+Signal = pyqtSignal
+Slot = pyqtSlot
+
+def build(root, layout):
+    spin = QDoubleSpinBox()
+    spin.setRange(0, 9999)
+    spin.setDecimals(2)
+    spin.setSingleStep(0.25)
+    spin.setPrefix("EUR ")
+    layout.addWidget(spin)
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    window = QWidget()
+    window.setWindowTitle("Ricetta Qt")
+    window.resize(720, 480)
+    layout = QVBoxLayout(window)
+    build(window, layout)
+    window.show()
+    sys.exit(app.exec())

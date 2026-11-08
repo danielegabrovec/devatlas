@@ -1,0 +1,169 @@
+{
+  "id": "angular-progetto-attivita",
+  "title": "Progetto completo: attività con stato e validazione angular",
+  "summary": "Aggiungere attività con ID stabili, alternare il completamento e tenere separati modello e interfaccia.",
+  "stack": "angular",
+  "group": "Web e backend",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Angular22.2.3;CLI/build22.2.5;TypeScript6.0.3",
+  "prerequisites": "Node24.15.0+ e npm; dipendenze del manifest. Angular22 richiede TypeScript>=6.0 e<6.1, non il latest7. L'esempio client funziona su loopback; nessuna pubblicazione automatica.",
+  "tags": [
+    "angular",
+    "project",
+    "state",
+    "forms",
+    "test",
+    "immutable"
+  ],
+  "project": true,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "package.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "f35f8c5fc01e02a554c2e71845bc3a19869602c054a75b26080e36d2c9187923"
+    },
+    {
+      "id": "file-1",
+      "path": "angular.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "4f2511f3cd19df996b2561c73c9a4f8ae8df5b5d15a590e2736da66a1fb0b494"
+    },
+    {
+      "id": "file-2",
+      "path": "tsconfig.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "7618118e6f1efb55ee2b0d0c5983ec958dadacc6f1aa7c18b6c5583556fba915"
+    },
+    {
+      "id": "file-3",
+      "path": "tsconfig.app.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "caa84e8abdba5afa155da8dc22276ae5144efe50508f6c346ecf99e7ad5015f3"
+    },
+    {
+      "id": "file-4",
+      "path": "src/index.html",
+      "language": "html",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "6e65c940d53cdd60c1172b50efd19333075624974f454e85b44bf89f86d691d0"
+    },
+    {
+      "id": "file-5",
+      "path": "src/main.ts",
+      "language": "typescript",
+      "role": "file",
+      "source": "assets/file-5.txt",
+      "sha256": "d5291f94c7a4c2022af79eef530ea5f0aee95eb0fef7a5b31f55d22334eaa2c5"
+    },
+    {
+      "id": "file-6",
+      "path": "src/app.ts",
+      "language": "typescript",
+      "role": "file",
+      "source": "assets/file-6.txt",
+      "sha256": "929643479b800f230b758dd37989565c8d547cd908be7299e5c3afec05b63a39"
+    },
+    {
+      "id": "file-7",
+      "path": "src/styles.css",
+      "language": "css",
+      "role": "file",
+      "source": "assets/file-7.txt",
+      "sha256": "3a55e171e6b5aa1fd06425bb3b1afc255712258cdf803e79a027d168dd724afc"
+    },
+    {
+      "id": "file-8",
+      "path": "public/.gitkeep",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-8.txt",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "id": "file-9",
+      "path": "src/model.mjs",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-9.txt",
+      "sha256": "da5f3e6dcdcd1f46255344ec9e78b4071e4c88a1c986f6d487b5564004dd7ea4"
+    },
+    {
+      "id": "file-10",
+      "path": "test/model.test.mjs",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-10.txt",
+      "sha256": "7fb0e414781e96a3a4e17550d4a8080c55ea424c279cdb922010263dacef45c8"
+    },
+    {
+      "id": "file-11",
+      "path": "README.md",
+      "language": "markdown",
+      "role": "file",
+      "source": "assets/file-11.txt",
+      "sha256": "66628df54b884cc2a09c64601bb5b6683fdc618ba414711c3d388c479032e3ab"
+    },
+    {
+      "id": "file-12",
+      "path": "src/model.d.mts",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-12.txt",
+      "sha256": "3f0355efb927ac3ea6c0647eba65b47285bac47a68c9ab2ff1b733b7e7dd0a0c"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "c1018b6865f5463c26f0c1565f4b10f0977d7ec6cb3a20078beb7c6796a2af80"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "angular-test",
+    "angular-track-empty",
+    "angular-setup"
+  ],
+  "expected": "Tre test del modello passano; aggiunta e completamento aggiornano il conteggio visibile.",
+  "errors": [
+    "Import o plugin non risolto: eseguire npm install nella radice con package.json e rispettare le versioni del manifest, senza sostituirle con il latest globale.",
+    "Porta del server occupata: scegliere una porta locale libera con npm run dev -- --port 5180 e aggiornare l’URL del debugger alla stessa porta."
+  ],
+  "sources": [
+    "https://angular.dev/installation",
+    "https://angular.dev/reference/versions",
+    "https://angular.dev/guide/signals"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "compilato",
+    "date": "2026-10-29",
+    "details": "Build Angular22 reale e tre test Node sul medesimo modello ESM effettivamente importato dalla UI, con dichiarazioni .d.mts per strict typing. UI browser non attestata. Report: reports/expansion-web-qa.json."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

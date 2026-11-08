@@ -1,0 +1,3 @@
+import React, {useState,useEffect,useMemo,useRef,useReducer,useId,useContext,createContext,useCallback,useLayoutEffect,useTransition,useDeferredValue,useSyncExternalStore,useImperativeHandle,forwardRef,memo,lazy,Suspense,Component} from 'react';
+import {createPortal} from 'react-dom';
+export default function App(){const[file,set]=useState(null);const[url,put]=useState('');useEffect(()=>{if(!file)return;const u=URL.createObjectURL(file);put(u);return()=>URL.revokeObjectURL(u)},[file]);return <><label>Immagine<input type='file' accept='image/*' onChange={e=>set(e.target.files[0]??null)}/></label>{file?<img src={url} alt='Anteprima selezionata' width='200'/>:null}</>}

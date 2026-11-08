@@ -1,0 +1,3 @@
+from django.shortcuts import render
+from .models import Note
+def home(request): return render(request,'list.html',{'notes':Note.objects.order_by('id')})

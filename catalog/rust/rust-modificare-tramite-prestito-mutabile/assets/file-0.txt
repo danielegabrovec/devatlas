@@ -1,0 +1,5 @@
+fn append(value:&mut String){value.push('!');}
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+let mut value=String::from("ciao");append(&mut value);println!("{}",value);
+Ok(())
+}

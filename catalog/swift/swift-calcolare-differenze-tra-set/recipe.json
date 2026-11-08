@@ -1,0 +1,71 @@
+{
+  "id": "swift-calcolare-differenze-tra-set",
+  "title": "Calcolare differenze tra Set",
+  "summary": "Distingue elementi aggiunti e rimossi fra due snapshot.",
+  "stack": "swift",
+  "group": "Linguaggi",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "Xcode",
+    "VS Code"
+  ],
+  "versions": "Swift6.4; Package.swift tools-version6.0, Linux/macOS",
+  "prerequisites": "Toolchain Swift6.4 su Linux o macOS. Per SwiftUI/iOS occorrono macOS, Xcode e un target Apple. Non sono attestati esecuzioni o compilazioni Swift su Windows.",
+  "tags": [
+    "Set",
+    "subtracting",
+    "difference"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.swift",
+      "language": "swift",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "161399b3b13fdb4968c0dc8bee8d7581a808f15b91b56d3ceda7c28813a8fdd3"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "bash",
+      "role": "command",
+      "shell": "Bash",
+      "os": "Linux/macOS",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "d8fc89c18fa66be9cc6a7339c1d47da4b05a944894fb741751e25ea8f2f0b8f5"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "swift-navigare-tra-viste-swiftui-con-navigationstack",
+    "swift-analizzare-un-istante-iso8601-utc",
+    "swift-codificare-e-decodificare-json-con-codable"
+  ],
+  "expected": "Aggiunto c, rimosso a.",
+  "errors": [
+    "Differenza invertita: after.subtracting(before) sono aggiunte, before.subtracting(after) sono rimozioni.",
+    "Output in ordine diverso: un Set non garantisce l'ordine richiesto da una presentazione; ordina esplicitamente per confrontare."
+  ],
+  "sources": [
+    "https://www.swift.org/documentation/",
+    "https://www.swift.org/install/linux/",
+    "https://www.swift.org/install/macos/",
+    "https://www.swift.org/blog/swift-6.4-released/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

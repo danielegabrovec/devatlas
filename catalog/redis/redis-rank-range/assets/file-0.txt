@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+p="atlas_demo:rank-range"
+cli(){ redis-cli -e --raw -h 127.0.0.1 -p 6381 "$@"; }
+cli DEL "$p:scores"
+cli ZADD "$p:scores" 10 A 20 B 30 C
+cli ZRANGE "$p:scores" 15 25 BYSCORE WITHSCORES

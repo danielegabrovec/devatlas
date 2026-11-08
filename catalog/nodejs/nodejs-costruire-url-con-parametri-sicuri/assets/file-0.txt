@@ -1,0 +1,1 @@
+const u=new URL('https://example.test/search');u.searchParams.set('q','C++ e C#');console.log(u.href);

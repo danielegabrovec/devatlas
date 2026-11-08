@@ -1,0 +1,4 @@
+const config = Object.freeze({ port: 8080, nested: { enabled: true } });
+try { config.port = 9000; } catch (error) { console.log(error.name); }
+config.nested.enabled = false;
+console.log(config.port, config.nested.enabled);

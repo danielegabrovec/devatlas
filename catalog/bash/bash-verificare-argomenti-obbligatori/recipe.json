@@ -1,0 +1,66 @@
+{
+  "id": "bash-verificare-argomenti-obbligatori",
+  "title": "Verificare argomenti obbligatori",
+  "summary": "Interrompere lo script con messaggio e codice di uscita non nullo.",
+  "stack": "bash",
+  "group": "Strumenti",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Linux"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Bash 5; GNU coreutils",
+  "prerequisites": "Linux o distribuzione Linux in WSL, Bash 5 e strumenti GNU. Gli script non sono dichiarati verificati su macOS.",
+  "tags": [
+    "bash",
+    "verificare-argomenti-obbligatori",
+    "workflow"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "example.sh",
+      "language": "bash",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "a6a3d89b9f7e3dfb59118a65d0e1a905d61453130a64e566714987badec61cca"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "bash",
+      "role": "command",
+      "shell": "Bash",
+      "os": "Linux",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "41d7c89d639340cf2d536d994f535a8b330d2dde6d04319f105b9a2d727c3bce"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "bash-calcolare-e-verificare-un-checksum-sha-256",
+    "bash-analizzare-opzioni-brevi-con-getopts",
+    "bash-associare-chiavi-a-valori-in-bash"
+  ],
+  "expected": "Interrompere lo script con messaggio e codice di uscita non nullo.",
+  "errors": [
+    "Comando non trovato: verificare la dipendenza e riaprire il terminale dopo l'installazione.",
+    "Accesso negato: scegliere una cartella di lavoro o temporanea scrivibile."
+  ],
+  "sources": [
+    "https://www.gnu.org/software/bash/manual/bash.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "documentato",
+    "details": "Esempio originale revisionato nel catalogo; esecuzione non attestata.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

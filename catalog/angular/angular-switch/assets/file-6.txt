@@ -1,0 +1,7 @@
+import {Component,signal,computed,effect,inject,DestroyRef,ChangeDetectionStrategy} from '@angular/core';
+import {CommonModule} from '@angular/common';import {FormsModule} from '@angular/forms';
+
+@Component({selector:'app-root',standalone:true,imports:[CommonModule,FormsModule],changeDetection:ChangeDetectionStrategy.OnPush,template:`<main><select [ngModel]="mode()" (ngModelChange)="mode.set($event)"><option value="code">Codice</option><option value="guide">Guida</option></select>@switch(mode()){@case("code"){<pre>print(42)</pre>}@case("guide"){<p>Avvia il programma.</p>}}</main>`})
+export class AppComponent{
+mode=signal('code');
+}

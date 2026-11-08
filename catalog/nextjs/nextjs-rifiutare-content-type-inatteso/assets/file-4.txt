@@ -1,0 +1,1 @@
+export async function POST(request){if(!request.headers.get('content-type')?.startsWith('application/json'))return Response.json({error:'application/json richiesto'},{status:415});return Response.json(await request.json())}

@@ -1,0 +1,1 @@
+CREATE SCHEMA IF NOT EXISTS report_demo; CREATE TABLE IF NOT EXISTS report_demo.sales(id bigint GENERATED ALWAYS AS IDENTITY,day date NOT NULL,amount numeric(12,2) NOT NULL CHECK(amount>=0));

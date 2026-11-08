@@ -1,0 +1,1 @@
+SELECT city AS luogo FROM people WHERE city IS NOT NULL UNION SELECT 'Torino';

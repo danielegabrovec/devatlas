@@ -1,0 +1,6 @@
+import 'dart:async';
+
+Future<void> main() async {
+try{await Future<int>.delayed(const Duration(seconds:1),()=>42).timeout(const Duration(milliseconds:1));}
+on TimeoutException{print('tempo scaduto');}
+}

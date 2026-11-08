@@ -1,0 +1,94 @@
+{
+  "id": "winui-grid",
+  "title": "Disporre un'etichetta e un campo su due colonne",
+  "summary": "Usare Grid.Column con unità Auto e Star.",
+  "stack": "winui",
+  "group": "Desktop e GUI",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows"
+  ],
+  "ide": [
+    "Visual Studio",
+    "Rider",
+    "VS Code"
+  ],
+  "versions": "C# .NET 8; WinUI 3 Windows App SDK 1.8.12",
+  "prerequisites": "Windows 10 build 19041+; .NET 8 SDK, Windows SDK e workload WinUI in Visual Studio. Questa è una baseline compatibile Windows App SDK 1.8.12, non la versione più recente.",
+  "tags": [
+    "grid",
+    "desktop",
+    "C#",
+    "winui"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "RecipeApp.csproj",
+      "language": "xml",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "ae8dce4ae9792581692094909a6df9322a22776e68fcf9a15d5d3e982eaab079"
+    },
+    {
+      "id": "file-1",
+      "path": "MainWindow.cs",
+      "language": "csharp",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "270deaca3739a03b080122086940ead2dba916a2fe087ce1f9c4f9f1ffd6b447"
+    },
+    {
+      "id": "file-2",
+      "path": "App.xaml",
+      "language": "xml",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "7130b9219e01a0f7b7fb0e8ffe92697a8b33d3f343aa5c477900c93be52f551d"
+    },
+    {
+      "id": "file-3",
+      "path": "App.xaml.cs",
+      "language": "csharp",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "82aa2537bc9c18ab4b85972f8cacc37a92786d5a8a01e0df77ce9f9a4f823f4c"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "23f2f12d79ba1017cbbd2bdea34338f883d6abcdf70c94c6d3f3e8a49aa5f15e"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "winui-textbox",
+    "winui-check",
+    "winui-combo"
+  ],
+  "expected": "Usare Grid.Column con unità Auto e Star.",
+  "errors": [
+    "Restore fallito: verificare accesso a NuGet e SDK indicato dal progetto.",
+    "Classe duplicata: usare una cartella nuova invece di aggiungere i file a un template che contiene già App."
+  ],
+  "sources": [
+    "https://learn.microsoft.com/windows/apps/winui/winui3/get-started-winui3-for-desktop",
+    "https://learn.microsoft.com/windows/apps/windows-app-sdk/downloads-archive"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "details": "Controlli statici sui sorgenti: AST Python, parser PowerShell/Bash dove disponibili, node --check per JavaScript, JSON e XML secondo i file presenti. Nessuna compilazione C#/XAML/C++ né esecuzione Docker/CI/packaging attestata. Report: reports/desktop-tools-qa.json.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

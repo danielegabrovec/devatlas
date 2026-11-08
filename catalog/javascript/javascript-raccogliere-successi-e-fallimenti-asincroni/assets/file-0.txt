@@ -1,0 +1,2 @@
+const results = await Promise.allSettled([Promise.resolve(7), Promise.reject(new Error("fallita"))]);
+console.log(results.map(result => result.status));

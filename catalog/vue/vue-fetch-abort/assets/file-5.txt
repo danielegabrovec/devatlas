@@ -1,0 +1,5 @@
+<script setup>
+import {ref,reactive,computed,watch,watchEffect,onMounted,onUnmounted,nextTick,provide,inject,defineAsyncComponent,shallowRef,triggerRef,readonly,toRefs} from 'vue';
+const result=ref('Caricamento');const controller=new AbortController();onMounted(async()=>{try{const response=await fetch('data.json',{signal:controller.signal});if(!response.ok)throw new Error('HTTP '+response.status);result.value=(await response.json()).message;}catch(error){if(error.name!=='AbortError')result.value=error.message;}});onUnmounted(()=>controller.abort());
+</script>
+<template><main><p role="status">{{result}}</p></main></template>

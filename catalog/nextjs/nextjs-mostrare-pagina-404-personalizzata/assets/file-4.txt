@@ -1,0 +1,1 @@
+export default function NotFound(){return <section><h1>Risorsa assente</h1><a href='/'>Torna alla home</a></section>}

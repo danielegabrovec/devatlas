@@ -1,0 +1,69 @@
+{
+  "id": "php-controllare-sintassi-php-prima-della-consegna",
+  "title": "Controllare sintassi PHP prima della consegna",
+  "summary": "Usa il lint del runtime per intercettare errori di parsing senza eseguire lo script.",
+  "stack": "php",
+  "group": "Linguaggi",
+  "section": "Compilazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "PHP8.4/8.5 CLI, strict_types; estensioni indicate nella singola scheda",
+  "prerequisites": "PHP8.4 o8.5 CLI nel PATH. PDO SQLite richiede pdo_sqlite; le altre estensioni necessarie sono indicate. Il server incorporato è destinato al laboratorio locale.",
+  "tags": [
+    "lint",
+    "syntax",
+    "build"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.php",
+      "language": "php",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "e580fbcff16732696456bd8466cfcb216d839111c611d2a3c64ba648ee990353"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "b13d511e4b3417c1f594b5be455368d3ef558e9ef0d2a605983f6507e59ba1ff"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "php-progetto-completo-rubrica-json-php",
+    "php-creare-un-archivio-phar-php-locale",
+    "php-debuggare-php-cli-con-xdebug-e-vs-code"
+  ],
+  "expected": "Lint senza errori e output10; -l non valida accessi a database, file o rotte.",
+  "errors": [
+    "ParseError o syntax error: usa php -l sul file indicato prima di eseguirlo e controlla parentesi, virgolette e punto e virgola.",
+    "Il lint passa ma il programma fallisce: -l non verifica estensioni caricate, accessi ai file o servizi esterni."
+  ],
+  "sources": [
+    "https://www.php.net/manual/en/",
+    "https://www.php.net/supported-versions.php"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: php lint, php program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

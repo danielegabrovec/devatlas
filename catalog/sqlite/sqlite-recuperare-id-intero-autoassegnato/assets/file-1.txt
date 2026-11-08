@@ -1,0 +1,1 @@
+INSERT INTO products(name,price,stock) VALUES('Hub',25,4); SELECT last_insert_rowid();

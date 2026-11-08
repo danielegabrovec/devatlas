@@ -1,0 +1,128 @@
+{
+  "id": "electron-debug-build-distribuzione",
+  "title": "Debug IPC e distribuzione Electron per Windows",
+  "summary": "Seguire una richiesta renderer-preload-main e preparare una cartella distribuibile con il runtime Electron.",
+  "stack": "electron",
+  "group": "Desktop e GUI",
+  "section": "Debug",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows"
+  ],
+  "ide": [
+    "VS Code",
+    "Visual Studio"
+  ],
+  "versions": "Electron 45.1.0; Node.js 24 LTS per npm",
+  "prerequisites": "Node.js 24 con npm; ambiente desktop. L'installazione scarica il runtime Electron. Nessuna esecuzione attestata su Linux/macOS.",
+  "tags": [
+    "Electron",
+    "debug",
+    "IPC",
+    "preload",
+    "electron-builder",
+    "win-unpacked"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "package.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "43e2d5f36b41a01c01b30cbb793280715eb572985b00904366c47d34a49c314d"
+    },
+    {
+      "id": "file-1",
+      "path": "main.cjs",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "6a648fccbd573323f91baa8d526de20e21a935983103e3a1fd25ce7ed91b45ec"
+    },
+    {
+      "id": "file-2",
+      "path": "index.html",
+      "language": "html",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "e60b058716f97b48933d38d0716d1ed57a2e01595fc50552f883c3fc2af2c766"
+    },
+    {
+      "id": "file-3",
+      "path": "preload.cjs",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "d9ee90e37a1dbf1fa948f3c51613c1e53a5ec522e3bd90e276e9acb5596986df"
+    },
+    {
+      "id": "file-4",
+      "path": "renderer.js",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "891fad9abcc56015eb705d604670b89813a7c26c7710083fcc0cf078b854be15"
+    },
+    {
+      "id": "file-5",
+      "path": "totals.cjs",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-5.txt",
+      "sha256": "316e638cfa7cd888336b4e8f30c846c12c29e06d44517fde1497c5caa9999e00"
+    },
+    {
+      "id": "file-6",
+      "path": ".vscode/launch.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-6.txt",
+      "sha256": "ab0df003dea861c740009e0aef95bb4e65d20b8659bd1ec2f1bf0cc985bb74f2"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "78f0f3952b545503f99ea45ea35f305a99e80270c3060a49cba153d3b04a74f0"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "project_name",
+      "label": "Nome dell'applicazione",
+      "type": "identifier",
+      "default": "RecipeDesktop",
+      "required": true
+    }
+  ],
+  "related": [
+    "electron-progetto-note",
+    "electron-devtools",
+    "electron-versions"
+  ],
+  "expected": "Il debugger si ferma in totals.cjs su richiesta del renderer; il pulsante mostra 19.75 e la cartella win-unpacked contiene l'app distribuibile.",
+  "errors": [
+    "Il breakpoint nel main non si ferma: avviare la configurazione Node/Electron fornita, non un debugger del solo browser.",
+    "API invoice assente: controllare preload.cjs, nome esposto dal contextBridge e messaggi di DevTools; non abilitare nodeIntegration per aggirare l'errore."
+  ],
+  "sources": [
+    "https://www.electronjs.org/docs/latest/tutorial/debugging-vscode",
+    "https://www.electronjs.org/docs/latest/tutorial/security",
+    "https://www.electron.build/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "details": "Controlli statici sui sorgenti: AST Python, parser PowerShell/Bash dove disponibili, node --check per JavaScript, JSON e XML secondo i file presenti. Nessuna compilazione C#/XAML/C++ né esecuzione Docker/CI/packaging attestata. Report: reports/desktop-tools-qa.json.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

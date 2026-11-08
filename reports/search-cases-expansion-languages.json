@@ -1,0 +1,122 @@
+[
+  {
+    "query": "Kotlin nome nullable valore alternativo Elvis",
+    "expected_ids": [
+      "kotlin-gestire-null-con-safe-call-ed-elvis"
+    ]
+  },
+  {
+    "query": "Kotlin totali per categoria groupBy sumOf",
+    "expected_ids": [
+      "kotlin-raggruppare-record-per-categoria"
+    ]
+  },
+  {
+    "query": "Android Kotlin salvare opzione tra riavvii SharedPreferences",
+    "expected_ids": [
+      "kotlin-conservare-un-opzione-android-con-sharedpreferences"
+    ]
+  },
+  {
+    "query": "Kotlin collegare debugger JVM porta 5005",
+    "expected_ids": [
+      "kotlin-debuggare-kotlin-jvm-con-jdwp"
+    ]
+  },
+  {
+    "query": "Kotlin digest SHA256 testo UTF8",
+    "expected_ids": [
+      "kotlin-calcolare-sha-256-di-un-payload-utf-8"
+    ]
+  },
+  {
+    "query": "Swift convertire JSON in modello Codable",
+    "expected_ids": [
+      "swift-codificare-e-decodificare-json-con-codable"
+    ]
+  },
+  {
+    "query": "Swift emoji conta un carattere ma molti byte",
+    "expected_ids": [
+      "swift-contare-grafemi-e-byte-unicode"
+    ]
+  },
+  {
+    "query": "SwiftUI aprire dettaglio da lista NavigationStack",
+    "expected_ids": [
+      "swift-navigare-tra-viste-swiftui-con-navigationstack"
+    ]
+  },
+  {
+    "query": "Swift Package test automatico XCTest",
+    "expected_ids": [
+      "swift-eseguire-test-swift-package-con-xctest"
+    ]
+  },
+  {
+    "query": "Swift CLI report spese JSON con test",
+    "expected_ids": [
+      "swift-progetto-completo-report-spese-swift-package"
+    ]
+  },
+  {
+    "query": "PHP filter_var zero è un intero valido",
+    "expected_ids": [
+      "php-validare-un-intero-senza-perdere-il-valore-zero"
+    ]
+  },
+  {
+    "query": "PHP dopo array_filter JSON deve restare array",
+    "expected_ids": [
+      "php-filtrare-e-reindicizzare-un-array"
+    ]
+  },
+  {
+    "query": "PHP PDO SQLite query con apostrofo senza concatenare",
+    "expected_ids": [
+      "php-eseguire-query-pdo-sqlite-parametrizzate"
+    ]
+  },
+  {
+    "query": "PHP rifiutare form con token CSRF alterato",
+    "expected_ids": [
+      "php-verificare-un-token-csrf-per-un-form-php"
+    ]
+  },
+  {
+    "query": "PHP creare PHAR da distribuire localmente",
+    "expected_ids": [
+      "php-creare-un-archivio-phar-php-locale"
+    ]
+  },
+  {
+    "query": "Dart lavoro CPU su Isolate.run",
+    "expected_ids": [
+      "dart-spostare-un-calcolo-cpu-in-un-isolate"
+    ]
+  },
+  {
+    "query": "Dart raggruppare numeri per categoria putIfAbsent",
+    "expected_ids": [
+      "dart-raggruppare-elementi-con-putifabsent"
+    ]
+  },
+  {
+    "query": "Dart VM Service DevTools breakpoint CLI",
+    "expected_ids": [
+      "dart-debuggare-dart-con-vm-service-e-vs-code"
+    ]
+  },
+  {
+    "query": "Dart controllare tipi ricevuti da JSON map pattern",
+    "expected_ids": [
+      "dart-validare-json-con-un-map-pattern-tipizzato"
+    ]
+  },
+  {
+    "query": "Dart scrivere e rileggere file UTF8 nativo",
+    "expected_ids": [
+      "dart-leggere-e-scrivere-utf-8-con-dart-io"
+    ]
+  }
+]

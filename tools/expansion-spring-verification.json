@@ -1,0 +1,437 @@
+{
+  "spring-advice": {
+    "hashes": {
+      "file-0": "4352afd5e958e7beec10831476d96584a04e461f7156011c33a3a8f6e5cb4a54",
+      "file-1": "def76258b141c42d751efda9d753cf16da1234f65e8bef809900560eea532a4e",
+      "file-2": "95a34dd48140e704aa3cc0036379496b93e5cf0048687f4db5f5227ca210d0e8",
+      "file-3": "2c47926aeb7469b3ef1036a7f11e1a918d2be589a254361eb5600f640023eb7f",
+      "file-4": "81e77241bde74d05793778eed612643a9084511347957de38602973a7aabd548",
+      "command-0": "eccbf5f7ae208f5e4e23db9b2d75c8193fdb2ef70d7626f3747e2d82a8538bcf"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Compilazione Maven reale e richieste HTTP su loopback/Windows, Spring Boot4.1.2, JDK21.0.12.1. Report: reports/expansion-spring-qa.json. Sessioni JDWP interattive, hosting esterno e altri OS non attestati."
+    }
+  },
+  "spring-async-response": {
+    "hashes": {
+      "file-0": "4352afd5e958e7beec10831476d96584a04e461f7156011c33a3a8f6e5cb4a54",
+      "file-1": "def76258b141c42d751efda9d753cf16da1234f65e8bef809900560eea532a4e",
+      "file-2": "fbe49c636c41a1c508c8f47010d556d719804248839a4087dc39858eb218c225",
+      "file-3": "2c47926aeb7469b3ef1036a7f11e1a918d2be589a254361eb5600f640023eb7f",
+      "command-0": "eccbf5f7ae208f5e4e23db9b2d75c8193fdb2ef70d7626f3747e2d82a8538bcf"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Compilazione Maven reale e richieste HTTP su loopback/Windows, Spring Boot4.1.2, JDK21.0.12.1. Report: reports/expansion-spring-qa.json. Sessioni JDWP interattive, hosting esterno e altri OS non attestati."
+    }
+  },
+  "spring-body": {
+    "hashes": {
+      "file-0": "4352afd5e958e7beec10831476d96584a04e461f7156011c33a3a8f6e5cb4a54",
+      "file-1": "def76258b141c42d751efda9d753cf16da1234f65e8bef809900560eea532a4e",
+      "file-2": "1732f0bb2118a0ae06d6d7491da22a6a070a6518a02d49db86eaa178599cdd38",
+      "file-3": "2c47926aeb7469b3ef1036a7f11e1a918d2be589a254361eb5600f640023eb7f",
+      "command-0": "eccbf5f7ae208f5e4e23db9b2d75c8193fdb2ef70d7626f3747e2d82a8538bcf"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Compilazione Maven reale e richieste HTTP su loopback/Windows, Spring Boot4.1.2, JDK21.0.12.1. Report: reports/expansion-spring-qa.json. Sessioni JDWP interattive, hosting esterno e altri OS non attestati."
+    }
+  },
+  "spring-build": {
+    "hashes": {
+      "file-0": "4352afd5e958e7beec10831476d96584a04e461f7156011c33a3a8f6e5cb4a54",
+      "file-1": "def76258b141c42d751efda9d753cf16da1234f65e8bef809900560eea532a4e",
+      "file-2": "a5340fd76907101c60f963791ffe56225539d6e8935ac490704c4da0d32d6275",
+      "file-3": "2c47926aeb7469b3ef1036a7f11e1a918d2be589a254361eb5600f640023eb7f",
+      "command-0": "e8e449a2cb85ad109b6b063f311a2b6dd4d71edf1ae85c859838d3e86a73b136"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Compilazione Maven reale e richieste HTTP su loopback/Windows, Spring Boot4.1.2, JDK21.0.12.1. Report: reports/expansion-spring-qa.json. Sessioni JDWP interattive, hosting esterno e altri OS non attestati."
+    }
+  },
+  "spring-cache-control": {
+    "hashes": {
+      "file-0": "4352afd5e958e7beec10831476d96584a04e461f7156011c33a3a8f6e5cb4a54",
+      "file-1": "def76258b141c42d751efda9d753cf16da1234f65e8bef809900560eea532a4e",
+      "file-2": "a142e53c50166f3c52e54864e40db62ba6e8c2b13aef44d812baa5259c568e33",
+      "file-3": "2c47926aeb7469b3ef1036a7f11e1a918d2be589a254361eb5600f640023eb7f",
+      "command-0": "eccbf5f7ae208f5e4e23db9b2d75c8193fdb2ef70d7626f3747e2d82a8538bcf"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Compilazione Maven reale e richieste HTTP su loopback/Windows, Spring Boot4.1.2, JDK21.0.12.1. Report: reports/expansion-spring-qa.json. Sessioni JDWP interattive, hosting esterno e altri OS non attestati."
+    }
+  },
+  "spring-config-properties": {
+    "hashes": {
+      "file-0": "4352afd5e958e7beec10831476d96584a04e461f7156011c33a3a8f6e5cb4a54",
+      "file-1": "def76258b141c42d751efda9d753cf16da1234f65e8bef809900560eea532a4e",
+      "file-2": "4eb9aa2779d26d3a5122555df542164e91d0a6eeeb56313f8e66a2ade1df580e",
+      "file-3": "2c47926aeb7469b3ef1036a7f11e1a918d2be589a254361eb5600f640023eb7f",
+      "file-4": "704a441c24f25e6f27637de20bd6d5a87e2e5ca1aa83411f42ae08d38e51b221",
+      "command-0": "eccbf5f7ae208f5e4e23db9b2d75c8193fdb2ef70d7626f3747e2d82a8538bcf"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Compilazione Maven reale e richieste HTTP su loopback/Windows, Spring Boot4.1.2, JDK21.0.12.1. Report: reports/expansion-spring-qa.json. Sessioni JDWP interattive, hosting esterno e altri OS non attestati."
+    }
+  },
+  "spring-constructor-di": {
+    "hashes": {
+      "file-0": "4352afd5e958e7beec10831476d96584a04e461f7156011c33a3a8f6e5cb4a54",
+      "file-1": "def76258b141c42d751efda9d753cf16da1234f65e8bef809900560eea532a4e",
+      "file-2": "4ada07acbf5cea79fc68b4ae6a5cce5e21cceb8487d2b33c9172568ef3c61126",
+      "file-3": "2c47926aeb7469b3ef1036a7f11e1a918d2be589a254361eb5600f640023eb7f",
+      "file-4": "0f3430148d5f117f38ec7dd57a985425d325a9953a8db6c22598d31ee377ecde",
+      "command-0": "eccbf5f7ae208f5e4e23db9b2d75c8193fdb2ef70d7626f3747e2d82a8538bcf"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Compilazione Maven reale e richieste HTTP su loopback/Windows, Spring Boot4.1.2, JDK21.0.12.1. Report: reports/expansion-spring-qa.json. Sessioni JDWP interattive, hosting esterno e altri OS non attestati."
+    }
+  },
+  "spring-cookie": {
+    "hashes": {
+      "file-0": "4352afd5e958e7beec10831476d96584a04e461f7156011c33a3a8f6e5cb4a54",
+      "file-1": "def76258b141c42d751efda9d753cf16da1234f65e8bef809900560eea532a4e",
+      "file-2": "4ec4117d74d5ad0cf5b7c1a3b39518c10cd13f07241c77b53b6c8b76b8cbd340",
+      "file-3": "2c47926aeb7469b3ef1036a7f11e1a918d2be589a254361eb5600f640023eb7f",
+      "command-0": "eccbf5f7ae208f5e4e23db9b2d75c8193fdb2ef70d7626f3747e2d82a8538bcf"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Compilazione Maven reale e richieste HTTP su loopback/Windows, Spring Boot4.1.2, JDK21.0.12.1. Report: reports/expansion-spring-qa.json. Sessioni JDWP interattive, hosting esterno e altri OS non attestati."
+    }
+  },
+  "spring-cors-local": {
+    "hashes": {
+      "file-0": "4352afd5e958e7beec10831476d96584a04e461f7156011c33a3a8f6e5cb4a54",
+      "file-1": "def76258b141c42d751efda9d753cf16da1234f65e8bef809900560eea532a4e",
+      "file-2": "3e1d4accc2c1c732fb31cfdbf496c638e60b1928024a41f0d8572b759c04fd46",
+      "file-3": "2c47926aeb7469b3ef1036a7f11e1a918d2be589a254361eb5600f640023eb7f",
+      "command-0": "eccbf5f7ae208f5e4e23db9b2d75c8193fdb2ef70d7626f3747e2d82a8538bcf"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Compilazione Maven reale e richieste HTTP su loopback/Windows, Spring Boot4.1.2, JDK21.0.12.1. Report: reports/expansion-spring-qa.json. Sessioni JDWP interattive, hosting esterno e altri OS non attestati."
+    }
+  },
+  "spring-created": {
+    "hashes": {
+      "file-0": "4352afd5e958e7beec10831476d96584a04e461f7156011c33a3a8f6e5cb4a54",
+      "file-1": "def76258b141c42d751efda9d753cf16da1234f65e8bef809900560eea532a4e",
+      "file-2": "744097e2ecfe5856874c88c74f370e5f96f0d86df1f01e4b699d5936f25c1aed",
+      "file-3": "2c47926aeb7469b3ef1036a7f11e1a918d2be589a254361eb5600f640023eb7f",
+      "command-0": "eccbf5f7ae208f5e4e23db9b2d75c8193fdb2ef70d7626f3747e2d82a8538bcf"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Compilazione Maven reale e richieste HTTP su loopback/Windows, Spring Boot4.1.2, JDK21.0.12.1. Report: reports/expansion-spring-qa.json. Sessioni JDWP interattive, hosting esterno e altri OS non attestati."
+    }
+  },
+  "spring-debug": {
+    "hashes": {
+      "file-0": "4352afd5e958e7beec10831476d96584a04e461f7156011c33a3a8f6e5cb4a54",
+      "file-1": "def76258b141c42d751efda9d753cf16da1234f65e8bef809900560eea532a4e",
+      "file-2": "a5340fd76907101c60f963791ffe56225539d6e8935ac490704c4da0d32d6275",
+      "file-3": "2c47926aeb7469b3ef1036a7f11e1a918d2be589a254361eb5600f640023eb7f",
+      "file-4": "a03b37ce8a1381dbc56ab9c5fda4df9347d2b2329515df2873a60f5816b47df7",
+      "command-0": "7789232650ad99f9daa92f25522db71f9dc789d9be288515316fc5a9f491e462"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Compilazione Maven reale e richieste HTTP su loopback/Windows, Spring Boot4.1.2, JDK21.0.12.1. Report: reports/expansion-spring-qa.json. Sessioni JDWP interattive, hosting esterno e altri OS non attestati."
+    }
+  },
+  "spring-deploy": {
+    "hashes": {
+      "file-0": "4352afd5e958e7beec10831476d96584a04e461f7156011c33a3a8f6e5cb4a54",
+      "file-1": "def76258b141c42d751efda9d753cf16da1234f65e8bef809900560eea532a4e",
+      "file-2": "da81d7354773b3ad7dbb224a1fe90d33fa2f749d653f5884d725a5fbb5134ca0",
+      "file-3": "2c47926aeb7469b3ef1036a7f11e1a918d2be589a254361eb5600f640023eb7f",
+      "file-4": "d8e97c7d2eb416347cda64da028c47670da6e99a3253b5e0150d238a1d3361c0",
+      "command-0": "cda952bc20e0ee0468a6d9b866e4f3d10fc321d89c4fd09ded3f664fab489934"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Compilazione Maven reale e richieste HTTP su loopback/Windows, Spring Boot4.1.2, JDK21.0.12.1. Report: reports/expansion-spring-qa.json. Sessioni JDWP interattive, hosting esterno e altri OS non attestati."
+    }
+  },
+  "spring-filter": {
+    "hashes": {
+      "file-0": "4352afd5e958e7beec10831476d96584a04e461f7156011c33a3a8f6e5cb4a54",
+      "file-1": "def76258b141c42d751efda9d753cf16da1234f65e8bef809900560eea532a4e",
+      "file-2": "1fc71f9254eb07e158c9b9a7145a14e9612112d013e19b8873dab26cb8697caf",
+      "file-3": "2c47926aeb7469b3ef1036a7f11e1a918d2be589a254361eb5600f640023eb7f",
+      "file-4": "b0c90d7fcdc8df1d8c2bfe018c1a3747e85fe5d0ee8ea0ed8d2c184060611cee",
+      "command-0": "eccbf5f7ae208f5e4e23db9b2d75c8193fdb2ef70d7626f3747e2d82a8538bcf"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Compilazione Maven reale e richieste HTTP su loopback/Windows, Spring Boot4.1.2, JDK21.0.12.1. Report: reports/expansion-spring-qa.json. Sessioni JDWP interattive, hosting esterno e altri OS non attestati."
+    }
+  },
+  "spring-get": {
+    "hashes": {
+      "file-0": "4352afd5e958e7beec10831476d96584a04e461f7156011c33a3a8f6e5cb4a54",
+      "file-1": "def76258b141c42d751efda9d753cf16da1234f65e8bef809900560eea532a4e",
+      "file-2": "0a6793f49d5b1b02e091ad792cfa7ff2089aa490284bae58c30b4e5e1f3d1d72",
+      "file-3": "2c47926aeb7469b3ef1036a7f11e1a918d2be589a254361eb5600f640023eb7f",
+      "command-0": "eccbf5f7ae208f5e4e23db9b2d75c8193fdb2ef70d7626f3747e2d82a8538bcf"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Compilazione Maven reale e richieste HTTP su loopback/Windows, Spring Boot4.1.2, JDK21.0.12.1. Report: reports/expansion-spring-qa.json. Sessioni JDWP interattive, hosting esterno e altri OS non attestati."
+    }
+  },
+  "spring-header": {
+    "hashes": {
+      "file-0": "4352afd5e958e7beec10831476d96584a04e461f7156011c33a3a8f6e5cb4a54",
+      "file-1": "def76258b141c42d751efda9d753cf16da1234f65e8bef809900560eea532a4e",
+      "file-2": "5a31db2fede9cc39a220692489c16bc41767358fd0db9bd927d7d1ce05705b73",
+      "file-3": "2c47926aeb7469b3ef1036a7f11e1a918d2be589a254361eb5600f640023eb7f",
+      "command-0": "eccbf5f7ae208f5e4e23db9b2d75c8193fdb2ef70d7626f3747e2d82a8538bcf"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Compilazione Maven reale e richieste HTTP su loopback/Windows, Spring Boot4.1.2, JDK21.0.12.1. Report: reports/expansion-spring-qa.json. Sessioni JDWP interattive, hosting esterno e altri OS non attestati."
+    }
+  },
+  "spring-interceptor": {
+    "hashes": {
+      "file-0": "4352afd5e958e7beec10831476d96584a04e461f7156011c33a3a8f6e5cb4a54",
+      "file-1": "def76258b141c42d751efda9d753cf16da1234f65e8bef809900560eea532a4e",
+      "file-2": "1fc71f9254eb07e158c9b9a7145a14e9612112d013e19b8873dab26cb8697caf",
+      "file-3": "2c47926aeb7469b3ef1036a7f11e1a918d2be589a254361eb5600f640023eb7f",
+      "file-4": "a1d87b26d62d9491d5182f593c4b20f6d29ae36b71a7b8451c2646221ba111ee",
+      "command-0": "eccbf5f7ae208f5e4e23db9b2d75c8193fdb2ef70d7626f3747e2d82a8538bcf"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Compilazione Maven reale e richieste HTTP su loopback/Windows, Spring Boot4.1.2, JDK21.0.12.1. Report: reports/expansion-spring-qa.json. Sessioni JDWP interattive, hosting esterno e altri OS non attestati."
+    }
+  },
+  "spring-jdbc-transaction": {
+    "hashes": {
+      "file-0": "afed92351107b28feb33b508d7c885f2d181231699458846c5c65c67ad4a926e",
+      "file-1": "def76258b141c42d751efda9d753cf16da1234f65e8bef809900560eea532a4e",
+      "file-2": "847c3556240a2e59b7dd0675fc30561eb28153e4ec1816be7441adb4c1893361",
+      "file-3": "2c47926aeb7469b3ef1036a7f11e1a918d2be589a254361eb5600f640023eb7f",
+      "file-4": "2bb565f722cb6cd8770b6856d664775d6ac62cc7844c4c04d67e263b27e6196b",
+      "command-0": "eccbf5f7ae208f5e4e23db9b2d75c8193fdb2ef70d7626f3747e2d82a8538bcf"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Compilazione Maven reale e richieste HTTP su loopback/Windows, Spring Boot4.1.2, JDK21.0.12.1. Report: reports/expansion-spring-qa.json. Sessioni JDWP interattive, hosting esterno e altri OS non attestati."
+    }
+  },
+  "spring-media-type": {
+    "hashes": {
+      "file-0": "4352afd5e958e7beec10831476d96584a04e461f7156011c33a3a8f6e5cb4a54",
+      "file-1": "def76258b141c42d751efda9d753cf16da1234f65e8bef809900560eea532a4e",
+      "file-2": "ee7fc6b1ba2a194d015abe711d6683bd974ec057807b8b299980a0a04535eab7",
+      "file-3": "2c47926aeb7469b3ef1036a7f11e1a918d2be589a254361eb5600f640023eb7f",
+      "command-0": "eccbf5f7ae208f5e4e23db9b2d75c8193fdb2ef70d7626f3747e2d82a8538bcf"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Compilazione Maven reale e richieste HTTP su loopback/Windows, Spring Boot4.1.2, JDK21.0.12.1. Report: reports/expansion-spring-qa.json. Sessioni JDWP interattive, hosting esterno e altri OS non attestati."
+    }
+  },
+  "spring-not-found": {
+    "hashes": {
+      "file-0": "4352afd5e958e7beec10831476d96584a04e461f7156011c33a3a8f6e5cb4a54",
+      "file-1": "def76258b141c42d751efda9d753cf16da1234f65e8bef809900560eea532a4e",
+      "file-2": "5816fe0a501874e14891af0894b8b6b0d637f314ba106d8fc63aaec97e7d1001",
+      "file-3": "2c47926aeb7469b3ef1036a7f11e1a918d2be589a254361eb5600f640023eb7f",
+      "command-0": "eccbf5f7ae208f5e4e23db9b2d75c8193fdb2ef70d7626f3747e2d82a8538bcf"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Compilazione Maven reale e richieste HTTP su loopback/Windows, Spring Boot4.1.2, JDK21.0.12.1. Report: reports/expansion-spring-qa.json. Sessioni JDWP interattive, hosting esterno e altri OS non attestati."
+    }
+  },
+  "spring-pagination": {
+    "hashes": {
+      "file-0": "4352afd5e958e7beec10831476d96584a04e461f7156011c33a3a8f6e5cb4a54",
+      "file-1": "def76258b141c42d751efda9d753cf16da1234f65e8bef809900560eea532a4e",
+      "file-2": "331a256353630977fb0006fde736257df0e1dc06664f51cf2c17aa90f1777575",
+      "file-3": "2c47926aeb7469b3ef1036a7f11e1a918d2be589a254361eb5600f640023eb7f",
+      "command-0": "eccbf5f7ae208f5e4e23db9b2d75c8193fdb2ef70d7626f3747e2d82a8538bcf"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Compilazione Maven reale e richieste HTTP su loopback/Windows, Spring Boot4.1.2, JDK21.0.12.1. Report: reports/expansion-spring-qa.json. Sessioni JDWP interattive, hosting esterno e altri OS non attestati."
+    }
+  },
+  "spring-path-variable": {
+    "hashes": {
+      "file-0": "4352afd5e958e7beec10831476d96584a04e461f7156011c33a3a8f6e5cb4a54",
+      "file-1": "def76258b141c42d751efda9d753cf16da1234f65e8bef809900560eea532a4e",
+      "file-2": "abfe77a91c9e3a7aa27bf356eb072e0e2aceafea24f61499bc546a4a6ee11330",
+      "file-3": "2c47926aeb7469b3ef1036a7f11e1a918d2be589a254361eb5600f640023eb7f",
+      "command-0": "eccbf5f7ae208f5e4e23db9b2d75c8193fdb2ef70d7626f3747e2d82a8538bcf"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Compilazione Maven reale e richieste HTTP su loopback/Windows, Spring Boot4.1.2, JDK21.0.12.1. Report: reports/expansion-spring-qa.json. Sessioni JDWP interattive, hosting esterno e altri OS non attestati."
+    }
+  },
+  "spring-problem-detail": {
+    "hashes": {
+      "file-0": "4352afd5e958e7beec10831476d96584a04e461f7156011c33a3a8f6e5cb4a54",
+      "file-1": "def76258b141c42d751efda9d753cf16da1234f65e8bef809900560eea532a4e",
+      "file-2": "a7cff332912a390e9edc0b54ca270b0d6af2717c7991eeb7b17384bdee3e2668",
+      "file-3": "2c47926aeb7469b3ef1036a7f11e1a918d2be589a254361eb5600f640023eb7f",
+      "command-0": "eccbf5f7ae208f5e4e23db9b2d75c8193fdb2ef70d7626f3747e2d82a8538bcf"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Compilazione Maven reale e richieste HTTP su loopback/Windows, Spring Boot4.1.2, JDK21.0.12.1. Report: reports/expansion-spring-qa.json. Sessioni JDWP interattive, hosting esterno e altri OS non attestati."
+    }
+  },
+  "spring-profile": {
+    "hashes": {
+      "file-0": "4352afd5e958e7beec10831476d96584a04e461f7156011c33a3a8f6e5cb4a54",
+      "file-1": "def76258b141c42d751efda9d753cf16da1234f65e8bef809900560eea532a4e",
+      "file-2": "d425c1f275fbc6d43cfce2cfb7226048a95906ac9a897ab6d670a5b8637dba97",
+      "file-3": "2c47926aeb7469b3ef1036a7f11e1a918d2be589a254361eb5600f640023eb7f",
+      "file-4": "d8e97c7d2eb416347cda64da028c47670da6e99a3253b5e0150d238a1d3361c0",
+      "command-0": "e36d930701ddb1ac68da706b3523f348859e96b873a6187d4aace8095b73dedf"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Compilazione Maven reale e richieste HTTP su loopback/Windows, Spring Boot4.1.2, JDK21.0.12.1. Report: reports/expansion-spring-qa.json. Sessioni JDWP interattive, hosting esterno e altri OS non attestati."
+    }
+  },
+  "spring-progetto-attivita": {
+    "hashes": {
+      "file-0": "4352afd5e958e7beec10831476d96584a04e461f7156011c33a3a8f6e5cb4a54",
+      "file-1": "def76258b141c42d751efda9d753cf16da1234f65e8bef809900560eea532a4e",
+      "file-2": "d19489358255a88781442079308df7c6c66bc76d2482588c64c5dd5a880084eb",
+      "file-3": "2c47926aeb7469b3ef1036a7f11e1a918d2be589a254361eb5600f640023eb7f",
+      "file-4": "7741ffee808d930c6506cd49bf59fb45bf1bd288f40a6223dea4dcd13b4e508f",
+      "file-5": "c257d6c2a147655f10d079f3a7f22c0d386a17b780d069eeae6cb3f92ba8e914",
+      "file-6": "81288bda62f4f0409b245d83413b2952f717acb0f9221948246281f2aac1e447",
+      "command-0": "38aee54ab174a32943db76ce10d1e4e76e6c6628893912d3e7fe97262a79308e"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Compilazione Maven reale e richieste HTTP su loopback/Windows, Spring Boot4.1.2, JDK21.0.12.1. Test JUnit del capstone superati, inclusi snapshot e ID;12POST concorrenti con ID distinti. Report: reports/expansion-spring-qa.json. Sessioni JDWP interattive, hosting esterno e altri OS non attestati."
+    }
+  },
+  "spring-qualifier": {
+    "hashes": {
+      "file-0": "4352afd5e958e7beec10831476d96584a04e461f7156011c33a3a8f6e5cb4a54",
+      "file-1": "def76258b141c42d751efda9d753cf16da1234f65e8bef809900560eea532a4e",
+      "file-2": "8ab8f79781f5bfe100d6390dc70b4a8123d8c616602cd0772d939e0967d1ab87",
+      "file-3": "2c47926aeb7469b3ef1036a7f11e1a918d2be589a254361eb5600f640023eb7f",
+      "file-4": "5cdf331f331fdfd40dc09cb63c023a30b0093dce9fb279e3b904d98db4f11639",
+      "command-0": "eccbf5f7ae208f5e4e23db9b2d75c8193fdb2ef70d7626f3747e2d82a8538bcf"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Compilazione Maven reale e richieste HTTP su loopback/Windows, Spring Boot4.1.2, JDK21.0.12.1. Report: reports/expansion-spring-qa.json. Sessioni JDWP interattive, hosting esterno e altri OS non attestati."
+    }
+  },
+  "spring-request-param": {
+    "hashes": {
+      "file-0": "4352afd5e958e7beec10831476d96584a04e461f7156011c33a3a8f6e5cb4a54",
+      "file-1": "def76258b141c42d751efda9d753cf16da1234f65e8bef809900560eea532a4e",
+      "file-2": "526014112039cce7402e745cc485ec10025153eb3b7ca8d3f6ccabadde761b5a",
+      "file-3": "2c47926aeb7469b3ef1036a7f11e1a918d2be589a254361eb5600f640023eb7f",
+      "command-0": "eccbf5f7ae208f5e4e23db9b2d75c8193fdb2ef70d7626f3747e2d82a8538bcf"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Compilazione Maven reale e richieste HTTP su loopback/Windows, Spring Boot4.1.2, JDK21.0.12.1. Report: reports/expansion-spring-qa.json. Sessioni JDWP interattive, hosting esterno e altri OS non attestati."
+    }
+  },
+  "spring-setup": {
+    "hashes": {
+      "file-0": "4352afd5e958e7beec10831476d96584a04e461f7156011c33a3a8f6e5cb4a54",
+      "file-1": "def76258b141c42d751efda9d753cf16da1234f65e8bef809900560eea532a4e",
+      "file-2": "a5340fd76907101c60f963791ffe56225539d6e8935ac490704c4da0d32d6275",
+      "file-3": "2c47926aeb7469b3ef1036a7f11e1a918d2be589a254361eb5600f640023eb7f",
+      "command-0": "d9c98c8d496e7af2f1fef66a3681427b6152809315e553f7b6c874ec34fee363"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Compilazione Maven reale e richieste HTTP su loopback/Windows, Spring Boot4.1.2, JDK21.0.12.1. Report: reports/expansion-spring-qa.json. Sessioni JDWP interattive, hosting esterno e altri OS non attestati."
+    }
+  },
+  "spring-test": {
+    "hashes": {
+      "file-0": "4352afd5e958e7beec10831476d96584a04e461f7156011c33a3a8f6e5cb4a54",
+      "file-1": "def76258b141c42d751efda9d753cf16da1234f65e8bef809900560eea532a4e",
+      "file-2": "a5340fd76907101c60f963791ffe56225539d6e8935ac490704c4da0d32d6275",
+      "file-3": "2c47926aeb7469b3ef1036a7f11e1a918d2be589a254361eb5600f640023eb7f",
+      "file-4": "b2c9f4ef5c08caa91c2bb1d3be3dd8baa5b9121ddcc138fe6fee9b74185f96ec",
+      "file-5": "debfc654639d26b64027a4fbbdb48a3dab8899ca0dbad39d5e3259f169a95a86",
+      "command-0": "124426d98039a973167f40d560da3f02ae2b8b08e00daf2952940d38eb56e760"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Compilazione Maven reale e richieste HTTP su loopback/Windows, Spring Boot4.1.2, JDK21.0.12.1. Report: reports/expansion-spring-qa.json. Sessioni JDWP interattive, hosting esterno e altri OS non attestati."
+    }
+  },
+  "spring-validation": {
+    "hashes": {
+      "file-0": "4352afd5e958e7beec10831476d96584a04e461f7156011c33a3a8f6e5cb4a54",
+      "file-1": "def76258b141c42d751efda9d753cf16da1234f65e8bef809900560eea532a4e",
+      "file-2": "0c27553e6585398b5bb6833c79616a0d0df56ca4753c6a7316d4117a4bf221b1",
+      "file-3": "2c47926aeb7469b3ef1036a7f11e1a918d2be589a254361eb5600f640023eb7f",
+      "command-0": "eccbf5f7ae208f5e4e23db9b2d75c8193fdb2ef70d7626f3747e2d82a8538bcf"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Compilazione Maven reale e richieste HTTP su loopback/Windows, Spring Boot4.1.2, JDK21.0.12.1. Report: reports/expansion-spring-qa.json. Sessioni JDWP interattive, hosting esterno e altri OS non attestati."
+    }
+  },
+  "spring-value-config": {
+    "hashes": {
+      "file-0": "4352afd5e958e7beec10831476d96584a04e461f7156011c33a3a8f6e5cb4a54",
+      "file-1": "def76258b141c42d751efda9d753cf16da1234f65e8bef809900560eea532a4e",
+      "file-2": "cd7543937886ad413bd9d0919cfa7e418f836d63046209749096ffbd6f0a72b3",
+      "file-3": "2c47926aeb7469b3ef1036a7f11e1a918d2be589a254361eb5600f640023eb7f",
+      "command-0": "eccbf5f7ae208f5e4e23db9b2d75c8193fdb2ef70d7626f3747e2d82a8538bcf"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Compilazione Maven reale e richieste HTTP su loopback/Windows, Spring Boot4.1.2, JDK21.0.12.1. Report: reports/expansion-spring-qa.json. Sessioni JDWP interattive, hosting esterno e altri OS non attestati."
+    }
+  }
+}

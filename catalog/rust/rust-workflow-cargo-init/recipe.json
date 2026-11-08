@@ -1,0 +1,95 @@
+{
+  "id": "rust-workflow-cargo-init",
+  "title": "Inizializzare un package Cargo senza dipendenze",
+  "summary": "Crea una struttura bin/lib e verifica il manifest con Cargo offline.",
+  "stack": "rust",
+  "group": "Linguaggi",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Rust stable 1.75+, edition 2021",
+  "prerequisites": "Toolchain Rust tramite rustup: rustc e cargo nel PATH. Gli esempi usano soltanto std; nessuna crate da scaricare.",
+  "tags": [
+    "workflow",
+    "inizializzazione",
+    "setup",
+    "test",
+    "distribution"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "Cargo.toml",
+      "language": "toml",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "6503966dc0a685a8edd7454aeb9bb00d1bfb2df987023c3e1d382c3cd4166fe3"
+    },
+    {
+      "id": "file-1",
+      "path": "src/lib.rs",
+      "language": "rust",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "0aa69afa93b13ec08530e9ec1e3232d81adb5fe24678c0a9581be9d95607210f"
+    },
+    {
+      "id": "file-2",
+      "path": "src/main.rs",
+      "language": "rust",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "8eb8947c0143c22d65602d87b12b2dbd8b48998322fd97a8422b6b885138da7f"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "c34e1b86c969ce0813e6c12f98c6a19fcb45f94be93d8ef7e5f083d9b8ffb599"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "project_name",
+      "label": "Nome package Rust",
+      "type": "identifier",
+      "default": "rust_starter",
+      "required": true
+    }
+  ],
+  "related": [
+    "rust-workflow-cargo-test-release",
+    "rust-workflow-rust-lldb",
+    "rust-progetto-completo-lista-attivita-rust"
+  ],
+  "expected": "Ciao Ada; non viene scaricata alcuna crate perché dependencies è vuoto.",
+  "errors": [
+    "Se cargo non trova Cargo.toml, apri il terminale nella radice esportata. Un nuovo target installato può richiedere un linker di sistema separato."
+  ],
+  "sources": [
+    "https://doc.rust-lang.org/book/",
+    "https://doc.rust-lang.org/std/",
+    "https://doc.rust-lang.org/cargo/commands/cargo-new.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Sorgenti e configurazioni verificati su Windows x64: PowerShell parser, TOML parse, source compiler. Report: reports/languages-workflows-validation.json. Non attestati sessioni interattive di debug, installazioni di dipendenze o distribuzione completa del workflow; nessuna esecuzione Linux/macOS."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

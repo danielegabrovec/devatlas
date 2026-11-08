@@ -1,0 +1,1 @@
+dotnet publish {{project_name}}.csproj -f net10.0-windows10.0.19041.0 -c Release -p:RuntimeIdentifierOverride=win10-x64 -p:WindowsPackageType=None -p:WindowsAppSDKSelfContained=true --self-contained true -o dist/windows-x64

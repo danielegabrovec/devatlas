@@ -1,0 +1,4 @@
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+let names=["Ada","Luca"];let ages=[36,28];for(name,age)in names.iter().zip(ages){println!("{}:{}",name,age);}
+Ok(())
+}

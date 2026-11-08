@@ -1,0 +1,7 @@
+public record Loan(int Id,string Person,string Title,bool Returned);
+public sealed class Register{
+private readonly List<Loan> loans=new();
+public void Add(string person,string title){if(string.IsNullOrWhiteSpace(person)||string.IsNullOrWhiteSpace(title))throw new ArgumentException("Persona e titolo richiesti");loans.Add(new Loan(loans.Count+1,person.Trim(),title.Trim(),false));}
+public void Return(int id){var index=loans.FindIndex(loan=>loan.Id==id);if(index<0)throw new KeyNotFoundException("Prestito assente");loans[index]=loans[index] with{Returned=true};}
+public IReadOnlyList<Loan> List()=>loans.ToArray();
+}

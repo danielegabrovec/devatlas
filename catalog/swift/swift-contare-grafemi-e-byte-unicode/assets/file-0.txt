@@ -1,0 +1,4 @@
+import Foundation
+
+let value="👩🏽‍💻"
+print(value.count,value.utf8.count)

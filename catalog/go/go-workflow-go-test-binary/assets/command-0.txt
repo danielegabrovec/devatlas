@@ -1,0 +1,4 @@
+go test -v ./...
+New-Item -ItemType Directory -Path dist -Force | Out-Null
+go build -trimpath -o dist/app.exe .
+.\dist\app.exe

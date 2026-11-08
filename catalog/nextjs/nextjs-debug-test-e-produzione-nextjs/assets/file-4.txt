@@ -1,0 +1,1 @@
+export function total(price,qty){if(qty<1)throw Error('Quantità positiva richiesta');return price*qty}

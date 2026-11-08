@@ -1,0 +1,2 @@
+mvn clean package
+java -jar target/spring-lab-1.0.0.jar

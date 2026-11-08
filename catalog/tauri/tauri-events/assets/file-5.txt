@@ -1,0 +1,5 @@
+#![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
+use tauri::Manager;
+
+#[tauri::command]fn demo(app:tauri::AppHandle)->Result<(),String>{use tauri::Emitter;app.emit("atlas-ready","Evento da Rust").map_err(|error|error.to_string())}
+fn main(){tauri::Builder::default().invoke_handler(tauri::generate_handler![demo]).run(tauri::generate_context!()).expect("Tauri application failed");}

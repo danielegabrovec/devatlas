@@ -1,0 +1,4 @@
+type Locale = "it" | "en";
+const greetings: Record<Locale, string> = {it:"Ciao",en:"Hello"};
+console.log(greetings.it);
+export {};

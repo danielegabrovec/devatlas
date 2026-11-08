@@ -1,0 +1,2 @@
+mkdir -p .redis-data
+redis-server ./redis.conf

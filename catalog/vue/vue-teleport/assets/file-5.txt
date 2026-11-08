@@ -1,0 +1,5 @@
+<script setup>
+import {ref,reactive,computed,watch,watchEffect,onMounted,onUnmounted,nextTick,provide,inject,defineAsyncComponent,shallowRef,triggerRef,readonly,toRefs} from 'vue';
+const open=ref(false);
+</script>
+<template><main><button @click="open=true">Apri</button><Teleport to="body"><div v-if="open" role="dialog" aria-label="Dettagli" class="card"><p>Dialogo dimostrativo</p><button @click="open=false">Chiudi</button></div></Teleport></main></template>

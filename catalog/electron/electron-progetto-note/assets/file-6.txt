@@ -1,0 +1,2 @@
+# Note Electron
+Installare e avviare con npm. Le note sono conservate in userData/notes.json. Nessun contenuto della nota viene interpretato come HTML.

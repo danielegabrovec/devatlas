@@ -1,0 +1,1 @@
+const b=new SharedArrayBuffer(4),v=new Int32Array(b);Atomics.add(v,0,3);console.log(Atomics.load(v,0));

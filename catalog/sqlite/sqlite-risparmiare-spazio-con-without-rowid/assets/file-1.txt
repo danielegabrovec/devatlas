@@ -1,0 +1,1 @@
+CREATE TABLE etichette(k TEXT PRIMARY KEY,v TEXT) WITHOUT ROWID; INSERT INTO etichette VALUES('tema','chiaro'); SELECT * FROM etichette;

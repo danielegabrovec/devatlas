@@ -1,0 +1,80 @@
+{
+  "id": "avalonia-tooltip",
+  "title": "Associare una descrizione al controllo",
+  "summary": "Usare la proprietà associata ToolTip.Tip.",
+  "stack": "avalonia",
+  "group": "Desktop e GUI",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "Visual Studio",
+    "Rider",
+    "VS Code"
+  ],
+  "versions": ".NET 8; Avalonia 11.3.0",
+  "prerequisites": ".NET 8 SDK e runtime desktop del proprio sistema; nessun template richiesto.",
+  "tags": [
+    "tooltip",
+    "desktop",
+    "C#",
+    "avalonia"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "RecipeApp.csproj",
+      "language": "xml",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "aaed5b2b8fb8b982f89765c01cf1a65a93e952232603977aa50f6d6d5c8305d7"
+    },
+    {
+      "id": "file-1",
+      "path": "Program.cs",
+      "language": "csharp",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "ed937ee73a1ae3afaad2f845fb64598f60959563ebb3562cb26c513d2c002c14"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "f8ea1893920d29376f4ea18757d99661a2e08f45344a543e07637194fdf94e7e"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "avalonia-dock",
+    "avalonia-background",
+    "avalonia-border"
+  ],
+  "expected": "Usare la proprietà associata ToolTip.Tip.",
+  "errors": [
+    "Restore fallito: verificare accesso a NuGet e SDK indicato dal progetto.",
+    "Classe duplicata: usare una cartella nuova invece di aggiungere i file a un template che contiene già App."
+  ],
+  "sources": [
+    "https://docs.avaloniaui.net/docs/get-started",
+    "https://docs.avaloniaui.net/docs/reference/controls/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "details": "Controlli statici sui sorgenti: AST Python, parser PowerShell/Bash dove disponibili, node --check per JavaScript, JSON e XML secondo i file presenti. Nessuna compilazione C#/XAML/C++ né esecuzione Docker/CI/packaging attestata. Report: reports/desktop-tools-qa.json.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

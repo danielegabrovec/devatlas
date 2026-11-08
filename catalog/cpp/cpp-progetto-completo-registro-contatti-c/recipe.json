@@ -1,0 +1,119 @@
+{
+  "id": "cpp-progetto-completo-registro-contatti-c",
+  "title": "Progetto completo registro contatti C++",
+  "summary": "Separa modello, ricerca, presentazione e test in un progetto C++20 senza dipendenze esterne.",
+  "stack": "cpp",
+  "group": "Linguaggi",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "C++20, GCC 13+ oppure Clang 16+/MSVC con libreria C++20",
+  "prerequisites": "Compilatore e libreria standard C++20. Comandi pronti per GCC/g++; su Windows usare MSYS2 UCRT64 o una toolchain GCC nel PATH. Nessuna libreria esterna.",
+  "tags": [
+    "project",
+    "header",
+    "library",
+    "test",
+    "cmake",
+    "optional"
+  ],
+  "project": true,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.cpp",
+      "language": "cpp",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "234e3005ebee29ebba9b07ba421e0b1a1cb250fe1f5ca0b8db43b319829a1387"
+    },
+    {
+      "id": "file-1",
+      "path": "contacts.hpp",
+      "language": "cpp",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "e4dde3d613908c529ae529da097803c8817beee8f453af93977ee3b8325b663b"
+    },
+    {
+      "id": "file-2",
+      "path": "contacts.cpp",
+      "language": "cpp",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "d37713bd96ce591f230fe9af2965fa541f4f32f1f355f9d4ef1bb18d49319aa0"
+    },
+    {
+      "id": "file-3",
+      "path": "test.cpp",
+      "language": "cpp",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "0e51588a63fdbbdf43574f6cfecab32747f912413248b8130921c9b188195cad"
+    },
+    {
+      "id": "file-4",
+      "path": "CMakeLists.txt",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "863d9c8d03547d50ffbfa8e69ce182a9065e6ba8af04ee96752c011f47b0a3c9"
+    },
+    {
+      "id": "file-5",
+      "path": "README.md",
+      "language": "markdown",
+      "role": "file",
+      "source": "assets/file-5.txt",
+      "sha256": "75535b4ef843694e6d1183af7fd8e54223a84dbd72f3f73b73d3088e21014a6a"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "e3701a730c09d0c99aa46686c71f6079cc00c84f0918add59007f61b78b23ae1"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "project_name",
+      "label": "Nome progetto CMake",
+      "type": "identifier",
+      "default": "Contacts",
+      "required": true
+    }
+  ],
+  "related": [
+    "cpp-workflow-toolchain-project",
+    "cpp-workflow-cmake-tests-release",
+    "cpp-workflow-gdb-vscode"
+  ],
+  "expected": "Test: 3 contratti verificati; demo: ada@example.test.",
+  "errors": [
+    "Comando non trovato: installare la toolchain e riaprire il terminale."
+  ],
+  "sources": [
+    "https://learn.microsoft.com/en-us/cpp/standard-library/cpp-standard-library-reference",
+    "https://isocpp.org/get-started"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "details": "Eseguito su Windows x64 il 29/10/2026. Ambiente: GCC/g++ 16.2.0 MSYS2 UCRT64, C++20. Sorgenti compilati/controllati e programmi eseguiti; per i progetti sono stati eseguiti anche i test inclusi. Report: reports/languages-source-validation.json e reports/languages-runtime-validation.json. Linux e macOS non eseguiti.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

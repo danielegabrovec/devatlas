@@ -1,0 +1,2 @@
+from math import lcm
+print(lcm(12, 18))

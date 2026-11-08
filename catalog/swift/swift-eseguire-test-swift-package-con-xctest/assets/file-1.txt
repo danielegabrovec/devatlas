@@ -1,0 +1,1 @@
+public func area(_ width:Int,_ height:Int)->Int{width*height}

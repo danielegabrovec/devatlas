@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+scratch=$(mktemp -d)
+trap 'rm -rf -- "$scratch"' EXIT
+printf "contenuto\n" > "$scratch/note.txt"
+tar -czf "$scratch/package.tar.gz" -C "$scratch" note.txt
+tar -tzf "$scratch/package.tar.gz"

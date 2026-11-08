@@ -1,0 +1,11 @@
+#include <QtWidgets>
+#include <QtCore>
+#include <QtGui>
+
+int main(int argc, char **argv) {
+ QApplication app(argc,argv);
+ QWidget window; window.resize(720,480);
+ auto *layout=new QVBoxLayout(&window);
+ auto *model=new QFileSystemModel(&window); model->setRootPath(QDir::homePath()); model->setReadOnly(true); auto *view=new QTreeView; view->setModel(model); view->setRootIndex(model->index(QDir::homePath())); layout->addWidget(view);
+ window.show(); return app.exec();
+}

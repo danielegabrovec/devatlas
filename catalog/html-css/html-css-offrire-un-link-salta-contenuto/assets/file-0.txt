@@ -1,0 +1,2 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Laboratorio HTML/CSS</title><link rel="stylesheet" href="style.css"></head><body><a class='skip' href='#main'>Salta al contenuto</a><nav><a href='#'>Home</a></nav><main id='main' tabindex='-1'><h1>Contenuto</h1></main></body></html>

@@ -1,0 +1,3 @@
+from datetime import datetime
+value = datetime.fromisoformat("2026-10-29T10:15:00+02:00")
+print(value.utcoffset().total_seconds())

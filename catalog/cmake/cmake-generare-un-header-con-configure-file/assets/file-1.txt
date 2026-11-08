@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.24)
+project(RecipeBuild VERSION 1.2.0 LANGUAGES CXX)
+add_executable(recipe main.cpp)
+configure_file(version.hpp.in "${CMAKE_CURRENT_BINARY_DIR}/version.hpp" @ONLY)
+target_include_directories(recipe PRIVATE "${CMAKE_CURRENT_BINARY_DIR}")

@@ -1,0 +1,5 @@
+javac -version
+java -version
+New-Item -ItemType Directory -Path bin -Force | Out-Null
+javac -encoding UTF-8 --release 17 -d bin src/Main.java
+java -cp bin Main

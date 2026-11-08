@@ -1,0 +1,16 @@
+#include <QtWidgets>
+int main(int argc,char **argv){
+ QApplication app(argc,argv); QApplication::setOrganizationName("Ricettario"); QApplication::setApplicationName("CppNotes");
+ QWidget window; window.setWindowTitle("Note C++"); auto *layout=new QVBoxLayout(&window);
+ auto *edit=new QLineEdit; auto *list=new QListWidget; auto *button=new QPushButton("Aggiungi");
+ QSettings settings; list->addItems(settings.value("notes").toStringList());
+ layout->addWidget(edit); layout->addWidget(button); layout->addWidget(list);
+ QObject::connect(button,&QPushButton::clicked,&window,[&settings,edit,list]{
+  auto text=edit->text().trimmed(); if(text.isEmpty()) return;
+  QStringList values; for(int i=0;i<list->count();++i) values<<list->item(i)->text(); values<<text;
+  settings.setValue("notes",values); settings.sync();
+  if(settings.status()!=QSettings::NoError){QMessageBox::warning(list,"Note","Impossibile salvare");return;}
+  list->addItem(text); edit->clear();
+ });
+ window.resize(640,420); window.show(); return app.exec();
+}

@@ -1,0 +1,1 @@
+import{promisify}from'node:util';import{gzip}from'node:zlib';const zip=promisify(gzip);console.log((await zip('contenuto')).length);

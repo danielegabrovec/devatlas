@@ -1,0 +1,6 @@
+function requireValue<T>(value: T | null | undefined): T {
+  if (value === null || value === undefined) throw new Error("Valore mancante");
+  return value;
+}
+console.log(requireValue<string>("Ada").length);
+export {};

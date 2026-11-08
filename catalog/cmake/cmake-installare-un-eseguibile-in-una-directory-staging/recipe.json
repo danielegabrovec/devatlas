@@ -1,0 +1,79 @@
+{
+  "id": "cmake-installare-un-eseguibile-in-una-directory-staging",
+  "title": "Installare un eseguibile in una directory staging",
+  "summary": "Dichiarare install TARGETS evitando copie manuali del binario.",
+  "stack": "cmake",
+  "group": "Strumenti",
+  "section": "Compilazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code",
+    "Visual Studio",
+    "CLion"
+  ],
+  "versions": "CMake 3.24+; C++17/20",
+  "prerequisites": "CMake 3.24+, compilatore C++ installato. Su Windows usare Developer PowerShell MSVC o una toolchain già configurata.",
+  "tags": [
+    "CMake",
+    "build",
+    "installare-un-eseguibile-in-una-directory-staging"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.cpp",
+      "language": "cpp",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "ca4f11174323d8829cfc1a8ade6bec91b0b642894dbfc2188979e7518b48463f"
+    },
+    {
+      "id": "file-1",
+      "path": "CMakeLists.txt",
+      "language": "cmake",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "afa690d3a4d9d65802c80d28ba70c14eaccb5a9d46fbf92ac2ca46f1ddb06a55"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "22c3e2c69303b94345870e7364a7c057171ac4168417085fbe596b5bf5c120f6"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "cmake-inizializzare-un-eseguibile-cmake",
+    "cmake-registrare-un-test-eseguibile-con-ctest",
+    "cmake-separare-una-libreria-statica-dall-eseguibile"
+  ],
+  "expected": "Dichiarare install TARGETS evitando copie manuali del binario.",
+  "errors": [
+    "Ninja non trovato: installarlo se si usa il preset o il compilation database.",
+    "Compilatore non trovato: aprire il terminale di sviluppo della toolchain."
+  ],
+  "sources": [
+    "https://cmake.org/cmake/help/latest/guide/tutorial/index.html",
+    "https://cmake.org/cmake/help/latest/manual/cmake-buildsystem.7.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "documentato",
+    "details": "Esempio originale revisionato nel catalogo; esecuzione non attestata.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

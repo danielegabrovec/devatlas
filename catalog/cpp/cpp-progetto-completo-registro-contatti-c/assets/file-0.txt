@@ -1,0 +1,3 @@
+#include "contacts.hpp"
+#include <iostream>
+int main(){Contacts contacts;contacts.add("Ada","ada@example.test");std::cout<<contacts.find("Ada").value_or("assente")<<'\n';}

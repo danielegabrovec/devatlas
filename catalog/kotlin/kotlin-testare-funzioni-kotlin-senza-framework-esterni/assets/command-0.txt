@@ -1,0 +1,2 @@
+kotlinc Math.kt Checks.kt -jvm-target 17 -include-runtime -d checks.jar
+java -jar checks.jar

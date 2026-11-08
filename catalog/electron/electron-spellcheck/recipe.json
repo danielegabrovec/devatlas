@@ -1,0 +1,111 @@
+{
+  "id": "electron-spellcheck",
+  "title": "Disattivare la correzione ortografica nel codice",
+  "summary": "Impostare il correttore a livello di sessione per un editor di sorgenti.",
+  "stack": "electron",
+  "group": "Desktop e GUI",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Electron 45.1.0; Node.js 24 LTS per npm",
+  "prerequisites": "Node.js 24 con npm; ambiente desktop. L'installazione scarica il runtime Electron. Nessuna esecuzione attestata su Linux/macOS.",
+  "tags": [
+    "spellcheck",
+    "IPC",
+    "desktop",
+    "contextIsolation"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "package.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "226706692674453f45801f2acca55ea1c017931d07a726efac43c577a91055b4"
+    },
+    {
+      "id": "file-1",
+      "path": "main.cjs",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "9147406c985ee04b91b5ea82cf58abb4b5745ebd4e60bd01011e4f37e7a30f59"
+    },
+    {
+      "id": "file-2",
+      "path": "preload.cjs",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "0d911bffdf8c2773aaf6683b3126386f7d59e6423b7cea7cba9f4ba946d0944b"
+    },
+    {
+      "id": "file-3",
+      "path": "index.html",
+      "language": "html",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "07c8acfdc56180e876548feb57a2dd4f600d9a51f741c7cda4fd1eb7a533ec8b"
+    },
+    {
+      "id": "file-4",
+      "path": "style.css",
+      "language": "css",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "149fa91be0218e3bfddbc673686cf586e04ae6d05bb06b5d2874adc4950c53a4"
+    },
+    {
+      "id": "file-5",
+      "path": "renderer.js",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-5.txt",
+      "sha256": "599628798056178cc66d17b9c253eb21b9bababbe99618be8551a94a27a7a53c"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "3ece523a6de71bd33a52f9395de92c03f52064df68b73a84d3feb7f800e555a5"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "electron-find-in-page",
+    "electron-app-menu",
+    "electron-capture"
+  ],
+  "expected": "Impostare il correttore a livello di sessione per un editor di sorgenti.",
+  "errors": [
+    "Electron non si avvia: verificare il download del runtime e avviare da una sessione desktop.",
+    "Errore IPC nel pannello: leggere il messaggio; Annulla nei dialoghi non è un errore."
+  ],
+  "sources": [
+    "https://www.electronjs.org/docs/latest/",
+    "https://www.electronjs.org/docs/latest/tutorial/security",
+    "https://releases.electronjs.org/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "details": "Controlli statici sui sorgenti: AST Python, parser PowerShell/Bash dove disponibili, node --check per JavaScript, JSON e XML secondo i file presenti. Nessuna compilazione C#/XAML/C++ né esecuzione Docker/CI/packaging attestata. Report: reports/desktop-tools-qa.json.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

@@ -1,0 +1,118 @@
+{
+  "id": "nextjs-navigare-dopo-un-evento-client",
+  "title": "Navigare dopo un evento client",
+  "summary": "Navigare dopo un evento client. API richiamate: useRouter. File della funzionalità: app/page.js, app/about/page.js.",
+  "stack": "nextjs",
+  "group": "Web e backend",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Next16.4.3 App Router; React19.3; Node22.12+",
+  "prerequisites": "Node22.12+, npm e browser. Esempi fetch remoti richiedono rete. App su localhost3000; dataset in memoria solo dimostrativi.",
+  "tags": [
+    "nextjs",
+    "example",
+    "navigare",
+    "dopo",
+    "un",
+    "evento"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "package.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "b27b29cdabfae2410cd930c91108180351cabb2dec45d64df2e2e1c395f4bc53"
+    },
+    {
+      "id": "file-1",
+      "path": "app/layout.js",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "d21e686f7157ebd71b8eb35a56077f4420d276a946d65aa41cf3b16d18ebe08c"
+    },
+    {
+      "id": "file-2",
+      "path": "app/page.js",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "f1cb63453c62f7e85a3f8a71082bed8efea2c985da171bf8bdc1543d012e6dff"
+    },
+    {
+      "id": "file-3",
+      "path": "app/globals.css",
+      "language": "css",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "ab78ab3385290b548318351011a467a5f61fd8151a1d7484dfc74ae055205494"
+    },
+    {
+      "id": "file-4",
+      "path": "app/about/page.js",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "3518e3b70666cf0024750ad1d26456a32da9185740fabef425ab99048ada51a9"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "1965fe5d479505f1e80638083dd92bfa86389a60f6f77693b578249ec5cf4668"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "nextjs-caricare-libreria-client-dinamicamente",
+    "nextjs-comporre-server-children-dentro-wrapper-client",
+    "nextjs-leggere-browser-api-solo-dopo-mount"
+  ],
+  "expected": "Il risultato mostra il comportamento descritto nel titolo; i dati dimostrativi sono inclusi nel sorgente.",
+  "errors": [
+    "Comando non trovato: installare la toolchain elencata nei prerequisiti.",
+    "Dipendenza mancante: eseguire l'installazione nella radice esportata, senza cambiare le versioni dichiarate."
+  ],
+  "sources": [
+    "https://nextjs.org/docs/app"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Sintassi dei file Python o JavaScript/JSX e JSON controllata sulle fonti correnti; esecuzione di questa singola ricetta non attestata.",
+    "files_sha256": {
+      "package.json": "b27b29cdabfae2410cd930c91108180351cabb2dec45d64df2e2e1c395f4bc53",
+      "app/layout.js": "d21e686f7157ebd71b8eb35a56077f4420d276a946d65aa41cf3b16d18ebe08c",
+      "app/page.js": "f1cb63453c62f7e85a3f8a71082bed8efea2c985da171bf8bdc1543d012e6dff",
+      "app/globals.css": "ab78ab3385290b548318351011a467a5f61fd8151a1d7484dfc74ae055205494",
+      "app/about/page.js": "3518e3b70666cf0024750ad1d26456a32da9185740fabef425ab99048ada51a9"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md",
+  "editorial": {
+    "version": 1,
+    "method": "Fatti ricavati staticamente dai file dell’esempio",
+    "facts": [
+      "API richiamate: useRouter.",
+      "File della funzionalità: app/page.js, app/about/page.js."
+    ]
+  }
+}

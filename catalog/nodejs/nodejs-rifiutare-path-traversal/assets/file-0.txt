@@ -1,0 +1,1 @@
+import{resolve,relative,isAbsolute}from'node:path';const base=resolve('public');const target=resolve(base,'../secret');const rel=relative(base,target);console.log(!(rel==='..'||rel.startsWith('..'+(process.platform==='win32'?'\\':'/'))||isAbsolute(rel)));

@@ -1,0 +1,1 @@
+*{box-sizing:border-box}body{font:16px/1.5 system-ui;margin:2rem;color:#172033}button,input,select,textarea{font:inherit;margin:.3rem;padding:.5rem}label{display:block}a{color:#075ea8}.layout{display:grid;grid-template-columns:15rem minmax(0,1fr);gap:2rem}@media(max-width:700px){.layout{grid-template-columns:1fr}}

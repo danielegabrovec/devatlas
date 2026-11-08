@@ -1,0 +1,84 @@
+{
+  "id": "sqlite-ispezionare-struttura-e-tipi-di-tabella",
+  "title": "Ispezionare struttura e tipi di tabella",
+  "summary": "Laboratorio con dati sintetici: ispezionare struttura e tipi di tabella.",
+  "stack": "sqlite",
+  "group": "Database",
+  "section": "Database",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "SQLite 3.45+ con JSON1/FTS5",
+  "prerequisites": "Client sqlite3 nel PATH; cartella scrivibile. Il catalogo è offline; il client DB va installato separatamente.",
+  "tags": [
+    "database",
+    "query",
+    "sqlite",
+    "ispezionare",
+    "struttura",
+    "e"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "fixture.sql",
+      "language": "sql",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "33f90072656f6c20af05d81eb1aab7784ab7095873af1a1e8bc0368d43535808"
+    },
+    {
+      "id": "file-1",
+      "path": "query.sql",
+      "language": "sql",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "b5406ea37ebd00efe255a9082e0c80d2386cebf42d722cff6ad0073f08157361"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "6a77e116400bc671246fa442591aa4e6d0eeceb35dd068d9a625abbe58c2c747"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "sqlite-ispezionare-tipi-dinamici-delle-espressioni",
+    "sqlite-aggiornare-con-una-tabella-sorgente",
+    "sqlite-creare-una-tabella-strict"
+  ],
+  "expected": "La query termina senza errori e mostra il risultato dell'operazione indicata; per DDL il client conferma la creazione dell'oggetto.",
+  "errors": [
+    "Tabella già esistente: rieseguire la fixture in un database di laboratorio vuoto.",
+    "Funzione o estensione assente: controllare versione e opzioni del motore indicati nei prerequisiti."
+  ],
+  "sources": [
+    "https://www.sqlite.org/lang.html",
+    "https://www.sqlite.org/fts5.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "date": "2026-10-29",
+    "details": "Esecuzione SQLite 3.50.4 in memoria su dati sintetici; 2 ciclo/i completi. Vincoli e ripetibilità DDL verificati quando applicabili. Nessuna attestazione WAL concorrente su file. Report: reports/catalog-independent-review.json.",
+    "files_sha256": {
+      "fixture.sql": "33f90072656f6c20af05d81eb1aab7784ab7095873af1a1e8bc0368d43535808",
+      "query.sql": "b5406ea37ebd00efe255a9082e0c80d2386cebf42d722cff6ad0073f08157361"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

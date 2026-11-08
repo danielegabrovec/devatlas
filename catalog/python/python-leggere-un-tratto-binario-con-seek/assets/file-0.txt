@@ -1,0 +1,4 @@
+import io
+stream = io.BytesIO(b"HEADERpayload")
+stream.seek(6)
+print(stream.read(7))

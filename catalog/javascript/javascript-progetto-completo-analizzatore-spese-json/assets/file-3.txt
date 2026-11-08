@@ -1,0 +1,5 @@
+import { test } from "node:test";
+import assert from "node:assert/strict";
+import { summarize } from "./expenses.mjs";
+test("somma centesimi per categoria", () => assert.deepEqual(summarize([{category:"A",cents:12},{category:"A",cents:3}]), {A:15}));
+test("rifiuta frazioni di centesimo", () => assert.throws(() => summarize([{category:"A",cents:1.5}]), TypeError));

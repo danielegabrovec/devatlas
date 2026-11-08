@@ -1,0 +1,4 @@
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+let mut rows=vec![("Ada",36),("Luca",28)];rows.sort_by_key(|row|row.1);println!("{:?}",rows);
+Ok(())
+}

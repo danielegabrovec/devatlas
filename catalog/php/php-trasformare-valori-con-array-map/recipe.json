@@ -1,0 +1,68 @@
+{
+  "id": "php-trasformare-valori-con-array-map",
+  "title": "Trasformare valori con array_map",
+  "summary": "Mantiene separata la sorgente mentre deriva una sequenza di quadrati.",
+  "stack": "php",
+  "group": "Linguaggi",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "PHP8.4/8.5 CLI, strict_types; estensioni indicate nella singola scheda",
+  "prerequisites": "PHP8.4 o8.5 CLI nel PATH. PDO SQLite richiede pdo_sqlite; le altre estensioni necessarie sono indicate. Il server incorporato è destinato al laboratorio locale.",
+  "tags": [
+    "array_map",
+    "closure"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.php",
+      "language": "php",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "5f157240dae21fc44c0499fa52f7138a01a68f120cea1594dd18014753605edd"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "6b562f889c3cbc3f5a590988ba75708ac4420e630da5e7dc0d7e50b352bb29c2"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "php-analizzare-opzioni-cli-con-getopt",
+    "php-annullare-una-transazione-pdo-dopo-un-vincolo-violato",
+    "php-applicare-un-default-soltanto-quando-il-dato-manca"
+  ],
+  "expected": "[4,9,16]",
+  "errors": [
+    "TypeError nella callback: verifica che ciascun elemento abbia il tipo int richiesto.",
+    "Sorgente apparentemente non aggiornata: array_map restituisce un array nuovo; usa il risultato della trasformazione."
+  ],
+  "sources": [
+    "https://www.php.net/manual/en/",
+    "https://www.php.net/supported-versions.php"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: php lint, php program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

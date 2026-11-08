@@ -1,0 +1,3 @@
+from django.urls import path
+from notes import views
+urlpatterns=[path('',views.home,name='home'),path('notes/<int:pk>/done/',views.finish,name='finish')]

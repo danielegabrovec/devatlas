@@ -1,0 +1,86 @@
+{
+  "id": "avalonia-inizializzazione-ambiente",
+  "title": "Inizializzare ambiente e prima app Avalonia",
+  "summary": "Preparare SDK e dipendenze del framework e avviare un contatore desktop con tutti i file di ingresso.",
+  "stack": "avalonia",
+  "group": "Desktop e GUI",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows"
+  ],
+  "ide": [
+    "VS Code",
+    "Visual Studio"
+  ],
+  "versions": ".NET 8; Avalonia 11.3.0",
+  "prerequisites": ".NET 8 SDK e runtime desktop del proprio sistema; nessun template richiesto.",
+  "tags": [
+    "Avalonia",
+    "initialize",
+    "SDK",
+    "restore",
+    "first app"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "Program.cs",
+      "language": "csharp",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "f250ae8782fa8e891bba36cf466e8cbf0b4e572961b2e16c96b9db33c5c37994"
+    },
+    {
+      "id": "file-1",
+      "path": "{{project_name}}.csproj",
+      "language": "xml",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "aaed5b2b8fb8b982f89765c01cf1a65a93e952232603977aa50f6d6d5c8305d7"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "a2ccaccad36d33b641afb247c07c4bf7293629b692cee62fa49ba63756411fe0"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "project_name",
+      "label": "Nome dell'applicazione",
+      "type": "identifier",
+      "default": "RecipeDesktop",
+      "required": true
+    }
+  ],
+  "related": [
+    "avalonia-background",
+    "avalonia-border",
+    "avalonia-busy"
+  ],
+  "expected": "La prima app apre una finestra e il pulsante Incrementa aggiorna il contatore.",
+  "errors": [
+    "SDK o workload non trovato: confrontare dotnet --info e il workload richiesto con la versione del progetto.",
+    "Classe App duplicata: esportare in una cartella nuova mantenendo tutti i file, senza sovrapporli a un template già generato."
+  ],
+  "sources": [
+    "https://docs.avaloniaui.net/docs/get-started",
+    "https://docs.avaloniaui.net/docs/deployment/windows"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "details": "Controlli statici sui sorgenti: AST Python, parser PowerShell/Bash dove disponibili, node --check per JavaScript, JSON e XML secondo i file presenti. Nessuna compilazione C#/XAML/C++ né esecuzione Docker/CI/packaging attestata. Report: reports/desktop-tools-qa.json.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

@@ -1,0 +1,8 @@
+from django.shortcuts import render,redirect
+from .forms import NoteForm
+def home(request):
+    f=NoteForm(request.POST or None)
+    if request.method=='POST' and f.is_valid():
+        f.save()
+        return redirect('home')
+    return render(request,'form.html',{'form':f})

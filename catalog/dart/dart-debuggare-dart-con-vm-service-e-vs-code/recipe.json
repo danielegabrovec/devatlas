@@ -1,0 +1,80 @@
+{
+  "id": "dart-debuggare-dart-con-vm-service-e-vs-code",
+  "title": "Debuggare Dart con VM Service e VS Code",
+  "summary": "Arresta l'isolate all'avvio e permette di osservare variabili e stack durante una CLI.",
+  "stack": "dart",
+  "group": "Linguaggi",
+  "section": "Debug",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Dart3.13.x; librerie SDK, nessuna dipendenza Pub esterna",
+  "prerequisites": "Dart SDK3.13.x nel PATH. Gli esempi dart:io sono nativi; per riusarli su web occorre sostituire accesso filesystem/isolate dove non supportato. Nessun package esterno necessario ai capstone.",
+  "tags": [
+    "VM Service",
+    "DevTools",
+    "breakpoint"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.dart",
+      "language": "dart",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "62ba351b1eba7ca8fa76f88c90d4b87312c3a44c3e7b6f2a5f73a65cfb0f6c36"
+    },
+    {
+      "id": "file-1",
+      "path": ".vscode/launch.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "f07657b4c2277fdd12283567dd26b3a5f80cbed8a08544911c0545291b8e417a"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "b13335c6757e8b5ddda27df2c525f3181cc1d001fd97fee44ccbdc45929c9983"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "dart-progetto-completo-report-spese-dart",
+    "dart-analizzare-e-compilare-una-cli-dart-nativa",
+    "dart-distribuire-un-eseguibile-dart-per-lo-stesso-host"
+  ],
+  "expected": "Il servizio VM ascolta localmente e il programma può restare sospeso fino al collegamento; dopo continue stampa10.",
+  "errors": [
+    "Il programma resta sospeso: pause-isolates-on-start attende il collegamento del debugger e il comando di ripresa.",
+    "Porta VM Service occupata: chiudi la precedente sessione o scegli una porta locale libera.",
+    "VS Code non riconosce type dart: abilita l'estensione Dart e seleziona l'SDK corretto."
+  ],
+  "sources": [
+    "https://dart.dev/language",
+    "https://dart.dev/resources/whats-new",
+    "https://dart.dev/tools/dart-compile",
+    "https://dart.dev/tools/dart-run"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: JSON parse, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

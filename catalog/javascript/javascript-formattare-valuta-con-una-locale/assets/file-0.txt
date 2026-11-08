@@ -1,0 +1,2 @@
+const format = new Intl.NumberFormat("it-IT", { style: "currency", currency: "EUR" });
+console.log(format.format(1234.5));

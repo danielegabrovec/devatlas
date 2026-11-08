@@ -1,0 +1,110 @@
+{
+  "id": "nodejs-inizializzare-ambiente-e-progetto-nodejs",
+  "title": "Inizializzare ambiente e progetto nodejs",
+  "summary": "Esporta la cartella, verifica Node24+ e aprila nel terminale. package.json sceglie ESM e nomina avvio, watch e test; src separa il punto d’ingresso dalla funzione. npm install non richiede pacchetti esterni in questo esempio. npm start stampa30.",
+  "stack": "nodejs",
+  "group": "Web e backend",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Node.js 24 LTS+; ESM",
+  "prerequisites": "Node.js24+ nel PATH. Esempi server: porta3000 libera, browser locale; Ctrl+C arresta. Le richieste example.com richiedono rete.",
+  "tags": [
+    "nodejs",
+    "initialize",
+    "bootstrap",
+    "setup",
+    "environment",
+    "configuration"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "package.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "dd9bc24571ace7ef6166da1ca9a32bfead156709d7a1a30e836f84ee71fc1750"
+    },
+    {
+      "id": "file-1",
+      "path": ".nvmrc",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "68ca3fba3b7e864770cb61aeb306d4bd4354b68ab4dd38450860c5d823e42a53"
+    },
+    {
+      "id": "file-2",
+      "path": "src/main.mjs",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "f11e502bb2f0991d9181c925a1cecff609a4ad89cd9b639710beb5022516fc62"
+    },
+    {
+      "id": "file-3",
+      "path": "src/pricing.mjs",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "98f2dab1882628bbfd5d82ce6eb4b04da7440c50b8212a29b715c15ce4c29277"
+    },
+    {
+      "id": "file-4",
+      "path": "test/pricing.test.mjs",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "a067ae4fe866ff39b74fc1004f76342aafe88b881f89940d450794795c6aab7a"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "9fec377a4fc9e5f388fead60c1445c408d4377161c9169adfa9e322b6e431c49"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "nodejs-progetto-api-locale-catalogo-prodotti",
+    "nodejs-progetto-cli-analisi-di-un-file-testo",
+    "nodejs-progetto-pipeline-di-importazione-ndjson"
+  ],
+  "expected": "L’applicazione si avvia localmente con il file di configurazione fornito. La versione della toolchain è verificabile dai comandi iniziali.",
+  "errors": [
+    "Comando non trovato: installare la toolchain elencata nei prerequisiti.",
+    "Dipendenza mancante: eseguire l'installazione nella radice esportata, senza cambiare le versioni dichiarate."
+  ],
+  "sources": [
+    "https://nodejs.org/docs/latest-v24.x/api/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "date": "2026-10-29",
+    "details": "Verifiche lifecycle su Windows: static-files, node-test-or-check. Configurazione debugger controllata come JSON; sessione F5 e distribuzione remota non attestate.",
+    "files_sha256": {
+      "package.json": "dd9bc24571ace7ef6166da1ca9a32bfead156709d7a1a30e836f84ee71fc1750",
+      ".nvmrc": "68ca3fba3b7e864770cb61aeb306d4bd4354b68ab4dd38450860c5d823e42a53",
+      "src/main.mjs": "f11e502bb2f0991d9181c925a1cecff609a4ad89cd9b639710beb5022516fc62",
+      "src/pricing.mjs": "98f2dab1882628bbfd5d82ce6eb4b04da7440c50b8212a29b715c15ce4c29277",
+      "test/pricing.test.mjs": "a067ae4fe866ff39b74fc1004f76342aafe88b881f89940d450794795c6aab7a"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

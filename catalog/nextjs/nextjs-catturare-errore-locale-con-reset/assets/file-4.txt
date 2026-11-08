@@ -1,0 +1,1 @@
+'use client';export default function Error({error,reset}){return <section><p role='alert'>Errore: {error.message}</p><button onClick={reset}>Riprova</button></section>}

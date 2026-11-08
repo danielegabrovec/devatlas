@@ -1,0 +1,1 @@
+import {InjectionToken} from '@angular/core';export const CONFIG=new InjectionToken<{channel:string}>('CONFIG',{providedIn:'root',factory:()=>({channel:'locale'})});

@@ -1,0 +1,95 @@
+{
+  "id": "spring-pagination",
+  "title": "Validare una paginazione in memoria",
+  "summary": "Limitare offset e dimensione prima di estrarre una sottolista.",
+  "stack": "spring",
+  "group": "Web e backend",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Spring Boot4.1.2;Java21;Maven3.6.3+",
+  "prerequisites": "JDK21+ compatibile con Spring Boot4.1.2 e Maven3.6.3+. Il server èvincolato a127.0.0.1:8086; dipendenze dal POM e primo restore con rete/cache.",
+  "tags": [
+    "spring",
+    "pagination",
+    "MVC",
+    "REST"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "pom.xml",
+      "language": "xml",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "4352afd5e958e7beec10831476d96584a04e461f7156011c33a3a8f6e5cb4a54"
+    },
+    {
+      "id": "file-1",
+      "path": "src/main/java/it/atlas/Application.java",
+      "language": "java",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "def76258b141c42d751efda9d753cf16da1234f65e8bef809900560eea532a4e"
+    },
+    {
+      "id": "file-2",
+      "path": "src/main/java/it/atlas/DemoController.java",
+      "language": "java",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "331a256353630977fb0006fde736257df0e1dc06664f51cf2c17aa90f1777575"
+    },
+    {
+      "id": "file-3",
+      "path": "src/main/resources/application.properties",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "2c47926aeb7469b3ef1036a7f11e1a918d2be589a254361eb5600f640023eb7f"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "eccbf5f7ae208f5e4e23db9b2d75c8193fdb2ef70d7626f3747e2d82a8538bcf"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "spring-validation",
+    "spring-advice",
+    "spring-async-response"
+  ],
+  "expected": "offset1 e limit1 restituiscono Grace; valori fuori intervallo producono400.",
+  "errors": [
+    "UnsupportedClassVersionError o release21 non supportata: confrontare java -version con mvn --version e usare un JDK21+ anche in JAVA_HOME.",
+    "Port8086 already in use: arrestare il proprio precedente processo del laboratorio oppure usare --server.port=8087, aggiornando gli URL delle richieste.",
+    "HTTP400: verificare nomi dei parametri, Content-Type application/json e vincoli del DTO; il fallimento di @Valid non èun errore della connessione HTTP."
+  ],
+  "sources": [
+    "https://docs.spring.io/spring-boot/system-requirements.html",
+    "https://docs.spring.io/spring-framework/reference/web/webmvc.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "date": "2026-10-29",
+    "details": "Compilazione Maven reale e richieste HTTP su loopback/Windows, Spring Boot4.1.2, JDK21.0.12.1. Report: reports/expansion-spring-qa.json. Sessioni JDWP interattive, hosting esterno e altri OS non attestati."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

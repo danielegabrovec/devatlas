@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+p="atlas_demo:sorted-set"
+cli(){ redis-cli -e --raw -h 127.0.0.1 -p 6381 "$@"; }
+cli DEL "$p:scores"
+cli ZADD "$p:scores" 10 Ada 5 Grace
+cli ZINCRBY "$p:scores" 7 Grace
+cli ZRANGE "$p:scores" 0 -1 REV WITHSCORES

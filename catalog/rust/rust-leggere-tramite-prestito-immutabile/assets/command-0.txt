@@ -1,0 +1,2 @@
+rustc --edition=2021 main.rs -o demo.exe
+.\demo.exe

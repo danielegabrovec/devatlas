@@ -1,0 +1,1 @@
+export default function Layout({children}){return <section><h1>Documentazione</h1><aside>Indice</aside>{children}</section>}

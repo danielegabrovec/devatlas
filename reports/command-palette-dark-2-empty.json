@@ -1,0 +1,32 @@
+{
+  "theme": "dark",
+  "scale_factor": "2",
+  "device_pixel_ratio": 2.0,
+  "kind": "empty",
+  "logical_size": [
+    368,
+    368
+  ],
+  "initial_search_focus": true,
+  "empty_visible": true,
+  "footer_inside": true,
+  "image": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\reports\\command-palette-dark-2-empty.png",
+  "offscreen_font_registration": [
+    {
+      "file": "segoeui.ttf",
+      "result": 0
+    },
+    {
+      "file": "segoeuib.ttf",
+      "result": 1
+    },
+    {
+      "file": "seguisb.ttf",
+      "result": 2
+    },
+    {
+      "file": "seguisym.ttf",
+      "result": 3
+    }
+  ]
+}

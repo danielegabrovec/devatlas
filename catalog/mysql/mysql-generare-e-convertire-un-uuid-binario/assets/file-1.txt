@@ -1,0 +1,1 @@
+SET @u=UUID(); SELECT @u,BIN_TO_UUID(UUID_TO_BIN(@u));

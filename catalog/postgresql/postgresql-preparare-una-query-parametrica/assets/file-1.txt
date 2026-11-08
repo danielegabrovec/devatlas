@@ -1,0 +1,1 @@
+PREPARE by_person(integer) AS SELECT id,total FROM orders WHERE person_id=$1; EXECUTE by_person(1); DEALLOCATE by_person;

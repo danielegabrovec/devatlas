@@ -1,0 +1,2 @@
+php -d phar.readonly=0 build-phar.php
+php dist/atlas.phar

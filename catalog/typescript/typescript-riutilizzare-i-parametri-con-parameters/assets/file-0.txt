@@ -1,0 +1,7 @@
+function sum(a: number, b: number): number { return a+b; }
+function logged(...args: Parameters<typeof sum>): number {
+  console.log("argomenti", args);
+  return sum(...args);
+}
+console.log(logged(2,3));
+export {};

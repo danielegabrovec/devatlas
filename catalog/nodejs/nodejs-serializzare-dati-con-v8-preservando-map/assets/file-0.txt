@@ -1,0 +1,1 @@
+import{serialize,deserialize}from'node:v8';const b=serialize(new Map([['id',7]]));console.log(deserialize(b).get('id'));

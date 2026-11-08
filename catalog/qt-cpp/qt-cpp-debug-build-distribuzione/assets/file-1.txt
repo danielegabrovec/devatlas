@@ -1,0 +1,3 @@
+#pragma once
+#include <QList>
+double total(const QList<double>& prices);

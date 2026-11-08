@@ -1,0 +1,1 @@
+fun main(){val inventory=Inventory();inventory.add("viti",3);inventory.add("viti",4);check(inventory.quantity("viti")==7);check(runCatching{inventory.add("",0)}.isFailure);val snapshot=inventory.snapshot();inventory.add("viti",1);check(snapshot["viti"]==7);println("3 contratti verificati")}

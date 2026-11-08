@@ -1,0 +1,1 @@
+export async function POST(request){const f=await request.formData();const file=f.get('file');if(!(file instanceof File)||file.size>1048576)return Response.json({error:'file richiesto, max1MiB'},{status:422});return Response.json({name:file.name,size:file.size,type:file.type})}

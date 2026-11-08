@@ -1,0 +1,4 @@
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+let name=String::from("Ada");let worker=std::thread::spawn(move||format!("Ciao {}",name));println!("{}",worker.join().expect("worker fallito"));
+Ok(())
+}

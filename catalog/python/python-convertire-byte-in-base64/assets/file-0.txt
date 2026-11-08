@@ -1,0 +1,4 @@
+import base64
+encoded = base64.b64encode(b"\x00\xff").decode("ascii")
+print(encoded)
+print(base64.b64decode(encoded, validate=True))

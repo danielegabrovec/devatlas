@@ -1,0 +1,1 @@
+package it.atlas;import org.springframework.boot.context.properties.ConfigurationProperties;import org.springframework.stereotype.Component;@Component @ConfigurationProperties("atlas")public class AtlasOptions{private int limit=20;public int getLimit(){return limit;}public void setLimit(int value){limit=value;}}

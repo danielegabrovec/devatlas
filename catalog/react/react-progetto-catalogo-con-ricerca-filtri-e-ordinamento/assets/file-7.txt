@@ -1,0 +1,3 @@
+# Progetto: catalogo con ricerca filtri e ordinamento
+I3prodotti si possono cercare, ordinare e filtrare per disponibilità.
+Installare con npm install; avviare npm run dev. Test logica: node --test. Solo dati locali.

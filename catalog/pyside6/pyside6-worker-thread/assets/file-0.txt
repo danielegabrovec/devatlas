@@ -1,0 +1,35 @@
+import sys, json, sqlite3, tempfile, logging
+from pathlib import Path
+from PySide6.QtCore import *
+from PySide6.QtGui import *
+from PySide6.QtWidgets import *
+
+def build(root, layout):
+    class Worker(QObject):
+        done = Signal(str)
+        @Slot()
+        def run(self):
+            result = sum(index * index for index in range(100000))
+            self.done.emit(str(result))
+    label = QLabel("Calcolo")
+    layout.addWidget(label)
+    root.thread = QThread(root)
+    root.worker = Worker()
+    root.worker.moveToThread(root.thread)
+    root.thread.started.connect(root.worker.run)
+    root.worker.done.connect(label.setText)
+    root.worker.done.connect(root.thread.quit)
+    root.worker.done.connect(root.worker.deleteLater)
+    root.thread.finished.connect(root.thread.deleteLater)
+    root.thread.start()
+    root.destroyed.connect(lambda: None)
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    window = QWidget()
+    window.setWindowTitle("Ricetta Qt")
+    window.resize(720, 480)
+    layout = QVBoxLayout(window)
+    build(window, layout)
+    window.show()
+    sys.exit(app.exec())

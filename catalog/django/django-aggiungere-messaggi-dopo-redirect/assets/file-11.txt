@@ -1,0 +1,1 @@
+<!doctype html><html lang="it"><title>Messaggi</title>{% for message in messages %}<p role="status">{{ message }}</p>{% endfor %}<form method="post">{% csrf_token %}<button>Conferma</button></form></html>

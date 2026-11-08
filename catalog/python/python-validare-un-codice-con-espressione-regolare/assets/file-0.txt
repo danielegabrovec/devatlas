@@ -1,0 +1,4 @@
+import re
+pattern = re.compile(r"[A-Z]{2}\d{4}")
+for value in ["AB1234", "AB1234x", "ab1234"]:
+    print(value, bool(pattern.fullmatch(value)))

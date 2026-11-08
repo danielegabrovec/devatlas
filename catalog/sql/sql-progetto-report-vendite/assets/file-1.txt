@@ -1,0 +1,2 @@
+SELECT p.name,SUM(o.total) AS totale FROM people p JOIN orders o ON o.person_id=p.id WHERE o.status='paid' GROUP BY p.id,p.name;
+SELECT SUM(qty) AS pezzi FROM order_items;

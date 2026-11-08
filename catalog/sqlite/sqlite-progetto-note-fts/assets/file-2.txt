@@ -1,0 +1,1 @@
+SELECT rowid,title,bm25(search) FROM search WHERE search MATCH 'file' ORDER BY bm25(search);

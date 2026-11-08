@@ -1,0 +1,1618 @@
+{
+  "catalog_sha256": "6bdea987832ad81860829c61a01aff91349b54cb6e589c3a8886639781ff340f",
+  "cases": 107,
+  "passed": 97,
+  "top3_rate": 0.9065420560747663,
+  "p95_ms": 30.10290000020177,
+  "max_ms": 61.010600000372506,
+  "results": [
+    {
+      "query": "PySide ricerca solo quando smetto di scrivere",
+      "expected_ids": [
+        "pyside6-debounce"
+      ],
+      "top3": [
+        "pyside6-debounce",
+        "pyside6-progetto-ricerca",
+        "pyside6-table-model"
+      ],
+      "success": true,
+      "elapsed_ms": 30.600100000810926,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "PySide clipboard copia sorgente",
+      "expected_ids": [
+        "pyside6-clipboard"
+      ],
+      "top3": [
+        "pyside6-clipboard",
+        "pyside6-context-menu",
+        "pyside6-clipboard-read"
+      ],
+      "success": true,
+      "elapsed_ms": 15.699399998993613,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "PySide aprire testo UTF8 con dialogo",
+      "expected_ids": [
+        "pyside6-open-file"
+      ],
+      "top3": [
+        "pyside6-open-file",
+        "pyside6-line-edit",
+        "pyside6-url"
+      ],
+      "success": true,
+      "elapsed_ms": 14.42250000036438,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "PyQt filtro lista ignora maiuscole",
+      "expected_ids": [
+        "pyqt6-filter-model"
+      ],
+      "top3": [
+        "pyqt6-filter-model",
+        "pyqt6-list-model",
+        "pyqt6-list-widget"
+      ],
+      "success": true,
+      "elapsed_ms": 15.335500000219326,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "PyQt ricordare opzione prossima apertura QSettings",
+      "expected_ids": [
+        "pyqt6-settings"
+      ],
+      "top3": [
+        "pyqt6-editable-combo",
+        "pyqt6-combo-data",
+        "pyqt6-geometry"
+      ],
+      "success": false,
+      "elapsed_ms": 5.857300000570831,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "PyQt tre scelte una sola attiva",
+      "expected_ids": [
+        "pyqt6-radio-group"
+      ],
+      "top3": [
+        "pyqt6-radio-group",
+        "pyqt6-shortcut",
+        "pyqt6-table-model"
+      ],
+      "success": true,
+      "elapsed_ms": 16.364600000088103,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "Qt C++ esplora cartella home QFileSystemModel",
+      "expected_ids": [
+        "qt-cpp-filesystem"
+      ],
+      "top3": [
+        "qt-cpp-filesystem",
+        "qt-cpp-directory",
+        "packaging-creare-una-cartella-electron-distribuibile"
+      ],
+      "success": true,
+      "elapsed_ms": 23.782700000083423,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "Qt C++ scrittura atomica QSaveFile",
+      "expected_ids": [
+        "qt-cpp-save"
+      ],
+      "top3": [
+        "qt-cpp-save",
+        "qt-cpp-progetto-note",
+        "qt-cpp-copy"
+      ],
+      "success": true,
+      "elapsed_ms": 12.88129999920784,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "Qt C++ orologio aggiornato senza sleep",
+      "expected_ids": [
+        "qt-cpp-timer"
+      ],
+      "top3": [
+        "qt-cpp-timer",
+        "qt-cpp-once",
+        "qt-cpp-color"
+      ],
+      "success": true,
+      "elapsed_ms": 3.1302000006689923,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "Electron pagina in PDF A4",
+      "expected_ids": [
+        "electron-pdf"
+      ],
+      "top3": [
+        "electron-pdf",
+        "electron-stop-find",
+        "electron-find-in-page"
+      ],
+      "success": true,
+      "elapsed_ms": 4.736999999295222,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "Electron screenshot finestra PNG",
+      "expected_ids": [
+        "electron-capture"
+      ],
+      "top3": [
+        "electron-capture",
+        "electron-window-title",
+        "electron-window-minimize"
+      ],
+      "success": true,
+      "elapsed_ms": 16.328200001225923,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "Electron dialogo scegli cartella",
+      "expected_ids": [
+        "electron-folder"
+      ],
+      "top3": [
+        "electron-folder",
+        "electron-file-open",
+        "electron-file-save"
+      ],
+      "success": true,
+      "elapsed_ms": 21.192600001086248,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "Avalonia add item ObservableCollection",
+      "expected_ids": [
+        "avalonia-observable"
+      ],
+      "top3": [
+        "avalonia-observable",
+        "avalonia-progetto-note",
+        "avalonia-list"
+      ],
+      "success": true,
+      "elapsed_ms": 12.233999999807565,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "Avalonia UI freeze durante calcolo",
+      "expected_ids": [
+        "avalonia-background"
+      ],
+      "top3": [
+        "avalonia-background",
+        "avalonia-debug-build-distribuzione",
+        "packaging-conservare-un-inventario-delle-dipendenze-installate"
+      ],
+      "success": true,
+      "elapsed_ms": 7.830900000044494,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "Avalonia salvare preferenze JSON AppData",
+      "expected_ids": [
+        "avalonia-json"
+      ],
+      "top3": [
+        "avalonia-json",
+        "avalonia-progetto-note",
+        "packaging-generare-un-manifest-sha-256-dei-file-distribuiti"
+      ],
+      "success": true,
+      "elapsed_ms": 13.782799998807604,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "MAUI copiare negli appunti",
+      "expected_ids": [
+        "maui-clipboard"
+      ],
+      "top3": [
+        "maui-clipboard",
+        "maui-appdata"
+      ],
+      "success": true,
+      "elapsed_ms": 6.396099999619764,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "MAUI Entry sapere quanti caratteri",
+      "expected_ids": [
+        "maui-entry"
+      ],
+      "top3": [
+        "maui-stepper",
+        "maui-entry",
+        "packaging-installare-un-comando-console-python"
+      ],
+      "success": true,
+      "elapsed_ms": 7.958299998790608,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "MAUI DisplayAlertAsync richiesta conferma",
+      "expected_ids": [
+        "maui-confirm"
+      ],
+      "top3": [
+        "maui-confirm",
+        "maui-alert",
+        "maui-editor"
+      ],
+      "success": true,
+      "elapsed_ms": 13.876999999411055,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "WinUI ContentDialog errore XamlRoot",
+      "expected_ids": [
+        "winui-dialog"
+      ],
+      "top3": [
+        "winui-dialog",
+        "packaging-conservare-un-inventario-delle-dipendenze-installate",
+        "packaging-preparare-un-archivio-zip-portabile-con-powershell"
+      ],
+      "success": true,
+      "elapsed_ms": 9.451599999010796,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "WinUI NumberBox valori min max",
+      "expected_ids": [
+        "winui-number"
+      ],
+      "top3": [
+        "winui-number",
+        "winui-progress",
+        "winui-slider"
+      ],
+      "success": true,
+      "elapsed_ms": 7.599900000059279,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "WinUI AutoSuggestBox cerca mentre digito",
+      "expected_ids": [
+        "winui-search"
+      ],
+      "top3": [
+        "winui-search",
+        "winui-inizializzazione-ambiente",
+        "winui-debug-build-distribuzione"
+      ],
+      "success": true,
+      "elapsed_ms": 8.310600000186241,
+      "missing_expected_ids": [],
+      "suggestions": [
+        "winui autosuggestbox cerca mentre digit"
+      ]
+    },
+    {
+      "query": "PowerShell digest file SHA256",
+      "expected_ids": [
+        "powershell-calcolare-sha-256-di-un-file-locale"
+      ],
+      "top3": [
+        "packaging-generare-un-manifest-sha-256-dei-file-distribuiti",
+        "powershell-calcolare-sha-256-di-un-file-locale",
+        "packaging-verificare-un-pacchetto-contro-il-manifest-sha-256"
+      ],
+      "success": true,
+      "elapsed_ms": 22.06099999966682,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "PowerShell parallel limitare tre task",
+      "expected_ids": [
+        "powershell-eseguire-operazioni-in-parallelo-con-limite"
+      ],
+      "top3": [
+        "powershell-eseguire-operazioni-in-parallelo-con-limite"
+      ],
+      "success": true,
+      "elapsed_ms": 12.599599998793565,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "PowerShell CSV caratteri accentati",
+      "expected_ids": [
+        "powershell-esportare-e-reimportare-un-csv"
+      ],
+      "top3": [
+        "powershell-esportare-e-reimportare-un-csv"
+      ],
+      "success": true,
+      "elapsed_ms": 2.5157000000035623,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "Bash cancellare temporanei anche con errore trap",
+      "expected_ids": [
+        "bash-creare-file-temporanei-e-pulirli-con-trap"
+      ],
+      "top3": [
+        "bash-creare-file-temporanei-e-pulirli-con-trap",
+        "bash-gestire-un-errore-previsto-con-if",
+        "packaging-preparare-un-archivio-zip-portabile-con-powershell"
+      ],
+      "success": true,
+      "elapsed_ms": 21.93029999943974,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "Bash find nomi file con spazi print0",
+      "expected_ids": [
+        "bash-iterare-nomi-file-tramite-separatore-nul"
+      ],
+      "top3": [
+        "bash-iterare-nomi-file-tramite-separatore-nul",
+        "bash-proteggere-variabili-e-percorsi-con-spazi",
+        "packaging-generare-un-manifest-sha-256-dei-file-distribuiti"
+      ],
+      "success": true,
+      "elapsed_ms": 21.863500000108615,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "Bash opzioni linea comando getopts",
+      "expected_ids": [
+        "bash-analizzare-opzioni-brevi-con-getopts"
+      ],
+      "top3": [
+        "bash-analizzare-opzioni-brevi-con-getopts",
+        "bash-impostare-una-variabile-soltanto-per-un-comando",
+        "packaging-installare-un-comando-console-python"
+      ],
+      "success": true,
+      "elapsed_ms": 19.882399999914924,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "Git lavorare su due branch contemporaneamente",
+      "expected_ids": [
+        "git-aprire-un-secondo-working-tree-su-un-ramo-nuovo"
+      ],
+      "top3": [
+        "git-aprire-un-secondo-working-tree-su-un-ramo-nuovo",
+        "git-creare-e-selezionare-un-branch",
+        "git-tornare-al-branch-principale"
+      ],
+      "success": true,
+      "elapsed_ms": 11.890699999639764,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "Git stash anche file nuovi untracked",
+      "expected_ids": [
+        "git-accantonare-anche-file-non-tracciati"
+      ],
+      "top3": [
+        "git-aprire-un-secondo-working-tree-su-un-ramo-nuovo",
+        "git-accantonare-anche-file-non-tracciati",
+        "git-clonare-un-repository-locale-in-una-nuova-cartella"
+      ],
+      "success": true,
+      "elapsed_ms": 28.829499999119435,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "Git annullare commit senza riscrivere storia",
+      "expected_ids": [
+        "git-annullare-un-commit-con-revert"
+      ],
+      "top3": [
+        "git-annullare-un-commit-con-revert",
+        "git-applicare-un-singolo-commit-con-cherry-pick",
+        "git-elencare-branch-con-ultimo-commit"
+      ],
+      "success": true,
+      "elapsed_ms": 8.462400001008064,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "CMake header generato dipendenza OUTPUT DEPENDS",
+      "expected_ids": [
+        "cmake-dichiarare-un-header-generato-come-dipendenza"
+      ],
+      "top3": [
+        "cmake-dichiarare-un-header-generato-come-dipendenza",
+        "cmake-generare-un-header-con-configure-file",
+        "packaging-generare-un-manifest-sha-256-dei-file-distribuiti"
+      ],
+      "success": true,
+      "elapsed_ms": 15.403700001115794,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "CMake richiedere cxx_std_20",
+      "expected_ids": [
+        "cmake-richiedere-uno-standard-c-sul-target"
+      ],
+      "top3": [
+        "cmake-richiedere-uno-standard-c-sul-target",
+        "packaging-compilare-un-installer-locale-inno-setup",
+        "packaging-pubblicare-una-cli-net-dipendente-dal-runtime"
+      ],
+      "success": true,
+      "elapsed_ms": 19.71880000019155,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "CMake file compile_commands per clangd",
+      "expected_ids": [
+        "cmake-esportare-compile-commands-per-strumenti-di-analisi"
+      ],
+      "top3": [
+        "cmake-esportare-compile-commands-per-strumenti-di-analisi",
+        "cmake-generare-un-header-con-configure-file",
+        "packaging-generare-un-manifest-sha-256-dei-file-distribuiti"
+      ],
+      "success": true,
+      "elapsed_ms": 31.914000001052045,
+      "missing_expected_ids": [],
+      "suggestions": [
+        "cmake file compile_commands clang"
+      ]
+    },
+    {
+      "query": "Docker Redis conteggio persistente dopo down",
+      "expected_ids": [
+        "docker-progetto-contatore-redis"
+      ],
+      "top3": [
+        "docker-progetto-contatore-redis",
+        "docker-conservare-dati-su-un-volume-nominato",
+        "docker-fermare-il-progetto-conservando-volumi-nominati"
+      ],
+      "success": true,
+      "elapsed_ms": 111.85819999991509,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "Docker filesystem read only tmpfs",
+      "expected_ids": [
+        "docker-usare-un-filesystem-container-in-sola-lettura"
+      ],
+      "top3": [
+        "docker-usare-un-filesystem-container-in-sola-lettura",
+        "docker-caricare-configurazione-da-un-file-env",
+        "packaging-includere-e-leggere-risorse-in-una-wheel"
+      ],
+      "success": true,
+      "elapsed_ms": 53.846799999519135,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "Docker Compose servizio prima healthy",
+      "expected_ids": [
+        "docker-attendere-il-superamento-dell-healthcheck"
+      ],
+      "top3": [
+        "docker-progetto-contatore-redis",
+        "docker-attendere-il-superamento-dell-healthcheck",
+        "docker-aggiungere-un-healthcheck-nell-immagine"
+      ],
+      "success": true,
+      "elapsed_ms": 49.319800000375835,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "GitHub Actions valore da job producer a consumer",
+      "expected_ids": [
+        "cicd-trasferire-un-output-tra-due-job"
+      ],
+      "top3": [
+        "cicd-trasferire-un-output-tra-due-job",
+        "cicd-trasferire-un-artefatto-tra-job",
+        "cicd-eseguire-test-dentro-un-job-container"
+      ],
+      "success": true,
+      "elapsed_ms": 12.383499999486958,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "CI cache dipendenze pip requirements",
+      "expected_ids": [
+        "cicd-riutilizzare-la-cache-pip-in-ci"
+      ],
+      "top3": [
+        "cicd-riutilizzare-la-cache-pip-in-ci",
+        "fastapi-applicare-dipendenza-a-tutte-le-rotte-router",
+        "fastapi-rilasciare-risorse-con-dipendenza-yield"
+      ],
+      "success": true,
+      "elapsed_ms": 124.2024000002857,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "GitHub conservare report quando test fallisce",
+      "expected_ids": [
+        "cicd-conservare-diagnostica-anche-quando-un-test-fallisce"
+      ],
+      "top3": [
+        "cicd-conservare-diagnostica-anche-quando-un-test-fallisce",
+        "cicd-conservare-il-report-test-come-artefatto",
+        "cmake-registrare-un-test-eseguibile-con-ctest"
+      ],
+      "success": true,
+      "elapsed_ms": 114.0200999998342,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "PySide deploy standalone Nuitka",
+      "expected_ids": [
+        "packaging-distribuire-pyside6-con-pyside6-deploy-e-nuitka"
+      ],
+      "top3": [
+        "packaging-distribuire-pyside6-con-pyside6-deploy-e-nuitka",
+        "pyside6-debug-build-distribuzione",
+        "packaging-preparare-un-avviso-licenze-per-componenti-distribuiti"
+      ],
+      "success": true,
+      "elapsed_ms": 10.45449999946868,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "pacchetto digest diverso verificare SHA256",
+      "expected_ids": [
+        "packaging-verificare-un-pacchetto-contro-il-manifest-sha-256"
+      ],
+      "top3": [
+        "nodejs-calcolare-sha256-di-un-contenuto",
+        "packaging-verificare-un-pacchetto-contro-il-manifest-sha-256",
+        "python-calcolare-sha-256-leggendo-a-blocchi"
+      ],
+      "success": true,
+      "elapsed_ms": 41.29289999946195,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "dotnet publish win-x64 self-contained runtime incluso",
+      "expected_ids": [
+        "packaging-pubblicare-una-cli-net-autonoma-per-windows"
+      ],
+      "top3": [
+        "packaging-creare-un-publish-net-single-file",
+        "winui-debug-build-distribuzione",
+        "avalonia-debug-build-distribuzione"
+      ],
+      "success": false,
+      "elapsed_ms": 16.27780000126222,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "pythno CSV virgole",
+      "expected_ids": [
+        "python-analizzare-campi-csv-con-virgole-tra-virgolette"
+      ],
+      "top3": [
+        "python-analizzare-campi-csv-con-virgole-tra-virgolette",
+        "go-leggere-csv-con-campi-quotati",
+        "cpp-dividere-una-riga-con-stringstream"
+      ],
+      "success": true,
+      "elapsed_ms": 2.359500000238768,
+      "missing_expected_ids": [],
+      "suggestions": [
+        "python csv virgole"
+      ]
+    },
+    {
+      "query": "pysid6 debounce",
+      "expected_ids": [
+        "pyside6-debounce"
+      ],
+      "top3": [
+        "react-applicare-debounce-a-un-campo-ricerca",
+        "pyside6-debounce",
+        "pyqt6-debounce"
+      ],
+      "success": true,
+      "elapsed_ms": 2.6455000006535556,
+      "missing_expected_ids": [],
+      "suggestions": [
+        "pyside6 debounce"
+      ]
+    },
+    {
+      "query": "postgress SKIP LOCKED",
+      "expected_ids": [
+        "postgresql-prelevare-lavoro-con-skip-locked"
+      ],
+      "top3": [
+        "mysql-prelevare-un-lavoro-con-skip-locked",
+        "postgresql-prelevare-lavoro-con-skip-locked",
+        "python-proteggere-uno-stato-condiviso-con-lock"
+      ],
+      "success": true,
+      "elapsed_ms": 2.70259999888367,
+      "missing_expected_ids": [],
+      "suggestions": [
+        "postgres skip locked"
+      ]
+    },
+    {
+      "query": "python JSONDecodeError riga colonna",
+      "expected_ids": [
+        "python-segnalare-la-posizione-di-un-errore-json"
+      ],
+      "top3": [
+        "python-segnalare-la-posizione-di-un-errore-json",
+        "python-leggere-righe-sqlite-per-nome-colonna",
+        "python-leggere-un-file-riga-per-riga"
+      ],
+      "success": true,
+      "elapsed_ms": 18.923900001027505,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "WinUI ContentDialog XamlRoot",
+      "expected_ids": [
+        "winui-dialog"
+      ],
+      "top3": [
+        "winui-dialog"
+      ],
+      "success": true,
+      "elapsed_ms": 1.6622000002826098,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "python leggere CSV con virgole dentro un campo",
+      "expected_ids": [
+        "python-analizzare-campi-csv-con-virgole-tra-virgolette"
+      ],
+      "top3": [
+        "python-analizzare-campi-csv-con-virgole-tra-virgolette",
+        "python-leggere-e-scrivere-csv-con-intestazioni",
+        "python-leggere-un-file-con-bom-utf-8"
+      ],
+      "success": true,
+      "elapsed_ms": 14.924700000847224,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "python elaborare righe senza caricare tutto il file",
+      "expected_ids": [
+        "python-leggere-un-file-riga-per-riga"
+      ],
+      "top3": [
+        "python-leggere-un-file-riga-per-riga",
+        "python-leggere-righe-sqlite-per-nome-colonna",
+        "python-calcolare-sha-256-leggendo-a-blocchi"
+      ],
+      "success": true,
+      "elapsed_ms": 26.38889999980165,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "python chiamata bloccante dentro asyncio",
+      "expected_ids": [
+        "python-spostare-lavoro-bloccante-in-un-thread"
+      ],
+      "top3": [
+        "python-spostare-lavoro-bloccante-in-un-thread",
+        "python-profilare-una-funzione-con-cprofile",
+        "python-sostituire-un-collaboratore-con-mock"
+      ],
+      "success": true,
+      "elapsed_ms": 18.314799999643583,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "C++ out_of_range accesso vector",
+      "expected_ids": [
+        "cpp-controllare-indici-con-vector-at"
+      ],
+      "top3": [
+        "cpp-controllare-indici-con-vector-at",
+        "cpp-distinguere-dimensione-e-capacita-di-vector",
+        "cpp-ordinare-un-vector-in-modo-crescente"
+      ],
+      "success": true,
+      "elapsed_ms": 15.800400000443915,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "cpp vista su array senza copiare i dati",
+      "expected_ids": [
+        "cpp-accedere-a-una-sequenza-con-span"
+      ],
+      "top3": [
+        "cpp-leggere-una-vista-senza-copiare-stringhe",
+        "cpp-copiare-soltanto-elementi-selezionati",
+        "cpp-accedere-a-una-sequenza-con-span"
+      ],
+      "success": true,
+      "elapsed_ms": 26.66019999924174,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "C++ trasferire proprietà esclusiva di un oggetto",
+      "expected_ids": [
+        "cpp-gestire-proprieta-esclusiva-con-unique-ptr"
+      ],
+      "top3": [
+        "cpp-gestire-proprieta-esclusiva-con-unique-ptr",
+        "cpp-rendere-una-classe-non-copiabile",
+        "cpp-osservare-una-risorsa-con-weak-ptr"
+      ],
+      "success": true,
+      "elapsed_ms": 13.190599998779362,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "C# convertire input numero senza throw",
+      "expected_ids": [
+        "csharp-convertire-un-intero-senza-eccezioni"
+      ],
+      "top3": [
+        "csharp-convertire-un-intero-senza-eccezioni",
+        "csharp-validare-un-valore-enum-ricevuto-come-testo",
+        "csharp-proteggere-un-invariante-tramite-proprieta"
+      ],
+      "success": true,
+      "elapsed_ms": 32.62700000050245,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "dotnet aggiornare contatori thread safe per chiave",
+      "expected_ids": [
+        "csharp-aggiornare-un-dizionario-concorrente"
+      ],
+      "top3": [
+        "csharp-aggiornare-un-dizionario-concorrente",
+        "avalonia-timer",
+        "winui-observable"
+      ],
+      "success": true,
+      "elapsed_ms": 36.20190000037837,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "C# rilevare overflow di int",
+      "expected_ids": [
+        "csharp-rilevare-overflow-aritmetico"
+      ],
+      "top3": [
+        "csharp-rilevare-overflow-aritmetico",
+        "csharp-rilevare-il-primo-task-completato",
+        "csharp-convertire-un-intero-senza-eccezioni"
+      ],
+      "success": true,
+      "elapsed_ms": 26.04350000001432,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "javascript togliere ripetizioni mantenendo ordine",
+      "expected_ids": [
+        "javascript-deduplicare-un-array-con-set"
+      ],
+      "top3": [
+        "javascript-deduplicare-un-array-con-set",
+        "javascript-ordinare-testo-con-regole-locali",
+        "javascript-ordinare-numeri-senza-ordinamento-lessicografico"
+      ],
+      "success": true,
+      "elapsed_ms": 20.82239999981539,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "js callback perde this del metodo",
+      "expected_ids": [
+        "javascript-fissare-this-con-bind"
+      ],
+      "top3": [
+        "javascript-fissare-this-con-bind",
+        "javascript-incapsulare-uno-stato-con-campi-privati",
+        "javascript-sostituire-con-una-funzione-callback"
+      ],
+      "success": true,
+      "elapsed_ms": 8.917200000723824,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "javascript risultati di promise anche se falliscono",
+      "expected_ids": [
+        "javascript-raccogliere-successi-e-fallimenti-asincroni"
+      ],
+      "top3": [
+        "javascript-raccogliere-successi-e-fallimenti-asincroni",
+        "javascript-attendere-promise-in-parallelo-con-ordine-stabile",
+        "javascript-applicare-un-timeout-a-una-promise"
+      ],
+      "success": true,
+      "elapsed_ms": 24.851600001056795,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "typescript JSON esterno senza any",
+      "expected_ids": [
+        "typescript-validare-un-oggetto-json-sconosciuto"
+      ],
+      "top3": [
+        "typescript-validare-un-oggetto-json-sconosciuto",
+        "typescript-validare-unknown-prima-di-leggerlo",
+        "typescript-progetto-completo-task-board-tipizzata"
+      ],
+      "success": true,
+      "elapsed_ms": 18.844299998818315,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "ts funzione conserva il tipo dell argomento",
+      "expected_ids": [
+        "typescript-mantenere-il-tipo-con-una-funzione-generica"
+      ],
+      "top3": [
+        "typescript-mantenere-il-tipo-con-una-funzione-generica",
+        "typescript-limitare-opzioni-con-tipi-letterali",
+        "typescript-scegliere-un-tipo-con-conditional-types"
+      ],
+      "success": true,
+      "elapsed_ms": 21.140900000318652,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "typescript controllare tutti i casi di union",
+      "expected_ids": [
+        "typescript-controllare-l-esaustivita-con-never"
+      ],
+      "top3": [
+        "typescript-controllare-l-esaustivita-con-never",
+        "typescript-modellare-stati-con-union-discriminata",
+        "typescript-estrarre-membri-compatibili-da-una-union"
+      ],
+      "success": true,
+      "elapsed_ms": 25.173999998514773,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "rust trasferire una stringa a un worker",
+      "expected_ids": [
+        "rust-trasferire-proprieta-a-un-thread"
+      ],
+      "top3": [
+        "rust-trasferire-proprieta-a-un-thread",
+        "rust-copiare-esplicitamente-una-string",
+        "rust-trasmettere-dati-con-un-canale-mpsc"
+      ],
+      "success": true,
+      "elapsed_ms": 19.632899999123765,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "rust condividere contatore senza data race",
+      "expected_ids": [
+        "rust-condividere-un-contatore-con-arc-e-mutex"
+      ],
+      "top3": [
+        "rust-condividere-un-contatore-con-arc-e-mutex",
+        "rust-trasmettere-dati-con-un-canale-mpsc",
+        "rust-accumulare-frequenze-con-hashmap-entry"
+      ],
+      "success": true,
+      "elapsed_ms": 29.854599999453058,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "rust restituire assenza senza null",
+      "expected_ids": [
+        "rust-usare-un-default-con-option"
+      ],
+      "top3": [
+        "rust-usare-un-default-con-option",
+        "rust-collegare-la-durata-di-un-risultato-ai-prestiti",
+        "packaging-preparare-un-archivio-zip-portabile-con-powershell"
+      ],
+      "success": true,
+      "elapsed_ms": 12.227799999891431,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "go annullare goroutine tramite contesto",
+      "expected_ids": [
+        "go-propagare-cancellazione-con-context"
+      ],
+      "top3": [
+        "go-propagare-cancellazione-con-context",
+        "go-attendere-goroutine-con-waitgroup",
+        "go-aggiungere-contesto-a-un-errore-con-wrapping"
+      ],
+      "success": true,
+      "elapsed_ms": 11.147900000651134,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "golang copia slice backing array indipendente",
+      "expected_ids": [
+        "go-copiare-una-slice-senza-condividere-i-dati"
+      ],
+      "top3": [
+        "go-copiare-una-slice-senza-condividere-i-dati",
+        "go-aggiungere-elementi-a-una-slice",
+        "go-ordinare-una-slice-con-un-comparatore"
+      ],
+      "success": true,
+      "elapsed_ms": 21.305300000676652,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "go JSON rifiutare campi sconosciuti",
+      "expected_ids": [
+        "go-rifiutare-proprieta-json-sconosciute"
+      ],
+      "top3": [
+        "go-rifiutare-proprieta-json-sconosciute",
+        "go-serializzare-struct-con-tag-json",
+        "go-workflow-go-module"
+      ],
+      "success": true,
+      "elapsed_ms": 24.554400000852183,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "java importi senza errore floating point",
+      "expected_ids": [
+        "java-calcolare-importi-esatti-con-bigdecimal"
+      ],
+      "top3": [
+        "java-calcolare-importi-esatti-con-bigdecimal",
+        "java-conservare-la-causa-di-un-eccezione",
+        "java-definire-un-oggetto-valore-con-record"
+      ],
+      "success": true,
+      "elapsed_ms": 22.267999998803134,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "java chiudere risorse automaticamente",
+      "expected_ids": [
+        "java-rilasciare-automaticamente-con-try-with-resources"
+      ],
+      "top3": [
+        "java-rilasciare-automaticamente-con-try-with-resources",
+        "packaging-includere-e-leggere-risorse-in-una-wheel",
+        "packaging-creare-un-bundle-directory-con-pyinstaller"
+      ],
+      "success": true,
+      "elapsed_ms": 24.76359999855049,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "java raggruppare parole e contare",
+      "expected_ids": [
+        "java-raggruppare-e-contare-con-collectors"
+      ],
+      "top3": [
+        "java-raggruppare-e-contare-con-collectors",
+        "java-accumulare-conteggi-con-map-merge",
+        "java-workflow-java-jdb"
+      ],
+      "success": true,
+      "elapsed_ms": 87.43520000098215,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "C realloc fallisce conservare memoria originale",
+      "expected_ids": [
+        "c-ridimensionare-con-realloc-senza-perdere-il-puntatore"
+      ],
+      "top3": [
+        "c-ridimensionare-con-realloc-senza-perdere-il-puntatore",
+        "c-leggere-errno-soltanto-dopo-un-fallimento",
+        "packaging-conservare-un-inventario-delle-dipendenze-installate"
+      ],
+      "success": true,
+      "elapsed_ms": 46.35969999981171,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "C copiare buffer sovrapposti",
+      "expected_ids": [
+        "c-spostare-memoria-sovrapposta-con-memmove"
+      ],
+      "top3": [
+        "c-spostare-memoria-sovrapposta-con-memmove",
+        "c-formattare-in-un-buffer-con-snprintf",
+        "c-passare-un-record-a-una-funzione"
+      ],
+      "success": true,
+      "elapsed_ms": 13.162499999452848,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "C convertire testo a intero controllando limiti",
+      "expected_ids": [
+        "c-convertire-un-intero-con-strtol"
+      ],
+      "top3": [
+        "c-convertire-un-intero-con-strtol",
+        "c-mantenere-controlli-di-contratto-nelle-build-ottimizzate",
+        "c-allocare-un-array-controllando-overflow-di-dimensione"
+      ],
+      "success": true,
+      "elapsed_ms": 78.26969999950961,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "node leggere un log riga per riga",
+      "expected_ids": [
+        "nodejs-leggere-un-file-per-righe"
+      ],
+      "top3": [
+        "nodejs-leggere-un-file-per-righe",
+        "nodejs-aggiungere-una-riga-senza-sovrascrivere",
+        "nodejs-creare-uno-stream-da-un-iterable"
+      ],
+      "success": true,
+      "elapsed_ms": 41.12679999889224,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "node execFile avviare programma con argomenti",
+      "expected_ids": [
+        "nodejs-eseguire-processo-senza-shell"
+      ],
+      "top3": [
+        "nodejs-eseguire-processo-senza-shell",
+        "nodejs-analizzare-argomenti-cli-tipizzati",
+        "nodejs-creare-un-errore-di-dominio-con-proprieta"
+      ],
+      "success": true,
+      "elapsed_ms": 40.3160999994725,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "node promise massimo due lavori contemporanei",
+      "expected_ids": [
+        "nodejs-limitare-concorrenza-con-coda-worker"
+      ],
+      "top3": [
+        "nodejs-limitare-concorrenza-con-coda-worker",
+        "nodejs-implementare-retry-con-backoff-limitato",
+        "nodejs-leggere-parallelismo-cpu-disponibile"
+      ],
+      "success": true,
+      "elapsed_ms": 28.71159999995143,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "react ottenere campi del modulo al submit",
+      "expected_ids": [
+        "react-leggere-un-form-con-formdata"
+      ],
+      "top3": [
+        "react-aggiungere-campi-dinamici-con-id-stabili",
+        "react-validare-un-campo-con-errore-accessibile",
+        "react-collegare-un-errore-condizionale-al-campo"
+      ],
+      "success": false,
+      "elapsed_ms": 32.39740000026359,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "react aspettare digitazione prima di cercare",
+      "expected_ids": [
+        "react-applicare-debounce-a-un-campo-ricerca"
+      ],
+      "top3": [
+        "react-filtrare-risultati-durante-digitazione",
+        "react-applicare-debounce-a-un-campo-ricerca",
+        "react-creare-un-timer-con-cleanup"
+      ],
+      "success": true,
+      "elapsed_ms": 27.196799999728682,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "react revokeObjectURL pulire preview file",
+      "expected_ids": [
+        "react-liberare-object-url-delle-anteprime"
+      ],
+      "top3": [
+        "react-liberare-object-url-delle-anteprime",
+        "react-scaricare-dati-json-dal-browser",
+        "react-progetto-tabella-importazione-tsv-con-esportazione"
+      ],
+      "success": true,
+      "elapsed_ms": 27.718299999833107,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "next leggere preferenza salvata nei cookies",
+      "expected_ids": [
+        "nextjs-leggere-cookie-con-api-asincrona"
+      ],
+      "top3": [
+        "nextjs-leggere-cookie-con-api-asincrona",
+        "nextjs-impostare-una-preferenza-cookie-da-server-action",
+        "nextjs-leggere-browser-api-solo-dopo-mount"
+      ],
+      "success": true,
+      "elapsed_ms": 29.73990000100457,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "next api endpoint parametro id await params",
+      "expected_ids": [
+        "nextjs-leggere-params-asincroni-nel-route-handler"
+      ],
+      "top3": [
+        "nextjs-leggere-params-asincroni-nel-route-handler",
+        "nextjs-leggere-parametri-dinamici-asincroni",
+        "nextjs-leggere-cookie-con-api-asincrona"
+      ],
+      "success": true,
+      "elapsed_ms": 27.619899999990594,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "next revalidateTag aggiornare cache catalogo",
+      "expected_ids": [
+        "nextjs-rivalidare-un-tag-con-profilo-max"
+      ],
+      "top3": [
+        "nextjs-rivalidare-un-tag-con-profilo-max",
+        "nextjs-aggiornare-dati-server-con-router-refresh",
+        "nextjs-aggiornare-query-preservando-parametri"
+      ],
+      "success": true,
+      "elapsed_ms": 20.779399999810266,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "aspnet limitare richieste al minuto",
+      "expected_ids": [
+        "aspnet-applicare-rate-limiting-a-una-rotta"
+      ],
+      "top3": [
+        "aspnet-leggere-cookie-della-richiesta",
+        "aspnet-rispettare-cancellazione-della-richiesta",
+        "aspnet-leggere-un-header-della-richiesta"
+      ],
+      "success": false,
+      "elapsed_ms": 29.902899999797228,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "aspnet errore http application problem json",
+      "expected_ids": [
+        "aspnet-restituire-problem-details"
+      ],
+      "top3": [
+        "aspnet-leggere-json-manualmente-con-gestione-errori",
+        "aspnet-normalizzare-errori-non-gestiti",
+        "aspnet-restituire-problem-details"
+      ],
+      "success": true,
+      "elapsed_ms": 61.65040000087174,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "aspnet CancellationToken client interrompe richiesta",
+      "expected_ids": [
+        "aspnet-rispettare-cancellazione-della-richiesta"
+      ],
+      "top3": [
+        "aspnet-rispettare-cancellazione-della-richiesta",
+        "aspnet-leggere-un-header-della-richiesta",
+        "aspnet-creare-servizio-scoped-per-richiesta"
+      ],
+      "success": true,
+      "elapsed_ms": 54.9204999988433,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "fastapi body persona con indirizzo nested model",
+      "expected_ids": [
+        "fastapi-validare-modelli-annidati"
+      ],
+      "top3": [
+        "fastapi-validare-modelli-annidati",
+        "fastapi-validare-un-body-con-modello-pydantic",
+        "fastapi-rifiutare-campi-extra-nel-body"
+      ],
+      "success": true,
+      "elapsed_ms": 40.818099998432444,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "fastapi cleanup dependency yield finally",
+      "expected_ids": [
+        "fastapi-rilasciare-risorse-con-dipendenza-yield"
+      ],
+      "top3": [
+        "fastapi-rilasciare-risorse-con-dipendenza-yield",
+        "fastapi-caricare-risorse-nel-lifespan",
+        "fastapi-leggere-metadati-upload-multipart"
+      ],
+      "success": true,
+      "elapsed_ms": 44.37069999949017,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "fastapi rifiutare file oltre un megabyte",
+      "expected_ids": [
+        "fastapi-limitare-dimensione-upload-leggendo-chunk"
+      ],
+      "top3": [
+        "fastapi-rifiutare-campi-extra-nel-body",
+        "fastapi-rifiutare-host-inattesi",
+        "fastapi-servire-file-statici-da-directory-dedicata"
+      ],
+      "success": false,
+      "elapsed_ms": 79.55550000042422,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "css schede su colonne adattive auto fit minmax",
+      "expected_ids": [
+        "html-css-creare-una-griglia-responsive-automatica"
+      ],
+      "top3": [
+        "html-css-progetto-biblioteca-responsive-con-filtri-locali",
+        "html-css-adattare-componenti-con-container-query",
+        "html-css-evitare-separazione-di-schede-in-stampa"
+      ],
+      "success": false,
+      "elapsed_ms": 42.52530000121624,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "html accessibilità saltare navigazione tastiera",
+      "expected_ids": [
+        "html-css-offrire-un-link-salta-contenuto"
+      ],
+      "top3": [
+        "html-css-offrire-un-link-salta-contenuto",
+        "html-css-rendere-indicatore-progress-accessibile",
+        "html-css-mostrare-un-dialog-modale-accessibile"
+      ],
+      "success": true,
+      "elapsed_ms": 15.294699998776196,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "css prefers reduced motion evitare movimento",
+      "expected_ids": [
+        "html-css-disattivare-animazioni-per-movimento-ridotto"
+      ],
+      "top3": [
+        "html-css-disattivare-animazioni-per-movimento-ridotto",
+        "html-css-adattare-tema-a-prefers-color-scheme",
+        "html-css-evitare-separazione-di-schede-in-stampa"
+      ],
+      "success": true,
+      "elapsed_ms": 14.946499999496154,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "django ORM incremento contatore senza race condition",
+      "expected_ids": [
+        "django-aggiornare-valori-atomicamente-con-f"
+      ],
+      "top3": [
+        "django-aggregare-conteggi-e-priorita-media",
+        "django-rendere-atomiche-piu-modifiche-orm",
+        "django-filtrare-oggetti-orm-per-stato"
+      ],
+      "success": false,
+      "elapsed_ms": 63.87410000024829,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "django creare record form post csrf token",
+      "expected_ids": [
+        "django-inviare-modelform-con-protezione-csrf"
+      ],
+      "top3": [
+        "django-inviare-modelform-con-protezione-csrf",
+        "django-validare-input-usando-django-forms",
+        "django-testare-un-form-invalido"
+      ],
+      "success": true,
+      "elapsed_ms": 51.48890000054962,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "django manage py comando conteggio personalizzato",
+      "expected_ids": [
+        "django-aggiungere-un-comando-management-personalizzato"
+      ],
+      "top3": [
+        "django-aggiungere-un-comando-management-personalizzato",
+        "django-aggregare-conteggi-e-priorita-media",
+        "django-raggruppare-queryset-con-annotate"
+      ],
+      "success": true,
+      "elapsed_ms": 45.761000001220964,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "sql clienti senza acquisti not exists",
+      "expected_ids": [
+        "sql-trovare-clienti-privi-di-ordini"
+      ],
+      "top3": [
+        "sql-trovare-clienti-privi-di-ordini",
+        "sql-unire-ordini-e-clienti",
+        "sql-conservare-clienti-senza-ordini"
+      ],
+      "success": true,
+      "elapsed_ms": 32.33170000021346,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "sql mostrare testo quando campo mancante coalesce",
+      "expected_ids": [
+        "sql-sostituire-null-in-visualizzazione"
+      ],
+      "top3": [
+        "sql-sostituire-null-in-visualizzazione",
+        "sql-individuare-valori-mancanti",
+        "packaging-leggere-la-versione-installata-da-importlib-metadata"
+      ],
+      "success": true,
+      "elapsed_ms": 44.40910000084841,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "sql somma cumulativa per ordine window",
+      "expected_ids": [
+        "sql-calcolare-un-totale-progressivo"
+      ],
+      "top3": [
+        "sql-calcolare-il-totale-degli-ordini-pagati",
+        "sql-sommare-quantita-attraverso-tre-tabelle",
+        "sql-trovare-l-ultimo-acquisto-senza-funzioni-finestra"
+      ],
+      "success": false,
+      "elapsed_ms": 47.88460000054329,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "sqlite database is locked busy timeout",
+      "expected_ids": [
+        "sqlite-limitare-attesa-su-database-occupato"
+      ],
+      "top3": [
+        "sqlite-limitare-attesa-su-database-occupato",
+        "sqlite-controllare-integrita-del-database",
+        "packaging-conservare-un-inventario-delle-dipendenze-installate"
+      ],
+      "success": true,
+      "elapsed_ms": 82.68180000050052,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "sqlite fts5 ricerca frammenti parola trigram",
+      "expected_ids": [
+        "sqlite-cercare-sottostringhe-con-trigram"
+      ],
+      "top3": [
+        "sqlite-cercare-sottostringhe-con-trigram",
+        "sqlite-creare-ricerca-full-text-fts5",
+        "sqlite-evidenziare-parole-trovate-in-fts5"
+      ],
+      "success": true,
+      "elapsed_ms": 33.00689999923634,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "sqlite controllare riferimenti orfani foreign key check",
+      "expected_ids": [
+        "sqlite-verificare-violazioni-delle-foreign-key"
+      ],
+      "top3": [
+        "sqlite-verificare-violazioni-delle-foreign-key",
+        "sqlite-mostrare-dettagli-delle-foreign-key",
+        "sqlite-controllare-integrita-del-database"
+      ],
+      "success": true,
+      "elapsed_ms": 56.52199999894947,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "postgres inserire o aggiornare on conflict",
+      "expected_ids": [
+        "postgresql-fare-upsert-con-excluded"
+      ],
+      "top3": [
+        "postgresql-inserire-righe-evitando-conflitti",
+        "postgresql-aggiornare-una-vista-materializzata",
+        "postgresql-bloccare-righe-per-un-aggiornamento"
+      ],
+      "success": false,
+      "elapsed_ms": 41.567500000383006,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "postgres coda worker evitare righe bloccate",
+      "expected_ids": [
+        "postgresql-prelevare-lavoro-con-skip-locked"
+      ],
+      "top3": [
+        "postgresql-inserire-righe-evitando-conflitti",
+        "postgresql-bloccare-righe-per-un-aggiornamento",
+        "postgresql-progetto-coda-transazionale"
+      ],
+      "success": false,
+      "elapsed_ms": 42.14279999905557,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "postgres una riga più recente per cliente",
+      "expected_ids": [
+        "postgresql-estrarre-l-ultimo-ordine-con-distinct-on"
+      ],
+      "top3": [
+        "postgresql-estrarre-l-ultimo-ordine-con-distinct-on",
+        "postgresql-aggregare-piu-dimensioni-con-grouping-sets",
+        "postgresql-aggregare-righe-in-jsonb"
+      ],
+      "success": true,
+      "elapsed_ms": 32.395700000051875,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "mysql array json trasformare elementi in righe",
+      "expected_ids": [
+        "mysql-espandere-json-table"
+      ],
+      "top3": [
+        "mysql-aggregare-righe-in-json",
+        "mysql-espandere-json-table",
+        "mysql-contare-elementi-di-un-documento-json"
+      ],
+      "success": true,
+      "elapsed_ms": 37.17729999880248,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "mysql null safe equality confronto valori mancanti",
+      "expected_ids": [
+        "mysql-confrontare-null-in-modo-sicuro"
+      ],
+      "top3": [
+        "mysql-confrontare-null-in-modo-sicuro",
+        "mysql-prelevare-un-lavoro-con-skip-locked",
+        "mysql-concatenare-valori-con-group-concat"
+      ],
+      "success": true,
+      "elapsed_ms": 29.533799999626353,
+      "missing_expected_ids": [],
+      "suggestions": []
+    },
+    {
+      "query": "mysql rename table scambiare nomi atomicamente",
+      "expected_ids": [
+        "mysql-rinominare-atomicamente-due-tabelle-mysql"
+      ],
+      "top3": [
+        "mysql-rinominare-atomicamente-due-tabelle-mysql",
+        "mysql-progetto-magazzino",
+        "mysql-espandere-json-table"
+      ],
+      "success": true,
+      "elapsed_ms": 31.009500000436674,
+      "missing_expected_ids": [],
+      "suggestions": []
+    }
+  ]
+}

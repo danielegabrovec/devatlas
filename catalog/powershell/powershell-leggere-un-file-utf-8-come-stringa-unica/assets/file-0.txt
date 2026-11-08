@@ -1,0 +1,6 @@
+Set-StrictMode -Version Latest
+$ErrorActionPreference='Stop'
+$file = Join-Path ([IO.Path]::GetTempPath()) ([guid]::NewGuid().ToString()+".txt")
+Set-Content -LiteralPath $file -Value "prima`nseconda" -Encoding utf8
+$text = Get-Content -LiteralPath $file -Raw -Encoding utf8
+$text.Length

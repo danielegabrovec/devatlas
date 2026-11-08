@@ -1,0 +1,1 @@
+import{cookies}from'next/headers';export default function Page(){async function setTheme(){'use server';(await cookies()).set('theme','dark',{httpOnly:true,sameSite:'lax',path:'/'})}return <form action={setTheme}><button>Tema scuro</button></form>}

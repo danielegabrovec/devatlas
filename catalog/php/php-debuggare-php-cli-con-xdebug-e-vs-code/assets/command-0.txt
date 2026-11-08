@@ -1,0 +1,2 @@
+php --ri xdebug
+php -d xdebug.mode=debug -d xdebug.start_with_request=yes -d xdebug.client_host=127.0.0.1 main.php

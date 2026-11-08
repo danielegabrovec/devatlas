@@ -1,0 +1,1 @@
+<script>import {getContext} from 'svelte';const theme=getContext('theme');</script><p>Tema: {theme.name}</p>

@@ -1,0 +1,15 @@
+package it.atlas;
+import java.util.*;
+import java.util.concurrent.*;
+import java.net.URI;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.http.*;
+import org.springframework.web.server.ResponseStatusException;
+import org.springframework.beans.factory.annotation.*;
+import org.springframework.stereotype.*;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.*;
+@RestController
+public class DemoController {
+@GetMapping("/items/{id}") public Map<String,Object> item(@PathVariable("id") long id){return Map.of("id",id);}
+}

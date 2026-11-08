@@ -1,0 +1,1 @@
+*{box-sizing:border-box}body{font:16px/1.5 system-ui;margin:2rem;color:#172033}button,input,select,textarea{font:inherit;margin:.3rem;padding:.5rem}label{display:block}a{color:#075ea8}.card{position:relative;padding:2rem;border:1px solid #abc;border-radius:12px}.badge{position:absolute;top:.5rem;right:.5rem;background:#1769c5;color:white;padding:.2rem .5rem;border-radius:1rem}

@@ -1,0 +1,5 @@
+#![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
+use tauri::Manager;
+
+#[derive(Default)]struct Counter(std::sync::Mutex<u32>);#[tauri::command]fn demo(state:tauri::State<Counter>)->Result<u32,String>{let mut value=state.inner().0.lock().map_err(|_|"Lock non disponibile")?;*value+=1;Ok(*value)}
+fn main(){tauri::Builder::default().manage(Counter::default()).invoke_handler(tauri::generate_handler![demo]).run(tauri::generate_context!()).expect("Tauri application failed");}

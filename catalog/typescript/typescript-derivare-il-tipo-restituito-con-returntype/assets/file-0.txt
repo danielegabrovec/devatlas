@@ -1,0 +1,5 @@
+function createUser() { return {id:7,name:"Ada"}; }
+type User = ReturnType<typeof createUser>;
+const user: User = createUser();
+console.log(user.name);
+export {};

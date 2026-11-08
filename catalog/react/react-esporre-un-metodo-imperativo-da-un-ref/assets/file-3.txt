@@ -1,0 +1,3 @@
+import React, {useState,useEffect,useMemo,useRef,useReducer,useId,useContext,createContext,useCallback,useLayoutEffect,useTransition,useDeferredValue,useSyncExternalStore,useImperativeHandle,forwardRef,memo,lazy,Suspense,Component} from 'react';
+import {createPortal} from 'react-dom';
+const Field=forwardRef(function Field(p,ref){const input=useRef(null);useImperativeHandle(ref,()=>({focus:()=>input.current.focus()}),[]);return <input ref={input} aria-label='Campo'/>});export default function App(){const r=useRef(null);return <><Field ref={r}/><button onClick={()=>r.current.focus()}>Focus</button></>}

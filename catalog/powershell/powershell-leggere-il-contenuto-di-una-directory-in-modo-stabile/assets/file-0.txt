@@ -1,0 +1,3 @@
+Set-StrictMode -Version Latest
+$ErrorActionPreference='Stop'
+Get-ChildItem -LiteralPath . -File | Sort-Object Name | Select-Object Name,Length

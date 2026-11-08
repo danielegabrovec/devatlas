@@ -1,0 +1,5 @@
+<script setup>
+import {ref,reactive,computed,watch,watchEffect,onMounted,onUnmounted,nextTick,provide,inject,defineAsyncComponent,shallowRef,triggerRef,readonly,toRefs} from 'vue';
+const quantity=ref(1);const log=ref('');watch(quantity,(now,before)=>{log.value=`Da ${before} a ${now}`;});
+</script>
+<template><main><input type="number" v-model.number="quantity"><p>{{log}}</p></main></template>

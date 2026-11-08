@@ -1,0 +1,2 @@
+# Note locali
+Avvia main.py nell'ambiente dedicato. I dati risiedono in AppDataLocation. Il file notes.json contiene soltanto stringhe e non viene eseguito.

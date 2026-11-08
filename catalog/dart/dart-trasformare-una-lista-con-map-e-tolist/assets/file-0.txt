@@ -1,0 +1,5 @@
+Future<void> main() async {
+final source=[2,3,4];
+final squares=source.map((value)=>value*value).toList();
+print(squares);
+}

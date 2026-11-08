@@ -1,0 +1,1 @@
+ALTER TABLE people ADD COLUMN active INTEGER NOT NULL DEFAULT 1; SELECT name,active FROM people;

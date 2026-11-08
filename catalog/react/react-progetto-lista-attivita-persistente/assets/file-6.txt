@@ -1,0 +1,1 @@
+import test from'node:test';import assert from'node:assert/strict';import{addTask}from'../src/model.js';test('vuoto',()=>assert.throws(()=>addTask([],'')));test('aggiunta',()=>assert.equal(addTask([],' prova ')[0].text,'prova'));

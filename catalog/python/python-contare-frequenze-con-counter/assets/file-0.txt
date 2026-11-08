@@ -1,0 +1,3 @@
+from collections import Counter
+counts = Counter("rosso blu rosso verde blu rosso".split())
+print(counts.most_common(2))

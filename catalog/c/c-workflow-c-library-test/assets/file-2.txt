@@ -1,0 +1,3 @@
+#include <stdio.h>
+#include "math_demo.h"
+int main(void){if(add(2,3)!=5)return 1;puts("test passato");return 0;}

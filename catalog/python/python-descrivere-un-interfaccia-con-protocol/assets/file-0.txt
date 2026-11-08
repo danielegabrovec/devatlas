@@ -1,0 +1,9 @@
+from typing import Protocol
+class Named(Protocol):
+    name: str
+class User:
+    def __init__(self, name):
+        self.name = name
+def greeting(value: Named) -> str:
+    return f"Ciao {value.name}"
+print(greeting(User("Ada")))

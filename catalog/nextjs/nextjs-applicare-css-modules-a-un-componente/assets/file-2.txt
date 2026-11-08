@@ -1,0 +1,1 @@
+import s from'./page.module.css';export default function Page(){return <article className={s.card}><h1>Scheda</h1></article>}

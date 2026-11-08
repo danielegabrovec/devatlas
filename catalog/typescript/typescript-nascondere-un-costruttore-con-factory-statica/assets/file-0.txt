@@ -1,0 +1,9 @@
+class Email {
+  private constructor(readonly value: string) {}
+  static parse(value: string): Email {
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(value)) throw new TypeError("Email non valida");
+    return new Email(value);
+  }
+}
+console.log(Email.parse("ada@example.test").value);
+export {};

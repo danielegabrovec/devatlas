@@ -1,0 +1,1 @@
+import{createServer}from'node:http';createServer((q,r)=>{r.writeHead(200,{'content-type':'text/csv','content-disposition':'attachment; filename=report.csv'});r.end('name,total\nAda,42\n')}).listen(3000,'127.0.0.1');

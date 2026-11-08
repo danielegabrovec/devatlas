@@ -1,0 +1,1 @@
+SELECT SUM(CASE WHEN status='paid' THEN total ELSE 0 END) AS pagato,SUM(CASE WHEN status='new' THEN total ELSE 0 END) AS aperto FROM orders;

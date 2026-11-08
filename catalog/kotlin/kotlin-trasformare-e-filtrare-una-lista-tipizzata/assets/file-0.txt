@@ -1,0 +1,4 @@
+fun main() {
+val values = listOf(1, 2, 3, 4)
+println(values.filter { it % 2 == 0 }.map { it * it })
+}

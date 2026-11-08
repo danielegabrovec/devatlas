@@ -1,0 +1,3 @@
+# Progetto: lista attività persistente
+Aggiungi, completa e rimuovi attività; il refresh conserva la lista nel browser.
+Installare con npm install; avviare npm run dev. Test logica: node --test. Solo dati locali.

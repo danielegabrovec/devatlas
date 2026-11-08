@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+p="atlas_demo:type"
+cli(){ redis-cli -e --raw -h 127.0.0.1 -p 6381 "$@"; }
+cli DEL "$p:profile"
+cli HSET "$p:profile" name Ada
+cli TYPE "$p:profile"
+cli MEMORY USAGE "$p:profile"

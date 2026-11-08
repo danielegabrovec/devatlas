@@ -1,0 +1,3 @@
+# Task board Rust
+
+Rust stable1.75+, Cargo edition2021, nessuna crate esterna. `cargo test --offline` esegue due test; `cargo run --offline` mostra una attività completata. Lo stato è in memoria e non sopravvive all'avvio. list espone una slice immutabile; i riferimenti non possono sopravvivere alla board. Gli ID non vengono riutilizzati perché il progetto non implementa cancellazioni.

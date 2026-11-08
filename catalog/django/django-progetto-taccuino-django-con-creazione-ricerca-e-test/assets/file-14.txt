@@ -1,0 +1,3 @@
+# Taccuino locale
+Installare requirements, eseguire migrate e manage.py test notes, avviare runserver127.0.0.1:8000.
+Creare note, cercare per titolo e completare con POST protetto daCSRF. SQLite persiste. Dati sintetici; DEBUG e chiave laboratorio vanno sostituiti per distribuzione.

@@ -1,0 +1,4 @@
+# Note FTS5
+Su un file note.sqlite nuovo eseguire schema, seed, search in questo ordine.
+Risultato: la nota Python. Il trigger mantiene l'indice per gli inserimenti; questo laboratorio non prevede update/delete.
+Richiede FTS5.

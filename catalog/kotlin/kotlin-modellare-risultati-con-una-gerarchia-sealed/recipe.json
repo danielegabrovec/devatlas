@@ -1,0 +1,71 @@
+{
+  "id": "kotlin-modellare-risultati-con-una-gerarchia-sealed",
+  "title": "Modellare risultati con una gerarchia sealed",
+  "summary": "Rende espliciti successo ed errore e consente un when esaustivo.",
+  "stack": "kotlin",
+  "group": "Linguaggi",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "IntelliJ IDEA",
+    "Android Studio"
+  ],
+  "versions": "Kotlin2.3.21/JVM17; Gradle9.3.0 per i progetti Gradle",
+  "prerequisites": "JDK17+ e compilatore Kotlin2.3.21. Per Gradle usare9.3.0 e plugin Kotlin2.3.21 (prima acquisizione plugin richiede rete/cache). Le varianti Android richiedono un progetto Android già configurato e relativo SDK.",
+  "tags": [
+    "sealed",
+    "when",
+    "result"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "Main.kt",
+      "language": "kotlin",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "50dddf80d4c309db5df406ca126fdd3efbfa6f956aa1403736c9c21ff8456453"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "508a4f224848d105f458d1a56cf3172c4f8a57869c1c7413f44f17581dd8f68d"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "kotlin-convertire-eccezioni-in-result-con-runcatching",
+    "kotlin-validare-un-input-con-when",
+    "kotlin-aggiungere-una-extension-function-pura"
+  ],
+  "expected": "42; aggiungendo una variante occorre aggiornare il when.",
+  "errors": [
+    "when expression must be exhaustive: gestisci ogni variante sealed oppure aggiungi il ramo residuale previsto dal contratto.",
+    "Una condizione troppo ampia intercetta altri casi: when sceglie il primo ramo corrispondente; ordina prima quelli più specifici."
+  ],
+  "sources": [
+    "https://kotlinlang.org/docs/command-line.html",
+    "https://kotlinlang.org/docs/collections-overview.html",
+    "https://kotlinlang.org/docs/gradle-configure-project.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: kotlin compile, kotlin program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Compilatore Kotlin2.3.21 della cache Gradle, JDK25.0.4.1, target17. Pipeline Gradle, sessioni debugger e SDK Android non eseguiti."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

@@ -1,0 +1,1 @@
+import{scryptSync,randomBytes}from'node:crypto';const salt=randomBytes(16);console.log(salt.toString('hex'),scryptSync('password-demo',salt,32).toString('hex'));

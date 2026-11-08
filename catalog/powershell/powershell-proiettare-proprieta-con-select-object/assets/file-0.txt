@@ -1,0 +1,3 @@
+Set-StrictMode -Version Latest
+$ErrorActionPreference='Stop'
+Get-Process | Select-Object -First 5 Name,Id,@{Name="MemoryMiB";Expression={[math]::Round($_.WorkingSet64/1MB,1)}}

@@ -1,0 +1,1 @@
+public record Quote(decimal Price,int Quantity,decimal Discount);public static class Pricing{public static decimal Total(Quote q){if(q.Price<0||q.Quantity<1||q.Discount<0||q.Discount>100)throw new ArgumentException("Valori invalidi");return decimal.Round(q.Price*q.Quantity*(1-q.Discount/100),2,MidpointRounding.AwayFromZero);}}

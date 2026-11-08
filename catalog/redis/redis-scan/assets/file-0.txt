@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+p="atlas_demo:scan"
+cli(){ redis-cli -e --raw -h 127.0.0.1 -p 6381 "$@"; }
+cli SET "$p:a" one
+cli SET "$p:b" two
+redis-cli -e --raw -h 127.0.0.1 -p 6381 --scan --pattern "$p:*"

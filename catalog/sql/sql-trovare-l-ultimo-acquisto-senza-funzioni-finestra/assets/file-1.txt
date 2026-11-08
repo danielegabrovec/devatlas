@@ -1,0 +1,1 @@
+SELECT o.id FROM orders o WHERE NOT EXISTS(SELECT 1 FROM orders n WHERE n.person_id=o.person_id AND (n.created_at>o.created_at OR(n.created_at=o.created_at AND n.id>o.id)));

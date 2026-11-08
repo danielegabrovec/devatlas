@@ -1,0 +1,77 @@
+{
+  "id": "php-eseguire-contratti-php-sempre-attivi",
+  "title": "Eseguire contratti PHP sempre attivi",
+  "summary": "Evita che una configurazione zend.assertions disabiliti i test del dominio.",
+  "stack": "php",
+  "group": "Linguaggi",
+  "section": "Test",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "PHP8.4/8.5 CLI, strict_types; estensioni indicate nella singola scheda",
+  "prerequisites": "PHP8.4 o8.5 CLI nel PATH. PDO SQLite richiede pdo_sqlite; le altre estensioni necessarie sono indicate. Il server incorporato è destinato al laboratorio locale.",
+  "tags": [
+    "test",
+    "contracts",
+    "exceptions"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "Math.php",
+      "language": "php",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "c74b63e4e75147bf699b7b1ae2e2011ec5b71285717cbfd0fe6cec22c3f0caea"
+    },
+    {
+      "id": "file-1",
+      "path": "tests.php",
+      "language": "php",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "b795e0397a5396eb4c51629e2d202cbd2cc962c3d29a572f14f28fad639b2abc"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "fec0a66030547a009a936082a748e36d54b45e422ecad60f5f36c0feaea29ad6"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "php-progetto-completo-rubrica-json-php",
+    "php-controllare-sintassi-php-prima-della-consegna",
+    "php-creare-un-archivio-phar-php-locale"
+  ],
+  "expected": "2 contratti verificati; i controlli sono espliciti e non vengono eliminati da zend.assertions.",
+  "errors": [
+    "RuntimeException dal controllo esplicito: il contratto è fallito; non sostituire il runner con assert se l'ambiente può disabilitarlo.",
+    "InvalidArgumentException non prevista: separa il caso di validazione intenzionalmente invalido dagli input che devono produrre un risultato."
+  ],
+  "sources": [
+    "https://www.php.net/manual/en/",
+    "https://www.php.net/supported-versions.php"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: php contracts execute, php lint, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

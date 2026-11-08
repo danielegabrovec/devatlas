@@ -1,0 +1,87 @@
+{
+  "id": "kotlin-compilare-kotlin-con-un-progetto-gradle-bloccato",
+  "title": "Compilare Kotlin con un progetto Gradle bloccato",
+  "summary": "Configura plugin2.3.21, target JVM17 e punto d'ingresso riproducibile.",
+  "stack": "kotlin",
+  "group": "Linguaggi",
+  "section": "Compilazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "IntelliJ IDEA",
+    "Android Studio"
+  ],
+  "versions": "Kotlin2.3.21/JVM17; Gradle9.3.0 per i progetti Gradle",
+  "prerequisites": "JDK17+ e compilatore Kotlin2.3.21. Per Gradle usare9.3.0 e plugin Kotlin2.3.21 (prima acquisizione plugin richiede rete/cache). Le varianti Android richiedono un progetto Android già configurato e relativo SDK.",
+  "tags": [
+    "Gradle",
+    "build",
+    "jvmTarget"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "settings.gradle.kts",
+      "language": "kotlin",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "7b948f4a9ea0ea6f7cc02aef828ed8d6f063d0702e88adc07ba1910a75e10c58"
+    },
+    {
+      "id": "file-1",
+      "path": "build.gradle.kts",
+      "language": "kotlin",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "e010927e996bda135e817a92f2b8f2dd02c9f698e7430db73b10bdd4f9676e81"
+    },
+    {
+      "id": "file-2",
+      "path": "src/main/kotlin/Main.kt",
+      "language": "kotlin",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "b08f32b3ade6d824921c301dcc5d137ec3e314d53b7938a3c3f3101f447b5c1e"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "62d3e8a55dc948e147ada05e84b47f1b4579d030eb0f71fcfd0d66936a425443"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "kotlin-progetto-completo-inventario-kotlin-jvm",
+    "kotlin-consumare-uno-stream-java-da-kotlin",
+    "kotlin-debuggare-kotlin-jvm-con-jdwp"
+  ],
+  "expected": "Build completa e programma che stampa10.",
+  "errors": [
+    "Plugin org.jetbrains.kotlin.jvm non risolto: verifica accesso al repository/cache e versione2.3.21 dichiarata nel build.gradle.kts.",
+    "Inconsistent JVM-target compatibility: allinea target Java e Kotlin a17; una cache Gradle di un altro progetto non modifica il target del manifest."
+  ],
+  "sources": [
+    "https://kotlinlang.org/docs/command-line.html",
+    "https://kotlinlang.org/docs/collections-overview.html",
+    "https://kotlinlang.org/docs/gradle-configure-project.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "compilato",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: kotlin compile, kotlin program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Compilatore Kotlin2.3.21 della cache Gradle, JDK25.0.4.1, target17. Pipeline Gradle, sessioni debugger e SDK Android non eseguiti."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

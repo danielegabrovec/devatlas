@@ -1,0 +1,6 @@
+struct Point{x:i32,y:i32}
+impl Point{fn length_squared(&self)->i32{self.x*self.x+self.y*self.y}}
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+let point=Point{x:3,y:4};println!("{}",point.length_squared());
+Ok(())
+}

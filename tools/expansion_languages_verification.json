@@ -1,0 +1,1141 @@
+{
+  "kotlin-aggiungere-una-extension-function-pura": {
+    "assets": {
+      "Main.kt": "dc5a94c2759e71b0992974c8916dc782c49cd86ee97f6a25e8ca4c64561144f9"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: kotlin compile, kotlin program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Compilatore Kotlin2.3.21 della cache Gradle, JDK25.0.4.1, target17. Pipeline Gradle, sessioni debugger e SDK Android non eseguiti."
+    }
+  },
+  "kotlin-analizzare-date-civili-con-java-time": {
+    "assets": {
+      "Main.kt": "3454a390f7189cf8c4d4e9cb550854539c4c93883fc0fca64da25a8a08836c8b"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: kotlin compile, kotlin program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Compilatore Kotlin2.3.21 della cache Gradle, JDK25.0.4.1, target17. Pipeline Gradle, sessioni debugger e SDK Android non eseguiti."
+    }
+  },
+  "kotlin-attendere-un-thread-jvm-e-conservare-il-risultato": {
+    "assets": {
+      "Main.kt": "80af30653a0449481b2cba8b475e9614c66c274353772a011d3c90dac445a9c0"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: kotlin compile, kotlin program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Compilatore Kotlin2.3.21 della cache Gradle, JDK25.0.4.1, target17. Pipeline Gradle, sessioni debugger e SDK Android non eseguiti."
+    }
+  },
+  "kotlin-calcolare-sha-256-di-un-payload-utf-8": {
+    "assets": {
+      "Main.kt": "dcb0a90196faad9456b809c75b4002b9b9097b01a1bb61029f1182c001b6a785"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: kotlin compile, kotlin program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Compilatore Kotlin2.3.21 della cache Gradle, JDK25.0.4.1, target17. Pipeline Gradle, sessioni debugger e SDK Android non eseguiti."
+    }
+  },
+  "kotlin-compilare-kotlin-con-un-progetto-gradle-bloccato": {
+    "assets": {
+      "settings.gradle.kts": "7b948f4a9ea0ea6f7cc02aef828ed8d6f063d0702e88adc07ba1910a75e10c58",
+      "build.gradle.kts": "e010927e996bda135e817a92f2b8f2dd02c9f698e7430db73b10bdd4f9676e81",
+      "src/main/kotlin/Main.kt": "b08f32b3ade6d824921c301dcc5d137ec3e314d53b7938a3c3f3101f447b5c1e"
+    },
+    "verification": {
+      "status": "compilato",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: kotlin compile, kotlin program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Compilatore Kotlin2.3.21 della cache Gradle, JDK25.0.4.1, target17. Pipeline Gradle, sessioni debugger e SDK Android non eseguiti."
+    }
+  },
+  "kotlin-condividere-testo-da-android-con-un-intent": {
+    "assets": {
+      "src/main/java/example/Share.kt": "7859713e8e0f85ab21055c3881fc675891e4fdccb4e416855006ef033338cea2"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Compilatore Kotlin2.3.21 della cache Gradle, JDK25.0.4.1, target17. Pipeline Gradle, sessioni debugger e SDK Android non eseguiti."
+    }
+  },
+  "kotlin-conservare-un-opzione-android-con-sharedpreferences": {
+    "assets": {
+      "src/main/java/example/Preferences.kt": "e3412780dec502fc712f1ebce9322da6104061ba0d6a2a8284209f2156ba66ba"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Compilatore Kotlin2.3.21 della cache Gradle, JDK25.0.4.1, target17. Pipeline Gradle, sessioni debugger e SDK Android non eseguiti."
+    }
+  },
+  "kotlin-consumare-uno-stream-java-da-kotlin": {
+    "assets": {
+      "Main.kt": "14d733c318f0a4700e1985ba2166ab4b2a941200b43caa37bbacc2633cedb9d2"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: kotlin compile, kotlin program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Compilatore Kotlin2.3.21 della cache Gradle, JDK25.0.4.1, target17. Pipeline Gradle, sessioni debugger e SDK Android non eseguiti."
+    }
+  },
+  "kotlin-convertire-eccezioni-in-result-con-runcatching": {
+    "assets": {
+      "Main.kt": "5f1252535b955fadd32388a4144e6902e1e0506a8d165a732ee9c566c477c4c8"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: kotlin compile, kotlin program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Compilatore Kotlin2.3.21 della cache Gradle, JDK25.0.4.1, target17. Pipeline Gradle, sessioni debugger e SDK Android non eseguiti."
+    }
+  },
+  "kotlin-copiare-una-data-class-mantenendo-il-valore-originale": {
+    "assets": {
+      "Main.kt": "82f9ab798653a996390d7ba9d76b51cabceb16b0f1c0271bf98153f885cb5e6c"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: kotlin compile, kotlin program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Compilatore Kotlin2.3.21 della cache Gradle, JDK25.0.4.1, target17. Pipeline Gradle, sessioni debugger e SDK Android non eseguiti."
+    }
+  },
+  "kotlin-debuggare-kotlin-jvm-con-jdwp": {
+    "assets": {
+      "Main.kt": "5dda63cb1ab93d9da1762e3896a64cd6acf9077facb2a24f7c622cda251cb193"
+    },
+    "verification": {
+      "status": "compilato",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: kotlin compile, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Compilatore Kotlin2.3.21 della cache Gradle, JDK25.0.4.1, target17. Pipeline Gradle, sessioni debugger e SDK Android non eseguiti."
+    }
+  },
+  "kotlin-deduplicare-oggetti-per-una-chiave": {
+    "assets": {
+      "Main.kt": "aa147681e8fd9b039288ee77d651b24100f9ffa77c3d0b72d1c176aef24072b7"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: kotlin compile, kotlin program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Compilatore Kotlin2.3.21 della cache Gradle, JDK25.0.4.1, target17. Pipeline Gradle, sessioni debugger e SDK Android non eseguiti."
+    }
+  },
+  "kotlin-distribuire-una-console-kotlin-con-installdist": {
+    "assets": {
+      "settings.gradle.kts": "a261f3417417bfe4fefb0b74bf97b7020309057917fcb5341ffddafaf1549bd7",
+      "build.gradle.kts": "e010927e996bda135e817a92f2b8f2dd02c9f698e7430db73b10bdd4f9676e81",
+      "src/main/kotlin/Main.kt": "8b542338511fbdc8598179d07d222c608e74c215e51a675ced747c045d4ed020"
+    },
+    "verification": {
+      "status": "compilato",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: kotlin compile, kotlin program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Compilatore Kotlin2.3.21 della cache Gradle, JDK25.0.4.1, target17. Pipeline Gradle, sessioni debugger e SDK Android non eseguiti."
+    }
+  },
+  "kotlin-elaborare-una-sequence-lazy": {
+    "assets": {
+      "Main.kt": "162aac1e2e5e1a9af6472313f2fe62183d11d88ee690587285c15e2f6515360e"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: kotlin compile, kotlin program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Compilatore Kotlin2.3.21 della cache Gradle, JDK25.0.4.1, target17. Pipeline Gradle, sessioni debugger e SDK Android non eseguiti."
+    }
+  },
+  "kotlin-esporre-un-endpoint-http-locale-con-il-jdk": {
+    "assets": {
+      "Main.kt": "1bdd5377271689e5218587a94ff2da6c21b92dd66be2284f008a12be6767ec2c"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: kotlin compile, local HTTP execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Compilatore Kotlin2.3.21 della cache Gradle, JDK25.0.4.1, target17. Pipeline Gradle, sessioni debugger e SDK Android non eseguiti."
+    }
+  },
+  "kotlin-estrarre-campi-con-regex-e-gruppi-nominati": {
+    "assets": {
+      "Main.kt": "4c4c325e3bee4aa3860a54e88c609b5d0979e63f44ede086e82d71803dcab189"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: kotlin compile, kotlin program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Compilatore Kotlin2.3.21 della cache Gradle, JDK25.0.4.1, target17. Pipeline Gradle, sessioni debugger e SDK Android non eseguiti."
+    }
+  },
+  "kotlin-gestire-null-con-safe-call-ed-elvis": {
+    "assets": {
+      "Main.kt": "efc4fd7b9a686edf1d8b4e381e563cb4d88a0dcdc29cbe97f2a7c0d7426635c4"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: kotlin compile, kotlin program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Compilatore Kotlin2.3.21 della cache Gradle, JDK25.0.4.1, target17. Pipeline Gradle, sessioni debugger e SDK Android non eseguiti."
+    }
+  },
+  "kotlin-inizializzare-un-valore-soltanto-al-primo-accesso": {
+    "assets": {
+      "Main.kt": "b91ca0fd35c2c9d7c7b07a97df011b6a5c66fca5667c3216e9d9b8cecfefb3bb"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: kotlin compile, kotlin program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Compilatore Kotlin2.3.21 della cache Gradle, JDK25.0.4.1, target17. Pipeline Gradle, sessioni debugger e SDK Android non eseguiti."
+    }
+  },
+  "kotlin-inizializzare-una-console-kotlin-jvm": {
+    "assets": {
+      "Main.kt": "5c2a9f1fb071cca86a2b5c9bbe2023ee9e2583a6393dd4e0c51c49949f83698a"
+    },
+    "verification": {
+      "status": "compilato",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: kotlin compile, kotlin program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Compilatore Kotlin2.3.21 della cache Gradle, JDK25.0.4.1, target17. Pipeline Gradle, sessioni debugger e SDK Android non eseguiti."
+    }
+  },
+  "kotlin-leggere-e-scrivere-utf-8-in-un-file-temporaneo": {
+    "assets": {
+      "Main.kt": "3503811c32378029df92d59037073292f0684abe17585600f4e5cf594f3bc01b"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: kotlin compile, kotlin program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Compilatore Kotlin2.3.21 della cache Gradle, JDK25.0.4.1, target17. Pipeline Gradle, sessioni debugger e SDK Android non eseguiti."
+    }
+  },
+  "kotlin-limitare-lavori-tramite-un-executorservice": {
+    "assets": {
+      "Main.kt": "d04f63a5908fb150cc37377eed35f98552abf352338fdf26f563c88e91da5ef5"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: kotlin compile, kotlin program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Compilatore Kotlin2.3.21 della cache Gradle, JDK25.0.4.1, target17. Pipeline Gradle, sessioni debugger e SDK Android non eseguiti."
+    }
+  },
+  "kotlin-modellare-risultati-con-una-gerarchia-sealed": {
+    "assets": {
+      "Main.kt": "50dddf80d4c309db5df406ca126fdd3efbfa6f956aa1403736c9c21ff8456453"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: kotlin compile, kotlin program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Compilatore Kotlin2.3.21 della cache Gradle, JDK25.0.4.1, target17. Pipeline Gradle, sessioni debugger e SDK Android non eseguiti."
+    }
+  },
+  "kotlin-ordinare-con-piu-comparatori": {
+    "assets": {
+      "Main.kt": "d62a5befc840ee6eb84e631dee2c31c779905ddee246affaea2cf8e1909e4ff8"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: kotlin compile, kotlin program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Compilatore Kotlin2.3.21 della cache Gradle, JDK25.0.4.1, target17. Pipeline Gradle, sessioni debugger e SDK Android non eseguiti."
+    }
+  },
+  "kotlin-progetto-completo-inventario-kotlin-jvm": {
+    "assets": {
+      "settings.gradle.kts": "3114ea80a37c7b060e38143c2f18b688256ac391380bbf0da05875735993dcac",
+      "build.gradle.kts": "b83302387441561e67cb563799cd62329f536fcf6b578d45fe95b643ba2e3d27",
+      "src/main/kotlin/Inventory.kt": "15e997bdec41423ada92b3681185c8fb5a4b02d6f6707650188541475f351962",
+      "src/main/kotlin/InventoryCli.kt": "6f7f4c272c637a3888e56dd0ef77b4aaa6f5659a8783056cb0e28c018b801641",
+      "src/test/kotlin/InventoryTest.kt": "6cea11e907c74eab439db0c3130870cdf143b9f7245135a5f527aee58d7d3f83",
+      "README.md": "1bfa80322225e16008f3c5f657fde34ecc1b085cdfb83fa515d1fc78ecbd0042"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: kotlin capstone tests compile, kotlin compile, kotlin contracts execute, kotlin program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Compilatore Kotlin2.3.21 della cache Gradle, JDK25.0.4.1, target17. Pipeline Gradle, sessioni debugger e SDK Android non eseguiti."
+    }
+  },
+  "kotlin-raggruppare-record-per-categoria": {
+    "assets": {
+      "Main.kt": "568e7984f66b2fdfe54dbb8b29a20d4f471743d64c800295c2a50c0c3eb71f1e"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: kotlin compile, kotlin program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Compilatore Kotlin2.3.21 della cache Gradle, JDK25.0.4.1, target17. Pipeline Gradle, sessioni debugger e SDK Android non eseguiti."
+    }
+  },
+  "kotlin-ridurre-una-collezione-con-fold": {
+    "assets": {
+      "Main.kt": "13adec7a29608226904d360c2edcf5cbaf39e998b13854f6787301c648e5cf48"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: kotlin compile, kotlin program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Compilatore Kotlin2.3.21 della cache Gradle, JDK25.0.4.1, target17. Pipeline Gradle, sessioni debugger e SDK Android non eseguiti."
+    }
+  },
+  "kotlin-rilasciare-automaticamente-una-risorsa-con-use": {
+    "assets": {
+      "Main.kt": "56ec54da3546d3b0613317c03b56e5a8b4c9e44885906946bebd3b05912c5b09"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: kotlin compile, kotlin program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Compilatore Kotlin2.3.21 della cache Gradle, JDK25.0.4.1, target17. Pipeline Gradle, sessioni debugger e SDK Android non eseguiti."
+    }
+  },
+  "kotlin-testare-funzioni-kotlin-senza-framework-esterni": {
+    "assets": {
+      "Math.kt": "91f93620bd86203e80a67964c884fe818a4221871507e9972b5efa2c715fdc85",
+      "Checks.kt": "b376b3a76fe913cd0c96dd79e9d8572e3a6ed28f6db455b692b65f82aa2f5655"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: kotlin compile, kotlin program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Compilatore Kotlin2.3.21 della cache Gradle, JDK25.0.4.1, target17. Pipeline Gradle, sessioni debugger e SDK Android non eseguiti."
+    }
+  },
+  "kotlin-trasformare-e-filtrare-una-lista-tipizzata": {
+    "assets": {
+      "Main.kt": "c3939a08ebf07e921968f74a871e98dda0214311ecc64d2b548742a30fc07895"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: kotlin compile, kotlin program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Compilatore Kotlin2.3.21 della cache Gradle, JDK25.0.4.1, target17. Pipeline Gradle, sessioni debugger e SDK Android non eseguiti."
+    }
+  },
+  "kotlin-validare-un-input-con-when": {
+    "assets": {
+      "Main.kt": "31ca3ac587268d949a6c2473ce5b2f37cc3fb5fb191b0e46240e1b7dd99c5f10"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: kotlin compile, kotlin program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Compilatore Kotlin2.3.21 della cache Gradle, JDK25.0.4.1, target17. Pipeline Gradle, sessioni debugger e SDK Android non eseguiti."
+    }
+  },
+  "swift-analizzare-un-istante-iso8601-utc": {
+    "assets": {
+      "main.swift": "4ca8cdac5d92700510d75baab095ba90c0293c375b247ddd669290ba1f0baf30"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "swift-calcolare-differenze-tra-set": {
+    "assets": {
+      "main.swift": "161399b3b13fdb4968c0dc8bee8d7581a808f15b91b56d3ceda7c28813a8fdd3"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "swift-codificare-e-decodificare-json-con-codable": {
+    "assets": {
+      "main.swift": "4776eca48d4b18b03ce8167442810b609f588d73296b9d2e6751aa659977e0c3"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "swift-compilare-un-target-swift-con-configurazioni-debug-e-release": {
+    "assets": {
+      "Package.swift": "7c399c844b89f076b8ac04593e29e6d22b9948fccd8e1cc5d322909269f7254a",
+      "Sources/SwiftBuild/main.swift": "0fb1ebee047f53f4419e665195ea77a07f7d38409d8fc708e51f465a0a4d8125"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "swift-conservare-una-preferenza-apple-con-userdefaults": {
+    "assets": {
+      "main.swift": "a6bc61d37b4d27a4e62266058eb90c903b2a17b298d29cc0e0ea2705dd6779c2"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "swift-contare-grafemi-e-byte-unicode": {
+    "assets": {
+      "main.swift": "048d37bb0e2111d0235d98547c7a0e3a5149c2e076d59aac840c2e74b5e556ef"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "swift-costruire-url-con-query-percent-encoded": {
+    "assets": {
+      "main.swift": "eddd4914ff7b66d30cbd51cceeb7375ef1739fa0c7bf0754cb4585a1562f6108"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "swift-debuggare-swift-con-lldb-e-simboli-locali": {
+    "assets": {
+      "main.swift": "3263dc2743991f16f7e2c518dace721a754c2f7de6e0d036b6746b8cae30c023"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "swift-descrivere-un-contratto-con-protocol-e-generics": {
+    "assets": {
+      "main.swift": "30f8b4ad4429d5436e6950e2b02f77ade21c6cbad8b6f0758b6817b75b02be19"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "swift-eseguire-test-swift-package-con-xctest": {
+    "assets": {
+      "Package.swift": "bd6da48e97ce2acbc9a6a9c926d237ebb7473be491144a782e1370d1883e4a28",
+      "Sources/MathCore/Math.swift": "04dc6ad67f7ebb579bf6d33d99bbeeeb3fd71c90969db0777f31879e5f09a49f",
+      "Tests/MathCoreTests/MathCoreTests.swift": "07e7e01d3b310d4c018397753a7824eeffeba5decaf52711558fb26d01755c12"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "swift-garantire-cleanup-con-defer-anche-dopo-throw": {
+    "assets": {
+      "main.swift": "44205fcf007589accefb95f17550baaa1bc4708166d053234c038a4708a753bb"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "swift-gestire-assenza-con-optional-e-nil-coalescing": {
+    "assets": {
+      "main.swift": "e5cd21f0a6a194c485dc85472ba75e98307dc17f8f1f667915cf06bb25b27033"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "swift-inizializzare-un-package-swift-cli-su-linux-o-macos": {
+    "assets": {
+      "Package.swift": "c454fb9ff4ba1b3ca31a09cb2e5c7c87d8a1b3ec17e8239d54214614f73afe2a",
+      "Sources/SwiftStarter/main.swift": "b82b0ec118776cca4549480ff95d14199fec3eb9d185f20bce49fdc31c6ac788"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "swift-leggere-testo-utf-8-in-un-file-temporaneo": {
+    "assets": {
+      "main.swift": "c0d22b748a4e7604ef3cd81e2c4234b8e683045b03b1770deabc30b0d8374b53"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "swift-modellare-eventi-con-enum-associati": {
+    "assets": {
+      "main.swift": "21b9f3008b8a7ce74cfb6a552367050c4c0fdb09893eb061601593fc6889fd1b"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "swift-mostrare-stato-e-azioni-in-una-vista-swiftui-ios": {
+    "assets": {
+      "ContentView.swift": "b68f3230f67c278a4bef68bdc3db1f7fbf72da68e0fc05fa3bed05d826a9e36b"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "swift-navigare-tra-viste-swiftui-con-navigationstack": {
+    "assets": {
+      "ContentView.swift": "7a845ccb70e3f701d03c4bfd79708d693623b876f1c5f3d10c73a90472c89deb"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "swift-ordinare-record-con-chiavi-multiple": {
+    "assets": {
+      "main.swift": "67da514103d3999a2c86705dd2b3ee11fec0366574afdfa72d80a7f935c126ae"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "swift-preparare-una-cli-swift-per-la-distribuzione-nativa": {
+    "assets": {
+      "main.swift": "4822f3ddfd5d9bb0d0d18c04c9c1de1ff885f573db3b4180be0e97ec89c4b19e"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "swift-progetto-completo-report-spese-swift-package": {
+    "assets": {
+      "Package.swift": "fd01ff3ee7267d17cfc77ac26fca9316c109f821f179cc20dabff856d44254b4",
+      "Sources/ExpenseCore/Expense.swift": "b95ce59fca632389b3d77c96ab860185336d74b7f1af155426fe354bd0e732eb",
+      "Sources/ExpenseCLI/main.swift": "2be3428e41ad28dd38b239716707baa51bd7940b300c3ffb4ce74d0940d4e36b",
+      "Tests/ExpenseCoreTests/ExpenseCoreTests.swift": "2ec5cb8a8a9bd0b5d809bc7ef05ecdf72d8ccfe2c2a5916589d9f04b9db15793",
+      "data/expenses.json": "d8e9473866f007308263fdfa6fd540daf87d3363ddf18ca4765c8f491f4e8de6",
+      "README.md": "9caddd0763b2a5e0fb22811300c5b36f42a065b2aab76f35f5f07c6d3b146997"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: JSON parse, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "swift-proteggere-stato-asincrono-con-un-actor": {
+    "assets": {
+      "main.swift": "546d15f84c3f1694362939fc50f42e9305e637dcf375763fbaa9d3bc6528e950"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "swift-raggruppare-elementi-con-dictionary-grouping": {
+    "assets": {
+      "main.swift": "ff6b394663cb6ae5c14a8df83c944a664efd08eb6380fbf01c96df9633fefa86"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "swift-restituire-un-fallimento-con-result": {
+    "assets": {
+      "main.swift": "f5b2e9a19823658a9a575289c4ec8eb19a9d7787e07302e0cb579d32f8c656f3"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "swift-scartare-conversioni-fallite-con-compactmap": {
+    "assets": {
+      "main.swift": "9dd41301bd4413a750b947f8aedb93cf5cf32839af50bdfd0373d7fdf9fe9293"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "swift-validare-un-valore-con-guard": {
+    "assets": {
+      "main.swift": "9d380c7ed008224de1fdb89bd20741b825bdae78b8e72bd8f00579fe2d92517a"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "php-analizzare-opzioni-cli-con-getopt": {
+    "assets": {
+      "main.php": "9c5ab316c8361f45cf57c676a03024846177d8229ed55b593c8d3660538c14e5"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: php lint, php program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+    }
+  },
+  "php-annullare-una-transazione-pdo-dopo-un-vincolo-violato": {
+    "assets": {
+      "main.php": "e9267476e2ce99e4de5b30bf12d75fad53f77b9499408fbec86f621cee95f151"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: php lint, php program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+    }
+  },
+  "php-applicare-un-default-soltanto-quando-il-dato-manca": {
+    "assets": {
+      "main.php": "2258cf61c8fe30cdc5f91ec2e887eb0777ca6265bba3e158cbb8305d0a6ce8fa"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: php lint, php program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+    }
+  },
+  "php-caricare-classi-psr-4-con-composer": {
+    "assets": {
+      "composer.json": "dc858747f4ae1c124bafe88a80be3930058b975ef8c825d8c4ba60825507dc3b",
+      "src/Greeter.php": "66124d0510b92c4e5189bc98f3ccdb6f42f4c8b727144244882608f264945920",
+      "main.php": "84a81519a246eb559afd9649d746bec7dc6006d804e972b5e11c0dea187f0578"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: JSON parse, php lint, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+    }
+  },
+  "php-chiudere-una-risorsa-nel-finally": {
+    "assets": {
+      "main.php": "fdfb8d28bd79acd7d7bc126b29aa84ccb400859c4538bdbbc742ca2e61c5d7f6"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: php lint, php program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+    }
+  },
+  "php-controllare-sintassi-php-prima-della-consegna": {
+    "assets": {
+      "main.php": "e580fbcff16732696456bd8466cfcb216d839111c611d2a3c64ba648ee990353"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: php lint, php program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+    }
+  },
+  "php-creare-un-archivio-phar-php-locale": {
+    "assets": {
+      "app/main.php": "08a4ac61fecab71553e8e7a388be4faf04aa62cf588bd1f4c2b7d1ba52f3fae7",
+      "build-phar.php": "54d499974d6d63de9828898336d580461c016c706746bf9f6a247dc7877d20d7"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: php PHAR execute, php lint, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+    }
+  },
+  "php-debuggare-php-cli-con-xdebug-e-vs-code": {
+    "assets": {
+      "main.php": "f9f77bb797fca223f84728cf62bc6ab1ff2d5968f09213c6258d985a597b5cd8",
+      ".vscode/launch.json": "87acae159ef51076376a98bf69eae75fc24debcdaa6335bdf38ae13874e712b1"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: JSON parse, php lint, php program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+    }
+  },
+  "php-definire-un-dto-readonly-tipizzato": {
+    "assets": {
+      "main.php": "3d7e2b83ed1dde198d1bac3aafd433e58857d3f522b1a3094c60d30000b69ceb"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: php lint, php program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+    }
+  },
+  "php-escapare-testo-per-un-contesto-html": {
+    "assets": {
+      "main.php": "97605ff6421a2b85ee4cbdad44f82cb5a4493ada4056d81090dedcc022381e66"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: php lint, php program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+    }
+  },
+  "php-eseguire-contratti-php-sempre-attivi": {
+    "assets": {
+      "Math.php": "c74b63e4e75147bf699b7b1ae2e2011ec5b71285717cbfd0fe6cec22c3f0caea",
+      "tests.php": "b795e0397a5396eb4c51629e2d202cbd2cc962c3d29a572f14f28fad639b2abc"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: php contracts execute, php lint, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+    }
+  },
+  "php-eseguire-query-pdo-sqlite-parametrizzate": {
+    "assets": {
+      "main.php": "dec898433ef09731ca534941f2aaf9c986ac4be30e59145877bae8922a5b2ed1"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: php lint, php program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+    }
+  },
+  "php-estrarre-gruppi-nominati-con-preg-match": {
+    "assets": {
+      "main.php": "abfb2bb4717c45164bd785d7a86ad57c3bb5f732a65ff1aded3453f531ff8295"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: php lint, php program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+    }
+  },
+  "php-filtrare-e-reindicizzare-un-array": {
+    "assets": {
+      "main.php": "d10374ccd37698dfec372bc7959ff1be5ad1434864230d013a3eaa37671bf370"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: php lint, php program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+    }
+  },
+  "php-gestire-json-malformato-con-eccezioni": {
+    "assets": {
+      "main.php": "b1e4e23fed67b1417e381bd701e913f300be04ddef9c2ca7f7fb20b32de61949"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: php lint, php program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+    }
+  },
+  "php-indicizzare-record-con-array-column": {
+    "assets": {
+      "main.php": "6018916c5ff65e113dd40aa0acdac5ddf962429862e2d421c34ee6cbde280388"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: php lint, php program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+    }
+  },
+  "php-inizializzare-php-cli-con-una-configurazione-esplicita": {
+    "assets": {
+      "main.php": "0906146b631437f2b6c447233ce4ba1dbd451cc17ae3061fba4693ec6debc665",
+      "development.ini": "1424cbf37ce5abdee49876f31b5954780c184d088c7765528182c9108d4b46d2"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: php lint, php program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+    }
+  },
+  "php-manipolare-una-data-senza-mutare-l-originale": {
+    "assets": {
+      "main.php": "8242d614df21d482774bd6d70feff21edbf0e563d99fa0a008c9ed16a6d51969"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: php lint, php program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+    }
+  },
+  "php-ordinare-record-con-il-comparatore-spaceship": {
+    "assets": {
+      "main.php": "9e4d3b37eaf6423640c35cb0ed3305dfc13db272f008c320acaf1248b307259e"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: php lint, php program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+    }
+  },
+  "php-produrre-risultati-lazy-con-un-generator": {
+    "assets": {
+      "main.php": "ba65574a19747c796a50865a7ab1773e60b7d19564dc3cba1c748cc4aead4a05"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: php lint, php program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+    }
+  },
+  "php-progetto-completo-rubrica-json-php": {
+    "assets": {
+      "composer.json": "ff8edbbbfb3916292a57ada23b9657bf0cf5e93435ad41b6337c4eeeb4798f1e",
+      "src/AddressBook.php": "220361911c97b3e9d00521a17b6d42979b122b349a2e19bc9652fba7be57c5c8",
+      "bin/addressbook.php": "71e81e18b7819e4a17ef5d01edaee6beae6c94d061b40f9200b8a2c93c80b094",
+      "tests/smoke.php": "1d67d1cf9110924881472be4f46712c8180060b9ce14a14586b3f77df4e5d37b",
+      "data/contacts.json": "d65ef5e607a9fd959d99d75324a5febb32a309c5450ed7927931da7ba1bddeb4",
+      "README.md": "e592b1bd5d0db9c1a26e530ff158429aa396d15731852805ab082a0354751ea5"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: JSON parse, php capstone execute, php lint, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+    }
+  },
+  "php-raggruppare-importi-per-categoria": {
+    "assets": {
+      "main.php": "8ed9d90b9458cb11b30b57e679f4dabd1444d746c6d349aa22570f02c25ec87c"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: php lint, php program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+    }
+  },
+  "php-restituire-un-endpoint-json-php-locale": {
+    "assets": {
+      "public/index.php": "ef68d59c10f2179df2e93456149eee8b0ed849edd300992bdfc595174eea10cf"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: local HTTP execute, php lint, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+    }
+  },
+  "php-ridurre-una-sequenza-con-un-accumulatore": {
+    "assets": {
+      "main.php": "f718129e1be3c64b716e7cd1d98528c680993c7dd966c34eae972178e4792160"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: php lint, php program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+    }
+  },
+  "php-selezionare-un-valore-con-match-esaustivo": {
+    "assets": {
+      "main.php": "b9bea7cb5659a9463b9bbe5e01c7a8949df31ff638c0c4f51741acef67d2a410"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: php lint, php program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+    }
+  },
+  "php-sostituire-un-file-usando-un-temporaneo-adiacente": {
+    "assets": {
+      "main.php": "fcb874e153d05a4ccc0da246b0745e0b5ddc1b4ffe44181588d26a4e08447584"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: php lint, php program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+    }
+  },
+  "php-trasformare-valori-con-array-map": {
+    "assets": {
+      "main.php": "5f157240dae21fc44c0499fa52f7138a01a68f120cea1594dd18014753605edd"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: php lint, php program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+    }
+  },
+  "php-validare-un-intero-senza-perdere-il-valore-zero": {
+    "assets": {
+      "main.php": "42945e8a4d9f6b6d7bb5117592796c75b43b13fbd76b8c32f68eaf07f3f93434"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: php lint, php program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+    }
+  },
+  "php-verificare-un-token-csrf-per-un-form-php": {
+    "assets": {
+      "public/index.php": "52e784a3270f0cb2a322c2370f28d34444076cd87807bb4905336a9d0db8c195"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: local HTTP execute, php lint, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+    }
+  },
+  "php-verificare-una-password-con-password-hash": {
+    "assets": {
+      "main.php": "e05bfb18f18827d5c70ee366ea11b5dd5ab8b63a8f2c23dd43b08c31e18f5866"
+    },
+    "verification": {
+      "status": "eseguito",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: php lint, php program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+    }
+  },
+  "dart-aggiungere-una-extension-per-validare-testo": {
+    "assets": {
+      "main.dart": "8b10f9520ab331e9cb38888c22cacaa0b2a2f209dafc3b31d70c1d992507d5f8"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "dart-analizzare-e-compilare-una-cli-dart-nativa": {
+    "assets": {
+      "main.dart": "aa975316decbd5018923edb11d2ab9daba568721ec0368d9d04b9bfadcd6e654"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "dart-applicare-un-timeout-a-una-future": {
+    "assets": {
+      "main.dart": "8aa9c14d2bab6ec81eeba07624d20f8cd988106f5f6e29972e7f5c9d1758d5d5"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "dart-attendere-risultati-concorrenti-con-future-wait": {
+    "assets": {
+      "main.dart": "1836d51f311d4de7079ae9cd9c6d3d9dc3ef02e5828a034350e616c83d21a2d5"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "dart-calcolare-differenze-fra-insiemi": {
+    "assets": {
+      "main.dart": "c9adca0b8a493f56870dadb2cd3a3aa4f7818315bce3b9db51853b667188427b"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "dart-codificare-parametri-url-con-uri": {
+    "assets": {
+      "main.dart": "893103db45fa43e79ac627160069f502e5dde70fd7d8b142c438ed5468b39b66"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "dart-convertire-un-istante-in-utc": {
+    "assets": {
+      "main.dart": "7ef35b53edf1661f423316b38a79d8f5c5442bf23f809ff358cd006d569393f0"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "dart-costruire-un-modello-immutabile-con-invarianti": {
+    "assets": {
+      "main.dart": "8a991d647a52e1ee544d74cd8eb0dca675a12bd00bfc3112db4120ef9023b348"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "dart-debuggare-dart-con-vm-service-e-vs-code": {
+    "assets": {
+      "main.dart": "62ba351b1eba7ca8fa76f88c90d4b87312c3a44c3e7b6f2a5f73a65cfb0f6c36",
+      ".vscode/launch.json": "f07657b4c2277fdd12283567dd26b3a5f80cbed8a08544911c0545291b8e417a"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: JSON parse, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "dart-definire-parametri-nominati-obbligatori": {
+    "assets": {
+      "main.dart": "fd3195e33f4d0d77a52b737852aa8a412e70c1ea2488297ef471d7f713211456"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "dart-destrutturare-un-record-posizionale": {
+    "assets": {
+      "main.dart": "4310db35d850197b1d217c998a0bf541c1cc9a621419228b7d8c5f46d538ca17"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "dart-distribuire-un-eseguibile-dart-per-lo-stesso-host": {
+    "assets": {
+      "main.dart": "544d08ab05def53644e632742fc14423c92b3fa605bda1d4cebfe8f302dc1a9b"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "dart-eseguire-contratti-dart-senza-package-test-esterni": {
+    "assets": {
+      "lib/math_core.dart": "a0b1eeb19123ac04f451b19e10ba550b8f649b870c7e7903c517ad7fe5ad9724",
+      "test/contracts.dart": "f07077601595b310b16b741055dbfd45f2af554cc1c58c310e824cc79934108b"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "dart-filtrare-elementi-con-where": {
+    "assets": {
+      "main.dart": "aeabe87af32ebfdd5b12dc3c452ce3d9153193f9f609eaf4dc7c30b307c5b8fb"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "dart-gestire-null-senza-force-unwrap-in-dart": {
+    "assets": {
+      "main.dart": "babb335f2d3bda4f5e15c3db58dfd8f8433bdea59d7715130e7049b6e0eaf069"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "dart-gestire-un-risultato-sealed-con-switch-esaustivo": {
+    "assets": {
+      "main.dart": "545be4b93c1af2877747ddd7a96e38f6a17250a30166fcbb18f6e65e8f9b81fb"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "dart-inizializzare-un-package-dart-senza-dipendenze": {
+    "assets": {
+      "pubspec.yaml": "4e7c475d70f8d791bb24069b8e4982c5df4d2a378e62b938a70c949c479593e5",
+      "lib/greeting.dart": "44f1c79da76b4ce63fd737a2a84f6bc6bc14f400ac1fcbacec26b1eac682e3c5",
+      "bin/main.dart": "7946abde74b65dfe0ad932a6ec0c5f5ef41929aeb8c02d26f867796e2e75be97"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "dart-leggere-e-scrivere-utf-8-con-dart-io": {
+    "assets": {
+      "main.dart": "4d92f39dacf21860803fff742a0cbef233f7fd7790a2aad5f3d16a4242e08548"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "dart-ordinare-record-con-piu-chiavi": {
+    "assets": {
+      "main.dart": "d03242e85c285f80b6eb54866bfc3c8c2bf0948384d908ae3439e4b643f7e1d7"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "dart-produrre-risultati-progressivi-con-uno-stream": {
+    "assets": {
+      "main.dart": "75a653c95b541a96c0c8d5fdc603fab0193e00acbcd5c4d67fc0acb6aec756a9"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "dart-progetto-completo-report-spese-dart": {
+    "assets": {
+      "pubspec.yaml": "d977fe20af5b346ae64ca086f63e82eaa5b969412bf4d6cd635a6b1a24cb6424",
+      "lib/ledger.dart": "9dd56d011beb40fd8f82dcfab1e4ef0f3d1125a8239ea3ce68b11d8c66484043",
+      "bin/ledger.dart": "97a670aeea1cf511a6d3221ccd94da2fea3de0b7935e7024dab91cf4ab3176ce",
+      "test/smoke.dart": "7fbf53a7a0f1ea274a36b7daba07289ffdf315997a8913caeef75022ab8e1a5b",
+      "data/expenses.json": "d8e9473866f007308263fdfa6fd540daf87d3363ddf18ca4765c8f491f4e8de6",
+      "README.md": "b30ee61ffa42c2f370c3fbcb2bf104abdb68879f297ef72f8a2ca82d37b1a4d5"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: JSON parse, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "dart-raggruppare-elementi-con-putifabsent": {
+    "assets": {
+      "main.dart": "2275b23f2fb3f5b850edd0ce3e97b7e5a0ed8642ebb121d5fadf4576728d59b7"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "dart-spostare-un-calcolo-cpu-in-un-isolate": {
+    "assets": {
+      "main.dart": "584f60f9a3179446c7e7ea32d7b24931c00df4f5b442c38dbca9d6b60fdb7358"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "dart-trasformare-una-lista-con-map-e-tolist": {
+    "assets": {
+      "main.dart": "7a97e968d477a172682e36170e9fb8b6a248bd15d4b77b0b35a8c2f6f558f8fe"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  },
+  "dart-validare-json-con-un-map-pattern-tipizzato": {
+    "assets": {
+      "main.dart": "3f1fed48e6c105bfea0909d074b6532dadcef8c467560cbf9bea9cbf1701b5e7"
+    },
+    "verification": {
+      "status": "statico",
+      "date": "2026-10-29",
+      "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+    }
+  }
+}

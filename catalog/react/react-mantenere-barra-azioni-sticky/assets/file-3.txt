@@ -1,0 +1,3 @@
+import React, {useState,useEffect,useMemo,useRef,useReducer,useId,useContext,createContext,useCallback,useLayoutEffect,useTransition,useDeferredValue,useSyncExternalStore,useImperativeHandle,forwardRef,memo,lazy,Suspense,Component} from 'react';
+import {createPortal} from 'react-dom';
+export default function App(){return <><header style={{position:'sticky',top:0,background:'white',padding:10}}><button>Salva</button></header><div style={{height:'150vh'}}>Scorri per provare la barra</div></>}

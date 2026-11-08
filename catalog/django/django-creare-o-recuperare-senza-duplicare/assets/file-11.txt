@@ -1,0 +1,3 @@
+from notes.models import Note
+note,created=Note.objects.get_or_create(title='Nuova',defaults={'body':'Esempio'})
+print(note.title,created)

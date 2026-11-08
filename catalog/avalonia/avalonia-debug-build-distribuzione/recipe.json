@@ -1,0 +1,123 @@
+{
+  "id": "avalonia-debug-build-distribuzione",
+  "title": "Debug e pubblicazione desktop Avalonia",
+  "summary": "Osservare nel debugger il calcolo richiamato dalla UI e pubblicare una cartella Windows x64 con i runtime necessari.",
+  "stack": "avalonia",
+  "group": "Desktop e GUI",
+  "section": "Debug",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows"
+  ],
+  "ide": [
+    "VS Code",
+    "Visual Studio"
+  ],
+  "versions": ".NET 8; Avalonia 11.3.0",
+  "prerequisites": ".NET 8 SDK e runtime desktop del proprio sistema; nessun template richiesto.",
+  "tags": [
+    "Avalonia",
+    "debug",
+    "coreclr",
+    "breakpoint",
+    "publish",
+    "self-contained",
+    "Windows"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "Program.cs",
+      "language": "csharp",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "bbdf3812ca459d4a17e80eb9928159fa6d57ad1db5fb9cba1e467eea0782f80a"
+    },
+    {
+      "id": "file-1",
+      "path": "{{project_name}}.csproj",
+      "language": "xml",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "aaed5b2b8fb8b982f89765c01cf1a65a93e952232603977aa50f6d6d5c8305d7"
+    },
+    {
+      "id": "file-2",
+      "path": "Invoice.cs",
+      "language": "csharp",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "b3faaa9d4929baf61261c0f37fe8123c11032d13ae1e771d010dd967c2323cf4"
+    },
+    {
+      "id": "file-3",
+      "path": ".vscode/tasks.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "7c205b543283d3c1d757e20469adf3d92b4eaabfd7f1ea3d9189952f80a1d4d7"
+    },
+    {
+      "id": "file-4",
+      "path": ".vscode/launch.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "1d0eb71469503a87e37c29d4c01024a4fdb5bb8e58263fa4d47cc6cb2a2fdb55"
+    },
+    {
+      "id": "command-0",
+      "path": "Restore e avvio locale",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "a2ccaccad36d33b641afb247c07c4bf7293629b692cee62fa49ba63756411fe0"
+    },
+    {
+      "id": "command-1",
+      "path": "Pubblicazione in cartella",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-1.txt",
+      "sha256": "6bd8888eeaeb6eedfc54bcff2ae81269cd3995258209ff7b2601cf09267165d8"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "project_name",
+      "label": "Nome dell'applicazione",
+      "type": "identifier",
+      "default": "RecipeDesktop",
+      "required": true
+    }
+  ],
+  "related": [
+    "avalonia-background",
+    "avalonia-border",
+    "avalonia-busy"
+  ],
+  "expected": "Il pulsante Calcola mostra 19.75; il debugger raggiunge Invoice.Total e il publish prepara una cartella x64 completa.",
+  "errors": [
+    "Breakpoint vuoto: usare Debug, il percorso program corrispondente al framework/RID e l'estensione C# di VS Code.",
+    "App presente solo sulla macchina di sviluppo: controllare le opzioni self-contained e consegnare tutta la directory publish."
+  ],
+  "sources": [
+    "https://docs.avaloniaui.net/docs/get-started",
+    "https://docs.avaloniaui.net/docs/deployment/windows"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "details": "Controlli statici sui sorgenti: AST Python, parser PowerShell/Bash dove disponibili, node --check per JavaScript, JSON e XML secondo i file presenti. Nessuna compilazione C#/XAML/C++ né esecuzione Docker/CI/packaging attestata. Report: reports/desktop-tools-qa.json.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

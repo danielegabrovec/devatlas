@@ -1,0 +1,12 @@
+{
+  "name": "ricetta-electron",
+  "version": "1.0.0",
+  "private": true,
+  "main": "main.cjs",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "45.1.0"
+  }
+}

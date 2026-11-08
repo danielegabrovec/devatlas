@@ -1,0 +1,11 @@
+{
+  "identifier": "main-capability",
+  "description": "Permessi della sola finestra locale main",
+  "windows": [
+    "main"
+  ],
+  "permissions": [
+    "core:default",
+    "core:window:allow-set-size"
+  ]
+}

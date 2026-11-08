@@ -1,0 +1,110 @@
+from catalog_support import Book
+from web_support import add
+
+ROWS=[
+("Leggere un file UTF8 con promise","import{readFile,writeFile}from'node:fs/promises';await writeFile('demo.txt','Ciao');console.log(await readFile('demo.txt','utf8'));"),
+("Scrivere JSON formattato","import{writeFile}from'node:fs/promises';await writeFile('config.json',JSON.stringify({theme:'dark'},null,2));console.log('config.json scritto');"),
+("Aggiungere una riga senza sovrascrivere","import{appendFile}from'node:fs/promises';await appendFile('events.log','avvio\\n');console.log('riga aggiunta');"),
+("Creare cartelle annidate","import{mkdir}from'node:fs/promises';console.log(await mkdir('output/reports',{recursive:true}));"),
+("Elencare cartelle e file con tipo","import{readdir}from'node:fs/promises';for(const e of await readdir('.',{withFileTypes:true}))console.log(e.name,e.isDirectory());"),
+("Verificare esistenza gestendo ENOENT","import{access}from'node:fs/promises';try{await access('missing.txt');console.log('presente')}catch(e){if(e.code==='ENOENT')console.log('assente');else throw e}"),
+("Leggere dimensione e data file","import{stat}from'node:fs/promises';const s=await stat(import.meta.filename);console.log(s.size,s.mtime.toISOString());"),
+("Copiare un file in esclusiva","import{copyFile,constants}from'node:fs/promises';try{await copyFile(import.meta.filename,'copy.mjs',constants.COPYFILE_EXCL);console.log('copiato')}catch(e){console.log(e.code)}"),
+("Rinominare un file locale","import{writeFile,rename}from'node:fs/promises';await writeFile('before.txt','demo');await rename('before.txt','after.txt');console.log('after.txt');"),
+("Creare una directory temporanea","import{mkdtemp,rm}from'node:fs/promises';import{tmpdir}from'node:os';import{join}from'node:path';const p=await mkdtemp(join(tmpdir(),'atlas-'));console.log(p);await rm(p,{recursive:true});"),
+("Leggere un file per righe","import{writeFile}from'node:fs/promises';import{createReadStream}from'node:fs';import{createInterface}from'node:readline';await writeFile('lines.txt','uno\\ndue\\n');for await(const line of createInterface({input:createReadStream('lines.txt'),crlfDelay:Infinity}))console.log(line);"),
+("Trasmettere un file con pipeline","import{pipeline}from'node:stream/promises';import{createReadStream,createWriteStream}from'node:fs';await pipeline(createReadStream(import.meta.filename),createWriteStream('backup.mjs'));console.log('pipeline conclusa');"),
+("Comprimere un file con gzip","import{pipeline}from'node:stream/promises';import{createGzip}from'node:zlib';import{createReadStream,createWriteStream}from'node:fs';await pipeline(createReadStream(import.meta.filename),createGzip(),createWriteStream('source.gz'));"),
+("Decomprimere un buffer gzip","import{gzipSync,gunzipSync}from'node:zlib';const b=gzipSync('contenuto');console.log(gunzipSync(b).toString('utf8'));"),
+("Unire percorsi in modo portabile","import{join,resolve,extname,basename}from'node:path';console.log(join('data','report.csv'),resolve('.'),extname('a.csv'),basename('a.csv','.csv'));"),
+("Convertire URL file in percorso","import{fileURLToPath,pathToFileURL}from'node:url';console.log(fileURLToPath(import.meta.url));console.log(pathToFileURL(process.cwd()).href);"),
+("Rifiutare path traversal","import{resolve,relative,isAbsolute}from'node:path';const base=resolve('public');const target=resolve(base,'../secret');const rel=relative(base,target);console.log(!(rel==='..'||rel.startsWith('..'+(process.platform==='win32'?'\\\\':'/'))||isAbsolute(rel)));"),
+("Analizzare argomenti CLI tipizzati","import{parseArgs}from'node:util';const{values}=parseArgs({options:{verbose:{type:'boolean'},name:{type:'string',default:'Ada'}}});console.log(values);"),
+("Leggere variabili ambiente con default","const port=Number(process.env.PORT??3000);if(!Number.isInteger(port)||port<1||port>65535)throw Error('PORT invalida');console.log(port);"),
+("Caricare configurazione da file env","import{writeFile}from'node:fs/promises';await writeFile('demo.env','ATLAS_MODE=local\\n');process.loadEnvFile('demo.env');console.log(process.env.ATLAS_MODE);"),
+("Rilevare runtime e piattaforma","console.log({node:process.version,platform:process.platform,arch:process.arch,versions:process.versions});"),
+("Misurare memoria usata dal processo","const m=process.memoryUsage();console.log({heapMB:m.heapUsed/1024**2,rssMB:m.rss/1024**2});"),
+("Misurare durata con performance","import{performance}from'node:perf_hooks';const t=performance.now();let sum=0;for(let i=0;i<100000;i++)sum+=i;console.log(sum,performance.now()-t);"),
+("Ispezionare oggetti circolari","import{inspect}from'node:util';const a={name:'radice'};a.self=a;console.log(inspect(a,{depth:2,colors:false}));"),
+("Convertire callback in promise","import{promisify}from'node:util';import{gzip}from'node:zlib';const zip=promisify(gzip);console.log((await zip('contenuto')).length);"),
+("Generare UUID casuale","import{randomUUID}from'node:crypto';console.log(randomUUID());"),
+("Calcolare SHA256 di un contenuto","import{createHash}from'node:crypto';console.log(createHash('sha256').update('contenuto').digest('hex'));"),
+("Firmare contenuti con HMAC","import{createHmac}from'node:crypto';console.log(createHmac('sha256','chiave-demo-non-produzione').update('messaggio').digest('hex'));"),
+("Confrontare firme in tempo costante","import{timingSafeEqual}from'node:crypto';const a=Buffer.from('abcd','hex'),b=Buffer.from('abce','hex');console.log(a.length===b.length&&timingSafeEqual(a,b));"),
+("Derivare una chiave con scrypt","import{scryptSync,randomBytes}from'node:crypto';const salt=randomBytes(16);console.log(salt.toString('hex'),scryptSync('password-demo',salt,32).toString('hex'));"),
+("Codificare testo in base64","const b=Buffer.from('Ciao','utf8');console.log(b.toString('base64'),Buffer.from(b.toString('base64'),'base64').toString('utf8'));"),
+("Leggere un intero da dati binari","const b=Buffer.alloc(4);b.writeUInt32LE(123456);console.log(b.readUInt32LE());"),
+("Decodificare UTF8 diviso tra chunk","import{StringDecoder}from'node:string_decoder';const d=new StringDecoder('utf8');const b=Buffer.from('è');console.log(d.write(b.subarray(0,1))+d.end(b.subarray(1)));"),
+("Costruire URL con parametri sicuri","const u=new URL('https://example.test/search');u.searchParams.set('q','C++ e C#');console.log(u.href);"),
+("Gestire parametri ripetuti in URL","const u=new URL('https://example.test/?tag=sql&tag=python');console.log(u.searchParams.getAll('tag'));"),
+("Eseguire richiesta HTTP con timeout","const response=await fetch('https://example.com',{signal:AbortSignal.timeout(3000)});if(!response.ok)throw Error(String(response.status));console.log(response.status);"),
+("Annullare una promise timer","import{setTimeout}from'node:timers/promises';const c=new AbortController();const p=setTimeout(5000,null,{signal:c.signal});c.abort();try{await p}catch(e){console.log(e.name)}"),
+("Ritardare senza bloccare event loop","import{setTimeout}from'node:timers/promises';await setTimeout(100);console.log('ripreso');"),
+("Emettere e ascoltare un evento","import{EventEmitter}from'node:events';const bus=new EventEmitter();bus.on('saved',id=>console.log('salvato',id));bus.emit('saved',7);"),
+("Attendere un evento una sola volta","import{EventEmitter,once}from'node:events';const bus=new EventEmitter();const p=once(bus,'ready');queueMicrotask(()=>bus.emit('ready',42));console.log(await p);"),
+("Rimuovere un listener per evitare leak","import{EventEmitter}from'node:events';const bus=new EventEmitter();const f=()=>console.log('tick');bus.on('tick',f);bus.off('tick',f);console.log(bus.listenerCount('tick'));"),
+("Propagare contesto asincrono","import{AsyncLocalStorage}from'node:async_hooks';const ctx=new AsyncLocalStorage();await ctx.run({id:'req-1'},async()=>{await Promise.resolve();console.log(ctx.getStore())});"),
+("Eseguire processo senza shell","import{execFile}from'node:child_process';execFile(process.execPath,['--version'],(e,out)=>{if(e)throw e;console.log(out.trim())});"),
+("Leggere stdout da un processo figlio","import{spawn}from'node:child_process';const p=spawn(process.execPath,['-e','console.log(21*2)']);p.stdout.pipe(process.stdout);p.on('error',console.error);"),
+("Calcolare in un worker thread","import{Worker}from'node:worker_threads';const worker=new Worker(\"const{parentPort}=require('node:worker_threads');parentPort.postMessage(6*7)\",{eval:true});worker.on('message',console.log);worker.on('error',console.error);"),
+("Condividere un contatore atomico","const b=new SharedArrayBuffer(4),v=new Int32Array(b);Atomics.add(v,0,3);console.log(Atomics.load(v,0));"),
+("Creare uno stream da un iterable","import{Readable}from'node:stream';for await(const c of Readable.from(['uno','due']))console.log(c);"),
+("Trasformare chunk rispettando backpressure","import{Readable,Transform,Writable}from'node:stream';import{pipeline}from'node:stream/promises';await pipeline(Readable.from(['uno','due']),new Transform({transform(c,e,cb){cb(null,c.toString().toUpperCase())}}),new Writable({write(c,e,cb){console.log(c.toString());cb()}}));"),
+("Consumare uno stream Web","const stream=new ReadableStream({start(c){c.enqueue('dato');c.close()}});for await(const value of stream)console.log(value);"),
+("Creare risposta JSON HTTP locale","import{createServer}from'node:http';const s=createServer((q,r)=>{r.writeHead(200,{'content-type':'application/json'});r.end(JSON.stringify({ok:true}))});s.listen(3000,'127.0.0.1',()=>console.log('http://127.0.0.1:3000; Ctrl+C per chiudere'));"),
+("Restituire errore HTTP 404","import{createServer}from'node:http';createServer((q,r)=>{r.writeHead(404,{'content-type':'application/json'});r.end(JSON.stringify({error:'not found'}))}).listen(3000,'127.0.0.1');"),
+("Limitare dimensione body HTTP","import{createServer}from'node:http';createServer(async(q,r)=>{let size=0;for await(const c of q){size+=c.length;if(size>1024){r.writeHead(413);r.end('Troppo grande');return}}r.end(String(size))}).listen(3000,'127.0.0.1');"),
+("Gestire errori JSON del client","import{createServer}from'node:http';createServer(async(q,r)=>{const chunks=[];let size=0;for await(const c of q){size+=c.length;if(size>1024){r.writeHead(413);r.end();return}chunks.push(c)}const body=Buffer.concat(chunks).toString('utf8');try{const value=JSON.parse(body);r.end(JSON.stringify(value))}catch{r.writeHead(400);r.end('JSON invalido')}}).listen(3000,'127.0.0.1');"),
+("Impostare cache HTTP ETag","import{createServer}from'node:http';createServer((q,r)=>{const tag='\"demo-v1\"';if(q.headers['if-none-match']===tag){r.writeHead(304);r.end();return}r.writeHead(200,{'ETag':tag,'Cache-Control':'max-age=60'});r.end('demo')}).listen(3000,'127.0.0.1');"),
+("Servire download con nome suggerito","import{createServer}from'node:http';createServer((q,r)=>{r.writeHead(200,{'content-type':'text/csv','content-disposition':'attachment; filename=report.csv'});r.end('name,total\\nAda,42\\n')}).listen(3000,'127.0.0.1');"),
+("Eseguire redirect HTTP relativo","import{createServer}from'node:http';createServer((q,r)=>{if(q.url==='/old'){r.writeHead(308,{Location:'/new'});r.end()}else r.end('Nuova pagina')}).listen(3000,'127.0.0.1');"),
+("Gestire CORS per una origine consentita","import{createServer}from'node:http';createServer((q,r)=>{if(q.headers.origin==='http://localhost:5173')r.setHeader('Access-Control-Allow-Origin','http://localhost:5173');r.setHeader('Vary','Origin');r.end('demo')}).listen(3000,'127.0.0.1');"),
+("Chiudere server con segnale SIGINT","import{createServer}from'node:http';const s=createServer((q,r)=>r.end('ok'));s.listen(3000,'127.0.0.1');process.once('SIGINT',()=>s.close(()=>console.log('server chiuso')));"),
+("Scrivere cookie HTTP con flag","import{createServer}from'node:http';createServer((q,r)=>{r.setHeader('Set-Cookie','theme=dark; Path=/; HttpOnly; SameSite=Lax');r.end('cookie dimostrativo locale')}).listen(3000,'127.0.0.1');"),
+("Pubblicare un endpoint health","import{createServer}from'node:http';createServer((q,r)=>{r.writeHead(q.url==='/health'?200:404,{'content-type':'application/json'});r.end(JSON.stringify({uptime:process.uptime()}))}).listen(3000,'127.0.0.1');"),
+("Misurare tempo di una richiesta","import{createServer}from'node:http';createServer((q,r)=>{const start=performance.now();r.on('finish',()=>console.log(q.method,q.url,performance.now()-start));r.end('ok')}).listen(3000,'127.0.0.1');"),
+("Convertire DNS localhost in indirizzi","import{lookup}from'node:dns/promises';console.log(await lookup('localhost',{all:true}));"),
+("Ispezionare interfacce di rete","import{networkInterfaces}from'node:os';console.log(networkInterfaces());"),
+("Leggere parallelismo CPU disponibile","import{availableParallelism}from'node:os';console.log(availableParallelism());"),
+("Riconoscere eccezioni con codice causa","try{throw new Error('Importazione fallita',{cause:new Error('Formato invalido')})}catch(e){console.error(e.message,e.cause.message)}"),
+("Impostare exit code senza uscita brusca","console.error('Dati di ingresso mancanti');process.exitCode=2;"),
+("Scrivere log strutturati JSON","const log=(level,event,data={})=>console.log(JSON.stringify({time:new Date().toISOString(),level,event,...data}));log('info','saved',{id:7});"),
+("Usare assert per invarianti","import assert from'node:assert/strict';assert.equal(2+2,4);assert.deepEqual([1,2],[1,2]);console.log('assert superati');"),
+("Testare una funzione con node test","import test from'node:test';import assert from'node:assert/strict';test('somma',()=>{assert.equal([1,2,3].reduce((a,b)=>a+b,0),6)});"),
+("Testare un errore asincrono","import test from'node:test';import assert from'node:assert/strict';test('rifiuto',async()=>{await assert.rejects(async()=>{throw Error('negato')},/negato/)});"),
+("Simulare funzione con mock del test runner","import test from'node:test';import assert from'node:assert/strict';test('callback',t=>{const f=t.mock.fn();f(7);assert.equal(f.mock.calls[0].arguments[0],7)});"),
+("Leggere metadati di un modulo ESM","console.log({url:import.meta.url,filename:import.meta.filename,dirname:import.meta.dirname});"),
+("Caricare un modulo in modo dinamico","const{basename}=await import('node:path');console.log(basename('/data/report.csv'));"),
+("Usare CommonJS da ESM","import{createRequire}from'node:module';const require=createRequire(import.meta.url);console.log(typeof require('node:path').join);"),
+("Serializzare dati con V8 preservando Map","import{serialize,deserialize}from'node:v8';const b=serialize(new Map([['id',7]]));console.log(deserialize(b).get('id'));"),
+("Analizzare una traccia stack","function load(){throw Error('record mancante')}try{load()}catch(e){console.log(e.stack)}"),
+("Interrompere l'esecuzione nel debugger","const price=10,qty=3;debugger;console.log(price*qty);"),
+("Monitorare ritardo dell'event loop","import{monitorEventLoopDelay}from'node:perf_hooks';import{setTimeout}from'node:timers/promises';const h=monitorEventLoopDelay({resolution:10});h.enable();await setTimeout(50);h.disable();console.log(h.mean/1e6);"),
+("Pubblicare diagnostica disaccoppiata","import{channel}from'node:diagnostics_channel';const c=channel('atlas.saved');c.subscribe(msg=>console.log(msg));c.publish({id:1});"),
+("Codificare e decodificare testo Web","const b=new TextEncoder().encode('Ciao');console.log(new TextDecoder('utf-8',{fatal:true}).decode(b));"),
+("Validare un indirizzo IP","import{isIP}from'node:net';console.log(isIP('127.0.0.1'),isIP('::1'),isIP('999.1.1.1'));"),
+("Gestire risultati indipendenti con allSettled","console.log(await Promise.allSettled([Promise.resolve(1),Promise.reject(Error('demo'))]));"),
+("Limitare concorrenza con coda worker","const jobs=[1,2,3,4],out=[];let next=0;await Promise.all(Array.from({length:2},async()=>{while(next<jobs.length){const id=next++;out[id]=await Promise.resolve(jobs[id]*2)}}));console.log(out);"),
+("Implementare retry con backoff limitato","import{setTimeout}from'node:timers/promises';let calls=0;async function operation(){if(++calls<3)throw Error('temporaneo');return'ok'}for(let n=0;n<3;n++){try{console.log(await operation());break}catch(e){if(n===2)throw e;await setTimeout(20*2**n)}}"),
+("Normalizzare un URL prima del confronto","const u=new URL('HTTPS://EXAMPLE.TEST:443/a/../b#anchor');u.hash='';console.log(u.href);"),
+("Accumulare uno stream con limite","import{Readable}from'node:stream';const chunks=[];let bytes=0;for await(const c of Readable.from([Buffer.from('abc'),Buffer.from('def')])){bytes+=c.length;if(bytes>1024)throw Error('limite');chunks.push(c)}console.log(Buffer.concat(chunks).toString());"),
+("Creare un errore di dominio con proprietà","class ValidationError extends Error{constructor(field){super('Campo invalido: '+field);this.name='ValidationError';this.field=field}}try{throw new ValidationError('email')}catch(e){console.log(e.name,e.field)}"),
+]
+
+def build_all():
+    b=Book('nodejs','Node.js 24 LTS+; ESM',['https://nodejs.org/docs/latest-v24.x/api/'],'Node.js24+ nel PATH. Esempi server: porta3000 libera, browser locale; Ctrl+C arresta. Le richieste example.com richiedono rete.')
+    for title,code in ROWS:
+        add(b,title,{'main.mjs':code},commands='node main.mjs',note='Il file main.mjs è un programma ESM autonomo. '+('Il server ascolta solo su127.0.0.1:3000: aprire il browser o usare curl; interrompere con Ctrl+C.' if '.listen(' in code else 'Avviarlo nella cartella esportata; gli eventuali file vengono creati soltanto in questa cartella.'))
+    projects=[
+    ('Progetto: CLI analisi di un file testo',{'src/count.mjs':"export function count(text){return{lines:text.split(/\\r?\\n/).filter(Boolean).length,words:text.trim()?text.trim().split(/\\s+/).length:0}}",'src/main.mjs':"import{readFile}from'node:fs/promises';import{count}from'./count.mjs';const file=process.argv[2];if(!file){console.error('Uso: node src/main.mjs sample.txt');process.exitCode=2}else console.log(count(await readFile(file,'utf8')));",'test/count.test.mjs':"import test from'node:test';import assert from'node:assert/strict';import{count}from'../src/count.mjs';test('due righe',()=>assert.deepEqual(count('uno due\\ntre'),{lines:2,words:3}));",'sample.txt':'uno due\ntre','package.json':'{"name":"text-counter","private":true,"type":"module","scripts":{"test":"node --test"}}'},'node --test\nnode src/main.mjs sample.txt','Output:2righe,3parole; node--test controlla la funzione pura.'),
+    ('Progetto: API locale catalogo prodotti',{'src/products.mjs':"export const products=[{id:1,name:'Tastiera',price:50},{id:2,name:'Mouse',price:20}];export const find=id=>products.find(p=>p.id===id);",'src/server.mjs':"import{createServer}from'node:http';import{products,find}from'./products.mjs';const s=createServer((q,r)=>{const u=new URL(q.url,'http://localhost');const id=/^\\/products\\/(\\d+)$/.exec(u.pathname);const data=u.pathname==='/products'?products:id?find(Number(id[1])):null;r.writeHead(data?200:404,{'content-type':'application/json'});r.end(JSON.stringify(data??{error:'not found'}))});s.listen(3000,'127.0.0.1');process.once('SIGINT',()=>s.close());",'test/products.test.mjs':"import test from'node:test';import assert from'node:assert/strict';import{find}from'../src/products.mjs';test('id esistente',()=>assert.equal(find(1).name,'Tastiera'));test('id assente',()=>assert.equal(find(9),undefined));",'package.json':'{"name":"products-api","private":true,"type":"module","scripts":{"start":"node src/server.mjs","test":"node --test"}}'},'npm test\nnpm start','GET/products restituisce2prodotti; GET/products/9 risponde404.'),
+    ('Progetto: pipeline di importazione NDJSON',{'src/import.mjs':"export function parse(line){const x=JSON.parse(line);if(typeof x.name!=='string'||!Number.isFinite(x.total))throw Error('record invalido');return x}",'src/main.mjs':"import{createReadStream}from'node:fs';import{createInterface}from'node:readline';import{parse}from'./import.mjs';let total=0,n=0;for await(const line of createInterface({input:createReadStream('sample.ndjson'),crlfDelay:Infinity})){if(!line.trim())continue;const row=parse(line);total+=row.total;n++}console.log({records:n,total});",'sample.ndjson':'{"name":"Ada","total":10}\n{"name":"Grace","total":20}','test/import.test.mjs':"import test from'node:test';import assert from'node:assert/strict';import{parse}from'../src/import.mjs';test('rifiuta importo',()=>assert.throws(()=>parse('{\"name\":\"A\",\"total\":\"x\"}')));",'package.json':'{"name":"ndjson-import","private":true,"type":"module","scripts":{"start":"node src/main.mjs","test":"node --test"}}'},'npm test\nnpm start','Due record validi producono totale30; il test copre record invalido.')]
+    for title,files,command,note in projects:
+        files['README.md']='# '+title+'\n'+note+'\nNode24+. Eseguire i comandi dalla radice. Nessuna dipendenza esterna. Dati solo didattici.'
+        add(b,title,files,commands=command,note=note,expected=note,project=True,section='Progetti completi')
+    from web_lifecycle import apply
+    apply(b)
+    assert len(b.recipes)==90,len(b.recipes)
+    b.save()
+
+if __name__=='__main__':build_all()

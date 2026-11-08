@@ -1,0 +1,4 @@
+function* range(start, end) {
+  for (let value = start; value < end; value++) yield value;
+}
+console.log([...range(2, 5)]);

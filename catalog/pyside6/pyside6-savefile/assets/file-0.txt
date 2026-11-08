@@ -1,0 +1,25 @@
+import sys, json, sqlite3, tempfile, logging
+from pathlib import Path
+from PySide6.QtCore import *
+from PySide6.QtGui import *
+from PySide6.QtWidgets import *
+
+def build(root, layout):
+    folder = Path(tempfile.mkdtemp(prefix="qt-save-"))
+    path = folder / "documento.txt"
+    file = QSaveFile(str(path))
+    ok = file.open(QIODevice.OpenModeFlag.WriteOnly)
+    if ok:
+        file.write("Documento completo\n".encode("utf-8"))
+        ok = file.commit()
+    layout.addWidget(QLabel(str(path) if ok else file.errorString()))
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    window = QWidget()
+    window.setWindowTitle("Ricetta Qt")
+    window.resize(720, 480)
+    layout = QVBoxLayout(window)
+    build(window, layout)
+    window.show()
+    sys.exit(app.exec())

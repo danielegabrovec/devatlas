@@ -1,0 +1,1 @@
+import {Injectable,signal} from '@angular/core';@Injectable({providedIn:'root'})export class CounterService{value=signal(0);increment(){this.value.update(v=>v+1);}}

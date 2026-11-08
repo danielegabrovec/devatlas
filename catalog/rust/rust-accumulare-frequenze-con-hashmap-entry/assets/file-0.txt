@@ -1,0 +1,4 @@
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+let mut counts=std::collections::HashMap::new();for word in ["rosso","blu","rosso"]{*counts.entry(word).or_insert(0)+=1;}println!("{}",counts["rosso"]);
+Ok(())
+}

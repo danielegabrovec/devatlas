@@ -1,0 +1,1 @@
+*{box-sizing:border-box}body{font:16px/1.5 system-ui;margin:2rem;color:#172033}button,input,select,textarea{font:inherit;margin:.3rem;padding:.5rem}label{display:block}a{color:#075ea8}:root{color-scheme:light dark;--bg:#f8fafc;--fg:#172033}body{background:var(--bg);color:var(--fg)}@media(prefers-color-scheme:dark){:root{--bg:#111827;--fg:#e5e7eb}}

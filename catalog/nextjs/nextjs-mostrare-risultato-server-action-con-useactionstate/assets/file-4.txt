@@ -1,0 +1,1 @@
+'use server';export async function validate(previous,form){const name=String(form.get('name')??'').trim();return name?{message:'Ciao '+name}:{message:'Nome richiesto'}}

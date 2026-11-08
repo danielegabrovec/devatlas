@@ -1,0 +1,15 @@
+import tempfile
+import unittest
+from pathlib import Path
+from inventory import Inventory
+class InventoryTests(unittest.TestCase):
+    def test_persistence(self):
+        with tempfile.TemporaryDirectory() as root:
+            path = Path(root) / "items.json"
+            Inventory(path).add("viti", 3)
+            self.assertEqual(Inventory(path).items(), [("viti", 3)])
+    def test_validation(self):
+        with self.assertRaises(ValueError):
+            Inventory("nonexistent-inventory-demo.json").add("", 0)
+if __name__ == "__main__":
+    unittest.main()

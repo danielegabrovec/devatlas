@@ -1,0 +1,1 @@
+public class Main{public static void main(String[]args){Inventory inventory=new Inventory();inventory.add("ISBN-1","Programmare Java");System.out.println(inventory.find("ISBN-1").orElse("assente"));}}

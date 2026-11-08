@@ -1,0 +1,12 @@
+using System.Text;
+using System.Text.Json;
+using System.Diagnostics;
+using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.RateLimiting;
+using System.Threading.RateLimiting;
+var builder=WebApplication.CreateBuilder(args);
+builder.WebHost.ConfigureKestrel(o=>o.Limits.MaxRequestBodySize=1048576);
+var app=builder.Build();
+app.MapPost("/body",async(HttpRequest r)=>{using var reader=new StreamReader(r.Body);var text=await reader.ReadToEndAsync();return new{characters=text.Length};});
+app.Run();

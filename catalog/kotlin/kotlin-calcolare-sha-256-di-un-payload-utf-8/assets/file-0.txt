@@ -1,0 +1,6 @@
+import java.security.MessageDigest
+
+fun main() {
+val digest = MessageDigest.getInstance("SHA-256").digest("abc".toByteArray(Charsets.UTF_8))
+println(digest.joinToString("") { "%02x".format(it.toInt() and 0xff) })
+}

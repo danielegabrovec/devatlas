@@ -1,0 +1,15 @@
+using System;
+using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Collections.ObjectModel;
+using Microsoft.Maui.Controls;
+using Microsoft.Maui.Graphics;
+using Microsoft.Maui.ApplicationModel.DataTransfer;
+using Microsoft.Maui.Storage;
+namespace RecipeApp;
+public class MainPage:ContentPage {
+ public MainPage(){ Title="Ricetta MAUI"; var panel=new VerticalStackLayout{Spacing=12,Padding=20};
+var toggle=new Switch(); var label=new Label(); toggle.Toggled+=(_,e)=>label.Text=$"Notifiche: {e.Value}"; panel.Children.Add(toggle); panel.Children.Add(label);
+ Content=new ScrollView{Content=panel}; }
+}

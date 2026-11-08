@@ -1,0 +1,1 @@
+import{refresh}from'./actions';export default function Page(){return <form action={refresh}><button>Rivalida catalogo</button></form>}

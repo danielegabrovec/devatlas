@@ -1,0 +1,3 @@
+import React, {useState,useEffect,useMemo,useRef,useReducer,useId,useContext,createContext,useCallback,useLayoutEffect,useTransition,useDeferredValue,useSyncExternalStore,useImperativeHandle,forwardRef,memo,lazy,Suspense,Component} from 'react';
+import {createPortal} from 'react-dom';
+export default function App(){const[n,set]=useState(0);const prev=useRef(null);useEffect(()=>{prev.current=n},[n]);return <><button onClick={()=>set(n+1)}>Avanti</button><p>Ora:{n};prima:{prev.current??'nessuno'}</p></>}

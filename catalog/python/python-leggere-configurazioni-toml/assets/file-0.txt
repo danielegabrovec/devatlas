@@ -1,0 +1,3 @@
+import tomllib
+config = tomllib.loads('[app]\nname="Catalogo"\nport=8080\n')
+print(config["app"]["name"], config["app"]["port"])

@@ -1,0 +1,16 @@
+using System;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Collections.ObjectModel;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
+namespace RecipeApp;
+public class MainWindow:Window {
+ public MainWindow(){Title="Ricetta WinUI"; var panel=new StackPanel{Spacing=12,Margin=new Thickness(20)};
+var rows=new ObservableCollection<string>(); var edit=new TextBox{PlaceholderText="Nota"}; var list=new ListView{ItemsSource=rows}; var button=new Button{Content="Aggiungi"}; var status=new TextBlock();
+var dir=System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),"RecipeWinUINotes"); System.IO.Directory.CreateDirectory(dir); var path=System.IO.Path.Combine(dir,"notes.json");
+try{if(System.IO.File.Exists(path)){var saved=System.Text.Json.JsonSerializer.Deserialize<string[]>(System.IO.File.ReadAllText(path)) ?? Array.Empty<string>(); foreach(var value in saved) rows.Add(value);}}catch(Exception ex){status.Text=ex.Message;}
+button.Click+=async (_,_)=>{var text=edit.Text.Trim(); if(string.IsNullOrEmpty(text)) return; button.IsEnabled=false; try{var next=rows.Append(text).ToArray(); var temp=path+".tmp"; await System.IO.File.WriteAllTextAsync(temp,System.Text.Json.JsonSerializer.Serialize(next)); System.IO.File.Move(temp,path,true); rows.Add(text); edit.Text=""; status.Text="Salvato";}catch(Exception ex){status.Text=ex.Message;}finally{button.IsEnabled=true;}};
+panel.Children.Add(edit); panel.Children.Add(button); panel.Children.Add(list); panel.Children.Add(status);
+ Content=panel; }
+}

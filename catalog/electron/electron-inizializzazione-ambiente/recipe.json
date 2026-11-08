@@ -1,0 +1,104 @@
+{
+  "id": "electron-inizializzazione-ambiente",
+  "title": "Inizializzare Electron con renderer isolato",
+  "summary": "Preparare Node/npm, installare il runtime Electron dichiarato e avviare una prima finestra senza accesso Node nel renderer.",
+  "stack": "electron",
+  "group": "Desktop e GUI",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows"
+  ],
+  "ide": [
+    "VS Code",
+    "Visual Studio"
+  ],
+  "versions": "Electron 45.1.0; Node.js 24 LTS per npm",
+  "prerequisites": "Node.js 24 con npm; ambiente desktop. L'installazione scarica il runtime Electron. Nessuna esecuzione attestata su Linux/macOS.",
+  "tags": [
+    "Electron",
+    "npm",
+    "initialize",
+    "main process",
+    "renderer",
+    "contextIsolation"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "package.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "c5d0535fa6581e5e75e70c6aefbe1b1f43809cf5907f0a7f67ad18dee3915911"
+    },
+    {
+      "id": "file-1",
+      "path": "main.cjs",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "446e2bc06c3ff721443cc6ce9fbc11dbc173f99bb2999155578fa06594f8aefa"
+    },
+    {
+      "id": "file-2",
+      "path": "index.html",
+      "language": "html",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "d8d9997f7d9d102e2fc88da7b60e0d4d1f088d77a1c2897b21d834dd0f9db2f6"
+    },
+    {
+      "id": "file-3",
+      "path": "renderer.js",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "6df67f103a03b8ddc6815af233e6a8c0a33f03fd1d20fcaa46cf68bba16d48c2"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "9fec377a4fc9e5f388fead60c1445c408d4377161c9169adfa9e322b6e431c49"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "project_name",
+      "label": "Nome dell'applicazione",
+      "type": "identifier",
+      "default": "RecipeDesktop",
+      "required": true
+    }
+  ],
+  "related": [
+    "electron-progetto-note",
+    "electron-permissions",
+    "electron-versions"
+  ],
+  "expected": "La finestra {{project_name}} apre un contatore locale; il renderer usa soltanto API DOM.",
+  "errors": [
+    "electron non trovato: eseguire npm install dalla cartella con package.json e usare npm start.",
+    "Download Electron interrotto: controllare la connettività e il log di installazione prima di riprovare."
+  ],
+  "sources": [
+    "https://www.electronjs.org/docs/latest/tutorial/debugging-vscode",
+    "https://www.electronjs.org/docs/latest/tutorial/security",
+    "https://www.electron.build/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "details": "Controlli statici sui sorgenti: AST Python, parser PowerShell/Bash dove disponibili, node --check per JavaScript, JSON e XML secondo i file presenti. Nessuna compilazione C#/XAML/C++ né esecuzione Docker/CI/packaging attestata. Report: reports/desktop-tools-qa.json.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

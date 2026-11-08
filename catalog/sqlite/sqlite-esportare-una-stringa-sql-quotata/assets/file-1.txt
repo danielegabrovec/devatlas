@@ -1,0 +1,1 @@
+SELECT quote(name),quote(NULL),quote(X'CAFE') FROM people LIMIT 1;

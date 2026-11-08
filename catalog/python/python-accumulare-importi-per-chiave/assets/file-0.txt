@@ -1,0 +1,5 @@
+from collections import defaultdict
+totals = defaultdict(int)
+for name, amount in [("A", 2), ("B", 4), ("A", 3)]:
+    totals[name] += amount
+print(dict(totals))

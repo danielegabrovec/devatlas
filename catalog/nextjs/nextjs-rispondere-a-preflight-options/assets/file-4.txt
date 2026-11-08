@@ -1,0 +1,1 @@
+export function OPTIONS(){return new Response(null,{status:204,headers:{Allow:'GET,OPTIONS','Access-Control-Allow-Origin':'https://example.test','Access-Control-Allow-Methods':'GET,OPTIONS'}})}export function GET(){return Response.json({ok:true})}

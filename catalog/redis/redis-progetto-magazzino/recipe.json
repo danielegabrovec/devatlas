@@ -1,0 +1,128 @@
+{
+  "id": "redis-progetto-magazzino",
+  "title": "Progetto completo: prenotazione atomica redis",
+  "summary": "Validare uno SKU, decrementare solo quantità disponibili e distinguere test del modello da integrazione con il server.",
+  "stack": "redis",
+  "group": "Database",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Linux"
+  ],
+  "ide": [
+    "VS Code",
+    "WSL"
+  ],
+  "versions": "Redis Open Source8.2;redis-cli;Node client6.3.1",
+  "prerequisites": "Redis8.2 e redis-cli in Linux/WSL, server didattico su127.0.0.1:6381. Le ricette toccano solo prefissi atlas_demo propri; non usano FLUSHALL o FLUSHDB.",
+  "tags": [
+    "redis",
+    "project",
+    "atomic",
+    "inventory",
+    "validation",
+    "node:test"
+  ],
+  "project": true,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "package.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "981ea0e0dafcd17763273a79a2fc60d73a3ccd035c92886114d11f33d34c1109"
+    },
+    {
+      "id": "file-1",
+      "path": "model.mjs",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "7cb39454e6d40832a9e3e9a0dbe728bc7c12e10c2030d77474f2f43d334b5ca8"
+    },
+    {
+      "id": "file-2",
+      "path": "db.mjs",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "8fa62283902874911005cec486aa91e0763ce47f27a4d10b4f19f796491cebeb"
+    },
+    {
+      "id": "file-3",
+      "path": "stock.mjs",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "e35f90d982e90f5b25043f8147100ee6fad52a4f67489021b26affa470ce1c05"
+    },
+    {
+      "id": "file-4",
+      "path": "seed.mjs",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "0c1f0d6a3664584290e2b20d16c2e9fed2a0fb5fa516410b931be972bc8a38b3"
+    },
+    {
+      "id": "file-5",
+      "path": "main.mjs",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-5.txt",
+      "sha256": "110fbbb88ebac55324c5c7cc7f2a7e328502510dee938e68acebc5c7a6c110bb"
+    },
+    {
+      "id": "file-6",
+      "path": "test/model.test.mjs",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-6.txt",
+      "sha256": "34d6bd8af68dd91664c8af03ce570b433f195aad49e10936d6b9fefcc4db5af7"
+    },
+    {
+      "id": "file-7",
+      "path": "README.md",
+      "language": "markdown",
+      "role": "file",
+      "source": "assets/file-7.txt",
+      "sha256": "989ff1985ad1cd9e2ed071da3d0e2f48f125aac2fa3a22906424be469d1541d2"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "b8d8c8d782921132bc814fbc0d609362b2c5ec6d40e7aa1aca9538245e3a4f97"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "redis-test",
+    "redis-setup",
+    "redis-backup"
+  ],
+  "expected": "Cinque test del modello/adattatore passano; sul server dedicato lo stock8 diventa6 con prenotazione2.",
+  "errors": [
+    "Connessione rifiutata: verificare il solo processo didattico su127.0.0.1:6381.",
+    "WRONGTYPE o altro errore Redis: controllare TYPE e namespace della chiave; i wrapper redis-cli usano -e perché set -e della shell da solo non converte una risposta Redis di errore in fallimento."
+  ],
+  "sources": [
+    "https://redis.io/docs/latest/develop/get-started/",
+    "https://redis.io/commands/",
+    "https://redis.io/docs/latest/develop/clients/nodejs/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Schema/configurazioni e sintassi JavaScript/PowerShell secondo i file presenti; nessuna attestazione serverMongo/Redis o finestraTauri. Report: reports/expansion-frameworks-qa.json."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

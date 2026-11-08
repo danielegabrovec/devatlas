@@ -1,0 +1,5 @@
+<script setup>
+import {ref,reactive,computed,watch,watchEffect,onMounted,onUnmounted,nextTick,provide,inject,defineAsyncComponent,shallowRef,triggerRef,readonly,toRefs} from 'vue';
+const first=ref('Ada');const last=ref('Lovelace');const message=ref('');watchEffect(()=>{message.value=`Ciao ${first.value} ${last.value}`;});
+</script>
+<template><main><input v-model="first"><input v-model="last"><p>{{message}}</p></main></template>

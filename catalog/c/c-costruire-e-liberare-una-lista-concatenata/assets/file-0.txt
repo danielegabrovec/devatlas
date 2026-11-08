@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdint.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <errno.h>
+#include <limits.h>
+
+struct Node{int value;struct Node *next;};
+int main(void){
+struct Node *head=NULL;for(int i=3;i>=1;i--){struct Node *node=malloc(sizeof *node);if(!node){while(head){struct Node *next=head->next;free(head);head=next;}return 1;}node->value=i;node->next=head;head=node;}
+while(head){struct Node *next=head->next;printf("%d ",head->value);free(head);head=next;}puts("");
+return 0;
+}

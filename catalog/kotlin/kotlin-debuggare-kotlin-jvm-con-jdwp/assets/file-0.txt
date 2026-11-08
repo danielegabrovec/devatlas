@@ -1,0 +1,2 @@
+fun total(values:List<Int>):Int{val result=values.sum();return result}
+fun main(){println(total(listOf(2,3,5)))}

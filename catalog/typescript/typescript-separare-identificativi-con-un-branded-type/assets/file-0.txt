@@ -1,0 +1,8 @@
+declare const userBrand: unique symbol;
+type UserId = string & { readonly [userBrand]: true };
+function parseUserId(value: string): UserId {
+  if (!/^user-\d+$/.test(value)) throw new TypeError("ID non valido");
+  return value as UserId;
+}
+console.log(parseUserId("user-7"));
+export {};

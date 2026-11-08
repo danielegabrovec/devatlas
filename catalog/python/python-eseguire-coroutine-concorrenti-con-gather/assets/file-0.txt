@@ -1,0 +1,7 @@
+import asyncio
+async def task(value):
+    await asyncio.sleep(0.01)
+    return value * 2
+async def main():
+    print(await asyncio.gather(task(2), task(3)))
+asyncio.run(main())

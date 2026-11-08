@@ -1,0 +1,6 @@
+function message(...args: [level: "info" | "error", ...parts: string[]]): string {
+  const [level,...parts] = args;
+  return `${level}: ${parts.join(" ")}`;
+}
+console.log(message("info","avvio","riuscito"));
+export {};

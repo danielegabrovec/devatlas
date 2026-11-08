@@ -1,0 +1,25 @@
+import sys, json, sqlite3, tempfile, logging
+from pathlib import Path
+from PySide6.QtCore import *
+from PySide6.QtGui import *
+from PySide6.QtWidgets import *
+
+def build(root, layout):
+    edit = QPlainTextEdit()
+    edit.setReadOnly(True)
+    root.process = QProcess(root)
+    root.process.setProcessChannelMode(QProcess.ProcessChannelMode.MergedChannels)
+    root.process.readyReadStandardOutput.connect(lambda: edit.appendPlainText(bytes(root.process.readAllStandardOutput()).decode("utf-8", errors="replace")))
+    root.process.errorOccurred.connect(lambda _: edit.appendPlainText(root.process.errorString()))
+    layout.addWidget(edit)
+    root.process.start(sys.executable, ["--version"])
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    window = QWidget()
+    window.setWindowTitle("Ricetta Qt")
+    window.resize(720, 480)
+    layout = QVBoxLayout(window)
+    build(window, layout)
+    window.show()
+    sys.exit(app.exec())

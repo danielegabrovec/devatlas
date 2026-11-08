@@ -1,0 +1,1 @@
+export async function PATCH(request,{params}){const{id}=await params;const b=await request.json();const changes={};if(typeof b.name==='string')changes.name=b.name;return Response.json({id,changes})}

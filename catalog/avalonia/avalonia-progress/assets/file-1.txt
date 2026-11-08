@@ -1,0 +1,24 @@
+using System;
+using System.IO;
+using System.Linq;
+using System.Text.Json;
+using System.Threading.Tasks;
+using System.Collections.ObjectModel;
+using Avalonia;
+using Avalonia.Controls;
+using Avalonia.Controls.ApplicationLifetimes;
+using Avalonia.Layout;
+using Avalonia.Media;
+using Avalonia.Themes.Fluent;
+using Avalonia.Threading;
+namespace RecipeApp;
+class Program { [STAThread] public static void Main(string[] args)=>AppBuilder.Configure<App>().UsePlatformDetect().StartWithClassicDesktopLifetime(args); }
+class App:Application {
+ public override void Initialize(){Styles.Add(new FluentTheme());}
+ public override void OnFrameworkInitializationCompleted(){if(ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop) desktop.MainWindow=new MainWindow(); base.OnFrameworkInitializationCompleted();}
+}
+class MainWindow:Window {
+ public MainWindow(){Title="Ricetta Avalonia";Width=760;Height=520; var panel=new StackPanel{Spacing=12,Margin=new Thickness(20)};
+panel.Children.Add(new ProgressBar { Minimum=0, Maximum=100, Value=65, Height=18 });
+ Content=new ScrollViewer{Content=panel}; }
+}

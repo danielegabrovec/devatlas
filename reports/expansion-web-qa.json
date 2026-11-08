@@ -1,0 +1,714 @@
+{
+  "date": "2026-10-29",
+  "node": "v24.15.0",
+  "checks": [
+    {
+      "id": "vue-async-component",
+      "stack": "vue",
+      "build_ok": true,
+      "seconds": 2.218,
+      "output": ""
+    },
+    {
+      "id": "vue-build",
+      "stack": "vue",
+      "build_ok": true,
+      "seconds": 0.586,
+      "output": ""
+    },
+    {
+      "id": "vue-checkbox-group",
+      "stack": "vue",
+      "build_ok": true,
+      "seconds": 0.53,
+      "output": ""
+    },
+    {
+      "id": "vue-class-binding",
+      "stack": "vue",
+      "build_ok": true,
+      "seconds": 0.552,
+      "output": ""
+    },
+    {
+      "id": "vue-component-model",
+      "stack": "vue",
+      "build_ok": true,
+      "seconds": 0.536,
+      "output": ""
+    },
+    {
+      "id": "vue-composable",
+      "stack": "vue",
+      "build_ok": true,
+      "seconds": 0.747,
+      "output": ""
+    },
+    {
+      "id": "vue-computed",
+      "stack": "vue",
+      "build_ok": true,
+      "seconds": 1.241,
+      "output": ""
+    },
+    {
+      "id": "vue-condition",
+      "stack": "vue",
+      "build_ok": true,
+      "seconds": 1.387,
+      "output": ""
+    },
+    {
+      "id": "vue-debounce",
+      "stack": "vue",
+      "build_ok": true,
+      "seconds": 1.075,
+      "output": ""
+    },
+    {
+      "id": "vue-debug",
+      "stack": "vue",
+      "build_ok": true,
+      "seconds": 1.738,
+      "output": ""
+    },
+    {
+      "id": "vue-deploy",
+      "stack": "vue",
+      "build_ok": true,
+      "seconds": 1.616,
+      "output": ""
+    },
+    {
+      "id": "vue-effect",
+      "stack": "vue",
+      "build_ok": true,
+      "seconds": 1.911,
+      "output": ""
+    },
+    {
+      "id": "vue-emit",
+      "stack": "vue",
+      "build_ok": true,
+      "seconds": 0.703,
+      "output": ""
+    },
+    {
+      "id": "vue-escaped-text",
+      "stack": "vue",
+      "build_ok": true,
+      "seconds": 0.834,
+      "output": ""
+    },
+    {
+      "id": "vue-fetch-abort",
+      "stack": "vue",
+      "build_ok": true,
+      "seconds": 1.065,
+      "output": ""
+    },
+    {
+      "id": "vue-filter",
+      "stack": "vue",
+      "build_ok": true,
+      "seconds": 0.889,
+      "output": ""
+    },
+    {
+      "id": "vue-form-submit",
+      "stack": "vue",
+      "build_ok": true,
+      "seconds": 0.71,
+      "output": ""
+    },
+    {
+      "id": "vue-keyboard",
+      "stack": "vue",
+      "build_ok": true,
+      "seconds": 0.608,
+      "output": ""
+    },
+    {
+      "id": "vue-lifecycle-timer",
+      "stack": "vue",
+      "build_ok": true,
+      "seconds": 0.534,
+      "output": ""
+    },
+    {
+      "id": "vue-list-keys",
+      "stack": "vue",
+      "build_ok": true,
+      "seconds": 0.594,
+      "output": ""
+    },
+    {
+      "id": "vue-next-tick",
+      "stack": "vue",
+      "build_ok": true,
+      "seconds": 0.99,
+      "output": ""
+    },
+    {
+      "id": "vue-progetto-attivita",
+      "stack": "vue",
+      "build_ok": true,
+      "seconds": 0.829,
+      "output": "",
+      "model_tests_ok": true,
+      "test_output": "✔ rifiuta un titolo vuoto (2.6345ms)\n✔ assegna ID e non muta origine (0.307ms)\n✔ conta soltanto completate (0.2211ms)\nℹ tests 3\nℹ suites 0\nℹ pass 3\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 177.6064\n"
+    },
+    {
+      "id": "vue-props",
+      "stack": "vue",
+      "build_ok": true,
+      "seconds": 1.09,
+      "output": ""
+    },
+    {
+      "id": "vue-provide-inject",
+      "stack": "vue",
+      "build_ok": true,
+      "seconds": 0.817,
+      "output": ""
+    },
+    {
+      "id": "vue-reactive",
+      "stack": "vue",
+      "build_ok": true,
+      "seconds": 0.803,
+      "output": ""
+    },
+    {
+      "id": "vue-select",
+      "stack": "vue",
+      "build_ok": true,
+      "seconds": 0.913,
+      "output": ""
+    },
+    {
+      "id": "vue-setup",
+      "stack": "vue",
+      "build_ok": true,
+      "seconds": 1.11,
+      "output": ""
+    },
+    {
+      "id": "vue-show",
+      "stack": "vue",
+      "build_ok": true,
+      "seconds": 1.175,
+      "output": ""
+    },
+    {
+      "id": "vue-slots",
+      "stack": "vue",
+      "build_ok": true,
+      "seconds": 0.807,
+      "output": ""
+    },
+    {
+      "id": "vue-sort",
+      "stack": "vue",
+      "build_ok": true,
+      "seconds": 0.803,
+      "output": ""
+    },
+    {
+      "id": "vue-style-binding",
+      "stack": "vue",
+      "build_ok": true,
+      "seconds": 0.945,
+      "output": ""
+    },
+    {
+      "id": "vue-teleport",
+      "stack": "vue",
+      "build_ok": true,
+      "seconds": 1.108,
+      "output": ""
+    },
+    {
+      "id": "vue-template-ref",
+      "stack": "vue",
+      "build_ok": true,
+      "seconds": 0.714,
+      "output": ""
+    },
+    {
+      "id": "vue-test",
+      "stack": "vue",
+      "build_ok": true,
+      "seconds": 0.729,
+      "output": "",
+      "model_tests_ok": true,
+      "test_output": "✔ rifiuta un titolo vuoto (0.5864ms)\n✔ assegna ID e non muta origine (0.1187ms)\n✔ conta soltanto completate (0.0855ms)\nℹ tests 3\nℹ suites 0\nℹ pass 3\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 87.2546\n"
+    },
+    {
+      "id": "vue-watch",
+      "stack": "vue",
+      "build_ok": true,
+      "seconds": 0.588,
+      "output": ""
+    },
+    {
+      "id": "svelte-await-block",
+      "stack": "svelte",
+      "build_ok": true,
+      "seconds": 8.34,
+      "output": ""
+    },
+    {
+      "id": "svelte-bind-group",
+      "stack": "svelte",
+      "build_ok": true,
+      "seconds": 3.329,
+      "output": ""
+    },
+    {
+      "id": "svelte-bind-this",
+      "stack": "svelte",
+      "build_ok": true,
+      "seconds": 3.337,
+      "output": ""
+    },
+    {
+      "id": "svelte-bindable",
+      "stack": "svelte",
+      "build_ok": true,
+      "seconds": 2.103,
+      "output": ""
+    },
+    {
+      "id": "svelte-build",
+      "stack": "svelte",
+      "build_ok": true,
+      "seconds": 1.982,
+      "output": ""
+    },
+    {
+      "id": "svelte-callback-prop",
+      "stack": "svelte",
+      "build_ok": true,
+      "seconds": 1.462,
+      "output": ""
+    },
+    {
+      "id": "svelte-class-directive",
+      "stack": "svelte",
+      "build_ok": true,
+      "seconds": 2.49,
+      "output": ""
+    },
+    {
+      "id": "svelte-context",
+      "stack": "svelte",
+      "build_ok": true,
+      "seconds": 2.172,
+      "output": ""
+    },
+    {
+      "id": "svelte-debug",
+      "stack": "svelte",
+      "build_ok": true,
+      "seconds": 2.447,
+      "output": ""
+    },
+    {
+      "id": "svelte-deploy",
+      "stack": "svelte",
+      "build_ok": true,
+      "seconds": 2.406,
+      "output": ""
+    },
+    {
+      "id": "svelte-derived",
+      "stack": "svelte",
+      "build_ok": true,
+      "seconds": 2.547,
+      "output": ""
+    },
+    {
+      "id": "svelte-effect-cleanup",
+      "stack": "svelte",
+      "build_ok": true,
+      "seconds": 1.8,
+      "output": ""
+    },
+    {
+      "id": "svelte-escaped-text",
+      "stack": "svelte",
+      "build_ok": true,
+      "seconds": 1.818,
+      "output": ""
+    },
+    {
+      "id": "svelte-filter",
+      "stack": "svelte",
+      "build_ok": true,
+      "seconds": 1.79,
+      "output": ""
+    },
+    {
+      "id": "svelte-form",
+      "stack": "svelte",
+      "build_ok": true,
+      "seconds": 1.572,
+      "output": ""
+    },
+    {
+      "id": "svelte-head",
+      "stack": "svelte",
+      "build_ok": true,
+      "seconds": 1.444,
+      "output": ""
+    },
+    {
+      "id": "svelte-if",
+      "stack": "svelte",
+      "build_ok": true,
+      "seconds": 2.127,
+      "output": ""
+    },
+    {
+      "id": "svelte-keyed-each",
+      "stack": "svelte",
+      "build_ok": true,
+      "seconds": 1.776,
+      "output": ""
+    },
+    {
+      "id": "svelte-onmount-cleanup",
+      "stack": "svelte",
+      "build_ok": true,
+      "seconds": 1.312,
+      "output": ""
+    },
+    {
+      "id": "svelte-progetto-attivita",
+      "stack": "svelte",
+      "build_ok": true,
+      "seconds": 1.613,
+      "output": "",
+      "model_tests_ok": true,
+      "test_output": "✔ rifiuta un titolo vuoto (0.612ms)\n✔ assegna ID e non muta origine (0.1125ms)\n✔ conta soltanto completate (0.086ms)\nℹ tests 3\nℹ suites 0\nℹ pass 3\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 83.5307\n"
+    },
+    {
+      "id": "svelte-props",
+      "stack": "svelte",
+      "build_ok": true,
+      "seconds": 1.547,
+      "output": ""
+    },
+    {
+      "id": "svelte-select-object",
+      "stack": "svelte",
+      "build_ok": true,
+      "seconds": 1.417,
+      "output": ""
+    },
+    {
+      "id": "svelte-setup",
+      "stack": "svelte",
+      "build_ok": true,
+      "seconds": 1.565,
+      "output": ""
+    },
+    {
+      "id": "svelte-snippet",
+      "stack": "svelte",
+      "build_ok": true,
+      "seconds": 1.391,
+      "output": ""
+    },
+    {
+      "id": "svelte-state-object",
+      "stack": "svelte",
+      "build_ok": true,
+      "seconds": 1.573,
+      "output": ""
+    },
+    {
+      "id": "svelte-store",
+      "stack": "svelte",
+      "build_ok": true,
+      "seconds": 1.772,
+      "output": ""
+    },
+    {
+      "id": "svelte-style-directive",
+      "stack": "svelte",
+      "build_ok": true,
+      "seconds": 1.49,
+      "output": ""
+    },
+    {
+      "id": "svelte-test",
+      "stack": "svelte",
+      "build_ok": true,
+      "seconds": 1.74,
+      "output": "",
+      "model_tests_ok": true,
+      "test_output": "✔ rifiuta un titolo vuoto (0.7468ms)\n✔ assegna ID e non muta origine (0.1125ms)\n✔ conta soltanto completate (0.0823ms)\nℹ tests 3\nℹ suites 0\nℹ pass 3\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 90.6161\n"
+    },
+    {
+      "id": "svelte-tick",
+      "stack": "svelte",
+      "build_ok": true,
+      "seconds": 1.66,
+      "output": ""
+    },
+    {
+      "id": "svelte-window-binding",
+      "stack": "svelte",
+      "build_ok": true,
+      "seconds": 1.878,
+      "output": ""
+    },
+    {
+      "id": "angular-asyncpipe",
+      "stack": "angular",
+      "build_ok": true,
+      "seconds": 15.244,
+      "output": "Initial chunk files | Names         |  Raw size\nmain.js             | main          |   1.28 MB | \nstyles.css          | styles        | 842 bytes | \n\n                    | Initial total |   1.28 MB\n\nApplication bundle generation complete. [1.017 seconds] - 2026-10-29T14:30:59.218Z\n\nOutput location: C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\expansion-frameworks\\angular\\dist\\atlas\n\n",
+      "retry": true
+    },
+    {
+      "id": "angular-build",
+      "stack": "angular",
+      "build_ok": true,
+      "seconds": 4.361,
+      "output": "Initial chunk files | Names         |  Raw size\nmain.js             | main          |   1.28 MB | \nstyles.css          | styles        | 842 bytes | \n\n                    | Initial total |   1.28 MB\n\nApplication bundle generation complete. [1.538 seconds] - 2026-10-29T14:19:39.056Z\n\nOutput location: C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\expansion-frameworks\\angular\\dist\\atlas\n\n"
+    },
+    {
+      "id": "angular-checkbox",
+      "stack": "angular",
+      "build_ok": true,
+      "seconds": 4.618,
+      "output": "Initial chunk files | Names         |  Raw size\nmain.js             | main          |   1.28 MB | \nstyles.css          | styles        | 842 bytes | \n\n                    | Initial total |   1.28 MB\n\nApplication bundle generation complete. [2.135 seconds] - 2026-10-29T14:19:43.346Z\n\nOutput location: C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\expansion-frameworks\\angular\\dist\\atlas\n\n"
+    },
+    {
+      "id": "angular-class",
+      "stack": "angular",
+      "build_ok": true,
+      "seconds": 5.318,
+      "output": "Initial chunk files | Names         |  Raw size\nmain.js             | main          |   1.28 MB | \nstyles.css          | styles        | 842 bytes | \n\n                    | Initial total |   1.28 MB\n\nApplication bundle generation complete. [2.311 seconds] - 2026-10-29T14:19:48.757Z\n\nOutput location: C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\expansion-frameworks\\angular\\dist\\atlas\n\n"
+    },
+    {
+      "id": "angular-computed",
+      "stack": "angular",
+      "build_ok": true,
+      "seconds": 4.824,
+      "output": "Initial chunk files | Names         |  Raw size\nmain.js             | main          |   1.28 MB | \nstyles.css          | styles        | 842 bytes | \n\n                    | Initial total |   1.28 MB\n\nApplication bundle generation complete. [1.916 seconds] - 2026-10-29T14:19:53.855Z\n\nOutput location: C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\expansion-frameworks\\angular\\dist\\atlas\n\n"
+    },
+    {
+      "id": "angular-debug",
+      "stack": "angular",
+      "build_ok": true,
+      "seconds": 3.876,
+      "output": "Initial chunk files | Names         |  Raw size\nmain.js             | main          |   1.28 MB | \nstyles.css          | styles        | 842 bytes | \n\n                    | Initial total |   1.28 MB\n\nApplication bundle generation complete. [1.464 seconds] - 2026-10-29T14:19:57.873Z\n\nOutput location: C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\expansion-frameworks\\angular\\dist\\atlas\n\n"
+    },
+    {
+      "id": "angular-deploy",
+      "stack": "angular",
+      "build_ok": true,
+      "seconds": 3.352,
+      "output": "Initial chunk files | Names         |  Raw size\nmain.js             | main          |   1.28 MB | \nstyles.css          | styles        | 842 bytes | \n\n                    | Initial total |   1.28 MB\n\nApplication bundle generation complete. [1.108 seconds] - 2026-10-29T14:20:01.251Z\n\nOutput location: C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\expansion-frameworks\\angular\\dist\\atlas\n\n"
+    },
+    {
+      "id": "angular-destroyref",
+      "stack": "angular",
+      "build_ok": true,
+      "seconds": 4.18,
+      "output": "Initial chunk files | Names         |  Raw size\nmain.js             | main          |   1.28 MB | \nstyles.css          | styles        | 842 bytes | \n\n                    | Initial total |   1.28 MB\n\nApplication bundle generation complete. [1.449 seconds] - 2026-10-29T14:20:05.543Z\n\nOutput location: C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\expansion-frameworks\\angular\\dist\\atlas\n\n"
+    },
+    {
+      "id": "angular-effect",
+      "stack": "angular",
+      "build_ok": true,
+      "seconds": 3.212,
+      "output": "Initial chunk files | Names         |  Raw size\nmain.js             | main          |   1.28 MB | \nstyles.css          | styles        | 842 bytes | \n\n                    | Initial total |   1.28 MB\n\nApplication bundle generation complete. [1.210 seconds] - 2026-10-29T14:20:08.869Z\n\nOutput location: C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\expansion-frameworks\\angular\\dist\\atlas\n\n"
+    },
+    {
+      "id": "angular-escaped-text",
+      "stack": "angular",
+      "build_ok": true,
+      "seconds": 3.272,
+      "output": "Initial chunk files | Names         |  Raw size\nmain.js             | main          |   1.28 MB | \nstyles.css          | styles        | 842 bytes | \n\n                    | Initial total |   1.28 MB\n\nApplication bundle generation complete. [1.129 seconds] - 2026-10-29T14:20:12.186Z\n\nOutput location: C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\expansion-frameworks\\angular\\dist\\atlas\n\n"
+    },
+    {
+      "id": "angular-fetch",
+      "stack": "angular",
+      "build_ok": true,
+      "seconds": 3.352,
+      "output": "Initial chunk files | Names         |  Raw size\nmain.js             | main          |   1.28 MB | \nstyles.css          | styles        | 842 bytes | \n\n                    | Initial total |   1.28 MB\n\nApplication bundle generation complete. [1.173 seconds] - 2026-10-29T14:20:15.521Z\n\nOutput location: C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\expansion-frameworks\\angular\\dist\\atlas\n\n"
+    },
+    {
+      "id": "angular-filter",
+      "stack": "angular",
+      "build_ok": true,
+      "seconds": 3.769,
+      "output": "Initial chunk files | Names         |  Raw size\nmain.js             | main          |   1.28 MB | \nstyles.css          | styles        | 842 bytes | \n\n                    | Initial total |   1.28 MB\n\nApplication bundle generation complete. [1.243 seconds] - 2026-10-29T14:20:19.307Z\n\nOutput location: C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\expansion-frameworks\\angular\\dist\\atlas\n\n"
+    },
+    {
+      "id": "angular-for",
+      "stack": "angular",
+      "build_ok": true,
+      "seconds": 3.873,
+      "output": "Initial chunk files | Names         |  Raw size\nmain.js             | main          |   1.28 MB | \nstyles.css          | styles        | 842 bytes | \n\n                    | Initial total |   1.28 MB\n\nApplication bundle generation complete. [1.299 seconds] - 2026-10-29T14:20:23.085Z\n\nOutput location: C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\expansion-frameworks\\angular\\dist\\atlas\n\n"
+    },
+    {
+      "id": "angular-form",
+      "stack": "angular",
+      "build_ok": true,
+      "seconds": 3.499,
+      "output": "Initial chunk files | Names         |  Raw size\nmain.js             | main          |   1.28 MB | \nstyles.css          | styles        | 842 bytes | \n\n                    | Initial total |   1.28 MB\n\nApplication bundle generation complete. [1.068 seconds] - 2026-10-29T14:20:26.756Z\n\nOutput location: C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\expansion-frameworks\\angular\\dist\\atlas\n\n"
+    },
+    {
+      "id": "angular-if",
+      "stack": "angular",
+      "build_ok": true,
+      "seconds": 2.887,
+      "output": "Initial chunk files | Names         |  Raw size\nmain.js             | main          |   1.28 MB | \nstyles.css          | styles        | 842 bytes | \n\n                    | Initial total |   1.28 MB\n\nApplication bundle generation complete. [1.054 seconds] - 2026-10-29T14:20:29.862Z\n\nOutput location: C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\expansion-frameworks\\angular\\dist\\atlas\n\n"
+    },
+    {
+      "id": "angular-input",
+      "stack": "angular",
+      "build_ok": true,
+      "seconds": 2.877,
+      "output": "Initial chunk files | Names         |  Raw size\nmain.js             | main          |   1.28 MB | \nstyles.css          | styles        | 842 bytes | \n\n                    | Initial total |   1.28 MB\n\nApplication bundle generation complete. [1.063 seconds] - 2026-10-29T14:20:32.760Z\n\nOutput location: C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\expansion-frameworks\\angular\\dist\\atlas\n\n"
+    },
+    {
+      "id": "angular-keyboard",
+      "stack": "angular",
+      "build_ok": true,
+      "seconds": 2.903,
+      "output": "Initial chunk files | Names         |  Raw size\nmain.js             | main          |   1.28 MB | \nstyles.css          | styles        | 842 bytes | \n\n                    | Initial total |   1.28 MB\n\nApplication bundle generation complete. [1.052 seconds] - 2026-10-29T14:20:35.706Z\n\nOutput location: C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\expansion-frameworks\\angular\\dist\\atlas\n\n"
+    },
+    {
+      "id": "angular-output",
+      "stack": "angular",
+      "build_ok": true,
+      "seconds": 2.928,
+      "output": "Initial chunk files | Names         |  Raw size\nmain.js             | main          |   1.28 MB | \nstyles.css          | styles        | 842 bytes | \n\n                    | Initial total |   1.28 MB\n\nApplication bundle generation complete. [1.044 seconds] - 2026-10-29T14:20:38.641Z\n\nOutput location: C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\expansion-frameworks\\angular\\dist\\atlas\n\n"
+    },
+    {
+      "id": "angular-pipes",
+      "stack": "angular",
+      "build_ok": true,
+      "seconds": 2.888,
+      "output": "Initial chunk files | Names         |  Raw size\nmain.js             | main          |   1.28 MB | \nstyles.css          | styles        | 842 bytes | \n\n                    | Initial total |   1.28 MB\n\nApplication bundle generation complete. [1.024 seconds] - 2026-10-29T14:20:41.565Z\n\nOutput location: C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\expansion-frameworks\\angular\\dist\\atlas\n\n"
+    },
+    {
+      "id": "angular-progetto-attivita",
+      "stack": "angular",
+      "build_ok": true,
+      "seconds": 3.162,
+      "output": "Initial chunk files | Names         |  Raw size\nmain.js             | main          |   1.28 MB | \nstyles.css          | styles        | 842 bytes | \n\n                    | Initial total |   1.28 MB\n\nApplication bundle generation complete. [2.185 seconds] - 2026-10-29T14:55:01.638Z\n\nOutput location: C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\expansion-frameworks\\angular\\dist\\atlas\n\n",
+      "model_tests_ok": true,
+      "test_output": "✔ rifiuta un titolo vuoto (0.4409ms)\n✔ assegna ID e non muta origine (0.0887ms)\n✔ conta soltanto completate (0.0655ms)\nℹ tests 3\nℹ suites 0\nℹ pass 3\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 78.3288\n",
+      "retry": true
+    },
+    {
+      "id": "angular-projection",
+      "stack": "angular",
+      "build_ok": true,
+      "seconds": 3.154,
+      "output": "Initial chunk files | Names         |  Raw size\nmain.js             | main          |   1.28 MB | \nstyles.css          | styles        | 842 bytes | \n\n                    | Initial total |   1.28 MB\n\nApplication bundle generation complete. [1.222 seconds] - 2026-10-29T14:20:48.105Z\n\nOutput location: C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\expansion-frameworks\\angular\\dist\\atlas\n\n"
+    },
+    {
+      "id": "angular-select",
+      "stack": "angular",
+      "build_ok": true,
+      "seconds": 2.871,
+      "output": "Initial chunk files | Names         |  Raw size\nmain.js             | main          |   1.28 MB | \nstyles.css          | styles        | 842 bytes | \n\n                    | Initial total |   1.28 MB\n\nApplication bundle generation complete. [1.028 seconds] - 2026-10-29T14:20:51.011Z\n\nOutput location: C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\expansion-frameworks\\angular\\dist\\atlas\n\n"
+    },
+    {
+      "id": "angular-service",
+      "stack": "angular",
+      "build_ok": true,
+      "seconds": 2.971,
+      "output": "Initial chunk files | Names         |  Raw size\nmain.js             | main          |   1.28 MB | \nstyles.css          | styles        | 842 bytes | \n\n                    | Initial total |   1.28 MB\n\nApplication bundle generation complete. [1.045 seconds] - 2026-10-29T14:20:53.974Z\n\nOutput location: C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\expansion-frameworks\\angular\\dist\\atlas\n\n"
+    },
+    {
+      "id": "angular-setup",
+      "stack": "angular",
+      "build_ok": true,
+      "seconds": 2.933,
+      "output": "Initial chunk files | Names         |  Raw size\nmain.js             | main          |   1.28 MB | \nstyles.css          | styles        | 842 bytes | \n\n                    | Initial total |   1.28 MB\n\nApplication bundle generation complete. [1.077 seconds] - 2026-10-29T14:20:56.936Z\n\nOutput location: C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\expansion-frameworks\\angular\\dist\\atlas\n\n"
+    },
+    {
+      "id": "angular-sort",
+      "stack": "angular",
+      "build_ok": true,
+      "seconds": 2.946,
+      "output": "Initial chunk files | Names         |  Raw size\nmain.js             | main          |   1.28 MB | \nstyles.css          | styles        | 842 bytes | \n\n                    | Initial total |   1.28 MB\n\nApplication bundle generation complete. [1.068 seconds] - 2026-10-29T14:20:59.926Z\n\nOutput location: C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\expansion-frameworks\\angular\\dist\\atlas\n\n"
+    },
+    {
+      "id": "angular-style",
+      "stack": "angular",
+      "build_ok": true,
+      "seconds": 2.89,
+      "output": "Initial chunk files | Names         |  Raw size\nmain.js             | main          |   1.28 MB | \nstyles.css          | styles        | 842 bytes | \n\n                    | Initial total |   1.28 MB\n\nApplication bundle generation complete. [1.126 seconds] - 2026-10-29T14:21:02.878Z\n\nOutput location: C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\expansion-frameworks\\angular\\dist\\atlas\n\n"
+    },
+    {
+      "id": "angular-switch",
+      "stack": "angular",
+      "build_ok": true,
+      "seconds": 2.929,
+      "output": "Initial chunk files | Names         |  Raw size\nmain.js             | main          |   1.28 MB | \nstyles.css          | styles        | 842 bytes | \n\n                    | Initial total |   1.28 MB\n\nApplication bundle generation complete. [1.234 seconds] - 2026-10-29T14:21:05.810Z\n\nOutput location: C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\expansion-frameworks\\angular\\dist\\atlas\n\n"
+    },
+    {
+      "id": "angular-test",
+      "stack": "angular",
+      "build_ok": true,
+      "seconds": 2.948,
+      "output": "Initial chunk files | Names         |  Raw size\nmain.js             | main          |   1.28 MB | \nstyles.css          | styles        | 842 bytes | \n\n                    | Initial total |   1.28 MB\n\nApplication bundle generation complete. [1.273 seconds] - 2026-10-29T14:21:08.771Z\n\nOutput location: C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\expansion-frameworks\\angular\\dist\\atlas\n\n",
+      "model_tests_ok": true,
+      "test_output": "✔ rifiuta un titolo vuoto (0.4635ms)\n✔ assegna ID e non muta origine (0.097ms)\n✔ conta soltanto completate (0.0629ms)\nℹ tests 3\nℹ suites 0\nℹ pass 3\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 70.8603\n"
+    },
+    {
+      "id": "angular-token",
+      "stack": "angular",
+      "build_ok": true,
+      "seconds": 2.944,
+      "output": "Initial chunk files | Names         |  Raw size\nmain.js             | main          |   1.28 MB | \nstyles.css          | styles        | 842 bytes | \n\n                    | Initial total |   1.28 MB\n\nApplication bundle generation complete. [1.235 seconds] - 2026-10-29T14:21:11.861Z\n\nOutput location: C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\expansion-frameworks\\angular\\dist\\atlas\n\n"
+    },
+    {
+      "id": "angular-track-empty",
+      "stack": "angular",
+      "build_ok": true,
+      "seconds": 2.945,
+      "output": "Initial chunk files | Names         |  Raw size\nmain.js             | main          |   1.28 MB | \nstyles.css          | styles        | 842 bytes | \n\n                    | Initial total |   1.28 MB\n\nApplication bundle generation complete. [1.276 seconds] - 2026-10-29T14:21:14.839Z\n\nOutput location: C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\expansion-frameworks\\angular\\dist\\atlas\n\n"
+    }
+  ],
+  "failures": [],
+  "limits": [
+    "Build del frontend e test del modello su Windows; nessuna sessione browser interattiva attestata.",
+    "Le dipendenze sono installate una volta in .cache/expansion-frameworks, non nei progetti dell'utente."
+  ],
+  "summary": {
+    "recipes": 95,
+    "builds_passed": 95,
+    "model_test_suites": 6,
+    "failures": 0
+  },
+  "retry_history": [
+    {
+      "id": "angular-asyncpipe",
+      "stack": "angular",
+      "build_ok": false,
+      "seconds": 15.244,
+      "output": "Initial chunk files | Names         |  Raw size\nmain.js             | main          |   1.28 MB | \nstyles.css          | styles        | 842 bytes | \n\n                    | Initial total |   1.28 MB\n\nApplication bundle generation complete. [5.441 seconds] - 2026-10-29T14:19:34.605Z\n\nOutput location: C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\expansion-frameworks\\angular\\dist\\atlas\n\nEPERM: operation not permitted, mkdir 'C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\expansion-frameworks\\angular\\dist\\atlas'\n"
+    },
+    {
+      "id": "angular-progetto-attivita",
+      "stack": "angular",
+      "build_ok": true,
+      "seconds": 3.162,
+      "output": "Initial chunk files | Names         |  Raw size\nmain.js             | main          |   1.28 MB | \nstyles.css          | styles        | 842 bytes | \n\n                    | Initial total |   1.28 MB\n\nApplication bundle generation complete. [1.129 seconds] - 2026-10-29T14:20:44.635Z\n\nOutput location: C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\expansion-frameworks\\angular\\dist\\atlas\n\n",
+      "model_tests_ok": true,
+      "test_output": "✔ rifiuta un titolo vuoto (0.4325ms)\n✔ assegna ID e non muta origine (0.0871ms)\n✔ conta soltanto completate (0.0625ms)\nℹ tests 3\nℹ suites 0\nℹ pass 3\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 67.9386\n"
+    }
+  ]
+}

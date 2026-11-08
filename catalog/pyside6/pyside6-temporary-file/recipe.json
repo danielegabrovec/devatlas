@@ -1,0 +1,70 @@
+{
+  "id": "pyside6-temporary-file",
+  "title": "Creare un file temporaneo gestito da Qt",
+  "summary": "Mantenere il QTemporaryFile vivo per tutta la durata di utilizzo.",
+  "stack": "pyside6",
+  "group": "Desktop e GUI",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Python 3.13; PySide6 6.12.x",
+  "prerequisites": "Python 3.13, ambiente virtuale dedicato e PySide6==6.12.*. Non installare entrambi i binding nello stesso ambiente.",
+  "tags": [
+    "temporary-file",
+    "Qt Widgets",
+    "signals",
+    "PySide6"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "5a6ce432d9ea7e9aa250d898a695ebc7629984486c1be596b4cfd2c4ba18a771"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "fa7903108ae7aa3f1394a5a95ac8f4c30affc3b7ad588d4cb1c04cdec3ebb03d"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "pyside6-drag-drop",
+    "pyside6-file-watcher",
+    "pyside6-open-file"
+  ],
+  "expected": "Il percorso temporaneo esiste e verrà rimosso distruggendo l'oggetto.",
+  "errors": [
+    "ModuleNotFoundError: eseguire pip con lo stesso interprete .venv usato per avviare main.py.",
+    "Non creare QApplication due volte nello stesso processo; riavviare l'esempio in un processo separato."
+  ],
+  "sources": [
+    "https://doc.qt.io/qtforpython-6/",
+    "https://doc.qt.io/qt-6/qtwidgets-index.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "details": "Avvio reale Windows con PySide6 6.12.0, piattaforma offscreen, costruzione finestra e ciclo eventi 150 ms. Interazioni e altri sistemi non verificati. Report: reports/desktop-tools-qa.json.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

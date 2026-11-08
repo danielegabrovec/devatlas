@@ -1,0 +1,1 @@
+import{writeFile,rename}from'node:fs/promises';await writeFile('before.txt','demo');await rename('before.txt','after.txt');console.log('after.txt');

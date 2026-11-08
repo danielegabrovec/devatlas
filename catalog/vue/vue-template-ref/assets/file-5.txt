@@ -1,0 +1,5 @@
+<script setup>
+import {ref,reactive,computed,watch,watchEffect,onMounted,onUnmounted,nextTick,provide,inject,defineAsyncComponent,shallowRef,triggerRef,readonly,toRefs} from 'vue';
+const input=ref(null);onMounted(()=>input.value?.focus());
+</script>
+<template><main><input ref="input" placeholder="Focus iniziale"></main></template>

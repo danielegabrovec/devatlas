@@ -1,0 +1,92 @@
+{
+  "id": "fastapi-verificare-una-api-key-da-ambiente",
+  "title": "Verificare una API key da ambiente",
+  "summary": "Verificare una API key da ambiente. Endpoint dell’esempio: GET /demo. Validazione e risposte usano Depends, HTTPException, Header.",
+  "stack": "fastapi",
+  "group": "Web e backend",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "FastAPI0.115.12; Pydantic2.11.7; Python3.11+",
+  "prerequisites": "Python3.11+ con venv; porta8000 libera. Dipendenze in requirements.txt; /docs permette di provare le rotte. Database e autenticazione di produzione non sono inclusi negli esempi in memoria.",
+  "tags": [
+    "fastapi",
+    "example",
+    "verificare",
+    "una",
+    "api",
+    "key"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "app.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "3dc184aef074e6bc10ba6dd0733e9890ff0aa6043313613a520530aa60b8993c"
+    },
+    {
+      "id": "file-1",
+      "path": "requirements.txt",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "65739c3d8a1fb7a7b9789cb1cbac8f6de99f1222bbdaf6453bb604f722b13fdf"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "47161fb765f637e48fb2dce09f6846cc47520fc64455cea0290a876578ac59bd"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "fastapi-progetto-api-attivita-con-repository-sqlite",
+    "fastapi-progetto-api-preventivi-con-validazione-e-test",
+    "fastapi-organizzare-api-tramite-apirouter"
+  ],
+  "expected": "Il risultato mostra il comportamento descritto nel titolo; i dati dimostrativi sono inclusi nel sorgente.",
+  "errors": [
+    "Comando non trovato: installare la toolchain elencata nei prerequisiti.",
+    "Dipendenza mancante: eseguire l'installazione nella radice esportata, senza cambiare le versioni dichiarate."
+  ],
+  "sources": [
+    "https://fastapi.tiangolo.com/",
+    "https://docs.pydantic.dev/latest/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Sintassi dei file Python o JavaScript/JSX e JSON controllata sulle fonti correnti; esecuzione di questa singola ricetta non attestata.",
+    "files_sha256": {
+      "app.py": "3dc184aef074e6bc10ba6dd0733e9890ff0aa6043313613a520530aa60b8993c",
+      "requirements.txt": "65739c3d8a1fb7a7b9789cb1cbac8f6de99f1222bbdaf6453bb604f722b13fdf"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md",
+  "editorial": {
+    "version": 1,
+    "method": "Fatti ricavati staticamente dai file dell’esempio",
+    "facts": [
+      "Endpoint dell’esempio: GET /demo.",
+      "Validazione e risposte usano Depends, HTTPException, Header."
+    ]
+  }
+}

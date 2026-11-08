@@ -1,0 +1,11 @@
+#include <QtWidgets>
+#include <QtCore>
+#include <QtGui>
+
+int main(int argc, char **argv) {
+ QApplication app(argc,argv);
+ QWidget window; window.resize(720,480);
+ auto *layout=new QVBoxLayout(&window);
+ auto *label=new QLabel; auto *timer=new QTimer(&window); QObject::connect(timer,&QTimer::timeout,label,[label]{label->setText(QTime::currentTime().toString());}); timer->start(1000); layout->addWidget(label);
+ window.show(); return app.exec();
+}

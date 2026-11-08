@@ -1,0 +1,10 @@
+package main
+
+import (
+"fmt"
+"time"
+)
+
+func main(){
+value,err:=time.Parse("02/01/2006","29/10/2026");if err!=nil{panic(err)};fmt.Println(value.Format(time.RFC3339))
+}

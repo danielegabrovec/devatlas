@@ -1,0 +1,3 @@
+import React, {useState,useEffect,useMemo,useRef,useReducer,useId,useContext,createContext,useCallback,useLayoutEffect,useTransition,useDeferredValue,useSyncExternalStore,useImperativeHandle,forwardRef,memo,lazy,Suspense,Component} from 'react';
+import {createPortal} from 'react-dom';
+export default function App(){const[n,set]=useState(10);const r=useRef(null);useEffect(()=>{const o=new IntersectionObserver(([e])=>{if(e.isIntersecting)set(x=>Math.min(x+10,100))});o.observe(r.current);return()=>o.disconnect()},[n]);return <><ul>{Array.from({length:n},(_,i)=><li key={i}>Riga{i}</li>)}</ul><div ref={r}/><button disabled={n===100} onClick={()=>set(Math.min(n+10,100))}>Altri risultati</button></>}

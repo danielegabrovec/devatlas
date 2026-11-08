@@ -1,0 +1,2 @@
+go build -gcflags="all=-N -l" -o debug.exe .
+dlv exec .\debug.exe

@@ -1,0 +1,1 @@
+import test from'node:test';import assert from'node:assert/strict';test('rifiuto',async()=>{await assert.rejects(async()=>{throw Error('negato')},/negato/)});

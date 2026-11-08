@@ -1,0 +1,27 @@
+import sys, json, sqlite3, tempfile, logging
+from pathlib import Path
+from PySide6.QtCore import *
+from PySide6.QtGui import *
+from PySide6.QtWidgets import *
+
+def build(root, layout):
+    edit = QPlainTextEdit("Qt crea finestre. Qt gestisce eventi.")
+    query = QLineEdit("Qt")
+    button = QPushButton("Trova successivo")
+    def find():
+        if not edit.find(query.text()):
+            edit.moveCursor(QTextCursor.MoveOperation.Start)
+            edit.find(query.text())
+    button.clicked.connect(find)
+    for widget in [query, button, edit]:
+        layout.addWidget(widget)
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    window = QWidget()
+    window.setWindowTitle("Ricetta Qt")
+    window.resize(720, 480)
+    layout = QVBoxLayout(window)
+    build(window, layout)
+    window.show()
+    sys.exit(app.exec())

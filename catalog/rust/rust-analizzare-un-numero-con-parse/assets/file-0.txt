@@ -1,0 +1,4 @@
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+for text in ["42","abc"]{match text.parse::<i32>(){Ok(value)=>println!("{}",value),Err(_)=>println!("numero non valido")}}
+Ok(())
+}

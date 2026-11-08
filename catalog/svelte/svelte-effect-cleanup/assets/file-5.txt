@@ -1,0 +1,5 @@
+<script>
+import {onMount,tick,setContext,getContext} from 'svelte';
+let query=$state('');let committed=$state('');$effect(()=>{const text=query;const timer=setTimeout(()=>committed=text,250);return()=>clearTimeout(timer);});
+</script>
+<main><input bind:value={query} placeholder="Digita velocemente"><p>Query applicata: {committed}</p></main>

@@ -1,0 +1,3 @@
+package main
+import("fmt";"example.test/catalog/inventory")
+func main(){store:=inventory.New();if err:=store.Add("viti",3);err!=nil{panic(err)};if err:=store.Add("viti",2);err!=nil{panic(err)};fmt.Println(store.Quantity("viti"))}

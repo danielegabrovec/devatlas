@@ -1,0 +1,86 @@
+{
+  "id": "packaging-verificare-un-pacchetto-contro-il-manifest-sha-256",
+  "title": "Verificare un pacchetto contro il manifest SHA-256",
+  "summary": "Rifiutare percorsi che escono dalla cartella e digest non corrispondenti.",
+  "stack": "packaging",
+  "group": "Strumenti",
+  "section": "Distribuzione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows"
+  ],
+  "ide": [
+    "VS Code",
+    "Visual Studio"
+  ],
+  "versions": "Python 3.12/3.13; Qt 6.12; .NET 10; strumenti specificati per ricetta",
+  "prerequisites": "Leggere i prerequisiti specifici nella guida. Creare una cartella nuova; i comandi compilano artefatti locali senza pubblicarli né firmarli.",
+  "tags": [
+    "packaging",
+    "release",
+    "verificare-un-pacchetto-contro-il-manifest-sha-256"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "verify.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "ab7790741cdfb3697881a442d55e3623e17fdaf9676782ffb40c6a0c1d7d4e03"
+    },
+    {
+      "id": "file-1",
+      "path": "dist/demo.txt",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "22565be03ad9be55db910025740b3d2f88139d960617ac174ebf1da133638aaa"
+    },
+    {
+      "id": "file-2",
+      "path": "SHA256SUMS.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "07adce80eca347e8330cf786a1519c5be39db6d7a133f5df6c6de0287a481cf4"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "a575b72fb5c3ab2e540e0de1760bc3b5fb2eeb4c9e9fe94d54cdff7c67d0f29c"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "packaging-generare-un-manifest-sha-256-dei-file-distribuiti",
+    "packaging-verificare-il-contenuto-di-una-wheel-prima-della-consegna",
+    "packaging-compilare-un-installer-locale-inno-setup"
+  ],
+  "expected": "Rifiutare percorsi che escono dalla cartella e digest non corrispondenti.",
+  "errors": [
+    "Tool di compilazione mancante: installare la dipendenza specificata nei prerequisiti.",
+    "Rete non disponibile: i backend e i runtime non presenti non possono essere scaricati."
+  ],
+  "sources": [
+    "https://packaging.python.org/en/latest/tutorials/packaging-projects/",
+    "https://doc.qt.io/qtforpython-6/deployment/deployment-pyside6-deploy.html",
+    "https://learn.microsoft.com/dotnet/core/tools/dotnet-publish",
+    "https://www.electron.build/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "details": "Controlli statici sui sorgenti: AST Python, parser PowerShell/Bash dove disponibili, node --check per JavaScript, JSON e XML secondo i file presenti. Nessuna compilazione C#/XAML/C++ né esecuzione Docker/CI/packaging attestata. Report: reports/desktop-tools-qa.json.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

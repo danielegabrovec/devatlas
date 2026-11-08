@@ -1,0 +1,5 @@
+names, ages = ["Ada", "Luca"], [36]
+try:
+    print(list(zip(names, ages, strict=True)))
+except ValueError as error:
+    print(type(error).__name__)

@@ -1,0 +1,5 @@
+import sqlite3
+with sqlite3.connect(":memory:") as db:
+    db.execute("CREATE TABLE items(name TEXT)")
+    db.execute("INSERT INTO items VALUES (?)", ("L'acqua",))
+    print(db.execute("SELECT name FROM items WHERE name=?", ("L'acqua",)).fetchone()[0])

@@ -1,0 +1,1 @@
+'use client';import{useState}from'react';export default function Panel({children}){const[open,set]=useState(true);return <section><button onClick={()=>set(!open)}>Mostra contenuto</button>{open?children:null}</section>}

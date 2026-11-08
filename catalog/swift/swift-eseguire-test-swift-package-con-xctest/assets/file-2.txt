@@ -1,0 +1,3 @@
+import XCTest
+@testable import MathCore
+final class MathCoreTests:XCTestCase{func testArea(){XCTAssertEqual(area(3,4),12)}}

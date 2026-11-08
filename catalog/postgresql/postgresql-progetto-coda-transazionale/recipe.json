@@ -1,0 +1,99 @@
+{
+  "id": "postgresql-progetto-coda-transazionale",
+  "title": "Progetto: coda lavori transazionale PostgreSQL",
+  "summary": "Prelevare un solo lavoro senza assegnarlo contemporaneamente a due worker.",
+  "stack": "postgresql",
+  "group": "Database",
+  "section": "Database",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "PostgreSQL 18; psql",
+  "prerequisites": "Server locale e client installati; database didattico cookbook_demo già creato; credenziali fornite dal client, mai nel sorgente.",
+  "tags": [
+    "project",
+    "schema",
+    "seed",
+    "report"
+  ],
+  "project": true,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "schema.sql",
+      "language": "sql",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "4938819f36aa1e69ca8d69e6cfc7492417a8f86a609182fbbd3bef5ede116d33"
+    },
+    {
+      "id": "file-1",
+      "path": "seed.sql",
+      "language": "sql",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "fee7a8872fd5a2de8d76e4687427509ae1f9091cf1b6e8229e428799d75eff10"
+    },
+    {
+      "id": "file-2",
+      "path": "claim.sql",
+      "language": "sql",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "dbba24b68f3ab9d4d4ed02683ca3613ed4e59309e088311b0627eab90ce51896"
+    },
+    {
+      "id": "file-3",
+      "path": "README.md",
+      "language": "markdown",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "e18a07239b3449134053c63b467209bdf65da6a941cfbae6974071b507ad5305"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "baa8fbe78cd7ab3aac9a960a77d7765e2dff3f81725da15f01e29d5997c4e2d5"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "postgresql-progetto-report-materializzato",
+    "postgresql-trovare-indici-disponibili-nello-schema",
+    "postgresql-usare-un-advisory-lock-transazionale"
+  ],
+  "expected": "Le query di controllo restituiscono i risultati indicati nel README.",
+  "errors": [
+    "Non usare uno schema con dati reali: gli script ricreano gli oggetti del laboratorio."
+  ],
+  "sources": [
+    "https://www.postgresql.org/docs/18/sql.html",
+    "https://www.postgresql.org/docs/18/sql-dropschema.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "documentato",
+    "date": "2026-10-29",
+    "details": "Revisione documentale PostgreSQL18/MySQL8.4 e fixture di laboratorio; server non eseguito perché Docker non era attivo. Report: reports/catalog-independent-review.json.",
+    "files_sha256": {
+      "schema.sql": "4938819f36aa1e69ca8d69e6cfc7492417a8f86a609182fbbd3bef5ede116d33",
+      "seed.sql": "fee7a8872fd5a2de8d76e4687427509ae1f9091cf1b6e8229e428799d75eff10",
+      "claim.sql": "dbba24b68f3ab9d4d4ed02683ca3613ed4e59309e088311b0627eab90ce51896",
+      "README.md": "e18a07239b3449134053c63b467209bdf65da6a941cfbae6974071b507ad5305"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

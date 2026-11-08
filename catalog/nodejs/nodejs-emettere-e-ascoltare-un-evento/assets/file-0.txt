@@ -1,0 +1,1 @@
+import{EventEmitter}from'node:events';const bus=new EventEmitter();bus.on('saved',id=>console.log('salvato',id));bus.emit('saved',7);

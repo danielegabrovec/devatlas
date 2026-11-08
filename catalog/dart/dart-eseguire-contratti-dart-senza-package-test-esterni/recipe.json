@@ -1,0 +1,78 @@
+{
+  "id": "dart-eseguire-contratti-dart-senza-package-test-esterni",
+  "title": "Eseguire contratti Dart senza package test esterni",
+  "summary": "Usa verifiche esplicite che restano attive anche quando assert è disabilitato.",
+  "stack": "dart",
+  "group": "Linguaggi",
+  "section": "Test",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Dart3.13.x; librerie SDK, nessuna dipendenza Pub esterna",
+  "prerequisites": "Dart SDK3.13.x nel PATH. Gli esempi dart:io sono nativi; per riusarli su web occorre sostituire accesso filesystem/isolate dove non supportato. Nessun package esterno necessario ai capstone.",
+  "tags": [
+    "testing",
+    "contracts",
+    "exceptions"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "lib/math_core.dart",
+      "language": "dart",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "a0b1eeb19123ac04f451b19e10ba550b8f649b870c7e7903c517ad7fe5ad9724"
+    },
+    {
+      "id": "file-1",
+      "path": "test/contracts.dart",
+      "language": "dart",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "f07077601595b310b16b741055dbfd45f2af554cc1c58c310e824cc79934108b"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "171a597bd5e4f4ee5ee309400030632a7cf078d6a9ebd2438199c6a42988013f"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "dart-inizializzare-un-package-dart-senza-dipendenze",
+    "dart-progetto-completo-report-spese-dart",
+    "dart-gestire-null-senza-force-unwrap-in-dart"
+  ],
+  "expected": "2 contratti verificati; non è necessario acquisire package:test.",
+  "errors": [
+    "StateError dal runner: un contratto non è rispettato; usa il messaggio del controllo per identificare il caso.",
+    "Il test non genera l'errore atteso: controlla che il ramo invalido lanci ArgumentError e che il test non catturi un errore di tipo diverso."
+  ],
+  "sources": [
+    "https://dart.dev/language",
+    "https://dart.dev/resources/whats-new",
+    "https://dart.dev/tools/dart-compile"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

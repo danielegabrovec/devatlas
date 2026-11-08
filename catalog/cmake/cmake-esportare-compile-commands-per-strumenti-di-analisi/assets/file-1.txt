@@ -1,0 +1,4 @@
+cmake_minimum_required(VERSION 3.24)
+project(RecipeBuild VERSION 1.2.0 LANGUAGES CXX)
+add_executable(recipe main.cpp)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)

@@ -1,0 +1,91 @@
+{
+  "id": "fastapi-personalizzare-titolo-e-percorso-openapi",
+  "title": "Personalizzare titolo e percorso OpenAPI",
+  "summary": "Personalizzare titolo e percorso OpenAPI. Endpoint dell’esempio: GET /demo.",
+  "stack": "fastapi",
+  "group": "Web e backend",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "FastAPI0.115.12; Pydantic2.11.7; Python3.11+",
+  "prerequisites": "Python3.11+ con venv; porta8000 libera. Dipendenze in requirements.txt; /docs permette di provare le rotte. Database e autenticazione di produzione non sono inclusi negli esempi in memoria.",
+  "tags": [
+    "fastapi",
+    "example",
+    "personalizzare",
+    "titolo",
+    "e",
+    "percorso"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "app.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "9cfcc28719ceb0c4c4983d7bda89d89dc9d065f5d369a4eff14c68073a14be29"
+    },
+    {
+      "id": "file-1",
+      "path": "requirements.txt",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "65739c3d8a1fb7a7b9789cb1cbac8f6de99f1222bbdaf6453bb604f722b13fdf"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "47161fb765f637e48fb2dce09f6846cc47520fc64455cea0290a876578ac59bd"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "fastapi-convertire-un-parametro-percorso-intero",
+    "fastapi-eliminare-cookie-con-stesso-percorso",
+    "fastapi-fornire-esempi-nello-schema-openapi"
+  ],
+  "expected": "Il risultato mostra il comportamento descritto nel titolo; i dati dimostrativi sono inclusi nel sorgente.",
+  "errors": [
+    "Comando non trovato: installare la toolchain elencata nei prerequisiti.",
+    "Dipendenza mancante: eseguire l'installazione nella radice esportata, senza cambiare le versioni dichiarate."
+  ],
+  "sources": [
+    "https://fastapi.tiangolo.com/",
+    "https://docs.pydantic.dev/latest/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Sintassi dei file Python o JavaScript/JSX e JSON controllata sulle fonti correnti; esecuzione di questa singola ricetta non attestata.",
+    "files_sha256": {
+      "app.py": "9cfcc28719ceb0c4c4983d7bda89d89dc9d065f5d369a4eff14c68073a14be29",
+      "requirements.txt": "65739c3d8a1fb7a7b9789cb1cbac8f6de99f1222bbdaf6453bb604f722b13fdf"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md",
+  "editorial": {
+    "version": 1,
+    "method": "Fatti ricavati staticamente dai file dell’esempio",
+    "facts": [
+      "Endpoint dell’esempio: GET /demo."
+    ]
+  }
+}

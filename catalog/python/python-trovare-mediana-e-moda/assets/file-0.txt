@@ -1,0 +1,3 @@
+from statistics import median, multimode
+values = [1, 2, 2, 9, 20]
+print(median(values), multimode(values))

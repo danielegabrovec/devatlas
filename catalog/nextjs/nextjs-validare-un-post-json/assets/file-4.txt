@@ -1,0 +1,1 @@
+export async function POST(request){let body;try{body=await request.json()}catch{return Response.json({error:'JSON invalido'},{status:400})}if(typeof body.name!=='string'||!body.name.trim())return Response.json({error:'nome richiesto'},{status:422});return Response.json({id:1,name:body.name.trim()},{status:201})}

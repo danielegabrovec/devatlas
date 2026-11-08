@@ -1,0 +1,15 @@
+const {app,BrowserWindow,ipcMain}=require('electron');
+const fs=require('node:fs/promises');const path=require('node:path');const {pathToFileURL}=require('node:url');
+let win;
+app.whenReady().then(async()=>{
+ const folder=app.getPath('userData');await fs.mkdir(folder,{recursive:true});const file=path.join(folder,'notes.json');
+ let notes=[];try{notes=JSON.parse(await fs.readFile(file,'utf8'));if(!Array.isArray(notes)||!notes.every(v=>typeof v==='string')) throw new Error('Formato note non valido');}catch(error){if(error.code!=='ENOENT') throw error;}
+ win=new BrowserWindow({width:800,height:550,webPreferences:{preload:path.join(__dirname,'preload.cjs'),contextIsolation:true,nodeIntegration:false,sandbox:true}});
+ function validate(event){if(event.senderFrame?.url!==pathToFileURL(path.join(__dirname,'index.html')).href) throw new Error('Origine non consentita');}
+ ipcMain.handle('notes:list',event=>{validate(event);return notes;});
+ let writing=false;
+ ipcMain.handle('notes:add',async(event,value)=>{validate(event);if(writing) throw new Error('Salvataggio in corso');if(typeof value!=='string'||!value.trim()||value.length>2000) throw new Error('Nota non valida');writing=true;try{const next=[...notes,value.trim()];await fs.writeFile(file+'.tmp',JSON.stringify(next,null,2),'utf8');await fs.rename(file+'.tmp',file);notes=next;return notes;}finally{writing=false;}});
+ win.webContents.setWindowOpenHandler(()=>({action:'deny'}));win.webContents.on('will-navigate',e=>e.preventDefault());
+ await win.loadFile('index.html');
+}).catch(error=>{console.error(error);app.quit();});
+app.on('window-all-closed',()=>app.quit());

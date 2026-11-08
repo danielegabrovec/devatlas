@@ -1,0 +1,5 @@
+<script>
+import {onMount,tick,setContext,getContext} from 'svelte';
+const options=[{id:'dev',name:'Sviluppo'},{id:'prod',name:'Produzione'}];let selected=$state(options[0]);
+</script>
+<main><select bind:value={selected}>{#each options as item (item.id)}<option value={item}>{item.name}</option>{/each}</select><p>ID: {selected.id}</p></main>

@@ -1,0 +1,9 @@
+import asyncio
+async def main():
+    semaphore = asyncio.Semaphore(2)
+    async def work(value):
+        async with semaphore:
+            await asyncio.sleep(0.01)
+            return value
+    print(await asyncio.gather(*(work(i) for i in range(5))))
+asyncio.run(main())

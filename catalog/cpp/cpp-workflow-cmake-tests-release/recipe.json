@@ -1,0 +1,95 @@
+{
+  "id": "cpp-workflow-cmake-tests-release",
+  "title": "Compilare test e versione Release C++ con CMake",
+  "summary": "Costruisce un target di test e un eseguibile e usa CTest prima della consegna del binario Release.",
+  "stack": "cpp",
+  "group": "Linguaggi",
+  "section": "Compilazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "C++20, GCC 13+ oppure Clang 16+/MSVC con libreria C++20",
+  "prerequisites": "Compilatore e libreria standard C++20. Comandi pronti per GCC/g++; su Windows usare MSYS2 UCRT64 o una toolchain GCC nel PATH. Nessuna libreria esterna.",
+  "tags": [
+    "workflow",
+    "build, test e distribuzione",
+    "build",
+    "test",
+    "distribution"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "math.hpp",
+      "language": "cpp",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "c2573eba42308f6f0a9a6c2ad39d6b2c2031e9e9fd96bcf0a604d657d9d8d37a"
+    },
+    {
+      "id": "file-1",
+      "path": "main.cpp",
+      "language": "cpp",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "7f7174a8e30b6798e2bce333e54e0ca6691618c6875a0ff07f82f57a124ac10e"
+    },
+    {
+      "id": "file-2",
+      "path": "test.cpp",
+      "language": "cpp",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "47057942cc4f53719b1f84d6809c4b5e42e577622aa91620749a29b090f9c99e"
+    },
+    {
+      "id": "file-3",
+      "path": "CMakeLists.txt",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "5b86c123fbb5a1b8d8448ff05e4e5d9fb7aab99fe932723145d27fad1c00ed2d"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "fc5e7a64b72c57b3e1d63cac2bac1c01c818049a1e14d825c0c61f62ae572181"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "cpp-workflow-gdb-vscode",
+    "cpp-workflow-toolchain-project",
+    "cpp-progetto-completo-registro-contatti-c"
+  ],
+  "expected": "CTest segnala1test superato; l'app stampa5. -C Release seleziona la configurazione nei generatori multipli.",
+  "errors": [
+    "Se CMake non trova il compilatore, apri il prompt della toolchain o seleziona un generatore installato. La redistribuzione del solo .exe non garantisce che le DLL runtime siano disponibili."
+  ],
+  "sources": [
+    "https://learn.microsoft.com/en-us/cpp/standard-library/cpp-standard-library-reference",
+    "https://isocpp.org/get-started",
+    "https://cmake.org/cmake/help/latest/manual/ctest.1.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Sorgenti e configurazioni verificati su Windows x64: PowerShell parser, source compiler. Report: reports/languages-workflows-validation.json. Non attestati sessioni interattive di debug, installazioni di dipendenze o distribuzione completa del workflow; nessuna esecuzione Linux/macOS."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

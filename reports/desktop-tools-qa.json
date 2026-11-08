@@ -1,0 +1,775 @@
+{
+  "date": "2026-10-29",
+  "scope": {
+    "pyside6": 100,
+    "pyqt6": 60,
+    "qt-cpp": 60,
+    "electron": 40,
+    "avalonia": 35,
+    "maui": 30,
+    "winui": 25,
+    "powershell": 30,
+    "bash": 20,
+    "git": 40,
+    "cmake": 25,
+    "docker": 35,
+    "cicd": 30,
+    "packaging": 20
+  },
+  "counts": {
+    "pyside6": 100,
+    "pyqt6": 60,
+    "qt-cpp": 60,
+    "electron": 40,
+    "avalonia": 35,
+    "maui": 30,
+    "winui": 25,
+    "powershell": 30,
+    "bash": 20,
+    "git": 40,
+    "cmake": 25,
+    "docker": 35,
+    "cicd": 30,
+    "packaging": 20
+  },
+  "projects": [
+    {
+      "id": "pyside6-progetto-note",
+      "files": [
+        "main.py",
+        "requirements.txt",
+        "README.md"
+      ],
+      "verification": "manifest-and-static-syntax-only"
+    },
+    {
+      "id": "pyside6-progetto-ricerca",
+      "files": [
+        "main.py",
+        "requirements.txt",
+        "README.md"
+      ],
+      "verification": "manifest-and-static-syntax-only"
+    },
+    {
+      "id": "pyqt6-progetto-note",
+      "files": [
+        "main.py",
+        "requirements.txt",
+        "README.md"
+      ],
+      "verification": "manifest-and-static-syntax-only"
+    },
+    {
+      "id": "qt-cpp-progetto-note",
+      "files": [
+        "main.cpp",
+        "CMakeLists.txt",
+        "README.md"
+      ],
+      "verification": "manifest-and-static-syntax-only"
+    },
+    {
+      "id": "electron-progetto-note",
+      "files": [
+        "package.json",
+        "main.cjs",
+        "preload.cjs",
+        "index.html",
+        "style.css",
+        "renderer.js",
+        "README.md"
+      ],
+      "verification": "manifest-and-static-syntax-only"
+    },
+    {
+      "id": "avalonia-progetto-note",
+      "files": [
+        "RecipeApp.csproj",
+        "Program.cs",
+        "README.md"
+      ],
+      "verification": "manifest-and-static-syntax-only"
+    },
+    {
+      "id": "maui-progetto-note",
+      "files": [
+        "RecipeApp.csproj",
+        "MainPage.cs",
+        "App.cs",
+        "MauiProgram.cs",
+        "Platforms/Windows/App.xaml",
+        "Platforms/Windows/App.xaml.cs",
+        "README.md"
+      ],
+      "verification": "manifest-and-static-syntax-only"
+    },
+    {
+      "id": "winui-progetto-note",
+      "files": [
+        "RecipeApp.csproj",
+        "MainWindow.cs",
+        "App.xaml",
+        "App.xaml.cs",
+        "README.md"
+      ],
+      "verification": "manifest-and-static-syntax-only"
+    },
+    {
+      "id": "git-progetto-branch-test",
+      "files": [
+        "lab.ps1",
+        "README.md"
+      ],
+      "verification": "manifest-and-static-syntax-only"
+    },
+    {
+      "id": "cmake-progetto-libreria-test",
+      "files": [
+        "CMakeLists.txt",
+        "include/calc.hpp",
+        "src/calc.cpp",
+        "tests/calc_test.cpp",
+        "README.md"
+      ],
+      "verification": "manifest-and-static-syntax-only"
+    },
+    {
+      "id": "docker-progetto-contatore-redis",
+      "files": [
+        "Dockerfile",
+        "app.py",
+        "compose.yaml",
+        "README.md"
+      ],
+      "verification": "manifest-and-static-syntax-only"
+    }
+  ],
+  "static": {
+    "python": 272,
+    "json": 55,
+    "xml": 150,
+    "javascript": 121,
+    "powershell": 72,
+    "bash": 0,
+    "csharp_string_checks": 211,
+    "hashes": 1859
+  },
+  "errors": [],
+  "qt_smoke": [
+    {
+      "id": "pyside6-action-menu",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-animation",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-buddy",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-busy-progress",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-checkbox-tristate",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-clipboard",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-clipboard-read",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-color-dialog",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-combo-data",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-completer",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-confirm",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-context-menu",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-custom-dialog",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-date-edit",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-datetime",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-debounce",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-debug-build-distribuzione",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-delegate",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-double-spinbox",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-drag-drop",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-dynamic-property",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-editable-combo",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-editable-model",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-elapsed",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-event-filter",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-exception",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-file-watcher",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-filesystem-model",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-filter-model",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-folder-dialog",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-font-dialog",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-form-layout",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-geometry",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-graphics-scene",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-grid-layout",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-groupbox",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-inizializzazione-ambiente",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-input-dialog",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-integer-validator",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-json",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-line-edit",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-list-model",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-list-widget",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-locale",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-logging",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-markdown",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-numeric-sort",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-object-discovery",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-opacity",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-open-file",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-paint-widget",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-palette",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-password",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-pixmap",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-plain-editor",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-process",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-progetto-note",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-progetto-ricerca",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-progress",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-radio-group",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-regexp-validator",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-rich-editor",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-save-file",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-savefile",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-scroll-area",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-selection",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-settings",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-shortcut",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-signal-blocker",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-signal-custom",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-single-shot",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-size-policy",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-slider",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-spacer",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-spinbox",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-splitter",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-sqlite",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-stacked",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-standard-icons",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-standard-path",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-statusbar",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-stylesheet",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-syntax-highlight",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-tab-order",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-table-model",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-table-widget",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-tabs",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-temporary-file",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-text-find",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-threadpool",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-time-edit",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-timer",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-toolbar",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-tooltip",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-translation",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-tree",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-undo-stack",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-url",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-user-role",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pyside6-worker-thread",
+      "ok": true,
+      "exit_code": 0,
+      "stderr": ""
+    }
+  ],
+  "limitations": [
+    "Offscreen smoke tests only construct each PySide6 window and run its event loop for 150 ms; no user dialogs, clipboard, network, printer or installer are activated.",
+    "PyQt6 examples receive Python AST checks; runtime PyQt6 is not installed in the PySide6 environment.",
+    "Qt smoke redirects QSettings and QStandardPaths to a temporary directory and sets the Qt plugin path explicitly for Windows paths containing commas.",
+    "C++/.NET compilation, actual Docker/CI jobs and packaging/signing are not claimed verified by this report.",
+    "C# string scanning and XML parsing detect structural mistakes, but are not a C# compiler or XAML compiler.",
+    "Bash syntax checking unavailable: Git Bash cannot initialize its MSYS shared object in the sandbox (NtCreateDirectoryObject access denied). No Bash parser success is claimed; Bash recipes retain documented status."
+  ],
+  "bash_unavailable": {
+    "reason": "0 [main] bash (17868) C:\\Program Files\\Git\\bin\\..\\usr\\bin\\bash.exe: *** fatal error - NtCreateDirectoryObject(\\BaseNamedObjects\\msys-2.0S5-1888ae32e00d56aa): 0xC0000022",
+    "skipped": 20
+  },
+  "success": true,
+  "project_count": 11
+}

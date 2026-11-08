@@ -1,0 +1,95 @@
+{
+  "id": "python-workflow-venv-package",
+  "title": "Inizializzare venv e installare un package locale Python",
+  "summary": "Prepara un ambiente isolato e installa un package src-layout in modalità modificabile.",
+  "stack": "python",
+  "group": "Linguaggi",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Python 3.11–3.13; esempi con libreria standard",
+  "prerequisites": "CPython 3.11 o successivo nel PATH. Nessun pacchetto esterno; sqlite3 deve essere incluso nella distribuzione.",
+  "tags": [
+    "workflow",
+    "inizializzazione",
+    "setup",
+    "test",
+    "distribution"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "pyproject.toml",
+      "language": "toml",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "b3a3fa61423af24c6496d5869fa49d010e1bfc395543a8296b2cfb768379190b"
+    },
+    {
+      "id": "file-1",
+      "path": "src/catalog_hello/__init__.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "b44ce90c4138582dd105021ab2a3ad21dd4a4b9b9603df34e33f1b493f234d3f"
+    },
+    {
+      "id": "file-2",
+      "path": "src/catalog_hello/__main__.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "97879de24dfe517954c7ab9a6b95169721918e8fcd854f69f51bbcb4866ccaef"
+    },
+    {
+      "id": "file-3",
+      "path": ".gitignore",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "b118bf50de49f1db872e36b2d35d4972e8dc1f3ab6985ab63e570727fc2d6298"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "7601a4124d3b80ccce78b6d5a1f4d31c12299696c79e24e653508b48af868d72"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "python-workflow-debug-exe",
+    "python-workflow-wheel-tests",
+    "python-eseguire-query-sqlite-parametrizzate-da-python"
+  ],
+  "expected": "Il modulo stampa Ciao Ada; modificando src/catalog_hello/__init__.py cambia l'esecuzione successiva senza reinstallare il package.",
+  "errors": [
+    "Se compare No module named catalog_hello, esegui installazione ed avvio con lo stesso interprete .venv. Non nominare un file locale setuptools.py."
+  ],
+  "sources": [
+    "https://docs.python.org/3.13/library/",
+    "https://docs.python.org/3.13/tutorial/",
+    "https://packaging.python.org/en/latest/tutorials/packaging-projects/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Sorgenti e configurazioni verificati su Windows x64: PowerShell parser, Python AST, TOML parse. Report: reports/languages-workflows-validation.json. Non attestati sessioni interattive di debug, installazioni di dipendenze o distribuzione completa del workflow; nessuna esecuzione Linux/macOS."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

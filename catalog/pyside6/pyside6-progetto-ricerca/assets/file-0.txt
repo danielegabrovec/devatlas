@@ -1,0 +1,34 @@
+import sys, json, sqlite3, tempfile, logging
+from pathlib import Path
+from PySide6.QtCore import *
+from PySide6.QtGui import *
+from PySide6.QtWidgets import *
+
+def build(root, layout):
+    connection = sqlite3.connect(":memory:")
+    connection.execute("CREATE VIRTUAL TABLE recipes USING fts5(title, body)")
+    connection.executemany("INSERT INTO recipes(title, body) VALUES (?, ?)", [("Avvia Python", "venv installazione"), ("Compila Qt", "cmake build debug"), ("Cerca SQLite", "database query fts")])
+    root.connection = connection
+    query = QLineEdit()
+    query.setPlaceholderText("Cerca titolo o contenuto")
+    items = QListWidget()
+    def search(text):
+        items.clear()
+        tokens = text.split()
+        safe = " AND ".join('"' + token.replace('"', '""') + '"' for token in tokens)
+        rows = connection.execute("SELECT title FROM recipes WHERE recipes MATCH ? ORDER BY bm25(recipes)", (safe,)).fetchall() if safe else connection.execute("SELECT title FROM recipes ORDER BY title").fetchall()
+        items.addItems([row[0] for row in rows])
+    query.textChanged.connect(search)
+    layout.addWidget(query)
+    layout.addWidget(items)
+    search("")
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    window = QWidget()
+    window.setWindowTitle("Ricetta Qt")
+    window.resize(720, 480)
+    layout = QVBoxLayout(window)
+    build(window, layout)
+    window.show()
+    sys.exit(app.exec())

@@ -1,0 +1,204 @@
+{
+  "date": "2026-10-29",
+  "recipes": 14,
+  "checks": [
+    {
+      "id": "nodejs-inizializzare-ambiente-e-progetto-nodejs",
+      "kind": "static-files",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "id": "nodejs-inizializzare-ambiente-e-progetto-nodejs",
+      "kind": "node-test-or-check",
+      "passed": true,
+      "details": "30\n"
+    },
+    {
+      "id": "nodejs-debug-test-e-produzione-nodejs",
+      "kind": "static-files",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "id": "nodejs-debug-test-e-produzione-nodejs",
+      "kind": "node-test-or-check",
+      "passed": true,
+      "details": "✔ totale (0.3937ms)\n✔ quantità invalida (0.2644ms)\nℹ tests 2\nℹ suites 0\nℹ pass 2\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 80.6803\n"
+    },
+    {
+      "id": "react-inizializzare-ambiente-e-progetto-react",
+      "kind": "static-files",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "id": "react-inizializzare-ambiente-e-progetto-react",
+      "kind": "vite-build",
+      "passed": true,
+      "details": "vite v7.1.7 building for production...\ntransforming...\n✓ 25 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                   0.35 kB │ gzip:  0.26 kB\ndist/assets/index-Bwppf2oS.css    0.40 kB │ gzip:  0.26 kB\ndist/assets/index-CvYESiua.js   186.82 kB │ gzip: 58.82 kB │ map: 875.19 kB\n✓ built in 485ms\n"
+    },
+    {
+      "id": "react-debug-test-e-produzione-react",
+      "kind": "static-files",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "id": "react-debug-test-e-produzione-react",
+      "kind": "vite-build",
+      "passed": true,
+      "details": "vite v7.1.7 building for production...\ntransforming...\n✓ 26 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                   0.35 kB │ gzip:  0.26 kB\ndist/assets/index-Bwppf2oS.css    0.40 kB │ gzip:  0.26 kB\ndist/assets/index-5UWZ1A9T.js   187.07 kB │ gzip: 58.96 kB │ map: 875.86 kB\n✓ built in 501ms\n"
+    },
+    {
+      "id": "react-debug-test-e-produzione-react",
+      "kind": "node-tests",
+      "passed": true,
+      "details": "✔ moltiplica (0.5543ms)\n✔ rifiuta zero (0.2014ms)\nℹ tests 2\nℹ suites 0\nℹ pass 2\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 73.3155\n"
+    },
+    {
+      "id": "nextjs-inizializzare-ambiente-e-progetto-nextjs",
+      "kind": "static-files",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "id": "nextjs-inizializzare-ambiente-e-progetto-nextjs",
+      "kind": "next-build",
+      "passed": true,
+      "details": "▲ Next.js 16.4.3 (Turbopack)\n✓ Running next.config took 97ms\n\n  Creating an optimized production build ...\n✓ Compiled successfully in 2.1s\n  Running TypeScript ...\n  Finished TypeScript in 3ms ...\n  Collecting page data using 4 workers ...\n  Generating static pages using 4 workers (0/3) ...\n✓ Generating static pages using 4 workers (3/3) in 863ms\n  Finalizing page optimization ...\n\nRoute (app)\n┌ ○ /\n└ ○ /_not-found\n\n\n○  (Static)  prerendered as static content\n\n⚠ Warning: Next.js ignored package-lock.json in C:\\Users\\danie because it would include your home directory (C:\\Users\\danie).\n To use this directory, set `turbopack.root` in your Next.js config.\n\n"
+    },
+    {
+      "id": "nextjs-debug-test-e-produzione-nextjs",
+      "kind": "static-files",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "id": "nextjs-debug-test-e-produzione-nextjs",
+      "kind": "next-build",
+      "passed": true,
+      "details": "▲ Next.js 16.4.3 (Turbopack)\n✓ Running next.config took 47ms\n\n  Creating an optimized production build ...\n✓ Compiled successfully in 1050ms\n  Running TypeScript ...\n  Finished TypeScript in 2ms ...\n  Collecting page data using 4 workers ...\n  Generating static pages using 4 workers (0/3) ...\n✓ Generating static pages using 4 workers (3/3) in 733ms\n  Finalizing page optimization ...\n\nRoute (app)\n┌ ○ /\n└ ○ /_not-found\n\n\n○  (Static)  prerendered as static content\n\n⚠ Warning: Next.js ignored package-lock.json in C:\\Users\\danie because it would include your home directory (C:\\Users\\danie).\n To use this directory, set `turbopack.root` in your Next.js config.\n\n"
+    },
+    {
+      "id": "nextjs-debug-test-e-produzione-nextjs",
+      "kind": "node-tests",
+      "passed": true,
+      "details": "✔ totale (0.5448ms)\nℹ tests 1\nℹ suites 0\nℹ pass 1\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 75.0114\n"
+    },
+    {
+      "id": "aspnet-inizializzare-ambiente-e-progetto-aspnet",
+      "kind": "static-files",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "id": "aspnet-inizializzare-ambiente-e-progetto-aspnet",
+      "kind": "dotnet-build",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:02.80\n"
+    },
+    {
+      "id": "aspnet-debug-test-e-produzione-aspnet",
+      "kind": "static-files",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "id": "aspnet-debug-test-e-produzione-aspnet",
+      "kind": "dotnet-build",
+      "passed": true,
+      "details": "\nCompilazione completata.\n    Avvisi: 0\n    Errori: 0\n\nTempo trascorso 00:00:22.48\n"
+    },
+    {
+      "id": "aspnet-debug-test-e-produzione-aspnet",
+      "kind": "dotnet-tests",
+      "passed": true,
+      "details": "2controlli superati\n"
+    },
+    {
+      "id": "fastapi-inizializzare-ambiente-e-progetto-fastapi",
+      "kind": "static-files",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "id": "fastapi-inizializzare-ambiente-e-progetto-fastapi",
+      "kind": "fastapi-testclient",
+      "passed": true,
+      "details": "health200\n"
+    },
+    {
+      "id": "fastapi-debug-test-e-produzione-fastapi",
+      "kind": "static-files",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "id": "fastapi-debug-test-e-produzione-fastapi",
+      "kind": "fastapi-testclient",
+      "passed": true,
+      "details": "..                                                                       [100%]\n============================== warnings summary ===============================\n..\\..\\python\\starlette\\testclient.py:37\n  C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\web-qa\\python\\starlette\\testclient.py:37: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.\n    _PortalFactoryType = typing.Callable[[], typing.ContextManager[anyio.abc.BlockingPortal]]\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n2 passed, 1 warning in 0.81s\n"
+    },
+    {
+      "id": "html-css-inizializzare-ambiente-e-progetto-html-css",
+      "kind": "static-files",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "id": "html-css-inizializzare-ambiente-e-progetto-html-css",
+      "kind": "node-test-or-check",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "id": "html-css-debug-test-e-produzione-html-css",
+      "kind": "static-files",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "id": "html-css-debug-test-e-produzione-html-css",
+      "kind": "node-test-or-check",
+      "passed": true,
+      "details": "✔ totale (0.3754ms)\n✔ rifiuta zero (0.1326ms)\nℹ tests 2\nℹ suites 0\nℹ pass 2\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 73.8241\n"
+    },
+    {
+      "id": "django-inizializzare-ambiente-e-progetto-django",
+      "kind": "static-files",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "id": "django-inizializzare-ambiente-e-progetto-django",
+      "kind": "django-check",
+      "passed": true,
+      "details": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "id": "django-debug-test-e-produzione-django",
+      "kind": "static-files",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "id": "django-debug-test-e-produzione-django",
+      "kind": "django-check",
+      "passed": true,
+      "details": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "id": "django-debug-test-e-produzione-django",
+      "kind": "django-tests",
+      "passed": true,
+      "details": "Found 2 test(s).\nSystem check identified no issues (0 silenced).\nCreating test database for alias 'default'...\n\n..\n----------------------------------------------------------------------\nRan 2 tests in 0.006s\n\nOK\nDestroying test database for alias 'default'...\n\n"
+    }
+  ],
+  "failures": [],
+  "limits": [
+    "Breakpoint VSCode configurati ma nessuna sessione F5 attestata.",
+    "Processi di produzione descritti; nessuna distribuzione pubblica.",
+    "Django check --deploy segnala intenzionalmente la configurazione locale da sostituire."
+  ]
+}

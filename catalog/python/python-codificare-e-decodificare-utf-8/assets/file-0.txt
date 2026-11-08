@@ -1,0 +1,7 @@
+text = "Città"
+payload = text.encode("utf-8")
+print(payload.decode("utf-8"))
+try:
+    b"\xff".decode("utf-8", errors="strict")
+except UnicodeDecodeError:
+    print("Byte non valido")

@@ -1,0 +1,6 @@
+$qtPrefix = {{qt_dir|powershell}}
+cmake -S . -B build/release -G Ninja -DCMAKE_BUILD_TYPE=Release "-DCMAKE_PREFIX_PATH=$qtPrefix"
+cmake --build build/release
+New-Item -ItemType Directory -Path dist -Force | Out-Null
+Copy-Item -LiteralPath .\build\release\{{project_name}}.exe -Destination .\dist\{{project_name}}.exe
+& "$qtPrefix/bin/windeployqt.exe" --release --no-compiler-runtime .\dist\{{project_name}}.exe

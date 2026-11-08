@@ -1,0 +1,7 @@
+from django import forms
+class NameForm(forms.Form):
+    name=forms.CharField()
+    def clean_name(self):
+        value=self.cleaned_data['name'].strip()
+        if len(value)<3: raise forms.ValidationError('Almeno3caratteri')
+        return value

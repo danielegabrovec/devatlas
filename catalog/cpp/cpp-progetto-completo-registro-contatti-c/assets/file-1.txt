@@ -1,0 +1,5 @@
+#pragma once
+#include <map>
+#include <optional>
+#include <string>
+class Contacts{std::map<std::string,std::string> entries;public:void add(const std::string& name,const std::string& email);std::optional<std::string> find(const std::string& name)const;};

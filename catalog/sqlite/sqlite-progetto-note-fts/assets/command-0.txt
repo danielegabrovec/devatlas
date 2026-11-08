@@ -1,0 +1,1 @@
+sqlite3 note.sqlite ".read schema.sql" ".read seed.sql" ".read search.sql"

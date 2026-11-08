@@ -1,0 +1,3 @@
+line = "INFO:utente:accesso:riuscito"
+level, user, message = line.split(":", 2)
+print(level, user, message, sep=" | ")

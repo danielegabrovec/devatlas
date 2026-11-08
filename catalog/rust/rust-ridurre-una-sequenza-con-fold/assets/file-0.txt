@@ -1,0 +1,4 @@
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+let product=(1..=5).fold(1,|acc,value|acc*value);println!("{}",product);
+Ok(())
+}

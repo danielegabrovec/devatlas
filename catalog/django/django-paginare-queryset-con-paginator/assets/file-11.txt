@@ -1,0 +1,5 @@
+from django.core.paginator import Paginator
+from notes.models import Note
+p=Paginator(Note.objects.order_by('id'),2)
+page=p.get_page(1)
+print([x.title for x in page],page.has_next())

@@ -1,0 +1,1 @@
+export const viewport={width:'device-width',initialScale:1,themeColor:'#1769c5'};export default function Page(){return <h1>Vista responsive</h1>}

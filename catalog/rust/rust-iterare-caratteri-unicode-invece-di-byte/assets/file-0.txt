@@ -1,0 +1,4 @@
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+let value="Città";println!("{} {}",value.len(),value.chars().count());
+Ok(())
+}

@@ -1,0 +1,12 @@
+{
+  "name": "typescript-example",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/main.js"
+  },
+  "devDependencies": {
+    "typescript": "6.0.3"
+  }
+}

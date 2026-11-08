@@ -1,0 +1,4 @@
+fun String.label():String = trim().uppercase()
+fun main() {
+println("  ada  ".label())
+}

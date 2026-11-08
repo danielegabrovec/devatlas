@@ -1,0 +1,118 @@
+{
+  "id": "maui-inizializzazione-ambiente",
+  "title": "Inizializzare ambiente e prima app .NET MAUI Windows",
+  "summary": "Preparare SDK e dipendenze del framework e avviare un contatore desktop con tutti i file di ingresso.",
+  "stack": "maui",
+  "group": "Desktop e GUI",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows"
+  ],
+  "ide": [
+    "VS Code",
+    "Visual Studio"
+  ],
+  "versions": ".NET 10; MAUI Controls 10.0.31; destinazione Windows",
+  "prerequisites": "Windows 10 build 19041+; .NET 10 SDK con workload MAUI Windows installato; Visual Studio 2026 con MAUI. Non occorrono Android o un Mac per questo esempio Windows.",
+  "tags": [
+    ".NET MAUI Windows",
+    "initialize",
+    "SDK",
+    "restore",
+    "first app"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "MainPage.cs",
+      "language": "csharp",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "4919d42fc8f1acca31beb976559a5d050bbf3627cac62e6433ff6a12cfed1ca3"
+    },
+    {
+      "id": "file-1",
+      "path": "App.cs",
+      "language": "csharp",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "aa98be97f62791ed0036e1b9a4f85a038725933a044971f7e91420ee3f55b219"
+    },
+    {
+      "id": "file-2",
+      "path": "MauiProgram.cs",
+      "language": "csharp",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "d8818c4e61b2e8037126b60c246221cf4a0d49a9a6328e1b0254eef2ff89b976"
+    },
+    {
+      "id": "file-3",
+      "path": "Platforms/Windows/App.xaml",
+      "language": "xml",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "25c3fc072ac197781deb7c13b2961d68221c5616f792f6fdd3c4c3d345c35f52"
+    },
+    {
+      "id": "file-4",
+      "path": "Platforms/Windows/App.xaml.cs",
+      "language": "csharp",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "32b0e1f3cd46b4d3e17ea78b69003ed4c73663319b962ca2d0ffeea0a2c1becf"
+    },
+    {
+      "id": "file-5",
+      "path": "{{project_name}}.csproj",
+      "language": "xml",
+      "role": "file",
+      "source": "assets/file-5.txt",
+      "sha256": "2708f9712ca94ca1dd6e2cf4e4576c60490122e9808f907d4aaebe05ebe6e251"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "761d2247f4d607d61f1720181bd0b9a795066864c9de549dd74092089817d061"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "project_name",
+      "label": "Nome dell'applicazione",
+      "type": "identifier",
+      "default": "RecipeDesktop",
+      "required": true
+    }
+  ],
+  "related": [
+    "maui-debug-build-distribuzione",
+    "maui-appdata",
+    "maui-confirm"
+  ],
+  "expected": "La prima app apre una finestra e il pulsante Incrementa aggiorna il contatore.",
+  "errors": [
+    "SDK o workload non trovato: confrontare dotnet --info e il workload richiesto con la versione del progetto.",
+    "Classe App duplicata: esportare in una cartella nuova mantenendo tutti i file, senza sovrapporli a un template già generato."
+  ],
+  "sources": [
+    "https://learn.microsoft.com/dotnet/maui/get-started/first-app",
+    "https://learn.microsoft.com/dotnet/maui/windows/deployment/publish-unpackaged-cli?view=net-maui-10.0"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "details": "Controlli statici sui sorgenti: AST Python, parser PowerShell/Bash dove disponibili, node --check per JavaScript, JSON e XML secondo i file presenti. Nessuna compilazione C#/XAML/C++ né esecuzione Docker/CI/packaging attestata. Report: reports/desktop-tools-qa.json.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

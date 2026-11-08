@@ -1,0 +1,5 @@
+<script>
+import {onMount,tick,setContext,getContext} from 'svelte';
+import Choice from './Choice.svelte';let result=$state('Nessuna scelta');
+</script>
+<main><Choice onchoose={(value)=>result=value}/><p>{result}</p></main>

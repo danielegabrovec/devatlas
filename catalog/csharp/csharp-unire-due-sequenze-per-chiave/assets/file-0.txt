@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Collections.Concurrent;
+using System.Diagnostics;
+using System.Globalization;
+using System.IO;
+using System.IO.Compression;
+using System.Linq;
+using System.Text;
+using System.Text.Json;
+using System.Text.RegularExpressions;
+using System.Threading;
+using System.Threading.Channels;
+using System.Threading.Tasks;
+using System.Xml.Linq;
+
+public static class Program {
+ public static async Task Main(string[] args) {
+var users=new[]{(Id:1,Name:"Ada"),(Id:2,Name:"Luca")};
+var orders=new[]{(UserId:1,Total:12m)};
+var rows=users.Join(orders,u=>u.Id,o=>o.UserId,(u,o)=>$"{u.Name}:{o.Total}");
+Console.WriteLine(string.Join(",",rows));
+ }
+}

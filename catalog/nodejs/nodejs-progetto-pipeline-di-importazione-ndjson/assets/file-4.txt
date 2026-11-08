@@ -1,0 +1,1 @@
+{"name":"ndjson-import","private":true,"type":"module","scripts":{"start":"node src/main.mjs","test":"node --test"}}

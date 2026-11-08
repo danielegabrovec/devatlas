@@ -1,0 +1,1 @@
+mongosh "mongodb://127.0.0.1:27018/atlas_demo_debug" --quiet --file explain.js

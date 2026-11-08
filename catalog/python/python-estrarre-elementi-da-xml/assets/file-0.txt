@@ -1,0 +1,4 @@
+from xml.etree import ElementTree as ET
+root = ET.fromstring('<items><item id="7">Ada</item></items>')
+for item in root.findall("item"):
+    print(item.attrib["id"], item.text)

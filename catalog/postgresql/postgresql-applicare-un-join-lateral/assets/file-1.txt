@@ -1,0 +1,1 @@
+SELECT p.name,o.total FROM people p LEFT JOIN LATERAL(SELECT total FROM orders WHERE person_id=p.id ORDER BY created_at DESC LIMIT 1)o ON true;

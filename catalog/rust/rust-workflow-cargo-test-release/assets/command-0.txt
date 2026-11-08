@@ -1,0 +1,3 @@
+cargo test --offline
+cargo build --release --offline
+.\target\release\rust_release.exe

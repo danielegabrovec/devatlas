@@ -1,0 +1,11 @@
+#include <QtWidgets>
+#include <QtCore>
+#include <QtGui>
+
+int main(int argc, char **argv) {
+ QApplication app(argc,argv);
+ QWidget window; window.resize(720,480);
+ auto *layout=new QVBoxLayout(&window);
+ auto *edit=new QPlainTextEdit("int value = 42;\n"); edit->setFont(QFontDatabase::systemFont(QFontDatabase::FixedFont)); edit->setLineWrapMode(QPlainTextEdit::NoWrap); layout->addWidget(edit);
+ window.show(); return app.exec();
+}

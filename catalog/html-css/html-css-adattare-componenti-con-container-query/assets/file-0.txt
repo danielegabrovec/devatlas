@@ -1,0 +1,2 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Laboratorio HTML/CSS</title><link rel="stylesheet" href="style.css"></head><body><div class='container'><article class='card'><h2>Scheda</h2><p>La struttura cambia quando il contenitore supera400px.</p></article></div></body></html>

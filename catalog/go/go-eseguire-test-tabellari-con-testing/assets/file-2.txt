@@ -1,0 +1,3 @@
+package main
+import "testing"
+func TestTotal(t *testing.T){cases:=[]struct{name string;values []int;want int}{{"somma",[]int{2,3},5},{"vuoto",nil,0}};for _,tc:=range cases{t.Run(tc.name,func(t *testing.T){if got:=Total(tc.values);got!=tc.want{t.Fatalf("ottenuto %d, atteso %d",got,tc.want)}})}}

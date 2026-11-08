@@ -1,0 +1,1 @@
+CREATE TABLE lines(price numeric,qty integer,total numeric GENERATED ALWAYS AS(price*qty) STORED); INSERT INTO lines(price,qty) VALUES(5,3) RETURNING *;

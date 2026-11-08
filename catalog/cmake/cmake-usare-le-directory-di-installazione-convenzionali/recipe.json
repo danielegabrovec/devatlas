@@ -1,0 +1,79 @@
+{
+  "id": "cmake-usare-le-directory-di-installazione-convenzionali",
+  "title": "Usare le directory di installazione convenzionali",
+  "summary": "Applicare GNUInstallDirs per rispettare layout e override del sistema.",
+  "stack": "cmake",
+  "group": "Strumenti",
+  "section": "Compilazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code",
+    "Visual Studio",
+    "CLion"
+  ],
+  "versions": "CMake 3.24+; C++17/20",
+  "prerequisites": "CMake 3.24+, compilatore C++ installato. Su Windows usare Developer PowerShell MSVC o una toolchain già configurata.",
+  "tags": [
+    "CMake",
+    "build",
+    "usare-le-directory-di-installazione-convenzionali"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.cpp",
+      "language": "cpp",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "ca4f11174323d8829cfc1a8ade6bec91b0b642894dbfc2188979e7518b48463f"
+    },
+    {
+      "id": "file-1",
+      "path": "CMakeLists.txt",
+      "language": "cmake",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "b3a362c8a959aeb3179a05c8d9b58180f19d222926ff8de01cc1bac1731069ce"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "22c3e2c69303b94345870e7364a7c057171ac4168417085fbe596b5bf5c120f6"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "cmake-installare-un-eseguibile-in-una-directory-staging",
+    "cmake-abilitare-addresssanitizer-solo-su-gcc-e-clang",
+    "cmake-aggiungere-include-privati-a-un-target"
+  ],
+  "expected": "Applicare GNUInstallDirs per rispettare layout e override del sistema.",
+  "errors": [
+    "Ninja non trovato: installarlo se si usa il preset o il compilation database.",
+    "Compilatore non trovato: aprire il terminale di sviluppo della toolchain."
+  ],
+  "sources": [
+    "https://cmake.org/cmake/help/latest/guide/tutorial/index.html",
+    "https://cmake.org/cmake/help/latest/manual/cmake-buildsystem.7.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "documentato",
+    "details": "Esempio originale revisionato nel catalogo; esecuzione non attestata.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

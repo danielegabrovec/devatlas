@@ -1,0 +1,3 @@
+import React, {useState,useEffect,useMemo,useRef,useReducer,useId,useContext,createContext,useCallback,useLayoutEffect,useTransition,useDeferredValue,useSyncExternalStore,useImperativeHandle,forwardRef,memo,lazy,Suspense,Component} from 'react';
+import {createPortal} from 'react-dom';
+export default function App(){const[open,set]=useState(null);return <>{['Installare','Eseguire'].map((x,i)=><section key={x}><h2><button aria-expanded={open===i} aria-controls={'a'+i} onClick={()=>set(open===i?null:i)}>{x}</button></h2><div id={'a'+i} hidden={open!==i}>Istruzioni {x.toLowerCase()}</div></section>)}</>}

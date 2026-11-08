@@ -1,0 +1,7 @@
+from django.test import SimpleTestCase
+from .forms import NoteForm
+class FormTests(SimpleTestCase):
+    def test_short(self):
+        self.assertFalse(NoteForm({'title':'x'}).is_valid())
+    def test_ok(self):
+        self.assertTrue(NoteForm({'title':'Python'}).is_valid())

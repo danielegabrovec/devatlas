@@ -1,0 +1,4 @@
+Set-StrictMode -Version Latest
+$ErrorActionPreference='Stop'
+$tool=Get-Command git -ErrorAction SilentlyContinue
+if($null -eq $tool){"Git non trovato"}else{& $tool.Source --version}

@@ -1,0 +1,139 @@
+{
+  "id": "pyside6-debug-build-distribuzione",
+  "title": "Debug, form Designer e distribuzione PySide6",
+  "summary": "Seguire lo slot di un pulsante nel debugger, rigenerare il form dal file UI e preparare il bundle del binding scelto.",
+  "stack": "pyside6",
+  "group": "Desktop e GUI",
+  "section": "Debug",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows"
+  ],
+  "ide": [
+    "VS Code",
+    "Qt Designer"
+  ],
+  "versions": "Python 3.13; PySide6 6.12.x",
+  "prerequisites": "Python 3.13, ambiente virtuale dedicato e PySide6==6.12.*. Non installare entrambi i binding nello stesso ambiente.",
+  "tags": [
+    "PySide6",
+    "debugpy",
+    "Designer",
+    "uic",
+    "build",
+    "deployment",
+    "breakpoint"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "b9bc1dcb08092bb23daacf6734faccfa6d3e397aee7bdf536fe129954d46ad43"
+    },
+    {
+      "id": "file-1",
+      "path": "ui_main.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "6bbd329d1321fcaf863f53e5a24e80091985d34af72e51c3458112b0c6ba2a95"
+    },
+    {
+      "id": "file-2",
+      "path": "form.ui",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "2fd23e19b019ea20b65d879836470b1851e7a6c589398443812dc12441386485"
+    },
+    {
+      "id": "file-3",
+      "path": "totals.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "d0cb38a3e2f2378d3ee39d0b0675208ecec0b12f40e73333ab1ee821c1d36514"
+    },
+    {
+      "id": "file-4",
+      "path": "requirements.txt",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "789684be226a06c150a8a7e609ae46fdb67468107be1260f5d524a6d19977869"
+    },
+    {
+      "id": "file-5",
+      "path": ".vscode/launch.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-5.txt",
+      "sha256": "4ea08aadd45017c1fc7784a241ec644b8d4f30d8656a79b8675d0383de206e97"
+    },
+    {
+      "id": "file-6",
+      "path": "pyproject.toml",
+      "language": "toml",
+      "role": "file",
+      "source": "assets/file-6.txt",
+      "sha256": "c694c81fa92f8ae4235f3d0ba6930d90fa78cb16de9c2ff9e3591f9528c172ae"
+    },
+    {
+      "id": "command-0",
+      "path": "Ambiente e generazione form",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "cd91cbef2d7c31b3457bd7cb1556ee949cba40064625d1ce06a14d1abfb29014"
+    },
+    {
+      "id": "command-1",
+      "path": "Build distribuibile",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-1.txt",
+      "sha256": "a7e110736863a7e63a43e250368fa5adf0ecc589a992f303b2fbf4f4e36cdbe9"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "project_name",
+      "label": "Nome dell'applicazione",
+      "type": "identifier",
+      "default": "RecipeDesktop",
+      "required": true
+    }
+  ],
+  "related": [
+    "pyside6-form-layout",
+    "pyside6-elapsed",
+    "pyside6-exception"
+  ],
+  "expected": "Il pulsante Calcola mostra Totale: 19.75; il debugger si ferma in totals.py e il bundle include il solo binding scelto.",
+  "errors": [
+    "No module named ui_main: eseguire il compilatore UI dalla cartella con form.ui; una implementazione originale equivalente è già fornita.",
+    "Il breakpoint non viene raggiunto: selezionare .venv come interprete e premere Calcola dopo F5."
+  ],
+  "sources": [
+    "https://doc.qt.io/qtforpython-6/tutorials/basictutorial/uifiles.html",
+    "https://doc.qt.io/qtforpython-6/deployment/deployment-pyside6-deploy.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "details": "Avvio reale Windows con PySide6 6.12.0, piattaforma offscreen, costruzione finestra e ciclo eventi 150 ms. Interazioni e altri sistemi non verificati. Report: reports/desktop-tools-qa.json.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

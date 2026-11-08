@@ -1,0 +1,78 @@
+{
+  "id": "packaging-costruire-una-wheel-python",
+  "title": "Costruire una wheel Python",
+  "summary": "Produrre una distribuzione installabile con build backend dichiarato.",
+  "stack": "packaging",
+  "group": "Strumenti",
+  "section": "Distribuzione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows"
+  ],
+  "ide": [
+    "VS Code",
+    "Visual Studio"
+  ],
+  "versions": "Python 3.12/3.13; Qt 6.12; .NET 10; strumenti specificati per ricetta",
+  "prerequisites": "Leggere i prerequisiti specifici nella guida. Creare una cartella nuova; i comandi compilano artefatti locali senza pubblicarli né firmarli.",
+  "tags": [
+    "packaging",
+    "release",
+    "costruire-una-wheel-python"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "pyproject.toml",
+      "language": "toml",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "1077ea0da18e22ea3684f9b8948fce13b48a50ee94eded13d8bbc6d26e39683b"
+    },
+    {
+      "id": "file-1",
+      "path": "app.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "27dd4e4b948e08e0492366cd45a4678807aaea92337d5eabf9d03cae87b041ed"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "e2af862f7370fe730234f7b2c04fb6d81901d588ff6a4c0f7742538016b8fca2"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "packaging-costruire-una-distribuzione-sorgente-python",
+    "packaging-includere-e-leggere-risorse-in-una-wheel",
+    "packaging-installare-un-comando-console-python"
+  ],
+  "expected": "Produrre una distribuzione installabile con build backend dichiarato.",
+  "errors": [
+    "Tool di compilazione mancante: installare la dipendenza specificata nei prerequisiti.",
+    "Rete non disponibile: i backend e i runtime non presenti non possono essere scaricati."
+  ],
+  "sources": [
+    "https://packaging.python.org/en/latest/tutorials/packaging-projects/",
+    "https://doc.qt.io/qtforpython-6/deployment/deployment-pyside6-deploy.html",
+    "https://learn.microsoft.com/dotnet/core/tools/dotnet-publish",
+    "https://www.electron.build/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "details": "Controlli statici sui sorgenti: AST Python, parser PowerShell/Bash dove disponibili, node --check per JavaScript, JSON e XML secondo i file presenti. Nessuna compilazione C#/XAML/C++ né esecuzione Docker/CI/packaging attestata. Report: reports/desktop-tools-qa.json.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

@@ -1,0 +1,7 @@
+import {Component,signal,computed,effect,inject,DestroyRef,ChangeDetectionStrategy} from '@angular/core';
+import {CommonModule} from '@angular/common';import {FormsModule} from '@angular/forms';
+
+@Component({selector:'app-root',standalone:true,imports:[CommonModule,FormsModule],changeDetection:ChangeDetectionStrategy.OnPush,template:`<main><p role="status">{{message()}}</p></main>`})
+export class AppComponent{
+message=signal('Caricamento');constructor(){const controller=new AbortController();inject(DestroyRef).onDestroy(()=>controller.abort());fetch('data.json',{signal:controller.signal}).then(response=>{if(!response.ok)throw new Error('HTTP '+response.status);return response.json();}).then(value=>this.message.set(value.message)).catch(error=>{if(error.name!=='AbortError')this.message.set(error.message);});}
+}

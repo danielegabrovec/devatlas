@@ -1,0 +1,11 @@
+import unittest
+def divide(a, b):
+    return a / b
+class DivideTest(unittest.TestCase):
+    def test_result(self):
+        self.assertEqual(divide(6, 3), 2)
+    def test_zero(self):
+        with self.assertRaises(ZeroDivisionError):
+            divide(1, 0)
+if __name__ == "__main__":
+    unittest.main()

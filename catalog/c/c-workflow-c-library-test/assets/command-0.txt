@@ -1,0 +1,5 @@
+New-Item -ItemType Directory -Path build,dist -Force | Out-Null
+gcc -std=c17 -O2 -Wall -Iinclude -c src/math_demo.c -o build/math_demo.o
+ar rcs dist/libmath_demo.a build/math_demo.o
+gcc -std=c17 -Iinclude tests/test_math.c -Ldist -lmath_demo -o build/tests.exe
+.\build\tests.exe

@@ -1,0 +1,1 @@
+fun main(){println(listOf(2,3,5).sum())}

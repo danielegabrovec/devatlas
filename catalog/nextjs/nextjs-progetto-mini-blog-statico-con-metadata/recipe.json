@@ -1,0 +1,154 @@
+{
+  "id": "nextjs-progetto-mini-blog-statico-con-metadata",
+  "title": "Progetto: mini blog statico con metadata",
+  "summary": "La home elenca2articoli; link,404 e metadata funzionano. npm run build produce out per hosting statico.",
+  "stack": "nextjs",
+  "group": "Web e backend",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Next16.4.3 App Router; React19.3; Node22.12+",
+  "prerequisites": "Node22.12+, npm e browser. Esempi fetch remoti richiedono rete. App su localhost3000; dataset in memoria solo dimostrativi. Su Windows esporta il progetto in un percorso breve, per esempio C:\\Dev. I percorsi annidati generati da Next.js possono superare i limiti di alcuni ambienti Windows e causare EPERM durante il prerender: il QA del catalogo è riuscito usando un percorso breve.",
+  "tags": [
+    "nextjs",
+    "example",
+    "progetto:",
+    "mini",
+    "blog",
+    "statico"
+  ],
+  "project": true,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "package.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "b27b29cdabfae2410cd930c91108180351cabb2dec45d64df2e2e1c395f4bc53"
+    },
+    {
+      "id": "file-1",
+      "path": "app/layout.js",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "d21e686f7157ebd71b8eb35a56077f4420d276a946d65aa41cf3b16d18ebe08c"
+    },
+    {
+      "id": "file-2",
+      "path": "app/page.js",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "a1a3fd12dc8c61ea9cec129cb6d2bc18ebfe3d5b134f65055834295219edd651"
+    },
+    {
+      "id": "file-3",
+      "path": "app/globals.css",
+      "language": "css",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "ab78ab3385290b548318351011a467a5f61fd8151a1d7484dfc74ae055205494"
+    },
+    {
+      "id": "file-4",
+      "path": "lib/posts.js",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "5f92f0f721804b2e1d4bb6098e60b031ca723438f4c97d574304ab2db4800a71"
+    },
+    {
+      "id": "file-5",
+      "path": "app/posts/[slug]/page.js",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-5.txt",
+      "sha256": "f4598e3de07ef441c6f51302fe0316e0c7e480405c80aa742f547c6b0dc43734"
+    },
+    {
+      "id": "file-6",
+      "path": "app/not-found.js",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-6.txt",
+      "sha256": "bb414c75108841fffb4399700874e4ccd501e337da7cd4956b4ab1bb3e4b274a"
+    },
+    {
+      "id": "file-7",
+      "path": "next.config.mjs",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-7.txt",
+      "sha256": "450576b95533c3b5159b416ba2595e1464c91cb7d252f4be028df0253447dc54"
+    },
+    {
+      "id": "file-8",
+      "path": "README.md",
+      "language": "markdown",
+      "role": "file",
+      "source": "assets/file-8.txt",
+      "sha256": "d6f339b262afadb93ddb829ff2ba45a925a7a3bacaa0309b8d0ad4df5ab119e8"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "93bab900e91e1a9a3180ddf066878f943f7e92edb22c9d4b8328489588059317"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "port",
+      "label": "Porta locale",
+      "type": "port",
+      "default": 3000,
+      "required": true
+    }
+  ],
+  "related": [
+    "nextjs-progetto-api-spese-con-validazione-e-riepilogo",
+    "nextjs-progetto-dashboard-server-con-ricerca-e-pagina",
+    "nextjs-configurare-export-statico"
+  ],
+  "expected": "La home elenca2articoli; link,404 e metadata funzionano. npm run build produce out per hosting statico.",
+  "errors": [
+    "Comando non trovato: installare la toolchain elencata nei prerequisiti.",
+    "Dipendenza mancante: eseguire l'installazione nella radice esportata, senza cambiare le versioni dichiarate."
+  ],
+  "sources": [
+    "https://nextjs.org/docs/app"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "compilato",
+    "date": "2026-10-29",
+    "details": "Build produzione Next16.4.3 e React19.3 completata su Windows; verifica di compilazione/prerender, nessuna attestazione deployment remoto o tutti i flussi UI.",
+    "files_sha256": {
+      "package.json": "b27b29cdabfae2410cd930c91108180351cabb2dec45d64df2e2e1c395f4bc53",
+      "app/layout.js": "d21e686f7157ebd71b8eb35a56077f4420d276a946d65aa41cf3b16d18ebe08c",
+      "app/page.js": "a1a3fd12dc8c61ea9cec129cb6d2bc18ebfe3d5b134f65055834295219edd651",
+      "app/globals.css": "ab78ab3385290b548318351011a467a5f61fd8151a1d7484dfc74ae055205494",
+      "lib/posts.js": "5f92f0f721804b2e1d4bb6098e60b031ca723438f4c97d574304ab2db4800a71",
+      "app/posts/[slug]/page.js": "f4598e3de07ef441c6f51302fe0316e0c7e480405c80aa742f547c6b0dc43734",
+      "app/not-found.js": "bb414c75108841fffb4399700874e4ccd501e337da7cd4956b4ab1bb3e4b274a",
+      "next.config.mjs": "450576b95533c3b5159b416ba2595e1464c91cb7d252f4be028df0253447dc54",
+      "README.md": "d6f339b262afadb93ddb829ff2ba45a925a7a3bacaa0309b8d0ad4df5ab119e8"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

@@ -1,0 +1,1 @@
+import test from'node:test';import assert from'node:assert/strict';import{parse}from'../src/import.mjs';test('rifiuta importo',()=>assert.throws(()=>parse('{"name":"A","total":"x"}')));

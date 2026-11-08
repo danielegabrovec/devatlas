@@ -1,0 +1,1 @@
+.card{padding:2rem;background:white;border:2px solid #1769c5;border-radius:12px}

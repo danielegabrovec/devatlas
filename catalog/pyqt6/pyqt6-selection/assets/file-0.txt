@@ -1,0 +1,26 @@
+import sys, json, sqlite3, tempfile, logging
+from pathlib import Path
+from PyQt6.QtCore import *
+from PyQt6.QtGui import *
+from PyQt6.QtWidgets import *
+Signal = pyqtSignal
+Slot = pyqtSlot
+
+def build(root, layout):
+    model = QStringListModel(["Rosso", "Verde", "Blu"], root)
+    view = QListView()
+    view.setModel(model)
+    label = QLabel("Nessuna selezione")
+    view.selectionModel().currentChanged.connect(lambda current, previous: label.setText(str(current.data())))
+    layout.addWidget(view)
+    layout.addWidget(label)
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    window = QWidget()
+    window.setWindowTitle("Ricetta Qt")
+    window.resize(720, 480)
+    layout = QVBoxLayout(window)
+    build(window, layout)
+    window.show()
+    sys.exit(app.exec())

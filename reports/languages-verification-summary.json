@@ -1,0 +1,23 @@
+{
+  "recipes": 500,
+  "projects": 9,
+  "status": {
+    "eseguito": 473,
+    "statico": 27
+  },
+  "platform": "Windows x64",
+  "date": "2026-10-29",
+  "retained_runtime_recipes": 473,
+  "new_operational_workflows": 27,
+  "historical_original_recipes_executed": 500,
+  "source_checks_original": 384,
+  "source_failures_original": 0,
+  "workflow_checks": 90,
+  "evidence": [
+    "reports/languages-source-validation.json",
+    "reports/languages-runtime-validation.json",
+    "reports/languages-asyncio-recheck.json",
+    "reports/languages-workflows-validation.json"
+  ],
+  "note": "Il catalogo finale conserva473esempi eseguiti e27nuoveprocedure con sorgenti/configurazioni controllati staticamente. Le sessioni interattive di debug e l'intera consegna dei27workflow non sono attestate. Il builder preserva i badge soltanto per file con hash identici alla prova registrata. Nessun collaudo Linux/macOS."
+}

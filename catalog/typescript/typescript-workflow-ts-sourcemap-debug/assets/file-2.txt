@@ -1,0 +1,5 @@
+function sum(values:readonly number[]):number{
+  const result=values.reduce((a,b)=>a+b,0);
+  return result;
+}
+console.log(sum([2,3,5]));

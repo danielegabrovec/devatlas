@@ -1,0 +1,47 @@
+{
+  "name": "Verifica locale dimostrativa",
+  "on": {
+    "workflow_dispatch": {
+      "inputs": {
+        "mode": {
+          "type": "choice",
+          "options": [
+            "quick",
+            "full"
+          ],
+          "default": "quick",
+          "description": "Modalità"
+        }
+      }
+    }
+  },
+  "permissions": {
+    "contents": "read"
+  },
+  "jobs": {
+    "test": {
+      "runs-on": "ubuntu-latest",
+      "steps": [
+        {
+          "uses": "actions/checkout@v7",
+          "with": {
+            "persist-credentials": false
+          }
+        },
+        {
+          "uses": "actions/setup-python@v7",
+          "with": {
+            "python-version": "3.13"
+          }
+        },
+        {
+          "name": "Test",
+          "run": "python -m unittest -v"
+        }
+      ],
+      "env": {
+        "RECIPE_MODE": "${{ inputs.mode }}"
+      }
+    }
+  }
+}

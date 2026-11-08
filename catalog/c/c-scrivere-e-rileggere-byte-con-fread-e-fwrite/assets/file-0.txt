@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdint.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <errno.h>
+#include <limits.h>
+
+
+int main(void){
+FILE *stream=tmpfile();if(!stream)return 1;unsigned char source[]={0,127,255},target[3]={0};
+if(fwrite(source,1,sizeof source,stream)!=sizeof source){fclose(stream);return 1;}rewind(stream);
+size_t read=fread(target,1,sizeof target,stream);printf("%zu %u\n",read,(unsigned)target[2]);fclose(stream);
+return 0;
+}

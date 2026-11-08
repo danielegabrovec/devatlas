@@ -1,0 +1,5 @@
+#![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
+use tauri::Manager;
+
+#[tauri::command]fn demo(query:String)->Vec<String>{let query=query.to_lowercase();["Python","PostgreSQL","Rust"].into_iter().filter(|name|name.to_lowercase().contains(&query)).map(str::to_string).collect()}
+fn main(){tauri::Builder::default().invoke_handler(tauri::generate_handler![demo]).run(tauri::generate_context!()).expect("Tauri application failed");}

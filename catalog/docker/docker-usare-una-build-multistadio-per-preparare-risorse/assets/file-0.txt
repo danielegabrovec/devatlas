@@ -1,0 +1,9 @@
+FROM python:3.13-slim AS prepare
+WORKDIR /build
+COPY app.py .
+RUN python -m py_compile app.py
+FROM python:3.13-slim
+WORKDIR /app
+COPY --from=prepare /build/app.py .
+EXPOSE 8000
+CMD ["python","app.py"]

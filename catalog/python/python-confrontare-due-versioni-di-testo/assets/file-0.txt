@@ -1,0 +1,4 @@
+from difflib import unified_diff
+before = ["uno\n", "due\n"]
+after = ["uno\n", "tre\n"]
+print("".join(unified_diff(before, after, fromfile="prima", tofile="dopo")), end="")

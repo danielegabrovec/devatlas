@@ -1,0 +1,3 @@
+# Progetto: API locale catalogo prodotti
+GET/products restituisce2prodotti; GET/products/9 risponde404.
+Node24+. Eseguire i comandi dalla radice. Nessuna dipendenza esterna. Dati solo didattici.

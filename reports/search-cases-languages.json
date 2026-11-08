@@ -1,0 +1,164 @@
+[
+  {
+    "query": "python leggere CSV con virgole dentro un campo",
+    "expected_ids": [
+      "python-analizzare-campi-csv-con-virgole-tra-virgolette"
+    ]
+  },
+  {
+    "query": "python elaborare righe senza caricare tutto il file",
+    "expected_ids": [
+      "python-leggere-un-file-riga-per-riga"
+    ]
+  },
+  {
+    "query": "python chiamata bloccante dentro asyncio",
+    "expected_ids": [
+      "python-spostare-lavoro-bloccante-in-un-thread"
+    ]
+  },
+  {
+    "query": "C++ out_of_range accesso vector",
+    "expected_ids": [
+      "cpp-controllare-indici-con-vector-at"
+    ]
+  },
+  {
+    "query": "cpp vista su array senza copiare i dati",
+    "expected_ids": [
+      "cpp-accedere-a-una-sequenza-con-span"
+    ]
+  },
+  {
+    "query": "C++ trasferire proprietà esclusiva di un oggetto",
+    "expected_ids": [
+      "cpp-gestire-proprieta-esclusiva-con-unique-ptr"
+    ]
+  },
+  {
+    "query": "C# convertire input numero senza throw",
+    "expected_ids": [
+      "csharp-convertire-un-intero-senza-eccezioni"
+    ]
+  },
+  {
+    "query": "dotnet aggiornare contatori thread safe per chiave",
+    "expected_ids": [
+      "csharp-aggiornare-un-dizionario-concorrente"
+    ]
+  },
+  {
+    "query": "C# rilevare overflow di int",
+    "expected_ids": [
+      "csharp-rilevare-overflow-aritmetico"
+    ]
+  },
+  {
+    "query": "javascript togliere ripetizioni mantenendo ordine",
+    "expected_ids": [
+      "javascript-deduplicare-un-array-con-set"
+    ]
+  },
+  {
+    "query": "js callback perde this del metodo",
+    "expected_ids": [
+      "javascript-fissare-this-con-bind"
+    ]
+  },
+  {
+    "query": "javascript risultati di promise anche se falliscono",
+    "expected_ids": [
+      "javascript-raccogliere-successi-e-fallimenti-asincroni"
+    ]
+  },
+  {
+    "query": "typescript JSON esterno senza any",
+    "expected_ids": [
+      "typescript-validare-un-oggetto-json-sconosciuto"
+    ]
+  },
+  {
+    "query": "ts funzione conserva il tipo dell argomento",
+    "expected_ids": [
+      "typescript-mantenere-il-tipo-con-una-funzione-generica"
+    ]
+  },
+  {
+    "query": "typescript controllare tutti i casi di union",
+    "expected_ids": [
+      "typescript-controllare-l-esaustivita-con-never"
+    ]
+  },
+  {
+    "query": "rust trasferire una stringa a un worker",
+    "expected_ids": [
+      "rust-trasferire-proprieta-a-un-thread"
+    ]
+  },
+  {
+    "query": "rust condividere contatore senza data race",
+    "expected_ids": [
+      "rust-condividere-un-contatore-con-arc-e-mutex"
+    ]
+  },
+  {
+    "query": "rust restituire assenza senza null",
+    "expected_ids": [
+      "rust-usare-un-default-con-option"
+    ]
+  },
+  {
+    "query": "go annullare goroutine tramite contesto",
+    "expected_ids": [
+      "go-propagare-cancellazione-con-context"
+    ]
+  },
+  {
+    "query": "golang copia slice backing array indipendente",
+    "expected_ids": [
+      "go-copiare-una-slice-senza-condividere-i-dati"
+    ]
+  },
+  {
+    "query": "go JSON rifiutare campi sconosciuti",
+    "expected_ids": [
+      "go-rifiutare-proprieta-json-sconosciute"
+    ]
+  },
+  {
+    "query": "java importi senza errore floating point",
+    "expected_ids": [
+      "java-calcolare-importi-esatti-con-bigdecimal"
+    ]
+  },
+  {
+    "query": "java chiudere risorse automaticamente",
+    "expected_ids": [
+      "java-rilasciare-automaticamente-con-try-with-resources"
+    ]
+  },
+  {
+    "query": "java raggruppare parole e contare",
+    "expected_ids": [
+      "java-raggruppare-e-contare-con-collectors"
+    ]
+  },
+  {
+    "query": "C realloc fallisce conservare memoria originale",
+    "expected_ids": [
+      "c-ridimensionare-con-realloc-senza-perdere-il-puntatore"
+    ]
+  },
+  {
+    "query": "C copiare buffer sovrapposti",
+    "expected_ids": [
+      "c-spostare-memoria-sovrapposta-con-memmove"
+    ]
+  },
+  {
+    "query": "C convertire testo a intero controllando limiti",
+    "expected_ids": [
+      "c-convertire-un-intero-con-strtol"
+    ]
+  }
+]

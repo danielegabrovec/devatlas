@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdint.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <errno.h>
+#include <limits.h>
+
+struct Point{int x;int y;};static int length_squared(const struct Point *point){return point->x*point->x+point->y*point->y;}
+int main(void){
+struct Point point={3,4};printf("%d\n",length_squared(&point));
+return 0;
+}

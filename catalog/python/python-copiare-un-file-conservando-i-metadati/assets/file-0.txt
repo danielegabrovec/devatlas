@@ -1,0 +1,9 @@
+from pathlib import Path
+from tempfile import TemporaryDirectory
+import shutil
+with TemporaryDirectory() as folder:
+    root = Path(folder)
+    source, target = root / "a.txt", root / "b.txt"
+    source.write_text("dato", encoding="utf-8")
+    shutil.copy2(source, target)
+    print(target.read_text(encoding="utf-8"))

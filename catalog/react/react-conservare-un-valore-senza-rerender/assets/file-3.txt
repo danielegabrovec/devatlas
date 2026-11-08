@@ -1,0 +1,3 @@
+import React, {useState,useEffect,useMemo,useRef,useReducer,useId,useContext,createContext,useCallback,useLayoutEffect,useTransition,useDeferredValue,useSyncExternalStore,useImperativeHandle,forwardRef,memo,lazy,Suspense,Component} from 'react';
+import {createPortal} from 'react-dom';
+export default function App(){const clicks=useRef(0);const[shown,set]=useState(0);return <><button onClick={()=>{clicks.current++}}>Registra click</button><button onClick={()=>set(clicks.current)}>Leggi</button><output>{shown}</output></>}

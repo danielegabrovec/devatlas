@@ -1,0 +1,3 @@
+# Task board TypeScript
+
+Node.js 22+, TypeScript 6.0.3. Eseguire `npm install --ignore-scripts`, `npm run build`, `node dist/test.js`, `npm start`. Il primo download del compilatore richiede Internet o cache npm; il programma emesso usa solo JavaScript standard. Lo stato è in memoria: a ogni avvio viene ricreato. Il contratto readonly è statico; list restituisce copie degli oggetti per non esporre lo stato interno.

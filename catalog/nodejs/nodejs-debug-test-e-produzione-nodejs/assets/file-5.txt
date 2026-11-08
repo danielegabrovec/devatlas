@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Node ESM",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/main.mjs",
+      "cwd": "${workspaceFolder}",
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    }
+  ]
+}

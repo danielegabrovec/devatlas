@@ -1,0 +1,8 @@
+from django.test import TestCase
+from .models import Note
+class ModelTests(TestCase):
+    def test_note(self):
+        n=Note.objects.create(title='Prova')
+        self.assertFalse(n.done)
+    def test_view(self):
+        self.assertEqual(self.client.get('/').status_code,200)

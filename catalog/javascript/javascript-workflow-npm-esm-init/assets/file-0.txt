@@ -1,0 +1,12 @@
+{
+  "name": "catalog-js-starter",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/main.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

@@ -1,0 +1,3 @@
+public static class SelfTests{
+public static void Run(){var register=new Register();register.Add("Ada","Libro");register.Return(1);if(!register.List()[0].Returned)throw new Exception("Restituzione errata");try{register.Add("","Libro");throw new Exception("Validazione assente");}catch(ArgumentException){}Console.WriteLine("2 contratti verificati");}
+}

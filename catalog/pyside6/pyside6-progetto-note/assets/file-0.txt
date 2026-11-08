@@ -1,0 +1,51 @@
+import sys, json
+from pathlib import Path
+from PySide6.QtCore import QStandardPaths, QCoreApplication
+from PySide6.QtWidgets import QApplication, QWidget, QVBoxLayout, QLineEdit, QListWidget, QPushButton, QMessageBox
+
+class Notes(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Note locali")
+        QCoreApplication.setOrganizationName("Ricettario")
+        QCoreApplication.setApplicationName("NoteLocaliPySide6")
+        self.path = Path(QStandardPaths.writableLocation(QStandardPaths.StandardLocation.AppDataLocation)) / "notes.json"
+        self.path.parent.mkdir(parents=True, exist_ok=True)
+        layout = QVBoxLayout(self)
+        self.edit = QLineEdit()
+        self.edit.setPlaceholderText("Nuova nota")
+        self.items = QListWidget()
+        button = QPushButton("Aggiungi e salva")
+        layout.addWidget(self.edit)
+        layout.addWidget(button)
+        layout.addWidget(self.items)
+        button.clicked.connect(self.add)
+        if self.path.exists():
+            try:
+                values = json.loads(self.path.read_text(encoding="utf-8"))
+                if not isinstance(values, list) or not all(isinstance(v, str) for v in values):
+                    raise ValueError("Il file deve contenere un elenco di stringhe")
+                self.items.addItems(values)
+            except (OSError, ValueError) as exc:
+                QMessageBox.warning(self, "Caricamento note", str(exc))
+    def add(self):
+        value = self.edit.text().strip()
+        if not value:
+            return
+        values = [self.items.item(i).text() for i in range(self.items.count())] + [value]
+        try:
+            temporary = self.path.with_suffix(".tmp")
+            temporary.write_text(json.dumps(values, ensure_ascii=False, indent=2), encoding="utf-8")
+            temporary.replace(self.path)
+        except OSError as exc:
+            QMessageBox.warning(self, "Salvataggio note", str(exc))
+            return
+        self.items.addItem(value)
+        self.edit.clear()
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    window = Notes()
+    window.resize(640, 420)
+    window.show()
+    sys.exit(app.exec())

@@ -1,0 +1,7 @@
+import unittest
+from geometry import area
+class AreaTests(unittest.TestCase):
+    def test_area(self): self.assertEqual(area(3, 4), 12)
+    def test_invalid(self):
+        with self.assertRaises(ValueError): area(-1, 2)
+if __name__ == "__main__": unittest.main()

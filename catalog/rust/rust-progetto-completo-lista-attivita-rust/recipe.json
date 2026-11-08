@@ -1,0 +1,102 @@
+{
+  "id": "rust-progetto-completo-lista-attivita-rust",
+  "title": "Progetto completo lista attività Rust",
+  "summary": "Organizza un dominio con proprietà controllata, moduli separati e test Cargo esclusivamente std.",
+  "stack": "rust",
+  "group": "Linguaggi",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Rust stable 1.75+, edition 2021",
+  "prerequisites": "Toolchain Rust tramite rustup: rustc e cargo nel PATH. Gli esempi usano soltanto std; nessuna crate da scaricare.",
+  "tags": [
+    "project",
+    "cargo",
+    "ownership",
+    "module",
+    "test"
+  ],
+  "project": true,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "src/main.rs",
+      "language": "rust",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "1193f164201a37377a06d83e23b397430a7ca09846824d73cb9d593b8cf09801"
+    },
+    {
+      "id": "file-1",
+      "path": "Cargo.toml",
+      "language": "toml",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "6503966dc0a685a8edd7454aeb9bb00d1bfb2df987023c3e1d382c3cd4166fe3"
+    },
+    {
+      "id": "file-2",
+      "path": "src/board.rs",
+      "language": "rust",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "57c6137b1b74a80ca23752805a219024f0819982da013a2005670060b3f33aa6"
+    },
+    {
+      "id": "file-3",
+      "path": "README.md",
+      "language": "markdown",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "8ef8320be9ef4419c992c165eca4eca7b275edd56b1cdbc2f3f78cee5c9b146f"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "c892e88b4799fef6469b2727f1776ab57d6de1f0a0891fb190f9c90967e38e79"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "project_name",
+      "label": "Nome package Cargo",
+      "type": "identifier",
+      "default": "catalog_rust_board",
+      "required": true
+    }
+  ],
+  "related": [
+    "rust-workflow-cargo-init",
+    "rust-workflow-cargo-test-release",
+    "rust-workflow-rust-lldb"
+  ],
+  "expected": "Due test superati; output 1 Studiare Rust true.",
+  "errors": [
+    "Comando non trovato: installare la toolchain e riaprire il terminale."
+  ],
+  "sources": [
+    "https://doc.rust-lang.org/book/",
+    "https://doc.rust-lang.org/std/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "details": "Eseguito su Windows x64 il 29/10/2026. Ambiente: rustc1.99.0, edition2021, Cargo offline e std. Sorgenti compilati/controllati e programmi eseguiti; per i progetti sono stati eseguiti anche i test inclusi. Report: reports/languages-source-validation.json e reports/languages-runtime-validation.json. Linux e macOS non eseguiti.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

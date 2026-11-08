@@ -1,0 +1,5 @@
+<script>
+import {onMount,tick,setContext,getContext} from 'svelte';
+let pending=$state(Promise.resolve('Dati locali'));function fail(){pending=Promise.reject(new Error('Errore dimostrativo'));}
+</script>
+<main><button onclick={fail}>Simula errore</button>{#await pending}<p>Attesa…</p>{:then value}<p>{value}</p>{:catch error}<p class="error">{error.message}</p>{/await}</main>

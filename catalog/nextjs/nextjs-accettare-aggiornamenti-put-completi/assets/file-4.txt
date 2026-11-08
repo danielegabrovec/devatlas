@@ -1,0 +1,1 @@
+export async function PUT(request,{params}){const{id}=await params;const b=await request.json();if(typeof b.name!=='string')return Response.json({error:'name richiesto'},{status:422});return Response.json({id,name:b.name})}

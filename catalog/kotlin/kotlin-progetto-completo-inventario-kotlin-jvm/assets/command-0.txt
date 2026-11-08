@@ -1,0 +1,3 @@
+gradle smoke
+gradle run
+gradle installDist

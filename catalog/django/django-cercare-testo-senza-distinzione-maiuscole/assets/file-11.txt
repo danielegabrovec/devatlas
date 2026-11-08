@@ -1,0 +1,2 @@
+from notes.models import Note
+print(list(Note.objects.filter(title__icontains='py').values_list('title',flat=True)))

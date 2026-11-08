@@ -1,0 +1,1 @@
+UPDATE products SET price=price*1.10 WHERE id=1; SELECT price FROM products WHERE id=1;

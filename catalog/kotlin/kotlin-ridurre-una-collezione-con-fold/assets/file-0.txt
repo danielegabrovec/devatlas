@@ -1,0 +1,4 @@
+fun main() {
+val product = listOf(2,3,4).fold(1) { total,value -> total * value }
+println(product)
+}

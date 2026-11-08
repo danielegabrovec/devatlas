@@ -1,0 +1,137 @@
+{
+  "id": "qt-cpp-debug-build-distribuzione",
+  "title": "Debug MSVC e distribuzione Qt C++ Release",
+  "summary": "Fermarsi nel calcolo richiamato dal pulsante e raccogliere le dipendenze Qt del binario Release.",
+  "stack": "qt-cpp",
+  "group": "Desktop e GUI",
+  "section": "Debug",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows"
+  ],
+  "ide": [
+    "VS Code",
+    "Visual Studio"
+  ],
+  "versions": "C++17; Qt 6.10–6.12; CMake 3.24+",
+  "prerequisites": "Qt 6.10 o 6.12 desktop con compilatore coerente (MSVC2022 x64 su Windows), CMake e Ninja. Aprire il terminale Qt/MSVC già configurato.",
+  "tags": [
+    "Qt6",
+    "cppvsdbg",
+    "MSVC",
+    "PDB",
+    "Release",
+    "windeployqt"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.cpp",
+      "language": "cpp",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "e7b5cf15a801733bece267c07327e9f26198d7f2853ae0f055ae54281b7ecc46"
+    },
+    {
+      "id": "file-1",
+      "path": "totals.hpp",
+      "language": "cpp",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "b3eb0d8006aa81a8cbee8c54740025ee706579a15a060c2afefd9d206954fc08"
+    },
+    {
+      "id": "file-2",
+      "path": "totals.cpp",
+      "language": "cpp",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "328b3bd0de88c953906c2de4ba973842bda9979f246196deb35a8434b57d449a"
+    },
+    {
+      "id": "file-3",
+      "path": "CMakeLists.txt",
+      "language": "cmake",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "0bb337bd18d0dd27bc19c19a7f3cf6388373c7b54ee0b34769347201e9032623"
+    },
+    {
+      "id": "file-4",
+      "path": ".vscode/tasks.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "7ddfd62a31a277b71b744a677c0be98519ba8af458a93c635186568361231677"
+    },
+    {
+      "id": "file-5",
+      "path": ".vscode/launch.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-5.txt",
+      "sha256": "29ed5d78e03ec2d157dba3650356ced169326d162df40f0d60748a1bbacaab34"
+    },
+    {
+      "id": "command-0",
+      "path": "Configura e prepara Debug",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "f5d03a7a20bf692f68e62ca8b22555de368c241e34296fca881b60655138000e"
+    },
+    {
+      "id": "command-1",
+      "path": "Prepara la cartella Release",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-1.txt",
+      "sha256": "63d03ad9a18398e43290dc22b4d578d7f2cc097accfa79adcafb28da436b61bc"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "project_name",
+      "label": "Nome dell'applicazione",
+      "type": "identifier",
+      "default": "RecipeDesktop",
+      "required": true
+    },
+    {
+      "name": "qt_dir",
+      "label": "Cartella Qt MSVC x64",
+      "type": "path",
+      "default": "C:/Qt/6.12.0/msvc2022_64",
+      "required": true
+    }
+  ],
+  "related": [
+    "qt-cpp-inizializzazione-ambiente",
+    "qt-cpp-progetto-note",
+    "qt-cpp-busy"
+  ],
+  "expected": "Il breakpoint in totals.cpp osserva il totale 19.75; dist contiene il binario Release con le librerie e i plugin Qt raccolti.",
+  "errors": [
+    "Breakpoint vuoto: verificare build Debug, simboli PDB e programma selezionato in launch.json.",
+    "DLL del compilatore mancante sul PC finale: installare il Microsoft Visual C++ Redistributable x64 ufficiale; la raccolta usa --no-compiler-runtime."
+  ],
+  "sources": [
+    "https://doc.qt.io/qt-6/cmake-get-started.html",
+    "https://doc.qt.io/qt-6/windows-deployment.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Controlli su configurazioni JSON/XML, AST Python, node --check e parser PowerShell secondo i file presenti. Installazioni, sessioni debugger e build distribuibili non eseguite. Report: reports/desktop-lifecycle-qa.json."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

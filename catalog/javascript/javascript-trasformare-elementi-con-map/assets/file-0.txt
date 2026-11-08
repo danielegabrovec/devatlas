@@ -1,0 +1,2 @@
+const prices = [10, 20, 30];
+console.log(prices.map(price => Math.round(price * 1.22 * 100) / 100));

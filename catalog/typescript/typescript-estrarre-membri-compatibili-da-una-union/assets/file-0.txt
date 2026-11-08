@@ -1,0 +1,5 @@
+type Value = string | number | boolean;
+type Numeric = Extract<Value, number | bigint>;
+const value: Numeric = 12;
+console.log(value);
+export {};

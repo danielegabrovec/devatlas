@@ -1,0 +1,3 @@
+import React, {useState,useEffect,useMemo,useRef,useReducer,useId,useContext,createContext,useCallback,useLayoutEffect,useTransition,useDeferredValue,useSyncExternalStore,useImperativeHandle,forwardRef,memo,lazy,Suspense,Component} from 'react';
+import {createPortal} from 'react-dom';
+export default function App(){const[attempt,set]=useState(0);return <><button onClick={()=>set(attempt+1)}>Riprova</button><section key={attempt}><input defaultValue={'Tentativo '+attempt} aria-label='Valore ripristinato'/></section></>}

@@ -1,0 +1,254 @@
+[
+  {
+    "query": "PySide ricerca solo quando smetto di scrivere",
+    "expected_ids": [
+      "pyside6-debounce"
+    ]
+  },
+  {
+    "query": "PySide clipboard copia sorgente",
+    "expected_ids": [
+      "pyside6-clipboard"
+    ]
+  },
+  {
+    "query": "PySide aprire testo UTF8 con dialogo",
+    "expected_ids": [
+      "pyside6-open-file"
+    ]
+  },
+  {
+    "query": "PyQt filtro lista ignora maiuscole",
+    "expected_ids": [
+      "pyqt6-filter-model"
+    ]
+  },
+  {
+    "query": "PyQt ricordare opzione prossima apertura QSettings",
+    "expected_ids": [
+      "pyqt6-settings"
+    ]
+  },
+  {
+    "query": "PyQt tre scelte una sola attiva",
+    "expected_ids": [
+      "pyqt6-radio-group"
+    ]
+  },
+  {
+    "query": "Qt C++ esplora cartella home QFileSystemModel",
+    "expected_ids": [
+      "qt-cpp-filesystem"
+    ]
+  },
+  {
+    "query": "Qt C++ scrittura atomica QSaveFile",
+    "expected_ids": [
+      "qt-cpp-save"
+    ]
+  },
+  {
+    "query": "Qt C++ orologio aggiornato senza sleep",
+    "expected_ids": [
+      "qt-cpp-timer"
+    ]
+  },
+  {
+    "query": "Electron pagina in PDF A4",
+    "expected_ids": [
+      "electron-pdf"
+    ]
+  },
+  {
+    "query": "Electron screenshot finestra PNG",
+    "expected_ids": [
+      "electron-capture"
+    ]
+  },
+  {
+    "query": "Electron dialogo scegli cartella",
+    "expected_ids": [
+      "electron-folder"
+    ]
+  },
+  {
+    "query": "Avalonia add item ObservableCollection",
+    "expected_ids": [
+      "avalonia-observable"
+    ]
+  },
+  {
+    "query": "Avalonia UI freeze durante calcolo",
+    "expected_ids": [
+      "avalonia-background"
+    ]
+  },
+  {
+    "query": "Avalonia salvare preferenze JSON AppData",
+    "expected_ids": [
+      "avalonia-json"
+    ]
+  },
+  {
+    "query": "MAUI copiare negli appunti",
+    "expected_ids": [
+      "maui-clipboard"
+    ]
+  },
+  {
+    "query": "MAUI Entry sapere quanti caratteri",
+    "expected_ids": [
+      "maui-entry"
+    ]
+  },
+  {
+    "query": "MAUI DisplayAlertAsync richiesta conferma",
+    "expected_ids": [
+      "maui-confirm"
+    ]
+  },
+  {
+    "query": "WinUI ContentDialog errore XamlRoot",
+    "expected_ids": [
+      "winui-dialog"
+    ]
+  },
+  {
+    "query": "WinUI NumberBox valori min max",
+    "expected_ids": [
+      "winui-number"
+    ]
+  },
+  {
+    "query": "WinUI AutoSuggestBox cerca mentre digito",
+    "expected_ids": [
+      "winui-search"
+    ]
+  },
+  {
+    "query": "PowerShell digest file SHA256",
+    "expected_ids": [
+      "powershell-calcolare-sha-256-di-un-file-locale"
+    ]
+  },
+  {
+    "query": "PowerShell parallel limitare tre task",
+    "expected_ids": [
+      "powershell-eseguire-operazioni-in-parallelo-con-limite"
+    ]
+  },
+  {
+    "query": "PowerShell CSV caratteri accentati",
+    "expected_ids": [
+      "powershell-esportare-e-reimportare-un-csv"
+    ]
+  },
+  {
+    "query": "Bash cancellare temporanei anche con errore trap",
+    "expected_ids": [
+      "bash-creare-file-temporanei-e-pulirli-con-trap"
+    ]
+  },
+  {
+    "query": "Bash find nomi file con spazi print0",
+    "expected_ids": [
+      "bash-iterare-nomi-file-tramite-separatore-nul"
+    ]
+  },
+  {
+    "query": "Bash opzioni linea comando getopts",
+    "expected_ids": [
+      "bash-analizzare-opzioni-brevi-con-getopts"
+    ]
+  },
+  {
+    "query": "Git lavorare su due branch contemporaneamente",
+    "expected_ids": [
+      "git-aprire-un-secondo-working-tree-su-un-ramo-nuovo"
+    ]
+  },
+  {
+    "query": "Git stash anche file nuovi untracked",
+    "expected_ids": [
+      "git-accantonare-anche-file-non-tracciati"
+    ]
+  },
+  {
+    "query": "Git annullare commit senza riscrivere storia",
+    "expected_ids": [
+      "git-annullare-un-commit-con-revert"
+    ]
+  },
+  {
+    "query": "CMake header generato dipendenza OUTPUT DEPENDS",
+    "expected_ids": [
+      "cmake-dichiarare-un-header-generato-come-dipendenza"
+    ]
+  },
+  {
+    "query": "CMake richiedere cxx_std_20",
+    "expected_ids": [
+      "cmake-richiedere-uno-standard-c-sul-target"
+    ]
+  },
+  {
+    "query": "CMake file compile_commands per clangd",
+    "expected_ids": [
+      "cmake-esportare-compile-commands-per-strumenti-di-analisi"
+    ]
+  },
+  {
+    "query": "Docker Redis conteggio persistente dopo down",
+    "expected_ids": [
+      "docker-progetto-contatore-redis"
+    ]
+  },
+  {
+    "query": "Docker filesystem read only tmpfs",
+    "expected_ids": [
+      "docker-usare-un-filesystem-container-in-sola-lettura"
+    ]
+  },
+  {
+    "query": "Docker Compose servizio prima healthy",
+    "expected_ids": [
+      "docker-attendere-il-superamento-dell-healthcheck"
+    ]
+  },
+  {
+    "query": "GitHub Actions valore da job producer a consumer",
+    "expected_ids": [
+      "cicd-trasferire-un-output-tra-due-job"
+    ]
+  },
+  {
+    "query": "CI cache dipendenze pip requirements",
+    "expected_ids": [
+      "cicd-riutilizzare-la-cache-pip-in-ci"
+    ]
+  },
+  {
+    "query": "GitHub conservare report quando test fallisce",
+    "expected_ids": [
+      "cicd-conservare-diagnostica-anche-quando-un-test-fallisce"
+    ]
+  },
+  {
+    "query": "PySide deploy standalone Nuitka",
+    "expected_ids": [
+      "packaging-distribuire-pyside6-con-pyside6-deploy-e-nuitka"
+    ]
+  },
+  {
+    "query": "pacchetto digest diverso verificare SHA256",
+    "expected_ids": [
+      "packaging-verificare-un-pacchetto-contro-il-manifest-sha-256"
+    ]
+  },
+  {
+    "query": "dotnet publish win-x64 self-contained runtime incluso",
+    "expected_ids": [
+      "packaging-pubblicare-una-cli-net-autonoma-per-windows"
+    ]
+  }
+]

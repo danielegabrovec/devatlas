@@ -1,0 +1,5 @@
+let released = false;
+try { throw new Error("operazione fallita"); }
+catch (error) { console.log(error.message); }
+finally { released = true; }
+console.log(released);

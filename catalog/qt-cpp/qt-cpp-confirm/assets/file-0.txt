@@ -1,0 +1,11 @@
+#include <QtWidgets>
+#include <QtCore>
+#include <QtGui>
+
+int main(int argc, char **argv) {
+ QApplication app(argc,argv);
+ QWidget window; window.resize(720,480);
+ auto *layout=new QVBoxLayout(&window);
+ auto *edit=new QLineEdit("Dato"); auto *b=new QPushButton("Svuota"); layout->addWidget(edit); layout->addWidget(b); QObject::connect(b,&QPushButton::clicked,&window,[&window,edit]{if(QMessageBox::question(&window,"Conferma","Svuotare?",QMessageBox::Yes|QMessageBox::No,QMessageBox::No)==QMessageBox::Yes) edit->clear();});
+ window.show(); return app.exec();
+}

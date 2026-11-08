@@ -1,0 +1,99 @@
+{
+  "id": "mysql-progetto-magazzino",
+  "title": "Progetto: magazzino MySQL con transazione controllata",
+  "summary": "Prenotare quantità disponibili evitando stock negativo con aggiornamento atomico.",
+  "stack": "mysql",
+  "group": "Database",
+  "section": "Database",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "MySQL 8.4 LTS; differenze MariaDB da verificare",
+  "prerequisites": "Server locale e client installati; database didattico cookbook_demo già creato; credenziali fornite dal client, mai nel sorgente.",
+  "tags": [
+    "project",
+    "schema",
+    "seed",
+    "report"
+  ],
+  "project": true,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "schema.sql",
+      "language": "sql",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "328aa1b513801cd8fae1b8d3bfc7ea61efcfe9e3e6d417235dfb5b7034aea547"
+    },
+    {
+      "id": "file-1",
+      "path": "seed.sql",
+      "language": "sql",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "c87aff3ed642980991b18de01a72029763f1085fe1663f83c90002d5e43ffd2a"
+    },
+    {
+      "id": "file-2",
+      "path": "reserve.sql",
+      "language": "sql",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "95877cab31a2ec447eb9b99642710ffa04165659bdf268d858111de01dd5a3fb"
+    },
+    {
+      "id": "file-3",
+      "path": "README.md",
+      "language": "markdown",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "4ea84e5044a313bcc05f8d8c4a6575d17b97fcf39b535f60a72d1564e7d1bda7"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "8cd680091febd3a03129d6ed4855fff8727b8c116d646d93949db0daaeb2c4ce"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "mysql-eseguire-una-transazione-con-rollback",
+    "mysql-impostare-isolamento-per-transazione",
+    "mysql-usare-cte-per-un-report-aggregato"
+  ],
+  "expected": "Le query di controllo restituiscono i risultati indicati nel README.",
+  "errors": [
+    "Non usare uno schema con dati reali: gli script ricreano gli oggetti del laboratorio."
+  ],
+  "sources": [
+    "https://dev.mysql.com/doc/refman/8.4/en/",
+    "https://dev.mysql.com/doc/refman/8.4/en/ansi-diff-foreign-keys.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "documentato",
+    "date": "2026-10-29",
+    "details": "Revisione documentale PostgreSQL18/MySQL8.4 e fixture di laboratorio; server non eseguito perché Docker non era attivo. Report: reports/catalog-independent-review.json.",
+    "files_sha256": {
+      "schema.sql": "328aa1b513801cd8fae1b8d3bfc7ea61efcfe9e3e6d417235dfb5b7034aea547",
+      "seed.sql": "c87aff3ed642980991b18de01a72029763f1085fe1663f83c90002d5e43ffd2a",
+      "reserve.sql": "95877cab31a2ec447eb9b99642710ffa04165659bdf268d858111de01dd5a3fb",
+      "README.md": "4ea84e5044a313bcc05f8d8c4a6575d17b97fcf39b535f60a72d1564e7d1bda7"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

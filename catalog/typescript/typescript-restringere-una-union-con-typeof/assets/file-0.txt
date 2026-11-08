@@ -1,0 +1,5 @@
+function normalize(value: string | number): string {
+  return typeof value === "number" ? value.toFixed(2) : value.trim();
+}
+console.log(normalize(12), normalize(" Ada "));
+export {};

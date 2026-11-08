@@ -1,0 +1,5 @@
+import json
+try:
+    json.loads('{"a":}')
+except json.JSONDecodeError as error:
+    print(error.lineno, error.colno, error.msg)

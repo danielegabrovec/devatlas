@@ -1,0 +1,1 @@
+export function GET(){const e=new TextEncoder();const stream=new ReadableStream({start(c){c.enqueue(e.encode('prima riga\n'));c.enqueue(e.encode('seconda riga\n'));c.close()}});return new Response(stream,{headers:{'content-type':'text/plain'}})}

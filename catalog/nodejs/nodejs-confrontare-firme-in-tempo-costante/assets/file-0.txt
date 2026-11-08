@@ -1,0 +1,1 @@
+import{timingSafeEqual}from'node:crypto';const a=Buffer.from('abcd','hex'),b=Buffer.from('abce','hex');console.log(a.length===b.length&&timingSafeEqual(a,b));

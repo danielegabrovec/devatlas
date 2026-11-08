@@ -1,0 +1,2 @@
+dotnet build Example.csproj -c Release
+dotnet run --project Example.csproj

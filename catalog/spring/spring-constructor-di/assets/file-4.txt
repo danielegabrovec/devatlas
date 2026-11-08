@@ -1,0 +1,1 @@
+package it.atlas;import org.springframework.stereotype.Service;@Service public class GreetingService{public String hello(String name){return "Ciao "+name;}}

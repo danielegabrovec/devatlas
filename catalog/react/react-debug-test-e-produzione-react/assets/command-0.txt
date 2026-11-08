@@ -1,0 +1,4 @@
+npm install
+node --test
+npm run build
+npm run preview -- --host 127.0.0.1

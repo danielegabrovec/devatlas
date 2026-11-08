@@ -1,0 +1,148 @@
+{
+  "id": "react-debug-test-e-produzione-react",
+  "title": "Debug test e produzione react",
+  "summary": "Per il debug avvia npm run dev in un terminale e premiF5 in VSCode con JavaScript Debugger. Metti il breakpoint nella funzione total. node --test verifica la logica; vite build crea dist con source map; vite preview serve il risultato su localhost4173. Preview è una verifica locale dell’artefatto, non un server pubblico da usare in produzione.",
+  "stack": "react",
+  "group": "Web e backend",
+  "section": "Compilazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "React19.1.1; Vite7.1.7; Node22.12+",
+  "prerequisites": "Node22.12+ e npm. Browser moderno; alcune Clipboard API richiedono localhost o HTTPS. Gli esempi fetch richiedono rete.",
+  "tags": [
+    "react",
+    "debug",
+    "breakpoint",
+    "test",
+    "build",
+    "production",
+    "release"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "package.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "a2a56926730ced0852f9629e1b4f027328418d42b9671016c11090e82e6d3c4b"
+    },
+    {
+      "id": "file-1",
+      "path": "index.html",
+      "language": "html",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "815df6781104f7f0e284365a213518642f7aee3ab24988776b32e77e4b9eb035"
+    },
+    {
+      "id": "file-2",
+      "path": "src/main.jsx",
+      "language": "jsx",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "bb189f86dc8c4a2c586d9bbd1e1cefc2b8e9af260fd92d7d68086100c71a9212"
+    },
+    {
+      "id": "file-3",
+      "path": "src/App.jsx",
+      "language": "jsx",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "94ce18ec032565d6da9b309625d232bc782a8dee5c5880db394abba939054ea1"
+    },
+    {
+      "id": "file-4",
+      "path": "src/style.css",
+      "language": "css",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "ab78ab3385290b548318351011a467a5f61fd8151a1d7484dfc74ae055205494"
+    },
+    {
+      "id": "file-5",
+      "path": "vite.config.js",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-5.txt",
+      "sha256": "d3d6ab0c33aadea2c59c84ab3fea88548c892633d9c93818587f4c8e73e73ede"
+    },
+    {
+      "id": "file-6",
+      "path": "src/pricing.js",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-6.txt",
+      "sha256": "c9019581aa7b853b8d77e8b91cd24e360309c95dec5910c4408e3896a2cddee5"
+    },
+    {
+      "id": "file-7",
+      "path": "test/pricing.test.mjs",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-7.txt",
+      "sha256": "e07dc7ea037a14f17652c8478e5d2898f82fe08b83031f97c4270eea8505f09e"
+    },
+    {
+      "id": "file-8",
+      "path": ".vscode/launch.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-8.txt",
+      "sha256": "9d712901f0184ac51a6907a68f72389c7cd3a79bd828ab3b807283480203f7d3"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "c848503951e9da824cce6d1f7859c909dc235f3cd6f2418ffe14ea6168d23a79"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "react-progetto-catalogo-con-ricerca-filtri-e-ordinamento",
+    "react-progetto-lista-attivita-persistente",
+    "react-progetto-tabella-importazione-tsv-con-esportazione"
+  ],
+  "expected": "I test inclusi completano con esito positivo. La configurazione VSCode permette breakpoint sul sorgente; i comandi distinguono verifica, build e avvio di produzione.",
+  "errors": [
+    "Comando non trovato: installare la toolchain elencata nei prerequisiti.",
+    "Dipendenza mancante: eseguire l'installazione nella radice esportata, senza cambiare le versioni dichiarate."
+  ],
+  "sources": [
+    "https://react.dev/reference/react",
+    "https://react.dev/learn"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "compilato",
+    "date": "2026-10-29",
+    "details": "Verifiche lifecycle su Windows: static-files, vite-build, node-tests. Configurazione debugger controllata come JSON; sessione F5 e distribuzione remota non attestate.",
+    "files_sha256": {
+      "package.json": "a2a56926730ced0852f9629e1b4f027328418d42b9671016c11090e82e6d3c4b",
+      "index.html": "815df6781104f7f0e284365a213518642f7aee3ab24988776b32e77e4b9eb035",
+      "src/main.jsx": "bb189f86dc8c4a2c586d9bbd1e1cefc2b8e9af260fd92d7d68086100c71a9212",
+      "src/App.jsx": "94ce18ec032565d6da9b309625d232bc782a8dee5c5880db394abba939054ea1",
+      "src/style.css": "ab78ab3385290b548318351011a467a5f61fd8151a1d7484dfc74ae055205494",
+      "vite.config.js": "d3d6ab0c33aadea2c59c84ab3fea88548c892633d9c93818587f4c8e73e73ede",
+      "src/pricing.js": "c9019581aa7b853b8d77e8b91cd24e360309c95dec5910c4408e3896a2cddee5",
+      "test/pricing.test.mjs": "e07dc7ea037a14f17652c8478e5d2898f82fe08b83031f97c4270eea8505f09e",
+      ".vscode/launch.json": "9d712901f0184ac51a6907a68f72389c7cd3a79bd828ab3b807283480203f7d3"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

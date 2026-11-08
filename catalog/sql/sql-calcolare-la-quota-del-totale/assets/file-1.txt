@@ -1,0 +1,1 @@
+SELECT id,total,100.0*total/SUM(total) OVER() AS percentuale FROM orders;

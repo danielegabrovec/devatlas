@@ -1,0 +1,1 @@
+'use client';import{useState}from'react';export default function Counter({initial}){const[n,set]=useState(initial);return <button onClick={()=>set(n+1)}>{n}</button>}

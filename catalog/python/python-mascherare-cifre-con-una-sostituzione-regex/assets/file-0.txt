@@ -1,0 +1,5 @@
+import re
+number = "1234 5678 9012 3456"
+digits = re.sub(r"\D", "", number)
+masked = "*" * max(0, len(digits) - 4) + digits[-4:]
+print(masked)

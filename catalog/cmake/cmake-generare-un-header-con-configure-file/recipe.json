@@ -1,0 +1,87 @@
+{
+  "id": "cmake-generare-un-header-con-configure-file",
+  "title": "Generare un header con configure_file",
+  "summary": "Inserire la versione del progetto senza editare manualmente il sorgente.",
+  "stack": "cmake",
+  "group": "Strumenti",
+  "section": "Compilazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code",
+    "Visual Studio",
+    "CLion"
+  ],
+  "versions": "CMake 3.24+; C++17/20",
+  "prerequisites": "CMake 3.24+, compilatore C++ installato. Su Windows usare Developer PowerShell MSVC o una toolchain già configurata.",
+  "tags": [
+    "CMake",
+    "build",
+    "generare-un-header-con-configure-file"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.cpp",
+      "language": "cpp",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "24b338a6a7e2384e1a98c1dd35c609e85a5801fbab3b70ba41b576fbe58e6602"
+    },
+    {
+      "id": "file-1",
+      "path": "CMakeLists.txt",
+      "language": "cmake",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "e35702923d7372048f9e5699cf4d8b5d250fd6784eeadb37428ee7e6353f7650"
+    },
+    {
+      "id": "file-2",
+      "path": "version.hpp.in",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "6bc686bcefede3eb05d3638ef5ccbbca85b340d4fc367d8961e37016354bf7ea"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "7309db546187378027992cf9b39b6b166c51ebd4475b1a1d1b0e421f92b6bb06"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "cmake-dichiarare-un-header-generato-come-dipendenza",
+    "cmake-modellare-una-libreria-header-only-con-interface",
+    "cmake-riutilizzare-file-oggetto-con-object-library"
+  ],
+  "expected": "Inserire la versione del progetto senza editare manualmente il sorgente.",
+  "errors": [
+    "Ninja non trovato: installarlo se si usa il preset o il compilation database.",
+    "Compilatore non trovato: aprire il terminale di sviluppo della toolchain."
+  ],
+  "sources": [
+    "https://cmake.org/cmake/help/latest/guide/tutorial/index.html",
+    "https://cmake.org/cmake/help/latest/manual/cmake-buildsystem.7.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "documentato",
+    "details": "Esempio originale revisionato nel catalogo; esecuzione non attestata.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

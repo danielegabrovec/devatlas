@@ -1,0 +1,1 @@
+import{StringDecoder}from'node:string_decoder';const d=new StringDecoder('utf8');const b=Buffer.from('è');console.log(d.write(b.subarray(0,1))+d.end(b.subarray(1)));

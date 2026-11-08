@@ -1,0 +1,1 @@
+SELECT city,COUNT(*) AS clienti FROM people GROUP BY city;

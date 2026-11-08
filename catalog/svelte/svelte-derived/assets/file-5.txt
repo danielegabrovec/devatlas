@@ -1,0 +1,5 @@
+<script>
+import {onMount,tick,setContext,getContext} from 'svelte';
+let qty=$state(2);const unit=12.5;let total=$derived(qty*unit);
+</script>
+<main><label>Quantità<input type="number" bind:value={qty} min="0"></label><p>Totale {total.toFixed(2)}</p></main>

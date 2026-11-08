@@ -1,0 +1,27 @@
+import sys, json, sqlite3, tempfile, logging
+from pathlib import Path
+from PySide6.QtCore import *
+from PySide6.QtGui import *
+from PySide6.QtWidgets import *
+
+def build(root, layout):
+    class Canvas(QWidget):
+        def paintEvent(self, event):
+            painter = QPainter(self)
+            painter.setRenderHint(QPainter.RenderHint.Antialiasing)
+            painter.setBrush(QColor("#278a79"))
+            painter.setPen(Qt.PenStyle.NoPen)
+            painter.drawEllipse(self.rect().adjusted(20, 20, -20, -20))
+    canvas = Canvas()
+    canvas.setMinimumSize(200, 160)
+    layout.addWidget(canvas)
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    window = QWidget()
+    window.setWindowTitle("Ricetta Qt")
+    window.resize(720, 480)
+    layout = QVBoxLayout(window)
+    build(window, layout)
+    window.show()
+    sys.exit(app.exec())

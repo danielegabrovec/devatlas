@@ -1,0 +1,1 @@
+SELECT name,age FROM people ORDER BY age DESC,name ASC;

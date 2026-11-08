@@ -1,0 +1,6 @@
+function createCounter() {
+  let value = 0;
+  return () => ++value;
+}
+const next = createCounter();
+console.log(next(), next());

@@ -1,0 +1,5 @@
+<script>
+import {onMount,tick,setContext,getContext} from 'svelte';
+let title=$state('Catalogo locale');
+</script>
+<svelte:head><title>{title}</title><meta name="description" content="Esempio locale Svelte5"></svelte:head><main><input bind:value={title} aria-label="Titolo"><p>Osserva la linguetta del browser</p></main>

@@ -1,0 +1,5 @@
+<script>
+import {onMount,tick,setContext,getContext} from 'svelte';
+let visible=$state(false);
+</script>
+<main><button onclick={()=>visible=!visible}>Dettagli</button>{#if visible}<p>Dettagli aperti</p>{:else}<p>Dettagli chiusi</p>{/if}</main>

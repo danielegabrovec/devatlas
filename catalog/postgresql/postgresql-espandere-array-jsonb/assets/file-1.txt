@@ -1,0 +1,1 @@
+SELECT value FROM jsonb_array_elements('[1,2,3]'::jsonb);

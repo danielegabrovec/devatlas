@@ -1,0 +1,6 @@
+fun main() {
+var result = 0
+val worker = Thread { result = 6 * 7 }
+worker.start(); worker.join()
+println(result)
+}

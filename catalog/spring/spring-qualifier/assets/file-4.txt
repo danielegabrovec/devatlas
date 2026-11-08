@@ -1,0 +1,1 @@
+package it.atlas;import org.springframework.context.annotation.*;@Configuration public class Channels{@Bean("demoChannel")String demo(){return "demo";}@Bean("otherChannel")String other(){return "other";}}

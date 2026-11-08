@@ -1,0 +1,103 @@
+{
+  "id": "cmake-progetto-libreria-test",
+  "title": "Progetto completo: libreria C++ con test e installazione",
+  "summary": "Separare una libreria riusabile, un eseguibile di test e uno staging di installazione.",
+  "stack": "cmake",
+  "group": "Strumenti",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code",
+    "Visual Studio",
+    "CLion"
+  ],
+  "versions": "CMake 3.24+; C++17/20",
+  "prerequisites": "CMake 3.24+, compilatore C++ installato. Su Windows usare Developer PowerShell MSVC o una toolchain già configurata.",
+  "tags": [
+    "project",
+    "CMake",
+    "CTest",
+    "library"
+  ],
+  "project": true,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "CMakeLists.txt",
+      "language": "cmake",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "ca186532f72e0008ea71b9d3ac278419268a6b876fa2735c432a9cc4750b45bf"
+    },
+    {
+      "id": "file-1",
+      "path": "include/calc.hpp",
+      "language": "cpp",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "1a0cbfe0b28fa9fd83b65cbd92369716559ee7826e48482c4c3bdfb233859418"
+    },
+    {
+      "id": "file-2",
+      "path": "src/calc.cpp",
+      "language": "cpp",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "b243c8f20f4805382624d10ef5f9b2f9833ad0571a9bf511948cfc14021cd2e4"
+    },
+    {
+      "id": "file-3",
+      "path": "tests/calc_test.cpp",
+      "language": "cpp",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "c0e2eb22cd14feb735e71d926b6f91cd57484a1b8a214c9c6d33ac3be313570d"
+    },
+    {
+      "id": "file-4",
+      "path": "README.md",
+      "language": "markdown",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "b8f7ce451518e0dd74a94fdb9dcf26e3a0196875d960a687fb40b6d748afa973"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "d148c66cc92157b98b2f8b9dee8235b341e0638deda2e1e72bcd64aa15303ead"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "cmake-registrare-un-test-eseguibile-con-ctest",
+    "cmake-impostare-timeout-e-risultato-atteso-di-un-test",
+    "cmake-modellare-una-libreria-header-only-con-interface"
+  ],
+  "expected": "CTest registra square_values e lo staging contiene libreria e header.",
+  "errors": [
+    "Toolchain C++ non installata o non configurata."
+  ],
+  "sources": [
+    "https://cmake.org/cmake/help/latest/guide/tutorial/index.html",
+    "https://cmake.org/cmake/help/latest/manual/cmake-buildsystem.7.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "documentato",
+    "details": "Esempio originale revisionato nel catalogo; esecuzione non attestata.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

@@ -1,0 +1,4 @@
+<?php
+declare(strict_types=1);
+$input=['count'=>0,'name'=>''];
+var_export([$input['count']??99,$input['name']??'anonimo',$input['missing']??'default']);

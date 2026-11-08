@@ -1,0 +1,70 @@
+{
+  "id": "php-restituire-un-endpoint-json-php-locale",
+  "title": "Restituire un endpoint JSON PHP locale",
+  "summary": "Valida il parametro page e restituisce status/content-type coerenti senza framework.",
+  "stack": "php",
+  "group": "Linguaggi",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "PHP8.4/8.5 CLI, strict_types; estensioni indicate nella singola scheda",
+  "prerequisites": "PHP8.4 o8.5 CLI nel PATH. PDO SQLite richiede pdo_sqlite; le altre estensioni necessarie sono indicate. Il server incorporato è destinato al laboratorio locale.",
+  "tags": [
+    "backend",
+    "HTTP",
+    "JSON"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "public/index.php",
+      "language": "php",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "ef68d59c10f2179df2e93456149eee8b0ed849edd300992bdfc595174eea10cf"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "7cac86c41599a207ced53f334e3844174d2dc7c96e5250f5e65cdb25c8448a17"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "php-progetto-completo-rubrica-json-php",
+    "php-creare-un-archivio-phar-php-locale",
+    "php-filtrare-e-reindicizzare-un-array"
+  ],
+  "expected": "GET /?page=2 restituisce page2; page=abc restituisce400.",
+  "errors": [
+    "HTTP400 per page: il parametro deve essere un intero positivo, non testo libero o0.",
+    "Risposta non JSON/headers already sent: invia Content-Type prima dell'output e non stampare diagnostica dentro il body dell'API."
+  ],
+  "sources": [
+    "https://www.php.net/manual/en/",
+    "https://www.php.net/supported-versions.php",
+    "https://www.php.net/manual/en/features.commandline.webserver.php"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: local HTTP execute, php lint, tree-sitter syntax. Report: reports/expansion-languages-qa.json. PHP8.4.27-1 portabile ufficiale in .cache; Xdebug e Composer non eseguiti."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

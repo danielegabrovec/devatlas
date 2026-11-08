@@ -1,0 +1,4 @@
+Set-StrictMode -Version Latest
+$ErrorActionPreference='Stop'
+$text="v1.2.3"
+$text -replace "^v(?<major>\d+)\.(?<minor>\d+)\.(?<patch>\d+)$",'${major}-${minor}-${patch}'

@@ -1,0 +1,3 @@
+# Rubrica PHP
+
+PHP8.4/8.5 CLI, nessun pacchetto esterno. `php tests/smoke.php`, `php bin/addressbook.php data/contacts.json list`, `php bin/addressbook.php data/contacts.json add Luca luca@example.test`. data/contacts.json contiene soltanto contatti sintetici. Il salvataggio usa un temporaneo adiacente e rename; il modello non coordina aggiornamenti simultanei da più processi. La cartella del file deve già esistere. composer.json documenta il vincolo runtime ma l'autoload qui è esplicito e Composer non è necessario per l'avvio. I test usano un percorso temporaneo separato.

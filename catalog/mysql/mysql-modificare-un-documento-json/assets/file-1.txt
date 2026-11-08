@@ -1,0 +1,1 @@
+SELECT JSON_SET('{"stock":3}','$.stock',4);

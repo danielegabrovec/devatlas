@@ -1,0 +1,4 @@
+kotlinc -version
+java -version
+kotlinc Main.kt -jvm-target 17 -include-runtime -d starter.jar
+java -jar starter.jar Luca

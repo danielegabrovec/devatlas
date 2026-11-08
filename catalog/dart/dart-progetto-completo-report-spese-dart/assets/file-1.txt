@@ -1,0 +1,4 @@
+import 'dart:convert';
+final class Expense{final String category;final int cents;const Expense(this.category,this.cents);}
+List<Expense> parseExpenses(String text){final Object? value=jsonDecode(text);if(value is! List)throw const FormatException('Lista richiesta');return value.map<Expense>((item){if(item case {'category':String category,'cents':int cents}){if(category.trim().isEmpty||cents<0)throw const FormatException('Spesa non valida');return Expense(category,cents);}throw const FormatException('Record non valido');}).toList();}
+Map<String,int> totals(List<Expense> rows){final result=<String,int>{};for(final row in rows){result[row.category]=(result[row.category]??0)+row.cents;}return result;}

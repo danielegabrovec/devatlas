@@ -1,0 +1,2 @@
+kotlinc Main.kt -jvm-target 17 -include-runtime -d example.jar
+java -jar example.jar

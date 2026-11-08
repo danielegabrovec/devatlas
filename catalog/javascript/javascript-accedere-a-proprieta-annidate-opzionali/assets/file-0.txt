@@ -1,0 +1,2 @@
+const account = { profile: null };
+console.log(account.profile?.address?.city ?? "non indicata");

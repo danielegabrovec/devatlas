@@ -1,0 +1,1 @@
+SELECT format('SELECT %I FROM %I WHERE name=%L','id','people','Ada');

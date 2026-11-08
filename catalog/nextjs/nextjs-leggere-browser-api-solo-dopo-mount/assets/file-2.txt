@@ -1,0 +1,1 @@
+'use client';import{useEffect,useState}from'react';export default function Page(){const[w,set]=useState(null);useEffect(()=>set(window.innerWidth),[]);return <p>Larghezza:{w??'in caricamento'}</p>}

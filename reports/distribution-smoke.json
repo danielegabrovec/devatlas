@@ -1,0 +1,87 @@
+{
+  "version": "1.3.0",
+  "source_hashes": {
+    "devatlas/__init__.py": "5e0a2a4227dfc733ade65af8fe31f89ce8094afce57cbc2b4ef443b60365b52e",
+    "devatlas/__main__.py": "a52fef00611db69af22e94633b11d0c5c5706715856b3f48dc5dd5958e19e6be",
+    "devatlas/app.py": "8a825970222e097989f6ed1423f3c5d91fcb4af95ce7d1582d0bb0b4ba234abf",
+    "devatlas/bundles.py": "a59647498eda134b8ec7852506658158065c52f98f4f237457117c3eb248658a",
+    "devatlas/catalog.py": "30b54c0c63a58c01660e13316b23d42ff0db77e1a6e716af40ff4b48345d513c",
+    "devatlas/codewidgets.py": "e54f08d612c743e2a813f6dfdecc9d3b652999bf72c9de9b3fb05fc9906c563b",
+    "devatlas/commandpalette.py": "0c934221bea6a70ccb4f4f5190eb53c5fc5f76736744698d643c86228d4938c4",
+    "devatlas/editor.py": "4212c42ff9741342c2f0e4ea8cabe5d4f28dbbd7668b2022458bfd92922a5af7",
+    "devatlas/models.py": "a9d8404915a6ba2810df13a9f65c412a32160cc5b83c7914d830f2637d843cb0",
+    "devatlas/paths.py": "6708df14895ee452fa9f32229ca8ff64dc56e60d718b3c071bf331b2da538b31",
+    "devatlas/personal.py": "1f4998a97db2bffae498b475eec77e3df36615757e63d069af7e8016c7d46f8c",
+    "devatlas/qt_bootstrap.py": "4f9b931cdd61d4c6f33e8c4eff4f579d6b856dbe5cbe5254f00403d3e1d9a6e1",
+    "devatlas/saved_searches.py": "bb57a64b2303badd8a9a4a9c655bbc222dfba01d0151d78407af2ef5b7e71134",
+    "devatlas/search.py": "90dff3fb41e1cbeb9cacf958ea83c497fadd8a1c5bd5bc012c72e31d4b3c0e4a",
+    "devatlas/templating.py": "55583510d1e57c8fd872b491811b394f798cf781ddf10be03c362061a1bb8707",
+    "devatlas/theme.py": "3c682446b0e96a70ef1ccfd54a5562e3fab972bd1a5b8150a22caa318006d36b",
+    "devatlas/ui_components.py": "99329f086e14032cc27db5cde8fe8aa486ad5fb265c4acb0ea8345a7e35fa706",
+    "pyproject.toml": "bcc773fda865d0d8905866e80a8e2c24a444f9c2a89a530c694fe829ec6755d6",
+    "requirements.lock": "9f0d9d7eae4382aa855cde80e62dcd5d4f1e9268e45cd646edf92604f3003fc8",
+    "run_devatlas.py": "ad00fd9b4132710842734cce221c6520e5cfe08c5bb7c233a337bd9fe719ea95"
+  },
+  "platform": "Windows x64",
+  "catalog_matches": true,
+  "catalog_sha256": "24df217def587694c36a8e9d6796228c8f60065cb514d77f4eb202add29b2076",
+  "executable_sha256": "81eca521b236eec1d8fa9d10fe68597dbdd16ed8155dd05da394fce7557d2db6",
+  "isolated_directory": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\distribution-smoke\\a98d180a\\DevAtlas copia, è",
+  "checks": [
+    {
+      "scale": "1",
+      "returncode": 0,
+      "seconds": 7.399,
+      "path_has_no_python": true,
+      "python_dlls": [
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\distribution-smoke\\a98d180a\\DevAtlas copia, è\\python313.dll"
+      ],
+      "python_runtime_bundled": true,
+      "personal_database_created": true,
+      "search_index_created": true,
+      "application_log": "",
+      "flow": {
+        "status": "passed",
+        "reason": "Indice, ricerca e lettore verificati.",
+        "query": "python json",
+        "index_ready": true,
+        "results": 6,
+        "recipe": "python-serializzare-json-leggibile-con-unicode",
+        "code_blocks": 2,
+        "elapsed_ms": 6239,
+        "version": "1.3.0"
+      },
+      "stderr": "",
+      "success": true
+    },
+    {
+      "scale": "2",
+      "returncode": 0,
+      "seconds": 7.375,
+      "path_has_no_python": true,
+      "python_dlls": [
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\distribution-smoke\\a98d180a\\DevAtlas copia, è\\python313.dll",
+        "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\.cache\\distribution-smoke\\a98d180a\\DevAtlas copia, è\\python3.dll"
+      ],
+      "python_runtime_bundled": true,
+      "personal_database_created": true,
+      "search_index_created": true,
+      "application_log": "",
+      "flow": {
+        "status": "passed",
+        "reason": "Indice, ricerca e lettore verificati.",
+        "query": "python json",
+        "index_ready": true,
+        "results": 6,
+        "recipe": "python-serializzare-json-leggibile-con-unicode",
+        "code_blocks": 2,
+        "elapsed_ms": 6440,
+        "version": "1.3.0"
+      },
+      "stderr": "",
+      "success": true
+    }
+  ],
+  "success": true,
+  "limits": "Prova sul PC Windows corrente con directory isolata, PATH senza Python e DLL Python caricate dal pacchetto; non è una prova in macchina virtuale nuova. Scala Qt 100%/200%, nessun collaudo Linux/macOS o monitor fisico aggiuntivo. Proxy di rete non raggiungibile, nessun accesso web richiesto."
+}

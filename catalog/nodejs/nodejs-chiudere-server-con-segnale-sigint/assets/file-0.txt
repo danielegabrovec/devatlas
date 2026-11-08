@@ -1,0 +1,1 @@
+import{createServer}from'node:http';const s=createServer((q,r)=>r.end('ok'));s.listen(3000,'127.0.0.1');process.once('SIGINT',()=>s.close(()=>console.log('server chiuso')));

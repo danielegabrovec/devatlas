@@ -1,0 +1,1 @@
+fun area(width:Int,height:Int):Int {require(width>=0&&height>=0);return Math.multiplyExact(width,height)}

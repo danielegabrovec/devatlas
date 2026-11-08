@@ -1,0 +1,4 @@
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+let fields:Vec<&str>=" a, ,b,c ".split(',').map(str::trim).filter(|part|!part.is_empty()).collect();println!("{:?}",fields);
+Ok(())
+}

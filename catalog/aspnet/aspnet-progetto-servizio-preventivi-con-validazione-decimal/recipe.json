@@ -1,0 +1,118 @@
+{
+  "id": "aspnet-progetto-servizio-preventivi-con-validazione-decimal",
+  "title": "Progetto: servizio preventivi con validazione Decimal",
+  "summary": "Il preventivo10×3 con sconto10% restituisce27.00; prezzo negativo risponde400. La logica economica usa decimal e vive fuori dagli endpoint.",
+  "stack": "aspnet",
+  "group": "Web e backend",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "ASP.NET Core10; .NET SDK10",
+  "prerequisites": "SDK.NET10 e browser. Eseguire dotnet run --urls http://127.0.0.1:5000. Ogni esempio è un progetto separato; dati in memoria solo dimostrativi.",
+  "tags": [
+    "aspnet",
+    "example",
+    "progetto:",
+    "servizio",
+    "preventivi",
+    "con"
+  ],
+  "project": true,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "Demo.csproj",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "8b4e038e6509a65ca98a58d89dcf34b9460c567d46d96222581bbfa1d469e8cf"
+    },
+    {
+      "id": "file-1",
+      "path": "Quote.cs",
+      "language": "csharp",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "0e021e985d4a0ef9400086c4f6077defe07788980176bfef8960755407205fb0"
+    },
+    {
+      "id": "file-2",
+      "path": "Program.cs",
+      "language": "csharp",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "3d7e0769256a6dc7fd8294f433ab0cf7b6c407bc625e390ff043e0dfba4b77de"
+    },
+    {
+      "id": "file-3",
+      "path": "requests.http",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "af8b51120025d56a9ba17dfcae573d517149143056e9822258aa0e88feba3278"
+    },
+    {
+      "id": "file-4",
+      "path": "README.md",
+      "language": "markdown",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "d66c56dca88c1186aeafca1f1edcb4ce506f703027a0f411453bf514ceb9f5cf"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "dc430643a0d580433aac8588ff1a02e8785349124bf8997176fe5d079c3dd6c1"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "port",
+      "label": "Porta locale",
+      "type": "port",
+      "default": 5000,
+      "required": true
+    }
+  ],
+  "related": [
+    "aspnet-progetto-api-prodotti-con-repository-concorrente",
+    "aspnet-applicare-filtro-validazione-a-endpoint",
+    "aspnet-creare-servizio-scoped-per-richiesta"
+  ],
+  "expected": "Il preventivo10×3 con sconto10% restituisce27.00; prezzo negativo risponde400. La logica economica usa decimal e vive fuori dagli endpoint.",
+  "errors": [
+    "Comando non trovato: installare la toolchain elencata nei prerequisiti.",
+    "Dipendenza mancante: eseguire l'installazione nella radice esportata, senza cambiare le versioni dichiarate."
+  ],
+  "sources": [
+    "https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-10.0"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "compilato",
+    "date": "2026-10-29",
+    "details": "Compilazione dotnet build completata con SDK.NET10 su Windows; endpoint non tutti interrogati, nessuna attestazione esecuzione multipiattaforma.",
+    "files_sha256": {
+      "Demo.csproj": "8b4e038e6509a65ca98a58d89dcf34b9460c567d46d96222581bbfa1d469e8cf",
+      "Quote.cs": "0e021e985d4a0ef9400086c4f6077defe07788980176bfef8960755407205fb0",
+      "Program.cs": "3d7e0769256a6dc7fd8294f433ab0cf7b6c407bc625e390ff043e0dfba4b77de",
+      "requests.http": "af8b51120025d56a9ba17dfcae573d517149143056e9822258aa0e88feba3278",
+      "README.md": "d66c56dca88c1186aeafca1f1edcb4ce506f703027a0f411453bf514ceb9f5cf"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

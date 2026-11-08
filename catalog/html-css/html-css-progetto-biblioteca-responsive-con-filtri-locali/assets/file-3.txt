@@ -1,0 +1,2 @@
+# Biblioteca locale
+Aprire index.html. Tre schede, ricerca per titolo, filtro per stack, conteggio risultati e tema chiaro/scuro. Prova: cercando file rimane1scheda; scegliendo SQL e query vuota rimaneJOIN. Funziona senza rete.

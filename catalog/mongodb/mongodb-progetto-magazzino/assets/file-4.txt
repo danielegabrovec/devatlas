@@ -1,0 +1,1 @@
+import {connect} from './db.mjs';const {client,items}=await connect();try{await items.updateOne({_id:'keyboard'},{$setOnInsert:{qty:8}},{upsert:true});console.log(await items.findOne({_id:'keyboard'}));}finally{await client.close();}

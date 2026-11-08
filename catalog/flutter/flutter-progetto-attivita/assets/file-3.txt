@@ -1,0 +1,9 @@
+import 'package:flutter/material.dart';
+import 'model.dart';
+void main()=>runApp(const AtlasApp());
+class AtlasApp extends StatefulWidget{const AtlasApp({super.key});@override State<AtlasApp> createState()=>_AtlasState();}
+class _AtlasState extends State<AtlasApp>{
+ThemeMode appTheme=ThemeMode.light;
+List<Task> rows=[];final controller=TextEditingController();String error='';void add(){try{final next=addTask(rows,controller.text);setState(()=>rows=next);controller.clear();setState(()=>error='');}on ArgumentError catch(e){setState(()=>error=e.message.toString());}}@override void dispose(){controller.dispose();super.dispose();}
+@override Widget build(BuildContext context)=>MaterialApp(theme:ThemeData(colorScheme:ColorScheme.fromSeed(seedColor:Colors.indigo)),darkTheme:ThemeData.dark(),themeMode:appTheme,home:Builder(builder:(context)=>Scaffold(key:const Key('page'),appBar:AppBar(title:const Text('Laboratorio Flutter')),body:Padding(padding:const EdgeInsets.all(20),child:Column(children:[TextField(controller:controller,decoration:const InputDecoration(labelText:'Nuova attività')),ElevatedButton(onPressed:add,child:const Text('Aggiungi')),Text(error),Expanded(child:ListView(children:rows.map((task)=>CheckboxListTile(key:ValueKey(task.id),title:Text(task.title),value:task.done,onChanged:(_)=>setState(()=>rows=rows.map((row)=>row.id==task.id?row.toggle():row).toList()))).toList())),Text('Completate: ${rows.where((row)=>row.done).length}')])))));
+}

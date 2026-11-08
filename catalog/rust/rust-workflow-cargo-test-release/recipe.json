@@ -1,0 +1,79 @@
+{
+  "id": "rust-workflow-cargo-test-release",
+  "title": "Eseguire test e distribuire un binario Rust Release",
+  "summary": "Verifica i contratti prima della build ottimizzata con controllo overflow mantenuto.",
+  "stack": "rust",
+  "group": "Linguaggi",
+  "section": "Compilazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Rust stable 1.75+, edition 2021",
+  "prerequisites": "Toolchain Rust tramite rustup: rustc e cargo nel PATH. Gli esempi usano soltanto std; nessuna crate da scaricare.",
+  "tags": [
+    "workflow",
+    "build, test e distribuzione",
+    "build",
+    "test",
+    "distribution"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "Cargo.toml",
+      "language": "toml",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "0b5a00f8f49e8c0fe61fc0485e8094ca5a504e44eecf791c5fe56a2bc0cfb1d0"
+    },
+    {
+      "id": "file-1",
+      "path": "src/main.rs",
+      "language": "rust",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "d89a0c892f9ea9bc2e17b29478a6aeb0a6892b794eed4bd8f4b55c5444d1a32d"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "a34f73bf0c1fcc73349b5175cf127205521524936e4206d99beb367ba072d1e6"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "rust-workflow-rust-lldb",
+    "rust-workflow-cargo-init",
+    "rust-progetto-completo-lista-attivita-rust"
+  ],
+  "expected": "Due test passano e il binario Release stampa10.",
+  "errors": [
+    "Non distribuire il binario Debug per errore; verifica percorso e target. --offline funziona qui perché non ci sono dipendenze esterne."
+  ],
+  "sources": [
+    "https://doc.rust-lang.org/book/",
+    "https://doc.rust-lang.org/std/",
+    "https://doc.rust-lang.org/cargo/commands/cargo-build.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Sorgenti e configurazioni verificati su Windows x64: PowerShell parser, TOML parse, source compiler. Report: reports/languages-workflows-validation.json. Non attestati sessioni interattive di debug, installazioni di dipendenze o distribuzione completa del workflow; nessuna esecuzione Linux/macOS."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

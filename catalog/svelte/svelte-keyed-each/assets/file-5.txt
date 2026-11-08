@@ -1,0 +1,5 @@
+<script>
+import {onMount,tick,setContext,getContext} from 'svelte';
+let rows=$state([{id:1,name:'Ada'},{id:2,name:'Grace'}]);
+</script>
+<main><ul>{#each rows as row (row.id)}<li>{row.name}<button onclick={()=>rows=rows.filter(x=>x.id!==row.id)}>Rimuovi</button></li>{/each}</ul></main>

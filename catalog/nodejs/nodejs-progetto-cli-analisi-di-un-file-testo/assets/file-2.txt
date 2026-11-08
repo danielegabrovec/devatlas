@@ -1,0 +1,1 @@
+import test from'node:test';import assert from'node:assert/strict';import{count}from'../src/count.mjs';test('due righe',()=>assert.deepEqual(count('uno due\ntre'),{lines:2,words:3}));

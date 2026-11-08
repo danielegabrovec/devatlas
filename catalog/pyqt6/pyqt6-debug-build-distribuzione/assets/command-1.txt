@@ -1,0 +1,2 @@
+.\.venv\Scripts\python.exe -m pip install -r requirements-build.txt
+.\.venv\Scripts\python.exe -m PyInstaller --clean --onedir --windowed --name {{project_name}} --exclude-module PySide6 main.py

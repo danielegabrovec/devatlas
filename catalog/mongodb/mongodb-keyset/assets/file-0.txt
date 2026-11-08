@@ -1,0 +1,5 @@
+const lab=db.getSiblingDB('atlas_demo_keyset');
+const items=lab.getCollection('items');
+items.drop();
+items.insertMany([{"_id": 1, "name": "Keyboard", "price": 50, "stock": 8, "category": "input", "tags": ["usb", "desk"], "bins": [{"place": "A", "qty": 2}, {"place": "B", "qty": 3}]}, {"_id": 2, "name": "Mouse", "price": 20, "stock": 0, "category": "input", "tags": ["usb"]}, {"_id": 3, "name": "Monitor", "price": 180, "stock": 3, "category": "display", "tags": ["desk"]}]);
+printjson(items.find({_id:{$gt:1}}).sort({_id:1}).limit(2).toArray());

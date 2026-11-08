@@ -1,0 +1,7 @@
+import {Component,signal,computed,effect,inject,DestroyRef,ChangeDetectionStrategy} from '@angular/core';
+import {CommonModule} from '@angular/common';import {FormsModule} from '@angular/forms';
+
+@Component({selector:'app-root',standalone:true,imports:[CommonModule,FormsModule],changeDetection:ChangeDetectionStrategy.OnPush,template:`<main><select [(ngModel)]="selected">@for(item of options;track item.id){<option [ngValue]="item">{{item.name}}</option>}</select><p>ID: {{selected.id}}</p></main>`})
+export class AppComponent{
+options=[{id:'dev',name:'Sviluppo'},{id:'prod',name:'Produzione'}];selected=this.options[0];
+}

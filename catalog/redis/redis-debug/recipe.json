@@ -1,0 +1,71 @@
+{
+  "id": "redis-debug",
+  "title": "Diagnosticare chiavi e latenza senza cambiare configurazione globale",
+  "summary": "Interrogare TTL, tipo e statistiche del solo server di prova.",
+  "stack": "redis",
+  "group": "Database",
+  "section": "Debug",
+  "difficulty": "Intermedio",
+  "os": [
+    "Linux"
+  ],
+  "ide": [
+    "VS Code",
+    "WSL"
+  ],
+  "versions": "Redis Open Source8.2;redis-cli;Node client6.3.1",
+  "prerequisites": "Redis8.2 e redis-cli in Linux/WSL, server didattico su127.0.0.1:6381. Le ricette toccano solo prefissi atlas_demo propri; non usano FLUSHALL o FLUSHDB.",
+  "tags": [
+    "redis",
+    "debug",
+    "TTL",
+    "SLOWLOG",
+    "INFO"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "debug.sh",
+      "language": "bash",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "c5b5c956a26659fd51a82a0746109ba04caf44b552f20e5627bd74247359dc1d"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "bash",
+      "role": "command",
+      "shell": "Bash",
+      "os": "Linux",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "aae379f94e843f91fae089c722246b414558a557aefb7538b005da3f1e0b401c"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "redis-scan",
+    "redis-test",
+    "redis-ttl-update"
+  ],
+  "expected": "Tipo string, PTTL positivo e statistiche del processo locale.",
+  "errors": [
+    "Connessione rifiutata: verificare il solo processo didattico su127.0.0.1:6381.",
+    "WRONGTYPE o altro errore Redis: controllare TYPE e namespace della chiave; i wrapper redis-cli usano -e perché set -e della shell da solo non converte una risposta Redis di errore in fallimento."
+  ],
+  "sources": [
+    "https://redis.io/docs/latest/develop/get-started/",
+    "https://redis.io/commands/",
+    "https://redis.io/docs/latest/develop/clients/nodejs/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Schema/configurazioni e sintassi JavaScript/PowerShell secondo i file presenti; nessuna attestazione serverMongo/Redis o finestraTauri. Report: reports/expansion-frameworks-qa.json."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

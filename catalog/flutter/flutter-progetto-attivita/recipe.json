@@ -1,0 +1,130 @@
+{
+  "id": "flutter-progetto-attivita",
+  "title": "Progetto completo: attività Flutter con modello e test",
+  "summary": "Gestire una lista con ID stabili e completamento, separando il modello Dart dai widget e dal runner nativo generato.",
+  "stack": "flutter",
+  "group": "Desktop e GUI",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Android"
+  ],
+  "ide": [
+    "VS Code",
+    "Android Studio"
+  ],
+  "versions": "Flutter3.47 stable;Dart3.x incluso;API compatibili Flutter3.35+",
+  "prerequisites": "Flutter SDK stable3.47 e Dart incluso. Windows richiede Visual Studio con Desktop development with C++, non soltanto VS Code. Android richiede Android SDK/JDK e dispositivo o emulatore. macOS/iOS richiedono un Mac con Xcode e non sono verificati qui.",
+  "tags": [
+    "flutter",
+    "project",
+    "Dart",
+    "model",
+    "test",
+    "StatefulWidget"
+  ],
+  "project": true,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "bootstrap.ps1",
+      "language": "powershell",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "94c0fd813a85c12931c35b42eb24c1f6278d25a21d8fc10a005c49b814243829"
+    },
+    {
+      "id": "file-1",
+      "path": "recipe/pubspec.yaml",
+      "language": "yaml",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "9bcf9aad8af2481ec6415f439bab177617a910a4aed8d53b6735c9dcf204f588"
+    },
+    {
+      "id": "file-2",
+      "path": "recipe/analysis_options.yaml",
+      "language": "yaml",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "19c47ba237c5751421e4bc644bef9cb2617fdf9a46b0aafb84e5206858c9dcc0"
+    },
+    {
+      "id": "file-3",
+      "path": "recipe/lib/main.dart",
+      "language": "dart",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "fa50ed7f132008ed77ff80858d32509087f20018bbc89f311b39efea5e8ce8ac"
+    },
+    {
+      "id": "file-4",
+      "path": "recipe/test/widget_test.dart",
+      "language": "dart",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "09f0673b13555aaceba55726ddefb2e4abd9e8d511d3b79c301cb451948bfcd4"
+    },
+    {
+      "id": "file-5",
+      "path": "recipe/lib/model.dart",
+      "language": "dart",
+      "role": "file",
+      "source": "assets/file-5.txt",
+      "sha256": "bb283b1f84119dd6505a33df0510114c6a89e44d5daf520275b0ddc44db2fcdc"
+    },
+    {
+      "id": "file-6",
+      "path": "recipe/test/model_test.dart",
+      "language": "dart",
+      "role": "file",
+      "source": "assets/file-6.txt",
+      "sha256": "757c54ef5889eb31604c2f438c6cb03e119f1da100eae5cdfef6f055915a25a9"
+    },
+    {
+      "id": "file-7",
+      "path": "README.md",
+      "language": "markdown",
+      "role": "file",
+      "source": "assets/file-7.txt",
+      "sha256": "3eae97d4f503cfcc8b83c9b66341e353d5394024bb8bf198c766163a17b40a68"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "eafab8df0e8d60a7a6e33f47795854d9dcd232b70748d8d53be778394fcb5195"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "flutter-setup",
+    "flutter-build",
+    "flutter-test"
+  ],
+  "expected": "I test forniti passano quando eseguiti con Flutter; aggiunta e checkbox aggiornano il conteggio.",
+  "errors": [
+    "Target of URI does not exist per flutter/material.dart: eseguire bootstrap e flutter pub get nel progetto app generato, non direttamente nella cartella recipe.",
+    "Build Windows senza compilatore: risolvere flutter doctor installando il workload Desktop development with C++ di Visual Studio; la sola estensione VS Code non fornisce il toolchain.",
+    "No supported devices connected: controllare flutter devices e selezionare una destinazione predisposta; Android richiede SDK/licenze ed emulatore o dispositivo, iOS richiede macOS/Xcode."
+  ],
+  "sources": [
+    "https://docs.flutter.dev/release/release-notes/release-notes-3.47.0",
+    "https://docs.flutter.dev/platform-integration/windows/setup",
+    "https://docs.flutter.dev/testing/overview"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "documentato",
+    "details": "Esempio originale revisionato nel catalogo; esecuzione non attestata.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-29",
+  "scope": [
+    "devatlas/bundles.py",
+    "devatlas/templating.py",
+    "devatlas/personal.py",
+    "tests/test_data_extended.py"
+  ],
+  "bugs_fixed": [
+    "Export di cartelle e ZIP poteva lasciare artefatti parziali dopo errori di scrittura: ora usa staging e pubblicazione senza sostituire file esistenti.",
+    "Collisioni fra file e directory, differenze di maiuscole e normalizzazione Unicode venivano scoperte dopo avere iniziato a scrivere: preflight condiviso prima di ogni export.",
+    "Percorsi punto, segmenti normalizzati e alcuni nomi dispositivo Windows passavano la verifica: controlli sul percorso originale e sui componenti UTF-16.",
+    "Import e backup accettavano strutture annidate non valide e impostazioni che potevano impedire il successivo avvio: validazione prima delle transazioni e fallback in lettura senza riscrivere dati.",
+    "ZIP/JSON malformati, CRC errati, chiavi duplicate e sezioni backup discordanti non avevano una gestione uniforme: errori ValueError leggibili e limiti di dimensione.",
+    "Un backup poteva combinare ricette e annotazioni lette in momenti diversi: snapshot SQLite unico verificato con un writer concorrente.",
+    "Le preferenze illeggibili di vecchi profili impedivano un backup ripristinabile: settings_recovery conserva i testi originali nel bundle v1 e settings contiene solo valori validi, senza modificare il DB sorgente.",
+    "I collegamenti Markdown recipe: interni rimanevano sugli ID originali durante importazione: ora seguono la stessa mappa dei related, lasciando invariati sorgenti e riferimenti esterni.",
+    "Parametri opzionali vuoti erano rifiutati come obbligatori e porte Unicode ambigue passavano il primo controllo: semantica opzionale e validazione ASCII esplicite.",
+    "Il profilo con user_version futuro veniva silenziosamente riportato a 1: ora viene rifiutato prima di qualsiasi modifica allo schema."
+  ],
+  "tests": {
+    "command": ".\\.venv\\Scripts\\python.exe -m pytest tests/test_core.py tests/test_data_extended.py -q --basetemp=.cache/pytest-data-review",
+    "passed": 82,
+    "failed": 0,
+    "new_data_cases": 57,
+    "python": "3.13.13",
+    "catalog_validated": 1800,
+    "coverage": [
+      "fault injection scrittura ZIP e file",
+      "errore rename e destinazioni concorrenti",
+      "rollback SQL con trigger",
+      "backup coerente durante scritture concorrenti WAL",
+      "Unicode e CRLF identici fra cartella ZIP e bundle",
+      "conflitti ID e collegamenti interni",
+      "ripristino note e preferenze valide",
+      "compatibilità profilo v0/v1 e guardia versione futura"
+    ]
+  },
+  "compatibility": [
+    "Firma validate_recipe(recipe) invariata; tutte le 1800 ricette del catalogo corrente sono valide.",
+    "RecipeBundle format/version 1 conservati; campi futuri ignoti restano preservati in lettura.",
+    "Schema SQLite resta user_version=1; profili v0 con tabelle esistenti vengono aperti senza cancellare contenuti.",
+    "Il ripristino continua a unire le schede e a duplicare i conflitti, preservando annotazioni/raccolte e le impostazioni correnti.",
+    "Nessun dato personale reale utilizzato; prove con profili sintetici nella cartella .cache."
+  ],
+  "apis_added": {
+    "PersonalStore.rename_collection(cid,name)": "Rinomina atomica; ValueError su raccolta mancante, nome vuoto o duplicato Unicode/casefold.",
+    "PersonalStore.delete_collection(cid)": "Elimina soltanto raccolta e relazioni in una transazione; conserva schede e annotazioni.",
+    "backup_data.settings_recovery": "Campo opzionale del backup v1 con testi originali delle preferenze non valide; non riapplicato come impostazioni attive.",
+    "validate_personal_data(data)": "Preflight condiviso usato dal caricamento del bundle e dal ripristino diretto."
+  },
+  "limits": [
+    "Fault injection copre errori ordinari I/O e SQLite; non simula perdita di alimentazione o corruzione fisica del filesystem/database.",
+    "Su POSIX la pubblicazione esclusiva di un file usa hard link sullo stesso filesystem; filesystem che non li supportano falliscono senza sovrascrivere destinazioni.",
+    "I testi settings_recovery restano nel bundle di backup e non vengono applicati come preferenze del profilo ripristinato.",
+    "La cronologia di consultazione non viene inclusa nel backup personale prodotto dall’app, mantenendo il comportamento precedente.",
+    "Non viene tentata riparazione automatica di un file SQLite fisicamente corrotto o di payload personali già danneggiati."
+  ],
+  "source_sha256": {
+    "devatlas/bundles.py": "a388014e529f5e312e67af352c718b1a3164ffdc208778f8f866aa933017c708",
+    "devatlas/templating.py": "55583510d1e57c8fd872b491811b394f798cf781ddf10be03c362061a1bb8707",
+    "devatlas/personal.py": "9a1956562a3daa03f2d2d9dae57d8d5be31da873963121ea4ab16896034d5efa",
+    "tests/test_data_extended.py": "25426739518bbf4808be564bdc07d3a6d032fdee768b2ca8ed738f09bcbcf66c"
+  }
+}

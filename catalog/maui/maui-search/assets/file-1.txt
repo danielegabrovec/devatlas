@@ -1,0 +1,15 @@
+using System;
+using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Collections.ObjectModel;
+using Microsoft.Maui.Controls;
+using Microsoft.Maui.Graphics;
+using Microsoft.Maui.ApplicationModel.DataTransfer;
+using Microsoft.Maui.Storage;
+namespace RecipeApp;
+public class MainPage:ContentPage {
+ public MainPage(){ Title="Ricetta MAUI"; var panel=new VerticalStackLayout{Spacing=12,Padding=20};
+var all=new[]{"Python","PySide6","Rust","PostgreSQL"}; var search=new SearchBar{Placeholder="Cerca"}; var list=new CollectionView{ItemsSource=all,HeightRequest=160}; search.TextChanged+=(_,e)=>list.ItemsSource=all.Where(x=>x.Contains(e.NewTextValue ?? "",StringComparison.OrdinalIgnoreCase)).ToArray(); panel.Children.Add(search); panel.Children.Add(list);
+ Content=new ScrollView{Content=panel}; }
+}

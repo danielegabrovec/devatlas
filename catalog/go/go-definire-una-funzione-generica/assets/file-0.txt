@@ -1,0 +1,10 @@
+package main
+
+import (
+"fmt"
+)
+
+func main(){
+fmt.Println(Contains([]int{2,3,5},3),Contains([]string{"a","b"},"c"))
+}
+func Contains[T comparable](values []T,wanted T)bool{for _,value:=range values{if value==wanted{return true}};return false}

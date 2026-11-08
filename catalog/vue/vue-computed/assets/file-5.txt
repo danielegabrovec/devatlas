@@ -1,0 +1,5 @@
+<script setup>
+import {ref,reactive,computed,watch,watchEffect,onMounted,onUnmounted,nextTick,provide,inject,defineAsyncComponent,shallowRef,triggerRef,readonly,toRefs} from 'vue';
+const qty=ref(2);const unit=ref(12.5);const total=computed(()=>qty.value*unit.value);
+</script>
+<template><main><label>Quantità <input type="number" v-model.number="qty" min="0"></label><p>Totale {{total.toFixed(2)}}</p></main></template>

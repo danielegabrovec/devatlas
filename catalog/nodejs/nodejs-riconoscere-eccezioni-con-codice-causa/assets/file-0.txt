@@ -1,0 +1,1 @@
+try{throw new Error('Importazione fallita',{cause:new Error('Formato invalido')})}catch(e){console.error(e.message,e.cause.message)}

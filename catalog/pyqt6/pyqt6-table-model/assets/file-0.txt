@@ -1,0 +1,32 @@
+import sys, json, sqlite3, tempfile, logging
+from pathlib import Path
+from PyQt6.QtCore import *
+from PyQt6.QtGui import *
+from PyQt6.QtWidgets import *
+Signal = pyqtSignal
+Slot = pyqtSlot
+
+def build(root, layout):
+    class Model(QAbstractTableModel):
+        rows = [("Ada", 3), ("Linus", 5)]
+        def rowCount(self, parent=QModelIndex()):
+            return 0 if parent.isValid() else len(self.rows)
+        def columnCount(self, parent=QModelIndex()):
+            return 2
+        def data(self, index, role=Qt.ItemDataRole.DisplayRole):
+            if index.isValid() and role == Qt.ItemDataRole.DisplayRole:
+                return str(self.rows[index.row()][index.column()])
+    model = Model(root)
+    table = QTableView()
+    table.setModel(model)
+    layout.addWidget(table)
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    window = QWidget()
+    window.setWindowTitle("Ricetta Qt")
+    window.resize(720, 480)
+    layout = QVBoxLayout(window)
+    build(window, layout)
+    window.show()
+    sys.exit(app.exec())

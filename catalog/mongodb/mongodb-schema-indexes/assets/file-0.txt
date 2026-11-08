@@ -1,0 +1,1 @@
+const lab=db.getSiblingDB('atlas_demo_schema');lab.inventory.drop();lab.createCollection('inventory',{validator:{$jsonSchema:{bsonType:'object',required:['sku','qty'],properties:{sku:{bsonType:'string'},qty:{bsonType:'number',minimum:0}}}}});lab.inventory.createIndex({sku:1},{unique:true});lab.inventory.insertOne({sku:'keyboard',qty:8});printjson(lab.inventory.find().toArray());

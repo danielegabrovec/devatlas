@@ -1,0 +1,5 @@
+<script setup>
+import {ref,reactive,computed,watch,watchEffect,onMounted,onUnmounted,nextTick,provide,inject,defineAsyncComponent,shallowRef,triggerRef,readonly,toRefs} from 'vue';
+const Details=defineAsyncComponent(()=>import('./Details.vue'));const visible=ref(false);
+</script>
+<template><main><button @click="visible=true">Carica dettagli</button><Details v-if="visible"/></main></template>

@@ -1,0 +1,2 @@
+const values = [0, "", null, undefined];
+for (const value of values) console.log(value ?? "default");

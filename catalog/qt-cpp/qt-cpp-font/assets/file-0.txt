@@ -1,0 +1,11 @@
+#include <QtWidgets>
+#include <QtCore>
+#include <QtGui>
+
+int main(int argc, char **argv) {
+ QApplication app(argc,argv);
+ QWidget window; window.resize(720,480);
+ auto *layout=new QVBoxLayout(&window);
+ auto *label=new QLabel("Clic per scegliere il carattere"); auto *b=new QPushButton("Font"); layout->addWidget(label); layout->addWidget(b); QObject::connect(b,&QPushButton::clicked,&window,[&window,label]{bool ok=false; auto font=QFontDialog::getFont(&ok,label->font(),&window); if(ok) label->setFont(font);});
+ window.show(); return app.exec();
+}

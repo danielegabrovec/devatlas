@@ -1,0 +1,3 @@
+import React, {useState,useEffect,useMemo,useRef,useReducer,useId,useContext,createContext,useCallback,useLayoutEffect,useTransition,useDeferredValue,useSyncExternalStore,useImperativeHandle,forwardRef,memo,lazy,Suspense,Component} from 'react';
+import {createPortal} from 'react-dom';
+import{total}from'./pricing.js';export default function App(){const[n,set]=useState(1);return <label>Quantità<input type='number' min='1' value={n} onChange={e=>set(Math.max(1,Number(e.target.value)))}/><output>{total(10,n)}€</output></label>}

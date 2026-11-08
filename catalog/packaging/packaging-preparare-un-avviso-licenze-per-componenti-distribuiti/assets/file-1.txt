@@ -1,0 +1,8 @@
+[
+  {
+    "name": "Componente dimostrativo originale",
+    "version": "1.0.0",
+    "license": "MIT",
+    "source": "Sorgenti locali forniti nella ricetta"
+  }
+]

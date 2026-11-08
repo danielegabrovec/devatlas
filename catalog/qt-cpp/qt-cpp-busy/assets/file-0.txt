@@ -1,0 +1,11 @@
+#include <QtWidgets>
+#include <QtCore>
+#include <QtGui>
+
+int main(int argc, char **argv) {
+ QApplication app(argc,argv);
+ QWidget window; window.resize(720,480);
+ auto *layout=new QVBoxLayout(&window);
+ auto *bar=new QProgressBar; bar->setRange(0,0); layout->addWidget(bar); QTimer::singleShot(1500,bar,[bar]{bar->setRange(0,1); bar->setValue(1);});
+ window.show(); return app.exec();
+}

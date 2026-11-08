@@ -1,0 +1,12 @@
+using System;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Collections.ObjectModel;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
+namespace RecipeApp;
+public class MainWindow:Window {
+ public MainWindow(){Title="Ricetta WinUI"; var panel=new StackPanel{Spacing=12,Margin=new Thickness(20)};
+panel.Children.Add(new ProgressBar{Minimum=0,Maximum=100,Value=70,Height=16});
+ Content=panel; }
+}

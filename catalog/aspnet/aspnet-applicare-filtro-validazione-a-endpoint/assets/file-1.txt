@@ -1,0 +1,12 @@
+using System.Text;
+using System.Text.Json;
+using System.Diagnostics;
+using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.RateLimiting;
+using System.Threading.RateLimiting;
+var builder=WebApplication.CreateBuilder(args);
+
+var app=builder.Build();
+app.MapGet("/items/{id:int}",(int id)=>new{id}).AddEndpointFilter(async(context,next)=>{var id=context.GetArgument<int>(0);if(id<1)return Results.BadRequest("ID positivo richiesto");return await next(context);});
+app.Run();

@@ -1,0 +1,4 @@
+import struct
+packet = struct.pack(">HI", 7, 1000)
+print(packet.hex())
+print(struct.unpack(">HI", packet))

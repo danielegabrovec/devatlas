@@ -1,0 +1,5 @@
+import assert from "node:assert/strict";
+const average = values => values.reduce((a, b) => a + b, 0) / values.length;
+assert.equal(average([2, 4]), 3);
+assert.throws(() => { throw new RangeError("input"); }, RangeError);
+console.log("contratti verificati");

@@ -1,0 +1,7 @@
+<?php
+declare(strict_types=1);
+$dir=sys_get_temp_dir().DIRECTORY_SEPARATOR.'atlas-'.bin2hex(random_bytes(8));
+if(!mkdir($dir))throw new RuntimeException('mkdir');
+$target=$dir.DIRECTORY_SEPARATOR.'data.json';$temp=tempnam($dir,'pending-');
+try{if($temp===false||file_put_contents($temp,'{"ok":true}',LOCK_EX)===false)throw new RuntimeException('write');if(!rename($temp,$target))throw new RuntimeException('rename');echo file_get_contents($target),PHP_EOL;}
+finally{if(is_string($temp)&&is_file($temp))unlink($temp);if(is_file($target))unlink($target);rmdir($dir);}

@@ -1,0 +1,3 @@
+from statistics import mean, pstdev, stdev
+values = [2, 4, 4, 4, 5, 5, 7, 9]
+print(mean(values), round(pstdev(values), 3), round(stdev(values), 3))

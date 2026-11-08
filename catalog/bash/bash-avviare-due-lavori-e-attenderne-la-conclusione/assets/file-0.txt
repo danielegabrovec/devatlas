@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+(printf "Lavoro A\n") &
+first=$!
+(printf "Lavoro B\n") &
+second=$!
+wait "$first"
+wait "$second"

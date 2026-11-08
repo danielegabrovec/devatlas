@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+p="atlas_demo:strings"
+cli(){ redis-cli -e --raw -h 127.0.0.1 -p 6381 "$@"; }
+cli DEL "$p:value"
+cli SET "$p:value" "ciao" EX 60 NX
+cli GET "$p:value"
+cli TTL "$p:value"

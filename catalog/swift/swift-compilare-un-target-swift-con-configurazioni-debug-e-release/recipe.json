@@ -1,0 +1,79 @@
+{
+  "id": "swift-compilare-un-target-swift-con-configurazioni-debug-e-release",
+  "title": "Compilare un target Swift con configurazioni Debug e Release",
+  "summary": "Distingue le build di sviluppo da quelle ottimizzate e non assume che i simboli siano equivalenti.",
+  "stack": "swift",
+  "group": "Linguaggi",
+  "section": "Compilazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "Xcode",
+    "VS Code"
+  ],
+  "versions": "Swift6.4; Package.swift tools-version6.0, Linux/macOS",
+  "prerequisites": "Toolchain Swift6.4 su Linux o macOS. Per SwiftUI/iOS occorrono macOS, Xcode e un target Apple. Non sono attestati esecuzioni o compilazioni Swift su Windows.",
+  "tags": [
+    "swift build",
+    "Release",
+    "SPM"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "Package.swift",
+      "language": "swift",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "7c399c844b89f076b8ac04593e29e6d22b9948fccd8e1cc5d322909269f7254a"
+    },
+    {
+      "id": "file-1",
+      "path": "Sources/SwiftBuild/main.swift",
+      "language": "swift",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "0fb1ebee047f53f4419e665195ea77a07f7d38409d8fc708e51f465a0a4d8125"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "bash",
+      "role": "command",
+      "shell": "Bash",
+      "os": "Linux/macOS",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "d5157f95d66d50025af4e2ada0027e06f2dda82bb53ef7c21f556f123acc2c72"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "swift-eseguire-test-swift-package-con-xctest",
+    "swift-inizializzare-un-package-swift-cli-su-linux-o-macos",
+    "swift-progetto-completo-report-spese-swift-package"
+  ],
+  "expected": "Il target Release stampa10; Debug e Release occupano output distinti.",
+  "errors": [
+    "No executable product named: usa il nome del target/prodotto dichiarato in Package.swift.",
+    "Binario non trovato in .build/release: ricava il percorso reale con swift build --show-bin-path -c release, senza riusare una directory Debug."
+  ],
+  "sources": [
+    "https://www.swift.org/documentation/",
+    "https://www.swift.org/install/linux/",
+    "https://www.swift.org/install/macos/",
+    "https://www.swift.org/blog/swift-6.4-released/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

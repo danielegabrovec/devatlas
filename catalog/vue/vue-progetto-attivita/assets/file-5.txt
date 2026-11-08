@@ -1,0 +1,5 @@
+<script setup>
+import {ref,reactive,computed,watch,watchEffect,onMounted,onUnmounted,nextTick,provide,inject,defineAsyncComponent,shallowRef,triggerRef,readonly,toRefs} from 'vue';
+import {addTask,completed} from './model.mjs';const rows=ref([]);const title=ref('');const error=ref('');const done=computed(()=>completed(rows.value));function add(){try{rows.value=addTask(rows.value,title.value);title.value='';error.value='';}catch(e){error.value=e.message;}}function toggle(id){rows.value=rows.value.map(row=>row.id===id?{...row,done:!row.done}:row);}
+</script>
+<template><main><h1>Attività</h1><form @submit.prevent="add"><input v-model="title" aria-label="Nuova attività"><button>Aggiungi</button></form><p class="error" role="status">{{error}}</p><ul><li v-for="row in rows" :key="row.id"><label><input type="checkbox" :checked="row.done" @change="toggle(row.id)">{{row.title}}</label></li></ul><p>Completate: {{done}}</p></main></template>

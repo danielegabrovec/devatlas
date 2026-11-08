@@ -1,0 +1,29 @@
+import sys, json, sqlite3, tempfile, logging
+from pathlib import Path
+from PySide6.QtCore import *
+from PySide6.QtGui import *
+from PySide6.QtWidgets import *
+
+def build(root, layout):
+    class DropArea(QLabel):
+        def __init__(self):
+            super().__init__("Trascina qui un file")
+            self.setAcceptDrops(True)
+            self.setMinimumHeight(120)
+        def dragEnterEvent(self, event):
+            if event.mimeData().hasUrls() and all(url.isLocalFile() for url in event.mimeData().urls()):
+                event.acceptProposedAction()
+        def dropEvent(self, event):
+            self.setText("\n".join(url.toLocalFile() for url in event.mimeData().urls()))
+            event.acceptProposedAction()
+    layout.addWidget(DropArea())
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    window = QWidget()
+    window.setWindowTitle("Ricetta Qt")
+    window.resize(720, 480)
+    layout = QVBoxLayout(window)
+    build(window, layout)
+    window.show()
+    sys.exit(app.exec())

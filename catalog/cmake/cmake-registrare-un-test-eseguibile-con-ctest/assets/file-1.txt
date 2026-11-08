@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.24)
+project(RecipeBuild VERSION 1.2.0 LANGUAGES CXX)
+add_executable(recipe main.cpp)
+include(CTest)
+if(BUILD_TESTING)
+ add_test(NAME recipe_runs COMMAND recipe)
+endif()

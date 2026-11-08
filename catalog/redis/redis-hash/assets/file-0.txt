@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+p="atlas_demo:hash"
+cli(){ redis-cli -e --raw -h 127.0.0.1 -p 6381 "$@"; }
+cli DEL "$p:user"
+cli HSET "$p:user" name Ada city Roma
+cli HINCRBY "$p:user" visits 1
+cli HGETALL "$p:user"

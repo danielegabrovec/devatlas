@@ -1,0 +1,1 @@
+node --inspect-brk=127.0.0.1:9229 main.mjs

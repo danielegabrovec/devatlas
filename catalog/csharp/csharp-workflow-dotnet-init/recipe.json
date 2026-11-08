@@ -1,0 +1,87 @@
+{
+  "id": "csharp-workflow-dotnet-init",
+  "title": "Inizializzare un progetto console C# con SDK .NET",
+  "summary": "Controlla l'SDK e avvia una console net8.0 con nullable e implicit usings dichiarati.",
+  "stack": "csharp",
+  "group": "Linguaggi",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "C# 12, .NET 8; compatibile con SDK successivi che supportano net8.0",
+  "prerequisites": "SDK .NET 8+ e targeting pack net8.0; dotnet nel PATH. Nessun pacchetto NuGet esterno. Il primo restore può richiedere i pack della piattaforma.",
+  "tags": [
+    "workflow",
+    "inizializzazione",
+    "setup",
+    "test",
+    "distribution"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "App.csproj",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "65ea1f12a5bf55eda2e007274ffd468778d6a61343cb512f5daf6bede7a7b4e2"
+    },
+    {
+      "id": "file-1",
+      "path": "Program.cs",
+      "language": "csharp",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "dba8e2944ac406ec37acdeacc52b2f3978692b60d190ef6d9edf87931532ad46"
+    },
+    {
+      "id": "file-2",
+      "path": ".gitignore",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "6c5082c7e6de3e350189c67a1aacf757485ecc26e0a3cf96683528565f3e5f12"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "c9aad9fd60990a8d220c10171370e93ceda2a8179eb865484cbd8bc2d0b45fbb"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "csharp-workflow-dotnet-test-publish",
+    "csharp-workflow-dotnet-debug",
+    "csharp-progetto-completo-registro-prestiti-c"
+  ],
+  "expected": "La console stampa la versione del runtime effettivamente selezionato per net8.0.",
+  "errors": [
+    "NETSDK1045 indica SDK incompatibile; se manca net8.0 installa il targeting pack e runtime appropriati anziché cambiare il target senza verificarlo."
+  ],
+  "sources": [
+    "https://learn.microsoft.com/en-us/dotnet/csharp/",
+    "https://learn.microsoft.com/en-us/dotnet/api/",
+    "https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-new"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Sorgenti e configurazioni verificati su Windows x64: MSBuild XML parse, PowerShell parser, source compiler. Report: reports/languages-workflows-validation.json. Non attestati sessioni interattive di debug, installazioni di dipendenze o distribuzione completa del workflow; nessuna esecuzione Linux/macOS."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

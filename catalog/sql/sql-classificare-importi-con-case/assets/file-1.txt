@@ -1,0 +1,1 @@
+SELECT id,CASE WHEN total>=100 THEN 'grande' ELSE 'piccolo' END AS fascia FROM orders;

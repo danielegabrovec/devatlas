@@ -1,0 +1,1 @@
+*{box-sizing:border-box}body{font:16px/1.5 system-ui;margin:2rem;color:#172033}button,input,select,textarea{font:inherit;margin:.3rem;padding:.5rem}label{display:block}a{color:#075ea8}ol{display:flex;list-style:none;padding:0;gap:.5rem}li+li::before{content:"/";margin-inline-end:.5rem}

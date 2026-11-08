@@ -1,0 +1,3 @@
+Set-StrictMode -Version Latest
+$ErrorActionPreference='Stop'
+try { Get-Content -LiteralPath "file-che-non-esiste.txt" -ErrorAction Stop } catch { "Lettura fallita: $($_.Exception.Message)" }

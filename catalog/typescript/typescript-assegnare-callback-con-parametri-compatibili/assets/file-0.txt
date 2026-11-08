@@ -1,0 +1,6 @@
+type Animal = { name: string };
+type Dog = Animal & { bark(): void };
+const describeAnimal = (animal: Animal): void => console.log(animal.name);
+const handleDog: (dog: Dog) => void = describeAnimal;
+handleDog({name:"Fido",bark(){}});
+export {};

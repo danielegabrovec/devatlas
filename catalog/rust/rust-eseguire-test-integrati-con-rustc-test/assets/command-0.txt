@@ -1,0 +1,2 @@
+rustc --edition=2021 --test main.rs -o tests.exe
+.\tests.exe

@@ -1,0 +1,87 @@
+{
+  "id": "go-workflow-go-test-binary",
+  "title": "Eseguire test e produrre un eseguibile Go",
+  "summary": "Usa test incorporati e build trimpath per ottenere una consegna locale riproducibile rispetto ai percorsi.",
+  "stack": "go",
+  "group": "Linguaggi",
+  "section": "Compilazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Go 1.22+",
+  "prerequisites": "Toolchain Go1.22+ nel PATH. Tutti i moduli usano solo la libreria standard e non richiedono download di dipendenze.",
+  "tags": [
+    "workflow",
+    "build, test e distribuzione",
+    "build",
+    "test",
+    "distribution"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "go.mod",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "87fb1095a1e6d21248805887546889c696347a7319015c7c31707c7c65cd5951"
+    },
+    {
+      "id": "file-1",
+      "path": "main.go",
+      "language": "go",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "082b59c2d26fa3bd3ff094ee952bdd2b6b5cf2cd6143ebea68acb11f5d67ef2b"
+    },
+    {
+      "id": "file-2",
+      "path": "main_test.go",
+      "language": "go",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "7b806fc239c0104c3085e1f6ac1cba9a792c9b6757952bc70bf502fd5818ab51"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "d0b75392e194280549a1e693ed731088c3dfe09c16859ef5f351b3ae7f63eff4"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "go-workflow-go-delve",
+    "go-workflow-go-module",
+    "go-eseguire-test-tabellari-con-testing"
+  ],
+  "expected": "Il test passa e dist/app.exe stampa10; su Linux/macOS usare un nome senza .exe.",
+  "errors": [
+    "Una race non viene rilevata da go test ordinario: usare -race solo su piattaforme e toolchain supportate. trimpath non sostituisce il controllo delle versioni della toolchain."
+  ],
+  "sources": [
+    "https://go.dev/doc/",
+    "https://pkg.go.dev/std",
+    "https://pkg.go.dev/cmd/go#hdr-Compile_packages_and_dependencies"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Sorgenti e configurazioni verificati su Windows x64: PowerShell parser, source compiler. Report: reports/languages-workflows-validation.json. Non attestati sessioni interattive di debug, installazioni di dipendenze o distribuzione completa del workflow; nessuna esecuzione Linux/macOS."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

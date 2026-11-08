@@ -1,0 +1,84 @@
+{
+  "id": "postgresql-mostrare-configurazione-locale-utile-al-debug",
+  "title": "Mostrare configurazione locale utile al debug",
+  "summary": "Laboratorio con dati sintetici: mostrare configurazione locale utile al debug.",
+  "stack": "postgresql",
+  "group": "Database",
+  "section": "Database",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "PostgreSQL 18; psql",
+  "prerequisites": "Server locale e client installati; database didattico cookbook_demo già creato; credenziali fornite dal client, mai nel sorgente.",
+  "tags": [
+    "database",
+    "query",
+    "postgresql",
+    "mostrare",
+    "configurazione",
+    "locale"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "fixture.sql",
+      "language": "sql",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "3cde102e6b2763c11b4b999c7f19f5720452a7331a606e5951db70c431aa19e3"
+    },
+    {
+      "id": "file-1",
+      "path": "query.sql",
+      "language": "sql",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "b11072184e2f57b39853ede1bc6edd4660bda9819388fffa838cb14701ed933d"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "15083f8bc39e758f727882c721068950e91724f5fde52e3c50f505781cf2eb38"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "postgresql-troncare-timestamp-al-mese",
+    "postgresql-aggiornare-una-vista-materializzata",
+    "postgresql-aggiungere-subtotali-con-rollup"
+  ],
+  "expected": "La query termina senza errori e mostra il risultato dell'operazione indicata; per DDL il client conferma la creazione dell'oggetto.",
+  "errors": [
+    "Tabella già esistente: rieseguire la fixture in un database di laboratorio vuoto.",
+    "Funzione o estensione assente: controllare versione e opzioni del motore indicati nei prerequisiti."
+  ],
+  "sources": [
+    "https://www.postgresql.org/docs/18/sql.html",
+    "https://www.postgresql.org/docs/18/sql-dropschema.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "documentato",
+    "date": "2026-10-29",
+    "details": "Revisione documentale PostgreSQL18/MySQL8.4 e fixture di laboratorio; server non eseguito perché Docker non era attivo. Report: reports/catalog-independent-review.json.",
+    "files_sha256": {
+      "fixture.sql": "3cde102e6b2763c11b4b999c7f19f5720452a7331a606e5951db70c431aa19e3",
+      "query.sql": "b11072184e2f57b39853ede1bc6edd4660bda9819388fffa838cb14701ed933d"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

@@ -1,0 +1,1 @@
+export function validate(x){if(typeof x.name!=='string'||!x.name.trim()||!Number.isFinite(x.amount)||x.amount<0)throw Error('nome e importo non negativo richiesti');return{name:x.name.trim(),amount:x.amount}}export const expenses=[];

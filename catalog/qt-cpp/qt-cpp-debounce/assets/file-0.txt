@@ -1,0 +1,11 @@
+#include <QtWidgets>
+#include <QtCore>
+#include <QtGui>
+
+int main(int argc, char **argv) {
+ QApplication app(argc,argv);
+ QWidget window; window.resize(720,480);
+ auto *layout=new QVBoxLayout(&window);
+ auto *edit=new QLineEdit; auto *label=new QLabel; auto *timer=new QTimer(&window); timer->setSingleShot(true); timer->setInterval(250); QObject::connect(edit,&QLineEdit::textChanged,timer,[timer]{timer->start();}); QObject::connect(timer,&QTimer::timeout,label,[edit,label]{label->setText("Cerca: "+edit->text());}); layout->addWidget(edit); layout->addWidget(label);
+ window.show(); return app.exec();
+}

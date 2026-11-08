@@ -1,0 +1,4 @@
+import unicodedata
+a, b = "café", "cafe\u0301"
+print(a == b)
+print(unicodedata.normalize("NFC", a) == unicodedata.normalize("NFC", b))

@@ -1,0 +1,12 @@
+using System.Text;
+using System.Text.Json;
+using System.Diagnostics;
+using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.RateLimiting;
+using System.Threading.RateLimiting;
+var builder=WebApplication.CreateBuilder(args);
+builder.Services.AddCors(o=>o.AddPolicy("local",p=>p.WithOrigins("http://localhost:5173").WithMethods("GET").WithHeaders("Content-Type")));
+var app=builder.Build();
+app.UseCors();app.MapGet("/demo",()=>new{ok=true}).RequireCors("local");
+app.Run();

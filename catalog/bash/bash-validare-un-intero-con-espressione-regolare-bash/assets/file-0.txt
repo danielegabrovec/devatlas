@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+value="42"
+if [[ $value =~ ^[0-9]+$ ]]; then printf "%d\n" "$((10#$value+1))"; else exit 2; fi

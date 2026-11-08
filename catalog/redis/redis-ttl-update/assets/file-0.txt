@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+p="atlas_demo:ttl-update"
+cli(){ redis-cli -e --raw -h 127.0.0.1 -p 6381 "$@"; }
+cli DEL "$p:value"
+cli SET "$p:value" first EX 60
+cli SET "$p:value" second KEEPTTL
+cli GET "$p:value"
+cli TTL "$p:value"

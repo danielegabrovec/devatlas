@@ -1,0 +1,5 @@
+final class Product{final String name;final int cents;Product(this.name,this.cents){if(name.trim().isEmpty||cents<0)throw ArgumentError('Prodotto non valido');}}
+Future<void> main() async {
+final product=Product('libro',1250);
+print('${product.name}:${product.cents}');
+}

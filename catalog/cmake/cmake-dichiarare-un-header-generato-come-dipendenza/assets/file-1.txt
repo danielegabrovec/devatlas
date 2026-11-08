@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.24)
+project(RecipeBuild VERSION 1.2.0 LANGUAGES CXX)
+add_executable(recipe main.cpp)
+add_custom_command(OUTPUT "${CMAKE_CURRENT_BINARY_DIR}/generated.hpp" COMMAND "${CMAKE_COMMAND}" -E copy_if_different "${CMAKE_CURRENT_SOURCE_DIR}/template.hpp" "${CMAKE_CURRENT_BINARY_DIR}/generated.hpp" DEPENDS template.hpp VERBATIM)
+target_sources(recipe PRIVATE "${CMAKE_CURRENT_BINARY_DIR}/generated.hpp")
+target_include_directories(recipe PRIVATE "${CMAKE_CURRENT_BINARY_DIR}")

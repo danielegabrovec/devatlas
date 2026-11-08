@@ -1,0 +1,5 @@
+#![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
+use tauri::Manager;
+
+#[derive(serde::Serialize)]struct LabError{code:String,message:String}#[tauri::command]fn demo()->Result<String,LabError>{Err(LabError{code:"not_available".into(),message:"Risorsa dimostrativa non disponibile".into()})}
+fn main(){tauri::Builder::default().invoke_handler(tauri::generate_handler![demo]).run(tauri::generate_context!()).expect("Tauri application failed");}

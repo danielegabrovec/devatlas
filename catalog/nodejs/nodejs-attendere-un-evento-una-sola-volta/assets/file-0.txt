@@ -1,0 +1,1 @@
+import{EventEmitter,once}from'node:events';const bus=new EventEmitter();const p=once(bus,'ready');queueMicrotask(()=>bus.emit('ready',42));console.log(await p);

@@ -1,0 +1,6 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {validSku,validCount,localUrl} from '../model.mjs';
+test('SKU e quantità validi',()=>{assert.equal(validSku('keyboard'), 'keyboard');assert.equal(validCount('2'),2);});
+test('rifiuta quantità non positive o frazionarie',()=>{for(const v of [0,-1,1.5,'x'])assert.throws(()=>validCount(v));});
+test('rifiuta host esterno',()=>assert.throws(()=>localUrl('mongodb://example.invalid:27018','mongodb:',27018)));
+
+import {reserve} from '../stock.mjs';test('non chiama lo storage per quantità invalida',async()=>{let called=false;const store={findOneAndUpdate:async()=>{called=true;return null;},eval:async()=>{called=true;return -1;}};await assert.rejects(reserve(store,'keyboard',0));assert.equal(called,false);});test('stock insufficiente non è un risultato valido',async()=>{const store={findOneAndUpdate:async()=>null,eval:async()=>-1};await assert.rejects(reserve(store,'keyboard',1),/insufficiente/);});

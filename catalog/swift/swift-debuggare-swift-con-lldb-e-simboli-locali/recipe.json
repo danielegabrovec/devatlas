@@ -1,0 +1,71 @@
+{
+  "id": "swift-debuggare-swift-con-lldb-e-simboli-locali",
+  "title": "Debuggare Swift con LLDB e simboli locali",
+  "summary": "Prepara una CLI non ottimizzata e la arresta nella funzione di calcolo.",
+  "stack": "swift",
+  "group": "Linguaggi",
+  "section": "Debug",
+  "difficulty": "Intermedio",
+  "os": [
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "Xcode",
+    "VS Code"
+  ],
+  "versions": "Swift6.4; Package.swift tools-version6.0, Linux/macOS",
+  "prerequisites": "Toolchain Swift6.4 su Linux o macOS. Per SwiftUI/iOS occorrono macOS, Xcode e un target Apple. Non sono attestati esecuzioni o compilazioni Swift su Windows.",
+  "tags": [
+    "LLDB",
+    "breakpoint",
+    "symbols"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.swift",
+      "language": "swift",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "3263dc2743991f16f7e2c518dace721a754c2f7de6e0d036b6746b8cae30c023"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "bash",
+      "role": "command",
+      "shell": "Bash",
+      "os": "Linux/macOS",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "cb4948aa3c38d231eb9f6a8443f734b339a145368d7e9bf58fe4a85ca1a7d296"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "swift-progetto-completo-report-spese-swift-package",
+    "swift-compilare-un-target-swift-con-configurazioni-debug-e-release",
+    "swift-eseguire-test-swift-package-con-xctest"
+  ],
+  "expected": "Un breakpoint nella funzione total consente di osservare values/result; l'output finale è10.",
+  "errors": [
+    "LLDB non trova i simboli: ricompila con -g -Onone e usa il binario generato dallo stesso sorgente.",
+    "Breakpoint ancora pending: verifica nome della funzione/modulo e avvia il programma con run nella sessione LLDB."
+  ],
+  "sources": [
+    "https://www.swift.org/documentation/",
+    "https://www.swift.org/install/linux/",
+    "https://www.swift.org/install/macos/",
+    "https://www.swift.org/blog/swift-6.4-released/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

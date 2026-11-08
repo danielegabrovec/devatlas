@@ -1,0 +1,1 @@
+export async function POST(request){const text=await request.text();if(!text.trim())return Response.json({error:'body vuoto'},{status:400});try{return Response.json(JSON.parse(text))}catch{return Response.json({error:'JSON invalido'},{status:400})}}

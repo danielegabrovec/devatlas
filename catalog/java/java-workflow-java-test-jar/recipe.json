@@ -1,0 +1,87 @@
+{
+  "id": "java-workflow-java-test-jar",
+  "title": "Compilare test e distribuire un JAR eseguibile Java",
+  "summary": "Esegue contratti senza JUnit e crea un JAR con Main-Class evitando di includere il runner dei test.",
+  "stack": "java",
+  "group": "Linguaggi",
+  "section": "Compilazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Java17+ senza feature preview",
+  "prerequisites": "JDK17+ nel PATH, comandi javac e java. Non basta un JRE; nessuna dipendenza Maven/Gradle necessaria.",
+  "tags": [
+    "workflow",
+    "build, test e distribuzione",
+    "build",
+    "test",
+    "distribution"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "src/math/Calculator.java",
+      "language": "java",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "c523dd11fefd39cbb374ba931974acc0b89cfcec502322e41268fe50e5c1ec82"
+    },
+    {
+      "id": "file-1",
+      "path": "src/Main.java",
+      "language": "java",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "1000e633081194ef88122fd6ad72831158029f847a33f569d9c44bba7315fd00"
+    },
+    {
+      "id": "file-2",
+      "path": "tests/CalculatorTest.java",
+      "language": "java",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "ec34f2c9f20b929fd9d89adb914c4a60b5b08c6d7620c05e293bb8eca77d9131"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "5dbafae42df1e59bfbb845e93b6a05744e1deb65dca653100d10959a11678ad9"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "java-workflow-java-jdb",
+    "java-workflow-java-jdk-init",
+    "java-progetto-completo-catalogo-libri-java"
+  ],
+  "expected": "test passato e poi5; java -jar trova il punto d'ingresso tramite il manifest generato.",
+  "errors": [
+    "no main manifest attribute richiede --main-class; ClassNotFoundException richiede includere il package math o correggere classpath/package."
+  ],
+  "sources": [
+    "https://dev.java/learn/",
+    "https://docs.oracle.com/en/java/javase/17/docs/api/",
+    "https://docs.oracle.com/en/java/javase/17/docs/specs/man/jar.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Sorgenti e configurazioni verificati su Windows x64: PowerShell parser, source compiler. Report: reports/languages-workflows-validation.json. Non attestati sessioni interattive di debug, installazioni di dipendenze o distribuzione completa del workflow; nessuna esecuzione Linux/macOS."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

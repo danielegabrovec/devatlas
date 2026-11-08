@@ -1,0 +1,11 @@
+#include <QtWidgets>
+#include <QtCore>
+#include <QtGui>
+
+int main(int argc, char **argv) {
+ QApplication app(argc,argv);
+ QWidget window; window.resize(720,480);
+ auto *layout=new QVBoxLayout(&window);
+ auto *area=new QScrollArea; auto *content=new QWidget; auto *form=new QFormLayout(content); for(int i=0;i<30;++i) form->addRow(QString("Campo %1").arg(i),new QLineEdit); area->setWidget(content); area->setWidgetResizable(true); layout->addWidget(area);
+ window.show(); return app.exec();
+}

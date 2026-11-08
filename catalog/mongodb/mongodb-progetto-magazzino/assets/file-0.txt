@@ -1,0 +1,14 @@
+{
+  "name": "atlas-mongo-inventory",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "seed": "node seed.mjs",
+    "reserve": "node main.mjs"
+  },
+  "dependencies": {
+    "mongodb": "7.7.0"
+  }
+}

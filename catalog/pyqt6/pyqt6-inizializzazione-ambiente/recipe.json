@@ -1,0 +1,86 @@
+{
+  "id": "pyqt6-inizializzazione-ambiente",
+  "title": "Inizializzare ambiente e prima finestra PyQt6",
+  "summary": "Preparare un ambiente Python separato, installare il binding corretto e avviare un contatore Qt completo.",
+  "stack": "pyqt6",
+  "group": "Desktop e GUI",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows"
+  ],
+  "ide": [
+    "VS Code",
+    "Qt Designer"
+  ],
+  "versions": "Python 3.13; PyQt6 6.11.x",
+  "prerequisites": "Python 3.13, ambiente virtuale dedicato e PyQt6==6.11.*. Non installare entrambi i binding nello stesso ambiente.",
+  "tags": [
+    "PyQt6",
+    "initialize",
+    "venv",
+    "install",
+    "Qt platform plugins"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "18fdfffa10a4699c0c25c388c11b6b54b1e24359234a1f7c9d58eb1596918072"
+    },
+    {
+      "id": "file-1",
+      "path": "requirements.txt",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "c994909f86b62ac345b7bbae9ceb384464899557c0539ca9300f82ec9ff2e8e8"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "9f08a0561f2120266f2e0e9b176d6782eff591c6edf01ae5318046eacbcbe663"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "project_name",
+      "label": "Nome dell'applicazione",
+      "type": "identifier",
+      "default": "RecipeDesktop",
+      "required": true
+    }
+  ],
+  "related": [
+    "pyqt6-geometry",
+    "pyqt6-action-menu",
+    "pyqt6-busy-progress"
+  ],
+  "expected": "Una finestra {{project_name}} mostra zero; ogni clic su Incrementa aumenta il valore.",
+  "errors": [
+    "ModuleNotFoundError: usare l'interprete .venv stampato dal comando diagnostico.",
+    "Qt platform plugin windows non trovato: controllare che il binding abbia la propria cartella plugins/platforms; il sorgente configura il percorso dal modulo installato."
+  ],
+  "sources": [
+    "https://www.riverbankcomputing.com/static/Docs/PyQt6/",
+    "https://pyinstaller.org/en/stable/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "details": "Controlli statici sui sorgenti: AST Python, parser PowerShell/Bash dove disponibili, node --check per JavaScript, JSON e XML secondo i file presenti. Nessuna compilazione C#/XAML/C++ né esecuzione Docker/CI/packaging attestata. Report: reports/desktop-tools-qa.json.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

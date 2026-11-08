@@ -1,0 +1,70 @@
+{
+  "id": "dart-leggere-e-scrivere-utf-8-con-dart-io",
+  "title": "Leggere e scrivere UTF-8 con dart io",
+  "summary": "Usa una directory temporanea dedicata e la rimuove dopo il round-trip.",
+  "stack": "dart",
+  "group": "Linguaggi",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Dart3.13.x; librerie SDK, nessuna dipendenza Pub esterna",
+  "prerequisites": "Dart SDK3.13.x nel PATH. Gli esempi dart:io sono nativi; per riusarli su web occorre sostituire accesso filesystem/isolate dove non supportato. Nessun package esterno necessario ai capstone.",
+  "tags": [
+    "dart:io",
+    "File",
+    "UTF8"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.dart",
+      "language": "dart",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "4d92f39dacf21860803fff742a0cbef233f7fd7790a2aad5f3d16a4242e08548"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "7ed1d0120ff7cd104704e65f61394f4493baec4c941cafc797f5e11b53ea5d71"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "dart-gestire-null-senza-force-unwrap-in-dart",
+    "dart-progetto-completo-report-spese-dart",
+    "dart-analizzare-e-compilare-una-cli-dart-nativa"
+  ],
+  "expected": "Città; questo sorgente richiede un runtime Dart nativo, non il browser.",
+  "errors": [
+    "FileSystemException: verifica percorso e permessi del file temporaneo.",
+    "dart:io non disponibile nel browser: usa un accesso ai dati appropriato al target web, conservando la logica pura separata."
+  ],
+  "sources": [
+    "https://dart.dev/language",
+    "https://dart.dev/resources/whats-new",
+    "https://dart.dev/tools/dart-compile"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

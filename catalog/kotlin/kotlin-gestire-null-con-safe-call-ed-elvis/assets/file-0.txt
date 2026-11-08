@@ -1,0 +1,4 @@
+fun main() {
+val nickname: String? = null
+println(nickname?.uppercase() ?: "Nome assente")
+}

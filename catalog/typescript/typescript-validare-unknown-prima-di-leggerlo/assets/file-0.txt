@@ -1,0 +1,6 @@
+function readName(value: unknown): string {
+  if (typeof value !== "object" || value === null || !("name" in value) || typeof value.name !== "string") throw new TypeError("Nome assente");
+  return value.name;
+}
+console.log(readName({ name: "Ada" }));
+export {};

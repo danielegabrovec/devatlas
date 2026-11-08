@@ -1,0 +1,1 @@
+dotnet publish {{project_name}}.csproj -c Release -r win-x64 --self-contained true -p:WindowsPackageType=None -p:WindowsAppSDKSelfContained=true -o dist/windows-x64

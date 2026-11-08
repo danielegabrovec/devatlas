@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdint.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <errno.h>
+#include <limits.h>
+
+
+int main(void){
+size_t count=4;int *values=calloc(count,sizeof *values);if(!values)return 1;
+printf("%d %d\n",values[0],values[3]);free(values);
+return 0;
+}

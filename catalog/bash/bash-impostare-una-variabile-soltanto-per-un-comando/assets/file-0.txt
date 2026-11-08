@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+RECIPE_MODE=release bash -c 'printf "Modalità: %s\n" "$RECIPE_MODE"'
+printf "Nella shell chiamante: %s\n" "${RECIPE_MODE-non impostata}"

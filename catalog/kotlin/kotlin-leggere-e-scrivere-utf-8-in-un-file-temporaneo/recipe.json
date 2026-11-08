@@ -1,0 +1,71 @@
+{
+  "id": "kotlin-leggere-e-scrivere-utf-8-in-un-file-temporaneo",
+  "title": "Leggere e scrivere UTF-8 in un file temporaneo",
+  "summary": "Chiude gli stream e rimuove il file nel finally per supportare anche Windows.",
+  "stack": "kotlin",
+  "group": "Linguaggi",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "IntelliJ IDEA",
+    "Android Studio"
+  ],
+  "versions": "Kotlin2.3.21/JVM17; Gradle9.3.0 per i progetti Gradle",
+  "prerequisites": "JDK17+ e compilatore Kotlin2.3.21. Per Gradle usare9.3.0 e plugin Kotlin2.3.21 (prima acquisizione plugin richiede rete/cache). Le varianti Android richiedono un progetto Android già configurato e relativo SDK.",
+  "tags": [
+    "file",
+    "utf8",
+    "cleanup"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "Main.kt",
+      "language": "kotlin",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "3503811c32378029df92d59037073292f0684abe17585600f4e5cf594f3bc01b"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "508a4f224848d105f458d1a56cf3172c4f8a57869c1c7413f44f17581dd8f68d"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "kotlin-calcolare-sha-256-di-un-payload-utf-8",
+    "kotlin-aggiungere-una-extension-function-pura",
+    "kotlin-analizzare-date-civili-con-java-time"
+  ],
+  "expected": "Città; nessun file permanente viene lasciato dal percorso riuscito.",
+  "errors": [
+    "AccessDeniedException: verifica i permessi della directory temporanea e l'eventuale blocco del file.",
+    "Testo corrotto: usa la stessa codifica UTF-8 per scrittura e lettura invece di dipendere dalla codifica di sistema."
+  ],
+  "sources": [
+    "https://kotlinlang.org/docs/command-line.html",
+    "https://kotlinlang.org/docs/collections-overview.html",
+    "https://kotlinlang.org/docs/gradle-configure-project.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: kotlin compile, kotlin program execute, tree-sitter syntax. Report: reports/expansion-languages-qa.json. Compilatore Kotlin2.3.21 della cache Gradle, JDK25.0.4.1, target17. Pipeline Gradle, sessioni debugger e SDK Android non eseguiti."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "redis-transaction",
+  "title": "Eseguire MULTI ed EXEC nella stessa connessione",
+  "summary": "Inviare il blocco in una sola sessione redis-cli invece di aprire un processo per comando.",
+  "stack": "redis",
+  "group": "Database",
+  "section": "Database",
+  "difficulty": "Intermedio",
+  "os": [
+    "Linux"
+  ],
+  "ide": [
+    "VS Code",
+    "WSL"
+  ],
+  "versions": "Redis Open Source8.2;redis-cli;Node client6.3.1",
+  "prerequisites": "Redis8.2 e redis-cli in Linux/WSL, server didattico su127.0.0.1:6381. Le ricette toccano solo prefissi atlas_demo propri; non usano FLUSHALL o FLUSHDB.",
+  "tags": [
+    "redis",
+    "transaction",
+    "redis-cli",
+    "data structures"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "demo.sh",
+      "language": "bash",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "dbe401c4a5b4e77bd92e965047d03ae8dd4bb420e328bb0a7dfa73a9466799ed"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "bash",
+      "role": "command",
+      "shell": "Bash",
+      "os": "Linux",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "2dadf6d03e5e7892e8c2e02ed034639573f4a4f5cd23b7a03a976c956164ad83"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "redis-bitmap",
+    "redis-consumer-group",
+    "redis-counter"
+  ],
+  "expected": "Il valore finale è15; la sessione unica conserva lo stato MULTI.",
+  "errors": [
+    "Connection refused: verificare il server locale di prova e la porta6381.",
+    "WRONGTYPE: controllare TYPE sul nome della chiave; i laboratori usano prefissi separati."
+  ],
+  "sources": [
+    "https://redis.io/docs/latest/develop/get-started/",
+    "https://redis.io/commands/",
+    "https://redis.io/docs/latest/develop/clients/nodejs/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Schema/configurazioni e sintassi JavaScript/PowerShell secondo i file presenti; nessuna attestazione serverMongo/Redis o finestraTauri. Report: reports/expansion-frameworks-qa.json."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

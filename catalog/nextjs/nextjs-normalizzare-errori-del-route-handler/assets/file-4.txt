@@ -1,0 +1,1 @@
+export function GET(){try{throw Error('dettaglio interno')}catch(e){console.error(e);return Response.json({error:'Operazione non disponibile'},{status:500})}}

@@ -1,0 +1,3 @@
+export function validSku(value){if(typeof value!=='string'||!/^[a-z][a-z0-9-]{0,39}$/.test(value))throw new Error('SKU non valido');return value;}
+export function validCount(value){const n=Number(value);if(!Number.isSafeInteger(n)||n<1)throw new Error('Quantità non valida');return n;}
+export function localUrl(value,protocol,port){const url=new URL(value);if(url.protocol!==protocol||!['127.0.0.1','localhost'].includes(url.hostname)||Number(url.port||port)!==port)throw new Error('Usare il processo locale di laboratorio');return value;}

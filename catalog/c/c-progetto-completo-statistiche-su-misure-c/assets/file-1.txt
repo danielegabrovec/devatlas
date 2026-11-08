@@ -1,0 +1,7 @@
+#ifndef CATALOG_STATS_H
+#define CATALOG_STATS_H
+#include <stddef.h>
+#include <stdbool.h>
+struct Stats{double min,max,mean;};
+bool stats(const double *values,size_t count,struct Stats *result);
+#endif

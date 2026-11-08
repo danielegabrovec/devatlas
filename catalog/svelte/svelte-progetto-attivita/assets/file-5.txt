@@ -1,0 +1,5 @@
+<script>
+import {onMount,tick,setContext,getContext} from 'svelte';
+import {addTask,completed} from './model.mjs';let rows=$state([]);let title=$state('');let error=$state('');let done=$derived(completed(rows));function add(event){event.preventDefault();try{rows=addTask(rows,title);title='';error='';}catch(e){error=e.message;}}function toggle(id){rows=rows.map(row=>row.id===id?{...row,done:!row.done}:row);}
+</script>
+<main><h1>Attività</h1><form onsubmit={add}><input bind:value={title} aria-label="Nuova attività"><button>Aggiungi</button></form><p class="error" role="status">{error}</p><ul>{#each rows as row (row.id)}<li><label><input type="checkbox" checked={row.done} onchange={()=>toggle(row.id)}>{row.title}</label></li>{/each}</ul><p>Completate: {done}</p></main>

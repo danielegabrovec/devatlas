@@ -1,0 +1,8 @@
+import sys
+from PySide6.QtWidgets import QApplication,QLabel
+if __name__=="__main__":
+    app=QApplication(sys.argv)
+    window=QLabel("Pacchetto PySide6")
+    window.resize(400,160)
+    window.show()
+    sys.exit(app.exec())

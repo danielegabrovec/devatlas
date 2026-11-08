@@ -1,0 +1,1 @@
+import{appendFile}from'node:fs/promises';await appendFile('events.log','avvio\n');console.log('riga aggiunta');

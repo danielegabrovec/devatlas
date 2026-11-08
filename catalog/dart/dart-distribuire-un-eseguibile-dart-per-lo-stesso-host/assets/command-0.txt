@@ -1,0 +1,3 @@
+New-Item -ItemType Directory -Path dist -Force | Out-Null
+dart compile exe main.dart -o dist/atlas-dart.exe
+.\dist\atlas-dart.exe

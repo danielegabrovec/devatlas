@@ -1,0 +1,1 @@
+UPDATE products p JOIN order_items i ON i.product_id=p.id SET p.stock=p.stock-i.qty WHERE i.order_id=1; SELECT id,stock FROM products;

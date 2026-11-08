@@ -1,0 +1,11 @@
+#include <QtWidgets>
+#include <QtCore>
+#include <QtGui>
+
+int main(int argc, char **argv) {
+ QApplication app(argc,argv);
+ QWidget window; window.resize(720,480);
+ auto *layout=new QVBoxLayout(&window);
+ auto *edit=new QPlainTextEdit("Appunto"); auto *b=new QPushButton("Salva"); layout->addWidget(edit); layout->addWidget(b); QObject::connect(b,&QPushButton::clicked,&window,[&window,edit]{const auto path=QFileDialog::getSaveFileName(&window,"Salva"); if(path.isEmpty()) return; QSaveFile f(path); if(!f.open(QIODevice::WriteOnly) || f.write(edit->toPlainText().toUtf8())<0 || !f.commit()) QMessageBox::warning(&window,"Salvataggio",f.errorString());});
+ window.show(); return app.exec();
+}

@@ -1,0 +1,5 @@
+<?php
+declare(strict_types=1);
+$totals=[];
+foreach([['A',2],['B',4],['A',3]] as [$category,$amount]){$totals[$category]=($totals[$category]??0)+$amount;}
+echo json_encode($totals,JSON_THROW_ON_ERROR),PHP_EOL;

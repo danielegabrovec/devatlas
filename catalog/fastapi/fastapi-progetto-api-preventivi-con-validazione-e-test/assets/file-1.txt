@@ -1,0 +1,11 @@
+from decimal import Decimal
+from fastapi import FastAPI
+from pydantic import BaseModel,Field
+from pricing import quote
+app=FastAPI()
+class Request(BaseModel):
+    price:Decimal=Field(ge=0)
+    quantity:int=Field(ge=1)
+    discount:Decimal=Field(ge=0,le=100,default=0)
+@app.post('/quote')
+def calculate(q:Request): return {'total':str(quote(q.price,q.quantity,q.discount))}

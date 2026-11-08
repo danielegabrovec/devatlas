@@ -1,0 +1,94 @@
+{
+  "id": "packaging-includere-e-leggere-risorse-in-una-wheel",
+  "title": "Includere e leggere risorse in una wheel",
+  "summary": "Usare importlib.resources invece di assumere il working directory.",
+  "stack": "packaging",
+  "group": "Strumenti",
+  "section": "Distribuzione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows"
+  ],
+  "ide": [
+    "VS Code",
+    "Visual Studio"
+  ],
+  "versions": "Python 3.12/3.13; Qt 6.12; .NET 10; strumenti specificati per ricetta",
+  "prerequisites": "Leggere i prerequisiti specifici nella guida. Creare una cartella nuova; i comandi compilano artefatti locali senza pubblicarli né firmarli.",
+  "tags": [
+    "packaging",
+    "release",
+    "includere-e-leggere-risorse-in-una-wheel"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "pyproject.toml",
+      "language": "toml",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "752745f313fd77abd0d853d204d4563f7ee61b534e5c95c02401745d1f63913a"
+    },
+    {
+      "id": "file-1",
+      "path": "recipe_resources/__init__.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "id": "file-2",
+      "path": "recipe_resources/message.txt",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "6a81bb0a1683bf8d83885f6fb3982acc07e0b4d17753dd4f0a672193b82a294d"
+    },
+    {
+      "id": "file-3",
+      "path": "read_resource.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "244e8463b5faa14fefa765eebc8a2c18c2579a52ac4506776e100bcb5f50b4ad"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "feb2ba7e7b6cc83201062cb776713bba19d76196d5f7909938b056e7e6367d4c"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "packaging-costruire-una-wheel-python",
+    "packaging-leggere-la-versione-installata-da-importlib-metadata",
+    "packaging-verificare-il-contenuto-di-una-wheel-prima-della-consegna"
+  ],
+  "expected": "Usare importlib.resources invece di assumere il working directory.",
+  "errors": [
+    "Tool di compilazione mancante: installare la dipendenza specificata nei prerequisiti.",
+    "Rete non disponibile: i backend e i runtime non presenti non possono essere scaricati."
+  ],
+  "sources": [
+    "https://packaging.python.org/en/latest/tutorials/packaging-projects/",
+    "https://doc.qt.io/qtforpython-6/deployment/deployment-pyside6-deploy.html",
+    "https://learn.microsoft.com/dotnet/core/tools/dotnet-publish",
+    "https://www.electron.build/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "details": "Controlli statici sui sorgenti: AST Python, parser PowerShell/Bash dove disponibili, node --check per JavaScript, JSON e XML secondo i file presenti. Nessuna compilazione C#/XAML/C++ né esecuzione Docker/CI/packaging attestata. Report: reports/desktop-tools-qa.json.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

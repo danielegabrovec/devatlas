@@ -1,0 +1,2 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Laboratorio HTML/CSS</title><link rel="stylesheet" href="style.css"></head><body><nav aria-label='Percorso'><ol><li><a href='#'>Home</a></li><li><a href='#'>Catalogo</a></li><li aria-current='page'>Python</li></ol></nav></body></html>

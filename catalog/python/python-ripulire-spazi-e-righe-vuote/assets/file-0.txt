@@ -1,0 +1,3 @@
+raw = "  prima riga  \n\n seconda   riga \n"
+lines = [" ".join(line.split()) for line in raw.splitlines() if line.strip()]
+print("\n".join(lines))

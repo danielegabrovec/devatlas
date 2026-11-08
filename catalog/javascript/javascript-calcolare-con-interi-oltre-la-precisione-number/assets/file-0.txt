@@ -1,0 +1,2 @@
+const value = 9007199254740993n;
+console.log((value + 2n).toString());

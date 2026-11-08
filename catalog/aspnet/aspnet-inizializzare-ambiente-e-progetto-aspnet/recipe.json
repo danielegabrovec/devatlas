@@ -1,0 +1,92 @@
+{
+  "id": "aspnet-inizializzare-ambiente-e-progetto-aspnet",
+  "title": "Inizializzare ambiente e progetto aspnet",
+  "summary": "global.json seleziona una feature bandSDK10 senza scaricarla automaticamente. Il progetto Web include soltanto il framework condiviso ASP.NET. Dopo restore avvia e richiama GET/health: ricevi ok=true. Per Linux/macOS usa gli stessi comandi dotnet nel terminale disponibile.",
+  "stack": "aspnet",
+  "group": "Web e backend",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "ASP.NET Core10; .NET SDK10",
+  "prerequisites": "SDK.NET10 e browser. Eseguire dotnet run --urls http://127.0.0.1:5000. Ogni esempio è un progetto separato; dati in memoria solo dimostrativi.",
+  "tags": [
+    "aspnet",
+    "initialize",
+    "bootstrap",
+    "setup",
+    "environment",
+    "configuration"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "Demo.csproj",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "8b4e038e6509a65ca98a58d89dcf34b9460c567d46d96222581bbfa1d469e8cf"
+    },
+    {
+      "id": "file-1",
+      "path": "Program.cs",
+      "language": "csharp",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "c85248f700e289f72ccd9eb194d931112b1280af2b1242f79ec2fcf8fd2ec98e"
+    },
+    {
+      "id": "file-2",
+      "path": "global.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "fd4a011c7e4542236bb228dc293e30e25389073684d2a65e0094e5d8b9f81a4b"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "e3e5de2fb9e9f54a266f7f39ec339d6ee8b2c509e7b6f1acfdfde45509d056b3"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "aspnet-progetto-api-prodotti-con-repository-concorrente",
+    "aspnet-progetto-servizio-preventivi-con-validazione-decimal",
+    "aspnet-controllare-ambiente-development"
+  ],
+  "expected": "L’applicazione si avvia localmente con il file di configurazione fornito. La versione della toolchain è verificabile dai comandi iniziali.",
+  "errors": [
+    "Comando non trovato: installare la toolchain elencata nei prerequisiti.",
+    "Dipendenza mancante: eseguire l'installazione nella radice esportata, senza cambiare le versioni dichiarate."
+  ],
+  "sources": [
+    "https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-10.0"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "compilato",
+    "date": "2026-10-29",
+    "details": "Verifiche lifecycle su Windows: static-files, dotnet-build. Configurazione debugger controllata come JSON; sessione F5 e distribuzione remota non attestate.",
+    "files_sha256": {
+      "Demo.csproj": "8b4e038e6509a65ca98a58d89dcf34b9460c567d46d96222581bbfa1d469e8cf",
+      "Program.cs": "c85248f700e289f72ccd9eb194d931112b1280af2b1242f79ec2fcf8fd2ec98e",
+      "global.json": "fd4a011c7e4542236bb228dc293e30e25389073684d2a65e0094e5d8b9f81a4b"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

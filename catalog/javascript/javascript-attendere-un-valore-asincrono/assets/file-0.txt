@@ -1,0 +1,2 @@
+async function loadName() { return "Ada"; }
+console.log(await loadName());

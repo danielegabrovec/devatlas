@@ -1,0 +1,4 @@
+# Magazzino
+Database cookbook_demo dedicato. Eseguire schema, seed, reserve.
+Risultato: prenotato1 e quantità6. Il controllo qty>=2 evita overselling in questo singolo UPDATE atomico.
+Per un nuovo scenario ripetere seed.

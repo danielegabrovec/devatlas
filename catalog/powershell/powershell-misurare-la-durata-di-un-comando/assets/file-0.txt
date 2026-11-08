@@ -1,0 +1,4 @@
+Set-StrictMode -Version Latest
+$ErrorActionPreference='Stop'
+$elapsed = Measure-Command { $sum = (1..10000 | Measure-Object -Sum).Sum }
+$elapsed.TotalMilliseconds

@@ -1,0 +1,1 @@
+SELECT ts_headline('italian','Una guida ai database',plainto_tsquery('italian','database'));

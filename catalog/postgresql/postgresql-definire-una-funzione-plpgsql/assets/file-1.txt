@@ -1,0 +1,1 @@
+CREATE FUNCTION stock_label(integer) RETURNS text LANGUAGE plpgsql AS $$ BEGIN IF $1>0 THEN RETURN 'disponibile'; ELSE RETURN 'esaurito'; END IF; END $$; SELECT stock_label(3);

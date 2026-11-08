@@ -1,0 +1,1 @@
+export const products=[{id:1,name:'Tastiera',price:50},{id:2,name:'Mouse',price:20}];export const find=id=>products.find(p=>p.id===id);

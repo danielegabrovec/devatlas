@@ -1,0 +1,179 @@
+{
+  "tests_passed": 27,
+  "tests_failed": 0,
+  "source_sha256": "0c934221bea6a70ccb4f4f5190eb53c5fc5f76736744698d643c86228d4938c4",
+  "test_sha256": "78a01bbb89767805c5006908587d3a099c5306ff1bdfd36171b2a8780e2a6658",
+  "input_recipes": 2140,
+  "materialized_max": 256,
+  "construction_ms": 6.882900001073722,
+  "filter_samples": 600,
+  "filter_p95_ms": 0.5182999957469292,
+  "filter_max_ms": 4.553600003418978,
+  "captures": [
+    {
+      "theme": "dark",
+      "scale_factor": "1",
+      "device_pixel_ratio": 1.0,
+      "kind": "normal",
+      "logical_size": [
+        760,
+        570
+      ],
+      "initial_search_focus": true,
+      "empty_visible": false,
+      "footer_inside": true,
+      "image": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\reports\\command-palette-dark-1-normal.png",
+      "offscreen_font_registration": [
+        {
+          "file": "segoeui.ttf",
+          "result": 0
+        },
+        {
+          "file": "segoeuib.ttf",
+          "result": 1
+        },
+        {
+          "file": "seguisb.ttf",
+          "result": 2
+        },
+        {
+          "file": "seguisym.ttf",
+          "result": 3
+        }
+      ]
+    },
+    {
+      "theme": "dark",
+      "scale_factor": "1.5",
+      "device_pixel_ratio": 1.5,
+      "kind": "normal",
+      "logical_size": [
+        501,
+        501
+      ],
+      "initial_search_focus": true,
+      "empty_visible": false,
+      "footer_inside": true,
+      "image": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\reports\\command-palette-dark-1.5-normal.png",
+      "offscreen_font_registration": [
+        {
+          "file": "segoeui.ttf",
+          "result": 0
+        },
+        {
+          "file": "segoeuib.ttf",
+          "result": 1
+        },
+        {
+          "file": "seguisb.ttf",
+          "result": 2
+        },
+        {
+          "file": "seguisym.ttf",
+          "result": 3
+        }
+      ]
+    },
+    {
+      "theme": "dark",
+      "scale_factor": "2",
+      "device_pixel_ratio": 2.0,
+      "kind": "empty",
+      "logical_size": [
+        368,
+        368
+      ],
+      "initial_search_focus": true,
+      "empty_visible": true,
+      "footer_inside": true,
+      "image": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\reports\\command-palette-dark-2-empty.png",
+      "offscreen_font_registration": [
+        {
+          "file": "segoeui.ttf",
+          "result": 0
+        },
+        {
+          "file": "segoeuib.ttf",
+          "result": 1
+        },
+        {
+          "file": "seguisb.ttf",
+          "result": 2
+        },
+        {
+          "file": "seguisym.ttf",
+          "result": 3
+        }
+      ]
+    },
+    {
+      "theme": "light",
+      "scale_factor": "1",
+      "device_pixel_ratio": 1.0,
+      "kind": "normal",
+      "logical_size": [
+        760,
+        570
+      ],
+      "initial_search_focus": true,
+      "empty_visible": false,
+      "footer_inside": true,
+      "image": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\reports\\command-palette-light-1-normal.png",
+      "offscreen_font_registration": [
+        {
+          "file": "segoeui.ttf",
+          "result": 0
+        },
+        {
+          "file": "segoeuib.ttf",
+          "result": 1
+        },
+        {
+          "file": "seguisb.ttf",
+          "result": 2
+        },
+        {
+          "file": "seguisym.ttf",
+          "result": 3
+        }
+      ]
+    },
+    {
+      "theme": "light",
+      "scale_factor": "2",
+      "device_pixel_ratio": 2.0,
+      "kind": "normal",
+      "logical_size": [
+        368,
+        368
+      ],
+      "initial_search_focus": true,
+      "empty_visible": false,
+      "footer_inside": true,
+      "image": "C:\\Users\\danie\\Desktop\\Software in sviluppo\\Codice, Compilazione, Debug, Inizializzazione, Poduzione\\reports\\command-palette-light-2-normal.png",
+      "offscreen_font_registration": [
+        {
+          "file": "segoeui.ttf",
+          "result": 0
+        },
+        {
+          "file": "segoeuib.ttf",
+          "result": 1
+        },
+        {
+          "file": "seguisb.ttf",
+          "result": 2
+        },
+        {
+          "file": "seguisym.ttf",
+          "result": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Qt scale factors100/150/200% emulati in processi offscreen separati; nessun monitor fisico ad alto DPI attestato.",
+    "Font Segoe UI del sistema registrati solo nei processi di capture perché il plugin offscreen non li caricava automaticamente. Il modulo non cambia font/palette/QSS globali.",
+    "Ctrl+P è registrato dal MainWindow; callback UI viene schedulato sul contesto owner/app solo dopo accept. Nessuna shell/rete/catalogo caricata dal modulo."
+  ]
+}

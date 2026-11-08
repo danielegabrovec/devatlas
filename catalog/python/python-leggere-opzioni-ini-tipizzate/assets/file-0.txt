@@ -1,0 +1,4 @@
+from configparser import ConfigParser
+config = ConfigParser()
+config.read_string("[app]\nenabled=yes\nport=8080\n")
+print(config.getboolean("app", "enabled"), config.getint("app", "port"))

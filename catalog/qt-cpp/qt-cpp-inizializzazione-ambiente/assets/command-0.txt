@@ -1,0 +1,5 @@
+$qtPrefix = {{qt_dir|powershell}}
+cmake -S . -B build/debug -G Ninja -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_PREFIX_PATH=$qtPrefix"
+cmake --build build/debug
+& "$qtPrefix/bin/windeployqt.exe" --debug .\build\debug\{{project_name}}.exe
+.\build\debug\{{project_name}}.exe

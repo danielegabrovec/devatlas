@@ -1,0 +1,118 @@
+{
+  "id": "vue-async-component",
+  "title": "Caricare un componente soltanto quando serve",
+  "summary": "Usare defineAsyncComponent per creare un chunk separato gestito da Vite.",
+  "stack": "vue",
+  "group": "Web e backend",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Vue3.5.44;Vite8.3.5;plugin-vue6.0.10",
+  "prerequisites": "Node24.15.0+ e npm; dipendenze del manifest. Angular22 richiede TypeScript>=6.0 e<6.1, non il latest7. L'esempio client funziona su loopback; nessuna pubblicazione automatica.",
+  "tags": [
+    "vue",
+    "async-component",
+    "component",
+    "reactivity"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "package.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "a30570cdcdfef3486962fa6b6f01bcd9190c511718783949da6f7498f6d92d68"
+    },
+    {
+      "id": "file-1",
+      "path": "index.html",
+      "language": "html",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "8b6cc02ed5e55b11b189e50779c7b088f7d2531a1a43b59505b7efbc8565ffd9"
+    },
+    {
+      "id": "file-2",
+      "path": "vite.config.js",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "13b7870924167c0d27ec4fffdb87f592e13054f3326114d170efd98b44495ed3"
+    },
+    {
+      "id": "file-3",
+      "path": "src/main.js",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "4e84738ed1cf79f429a306e85b8247869ddad9dc3935ddf615c8a912e2638657"
+    },
+    {
+      "id": "file-4",
+      "path": "src/style.css",
+      "language": "css",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "3a55e171e6b5aa1fd06425bb3b1afc255712258cdf803e79a027d168dd724afc"
+    },
+    {
+      "id": "file-5",
+      "path": "src/App.vue",
+      "language": "vue",
+      "role": "file",
+      "source": "assets/file-5.txt",
+      "sha256": "329cf36efec038bab8983eb19e0c71258cae75c39f4c5fd40649cdb4eb02eadf"
+    },
+    {
+      "id": "file-6",
+      "path": "src/Details.vue",
+      "language": "vue",
+      "role": "file",
+      "source": "assets/file-6.txt",
+      "sha256": "a332993ea93404e4139a9881443b990da5ddac2e585c6f90d31c10dd00abb41b"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "1965fe5d479505f1e80638083dd92bfa86389a60f6f77693b578249ec5cf4668"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "vue-fetch-abort",
+    "vue-lifecycle-timer",
+    "vue-props"
+  ],
+  "expected": "Il componente dettagli viene richiesto al primo utilizzo.",
+  "errors": [
+    "Import non risolto: installare dal manifest esportato e mantenere i file di supporto.",
+    "Versione Node non supportata: controllare i requisiti del framework prima di reinstallare dipendenze."
+  ],
+  "sources": [
+    "https://vuejs.org/guide/quick-start.html",
+    "https://vuejs.org/api/reactivity-core.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "compilato",
+    "date": "2026-10-29",
+    "details": "Build reale vue su Nodev24.15.0/Windows con dipendenze del manifest. Interazioni browser e hosting non attestati. Report: reports/expansion-web-qa.json."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

@@ -1,0 +1,3 @@
+module example.test/go_debug
+
+go 1.22

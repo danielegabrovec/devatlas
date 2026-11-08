@@ -1,0 +1,2 @@
+python -m pip install build==1.2.2
+python -m build --sdist

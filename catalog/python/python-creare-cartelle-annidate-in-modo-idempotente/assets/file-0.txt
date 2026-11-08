@@ -1,0 +1,7 @@
+from pathlib import Path
+from tempfile import TemporaryDirectory
+with TemporaryDirectory() as folder:
+    path = Path(folder) / "reports" / "2026"
+    path.mkdir(parents=True, exist_ok=True)
+    path.mkdir(parents=True, exist_ok=True)
+    print(path.is_dir())

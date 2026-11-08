@@ -1,0 +1,79 @@
+{
+  "id": "javascript-workflow-js-inspector",
+  "title": "Debuggare JavaScript con Inspector e VS Code",
+  "summary": "Avvia una CLI ESM nel debugger Node e consente di ispezionare parametri e variabili locali.",
+  "stack": "javascript",
+  "group": "Linguaggi",
+  "section": "Debug",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "ECMAScript 2022+; Node.js 22+ per eseguire i file .mjs",
+  "prerequisites": "Node.js 22+ nel PATH. Gli esempi riguardano il linguaggio e le API standard; nessun pacchetto npm.",
+  "tags": [
+    "workflow",
+    "debug",
+    "debugger",
+    "test",
+    "distribution"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.mjs",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "eb38e3fcb22f637fa7b0bd113297aec280db20f4554d3080ce0ca07ba5c12514"
+    },
+    {
+      "id": "file-1",
+      "path": ".vscode/launch.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "7ed108cd0545d418afe9ac4dd1c8e61656db71af8c33b53d458150d6202bb149"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "0c9523cba0289177d95ff1d0fc25e12816666017dbcd7267f0c3d3fb21ecc845"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "javascript-workflow-js-test-pack",
+    "javascript-workflow-npm-esm-init",
+    "javascript-progetto-completo-analizzatore-spese-json"
+  ],
+  "expected": "La CLI stampa10 dopo il proseguimento; il processo può restare sospeso fino al collegamento del debugger.",
+  "errors": [
+    "EADDRINUSE richiede di chiudere il precedente processo o cambiare porta. Il binding127.0.0.1 mantiene il debugger sul computer locale."
+  ],
+  "sources": [
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference",
+    "https://nodejs.org/en/learn/getting-started/debugging"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Sorgenti e configurazioni verificati su Windows x64: JSON parse, PowerShell parser, source compiler. Report: reports/languages-workflows-validation.json. Non attestati sessioni interattive di debug, installazioni di dipendenze o distribuzione completa del workflow; nessuna esecuzione Linux/macOS."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

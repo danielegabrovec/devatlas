@@ -1,0 +1,31 @@
+import sys
+from pathlib import Path
+import PySide6
+from PySide6.QtCore import QCoreApplication
+from PySide6.QtWidgets import QApplication, QWidget, QVBoxLayout, QLabel, QPushButton
+def configure_plugins():
+    package = Path(PySide6.__file__).resolve().parent
+    for relative in ("plugins", "Qt6/plugins", "qt-plugins", "Qt/plugins"):
+        candidate = package / relative
+        if (candidate / "platforms").is_dir():
+            QCoreApplication.setLibraryPaths([str(candidate)])
+            return
+
+if __name__ == "__main__":
+    configure_plugins()
+    app = QApplication(sys.argv)
+    window = QWidget()
+    window.setWindowTitle("{{project_name}}")
+    layout = QVBoxLayout(window)
+    label = QLabel("0")
+    button = QPushButton("Incrementa")
+    window.count = 0
+    def increment():
+        window.count += 1
+        label.setText(str(window.count))
+    button.clicked.connect(increment)
+    layout.addWidget(label)
+    layout.addWidget(button)
+    window.resize(480, 240)
+    window.show()
+    sys.exit(app.exec())

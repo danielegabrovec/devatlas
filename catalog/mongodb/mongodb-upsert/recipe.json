@@ -1,0 +1,71 @@
+{
+  "id": "mongodb-upsert",
+  "title": "Creare o aggiornare un documento con upsert",
+  "summary": "Separare campi applicati sempre e valori usati soltanto all'inserimento.",
+  "stack": "mongodb",
+  "group": "Database",
+  "section": "Database",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "MongoDB Community8.0;mongosh2.x;Node driver7.7.0",
+  "prerequisites": "Server didattico separato su127.0.0.1:27018 e mongosh2.x. Ogni ricetta ricrea items nel proprio database atlas_demo_*. Nessun server viene avviato o collegato dal generatore.",
+  "tags": [
+    "mongodb",
+    "upsert",
+    "mongosh",
+    "CRUD"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "demo.js",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "d8b9a2746bf48562f4af21faddaa58be8ae6176e2d9b6806d7b92240c3d7484b"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "445e25022e377d82bf31c72464e09ac9b430571ef63cfd3f05f0560b6b374aa0"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "mongodb-array-filter",
+    "mongodb-insert",
+    "mongodb-pipeline-update"
+  ],
+  "expected": "Il documento4 viene inserito con stock0.",
+  "errors": [
+    "Connection refused: avviare manualmente il processo dedicato, senza cambiare URL verso un database reale.",
+    "Namespace o indice già esistente: controllare il reset della collezione del solo laboratorio."
+  ],
+  "sources": [
+    "https://www.mongodb.com/docs/mongodb-shell/",
+    "https://www.mongodb.com/docs/manual/reference/method/db.collection.findOneAndUpdate/",
+    "https://www.mongodb.com/docs/drivers/node/current/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Schema/configurazioni e sintassi JavaScript/PowerShell secondo i file presenti; nessuna attestazione serverMongo/Redis o finestraTauri. Report: reports/expansion-frameworks-qa.json."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "dart-codificare-parametri-url-con-uri",
+  "title": "Codificare parametri URL con Uri",
+  "summary": "Conserva più e spazi nella query senza concatenare manualmente i valori.",
+  "stack": "dart",
+  "group": "Linguaggi",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Dart3.13.x; librerie SDK, nessuna dipendenza Pub esterna",
+  "prerequisites": "Dart SDK3.13.x nel PATH. Gli esempi dart:io sono nativi; per riusarli su web occorre sostituire accesso filesystem/isolate dove non supportato. Nessun package esterno necessario ai capstone.",
+  "tags": [
+    "Uri",
+    "queryParameters",
+    "percent encoding"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.dart",
+      "language": "dart",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "893103db45fa43e79ac627160069f502e5dde70fd7d8b142c438ed5468b39b66"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "7ed1d0120ff7cd104704e65f61394f4493baec4c941cafc797f5e11b53ea5d71"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "dart-definire-parametri-nominati-obbligatori",
+    "dart-aggiungere-una-extension-per-validare-testo",
+    "dart-applicare-un-timeout-a-una-future"
+  ],
+  "expected": "La query codifica correttamente il parametro e la lettura restituisce C++ e Dart.",
+  "errors": [
+    "Più/spazi interpretati male: costruisci i parametri con Uri e non concatenando manualmente la query.",
+    "Doppia percent-encoding: passa valori grezzi a queryParameters e lascia la codifica a Uri."
+  ],
+  "sources": [
+    "https://dart.dev/language",
+    "https://dart.dev/resources/whats-new",
+    "https://dart.dev/tools/dart-compile"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Controlli reali su Windows x64: tree-sitter syntax. Report: reports/expansion-languages-qa.json. Solo analisi sintattica; SDK/compilatore assente. Nessuna esecuzione Swift/Dart né Apple SDK attestata."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

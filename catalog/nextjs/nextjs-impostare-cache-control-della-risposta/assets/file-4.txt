@@ -1,0 +1,1 @@
+export function GET(){return Response.json([{id:1,name:'Guida'}],{headers:{'cache-control':'public,max-age=60,stale-while-revalidate=120'}})}

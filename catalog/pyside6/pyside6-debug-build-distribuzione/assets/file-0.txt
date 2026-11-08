@@ -1,0 +1,30 @@
+import sys
+from pathlib import Path
+import PySide6
+from PySide6.QtCore import QCoreApplication
+from PySide6.QtWidgets import QApplication, QWidget, QVBoxLayout, QLabel, QPushButton
+def configure_plugins():
+    package = Path(PySide6.__file__).resolve().parent
+    for relative in ("plugins", "Qt6/plugins", "qt-plugins", "Qt/plugins"):
+        candidate = package / relative
+        if (candidate / "platforms").is_dir():
+            QCoreApplication.setLibraryPaths([str(candidate)])
+            return
+
+from ui_main import Ui_MainForm
+from totals import total
+
+if __name__ == "__main__":
+    configure_plugins()
+    app = QApplication(sys.argv)
+    window = QWidget()
+    ui = Ui_MainForm()
+    ui.setupUi(window)
+    window.setWindowTitle("{{project_name}}")
+    def calculate():
+        value = total([12.50, 7.25])
+        ui.resultLabel.setText(f"Totale: {value:.2f}")
+    ui.calcButton.clicked.connect(calculate)
+    window.resize(480, 240)
+    window.show()
+    sys.exit(app.exec())

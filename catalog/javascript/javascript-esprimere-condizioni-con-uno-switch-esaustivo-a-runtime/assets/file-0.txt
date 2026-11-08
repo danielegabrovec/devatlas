@@ -1,0 +1,8 @@
+function execute(command) {
+  switch (command) {
+    case "start": return "avviato";
+    case "stop": return "fermato";
+    default: throw new RangeError(`Comando sconosciuto: ${command}`);
+  }
+}
+console.log(execute("start"));

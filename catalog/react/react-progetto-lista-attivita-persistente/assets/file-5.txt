@@ -1,0 +1,1 @@
+export function addTask(rows,text){text=text.trim();if(!text)throw Error('Inserisci un testo');return[...rows,{id:crypto.randomUUID(),text,done:false}]}

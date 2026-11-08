@@ -1,0 +1,129 @@
+{
+  "id": "nextjs-debug-test-e-produzione-nextjs",
+  "title": "Debug test e produzione nextjs",
+  "summary": "Apri la cartella in VSCode e avvia Next server dev conF5; richiamando la home puoi fermarti in lib/pricing.mjs. Per componenti client usa anche i breakpoint di DevTools del browser. node --test controlla la funzione, next build compila/prerenderizza, next start esegue il risultato di produzione localmente. Non utilizzare next dev per distribuire il servizio.",
+  "stack": "nextjs",
+  "group": "Web e backend",
+  "section": "Compilazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Next16.4.3 App Router; React19.3; Node22.12+",
+  "prerequisites": "Node22.12+, npm e browser. Esempi fetch remoti richiedono rete. App su localhost3000; dataset in memoria solo dimostrativi.",
+  "tags": [
+    "nextjs",
+    "debug",
+    "breakpoint",
+    "test",
+    "build",
+    "production",
+    "release"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "package.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "b27b29cdabfae2410cd930c91108180351cabb2dec45d64df2e2e1c395f4bc53"
+    },
+    {
+      "id": "file-1",
+      "path": "app/layout.js",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "d21e686f7157ebd71b8eb35a56077f4420d276a946d65aa41cf3b16d18ebe08c"
+    },
+    {
+      "id": "file-2",
+      "path": "app/page.js",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "f3fb8c112ca60ea167d0841f426553985f6813bd75713dc0d4c4d8dbc8f249f1"
+    },
+    {
+      "id": "file-3",
+      "path": "app/globals.css",
+      "language": "css",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "ab78ab3385290b548318351011a467a5f61fd8151a1d7484dfc74ae055205494"
+    },
+    {
+      "id": "file-4",
+      "path": "lib/pricing.mjs",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "c9019581aa7b853b8d77e8b91cd24e360309c95dec5910c4408e3896a2cddee5"
+    },
+    {
+      "id": "file-5",
+      "path": "test/pricing.test.mjs",
+      "language": "javascript",
+      "role": "file",
+      "source": "assets/file-5.txt",
+      "sha256": "5ba2b2f3452c1409b50d45f7324b29b1317afe23697aaf5c1d0bc26347153708"
+    },
+    {
+      "id": "file-6",
+      "path": ".vscode/launch.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-6.txt",
+      "sha256": "8cb47f63f4705d493875283ce9e4aecfe6b86aae77767a3a599bb4d80655d8d3"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "e988d37a14c4fd3148089dc9c04da5f8cd03f66f435a314c129c10b8a0594180"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "nextjs-definire-variabile-pubblica-al-build",
+    "nextjs-progetto-api-spese-con-validazione-e-riepilogo",
+    "nextjs-progetto-dashboard-server-con-ricerca-e-pagina"
+  ],
+  "expected": "I test inclusi completano con esito positivo. La configurazione VSCode permette breakpoint sul sorgente; i comandi distinguono verifica, build e avvio di produzione.",
+  "errors": [
+    "Comando non trovato: installare la toolchain elencata nei prerequisiti.",
+    "Dipendenza mancante: eseguire l'installazione nella radice esportata, senza cambiare le versioni dichiarate."
+  ],
+  "sources": [
+    "https://nextjs.org/docs/app"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "compilato",
+    "date": "2026-10-29",
+    "details": "Verifiche lifecycle su Windows: static-files, next-build, node-tests. Configurazione debugger controllata come JSON; sessione F5 e distribuzione remota non attestate.",
+    "files_sha256": {
+      "package.json": "b27b29cdabfae2410cd930c91108180351cabb2dec45d64df2e2e1c395f4bc53",
+      "app/layout.js": "d21e686f7157ebd71b8eb35a56077f4420d276a946d65aa41cf3b16d18ebe08c",
+      "app/page.js": "f3fb8c112ca60ea167d0841f426553985f6813bd75713dc0d4c4d8dbc8f249f1",
+      "app/globals.css": "ab78ab3385290b548318351011a467a5f61fd8151a1d7484dfc74ae055205494",
+      "lib/pricing.mjs": "c9019581aa7b853b8d77e8b91cd24e360309c95dec5910c4408e3896a2cddee5",
+      "test/pricing.test.mjs": "5ba2b2f3452c1409b50d45f7324b29b1317afe23697aaf5c1d0bc26347153708",
+      ".vscode/launch.json": "8cb47f63f4705d493875283ce9e4aecfe6b86aae77767a3a599bb4d80655d8d3"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

@@ -1,0 +1,15 @@
+export type Task = Readonly<{id:number;title:string;done:boolean}>;
+export class Board {
+  private tasks:Task[]=[];
+  add(title:string):Task {
+    if(!title.trim()) throw new TypeError("Titolo vuoto");
+    const task={id:this.tasks.length+1,title:title.trim(),done:false};
+    this.tasks=[...this.tasks,task];
+    return task;
+  }
+  complete(id:number):void {
+    if(!this.tasks.some(task=>task.id===id)) throw new RangeError("Task assente");
+    this.tasks=this.tasks.map(task=>task.id===id?{...task,done:true}:task);
+  }
+  list():readonly Task[] { return this.tasks.map(task=>({...task})); }
+}

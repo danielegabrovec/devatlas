@@ -1,0 +1,5 @@
+<?php
+declare(strict_types=1);
+$command='start';
+$message=match($command){'start'=>'avviato','stop'=>'fermato',default=>throw new InvalidArgumentException('Comando sconosciuto')};
+echo $message,PHP_EOL;

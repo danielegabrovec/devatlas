@@ -1,0 +1,7 @@
+from collections import ChainMap
+defaults = {"size": 12, "theme": "light"}
+local = {"size": 16}
+config = ChainMap(local, defaults)
+print(config["size"], config["theme"])
+config["theme"] = "dark"
+print(local)

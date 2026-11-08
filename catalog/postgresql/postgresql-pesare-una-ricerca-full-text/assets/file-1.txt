@@ -1,0 +1,1 @@
+SELECT ts_rank(to_tsvector('italian','guida database sql'),plainto_tsquery('italian','database'));

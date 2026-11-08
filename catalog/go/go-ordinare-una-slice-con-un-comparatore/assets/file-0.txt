@@ -1,0 +1,10 @@
+package main
+
+import (
+"fmt"
+"sort"
+)
+
+func main(){
+rows:=[]struct{Name string;Age int}{{"Ada",36},{"Luca",28}};sort.Slice(rows,func(i,j int)bool{return rows[i].Age<rows[j].Age});fmt.Println(rows)
+}

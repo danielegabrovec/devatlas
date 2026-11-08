@@ -1,0 +1,1 @@
+let count=0;document.querySelector('#calculate').addEventListener('click',()=>{document.querySelector('#result').textContent=String(++count);});

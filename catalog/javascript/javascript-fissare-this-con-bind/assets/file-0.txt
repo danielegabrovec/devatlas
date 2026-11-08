@@ -1,0 +1,3 @@
+const user = { name: "Ada", greet() { return `Ciao ${this.name}`; } };
+const callback = user.greet.bind(user);
+console.log(callback());

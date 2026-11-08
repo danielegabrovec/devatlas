@@ -1,0 +1,1 @@
+const port=Number(process.env.PORT??3000);if(!Number.isInteger(port)||port<1||port>65535)throw Error('PORT invalida');console.log(port);

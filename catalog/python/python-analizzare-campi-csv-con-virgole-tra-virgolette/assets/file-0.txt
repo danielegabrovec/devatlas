@@ -1,0 +1,3 @@
+import csv
+row = next(csv.reader(['"Rossi, Ada",42,"Roma"']))
+print(row)

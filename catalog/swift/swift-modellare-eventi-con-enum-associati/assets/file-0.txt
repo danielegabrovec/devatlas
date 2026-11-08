@@ -1,0 +1,4 @@
+import Foundation
+enum Event {case moved(x:Int,y:Int);case closed}
+let event=Event.moved(x:2,y:3)
+switch event {case .moved(let x,let y):print(x,y);case .closed:print("chiusa")}

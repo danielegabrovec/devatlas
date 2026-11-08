@@ -1,0 +1,1 @@
+import Counter from'./counter';export default function Page(){return <><h1>Server</h1><Counter initial={2}/></>}

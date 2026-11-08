@@ -1,0 +1,2 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Laboratorio HTML/CSS</title><link rel="stylesheet" href="style.css"></head><body><button id='open'>Apri conferma</button><dialog id='confirm' aria-labelledby='title'><h2 id='title'>Conferma</h2><form method='dialog'><button>Chiudi</button></form></dialog><script>document.getElementById('open').onclick=()=>document.getElementById('confirm').showModal()</script></body></html>

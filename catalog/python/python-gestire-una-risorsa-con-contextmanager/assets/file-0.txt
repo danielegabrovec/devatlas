@@ -1,0 +1,10 @@
+from contextlib import contextmanager
+@contextmanager
+def resource():
+    print("apertura")
+    try:
+        yield "risorsa"
+    finally:
+        print("chiusura")
+with resource() as value:
+    print(value)

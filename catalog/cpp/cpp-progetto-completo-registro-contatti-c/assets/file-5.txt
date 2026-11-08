@@ -1,0 +1,3 @@
+# Registro contatti C++
+
+C++20. Con GCC: compilare main.cpp e contacts.cpp per l'app, test.cpp e contacts.cpp per il test. In alternativa usare CMake 3.20+: `cmake -S . -B build`, `cmake --build build`, `ctest --test-dir build -C Debug`. Il registro è in memoria, ricerca per nome esatto e sostituisce il contatto quando il nome esiste. La validazione email è deliberatamente minima. Non compilare main.cpp e test.cpp nello stesso eseguibile perché entrambi definiscono main.

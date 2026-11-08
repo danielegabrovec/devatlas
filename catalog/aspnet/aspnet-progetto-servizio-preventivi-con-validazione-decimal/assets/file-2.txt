@@ -1,0 +1,1 @@
+var b=WebApplication.CreateBuilder(args);var app=b.Build();app.MapPost("/quote",(Quote q)=>{try{return Results.Ok(new{total=Pricing.Total(q)});}catch(ArgumentException e){return Results.BadRequest(new{error=e.Message});}});app.MapGet("/health",()=>Results.Ok(new{ok=true}));app.Run();

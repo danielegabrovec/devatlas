@@ -1,0 +1,5 @@
+<script>
+import {onMount,tick,setContext,getContext} from 'svelte';
+const row={name:'Ada',role:'Sviluppo'};
+</script>
+<main>{#snippet card(person)}<article class="card"><h2>{person.name}</h2><p>{person.role}</p></article>{/snippet}{@render card(row)}</main>

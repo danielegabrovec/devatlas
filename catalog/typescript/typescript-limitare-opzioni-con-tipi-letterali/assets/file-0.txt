@@ -1,0 +1,4 @@
+type Size = "small" | "medium" | "large";
+function pixels(size: Size): number { return {small: 12, medium: 16, large: 24}[size]; }
+console.log(pixels("medium"));
+export {};

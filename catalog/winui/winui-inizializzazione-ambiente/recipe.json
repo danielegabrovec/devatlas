@@ -1,0 +1,102 @@
+{
+  "id": "winui-inizializzazione-ambiente",
+  "title": "Inizializzare ambiente e prima app WinUI 3",
+  "summary": "Preparare SDK e dipendenze del framework e avviare un contatore desktop con tutti i file di ingresso.",
+  "stack": "winui",
+  "group": "Desktop e GUI",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows"
+  ],
+  "ide": [
+    "VS Code",
+    "Visual Studio"
+  ],
+  "versions": "C# .NET 8; WinUI 3 Windows App SDK 1.8.12",
+  "prerequisites": "Windows 10 build 19041+; .NET 8 SDK, Windows SDK e workload WinUI in Visual Studio. Questa è una baseline compatibile Windows App SDK 1.8.12, non la versione più recente.",
+  "tags": [
+    "WinUI 3",
+    "initialize",
+    "SDK",
+    "restore",
+    "first app"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "MainWindow.cs",
+      "language": "csharp",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "1798f8d35602a721a90ba3df0cccaba2b6209257f3d3f031968525be285d3903"
+    },
+    {
+      "id": "file-1",
+      "path": "App.xaml",
+      "language": "xml",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "7130b9219e01a0f7b7fb0e8ffe92697a8b33d3f343aa5c477900c93be52f551d"
+    },
+    {
+      "id": "file-2",
+      "path": "App.xaml.cs",
+      "language": "csharp",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "82aa2537bc9c18ab4b85972f8cacc37a92786d5a8a01e0df77ce9f9a4f823f4c"
+    },
+    {
+      "id": "file-3",
+      "path": "{{project_name}}.csproj",
+      "language": "xml",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "ae8dce4ae9792581692094909a6df9322a22776e68fcf9a15d5d3e982eaab079"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "759e77ec9402099004b300677f567a138066963ff49bfaeae686c6808b648ce6"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "project_name",
+      "label": "Nome dell'applicazione",
+      "type": "identifier",
+      "default": "RecipeDesktop",
+      "required": true
+    }
+  ],
+  "related": [
+    "winui-debug-build-distribuzione",
+    "winui-check",
+    "winui-combo"
+  ],
+  "expected": "La prima app apre una finestra e il pulsante Incrementa aggiorna il contatore.",
+  "errors": [
+    "SDK o workload non trovato: confrontare dotnet --info e il workload richiesto con la versione del progetto.",
+    "Classe App duplicata: esportare in una cartella nuova mantenendo tutti i file, senza sovrapporli a un template già generato."
+  ],
+  "sources": [
+    "https://learn.microsoft.com/windows/apps/winui/winui3/get-started-winui3-for-desktop",
+    "https://learn.microsoft.com/windows/apps/windows-app-sdk/deploy-unpackaged-apps"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "details": "Controlli statici sui sorgenti: AST Python, parser PowerShell/Bash dove disponibili, node --check per JavaScript, JSON e XML secondo i file presenti. Nessuna compilazione C#/XAML/C++ né esecuzione Docker/CI/packaging attestata. Report: reports/desktop-tools-qa.json.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

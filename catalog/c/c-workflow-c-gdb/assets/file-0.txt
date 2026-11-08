@@ -1,0 +1,3 @@
+#include <stdio.h>
+static int total(const int *values,int count){int result=0;for(int i=0;i<count;i++)result+=values[i];return result;}
+int main(void){int values[]={2,3,5};printf("%d\n",total(values,3));return 0;}

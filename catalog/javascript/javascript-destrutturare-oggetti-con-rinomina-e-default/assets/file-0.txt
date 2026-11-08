@@ -1,0 +1,3 @@
+const payload = { user_name: "Ada" };
+const { user_name: name, active = true } = payload;
+console.log(name, active);

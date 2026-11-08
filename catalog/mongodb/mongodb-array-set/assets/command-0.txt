@@ -1,0 +1,1 @@
+mongosh "mongodb://127.0.0.1:27018/atlas_demo_array_set" --quiet --file demo.js

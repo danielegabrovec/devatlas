@@ -1,0 +1,7 @@
+<?php
+declare(strict_types=1);
+$db=new PDO('sqlite::memory:',null,null,[PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION]);
+$db->exec('CREATE TABLE items(id INTEGER PRIMARY KEY)');
+try{$db->beginTransaction();$db->exec('INSERT INTO items VALUES(1)');$db->exec('INSERT INTO items VALUES(1)');$db->commit();}
+catch(PDOException $error){if($db->inTransaction())$db->rollBack();}
+echo $db->query('SELECT COUNT(*) FROM items')->fetchColumn(),PHP_EOL;

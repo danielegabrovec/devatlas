@@ -1,0 +1,4 @@
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+let(sender,receiver)=std::sync::mpsc::channel();let worker=std::thread::spawn(move||{sender.send(42).expect("ricevitore chiuso");});for value in receiver{println!("{}",value);}worker.join().expect("worker fallito");
+Ok(())
+}

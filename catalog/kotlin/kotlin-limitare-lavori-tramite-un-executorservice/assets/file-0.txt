@@ -1,0 +1,6 @@
+import java.util.concurrent.Executors
+
+fun main() {
+val pool = Executors.newFixedThreadPool(2)
+try { val results = (1..4).map { value -> pool.submit<Int> { value * value } }; println(results.map { it.get() }) } finally { pool.shutdown() }
+}

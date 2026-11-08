@@ -1,0 +1,6 @@
+from fastapi import FastAPI,HTTPException
+app=FastAPI()
+@app.get('/quote')
+def quote(price:float,qty:int):
+    if price<0 or qty<1: raise HTTPException(422,'Valori invalidi')
+    return {'total':price*qty}

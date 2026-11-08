@@ -1,0 +1,1 @@
+CREATE MATERIALIZED VIEW report_demo.monthly AS SELECT date_trunc('month',day)::date AS month,SUM(amount) AS total FROM report_demo.sales GROUP BY 1; CREATE UNIQUE INDEX ON report_demo.monthly(month); SELECT * FROM report_demo.monthly;

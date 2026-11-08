@@ -1,0 +1,1 @@
+'use client';import dynamic from'next/dynamic';const Detail=dynamic(()=>import('./detail'),{ssr:false,loading:()=> <p>Attendi</p>});export default function Page(){return <Detail/>}

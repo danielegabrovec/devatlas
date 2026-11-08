@@ -1,0 +1,3 @@
+import React, {useState,useEffect,useMemo,useRef,useReducer,useId,useContext,createContext,useCallback,useLayoutEffect,useTransition,useDeferredValue,useSyncExternalStore,useImperativeHandle,forwardRef,memo,lazy,Suspense,Component} from 'react';
+import {createPortal} from 'react-dom';
+export default function App(){const initial={name:'',email:''};const[v,set]=useState(initial);return <form onReset={()=>set(initial)}><label>Nome<input value={v.name} onChange={e=>set({...v,name:e.target.value})}/></label><label>Email<input value={v.email} onChange={e=>set({...v,email:e.target.value})}/></label><button type='reset'>Ripristina</button></form>}

@@ -1,0 +1,3 @@
+import React, {useState,useEffect,useMemo,useRef,useReducer,useId,useContext,createContext,useCallback,useLayoutEffect,useTransition,useDeferredValue,useSyncExternalStore,useImperativeHandle,forwardRef,memo,lazy,Suspense,Component} from 'react';
+import {createPortal} from 'react-dom';
+export default function App(){const Demo=useMemo(()=>lazy(()=>new Promise(r=>setTimeout(()=>r({default:()=> <p>Modulo caricato</p>}),300))),[]);return <Suspense fallback={<p>Caricamento…</p>}><Demo/></Suspense>}

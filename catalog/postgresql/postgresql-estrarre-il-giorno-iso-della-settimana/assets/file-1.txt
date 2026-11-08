@@ -1,0 +1,1 @@
+SELECT extract(isodow FROM date '2026-10-29');

@@ -1,0 +1,5 @@
+from functools import partial
+def add_tax(amount, rate):
+    return amount * (1 + rate)
+vat22 = partial(add_tax, rate=0.22)
+print(round(vat22(100), 2))

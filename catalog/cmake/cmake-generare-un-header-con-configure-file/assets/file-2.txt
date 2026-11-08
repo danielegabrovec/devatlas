@@ -1,0 +1,2 @@
+#pragma once
+#define RECIPE_VERSION "@PROJECT_VERSION@"

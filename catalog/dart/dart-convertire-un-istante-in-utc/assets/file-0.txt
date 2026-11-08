@@ -1,0 +1,4 @@
+Future<void> main() async {
+final instant=DateTime.parse('2026-10-29T10:00:00+02:00');
+print(instant.toUtc().toIso8601String());
+}

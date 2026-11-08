@@ -1,0 +1,1 @@
+SELECT p.name,(SELECT COUNT(*) FROM orders o WHERE o.person_id=p.id) AS ordini FROM people p;

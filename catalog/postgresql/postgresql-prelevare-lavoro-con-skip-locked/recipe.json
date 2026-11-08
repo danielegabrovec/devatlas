@@ -1,0 +1,84 @@
+{
+  "id": "postgresql-prelevare-lavoro-con-skip-locked",
+  "title": "Prelevare lavoro con SKIP LOCKED",
+  "summary": "Laboratorio con dati sintetici: prelevare lavoro con skip locked.",
+  "stack": "postgresql",
+  "group": "Database",
+  "section": "Database",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "PostgreSQL 18; psql",
+  "prerequisites": "Server locale e client installati; database didattico cookbook_demo già creato; credenziali fornite dal client, mai nel sorgente.",
+  "tags": [
+    "database",
+    "query",
+    "postgresql",
+    "prelevare",
+    "lavoro",
+    "con"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "fixture.sql",
+      "language": "sql",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "3cde102e6b2763c11b4b999c7f19f5720452a7331a606e5951db70c431aa19e3"
+    },
+    {
+      "id": "file-1",
+      "path": "query.sql",
+      "language": "sql",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "bfd3c08f27b4d4d35a720d706e0790014291c04ee9736251e23b32558266a88f"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "15083f8bc39e758f727882c721068950e91724f5fde52e3c50f505781cf2eb38"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "postgresql-aggiornare-una-vista-materializzata",
+    "postgresql-aggiungere-subtotali-con-rollup",
+    "postgresql-aggiungere-una-constraint-non-ancora-validata"
+  ],
+  "expected": "La query termina senza errori e mostra il risultato dell'operazione indicata; per DDL il client conferma la creazione dell'oggetto.",
+  "errors": [
+    "Tabella già esistente: rieseguire la fixture in un database di laboratorio vuoto.",
+    "Funzione o estensione assente: controllare versione e opzioni del motore indicati nei prerequisiti."
+  ],
+  "sources": [
+    "https://www.postgresql.org/docs/18/sql.html",
+    "https://www.postgresql.org/docs/18/sql-dropschema.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "documentato",
+    "date": "2026-10-29",
+    "details": "Revisione documentale PostgreSQL18/MySQL8.4 e fixture di laboratorio; server non eseguito perché Docker non era attivo. Report: reports/catalog-independent-review.json.",
+    "files_sha256": {
+      "fixture.sql": "3cde102e6b2763c11b4b999c7f19f5720452a7331a606e5951db70c431aa19e3",
+      "query.sql": "bfd3c08f27b4d4d35a720d706e0790014291c04ee9736251e23b32558266a88f"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

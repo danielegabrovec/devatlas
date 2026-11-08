@@ -1,0 +1,164 @@
+{
+  "id": "django-applicare-cache-temporale-alla-vista",
+  "title": "Applicare cache temporale alla vista",
+  "summary": "Il progetto completo usa l’app notes e SQLite locale. Le modifiche specifiche sono nei file notes/views.py. I template mantengono autoescape e i form POST includono CSRF. Per admin/login crea un utente con createsuperuser; non sono presenti password predefinite.",
+  "stack": "django",
+  "group": "Web e backend",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Django5.2.6 LTS; Python3.11+",
+  "prerequisites": "Python3.11+ e venv. SQLite incluso in Python. DEBUG e SECRET_KEY sono solo per localhost; non pubblicare queste impostazioni. Porta8000 libera.",
+  "tags": [
+    "django",
+    "example",
+    "applicare",
+    "cache",
+    "temporale",
+    "alla"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "manage.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "8849c817101501786e131101f2f5fac10aed33241675ed49d15f6fdbe255a916"
+    },
+    {
+      "id": "file-1",
+      "path": "config/__init__.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "id": "file-2",
+      "path": "config/settings.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "54048c44dbd37b177b6a8b19ab8beb2ddb8d57fd188f71892befb6d5eea9f7da"
+    },
+    {
+      "id": "file-3",
+      "path": "config/urls.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "16049f8efc4d5670805c4e81d0c65577f5f4380c19c45a86d041aed875ba8873"
+    },
+    {
+      "id": "file-4",
+      "path": "notes/__init__.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "id": "file-5",
+      "path": "notes/models.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-5.txt",
+      "sha256": "0743f30d484e49ffbd6fc1ca213128e5ac20db06cab71e514caa6c10f2b87932"
+    },
+    {
+      "id": "file-6",
+      "path": "notes/views.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-6.txt",
+      "sha256": "6632f82cf62c32d5f106b6a5b603be88090e4f5a4ad955cce524bdefda39f0ba"
+    },
+    {
+      "id": "file-7",
+      "path": "notes/migrations/__init__.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-7.txt",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "id": "file-8",
+      "path": "notes/migrations/0001_initial.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-8.txt",
+      "sha256": "3cfe7127344a2e96310c96dfa94d0c909e45906ea99aee534c0c62c621a35c53"
+    },
+    {
+      "id": "file-9",
+      "path": "seed.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-9.txt",
+      "sha256": "e446c7a8a041d25a77373ae88eabbc2459d58f04f7c6cda06472b172fa48e6a0"
+    },
+    {
+      "id": "file-10",
+      "path": "requirements.txt",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-10.txt",
+      "sha256": "1a56de810d0e0b7d26f28a7849f418e166230196b7c58d94601f4624f172e57d"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "45323db3faff0156875acc90d3a4982cb987e8b6ee01f410247ab705612bb5b1"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "django-limitare-una-vista-al-metodo-get",
+    "django-proteggere-una-vista-con-login-required",
+    "django-testare-una-vista-con-testcase"
+  ],
+  "expected": "Il risultato mostra il comportamento descritto nel titolo; i dati dimostrativi sono inclusi nel sorgente.",
+  "errors": [
+    "Comando non trovato: installare la toolchain elencata nei prerequisiti.",
+    "Dipendenza mancante: eseguire l'installazione nella radice esportata, senza cambiare le versioni dichiarate."
+  ],
+  "sources": [
+    "https://docs.djangoproject.com/en/5.2/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Sintassi dei file Python o JavaScript/JSX e JSON controllata sulle fonti correnti; esecuzione di questa singola ricetta non attestata.",
+    "files_sha256": {
+      "manage.py": "8849c817101501786e131101f2f5fac10aed33241675ed49d15f6fdbe255a916",
+      "config/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "config/settings.py": "54048c44dbd37b177b6a8b19ab8beb2ddb8d57fd188f71892befb6d5eea9f7da",
+      "config/urls.py": "16049f8efc4d5670805c4e81d0c65577f5f4380c19c45a86d041aed875ba8873",
+      "notes/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "notes/models.py": "0743f30d484e49ffbd6fc1ca213128e5ac20db06cab71e514caa6c10f2b87932",
+      "notes/views.py": "6632f82cf62c32d5f106b6a5b603be88090e4f5a4ad955cce524bdefda39f0ba",
+      "notes/migrations/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "notes/migrations/0001_initial.py": "3cfe7127344a2e96310c96dfa94d0c909e45906ea99aee534c0c62c621a35c53",
+      "seed.py": "e446c7a8a041d25a77373ae88eabbc2459d58f04f7c6cda06472b172fa48e6a0",
+      "requirements.txt": "1a56de810d0e0b7d26f28a7849f418e166230196b7c58d94601f4624f172e57d"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

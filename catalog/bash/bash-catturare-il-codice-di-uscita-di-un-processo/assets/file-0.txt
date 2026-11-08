@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+code=0
+bash -c 'exit 7' || code=$?
+printf "Codice: %d\n" "$code"
+[[ $code -eq 7 ]]

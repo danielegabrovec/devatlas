@@ -1,0 +1,4 @@
+from django.http import JsonResponse
+def home(request):
+    request.session['visits']=request.session.get('visits',0)+1
+    return JsonResponse({'visits':request.session['visits']})

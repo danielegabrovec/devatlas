@@ -1,0 +1,5 @@
+<script>
+import {onMount,tick,setContext,getContext} from 'svelte';
+let count=$state(0);
+</script>
+<main><button onclick={()=>count++}>Clic: {count}</button></main>

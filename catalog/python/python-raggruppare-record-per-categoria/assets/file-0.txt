@@ -1,0 +1,5 @@
+from collections import defaultdict
+groups = defaultdict(list)
+for category, amount in [("A", 10), ("B", 5), ("A", 7)]:
+    groups[category].append(amount)
+print(dict(groups))

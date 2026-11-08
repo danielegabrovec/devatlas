@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -euo pipefail
+p="atlas_demo:transaction"
+cli(){ redis-cli -e --raw -h 127.0.0.1 -p 6381 "$@"; }
+cli DEL "$p:balance"
+redis-cli -e --raw -h 127.0.0.1 -p 6381 <<EOF
+MULTI
+SET $p:balance 10
+INCRBY $p:balance 5
+EXEC
+EOF
+cli GET "$p:balance"

@@ -1,0 +1,4 @@
+# Coda lavori
+Database cookbook_demo dedicato. Eseguire schema.sql, seed.sql e claim.sql.
+claim.sql restituisce un solo lavoro e lo porta a running. Ripetendo viene prelevato il successivo.
+Usare connessioni distinte per osservare SKIP LOCKED.

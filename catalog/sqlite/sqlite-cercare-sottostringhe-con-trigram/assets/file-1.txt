@@ -1,0 +1,1 @@
+CREATE VIRTUAL TABLE names USING fts5(name,tokenize='trigram'); INSERT INTO names VALUES('programmazione'); SELECT name FROM names WHERE names MATCH 'gram';

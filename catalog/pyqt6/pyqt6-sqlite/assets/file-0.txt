@@ -1,0 +1,27 @@
+import sys, json, sqlite3, tempfile, logging
+from pathlib import Path
+from PyQt6.QtCore import *
+from PyQt6.QtGui import *
+from PyQt6.QtWidgets import *
+Signal = pyqtSignal
+Slot = pyqtSlot
+
+def build(root, layout):
+    connection = sqlite3.connect(":memory:")
+    connection.execute("CREATE TABLE note (id INTEGER PRIMARY KEY, titolo TEXT)")
+    connection.executemany("INSERT INTO note(titolo) VALUES (?)", [("Qt",), ("SQL",)])
+    rows = connection.execute("SELECT titolo FROM note WHERE titolo LIKE ?", ("%Q%",)).fetchall()
+    connection.close()
+    items = QListWidget()
+    items.addItems([row[0] for row in rows])
+    layout.addWidget(items)
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    window = QWidget()
+    window.setWindowTitle("Ricetta Qt")
+    window.resize(720, 480)
+    layout = QVBoxLayout(window)
+    build(window, layout)
+    window.show()
+    sys.exit(app.exec())

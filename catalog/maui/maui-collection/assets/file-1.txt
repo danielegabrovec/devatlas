@@ -1,0 +1,15 @@
+using System;
+using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Collections.ObjectModel;
+using Microsoft.Maui.Controls;
+using Microsoft.Maui.Graphics;
+using Microsoft.Maui.ApplicationModel.DataTransfer;
+using Microsoft.Maui.Storage;
+namespace RecipeApp;
+public class MainPage:ContentPage {
+ public MainPage(){ Title="Ricetta MAUI"; var panel=new VerticalStackLayout{Spacing=12,Padding=20};
+var rows=new ObservableCollection<string>{"Prima nota"}; var view=new CollectionView{ItemsSource=rows,HeightRequest=160}; var b=new Button{Text="Aggiungi"}; b.Clicked+=(_,_)=>rows.Add($"Nota {rows.Count+1}"); panel.Children.Add(view); panel.Children.Add(b);
+ Content=new ScrollView{Content=panel}; }
+}

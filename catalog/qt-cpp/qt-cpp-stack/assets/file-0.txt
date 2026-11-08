@@ -1,0 +1,11 @@
+#include <QtWidgets>
+#include <QtCore>
+#include <QtGui>
+
+int main(int argc, char **argv) {
+ QApplication app(argc,argv);
+ QWidget window; window.resize(720,480);
+ auto *layout=new QVBoxLayout(&window);
+ auto *combo=new QComboBox; combo->addItems({"Home","Opzioni"}); auto *pages=new QStackedWidget; pages->addWidget(new QLabel("Benvenuto")); pages->addWidget(new QCheckBox("Log")); QObject::connect(combo,&QComboBox::currentIndexChanged,pages,&QStackedWidget::setCurrentIndex); layout->addWidget(combo); layout->addWidget(pages);
+ window.show(); return app.exec();
+}

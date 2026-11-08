@@ -1,0 +1,11 @@
+#include <QtWidgets>
+#include <QtCore>
+#include <QtGui>
+
+int main(int argc, char **argv) {
+ QApplication app(argc,argv);
+ QWidget window; window.resize(720,480);
+ auto *layout=new QVBoxLayout(&window);
+ auto *b=new QPushButton("Cartella"); auto *label=new QLabel; layout->addWidget(b); layout->addWidget(label); QObject::connect(b,&QPushButton::clicked,&window,[&window,label]{auto path=QFileDialog::getExistingDirectory(&window,"Cartella"); if(!path.isEmpty()) label->setText(path);});
+ window.show(); return app.exec();
+}

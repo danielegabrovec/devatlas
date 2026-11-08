@@ -1,0 +1,7 @@
+import {Component,signal,computed,effect,inject,DestroyRef,ChangeDetectionStrategy} from '@angular/core';
+import {CommonModule} from '@angular/common';import {FormsModule} from '@angular/forms';
+import {CounterService} from './counter.service';
+@Component({selector:'app-root',standalone:true,imports:[CommonModule,FormsModule],changeDetection:ChangeDetectionStrategy.OnPush,template:`<main><button (click)="counter.increment()">Contatore servizio: {{counter.value()}}</button></main>`})
+export class AppComponent{
+counter=inject(CounterService);
+}

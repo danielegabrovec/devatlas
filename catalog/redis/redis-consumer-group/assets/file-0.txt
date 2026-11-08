@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+p="atlas_demo:consumer-group"
+cli(){ redis-cli -e --raw -h 127.0.0.1 -p 6381 "$@"; }
+cli DEL "$p:events"
+id=$(cli XADD "$p:events" "*" kind created)
+cli XGROUP CREATE "$p:events" workers 0
+cli XREADGROUP GROUP workers worker1 COUNT 1 STREAMS "$p:events" ">"
+cli XACK "$p:events" workers "$id"
+cli XPENDING "$p:events" workers

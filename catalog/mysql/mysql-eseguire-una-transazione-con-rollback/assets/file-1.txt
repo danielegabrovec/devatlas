@@ -1,0 +1,1 @@
+START TRANSACTION; UPDATE products SET stock=0; ROLLBACK; SELECT stock FROM products WHERE id=1;

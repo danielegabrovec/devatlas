@@ -1,0 +1,3 @@
+# Report spese JavaScript
+
+Node.js 22+, nessuna dipendenza. `node --test expenses.test.mjs` verifica aggregazione e validazione; `node main.mjs` stampa il report dei dati sintetici. Gli importi sono interi in centesimi per evitare l'aritmetica decimale binaria. I dati sono nel modulo data.mjs; non caricare moduli di provenienza ignota perché gli import eseguono JavaScript.

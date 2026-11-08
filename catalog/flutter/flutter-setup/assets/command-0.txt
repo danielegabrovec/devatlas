@@ -1,0 +1,4 @@
+flutter --version
+flutter doctor -v
+.\bootstrap.ps1
+flutter run -d windows

@@ -1,0 +1,119 @@
+{
+  "id": "react-copiare-testo-negli-appunti",
+  "title": "Copiare testo negli appunti",
+  "summary": "Copiare testo negli appunti. Lo stato e il ciclo di vita usano useState. Interazioni gestite: onClick.",
+  "stack": "react",
+  "group": "Web e backend",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "React19.1.1; Vite7.1.7; Node22.12+",
+  "prerequisites": "Node22.12+ e npm. Browser moderno; alcune Clipboard API richiedono localhost o HTTPS. Gli esempi fetch richiedono rete.",
+  "tags": [
+    "react",
+    "example",
+    "copiare",
+    "testo",
+    "negli",
+    "appunti"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "package.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "a2a56926730ced0852f9629e1b4f027328418d42b9671016c11090e82e6d3c4b"
+    },
+    {
+      "id": "file-1",
+      "path": "index.html",
+      "language": "html",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "815df6781104f7f0e284365a213518642f7aee3ab24988776b32e77e4b9eb035"
+    },
+    {
+      "id": "file-2",
+      "path": "src/main.jsx",
+      "language": "jsx",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "bb189f86dc8c4a2c586d9bbd1e1cefc2b8e9af260fd92d7d68086100c71a9212"
+    },
+    {
+      "id": "file-3",
+      "path": "src/App.jsx",
+      "language": "jsx",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "4921944e0c62d5ca361387f0d44f9ce2a5749fdd23508ce95e2023a8422d696f"
+    },
+    {
+      "id": "file-4",
+      "path": "src/style.css",
+      "language": "css",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "ab78ab3385290b548318351011a467a5f61fd8151a1d7484dfc74ae055205494"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "1965fe5d479505f1e80638083dd92bfa86389a60f6f77693b578249ec5cf4668"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "react-intercettare-testo-incollato",
+    "react-leggere-testo-da-un-file-locale",
+    "react-progetto-catalogo-con-ricerca-filtri-e-ordinamento"
+  ],
+  "expected": "Il risultato mostra il comportamento descritto nel titolo; i dati dimostrativi sono inclusi nel sorgente.",
+  "errors": [
+    "Comando non trovato: installare la toolchain elencata nei prerequisiti.",
+    "Dipendenza mancante: eseguire l'installazione nella radice esportata, senza cambiare le versioni dichiarate."
+  ],
+  "sources": [
+    "https://react.dev/reference/react",
+    "https://react.dev/learn"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Sintassi dei file Python o JavaScript/JSX e JSON controllata sulle fonti correnti; esecuzione di questa singola ricetta non attestata.",
+    "files_sha256": {
+      "package.json": "a2a56926730ced0852f9629e1b4f027328418d42b9671016c11090e82e6d3c4b",
+      "index.html": "815df6781104f7f0e284365a213518642f7aee3ab24988776b32e77e4b9eb035",
+      "src/main.jsx": "bb189f86dc8c4a2c586d9bbd1e1cefc2b8e9af260fd92d7d68086100c71a9212",
+      "src/App.jsx": "4921944e0c62d5ca361387f0d44f9ce2a5749fdd23508ce95e2023a8422d696f",
+      "src/style.css": "ab78ab3385290b548318351011a467a5f61fd8151a1d7484dfc74ae055205494"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md",
+  "editorial": {
+    "version": 1,
+    "method": "Fatti ricavati staticamente dai file dell’esempio",
+    "facts": [
+      "Lo stato e il ciclo di vita usano useState.",
+      "Interazioni gestite: onClick."
+    ]
+  }
+}

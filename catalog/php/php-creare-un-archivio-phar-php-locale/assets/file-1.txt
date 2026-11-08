@@ -1,0 +1,8 @@
+<?php
+declare(strict_types=1);
+$directory=__DIR__.'/dist';if(!is_dir($directory)&&!mkdir($directory))throw new RuntimeException('mkdir');
+$path=$directory.'/atlas.phar';if(is_file($path)&&!unlink($path))throw new RuntimeException('output bloccato');
+$archive=new Phar($path,0,'atlas.phar');$archive->startBuffering();
+$archive->addFile(__DIR__.'/app/main.php','main.php');
+$archive->setStub("<?php Phar::mapPhar('atlas.phar');require 'phar://atlas.phar/main.php';__HALT_COMPILER();");
+$archive->setSignatureAlgorithm(Phar::SHA256);$archive->stopBuffering();echo $path,PHP_EOL;

@@ -1,0 +1,9 @@
+<?php
+declare(strict_types=1);
+namespace Atlas;
+final class AddressBook{
+ private array $contacts=[];
+ public function __construct(private readonly string $path){if(is_file($path)){$data=json_decode((string)file_get_contents($path),true,512,JSON_THROW_ON_ERROR);if(!is_array($data))throw new \UnexpectedValueException('Rubrica non valida');foreach($data as $name=>$email){if(!is_string($name)||!is_string($email)||filter_var($email,FILTER_VALIDATE_EMAIL)===false)throw new \UnexpectedValueException('Contatto non valido');}$this->contacts=$data;}}
+ public function add(string $name,string $email):void{if(trim($name)===''||filter_var($email,FILTER_VALIDATE_EMAIL)===false)throw new \InvalidArgumentException('Nome/email non validi');$this->contacts[trim($name)]=$email;$temp=tempnam(dirname($this->path),'atlas-');if($temp===false)throw new \RuntimeException('Temporaneo non disponibile');try{if(file_put_contents($temp,json_encode($this->contacts,JSON_PRETTY_PRINT|JSON_THROW_ON_ERROR),LOCK_EX)===false||!rename($temp,$this->path))throw new \RuntimeException('Salvataggio fallito');}finally{if(is_file($temp))unlink($temp);}}
+ public function list():array{$copy=$this->contacts;ksort($copy);return $copy;}
+}

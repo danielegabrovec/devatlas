@@ -1,0 +1,4 @@
+interface Person { name: string; nickname?: string }
+const label = (person: Person): string => person.nickname ?? person.name;
+console.log(label({ name: "Ada" }));
+export {};

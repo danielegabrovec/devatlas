@@ -1,0 +1,2 @@
+# Laboratorio Git
+Eseguire lab.ps1 con PowerShell 7. Usa soltanto repository temporanei e nessuna rete.

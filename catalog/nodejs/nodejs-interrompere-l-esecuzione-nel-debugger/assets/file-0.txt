@@ -1,0 +1,1 @@
+const price=10,qty=3;debugger;console.log(price*qty);

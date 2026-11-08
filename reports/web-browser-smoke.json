@@ -1,0 +1,22 @@
+[
+  {
+    "id": "react-progetto-catalogo-con-ricerca-filtri-e-ordinamento",
+    "passed": true,
+    "details": "Flusso browser Chromium/Windows su localhost; nessun errore JS."
+  },
+  {
+    "id": "react-progetto-lista-attivita-persistente",
+    "passed": true,
+    "details": "Flusso browser Chromium/Windows su localhost; nessun errore JS."
+  },
+  {
+    "id": "react-progetto-tabella-importazione-tsv-con-esportazione",
+    "passed": true,
+    "details": "Flusso browser Chromium/Windows su localhost; nessun errore JS."
+  },
+  {
+    "id": "html-library",
+    "passed": true,
+    "details": "Flusso browser Chromium/Windows su localhost; nessun errore JS."
+  }
+]

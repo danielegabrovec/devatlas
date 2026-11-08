@@ -1,0 +1,8 @@
+FROM python:3.13-slim
+LABEL org.opencontainers.image.title="Recipe local server"
+LABEL org.opencontainers.image.version="1.0.0"
+LABEL org.opencontainers.image.licenses="MIT"
+WORKDIR /app
+COPY app.py .
+EXPOSE 8000
+CMD ["python", "app.py"]

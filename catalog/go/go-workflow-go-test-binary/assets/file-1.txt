@@ -1,0 +1,4 @@
+package main
+import "fmt"
+func Total(values []int)int{sum:=0;for _,value:=range values{sum+=value};return sum}
+func main(){fmt.Println(Total([]int{2,3,5}))}

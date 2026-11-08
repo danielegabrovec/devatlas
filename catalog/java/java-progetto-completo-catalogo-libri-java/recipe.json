@@ -1,0 +1,94 @@
+{
+  "id": "java-progetto-completo-catalogo-libri-java",
+  "title": "Progetto completo catalogo libri Java",
+  "summary": "Separa dominio, programma e test in tre classi Java17 con ricerca e gestione di identificativi univoci.",
+  "stack": "java",
+  "group": "Linguaggi",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Java17+ senza feature preview",
+  "prerequisites": "JDK17+ nel PATH, comandi javac e java. Non basta un JRE; nessuna dipendenza Maven/Gradle necessaria.",
+  "tags": [
+    "project",
+    "class",
+    "optional",
+    "map",
+    "testing"
+  ],
+  "project": true,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "Main.java",
+      "language": "java",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "e24e1861ba116278e782d7ff50fc1280e33391f73145812659e6c138d81880da"
+    },
+    {
+      "id": "file-1",
+      "path": "Inventory.java",
+      "language": "java",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "6984427c91c34a689a3da507358ae66ccf253d35ea9915d21b978dedb7587bdf"
+    },
+    {
+      "id": "file-2",
+      "path": "InventoryTest.java",
+      "language": "java",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "b5696afd1290cc50a4eaa266116bf654f3446a2c7ae1b0ecd4ee35783c8b485b"
+    },
+    {
+      "id": "file-3",
+      "path": "README.md",
+      "language": "markdown",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "a3cfc7916bb996bbf699b743ed4354c5edc352549909e76f0bd0afc32ec1ca64"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "0823ac74ba82abc2efa7263df0d9ad45f594bf3f2140900eec1f7c53da538af5"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "java-workflow-java-jdk-init",
+    "java-accumulare-conteggi-con-map-merge",
+    "java-gestire-una-ricerca-assente-con-optional"
+  ],
+  "expected": "Test:3 contratti verificati. Programma:Programmare Java.",
+  "errors": [
+    "Comando non trovato: installare la toolchain e riaprire il terminale."
+  ],
+  "sources": [
+    "https://dev.java/learn/",
+    "https://docs.oracle.com/en/java/javase/17/docs/api/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "details": "Eseguito su Windows x64 il 29/10/2026. Ambiente: JDK25.0.4.1, compilazione --release17. Sorgenti compilati/controllati e programmi eseguiti; per i progetti sono stati eseguiti anche i test inclusi. Report: reports/languages-source-validation.json e reports/languages-runtime-validation.json. Linux e macOS non eseguiti.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

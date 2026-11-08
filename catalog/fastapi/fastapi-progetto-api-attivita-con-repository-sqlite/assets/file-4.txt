@@ -1,0 +1,3 @@
+# Progetto: API attività con repository SQLite
+POST/tasks crea; GET/tasks elenca; PATCH/tasks/id completa. SQLite persiste dopo riavvio; il test usa una cartella temporanea.
+Installare requirements, eseguire python -m pytest, avviare uvicorn app:app su localhost8000. Solo dati sintetici.

@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Debug",
+      "type": "process",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "{{project_name}}.csproj",
+        "-c",
+        "Debug",
+        "-f",
+        "net8.0"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

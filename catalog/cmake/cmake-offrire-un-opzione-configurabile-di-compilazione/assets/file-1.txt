@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.24)
+project(RecipeBuild VERSION 1.2.0 LANGUAGES CXX)
+add_executable(recipe main.cpp)
+option(RECIPE_VERBOSE "Enable verbose output" OFF)
+if(RECIPE_VERBOSE)
+ target_compile_definitions(recipe PRIVATE RECIPE_VERBOSE=1)
+endif()

@@ -1,0 +1,32 @@
+[
+  {
+    "path": "devatlas/assets/Inter.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/inter/Inter%5Bopsz,wght%5D.ttf",
+    "bytes": 876576,
+    "sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031"
+  },
+  {
+    "path": "devatlas/assets/Inter-OFL.txt",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/inter/OFL.txt",
+    "bytes": 4377,
+    "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57"
+  },
+  {
+    "path": "devatlas/assets/JetBrainsMono.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/jetbrainsmono/JetBrainsMono%5Bwght%5D.ttf",
+    "bytes": 187208,
+    "sha256": "48715a42ec242c21e9f02692891e147d022299a52e48d5e413e1a942193ffeda"
+  },
+  {
+    "path": "devatlas/assets/JetBrainsMono-OFL.txt",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/jetbrainsmono/OFL.txt",
+    "bytes": 4399,
+    "sha256": "b2fe5e8987594e9ffd1d2ca52a2f5d73eb8335243893c5d6254b5ad69269591d"
+  },
+  {
+    "path": ".cache/tools/innosetup-7.1.1-x64.exe",
+    "source": "https://github.com/jrsoftware/issrc/releases/download/is-7_1_1/innosetup-7.1.1-x64.exe",
+    "bytes": 14336568,
+    "sha256": "8a5a6711c3766a6e5fb74f280ba0e3551e719ce94538d901fdbd1f8f9920b3f0"
+  }
+]

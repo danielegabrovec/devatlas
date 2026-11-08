@@ -1,0 +1,7 @@
+import {Component,signal,computed,effect,inject,DestroyRef,ChangeDetectionStrategy} from '@angular/core';
+import {CommonModule} from '@angular/common';import {FormsModule} from '@angular/forms';
+
+@Component({selector:'app-root',standalone:true,imports:[CommonModule,FormsModule],changeDetection:ChangeDetectionStrategy.OnPush,template:`<main><button [class.active]="active()" (click)="toggle()">{{active()?"Attivo":"Inattivo"}}</button></main>`})
+export class AppComponent{
+active=signal(false);toggle(){this.active.update(value=>!value);}
+}

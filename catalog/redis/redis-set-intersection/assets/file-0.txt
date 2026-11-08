@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+p="atlas_demo:set-intersection"
+cli(){ redis-cli -e --raw -h 127.0.0.1 -p 6381 "$@"; }
+cli DEL "$p:a" "$p:b"
+cli SADD "$p:a" python sql
+cli SADD "$p:b" sql go
+cli SINTER "$p:a" "$p:b"

@@ -1,0 +1,2 @@
+gradle installDist
+.\build\install\kotlin-dist\bin\kotlin-dist.bat

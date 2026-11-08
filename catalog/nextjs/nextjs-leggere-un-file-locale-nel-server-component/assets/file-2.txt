@@ -1,0 +1,1 @@
+import{readFile}from'node:fs/promises';import{join}from'node:path';export default async function Page(){const text=await readFile(join(process.cwd(),'data/message.txt'),'utf8');return <pre>{text}</pre>}

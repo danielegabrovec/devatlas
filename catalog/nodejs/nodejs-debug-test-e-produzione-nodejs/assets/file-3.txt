@@ -1,0 +1,1 @@
+export function total(price,qty){if(!Number.isFinite(price)||price<0||!Number.isInteger(qty)||qty<1)throw Error('Valori invalidi');return price*qty}

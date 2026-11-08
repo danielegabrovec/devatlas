@@ -1,0 +1,7 @@
+import io
+import zipfile
+buffer = io.BytesIO()
+with zipfile.ZipFile(buffer, "w", compression=zipfile.ZIP_DEFLATED) as archive:
+    archive.writestr("notes/readme.txt", "esempio")
+with zipfile.ZipFile(io.BytesIO(buffer.getvalue())) as archive:
+    print(archive.read("notes/readme.txt").decode())

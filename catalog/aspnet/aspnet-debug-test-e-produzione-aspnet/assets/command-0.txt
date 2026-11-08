@@ -1,0 +1,3 @@
+dotnet run --project tests/Checks.csproj
+dotnet build Demo.csproj
+dotnet publish Demo.csproj -c Release -o artifacts/publish

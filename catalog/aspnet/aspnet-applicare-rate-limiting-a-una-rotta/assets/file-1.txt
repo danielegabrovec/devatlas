@@ -1,0 +1,12 @@
+using System.Text;
+using System.Text.Json;
+using System.Diagnostics;
+using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.RateLimiting;
+using System.Threading.RateLimiting;
+var builder=WebApplication.CreateBuilder(args);
+builder.Services.AddRateLimiter(o=>o.AddFixedWindowLimiter("demo",p=>{p.PermitLimit=5;p.Window=TimeSpan.FromMinutes(1);p.QueueLimit=0;}));
+var app=builder.Build();
+app.UseRateLimiter();app.MapGet("/demo",()=>new{ok=true}).RequireRateLimiting("demo");
+app.Run();

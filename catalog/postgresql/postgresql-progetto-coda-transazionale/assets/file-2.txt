@@ -1,0 +1,1 @@
+BEGIN; WITH next AS(SELECT id FROM queue_demo.jobs WHERE status='ready' ORDER BY id FOR UPDATE SKIP LOCKED LIMIT 1) UPDATE queue_demo.jobs SET status='running' FROM next WHERE jobs.id=next.id RETURNING jobs.*; COMMIT;

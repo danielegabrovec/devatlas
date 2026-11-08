@@ -1,0 +1,3 @@
+import heapq
+scores = [4, 90, 3, 20, 88, 41]
+print(heapq.nlargest(3, scores))

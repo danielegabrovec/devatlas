@@ -1,0 +1,1 @@
+import test from'node:test';import assert from'node:assert/strict';import{parseTSV}from'../src/model.js';test('importa',()=>assert.equal(parseTSV('nome\timporto\nAda\t10')[0].amount,10));test('rifiuta',()=>assert.throws(()=>parseTSV('nome\timporto\nAda\tx')));

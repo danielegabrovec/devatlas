@@ -1,0 +1,4 @@
+<?php
+declare(strict_types=1);
+$rows=[['id'=>7,'name'=>'Ada'],['id'=>9,'name'=>'Luca']];
+print_r(array_column($rows,'name','id'));

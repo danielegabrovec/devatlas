@@ -1,0 +1,79 @@
+{
+  "id": "java-workflow-java-jdk-init",
+  "title": "Inizializzare un progetto Java con JDK e cartella src",
+  "summary": "Compila sorgenti UTF-8 separando sorgenti e classi senza richiedere Maven o Gradle.",
+  "stack": "java",
+  "group": "Linguaggi",
+  "section": "Inizializzazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Java17+ senza feature preview",
+  "prerequisites": "JDK17+ nel PATH, comandi javac e java. Non basta un JRE; nessuna dipendenza Maven/Gradle necessaria.",
+  "tags": [
+    "workflow",
+    "inizializzazione",
+    "setup",
+    "test",
+    "distribution"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "src/Main.java",
+      "language": "java",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "06d095784b32850870fa264d25c88fd1b139594ecb9a045d9155d9665ba310e9"
+    },
+    {
+      "id": "file-1",
+      "path": ".vscode/settings.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "a960a3e09ecc25f3f50bc0ef1c7fc83ac308429c37d6a615deb6b3f940ce6353"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "485537386d911253715368109741596e0950ab718c1b6064ab05be1389a57314"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "java-workflow-java-jdb",
+    "java-workflow-java-test-jar",
+    "java-progetto-completo-catalogo-libri-java"
+  ],
+  "expected": "JDK pronto; bin/Main.class è separato dal sorgente.",
+  "errors": [
+    "UnsupportedClassVersionError indica runtime più vecchio del bytecode; verificare java -version e target --release. Non basta installare il solo JRE per compilare."
+  ],
+  "sources": [
+    "https://dev.java/learn/",
+    "https://docs.oracle.com/en/java/javase/17/docs/api/",
+    "https://dev.java/learn/getting-started/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Sorgenti e configurazioni verificati su Windows x64: JSON parse, PowerShell parser, source compiler. Report: reports/languages-workflows-validation.json. Non attestati sessioni interattive di debug, installazioni di dipendenze o distribuzione completa del workflow; nessuna esecuzione Linux/macOS."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

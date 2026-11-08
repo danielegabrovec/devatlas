@@ -1,0 +1,4 @@
+Set-StrictMode -Version Latest
+$ErrorActionPreference='Stop'
+python -m pip freeze --all | Set-Content -LiteralPath requirements-snapshot.txt -Encoding utf8
+Get-Content -LiteralPath requirements-snapshot.txt

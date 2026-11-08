@@ -1,0 +1,70 @@
+{
+  "id": "pyside6-groupbox",
+  "title": "Disabilitare un gruppo di impostazioni",
+  "summary": "Usare un QGroupBox selezionabile come interruttore dei figli.",
+  "stack": "pyside6",
+  "group": "Desktop e GUI",
+  "section": "Codice applicativo",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "Python 3.13; PySide6 6.12.x",
+  "prerequisites": "Python 3.13, ambiente virtuale dedicato e PySide6==6.12.*. Non installare entrambi i binding nello stesso ambiente.",
+  "tags": [
+    "groupbox",
+    "Qt Widgets",
+    "signals",
+    "PySide6"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "65237b517b9ac108f856a92b05c1658627af3e60bddb436c9af14284c1f2617e"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "fa7903108ae7aa3f1394a5a95ac8f4c30affc3b7ad588d4cb1c04cdec3ebb03d"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "pyside6-action-menu",
+    "pyside6-animation",
+    "pyside6-buddy"
+  ],
+  "expected": "I campi diventano attivi selezionando Proxy manuale.",
+  "errors": [
+    "ModuleNotFoundError: eseguire pip con lo stesso interprete .venv usato per avviare main.py.",
+    "Non creare QApplication due volte nello stesso processo; riavviare l'esempio in un processo separato."
+  ],
+  "sources": [
+    "https://doc.qt.io/qtforpython-6/",
+    "https://doc.qt.io/qt-6/qtwidgets-index.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "details": "Avvio reale Windows con PySide6 6.12.0, piattaforma offscreen, costruzione finestra e ciclo eventi 150 ms. Interazioni e altri sistemi non verificati. Report: reports/desktop-tools-qa.json.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

@@ -1,0 +1,1 @@
+SELECT to_tsvector('italian','programmare applicazioni') @@ plainto_tsquery('italian','applicazione');

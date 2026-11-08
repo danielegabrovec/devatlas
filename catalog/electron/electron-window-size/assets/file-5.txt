@@ -1,0 +1,1 @@
+document.querySelector('#run').addEventListener('click',async()=>{const output=document.querySelector('#result');try{output.textContent=JSON.stringify(await window.recipe.run(),null,2);}catch(error){output.textContent=error.message;}});

@@ -1,0 +1,4 @@
+param([Parameter(Mandatory)][ValidateSet("Debug","Release")][string]$Configuration)
+Set-StrictMode -Version Latest
+$ErrorActionPreference='Stop'
+"Configurazione: $Configuration"

@@ -1,0 +1,79 @@
+{
+  "id": "c-workflow-c-gdb",
+  "title": "Debuggare C con GDB e simboli completi",
+  "summary": "Prepara una build C17 senza ottimizzazioni e una configurazione VS Code per breakpoint e stack.",
+  "stack": "c",
+  "group": "Linguaggi",
+  "section": "Debug",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "ISO C17, GCC 11+",
+  "prerequisites": "Compilatore ISO C17 (GCC/Clang). Su Windows usare una toolchain GCC UCRT64 nel PATH. Nessuna estensione POSIX necessaria agli esempi.",
+  "tags": [
+    "workflow",
+    "debug",
+    "debugger",
+    "test",
+    "distribution"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.c",
+      "language": "c",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "39a3ae89812f72d93c635080622b1cf11e22655067c441f06772754dddf96306"
+    },
+    {
+      "id": "file-1",
+      "path": ".vscode/launch.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "6d4e0193b264e1c89a764c2c42f9640b18491fba757d7168b605a21f13e1a238"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "fd824857bc34cbfabd88703da51a8a08de7143b8f63dd84a57e98c6fef6eea04"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "c-workflow-c-library-test",
+    "c-workflow-c-toolchain",
+    "c-progetto-completo-statistiche-su-misure-c"
+  ],
+  "expected": "count vale3, values[0] vale2 e l'output finale è10.",
+  "errors": [
+    "Non usare un eseguibile obsoleto o privato dei simboli. L'ispezione di un puntatore richiede una durata valida e indici entro il buffer."
+  ],
+  "sources": [
+    "https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf",
+    "https://gcc.gnu.org/onlinedocs/gcc/C-Dialect-Options.html",
+    "https://sourceware.org/gdb/current/onlinedocs/gdb/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Sorgenti e configurazioni verificati su Windows x64: JSON parse, PowerShell parser, source compiler. Report: reports/languages-workflows-validation.json. Non attestati sessioni interattive di debug, installazioni di dipendenze o distribuzione completa del workflow; nessuna esecuzione Linux/macOS."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

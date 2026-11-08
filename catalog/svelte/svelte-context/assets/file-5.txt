@@ -1,0 +1,5 @@
+<script>
+import {onMount,tick,setContext,getContext} from 'svelte';
+import ThemeLabel from './ThemeLabel.svelte';const theme=$state({name:'chiaro'});setContext('theme',theme);
+</script>
+<main><button onclick={()=>theme.name=theme.name==='chiaro'?'scuro':'chiaro'}>Tema</button><ThemeLabel/></main>

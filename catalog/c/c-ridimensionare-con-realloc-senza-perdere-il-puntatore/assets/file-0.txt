@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdint.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <errno.h>
+#include <limits.h>
+
+
+int main(void){
+size_t next_count=4;int *values=malloc(2*sizeof *values);if(!values)return 1;values[0]=7;
+int *grown=realloc(values,next_count*sizeof *values);if(!grown){free(values);return 1;}values=grown;
+values[2]=9;printf("%d %d\n",values[0],values[2]);free(values);
+return 0;
+}

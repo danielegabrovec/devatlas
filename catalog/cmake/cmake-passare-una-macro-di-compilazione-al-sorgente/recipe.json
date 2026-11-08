@@ -1,0 +1,79 @@
+{
+  "id": "cmake-passare-una-macro-di-compilazione-al-sorgente",
+  "title": "Passare una macro di compilazione al sorgente",
+  "summary": "Usare target_compile_definitions per un valore limitato al target.",
+  "stack": "cmake",
+  "group": "Strumenti",
+  "section": "Compilazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code",
+    "Visual Studio",
+    "CLion"
+  ],
+  "versions": "CMake 3.24+; C++17/20",
+  "prerequisites": "CMake 3.24+, compilatore C++ installato. Su Windows usare Developer PowerShell MSVC o una toolchain già configurata.",
+  "tags": [
+    "CMake",
+    "build",
+    "passare-una-macro-di-compilazione-al-sorgente"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "main.cpp",
+      "language": "cpp",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "1c4096e018031281c2ef59162e06e70538c5a514f4d7a303f83227b4307d8aaa"
+    },
+    {
+      "id": "file-1",
+      "path": "CMakeLists.txt",
+      "language": "cmake",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "60e7d7e4ce56a09062914363e1ce1927eea1ac3cb4fa5090ee3782c0e78dbc8e"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "7309db546187378027992cf9b39b6b166c51ebd4475b1a1d1b0e421f92b6bb06"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "cmake-aggiungere-una-macro-soltanto-alle-build-debug",
+    "cmake-offrire-un-opzione-configurabile-di-compilazione",
+    "cmake-abilitare-addresssanitizer-solo-su-gcc-e-clang"
+  ],
+  "expected": "Usare target_compile_definitions per un valore limitato al target.",
+  "errors": [
+    "Ninja non trovato: installarlo se si usa il preset o il compilation database.",
+    "Compilatore non trovato: aprire il terminale di sviluppo della toolchain."
+  ],
+  "sources": [
+    "https://cmake.org/cmake/help/latest/guide/tutorial/index.html",
+    "https://cmake.org/cmake/help/latest/manual/cmake-buildsystem.7.html"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "documentato",
+    "details": "Esempio originale revisionato nel catalogo; esecuzione non attestata.",
+    "date": "2026-10-29"
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

@@ -1,0 +1,103 @@
+{
+  "id": "csharp-workflow-dotnet-test-publish",
+  "title": "Compilare test e pubblicare una console C# locale",
+  "summary": "Esegue smoke test senza pacchetti esterni e produce una pubblicazione Windows che richiede il runtime .NET8.",
+  "stack": "csharp",
+  "group": "Linguaggi",
+  "section": "Compilazione",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "C# 12, .NET 8; compatibile con SDK successivi che supportano net8.0",
+  "prerequisites": "SDK .NET 8+ e targeting pack net8.0; dotnet nel PATH. Nessun pacchetto NuGet esterno. Il primo restore può richiedere i pack della piattaforma.",
+  "tags": [
+    "workflow",
+    "build, test e distribuzione",
+    "build",
+    "test",
+    "distribution"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "App.csproj",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "65ea1f12a5bf55eda2e007274ffd468778d6a61343cb512f5daf6bede7a7b4e2"
+    },
+    {
+      "id": "file-1",
+      "path": "Program.cs",
+      "language": "csharp",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "49862915e6833a0c1237d362b263a94f3d92ef7aa52fa44156945521362a0952"
+    },
+    {
+      "id": "file-2",
+      "path": "Arithmetic.cs",
+      "language": "csharp",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "80f9204874f521b3bb4403657c727d20aa95426152e231ed98b5d9338a4b9889"
+    },
+    {
+      "id": "file-3",
+      "path": "tests/Smoke.csproj",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "c61ac0c482b3e6abe27e7336a213e617bd71952582580fdd2496c7bdf03f6de3"
+    },
+    {
+      "id": "file-4",
+      "path": "tests/Program.cs",
+      "language": "csharp",
+      "role": "file",
+      "source": "assets/file-4.txt",
+      "sha256": "ef97a93aa16a1b8d9162ada81a22d5b34c03cf70298d84a7e4845d33057c411d"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "0ab5a4347c46a088e011256c01f7dc0b095f283e918f509bdf8aec1f5759d1dd"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "csharp-workflow-dotnet-init",
+    "csharp-workflow-dotnet-debug",
+    "csharp-progetto-completo-registro-prestiti-c"
+  ],
+  "expected": "Il runner stampa smoke test passato; publish contiene App.exe/App.dll e file runtimeconfig.",
+  "errors": [
+    "Non unire i due Program.cs nello stesso target. Un RID diverso richiede runtime pack disponibili; una pubblicazione framework-dependent non incorpora il runtime."
+  ],
+  "sources": [
+    "https://learn.microsoft.com/en-us/dotnet/csharp/",
+    "https://learn.microsoft.com/en-us/dotnet/api/",
+    "https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-publish"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "statico",
+    "date": "2026-10-29",
+    "details": "Sorgenti e configurazioni verificati su Windows x64: MSBuild XML parse, PowerShell parser, source compiler. Report: reports/languages-workflows-validation.json. Non attestati sessioni interattive di debug, installazioni di dipendenze o distribuzione completa del workflow; nessuna esecuzione Linux/macOS."
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

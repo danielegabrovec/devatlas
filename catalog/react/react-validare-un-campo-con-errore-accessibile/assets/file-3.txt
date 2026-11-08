@@ -1,0 +1,3 @@
+import React, {useState,useEffect,useMemo,useRef,useReducer,useId,useContext,createContext,useCallback,useLayoutEffect,useTransition,useDeferredValue,useSyncExternalStore,useImperativeHandle,forwardRef,memo,lazy,Suspense,Component} from 'react';
+import {createPortal} from 'react-dom';
+export default function App(){const[v,set]=useState('');const err=v.length>0&&v.length<3;return <label>Nome<input value={v} onChange={e=>set(e.target.value)} aria-invalid={err} aria-describedby='error'/><span id='error'>{err?'Almeno3caratteri':''}</span></label>}

@@ -1,0 +1,1 @@
+import{monitorEventLoopDelay}from'node:perf_hooks';import{setTimeout}from'node:timers/promises';const h=monitorEventLoopDelay({resolution:10});h.enable();await setTimeout(50);h.disable();console.log(h.mean/1e6);

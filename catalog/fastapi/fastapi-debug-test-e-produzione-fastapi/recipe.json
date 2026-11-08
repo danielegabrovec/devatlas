@@ -1,0 +1,103 @@
+{
+  "id": "fastapi-debug-test-e-produzione-fastapi",
+  "title": "Debug test e produzione fastapi",
+  "summary": "In VSCode seleziona l’interprete .venv e installa l’estensione Python/Debugpy. F5 avvia uvicorn senza reload per mantenere il processo del debugger; imposta un breakpoint nella rotta quote. pytest usa TestClient senza server pubblico. Per un avvio multiprocesso locale usa --workers2 e nessun --reload; reverse proxy, TLS e gestione del servizio dipendono dall’ambiente di distribuzione.",
+  "stack": "fastapi",
+  "group": "Web e backend",
+  "section": "Debug",
+  "difficulty": "Intermedio",
+  "os": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "ide": [
+    "VS Code"
+  ],
+  "versions": "FastAPI0.115.12; Pydantic2.11.7; Python3.11+",
+  "prerequisites": "Python3.11+ con venv; porta8000 libera. Dipendenze in requirements.txt; /docs permette di provare le rotte. Database e autenticazione di produzione non sono inclusi negli esempi in memoria.",
+  "tags": [
+    "fastapi",
+    "debug",
+    "breakpoint",
+    "test",
+    "build",
+    "production",
+    "release"
+  ],
+  "project": false,
+  "assets": [
+    {
+      "id": "file-0",
+      "path": "app.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-0.txt",
+      "sha256": "38ba9836aad33fc3cac122ca53278521585625c8c8fd601cf73df58274f06f2d"
+    },
+    {
+      "id": "file-1",
+      "path": "requirements.txt",
+      "language": "text",
+      "role": "file",
+      "source": "assets/file-1.txt",
+      "sha256": "65739c3d8a1fb7a7b9789cb1cbac8f6de99f1222bbdaf6453bb604f722b13fdf"
+    },
+    {
+      "id": "file-2",
+      "path": "test_app.py",
+      "language": "python",
+      "role": "file",
+      "source": "assets/file-2.txt",
+      "sha256": "1cb97a62448eb8c3bf2c9a7229fd805a35d2d4ca5a85bd05e8832a5d1b0adb97"
+    },
+    {
+      "id": "file-3",
+      "path": ".vscode/launch.json",
+      "language": "json",
+      "role": "file",
+      "source": "assets/file-3.txt",
+      "sha256": "491c95756386e20842b2ed41432caf972902527d7bc99a2b243060d3fa39280d"
+    },
+    {
+      "id": "command-0",
+      "path": "Comandi",
+      "language": "powershell",
+      "role": "command",
+      "shell": "PowerShell",
+      "os": "Windows",
+      "cwd": ".",
+      "source": "assets/command-0.txt",
+      "sha256": "9cf941e9bfbb14e000ef55ef447ec03e56156fe8a4d482993b14dcdd45967ed0"
+    }
+  ],
+  "parameters": [],
+  "related": [
+    "fastapi-progetto-api-preventivi-con-validazione-e-test",
+    "fastapi-progetto-api-attivita-con-repository-sqlite",
+    "fastapi-accettare-file-e-campo-form-insieme"
+  ],
+  "expected": "I test inclusi completano con esito positivo. La configurazione VSCode permette breakpoint sul sorgente; i comandi distinguono verifica, build e avvio di produzione.",
+  "errors": [
+    "Comando non trovato: installare la toolchain elencata nei prerequisiti.",
+    "Dipendenza mancante: eseguire l'installazione nella radice esportata, senza cambiare le versioni dichiarate."
+  ],
+  "sources": [
+    "https://fastapi.tiangolo.com/",
+    "https://docs.pydantic.dev/latest/"
+  ],
+  "reviewed": "2026-10-29",
+  "verification": {
+    "status": "eseguito",
+    "date": "2026-10-29",
+    "details": "TestClient/pytest superati su FastAPI0.115.12,Pydantic2.11.7,Httpx0.28.1 isolati nella cache, Windows; SQLite temporaneo nei test del repository.",
+    "files_sha256": {
+      "app.py": "38ba9836aad33fc3cac122ca53278521585625c8c8fd601cf73df58274f06f2d",
+      "requirements.txt": "65739c3d8a1fb7a7b9789cb1cbac8f6de99f1222bbdaf6453bb604f722b13fdf",
+      "test_app.py": "1cb97a62448eb8c3bf2c9a7229fd805a35d2d4ca5a85bd05e8832a5d1b0adb97",
+      ".vscode/launch.json": "491c95756386e20842b2ed41432caf972902527d7bc99a2b243060d3fa39280d"
+    }
+  },
+  "variants": [],
+  "guide_path": "guide.md"
+}

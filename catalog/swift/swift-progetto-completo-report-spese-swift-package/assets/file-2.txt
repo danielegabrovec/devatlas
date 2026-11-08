@@ -1,0 +1,9 @@
+import Foundation
+import ExpenseCore
+#if canImport(Glibc)
+import Glibc
+#else
+import Darwin
+#endif
+let path=CommandLine.arguments.dropFirst().first ?? "data/expenses.json"
+do{let data=try Data(contentsOf:URL(fileURLWithPath:path));let rows=try JSONDecoder().decode([Expense].self,from:data);let result=try totals(rows);for key in result.keys.sorted(){print("\(key): \(result[key]!)")}}catch{FileHandle.standardError.write(Data("Errore: \(error)\n".utf8));exit(1)}

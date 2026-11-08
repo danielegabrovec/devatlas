@@ -1,0 +1,1 @@
+ALTER TABLE products ADD CONSTRAINT valid_stock CHECK(stock>=0) NOT VALID; ALTER TABLE products VALIDATE CONSTRAINT valid_stock;

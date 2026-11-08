@@ -1,0 +1,4 @@
+import Foundation
+
+let formatter=ISO8601DateFormatter()
+if let date=formatter.date(from:"2026-10-29T10:00:00Z"){print(formatter.string(from:date))}

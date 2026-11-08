@@ -1,0 +1,15 @@
+using System;
+using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Collections.ObjectModel;
+using Microsoft.Maui.Controls;
+using Microsoft.Maui.Graphics;
+using Microsoft.Maui.ApplicationModel.DataTransfer;
+using Microsoft.Maui.Storage;
+namespace RecipeApp;
+public class MainPage:ContentPage {
+ public MainPage(){ Title="Ricetta MAUI"; var panel=new VerticalStackLayout{Spacing=12,Padding=20};
+var check=new CheckBox(); var label=new Label{Text="Disattivo"}; check.CheckedChanged+=(_,e)=>label.Text=e.Value?"Attivo":"Disattivo"; panel.Children.Add(check); panel.Children.Add(label);
+ Content=new ScrollView{Content=panel}; }
+}

@@ -1,0 +1,5 @@
+fn length(value:&str)->usize {value.len()}
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+let name=String::from("Ada");println!("{} {}",length(&name),name);
+Ok(())
+}

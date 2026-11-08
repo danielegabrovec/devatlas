@@ -1,0 +1,7 @@
+import java.util.*;
+public final class Inventory{
+private final Map<String,String> books=new LinkedHashMap<>();
+public void add(String id,String title){if(id==null||id.isBlank()||title==null||title.isBlank())throw new IllegalArgumentException("ID e titolo richiesti");if(books.putIfAbsent(id,title)!=null)throw new IllegalArgumentException("ID duplicato");}
+public Optional<String> find(String id){return Optional.ofNullable(books.get(id));}
+public Map<String,String> snapshot(){return Map.copyOf(books);}
+}

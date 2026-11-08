@@ -1,0 +1,7 @@
+Set-StrictMode -Version Latest
+$ErrorActionPreference='Stop'
+$exe=(Get-Command pwsh).Source
+& $exe -NoProfile -Command "exit 7"
+$code=$LASTEXITCODE
+"Codice: $code"
+if($code -ne 7){throw "Codice inatteso"}
